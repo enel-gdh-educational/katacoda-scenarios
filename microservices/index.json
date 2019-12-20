@@ -1,0 +1,50 @@
+{
+  "title": "Microservices Demo",
+  "description": "Microservices Workshop",
+  "difficulty": "Beginner",
+  "time": "1 minute",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Build a ML Application",
+      "text": "step1.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "train/*",
+          "target": "/root/train/"
+        },
+        {
+          "file": "predict/*",
+          "target": "/root/predict/"
+        },
+        {
+          "file": "deployment.yml",
+          "target": "/root/"
+        },
+        {
+          "file": "api_call_test.py",
+          "target": "/root/"
+        },
+        {
+          "file": "service.yml",
+          "target": "/root/"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "minikube"
+  }
+}
