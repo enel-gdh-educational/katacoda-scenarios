@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ml-app
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ml-app
+    spec:
+      containers:
+      - name: train-app
+        image: sapienza/train
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: models
+          mountPath: "/etc/models"
+      - name: predict-app
+        image: sapienza/predict
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: models
+          mountPath: "/etc/models"
+      volumes:
+      - name: models

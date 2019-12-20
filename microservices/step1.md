@@ -6,11 +6,19 @@
 minikube start
 ```{{execute}}
 
-- Locate into the /root/train folder and build the first image using Docker.
+-Locate into the /root/demo_train folder and build the first image using Docker.
 
 ```
-cd train
-docker build -t sapienza/train .
+ls
+```{{execute}}
+
+```
+cd demo_train
+ls
+```{{execute}}
+
+```
+docker build -t train .
 ```{{execute}}
 
 - Modify the Dockerfile located in the predict folder and make it look like this:
@@ -18,40 +26,29 @@ docker build -t sapienza/train .
 ```
 FROM python:3.6
 
-# Set the timezone to the correct one (CET).
-ENV TZ=Europe/Rome
+ENV TZ=UTC
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-# install relevant packages
+RUN apt-get update && apt-get install cron -y --no-install-recommends
 RUN apt-get -yq update && apt-get -yqq install ssh
+RUN apt-get update && apt-get upgrade -y && apt-get install -y git
 
-# Copy files and authorize SSH Host
-COPY ./ssh_config .
-RUN mkdir -p /root/.ssh && chmod 777 /root/.ssh
-COPY ./id_deploy_key /root/.ssh/predict_rsa
-RUN chmod 700 /root/.ssh/predict_rsa
-RUN cat ./ssh_config >> /root/.ssh/config
-
-# Clone repository into container
 WORKDIR /usr/src/app
-RUN git clone --branch master --single-branch --depth 1 git@github.com:aaleht/demo-sapienza-predict.git
-
-# Locate into the repository and install requirements
-WORKDIR /usr/src/app/demo-sapienza-predict
-RUN pip install -r requirements.txt
-
-EXPOSE 8083
-
+COPY ./src ./src
+COPY main.py main.py
+COPY requirements.txt requirements.txt
+RUN pip install --trusted-host pypi.python.org --trusted-host pypi.org --trusted-host files.pythonhosted.org -r requirements.txt
+EXPOSE 80
 CMD ["python", "main.py"]
 
 ```{{copy}}
 
-- Locate into the /root/predict folder and build also the image for the prediction app.
+- Locate into the /root/demo_predict folder and build also the image for the prediction app.
 
 ```
 cd
 cd predict
-docker build -t sapienza/predict .
+docker build -t predict .
 ```{{execute}}
 
 - Edit the deployment.yml file to look like this:
@@ -81,7 +78,7 @@ spec:
         image: sapienza/predict
         imagePullPolicy: Never
         ports:
-        - containerPort: 8083
+        - containerPort: 80
         volumeMounts:
         - name: models
           mountPath: "/etc/models"
@@ -102,12 +99,12 @@ kubectl create -f deployment.yml
 kubectl describe pods
 ```{{execute}}
 
-- Edit the script "api_call_test.py" and fill the function with the right ip address of your pod.
+- Edit the script "client.py" and fill the function with the right ip address of your pod.
 
 - Run the python function that calls the predict api
 
 ```
-python3 api_call_test.py
+python3 client.py
 ```{{execute}}
 
 
@@ -116,7 +113,7 @@ python3 api_call_test.py
 - List available docker images:
 
 ```
-docker images
+docker images ps -a
 ```{{execute}}
 
 - List available pods:
