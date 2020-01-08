@@ -18,11 +18,11 @@
     "assets": {
       "host01": [
         {
-          "file": "demo_train/*",
+          "file": "assets/demo_train/*",
           "target": "/root/demo_train/"
         },
         {
-          "file": "demo_predict/*",
+          "file": "assets/demo_predict/*",
           "target": "/root/demo_predict/"
         },
         {
