@@ -18,20 +18,8 @@
     "assets": {
       "host01": [
         {
-          "file": "/demo_train/*",
-          "target": "/root/demo_train/"
-        },
-        {
-          "file": "/demo_predict/*",
-          "target": "/root/demo_predict/"
-        },
-        {
-          "file": "deployment.yml",
-          "target": "/root/"
-        },
-        {
-          "file": "service.yml",
-          "target": "/root/"
+          "file": "*",
+          "target": "/root"
         }
       ]
     }
