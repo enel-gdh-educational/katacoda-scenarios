@@ -40,6 +40,18 @@
         {
           "file": "demo_predict/requirements.txt",
           "target": "/root/demo_predict"
+        },
+        {
+          "file": "demo_train/Dockerfile",
+          "target": "/root/demo_train"
+        },
+        {
+          "file": "demo_train/main.py",
+          "target": "/root/demo_train"
+        },
+        {
+          "file": "demo_train/requirements.txt",
+          "target": "/root/demo_train"
         }
       ]
     }
