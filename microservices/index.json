@@ -19,7 +19,7 @@
       "host01": [
         {
           "file": "testfolder/*",
-          "target": "/root"
+          "target": "/root/testfolder/"
         },
         {
           "file": "deployment.yml",
