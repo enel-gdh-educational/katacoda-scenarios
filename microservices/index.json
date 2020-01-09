@@ -62,18 +62,6 @@
           "target": "/root/demo_predict/"
         },
         {
-          "file": "demo_predict/main.py",
-          "target": "/root/demo_predict/"
-        },
-        {
-          "file": "demo_predict/requirements.txt",
-          "target": "/root/demo_predict/"
-        },
-        {
-          "file": "demo_predict/client.py",
-          "target": "/root/demo_predict/"
-        },
-        {
           "file": "deployment.yml",
           "target": "/root/"
         },
