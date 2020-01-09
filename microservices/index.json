@@ -18,8 +18,8 @@
     "assets": {
       "host01": [
         {
-          "file": "testfolder/*",
-          "target": "/root/testfolder/"
+          "file": "testfolder/deep_testfolder/*",
+          "target": "/root/testfolder/deeptestfolder"
         },
         {
           "file": "deployment.yml",
