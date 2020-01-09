@@ -19,7 +19,7 @@
       "host01": [
         {
           "file": "demo_train/Dockerfile",
-          "target": "/root/demo_train/"
+          "target": "/root/demo_train/Dockerfile"
         },
         {
           "file": "deployment.yml",
