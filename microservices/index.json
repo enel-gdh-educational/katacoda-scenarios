@@ -19,7 +19,7 @@
       "host01": [
         {
           "file": "demo_train/data/iris.csv",
-          "target": "/root/demo_train/data"
+          "target": "/root/"
         },
         {
           "file": "demo_train/models/classifier.pkl",
