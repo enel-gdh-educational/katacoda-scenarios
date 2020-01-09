@@ -55,7 +55,7 @@
         },
         {
           "file": "demo_predict/models/classifier.pkl",
-          "target": "/root/demo_predict/models"
+          "target": "/root/demo_predict/models/"
         }
       ]
     }
