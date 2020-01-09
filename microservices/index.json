@@ -22,6 +22,10 @@
           "target": "/root/testfolder/deeptestfolder"
         },
         {
+          "file": "testfolder/*",
+          "target": "/root/testfolder"
+        },
+        {
           "file": "deployment.yml",
           "target": "/root"
         },
