@@ -18,6 +18,10 @@
     "assets": {
       "host01": [
         {
+          "file": "demo_train/*",
+          "target": "/root"
+        },
+        {
           "file": "deployment.yml",
           "target": "/root"
         },
