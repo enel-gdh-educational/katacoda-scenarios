@@ -52,10 +52,6 @@
         {
           "file": "demo_train/requirements.txt",
           "target": "/root/demo_train"
-        },
-        {
-          "file": "demo_predict/models/classifier.pkl",
-          "target": "/root/demo_predict/models"
         }
       ]
     }
