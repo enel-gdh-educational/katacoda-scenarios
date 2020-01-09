@@ -22,7 +22,7 @@
           "target": "/root/testfolder/deeptestfolder"
         },
         {
-          "file": "testfolder/*",
+          "file": "testfolder/testfile",
           "target": "/root/testfolder"
         },
         {
