@@ -19,31 +19,63 @@
       "host01": [
         {
           "file": "demo_train/data/iris.csv",
-          "target": "/root/"
+          "target": "/root/demo_train/data/"
         },
         {
           "file": "demo_train/models/classifier.pkl",
-          "target": "/root/demo_train/models"
+          "target": "/root/demo_train/models/"
         },
         {
           "file": "demo_train/models/encoder.pkl",
-          "target": "/root/demo_train/models"
+          "target": "/root/demo_train/models/"
         },
         {
           "file": "demo_train/src/model.py",
-          "target": "/root/demo_train/src"
+          "target": "/root/demo_train/src/"
         },
         {
           "file": "demo_train/Dockerfile",
-          "target": "/root/demo_train"
+          "target": "/root/demo_train/"
         },
         {
           "file": "demo_train/main.py",
-          "target": "/root/demo_train"
+          "target": "/root/demo_train/"
         },
         {
           "file": "demo_train/requirements.txt",
-          "target": "/root/demo_train"
+          "target": "/root/demo_train/"
+        },
+        {
+          "file": "demo_predict/src/*",
+          "target": "/root/demo_predict/src"
+        },
+        {
+          "file": "demo_predict/models/*",
+          "target": "/root/demo_predict/models"
+        },
+        {
+          "file": "demo_predict/Dockerfile",
+          "target": "/root/demo_predict"
+        },
+        {
+          "file": "demo_predict/main.py",
+          "target": "/root/demo_predict"
+        },
+        {
+          "file": "demo_predict/requirements.txt",
+          "target": "/root/demo_predict"
+        },
+        {
+          "file": "demo_predict/client.py",
+          "target": "/root/demo_predict"
+        },
+        {
+          "file": "deployment.yml",
+          "target": "/root/"
+        },
+        {
+          "file": "service.yml",
+          "target": "/root/"
         }
       ]
     }
