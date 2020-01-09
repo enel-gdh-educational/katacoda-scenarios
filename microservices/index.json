@@ -18,11 +18,15 @@
     "assets": {
       "host01": [
         {
-          "file": "demo_train/data/*",
+          "file": "demo_train/data/iris.csv",
           "target": "/root/demo_train/data"
         },
         {
-          "file": "demo_train/models/*",
+          "file": "demo_train/models/classifier.pkl",
+          "target": "/root/demo_train/models"
+        },
+        {
+          "file": "demo_train/models/encoder.pkl",
           "target": "/root/demo_train/models"
         },
         {
