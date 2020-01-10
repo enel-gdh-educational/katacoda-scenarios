@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: train-app
-        image: sapienza/train
+        image: demo_train
         imagePullPolicy: Never
         ports:
         - containerPort: 80
@@ -19,7 +19,7 @@ spec:
         - name: models
           mountPath: "/etc/models"
       - name: predict-app
-        image: sapienza/predict
+        image: demo_predict
         imagePullPolicy: Never
         ports:
         - containerPort: 80

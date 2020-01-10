@@ -13,28 +13,25 @@ from sklearn.preprocessing import LabelEncoder
 class TrainModel:
     def __init__(self):
         self.model = None
-        if not os.path.exists("./models"):
-            os.mkdir("./models")
-        logging.info("Created directory for models")
 
     def train_once(self):
         self.train()
         return schedule.CancelJob
 
     def train(self):
-        dataframe = self.load_data(path="./data/iris.csv")
+        dataframe = self.load_data(path="iris.csv")
         print(dataframe.head(20))
         X, Y = self.create_dataset(loaded_data=dataframe)
         encoder = LabelEncoder()
         target = encoder.fit_transform(Y)
-        self.save_model(model=encoder, path='./models/encoder.pkl')
+        self.save_model(model=encoder, path='/etc/models/encoder.pkl')
         index = self.rand_index(target.shape[0])
         train_index, val_index, test_index = self.split_train_val_test_index(index, 0.7, 0.2, 0.1)
         input_train, input_val, input_test = self.select_by_shuffle_index(X, train_index, val_index, test_index)
         target_train, target_val, target_test = self.select_by_shuffle_index(target, train_index, val_index, test_index)
         self.train_model(input_train, target_train, input_val, target_val)
         self.evaluate(input_test, target_test)
-        self.save_model(model=self.model, path='./models/classifier.pkl')
+        self.save_model(model=self.model, path='/etc/models/classifier.pkl')
         logging.info("Training finished")
 
     def load_data(self, path):

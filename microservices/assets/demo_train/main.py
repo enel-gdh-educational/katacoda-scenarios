@@ -2,7 +2,7 @@ import schedule
 import time
 import logging
 
-from src.model import TrainModel
+from model import TrainModel
 
 handlers = [logging.StreamHandler()]
 logging.basicConfig(handlers=handlers, format='%(levelname)s:%(message)s', level=logging.INFO)

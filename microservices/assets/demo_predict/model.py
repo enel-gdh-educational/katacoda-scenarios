@@ -2,7 +2,7 @@ import pickle
 
 
 class PredictModel:
-    def __init__(self, model_path="./models/classifier.pkl", encoder_path="./models/encoder.pkl"):
+    def __init__(self, model_path="/etc/models/classifier.pkl", encoder_path="/etc/models/encoder.pkl"):
         self.model = None
         self.encoder = None
         self.model_path = model_path
