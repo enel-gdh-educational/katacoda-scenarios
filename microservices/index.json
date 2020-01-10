@@ -30,6 +30,14 @@
           "target": "/root/demo_predict"
         },
         {
+          "file": "demo_train/iris.csv",
+          "target": "/root/demo_train"
+        },
+        {
+          "file": "demo_train/main.py",
+          "target": "/root/demo_train"
+        },
+        {
           "file": "demo_train/model.py",
           "target": "/root/demo_train"
         },
