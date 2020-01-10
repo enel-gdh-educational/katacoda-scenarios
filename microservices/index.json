@@ -30,6 +30,14 @@
           "target": "/root/demo_predict"
         },
         {
+          "file": "demo_predict/classifier.pkl",
+          "target": "/root/demo_predict"
+        },
+        {
+          "file": "demo_train/model.py",
+          "target": "/root/demo_train"
+        },
+        {
           "file": "demo_train/requirements.txt",
           "target": "/root/demo_train"
         }
