@@ -30,10 +30,6 @@
           "target": "/root/demo_predict"
         },
         {
-          "file": "demo_predict/classifier.pkl",
-          "target": "/root/demo_predict"
-        },
-        {
           "file": "demo_train/iris.csv",
           "target": "/root/demo_train"
         },
