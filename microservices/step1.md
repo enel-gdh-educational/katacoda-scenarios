@@ -6,7 +6,7 @@
 minikube start
 ```{{execute}}
 
-- Locate into the /root/demo_train folder and build the first image using Docker.
+- Locate into the demo_train folder and build the first image using Docker.
 
 ```
 ls
@@ -18,17 +18,18 @@ ls
 ```{{execute}}
 
 - Build train container 
+
 ```
-docker build -t train .
+docker build -t train_image .
 ```{{execute}}
 
 - Run train container, in order to save your model
 
 ```
-docker run -d --name train_container train
+docker run -d --name train_container train_image
 ```{{execute}}
 
-- Modify the Dockerfile located in the predict folder and make it look like this:
+- Modify the Dockerfile located in the demo_predict folder and make it look like this:
 
 ```
 FROM python:3.6
@@ -41,21 +42,23 @@ RUN apt-get -yq update && apt-get -yqq install ssh
 RUN apt-get update && apt-get upgrade -y && apt-get install -y git
 
 WORKDIR /usr/src/app
-COPY ./src ./src
-COPY main.py main.py
-COPY requirements.txt requirements.txt
+COPY ./ ./
 RUN pip install --trusted-host pypi.python.org --trusted-host pypi.org --trusted-host files.pythonhosted.org -r requirements.txt
 EXPOSE 80
 CMD ["python", "main.py"]
-
 ```{{copy}}
 
-- Locate into the /root/demo_predict folder and build also the image for the prediction app.
+- Locate into the demo_predict folder and build also the image for the prediction app.
 
 ```
-cd
-cd predict
-docker build -t predict .
+cd demo_predict
+docker build -t predict_image .
+```{{execute}}
+
+- Run predict container, to make your model available for predictions
+
+```
+docker run -d -p 80:80 --name predict_container predict_image
 ```{{execute}}
 
 - Edit the deployment.yml file to look like this:

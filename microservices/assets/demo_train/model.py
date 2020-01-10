@@ -13,6 +13,8 @@ from sklearn.preprocessing import LabelEncoder
 class TrainModel:
     def __init__(self):
         self.model = None
+        if not os.path.exists("/etc/models"):
+            os.mkdir("/etc/models")
 
     def train_once(self):
         self.train()
