@@ -64,6 +64,14 @@
         {
           "file": "demo_train/requirements.txt",
           "target": "/root/demo_train"
+        },
+        {
+          "file": "demo_predict/encoder.pkl",
+          "target": "/root/demo_predict"
+        },
+        {
+          "file": "demo_train/encoder.pkl",
+          "target": "/root/demo_train"
         }
       ]
     }
