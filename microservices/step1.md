@@ -61,48 +61,6 @@ docker build -t predict_image .
 docker run -d -p 80:80 --name predict_container predict_image
 ```{{execute}}
 
-- Edit the deployment.yml file to look like this:
-
-```
-apiVersion: extensions/v1beta1
-kind: Deployment
-metadata:
-  name: ml-app
-spec:
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: ml-app
-    spec:
-      containers:
-      - name: train-app
-        image: sapienza/train
-        imagePullPolicy: Never
-        ports:
-        - containerPort: 80
-        volumeMounts:
-        - name: models
-          mountPath: "/etc/models"
-      - name: predict-app
-        image: sapienza/predict
-        imagePullPolicy: Never
-        ports:
-        - containerPort: 80
-        volumeMounts:
-        - name: models
-          mountPath: "/etc/models"
-      volumes:
-      - name: models
-```{{copy}}
-
-- Locate into the /root folder and deploy the application using Kubernetes and the deployment file yet edited.
-
-```
-cd
-kubectl create -f deployment.yml
-```{{execute}}
-
 - Investigate and have a look to the pod just created.
 
 ```
