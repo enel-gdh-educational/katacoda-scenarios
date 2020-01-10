@@ -8,10 +8,7 @@ RUN apt-get -yq update && apt-get -yqq install ssh
 RUN apt-get update && apt-get upgrade -y && apt-get install -y git
 
 WORKDIR /usr/src/app
-COPY ./src ./src
-COPY main.py main.py
-COPY requirements.txt requirements.txt
+COPY ./ ./
 RUN pip install --trusted-host pypi.python.org --trusted-host pypi.org --trusted-host files.pythonhosted.org -r requirements.txt
-COPY ./models ./models
 EXPOSE 80
 CMD ["python", "main.py"]

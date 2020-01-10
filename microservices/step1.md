@@ -6,7 +6,7 @@
 minikube start
 ```{{execute}}
 
--Locate into the /root/demo_train folder and build the first image using Docker.
+- Locate into the /root/demo_train folder and build the first image using Docker.
 
 ```
 ls
@@ -17,8 +17,15 @@ cd demo_train
 ls
 ```{{execute}}
 
+- Build train container 
 ```
 docker build -t train .
+```{{execute}}
+
+- Run train container, in order to save your model
+
+```
+docker run -d --name train_container train
 ```{{execute}}
 
 - Modify the Dockerfile located in the predict folder and make it look like this:
