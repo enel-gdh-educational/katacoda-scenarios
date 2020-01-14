@@ -121,12 +121,6 @@ docker images ps -a
 kubectl get pods
 ```{{execute}}
 
-- Get information about the status of existing pods:
-
-```
-kubectl describe pods
-```{{execute}}
-
 - Print logs of a container (see what's happening inside)
 
   *note that the following commands won't work! You have to provide the correct pod_id and container_id that exist in your environment. You should know how to list them ;)*
