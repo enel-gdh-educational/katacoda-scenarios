@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: train-app
-        image: train_image
+        image: *********
         imagePullPolicy: Never
         ports:
         - containerPort: 80
@@ -25,7 +25,7 @@ spec:
         image: predict_image
         imagePullPolicy: Never
         ports:
-        - containerPort: 8083
+        - containerPort: ****
         volumeMounts:
         - name: models
           mountPath: "/etc/models"
