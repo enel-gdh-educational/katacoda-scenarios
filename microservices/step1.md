@@ -1,4 +1,4 @@
-## List of commands to complete the excercise:
+## Click on the cells to execute a command or copy its content to the clipboard.
 
 - Activate minikube environment
 
