@@ -1,11 +1,11 @@
 {
   "title": "Microservices Demo",
   "description": "Microservices Workshop",
-  "difficulty": "Beginner",
-  "time": "1 minute",
+  "difficulty": "Intermediate",
+  "time": "45 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - Build a ML Application",
+      "title": "Build a ML Application with Docker and Kubernetes",
       "text": "step1.md"
     }],
     "intro": {

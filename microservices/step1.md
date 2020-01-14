@@ -32,13 +32,11 @@ ENV TZ=UTC
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt-get update && apt-get install cron -y --no-install-recommends
-RUN apt-get -yq update && apt-get -yqq install ssh
-RUN apt-get update && apt-get upgrade -y && apt-get install -y git
 
 WORKDIR /usr/src/app
 COPY ./ ./
-RUN pip install --trusted-host pypi.python.org --trusted-host pypi.org --trusted-host files.pythonhosted.org -r requirements.txt
-EXPOSE 80
+RUN pip install -r requirements.txt
+EXPOSE 8083
 CMD ["python", "main.py"]
 ```{{copy}}
 
@@ -98,7 +96,11 @@ kubectl create -f deployment.yml
 kubectl describe pods
 ```{{execute}}
 
-- Edit the script "client.py" and fill the function with the right ip address of your pod.
+- Locate in the demo_predict folder and edit the script "client.py" and fill the function with the right ip address of your pod.
+
+```
+cd demo_predict
+```{{execute}}
 
 - Run the python client that calls the predict API
 
@@ -129,7 +131,7 @@ kubectl get pods
 kubectl logs <pod_id> -c <container_id>
 ```{{execute}}
 
-- Start a terminal (bash) inside a container and execute commands directly there (look at the code etc...)
+- Start a terminal (bash) inside a container to execute commands directly in there
 
 ```
 kubectl exec -it <pod_id> --container <container_id> /bin/bash
