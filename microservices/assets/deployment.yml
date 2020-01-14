@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: train-app
-        image: demo_train
+        image: train_image
         imagePullPolicy: Never
         ports:
         - containerPort: 80
@@ -19,10 +19,10 @@ spec:
         - name: models
           mountPath: "/etc/models"
       - name: predict-app
-        image: demo_predict
+        image: predict_image
         imagePullPolicy: Never
         ports:
-        - containerPort: 80
+        - containerPort: 8083
         volumeMounts:
         - name: models
           mountPath: "/etc/models"

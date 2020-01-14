@@ -23,12 +23,6 @@ ls
 docker build -t train_image .
 ```{{execute}}
 
-- Run train container, in order to save your model
-
-```
-docker run -d --name train_container train_image
-```{{execute}}
-
 - Modify the Dockerfile located in the demo_predict folder and make it look like this:
 
 ```
@@ -55,13 +49,49 @@ cd demo_predict
 docker build -t predict_image .
 ```{{execute}}
 
-- Run predict container, to make your model available for predictions
+- Edit the deployment.yml file and make it look like this:
 
 ```
-docker run -d -p 80:80 --name predict_container predict_image
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ml-app
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ml-app
+    spec:
+      containers:
+      - name: train-app
+        image: train_image
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: models
+          mountPath: "/etc/models"
+      - name: predict-app
+        image: predict_image
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8083
+        volumeMounts:
+        - name: models
+          mountPath: "/etc/models"
+      volumes:
+      - name: models
+```{{copy}}
+
+- Locate into the /root folder and deploy the application using Kubernetes and the deployment.yml file:
+
+```
+cd ..
+kubectl create -f deployment.yml
 ```{{execute}}
 
-- Investigate and have a look to the pod just created.
+- Investigate and have a look at the pod just created.
 
 ```
 kubectl describe pods
@@ -69,7 +99,7 @@ kubectl describe pods
 
 - Edit the script "client.py" and fill the function with the right ip address of your pod.
 
-- Run the python function that calls the predict api
+- Run the python client that calls the predict API
 
 ```
 python3 client.py
