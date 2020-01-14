@@ -45,6 +45,7 @@ CMD ["python", "main.py"]
 - Locate into the demo_predict folder and build also the image for the prediction app.
 
 ```
+cd ..
 cd demo_predict
 docker build -t predict_image .
 ```{{execute}}
@@ -120,12 +121,18 @@ docker images ps -a
 kubectl get pods
 ```{{execute}}
 
+- Get information about the status of existing pods:
+
+```
+kubectl describe pods
+```{{execute}}
+
 - Print logs of a container (see what's happening inside)
 
   *note that the following commands won't work! You have to provide the correct pod_id and container_id that exist in your environment. You should know how to list them ;)*
 
-```
-kubectl logs <pod_id> <container_id>
+````
+kubectl logs <pod_id> -c <container_id>
 ```{{execute}}
 
 - Start a terminal (bash) inside a container and execute commands directly there (look at the code etc...)
