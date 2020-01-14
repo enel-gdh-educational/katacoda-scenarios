@@ -3,7 +3,7 @@ import logging
 
 from flask import Flask, request, Response
 
-from src.model import PredictModel
+from model import PredictModel
 
 handlers = [logging.StreamHandler()]
 logging.basicConfig(handlers=handlers, format='%(levelname)s:%(message)s', level=logging.INFO)
@@ -25,4 +25,4 @@ def predict():
 
 
 if __name__ == '__main__':
-    app.run(port=80, debug=True, host='0.0.0.0')
+    app.run(port=8083, debug=True, host='0.0.0.0')
