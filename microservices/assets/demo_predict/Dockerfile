@@ -10,5 +10,5 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y git
 WORKDIR /usr/src/app
 COPY ./ ./
 RUN pip install --trusted-host pypi.python.org --trusted-host pypi.org --trusted-host files.pythonhosted.org -r requirements.txt
-EXPOSE 80
+EXPOSE 8083
 CMD ["python", "main.py"]
