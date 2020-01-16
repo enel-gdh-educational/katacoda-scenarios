@@ -51,7 +51,7 @@ docker build -t predict_image .
 - Edit the deployment.yml file and make it look like this:
 
 ```
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ml-app
