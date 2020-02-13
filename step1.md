@@ -23,3 +23,8 @@ You should see the output
 admin   (empty)
 local   0.078GB
 ```
+
+To exit use the command
+```javascript
+> quit()
+``` 
