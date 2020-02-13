@@ -30,18 +30,17 @@
       "host01": [
         {
           "file": "loader.py",
-          "target": "~/",
+          "target": "/root",
           "chmod": "+x"
         },
         {
           "file": "loader.sh",
-          "target": "~/",
+          "target": "/root",
           "chmod": "+x"
         },
         {
           "file": "airbnb.json",
-          "target": "~/",
-          "chmod": "+x"
+          "target": "/root"
         }
       ]
     },
