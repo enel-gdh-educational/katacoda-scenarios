@@ -37,12 +37,12 @@
     "host01": [
       {
         "file": "loader.py",
-        "target": "~/",
+        "target": "/usr/local/bin/",
         "chmod": "+x"
       },
       {
         "file": "loader.sh",
-        "target": "~/",
+        "target": "/usr/local/bin/",
         "chmod": "+x"
       }
     ]
