@@ -4,8 +4,7 @@ In this scenario you will learn how to use
 
 Here we run the code in a docker container.
 You should have already installed an instance
-of `MongoDB`. In the command line just type
-`mongo` to launch the console.
+of `MongoDB`. 
 
 We already uploaded few dataset to play with.
 To show what is contained in the environment

@@ -6,8 +6,24 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Pathway Files",
+        "title": "Step 1 - Installation",
         "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Create a collection",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Fun with data",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Join",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5 - Using pymongo",
+        "text": "step5.md"
       }
     ],
     "intro": {
