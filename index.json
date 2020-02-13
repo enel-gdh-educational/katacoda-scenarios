@@ -37,10 +37,6 @@
           "file": "loader.sh",
           "target": "/root/",
           "chmod": "+x"
-        },
-        {
-          "file": "airbnb.json",
-          "target": "/root/"
         }
       ]
     },
