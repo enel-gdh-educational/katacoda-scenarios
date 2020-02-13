@@ -37,6 +37,11 @@
           "file": "loader.sh",
           "target": "~/",
           "chmod": "+x"
+        },
+        {
+          "file": "airbnb.json",
+          "target": "~/",
+          "chmod": "+x"
         }
       ]
     },
