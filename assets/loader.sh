@@ -5,5 +5,6 @@ svn checkout https://github.com/huynhsamha/quick-mongo-atlas-datasets/trunk/dump
 
 svn checkout https://github.com/huynhsamha/quick-mongo-atlas-datasets/trunk/dump/sample_mflix
 
+
 pip3 install pymongo
-python3 loader.py
+# python3 loader.py
