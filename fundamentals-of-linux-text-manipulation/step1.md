@@ -1,12 +1,4 @@
 
-Which is the most frequently used word in Dante Alighieri's "Divina Commedia"?
-Can you guess are the five most distinctive words in the "Inferno" section? And which are the
-five most distinctive words in "Paradiso"?
-
-In this Demo we will work with a text file and we will use common text manipulation tools
-to modify and extract information from a text file.
-
------------
 
 #### A) Download web page
 
