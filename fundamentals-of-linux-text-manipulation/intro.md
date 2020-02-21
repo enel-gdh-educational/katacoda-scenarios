@@ -1,12 +1,10 @@
 
-#### GOAL OF THE COURSE
+## GOAL OF THE COURSE
 
-The goal of this course is to present the most common Unix
-text manipulation commands  (work in progress)
+The goal of this course is to show how to use the most common Unix
+text manipulation commands  (work in progress!).
 
-
-
-#### INTRO
+---------
 
 Which is the most frequently used word in Dante Alighieri's "Divina Commedia"?
 
