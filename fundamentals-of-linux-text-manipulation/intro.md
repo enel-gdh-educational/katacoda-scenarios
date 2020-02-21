@@ -6,11 +6,13 @@ text manipulation commands  (work in progress!).
 
 ---------
 
-Which is the most frequently used word in Dante Alighieri's "Divina Commedia"?
+How many words are in Dante Alighieri's "Divina Commedia"?
+
+Which is the most frequently used word?
 
 And can you guess are the 5 most distinctive words in the "Inferno" section? 
 
-And which are the 5 most distinctive words in "Paradiso" section?
+And what about "Paradiso" section?
 
 Throughrout this course we will handle a text file and we will use common text manipulation tools
 to modify and extract information from a text file.

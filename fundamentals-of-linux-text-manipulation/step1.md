@@ -4,7 +4,8 @@
 
 First of all we need to download a plain text file of the book,
 for example from the url http://www.hoepliscuola.it/download/2842/la-divina-commedia-txt.
-We can specify the name of the output file using the -O flag
+
+Specify the name of the output file using the -O flag
 
 ```
 wget http://www.hoepliscuola.it/download/2842/la-divina-commedia-txt{{execute}} -O divina_commedia.txt
@@ -21,7 +22,7 @@ The download may take few seconds depending on the internet connection.
 
 #### B) Have a look at text using more and less command
 
-Hint: use the **more** or **less** commands.
+<u>Hint:</u> use the **more** or **less** commands.
 
 In order to navigate through the file line by line press Enter key or press 
 Spacebar key to navigate one page at a time, the page being your current terminal screen size. 

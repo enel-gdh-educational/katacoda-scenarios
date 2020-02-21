@@ -1,8 +1,8 @@
 #### A) Which line does the Inferno section starts? And what about Purgatorio and Paradiso sections?
 
-Hint 1: Each section stats with the name of the section in upper case
+<u>Hint 1:</u> Each section stats with the name of the section in upper case
 
-Hint 2: use **grep -n** to identify the line number where 'INFERNO', 'PURGATORIO' and 'PARADISO' words occur
+<u>Hint 2:</u> use **grep -n** to identify the line number where 'INFERNO', 'PURGATORIO' and 'PARADISO' words occur
 
 
 #### B) Split the Divina Commedia in 3 text files containing each of the 3 sections
