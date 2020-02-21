@@ -1,0 +1,48 @@
+{
+  "title": "Tech Talk 1: Introduction to Linux",
+  "description": "The goal of this course is to present the most common Unix\ntext manipulation commands ",
+  "difficulty": "Beginner",
+  "time": "45 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1: Set-up - less and more command",
+        "text": "step1.md",
+		"answer": "step1-answer.md"
+      },
+      {
+        "title": "Step 2: wc, head, tail and sed commands",
+        "text": "step2.md",
+		"answer": "step2-answer.md"
+      },
+      {
+        "title": "Step 3: Cut, tr and grep commands",
+        "text": "step3.md",
+		"answer": "step3-answer.md"
+      },
+      {
+        "title": "Step 4: Sort and uniq commands",
+        "text": "step4.md",
+		"answer": "step4-answer.md"
+      },
+      {
+        "title": "Step 5: Join and paste commands",
+        "text": "step5.md",
+		"answer": "step5-answer.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+	"uimessage1": "\u001b[32_Your Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu1804"
+  }
+}
