@@ -1,11 +1,7 @@
-#### A) Which line does the Inferno section starts? And what about Purgatorio and Paradiso sections?
 
-<u>Hint 1:</u> Each section stats with the name of the section in upper case
+## Head, tail, sed
 
-<u>Hint 2:</u> use **grep -n** to identify the line number where 'INFERNO', 'PURGATORIO' and 'PARADISO' words occur
-
-
-#### B) Split the Divina Commedia in 3 text files containing each of the 3 sections
+#### A) Split the Divina Commedia in 3 text files containing each of the 3 sections
 
 Split the text in 3 files such that:
 - the first file named 'sect_inferno.txt' starts from the first line of divina_commedia.txt and end ends with the last word of the INFERNO section
@@ -25,6 +21,7 @@ sed -n start_line,end_line p  file_input{{execute}}
 - The second command reads all lines from file_input starting from num_line on and writes them to the standard output 
 - The third command reads the lines between start_line and end_line from file_input and writes them to the standard output 
 
-#### C) Count the number of words in each of the 3 sections
+#### B) Count the number of words in each of the 3 sections
 
+Hint: use the wc command
 

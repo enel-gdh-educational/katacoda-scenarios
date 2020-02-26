@@ -2,17 +2,15 @@
 ## GOAL OF THE COURSE
 
 The goal of this course is to show how to use the most common Unix
-text manipulation commands  (work in progress!).
+text manipulation commands.
 
 ---------
 
 How many words are in Dante Alighieri's "Divina Commedia"?
 
-Which is the most frequently used word?
+Can you guess which is the most frequently used word in the poem?
 
-And can you guess are the 5 most distinctive words in the "Inferno" section? 
+Which are the 5 most distinctive words in the "Inferno" section? And what about "Paradiso"?
 
-And what about "Paradiso" section?
-
-Throughrout this course we will handle a text file and we will use common text manipulation tools
-to modify and extract information from a text file.
+Throughrout this course you will handle a text file and you will use common text manipulation tools
+to modify and extract information out from it.

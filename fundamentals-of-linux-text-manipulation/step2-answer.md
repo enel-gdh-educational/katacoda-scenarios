@@ -16,3 +16,11 @@ grep [xw] divina_commedia.txt
 grep Beatrice divina_commedia.txt | wc -l
 ```
 
+#### D)
+
+```
+grep INFERNO divina_commedia.txt -n 
+grep PURGATORIO divina_commedia.txt -n 
+grep PARADISO divina_commedia.txt -n  
+```
+

@@ -1,6 +1,6 @@
 
 
-#### A) Download web page
+#### A) Download a web page
 
 First of all we need to download a plain text file of the book,
 for example from the url http://www.hoepliscuola.it/download/2842/la-divina-commedia-txt.
@@ -18,11 +18,10 @@ wget http://www.hoepliscuola.it/download/2842/la-divina-commedia-txt{{execute}} 
 
 The download may take few seconds depending on the internet connection.
 
------------
 
-#### B) Have a look at text using more and less command
+#### B) Have a first look at the text
 
-<u>Hint:</u> use the **more** or **less** commands.
+<u>Hint:</u> use the **more**, **less** or **cat** commands.
 
 In order to navigate through the file line by line press Enter key or press 
 Spacebar key to navigate one page at a time, the page being your current terminal screen size. 
@@ -42,9 +41,16 @@ as illustrated below:
 more +3000 divina_commedia.txt
 ```
 
+**Tip:** To have further information about any command and to display the user manual    you can run on the terminal
+
+```
+man command
+```
 
 
-What do you notice?
+
+
+What do you notice going through the text file?
 
 -----------
 
