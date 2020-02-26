@@ -1,4 +1,4 @@
-## The wc and grep commands
+## Learn how to use wc and grep commands
 
 #### A) Count the number of words in Divina Commedia
 
@@ -15,6 +15,8 @@ Notice that you can get all the 3 counts without specifying any argument besides
 wc filename{{execute}}
 ```
 
+-----------
+
 #### B) Are there words containing letter 'x'? And what about letter 'w'?
 
 <u>Hint:</u> use grep to retrieve all lines containing the desired pattern:
@@ -29,6 +31,8 @@ grep -v mystring filename{{execute}}
 - the second will also print the line number;
 - the third one will print all lines **not** containing the pattern.
 
+----------------
+
 #### C) How many times is Beatrice mentioned through Divina Commedia? 
 
 <u>Hint:</u> use grep command piped with wc command
@@ -40,6 +44,8 @@ command1 | command2 {{execute}}
 ```
 
 will execute command1, and then redirect its output as input of command2.
+
+--------------
 
 #### D) At which line does the Inferno section starts? And what about Purgatorio? and Paradiso?
 

@@ -1,10 +1,16 @@
-## join, awk, paste
+## Learn how to use join, awk and paste
 
-#### A) Sort the words longer than 5 letters according to their occurrencies
+------------
+
+#### A) Sort the words longer than 5 letters according to their occurrencies, having the most frequent words at the top of the file
 
 <u>Hint:</u> use **sort -k -nr**
 
+------------
+
 #### B) List the 10 most common words from Inferno and Paradiso
+
+-------------
 
 #### C) Create a table with words appearing both in Inferno and Paradiso, listing the occurrencies in the two sections 
 
@@ -19,6 +25,8 @@ join  -1 field1 -2 field2  file1 file2{{execute}}
  in each file by which the files are compared (default would be first field)
 
 <u>Hint:</u>  sort files alphabetically before joining them.
+
+-------------
 
 #### D) Compute a 'paradisiac' score based on their occurrencies and add it as a new column
 
@@ -44,7 +52,9 @@ scans each input file line and print the sum of second field plus third field;
 capture control before the first input line is read and after the last.
 The -F option is used to separate fields.
 
-#### E) Merge
+------------
+
+#### E) Concatenate two files by lines
 
 <u>Hint:</u> Use **paste**
 
@@ -54,6 +64,8 @@ paste fileA fileB{{execute}}
 
 The paste command concatenates the corresponding lines of the given input files
 and writes the resulting lines to standard   output.
+
+-------------
 
 #### F) Sort words based on the 'paradisiac' score 
 

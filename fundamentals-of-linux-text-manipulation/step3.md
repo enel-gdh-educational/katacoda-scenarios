@@ -1,5 +1,5 @@
 
-## Head, tail, sed
+## Learn how to use head, tail, sed
 
 #### A) Split the Divina Commedia in 3 text files containing each of the 3 sections
 
@@ -20,6 +20,8 @@ sed -n start_line,end_line p  file_input{{execute}}
 - The first command reads the first num_line lines from filename and writes them to the standard output 
 - The second command reads all lines from file_input starting from num_line on and writes them to the standard output 
 - The third command reads the lines between start_line and end_line from file_input and writes them to the standard output 
+
+-----------
 
 #### B) Count the number of words in each of the 3 sections
 

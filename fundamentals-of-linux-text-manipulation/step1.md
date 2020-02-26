@@ -1,11 +1,12 @@
+## Learn how to use more, less and cat commands
 
+----------
 
 #### A) Download a web page
 
 First of all we need to download a plain text file of the book,
 for example from the url http://www.hoepliscuola.it/download/2842/la-divina-commedia-txt.
 
-Specify the name of the output file using the -O flag
 
 ```
 wget http://www.hoepliscuola.it/download/2842/la-divina-commedia-txt{{execute}} -O divina_commedia.txt
@@ -18,6 +19,7 @@ wget http://www.hoepliscuola.it/download/2842/la-divina-commedia-txt{{execute}} 
 
 The download may take few seconds depending on the internet connection.
 
+-----------
 
 #### B) Have a first look at the text
 
@@ -41,7 +43,8 @@ as illustrated below:
 more +3000 divina_commedia.txt
 ```
 
-**Tip:** To have further information about any command and to display the user manual    you can run on the terminal
+**Tip:** To have further information about any command and to 
+display the user manual    you can run on the terminal
 
 ```
 man command

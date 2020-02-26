@@ -1,11 +1,13 @@
-## tr, sort and uniq
+## Learn how to use tr, sort and uniq
+
+-----------
 
 #### A) For each section, create a new file containing one word per line
 	
 Substitute spaces and punctuations marks with the new line symbol, 
 so that there is no punctuation and there is at most one word per line.
 
-<u>Hint:</u> use tr
+<u>Hint:</u> use **tr**
 
 The tr utility copies the standard input to the standard output with 
 substitution or deletion of selected characters:
@@ -22,14 +24,17 @@ tr "[:punct:]" "[:space:]" < file_input{{execute}}
 - the third command replaces all lower letters with capital letters
 - the forth command replaces all punctuations with empty spaces
 
+-----------
 
 #### B) Remove the word shorter than 5 letters
 
-<u>Hint:</u> use grep -v
+<u>Hint:</u> use **grep -v**
+
+--------
 
 #### C) Sort words
 
-<u>Hint:</u> use sort and uniq
+<u>Hint:</u> use **sort**
 
 The sort utility sorts text and binary files by lines
 
@@ -47,17 +52,16 @@ sort -R
 - the forth command sorts in reverse order 
 - the fifth command sorts in random order
 
-
+------------
 
 #### D) Remove duplicated words and count the number of occurrences of each word
 
-<u>Hint:</u> use uniq combined with sort
+<u>Hint:</u> use **uniq** (combined with **sort**)
 
 
 ```
 uniq file_input{{execute}} 
 uniq -c file_input{{execute}} 
-sort uniq file_input{{execute}} 
 ```
 
 - the first command reads the specified input_file comparing adjacent lines, 
