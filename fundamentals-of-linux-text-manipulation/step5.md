@@ -1,7 +1,9 @@
 
 ------------
 
-#### A) Sort the words longer than 5 letters according to their occurrencies, having the most frequent words at the top of the file
+#### A) Sort the words longer than 5 letters according to their occurrencies,
+ 
+Sort them in decresing frequency order (having the most frequent words at the top of the file)
 
 <u>Hint:</u> use **sort -k -nr**
 
@@ -9,9 +11,13 @@
 
 #### B) List the 10 most common words from Inferno and Paradiso
 
+<u>Hint:</u> use **head**
+
 -------------
 
-#### C) Create a table with words appearing both in Inferno and Paradiso, listing the occurrencies in the two sections 
+#### C) Create a file with words appearing both in Inferno and Paradiso 
+
+For each word list the occurrencies in the two sections 
 
 <u>Hint:</u> Use **join** command 
 
@@ -27,9 +33,13 @@ join  -1 field1 -2 field2  file1 file2{{execute}}
 
 -------------
 
-#### D) Compute a 'paradisiac' score based on their occurrencies and add it as a new column
+#### D) Compute a 'paradisiac' score 
 
-Compute a *'paradisiac' score* for word x as: 
+
+
+Compute a *'paradisiac' score* based on their occurrencies.
+
+Define the *'paradisiac' score* score for word x as: 
 
 
  score(x) = (x<sub>p</sub>-x<sub>i</sub>)/(x<sub>p</sub>+x<sub>i</sub>)

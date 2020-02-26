@@ -24,5 +24,5 @@ sed -n start_line,end_line p  file_input{{execute}}
 
 #### B) Count the number of words in each of the 3 sections
 
-Hint: use the wc command
+Hint: use the **wc** command
 
