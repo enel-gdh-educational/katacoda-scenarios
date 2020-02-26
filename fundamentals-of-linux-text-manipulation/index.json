@@ -21,7 +21,7 @@
 		"answer": "step3-answer.md"
       },
       {
-        "title": "Step 4: learn how to use sort and uniq commands",
+        "title": "Step 4: learn how to use tr, sort and uniq commands",
         "text": "step4.md",
 		"answer": "step4-answer.md"
       },
