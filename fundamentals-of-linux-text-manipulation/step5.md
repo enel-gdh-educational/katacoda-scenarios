@@ -1,4 +1,3 @@
-## Learn how to use join, awk and paste
 
 ------------
 

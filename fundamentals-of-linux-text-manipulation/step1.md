@@ -1,4 +1,3 @@
-## Learn how to use more, less and cat commands
 
 ----------
 

@@ -1,5 +1,4 @@
 
-## Learn how to use head, tail, sed
 
 #### A) Split the Divina Commedia in 3 text files containing each of the 3 sections
 

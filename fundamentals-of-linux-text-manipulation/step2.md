@@ -1,4 +1,3 @@
-## Learn how to use wc and grep commands
 
 #### A) Count the number of words in Divina Commedia
 

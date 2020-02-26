@@ -6,27 +6,27 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1: Set-up - less and more command",
+        "title": "Step 1: Set-up - learn how to use more, less and cat command",
         "text": "step1.md",
 		"answer": "step1-answer.md"
       },
       {
-        "title": "Step 2: wc, head, tail and sed commands",
+        "title": "Step 2: learn how to use wc and grep commands",
         "text": "step2.md",
 		"answer": "step2-answer.md"
       },
       {
-        "title": "Step 3: Cut, tr and grep commands",
+        "title": "Step 3: learn how to use head, tail and sed commands",
         "text": "step3.md",
 		"answer": "step3-answer.md"
       },
       {
-        "title": "Step 4: Sort and uniq commands",
+        "title": "Step 4: learn how to use sort and uniq commands",
         "text": "step4.md",
 		"answer": "step4-answer.md"
       },
       {
-        "title": "Step 5: Join and paste commands",
+        "title": "Step 5: learn how to use join, awk paste commands",
         "text": "step5.md",
 		"answer": "step5-answer.md"
       }
