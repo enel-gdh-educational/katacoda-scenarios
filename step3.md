@@ -11,11 +11,12 @@ $ loader.sh
 The script also installed the `python` package `pymongo` that
 we used later in the class.
 
-We need to use the new database, called *airbnb*.
+We need to use the new database, called *airbnb*. 
+To get the collections you can use the command [show collections](https://docs.mongodb.com/manual/release-notes/4.0-compatibility/#compat-show-collections).
 As a first step let's count the number of items
 ```javascript
 > use airbnb
-> db.sample_data.count()
+> db.listingsAndReviews.count()
 ```
 You should get 100. This means that one hundred records are
 stored in this collection.
@@ -30,7 +31,7 @@ We want to select data
 
 
 
-1. `db.sample_data.find({"bedrooms": 2})`
-2. `db.sample_data.find({"bedrooms": 2, "price": {"$lt": 100}})`
-3. `db.sample_data.find({"address.market": "New York"})`
-4. `db.sample_data.find({"address.market": {"$in": ["New York", "Los Angeles"]}})`
+1. `db.listingsAndReviews.find({"bedrooms": 2})`
+2. `db.listingsAndReviews.find({"bedrooms": 2, "price": {"$lt": 100}})`
+3. `db.listingsAndReviews.find({"address.market": "New York"})`
+4. `db.listingsAndReviews.find({"address.market": {"$in": ["New York", "Los Angeles"]}})`
