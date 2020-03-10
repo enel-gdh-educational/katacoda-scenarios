@@ -22,7 +22,25 @@ To establish a connection with the database you should
 use the following instruction
 ```python
 >>> client = MongoClient('localhost', 27017)
->>> mflix = client["mflix"]
+>>> orders = client["orders"]
 ```
 Notice that for an enterprise solution you should provide
 additional information in the connection.
+
+Now the object `orders` represents the MongoDB `db` object.
+To access to a collection you should use the same
+syntax as the db.
+```python
+>>> customers = orders["customers"]
+```
+
+Now the `customers`object is a representation of 
+the collection stored in the database.
+The overall syntax is quite similar to those of
+the shell one. Notice that the `find` method
+return a cursor instead of the result. This is
+useful for large samples.
+```python
+cursor = customers.find()
+data = list(cursor)
+```
