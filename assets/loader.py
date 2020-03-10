@@ -20,7 +20,7 @@ def load_orders():
     customers = orders["customers"]
 
     with open('customers.csv') as csvfile:
-        customers_data = csv.DictReader(csvfile)
+        customers_data = list(csv.DictReader(csvfile))
 
     _ = customers.insert_many(customers_data)
 
@@ -28,7 +28,7 @@ def load_orders():
     items_ordered = orders["items_ordered"]
 
     with open('items_ordered.csv') as csvfile:
-        items_ordered_data = csv.DictReader(csvfile)
+        items_ordered_data = list(csv.DictReader(csvfile))
 
     _ = items_ordered.insert_many(items_ordered_data)
 
