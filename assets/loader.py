@@ -6,6 +6,7 @@ loader.py
 A minimal code to store data in MongoDB
 """
 import json
+from datetime import datetime
 from pymongo import MongoClient
 
 
@@ -18,6 +19,10 @@ def main():
     with open("airbnb.json", "r") as f_in:
         data = json.loads(f_in)
 
+    for d in data:
+        for key, val in d.items():
+            if key == "date":
+                d[key] = datetime.fromtimestamp(val["$date"]/1000)
     ids = sample_data.insert_many(data)
     assert len(ids) > 0
 

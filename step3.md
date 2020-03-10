@@ -6,7 +6,7 @@ for further details.
 The data can be stored in MongoDB running the
 following script. 
 ```bash
-$ loader.sh
+$ bash loader.sh
 ```
 The script also installed the `python` package `pymongo` that
 we used later in the class.
