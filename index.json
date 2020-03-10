@@ -37,6 +37,11 @@
           "file": "loader.sh",
           "target": "/root/",
           "chmod": "+x"
+        },
+        {
+          "file": "installer.sh",
+          "target": "/root/",
+          "chmod": "+x"
         }
       ]
     },

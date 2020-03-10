@@ -37,4 +37,5 @@ In this example we perform a join on the `customerid`
 ```
 
 Tricky enough? 
+
 Suppose you want to select only fields where
