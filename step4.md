@@ -21,21 +21,38 @@ whole structure.
 Once you are confident on the structure it is time
 to perform a *join* among two collections. This operation
 is called [aggregation](https://docs.mongodb.com/manual/reference/operator/aggregation/lookup/).
+To flatten the risultant array we perform the 
+so-called [unwind](https://docs.mongodb.com/manual/reference/operator/aggregation/unwind/)
+manipulation.
 
 In this example we perform a join on the `customerid`
 ```javascript
 > db.item_ordered.aggregate([
+    // first stage in the pipe
     {
         $lookup: {
             from: "customers",
-            localField: "custumerid",
+            localField: "customerid",
             foreignField: "customerid",
-            as: "R"
+            as: "joined"
+        }
      },
-    {"$unwind": "R"}   
+    // second stage in the pipe
+    {
+        $unwind: "$joined"
+    }   
 ])
 ```
 
 Tricky enough? 
 
-Suppose you want to select only fields where
+Suppose you want to select item for fields where the state
+of the customer is Colorado, can you do this?
+
+In SQL the query should look like
+```postgres-psql
+SELECT item_ordered.item 
+FROM customer, item_ordered
+WHERE customer.customerid = item_ordered.customerid
+AND customer.state = 'Colorado'
+```
