@@ -7,9 +7,9 @@ used languages.
 
 In the following we use the [pymongo](https://api.mongodb.com/python/current/) driver.
 
-Open a `python3` terminal using the following command
+Open a `python3`, or even better an `ipython`, terminal terminal using the following command
 ```bash
-$ python3
+$ ipython
 ```
 
 You should have already installed the driver. Check that

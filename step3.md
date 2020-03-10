@@ -16,9 +16,9 @@ To get the collections you can use the command [show collections](https://docs.m
 As a first step let's count the number of items
 ```javascript
 > use airbnb
-> db.listingsAndReviews.count()
+> db.sample_data.count()
 ```
-You should get 100. This means that one hundred records are
+You should get 27. This means that one hundred records are
 stored in this collection.
 
 
@@ -31,7 +31,7 @@ We want to select data
 
 
 
-1. `db.listingsAndReviews.find({"bedrooms": 2})`
-2. `db.listingsAndReviews.find({"bedrooms": 2, "price": {"$lt": 100}})`
-3. `db.listingsAndReviews.find({"address.market": "New York"})`
-4. `db.listingsAndReviews.find({"address.market": {"$in": ["New York", "Los Angeles"]}})`
+1. `db.sample_data.find({"bedrooms": 2})`
+2. `db.sample_data.find({"bedrooms": 2, "price": {"$lt": "100"}})`
+3. `db.sample_data.find({"address.market": "New York"})`
+4. `db.sample_data.find({"address.market": {"$in": ["New York", "Los Angeles"]}})`
