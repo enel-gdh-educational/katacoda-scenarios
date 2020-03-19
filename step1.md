@@ -9,10 +9,11 @@ bash installer.sh
 It may require few time to be completed. This
 script is just a collection of instruction
 reported [here](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/).
+To show the content use for instance `cat installer.sh`.
 
 At the end of the installation you should be
-able to open the command line interface.
-In the command line just type
+able to open the command line interface (cli).
+In the terminal just type
 `mongo` to launch the console.
 
 To show what is contained in the environment
@@ -20,10 +21,11 @@ use the following command
 ```javascript
 > show dbs
 ``` 
-You should see the output
+You should see the following output
 ```
-admin   (empty)
-local   0.078GB
+admin   0.000GB
+config  0.000GB
+local   0.000GB
 ```
 
 To exit use the command

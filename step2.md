@@ -1,19 +1,23 @@
 # Create a collection
 We want to create our first database and collections.
-In a single database can be contained one or
-more collections.
+A single database can contains one or
+more collections. Collections are list of documents,
+where a document is the item stored in mongo.
 
 The aim of this step is to create a collection
-in a new db called *users* with your id and your name. 
+in a new db called *users* with your id `<ID>` and 
+your name  `<NAME>`. 
 In the mongo cli use the following command
 ```javascript
 > use users
 ```
-With the `use` statement a new db is created.
+With the `use` statement a new database is created.
 Now if you type `db` (which give us the current
 database) you should get `users`. 
-Now we are able to insert a new collection, let's call
-it *people*. To insert a document use the following command 
+We are ready to insert a new collection, let's call
+it *people*. 
+Once you insert the first document the colletion is created.
+To insert a document use the following command 
 ```javascript
 > db.people.insert({"id": <ID>, "name": <NAME>})
 ```

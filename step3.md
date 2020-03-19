@@ -9,29 +9,24 @@ following script.
 $ bash loader.sh
 ```
 The script also installed the `python` package `pymongo` that
-we used later in the class.
+we will use later in the class.
 
-We need to use the new database, called *airbnb*. 
+We need to use the new database, called *airbnb*. To check that the databases
+are correctly loaded you can use the `show dbs` statement. 
+
+
 To get the collections you can use the command [show collections](https://docs.mongodb.com/manual/release-notes/4.0-compatibility/#compat-show-collections).
 As a first step let's count the number of items
 ```javascript
 > use airbnb
 > db.sample_data.count()
 ```
-You should get 27. This means that one hundred records are
-stored in this collection.
+You should get 27. 
 
-
-
-We want to select data 
-1. Select apartments where the number of bedrooms = 2
-2. Select apartments where the number of bedrooms = 2 and price is lower than 100
-3. Select apartments in New York
-4. Select apartments in New York and Los Angeles 
-
-
-
-1. `db.sample_data.find({"bedrooms": 2})`
-2. `db.sample_data.find({"bedrooms": 2, "price": {"$lt": "100"}})`
-3. `db.sample_data.find({"address.market": "New York"})`
-4. `db.sample_data.find({"address.market": {"$in": ["New York", "Los Angeles"]}})`
+In the following you should use the `find` command 
+to select documents. We want to select data based on
+the following criteria:
+1. select apartments where the number of bedrooms = 2;
+2. select apartments where the number of bedrooms = 2 and price is lower than 100;
+3. select apartments in New York;
+4. select apartments in New York and Los Angeles. 
