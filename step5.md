@@ -34,13 +34,21 @@ syntax as the db.
 >>> customers = orders["customers"]
 ```
 
-Now the `customers`object is a representation of 
+Now the `customers` object is a representation of 
 the collection stored in the database.
 The overall syntax is quite similar to those of
 the shell one. Notice that the `find` method
 return a cursor instead of the result. This is
 useful for large samples.
 ```python
-cursor = customers.find()
-data = list(cursor)
+>>> cursor = customers.find()
+>>> data = list(cursor)
 ```
+
+Use `print(data)` to show the content.
+
+As a simple test write a `python` code that select
+the data in the *airbnb* databases:
+1. select apartments where the number of bedrooms = 2 and city is New York or Chicago;
+2. select apartments where the number of bedrooms = 2 and price is lower than 99.
+ 
