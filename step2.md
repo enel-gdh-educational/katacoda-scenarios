@@ -27,7 +27,7 @@ for further details.
 You have to insert the following
 users:
 
-| id | Name     |  email | age |
+| id | name     |  email | age |
 |------|-----------------|---|---|
 | a0000001   | FS |  FS@email.com |   |   |
 | a9999999   | PG  | PG@email.com  |  15 |   |

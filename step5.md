@@ -49,6 +49,5 @@ Use `print(data)` to show the content.
 
 As a simple test write a `python` code that select
 the data in the *airbnb* databases:
-1. select apartments where the number of bedrooms = 2 and city is New York or Chicago;
+1. select apartments where the number of bedrooms is 2 or 3 and city is New York or Chicago;
 2. select apartments where the number of bedrooms = 2 and price is lower than 99.
- 
