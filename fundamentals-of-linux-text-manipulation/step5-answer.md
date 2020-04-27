@@ -15,7 +15,7 @@ join -1 2 -2 2 <(sort -k 2 inf_sorted.txt) <(sort -k 2 par_sorted.txt) | sort -n
 ```
 #### D)
 ```
-awk 'BEGIN {FS=" "} {print ($2-$3)/($2+$3)} END {}' joined.txt > paradisiac_score.txt
+awk -F " "  {print ($2-$3)/($2+$3)}  joined.txt > paradisiac_score.txt
 ```
 #### E)
 ```
@@ -27,7 +27,7 @@ paste
 You could achieve the same results of commands D+E with a slight modification of the awk command:
 
 ```
-awk 'BEGIN {FS=" "} {print $1; $2; $3; ($2-$3)/($2+$3)} END {}' joined.txt > paradisiac_score.txt
+awk -F " "  {print $1; $2; $3; ($2-$3)/($2+$3)} ' joined.txt > paradisiac_score.txt
 ```
 
 #### F)

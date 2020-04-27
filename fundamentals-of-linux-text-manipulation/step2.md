@@ -21,9 +21,9 @@ wc filename{{execute}}
 <u>Hint:</u> use grep to retrieve all lines containing the desired pattern:
 
 ```
-grep mystring filename{{execute}}
-grep -n mystring filename{{execute}}
-grep -v mystring filename{{execute}}
+grep mystring filename
+grep -n mystring filename
+grep -v mystring filename
 ```
 
 - the first command will print all lines containing the pattern 'mystring';
@@ -32,14 +32,14 @@ grep -v mystring filename{{execute}}
 
 ----------------
 
-#### C) How many times is Beatrice mentioned through Divina Commedia? 
+#### C) In how many lines is Beatrice mentioned through Divina Commedia? 
 
 <u>Hint:</u> use grep command piped with wc command
 
 A Unix pipe connects the STDOUT (standard output) file descriptor of the first process to the STDIN (standard input) of the second:
 
 ```
-command1 | command2 {{execute}}
+command1 | command2 
 ```
 
 will execute command1, and then redirect its output as input of command2.
