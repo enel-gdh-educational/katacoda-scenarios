@@ -1,7 +1,7 @@
 #### A)
 
 ```
-wc -w divina_commedia.txt{{execute}}
+wc -w divina_commedia.txt
 ```
 
 #### B)

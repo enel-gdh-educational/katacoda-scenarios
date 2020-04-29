@@ -7,16 +7,16 @@
 Substitute spaces and punctuations marks with the new line symbol, 
 so that there is no punctuation and there is at most one word per line.
 
-<u>Hint:</u> use **tr**
+<u>Hint:</u> use **tr** command and wildcards:
 
 The tr utility copies the standard input to the standard output with 
 substitution or deletion of selected characters:
 
 ```
-tr string1 string2 < file_input{{execute}} 
-tr -d string1 < file_input{{execute}} 
-tr "[:lower:]" "[:upper:]" < file_input{{execute}}
-tr "[:punct:]" "[:space:]" < file_input{{execute}}
+tr string1 string2 < file_input
+tr -d string1 < file_input
+tr "[:lower:]" "[:upper:]" < file_input
+tr "[:punct:]" "[:space:]" < file_input
 ```
 
 - the first command replaces all string1 in file_input with string2
@@ -39,9 +39,9 @@ tr "[:punct:]" "[:space:]" < file_input{{execute}}
 The sort utility sorts text and binary files by lines
 
 ```
-sort file_input{{execute}} 
-sort -n file_input{{execute}} 
-sort -k num file_input{{execute}}
+sort file_input
+sort -n file_input
+sort -k num file_input
 sort -r
 sort -R  
 ```
@@ -56,12 +56,16 @@ sort -R
 
 #### D) Remove duplicated words and count the number of occurrences of each word
 
+Create 3 files (one per section) such that the first column of each file contains 
+all distinct words longer than 5 letters appearing in the section and the second column contains the number of occurrencies of 
+the word in the section
+
 <u>Hint:</u> use **uniq** (combined with **sort**)
 
 
 ```
-uniq file_input{{execute}} 
-uniq -c file_input{{execute}} 
+uniq file_input 
+uniq -c file_input
 ```
 
 - the first command reads the specified input_file comparing adjacent lines, 

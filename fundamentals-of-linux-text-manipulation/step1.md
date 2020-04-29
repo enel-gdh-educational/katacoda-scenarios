@@ -8,7 +8,7 @@ for example from the url http://www.hoepliscuola.it/download/2842/la-divina-comm
 
 
 ```
-wget http://www.hoepliscuola.it/download/2842/la-divina-commedia-txt{{execute}} -O divina_commedia.txt
+wget http://www.hoepliscuola.it/download/2842/la-divina-commedia-txt -O divina_commedia.txt
 ```
 
 

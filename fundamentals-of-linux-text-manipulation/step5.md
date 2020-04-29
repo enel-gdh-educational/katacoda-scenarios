@@ -1,7 +1,7 @@
 
 ------------
 
-#### A) Sort the words longer than 5 letters according to their occurrencies,
+#### A) Sort the words according to their occurrencies,
  
 Sort them in decresing frequency order (having the most frequent words at the top of the file)
 
@@ -15,14 +15,14 @@ Sort them in decresing frequency order (having the most frequent words at the to
 
 -------------
 
-#### C) Create a file with words appearing both in Inferno and Paradiso 
+#### C) Create a file with all words longer than 5 letters appearing both in Inferno and Paradiso 
 
 For each word list the occurrencies in the two sections 
 
 <u>Hint:</u> Use **join** command 
 
 ```
-join  -1 field1 -2 field2  file1 file2{{execute}} 
+join  -1 field1 -2 field2  file1 file2
 ```
 
  This join command performs an equality join on file1 and file2 
@@ -37,7 +37,7 @@ join  -1 field1 -2 field2  file1 file2{{execute}}
 
 
 
-Compute a *'paradisiac' score* based on their occurrencies.
+Compute a *'paradisiac' score* for each word comparing its occurrency in Paradiso and Inferno.
 
 Define the *'paradisiac' score* score for word x as: 
 
@@ -53,13 +53,13 @@ Compute the *paradisiac* score for all words longer than 5 letters appearing bot
 <u>Hint:</u> Use **awk**. 
 
 ```
-awk -F " " 'BEGIN {} {print $2 + $3} END {}' file_input.txt{{execute}} 
+awk -F " " '{print $2 + $3} ' file_input.txt 
 ```
 This is an example of awk command which
 scans each input file line and print the sum of second field plus third field;
  special patterns BEGIN and END may be used to 
 capture control before the first input line is read and after the last.
-The -F option is used to separate fields.
+The -F option is used to define the field separator.
 
 ------------
 
@@ -68,7 +68,7 @@ The -F option is used to separate fields.
 <u>Hint:</u> Use **paste**
 
 ```
-paste fileA fileB{{execute}} 
+paste fileA fileB
 ``` 
 
 The paste command concatenates the corresponding lines of the given input files
@@ -76,7 +76,7 @@ and writes the resulting lines to standard   output.
 
 -------------
 
-#### F) Sort words based on the 'paradisiac' score 
+#### F) Sort words according to the 'paradisiac' score 
 
 Which are the 10 most 'paradisiac'? 
 

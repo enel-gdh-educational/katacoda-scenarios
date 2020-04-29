@@ -6,14 +6,9 @@ tr  ' ' '\n' < input.txt | tr '[:punct:]' '\n' > output.txt
 
 #### B)
 
-```
-grep -v
-```
-
-#### C)
 
 ```
-grep '.....' input.txt > output.txt
+grep -v '.....' input.txt > output.txt
 ```
 
 #### D)

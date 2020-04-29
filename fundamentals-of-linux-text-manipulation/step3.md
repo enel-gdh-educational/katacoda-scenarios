@@ -8,17 +8,17 @@ Split the text in 3 files such that:
 - the first file named 'sect_paradiso.txt' starts from the beginning of the PARADISO section and end ends with the last line of the divina_commedia.txt file
 
 
-Hint: use **head**, **tail** or **sed** to split the text:
+Hint: use **head**, **tail** or **sed** to split the text, and then redirection to an output file using the using the > operator:
 
 ```
-head -n num_line  file_input{{execute}} 
-tail -n num_line file_input{{execute}}
-sed -n start_line,end_line p  file_input{{execute}} 
+head -n num_line  file_input > file_output1
+tail -n +num_line file_input > file_output2
+sed -n start_line,end_line p  file_input > file_output3
 ```
 
-- The first command reads the first num_line lines from filename and writes them to the standard output 
-- The second command reads all lines from file_input starting from num_line on and writes them to the standard output 
-- The third command reads the lines between start_line and end_line from file_input and writes them to the standard output 
+- The first command reads the first num_line lines from filename and writes them to file_output1
+- The second command reads all lines from file_input starting from num_line on and writes them to file_output2 
+- The third command reads the lines between start_line and end_line from file_input and writes them to file_output3 
 
 -----------
 
