@@ -2,7 +2,7 @@
 
 Have you wondered how `apt` knows where to retrieve the package info? 
 
-Well, a list of default repositories is defined in the file `/etc/apt/sources.list` wich you can inspect as any text file (say, with `less`, `more` `head`, etc.).
+Well, a list of default repositories is defined in the file `/etc/apt/sources.list` which you can inspect as any text file (say, with `less`, `more` `head`, etc.).
 
 An entry looks like:
 
@@ -18,7 +18,7 @@ where:
 
 
 ---
-**Question**
+**Question 3**
 
 What is the difference between the repositories `main`, `universe`, and `multiverse` 
 
@@ -37,9 +37,9 @@ add-apt-repository "deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg mai
 ```
 
 ---
-**Question**
+**Question 4**
 
-In the previous command, do you recognize the fields defining a typical repository?
+What is the name of the repository that you have just added?
 
 ---
 
@@ -53,7 +53,7 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key a
 ```
 
 ---
-**Queestion (advanced)**
+**Question 5 (advanced)**
 
 Do you recognize what does each command do in the precious pipe?
 
@@ -75,7 +75,7 @@ apt install postgresql-12
 ```
 
 ---
-**Exercise 6**
+**Exercise 5**
 
 R is a popular scripting environment mostly suitable to statistics and data science. Install it on Ubuntu.
 

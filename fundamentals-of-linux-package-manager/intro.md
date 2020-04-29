@@ -1,29 +1,31 @@
-In this section we will familiarize with the tool that allow you to install pre-packaged software in the Linux command line. 
+In this section we will familiarize with the tools that allow you to install pre-packaged software in the Linux command line. 
 
 In Windows, to install an application you usually download an installer from the web and execute it.[^1]
 
 Alternatively, in the recent versions of Windows and Mac, you search for an application in the App Store and launch the installation.
     
-In the Linux command line you use a different tool to install software, which grants you a deeper control on what you are going to install (or remove).
+In the Linux command line, instead, you use a different tool to install software, which grants you a deeper control on what you are going to install (or remove).
 This tool is the package manager, which allows you to search for software packages, install, update, or remove them.
 
-Different Linux distributions may adopt different package managers, all providing the same functionalities. For instance, Red Hat and its derived distribution, Fedore, adopt ``yum``,
+Different Linux distributions may adopt different package managers, all providing the same functionalities.
+ For instance, Red Hat and its derived distribution, Fedora, adopt ``yum``,
  whereas Ubuntu adopts ``apt-get``, or its more recent and user-friendly wrapper, ``apt``.
  
-Since this class is based on Ubuntu, we will focus on the latter tool. 
+Since this course is based on Ubuntu, we will focus on the latter tool. 
 
-This tutorial aims at getting you acquainted with the basic usage of the Ubuntu package manager, but always trying to let you understand the basic idea behind the functioning of this tool,
-We believe that, this way, you can progress in learning in a faster and more confident manner.
+This tutorial aims at getting you acquainted with the basic usage of the Ubuntu package manager, always trying to let you understand the basic ideas behind the functioning of this tool.
+We believe that, this way, you can progress in learning faster and more confidently.
 
-Anyway, for the impatients. In order to install a software from the Ubuntu command line, say curl---a client to send request to URLs and transfer data. The one-line command is
+Anyway, if you are impatient, in order to install a software from the Ubuntu command line, say curl---a client to send request to URLs and transfer data---the one-line command is
 
 ```bash
 apt install curl
 ``` 
 
-If you've paid attention to the output, you would have probably figured out that installing a package with apt is in fact an articulated task that goes through many intermediate steps.
+If you've paid attention to the output, you will have probably figured out that installing a package with apt is
+ an articulated task that goes through multiple intermediate steps.
 
-Interested to know more? Then jump to the next step! 
+Interested in knowing more? Then jump to the next steps! 
 
 Oh, before I forget, we encourage you to ignite a discussion with the instructors about any aspect of this topic that you might want to discover in more depth.
 
