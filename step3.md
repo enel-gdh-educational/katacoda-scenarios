@@ -4,7 +4,7 @@ Here we use a sample of data from AirBnB, see this [link](http://insideairbnb.co
 for further details.
 
 The data can be stored in MongoDB running the
-following script. 
+following bash script 
 ```bash
 $ bash loader.sh
 ```
@@ -27,6 +27,6 @@ In the following you should use the `find` command
 to select documents. We want to select data based on
 the following criteria:
 1. select apartments where the number of bedrooms = 2;
-2. select apartments where the number of bedrooms = 2 and price is lower than 100;
+2. select apartments where the number of bedrooms = 2 and price is lower than 800;
 3. select apartments in New York;
 4. select apartments in New York and Los Angeles. 

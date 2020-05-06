@@ -1,5 +1,5 @@
 ```
-> db.item_ordered.aggregate([
+db.item_ordered.aggregate([
     {
         $lookup: {
             from: "customers",

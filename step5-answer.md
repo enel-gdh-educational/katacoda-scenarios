@@ -8,8 +8,8 @@ airbnb = client["airbnb"]
 sample = airbnb["sample_data"]
 
 cursor = sample.find({
-    "bedrooms": {"$in": ["2", "3"]}, 
-    "price": {"$lt": "99"}
+    "bedrooms": {"$in": [2, 3]}, 
+    "price": {"$lt": "800"}
 })
 
 first_question = list(cursor)
