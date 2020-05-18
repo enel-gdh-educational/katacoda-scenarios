@@ -81,7 +81,7 @@ The second and third column are, respectively, the user and the group owning the
  In katacoda there is only the `root` user and `root` group by default. 
 
 The 4th column is the size in bytes of the file.
-This is not very readable, isn't it?. Add the flag `-h` (`ls -lah`) to print a human readable file size.
+This is not very readable, is it?. Add the flag `-h` (`ls -lah`) to print a human readable file size.
 
 The further colums represent the last modification time of the file.
  If the file has not been modified since its creation it coincides with the creation file.
