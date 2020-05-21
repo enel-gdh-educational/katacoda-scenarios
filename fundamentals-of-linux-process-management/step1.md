@@ -10,7 +10,7 @@ do
 echo "stop me if you can"
 done
 ```
-
+(To exit the script view, just type `q``).
 This simple script runs a new process that executes an infinite loop, so it keep running unless some external intervention occurs. In this infinite loop,
 it prints to the standard output (the screen) the message *stop me if you can*.
 <br>
@@ -27,12 +27,38 @@ In this case, since we are located in the folder where the script is, the relati
 <br>
 Have you executed the command? Then you should see printed endlessly on the screen *stop me if you can*. <br>
 But can you really can? <br>
-Yes, you can. Use control+c keys combination and surprise surprise the prints have stopped.
+Yes, you can. Use **control+c** keys combination and surprise surprise the prints have stopped.
 
-- script1
-- chmod +x
-- ./script1
-- control + c
+## Standard output (stdout) and output redirecting
+
+In the home folder you can find a second script: ``script2``. It looks similar to the first one (you can show the content via ``less`` command)
+ but there's a difference: the loop executes now a finite number of steps. <br>
+Make the script an executable and execute it as we've done for script1.
+<br> <br>
+The text shown by the full execution appears like this:
+
+```bash
+printing line 0
+printing line 1
+printing line 2
+printing line 3
+printing line 4
+printing line 5
+printing line 6
+printing line 7
+printing line 8
+printing line 9
+```
+Now, this output exists only inside the terminal, therefore it's volatile. <br>
+Can we make the process writing on a file, so that we can store its logs for a later access? <br>
+The answer is yes, and to do so we can use the **output redirecting**. Launch the process again in this way:
+
+```bash
+./script2 > output.txt
+```
+When the execution is over, you can find a new file called ``output.txt`` inside the folder. If you show its content (using ``less`` command),
+you'll fine the same lines were previously printed on the screen. <br>
+So you have succesfully redirected the output from the standard output (the screen) to a selected file (output.txt).
 - script2
 - chmod +x
 - ./script2
@@ -43,49 +69,14 @@ Yes, you can. Use control+c keys combination and surprise surprise the prints ha
 ---
 **Exercise 1**
 
-Check that ``emacs`` appears among of the installed package with a one-line command.
-
-*Hint*: Pipe `dpkg` with one of the tools that you have learnt so far to filter the output.
+TODO
 
 ---
 
-However, if you try to launch emacs
-
-```bash
-emacs
-``` 
-
-you will get an error pointing out that emacs is looking for some libraries that are missing because the package in which
- they are included is not installed.
-
-So, now you have two options: 
-
-1. **Option 1** Look for the missing packages,
- find them, and install them one by one. Oh, I was forgetting, each missing package might have further unsatisfed dependencies!
- 
-2. **Option 2** You jump to the next step and discover a powerful tool that does the job for you.
- 
- **N.B.** Before that , do not forget to clean up your system, by removing the unusable emacs package:
- 
- ```bash
-dpkg -r emacs
-``` 
-
-For the brave among you, I challange you taking the following pretty tough exercise:
 
 ---
 **Exercise 2**
 
-Determine the five installed packages with the largest size.
-
-*Steps*: 
-1. You already know how to list the installed packages with `dpkg -l` 
-2. Pipe the output with `tail +<N>` where N is the number of heading lines you want to skip.
-3. Select a single columns of an output stream through `awk '{print $<column_number>}'`
-4. Make them become the input of a new command adding the pipe `| xargs`
-5. Run the command you've built so far and understand the output
-6. Now add the flag `-exec` to `xargs` to execute a command to the list of inputs you have created.
-7. This command will be `dpkg-query` to show information about the packages. 
-Use the flags `-f ''${Package} ${Installed-Size}\n' -W` to show only the relevant information
-8. Now sort the results on the values of the size field using `sort`. No hints for this!
+TODO
+ 
 ---
