@@ -1,3 +1,5 @@
+# Process management: introduction
+
 Let's start with defining what a process is. <br>
 Practically speaking, a **process** in Linux system is a program (or part of a program) in execution on the machine;
  we say also "part of" because a program might be composed of more than one single process (and it often is). The Linux operative system itself runs a lot of processes in background.

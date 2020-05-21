@@ -1,6 +1,33 @@
-----------
+## Launching and stopping executables
 
-#### Launching executables
+We can easily generate a new process by launching an executable.
+An **executable** is a file that we can run to start a new program, therefore a new process. <br>
+We have provided you a simple bash script to do so: ``script1``, here inside the home folder. Let's have a look to it. You can display it using `less` command. Here's what you'll see:
+```bash
+#!/bin/bash
+while [ 1 ]
+do
+echo "stop me if you can"
+done
+```
+
+This simple script runs a new process that executes an infinite loop, so it keep running unless some external intervention occurs. In this infinite loop,
+it prints to the standard output (the screen) the message *stop me if you can*.
+<br>
+This script, for now, is nothing else but a text file. In order to make it an executable, we have to assign it the execution permissions:
+```bash
+chmod +x script1
+```
+In this way you can launch the script with the command:
+```bash
+./script1
+```
+Generally speaking, to launch an executable in linux using the terminal you have to type the path to the executable file (and of course the file itself at the end of the path).
+In this case, since we are located in the folder where the script is, the relative path is just ``./``, which means “here”.
+<br>
+Have you executed the command? Then you should see printed endlessly on the screen *stop me if you can*. <br>
+But can you really can? <br>
+Yes, you can. Use control+c keys combination and surprise surprise the prints have stopped.
 
 - script1
 - chmod +x
