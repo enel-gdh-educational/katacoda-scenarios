@@ -59,11 +59,6 @@ The answer is yes, and to do so we can use the **output redirecting**. Launch th
 When the execution is over, you can find a new file called ``output.txt`` inside the folder. If you show its content (using ``less`` command),
 you'll fine the same lines were previously printed on the screen. <br>
 So you have succesfully redirected the output from the standard output (the screen) to a selected file (output.txt).
-- script2
-- chmod +x
-- ./script2
-- ./script2 > out.txt
-- less out.txt (q)
 
 
 ---
