@@ -10,7 +10,7 @@ do
 echo "stop me if you can"
 done
 ```
-(To exit the script view, just type `q``).
+(To exit the script view, just type ``q``).<br><br>
 This simple script runs a new process that executes an infinite loop, so it keep running unless some external intervention occurs. In this infinite loop,
 it prints to the standard output (the screen) the message *stop me if you can*.
 <br>
