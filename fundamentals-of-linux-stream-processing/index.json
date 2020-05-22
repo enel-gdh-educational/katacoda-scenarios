@@ -4,6 +4,20 @@
   "difficulty": "Beginner",
   "time": "45 minutes",
   "details": {
+    "assets": {
+      "client": [
+        {
+          "file": "scripts/*", 
+          "target": "/home/scripts/", 
+          "chmod": "+x"
+        },
+        {
+          "file": "data/ip_address_with_hosts.txt", 
+          "target": "/home/data/", 
+          "chmod": "+x"
+        }
+      ] 
+    },
     "steps": [
       {
         "title": "Step 1: Introduction to a sample stream processing use case",
