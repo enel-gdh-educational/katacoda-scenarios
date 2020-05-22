@@ -7,8 +7,8 @@
     "assets": {
       "host01": [
         {
-          "file": "data/ip_address_with_hosts.txt",
-          "target": "~/"
+          "file": "*",
+          "target": "root/"
         }
       ]
     },
