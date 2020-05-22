@@ -1,6 +1,6 @@
-Here ends your walk through package management in Linux.
+Here ends your walk through process management in Linux.
 
-Depiste this tutorial was aimed at beginners, I guarantee that you are now equipped with all is needed
+Despite this tutorial was aimed at beginners, I guarantee that you are now equipped with all is needed
 for your every-day work. Congratulations!
 
 For reference: 
