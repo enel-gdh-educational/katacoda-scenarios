@@ -39,18 +39,18 @@ View Processes not associated with a terminal : View all processes except both s
 Note – You may be thinking that what is session leader? A unique session is assing to evry process group. So, session leader is a process which kicks off other processes. The process ID of first process of any session is similar as the session ID.
 
 3. View all the processes except session leaders :
-[root@rhel7 ~]# ps -d
+$ ps -d
 View all processes except those that fulfill the specified conditions (negates the selection) : 
 Example – If you want to see only session leader and processes not associated with a terminal. Then, run
-[root@rhel7 ~]# ps -a -N
+$ ps -a -N
 OR
-[root@rhel7 ~]# ps -a --deselect
+$ ps -a --deselect
 View all processes associated with this terminal :
-[root@rhel7 ~]# ps -T
+$ ps -T
 View all the running processes :
-[root@rhel7 ~]# ps -r
+$ ps -r
 View all processes owned by you : Processes i.e same EUID as ps which means runner of the ps command, root in this case –
-[root@rhel7 ~]# ps -x
+$ ps -x
 Process selection by list
 
 Here we will discuss how to get the specific processes list with the help of ps command. These options accept a single argument in the form of a blank-separated or comma-separated list. They can be used multiple times.
@@ -61,8 +61,8 @@ Syntax : ps -C command_name
 Syntax :
 ps -C command_name
 
-Example :
-[root@rhel7 ~]# ps -C dhclient
+Example:
+$ ps -C dhclient
   PID TTY          TIME CMD
 19805 ?        00:00:00 dhclient
 Select by group ID or name. The group ID identifies the group of the user who created the process.
@@ -70,15 +70,15 @@ Syntax :
 ps -G group_name
 ps --Group group_name
 
-Example :
-[root@rhel7 ~]# ps -G root
+Example:
+$ ps -G root
 View by group id :
 Syntax :
 ps -g group_id
 ps -group group_id
 
-Example :
-[root@rhel7 ~]# ps -g 1
+Example:
+$ ps -g 1
   PID TTY          TIME CMD
     1 ?        00:00:13 systemd
 View process by process ID.
@@ -88,21 +88,21 @@ ps -p process_id
 ps --pid process_id
 
 Example :
-[root@rhel7 ~]#  ps p 27223
+$  ps p 27223
   PID TTY      STAT   TIME COMMAND
 27223 ?        Ss     0:01 sshd: root@pts/2
 
-[root@rhel7 ~]#  ps -p 27223
+$  ps -p 27223
   PID TTY          TIME CMD
 27223 ?        00:00:01 sshd
 
-[root@rhel7 ~]#  ps --pid 27223
+$ ps --pid 27223
   PID TTY          TIME CMD
 27223 ?        00:00:01 sshd
 You can view multiple processes by specifying multiple process IDs separated by blank or comma –
 Example :
 
-[root@rhel7 ~]#  ps -p 1 904 27223
+$ ps -p 1 904 27223
   PID TTY      STAT   TIME COMMAND
     1 ?        Ss     0:13 /usr/lib/systemd/systemd --switched-root --system --d
   904 tty1     Ssl+   1:02 /usr/bin/X -core -noreset :0 -seat seat0 -auth /var/r
@@ -110,11 +110,11 @@ Example :
 Here, we mentioned three process IDs – 1, 904 and 27223 which are separated by blank.
 
 Select by parent process ID. By using this command we can view all the processes owned by parent process except the parent process.
-[root@rhel7 ~]# ps -p 766
+$ ps -p 766
   PID TTY          TIME CMD
   766 ?        00:00:06 NetworkManager
 
-[root@rhel7 ~]# ps --ppid 766
+$ ps --ppid 766
   PID TTY          TIME CMD
 19805 ?        00:00:00 dhclient
 In above example process ID 766 is assigned to NetworkManager and this is the parent process for dhclient with process ID 19805.
@@ -125,7 +125,7 @@ ps -s session_id
 ps --sid session_id
 
 Example :
-[root@rhel7 ~]# ps -s 1248
+$ ps -s 1248
   PID TTY          TIME CMD
  1248 ?        00:00:00 dbus-daemon
  1276 ?        00:00:00 dconf-service
@@ -145,8 +145,8 @@ ps t tty
 ps -t tty
 ps --tty tty
 
-Example :
-[root@rhel7 ~]# ps -t pts/0
+Example:
+$ ps -t pts/0
   PID TTY          TIME CMD
 31199 pts/0    00:00:00 bash
 31275 pts/0    00:00:00 man
@@ -163,22 +163,22 @@ Output Format control
 These options are used to choose the information displayed by ps. There are multiple options to control output format. These option can be combined with any other options like e, u, p, G, g etc, depends on our need.
 
  Use -f to view full-format listing.
-[tux@rhel7 ~]$ ps -af
+$ ps -af
 tux      17327 17326  0 12:42 pts/0    00:00:00 -bash
 tux      17918 17327  0 12:50 pts/0    00:00:00 ps -af
 Use -F to view Extra full format.
-[tux@rhel7 ~]$ ps -F
+$ ps -F
 UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
 tux      17327 17326  0 28848  2040   0 12:42 pts/0    00:00:00 -bash
 tux      17942 17327  0 37766  1784   0 12:50 pts/0    00:00:00 ps -F
 To view process according to user-defined format.
 Syntax :
-[root@rhel7 ~]#  ps --formate column_name
-[root@rhel7 ~]#  ps -o column_name
-[root@rhel7 ~]#  ps o column_name
+$ ps --formate column_name
+$ ps -o column_name
+$ ps o column_name
 
 Example :
-[root@rhel7 ~]#  ps -aN --format cmd,pid,user,ppid
+$ ps -aN --format cmd,pid,user,ppid
 CMD                           PID USER      PPID
 /usr/lib/systemd/systemd --     1 root         0
 [kthreadd]                      2 root         0
@@ -191,46 +191,46 @@ CMD                           PID USER      PPID
 In this example I wish to see command, process ID, username and parent process ID, so I pass the arguments cmd, pid, user and ppid respectively.
 
 View in BSD job control format :
-[root@rhel7 ~]# ps -j
+$ ps -j
   PID  PGID   SID TTY          TIME CMD
 16373 16373 16373 pts/0    00:00:00 bash
 19734 19734 16373 pts/0    00:00:00 ps
 Display BSD long format :
-[root@rhel7 ~]# ps l
+$ ps l
 F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
 4     0   904   826  20   0 306560 51456 ep_pol Ssl+ tty1       1:32 /usr/bin/X -core -noreset :0 -seat seat0 -auth /var/run/lightdm/root/:0 -noli
 4     0 11692 11680  20   0 115524  2132 do_wai Ss   pts/2      0:00 -bash
 Add a column of security data.
-[root@rhel7 ~]# ps -aM
+$ ps -aM
 LABEL                                                  PID  TTY    TIME    CMD
 unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 19534 pts/2 00:00:00 man
 unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 19543 pts/2 00:00:00 less
 unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 20469 pts/0 00:00:00 ps
 View command with signal format.
-[root@rhel7 ~]# ps s 766
+$ ps s 766
 Display user-oriented format
-[root@rhel7 ~]# ps u 1
+$ ps u 1
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root         1  0.0  0.6 128168  6844 ?        Ss   Apr08   0:16 /usr/lib/systemd/systemd --switched-root --system --deserialize 21
 Display virtual memory format
-[root@rhel7 ~]# ps v 1
+$ ps v 1
   PID TTY      STAT   TIME  MAJFL   TRS   DRS   RSS %MEM COMMAND
     1 ?        Ss     0:16     62  1317 126850 6844  0.6 /usr/lib/systemd/systemd --switched-root --system --deserialize 21
 If you want to see environment of any command. Then use option **e** –
-[root@rhel7 ~]# ps ev 766
+$ ps ev 766
   PID TTY      STAT   TIME  MAJFL   TRS   DRS   RSS %MEM COMMAND
   766 ?        Ssl    0:08     47  2441 545694 10448  1.0 /usr/sbin/NetworkManager --no-daemon LANG=en_US.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 View processes using highest memory.
 ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem
 12 – print a process tree
 
-[root@rhel7 ~]# ps --forest -C sshd
+$ ps --forest -C sshd
   PID TTY          TIME CMD
   797 ?        00:00:00 sshd
 11680 ?        00:00:03  \_ sshd
 16361 ?        00:00:02  \_ sshd
 List all threads for a particular process. Use either the -T or -L option to display threads of a process.
-[root@rhel7 ~]# ps -C sshd -L
+$ ps -C sshd -L
   PID   LWP TTY          TIME CMD
   797   797 ?        00:00:00 sshd
 11680 11680 ?        00:00:03 sshd

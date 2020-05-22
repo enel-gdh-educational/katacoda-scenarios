@@ -70,18 +70,20 @@ $ kill -9 1001
 This kills the process running with process ID 1001.
 
 ## The nohup command
-When exiting the shell of a Linux System, all running processes are usually terminated or hang up. So what do you do If you still want to keep the processes running even exiting the shell/terminal? This is where the nohup command comes in.
-Nohup, short for no hang up is a command in Linux systems that keep processes running even after exiting the shell or terminal.
-Nohup prevents the processes or jobs from receiving the SIGHUP (Signal Hang UP) signal. This is a signal that is sent to a process upon closing or exiting the terminal. In this guide, we take a look at the nohup command and demonstrate how it can be used.
+When exiting the shell of a Linux System, all running processes are usually terminated or hang up. So what do you do If you still want 
+to keep the processes running even exiting the shell/terminal? This is where the ``nohup`` command comes in.
+Nohup, short for *no hang up* is a command in Linux systems that keep processes running even after quitting the shell or terminal.
+Nohup prevents the processes or jobs from receiving the **SIGHUP** (Signal Hang UP) signal. 
+This is a signal that is sent to a process upon closing or exiting the terminal. In this guide, we take a look at the 
+``nohup`` command and demonstrate how it can be used.
 
-Nohup Command Syntax
+**Nohup command syntax**
 
 Nohup command syntax is as follows:
 ```bash
 nohup command arguments
 ```
 or
-
 ```bash
 nohup options
 ```
@@ -89,52 +91,66 @@ nohup options
 Let’s see how the command comes into play.
 
 
-Starting a process using Nohup
+**Starting a process using Nohup**
 
 If you want to keep your processes/jobs running, precede the command with nohup as shown below. The jobs will still continue running in the shell and will not get killed upon exiting the shell or terminal.
-
+```bash
 nohup ./hello.sh 
-Output
+```
 
-Nohup command with regular commands
+Output
+```bash
+$ nohup ./hello.sh
+nohup: ignoring input and appending output to 'nohup.out'
+```
+
+**Nohup command with regular commands**
 
 From the output above, the output of the command has been saved to nohup.out to verify this run,
-
+```bash
 cat nohup.out
+```
 Output
 
 Cat Nohup Out file
 
 Additionally, you can opt to redirect the output to a different file as shown
 
-
+```bash
 nohup ./hello.sh > output.txt
+```
+
 Once again, to view the file run
 
 cat output.txt
 Output
 
-Redirect Nohup Output To A text File
+**Redirect Nohup Output To A text File**
 
 To redirect to a file and to standard error and output use the > filename 2>&1 attribute as shown
 
 nohup ./hello.sh > myoutput.txt >2&1 
 Output
 
-Redirect to  Standard Out And Standard Error
+Redirect to Standard Out And Standard Error
 
-Starting a process in the background using Nohup
+**Starting a process in the background using Nohup**
 
-To start a process in the background use the & symbol at the end of the command. In this example, we are pinging google.com and sending it to the background.
-
+To start a process in the background use the **&** symbol at the end of the command. 
+In this example, we are pinging google.com and sending it to the background.
+```bash
 nohup ping google.com &
+```
+
 Output
 
-Nohup Run Process In The Background
+**Nohup Run Process In The Background**
 
 To check the process when resuming the shell use the pgrep command as shown
-
+```bash
 pgrep -a ping
+```
+
 Output
 
 Pgrep Ping Google
