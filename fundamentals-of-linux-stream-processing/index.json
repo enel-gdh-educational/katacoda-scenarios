@@ -8,7 +8,16 @@
       "client": [
         {
           "file": "*.sed",
-          "target": "root"
+          "target": "/root"
+        },
+        {
+          "file": "data/*",
+          "target": "/root/data"
+        },
+        {
+          "file": "scripts/*",
+          "target": "/root/scripts",
+          "chmod": "+x"
         }
       ]
     },
