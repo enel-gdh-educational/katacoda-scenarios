@@ -5,18 +5,12 @@
   "time": "45 minutes",
   "details": {
     "assets": {
-      "client": [
+      "host01": [
         {
-          "file": "scripts/*", 
-          "target": "/home/scripts/", 
-          "chmod": "+x"
-        },
-        {
-          "file": "data/ip_address_with_hosts.txt", 
-          "target": "/home/data/", 
-          "chmod": "+x"
+          "file": "data/ip_address_with_hosts.txt",
+          "target": "~/"
         }
-      ] 
+      ]
     },
     "steps": [
       {
