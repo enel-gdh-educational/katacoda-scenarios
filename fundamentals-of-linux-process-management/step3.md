@@ -12,6 +12,7 @@ The following table lists out common signals you might encounter and want to use
 | SIGKILL| 9 | If a process gets this signal it must quit immediately and will not perform any clean-up operations. |
 | SIGALRM | 14 | Alarm clock signal (used for timers). |
 | SIGTERM | 15 | Software termination signal (sent by kill by default). |
+
 List of Signals
 There is an easy way to list down all the signals supported by your system. Just issue the kill -l command and it would display all the supported signals −
 
