@@ -12,11 +12,11 @@
         },
         {
           "file": "data/*",
-          "target": "/root/data"
+          "target": "/root/"
         },
         {
           "file": "scripts/*",
-          "target": "/root/scripts",
+          "target": "/root/",
           "chmod": "+x"
         }
       ]
