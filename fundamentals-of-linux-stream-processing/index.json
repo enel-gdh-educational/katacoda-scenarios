@@ -5,9 +5,9 @@
   "time": "45 minutes",
   "details": {
     "assets": {
-      "host01": [
+      "client": [
         {
-          "file": "*",
+          "file": "data/",
           "target": "root/"
         }
       ]
