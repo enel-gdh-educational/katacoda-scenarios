@@ -8,7 +8,7 @@
       "client": [
         {
           "file": "*.sed",
-          "target": "~"
+          "target": "root"
         }
       ]
     },
