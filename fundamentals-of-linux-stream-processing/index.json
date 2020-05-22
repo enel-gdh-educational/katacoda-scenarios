@@ -7,8 +7,8 @@
     "assets": {
       "client": [
         {
-          "file": "data",
-          "target": "root/"
+          "file": "*.sed",
+          "target": ""
         }
       ]
     },
