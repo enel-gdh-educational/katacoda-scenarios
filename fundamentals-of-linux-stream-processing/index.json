@@ -7,7 +7,7 @@
     "assets": {
       "client": [
         {
-          "file": "*",
+          "file": "data",
           "target": "root/"
         }
       ]
