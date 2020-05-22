@@ -13,3 +13,29 @@ git init
 
 ---------------
 
+---------------
+**Exercise 1**
+
+ls -lt 
+
+cd /hypervisor (this might change in different Katacoda terminals)
+
+pwd
+
+---------------
+
+
+---------------
+**Exercise 2**
+
+pwd
+
+cd ./
+
+pwd
+
+---------------
+
+
+
+
