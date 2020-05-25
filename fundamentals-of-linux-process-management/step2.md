@@ -36,51 +36,31 @@ ps [options]
    ```
     
 3. View Processes not associated with a terminal: View all processes except both session leaders and processes not associated with a terminal.
-    ```bash
+   ```bash
     ps -a
    ```
-
-    Note – You may be thinking that what is session leader? A unique session is assing to evry process group. So, session leader is a process which kicks off other processes. The process ID of first process of any session is similar as the session ID.
-
+   Note – You may be thinking that what is session leader? A unique session is assing to evry process group. So, session leader is a process which kicks off other processes. The process ID of first process of any session is similar as the session ID.
 
 4. View all the running processes:
     ```bash
     ps -r
     ```
 5. View all processes owned by you: Processes i.e same EUID as ps which means runner of the ps command, root in this case –
-$ ps -x
-Process selection by list
+    ```bash
+    ps -x
+    ```
 
-Here we will discuss how to get the specific processes list with the help of ps command. These options accept a single 
-argument in the form of a blank-separated or comma-separated list. They can be used multiple times.
-For example: ps -p “1 2” -p 3,4
-
-Select the process by the command name. This selects the processes whose executable name is given in cmdlist.
+6. Select the process by the command name. This selects the processes whose executable name is given in cmdlist.
 There may be a chance you won’t know the process ID and with this command it is easier to search.
-Syntax : ps -C command_name
-Syntax :
-ps -C command_name
+    ```bash
+    ps -C command_name
+    ```
 
-Example:
+    Example:
 $ ps -C dhclient
   PID TTY          TIME CMD
 19805 ?        00:00:00 dhclient
-Select by group ID or name. The group ID identifies the group of the user who created the process.
-Syntax :
-ps -G group_name
-ps --Group group_name
 
-Example:
-$ ps -G root
-View by group id :
-Syntax :
-ps -g group_id
-ps -group group_id
-
-Example:
-$ ps -g 1
-  PID TTY          TIME CMD
-    1 ?        00:00:13 systemd
 View process by process ID.
 Syntax :
 ps p process_id
@@ -118,27 +98,6 @@ $ ps --ppid 766
   PID TTY          TIME CMD
 19805 ?        00:00:00 dhclient
 In above example process ID 766 is assigned to NetworkManager and this is the parent process for dhclient with process ID 19805.
-
-View all the processes belongs to any session ID.
-Syntax :
-ps -s session_id
-ps --sid session_id
-
-Example :
-$ ps -s 1248
-  PID TTY          TIME CMD
- 1248 ?        00:00:00 dbus-daemon
- 1276 ?        00:00:00 dconf-service
- 1302 ?        00:00:00 gvfsd
- 1310 ?        00:00:00 gvfsd-fuse
- 1369 ?        00:00:00 gvfs-udisks2-vo
- 1400 ?        00:00:00 gvfsd-trash
- 1418 ?        00:00:00 gvfs-mtp-volume
- 1432 ?        00:00:00 gvfs-gphoto2-vo
- 1437 ?        00:00:00 gvfs-afc-volume
- 1447 ?        00:00:00 wnck-applet
- 1453 ?        00:00:00 notification-ar
- 1454 ?        00:00:02 clock-applet
 
 Select by effective user ID or name.
 Syntax :
