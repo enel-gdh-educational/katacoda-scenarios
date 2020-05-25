@@ -1,6 +1,6 @@
 {
-  "title": "Fundamentals of Linux: Package manager",
-  "description": "Tutorial to familiarize with Linux software packages and the tools to manage them.",
+  "title": "Fundamentals of Linux: Process manager",
+  "description": "---",
   "difficulty": "Beginner",
   "time": "60 minutes",
   "details": {
@@ -35,5 +35,17 @@
   },
   "backend": {
     "imageid": "ubuntu1804"
+  },
+  "assets": {
+    "client": [
+      {
+        "file": "script*",
+        "target": "/root"
+      },
+      {
+        "file": "*.py",
+        "target": "/root/"
+      }
+    ]
   }
 }

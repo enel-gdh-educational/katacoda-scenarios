@@ -1,5 +1,0 @@
-#!/bin/bash
-while [ 1 ]
-do
-echo "stop me if you can"
-done
