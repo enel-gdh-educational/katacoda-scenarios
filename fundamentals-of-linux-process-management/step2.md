@@ -13,34 +13,34 @@ ps [options]
 **Options:**
 
 1. Simple process selection : Shows the processes for the current shell –
-  ```bash
-    ps
-      PID TTY          TIME CMD
-    12330 pts/0    00:00:00 bash
-    21621 pts/0    00:00:00 ps
-  ```
-  Result contains four columns of information.
-  Where,
-  * PID – the unique process ID
-  * TTY – terminal type that the user is logged into
-  * TIME – amount of CPU in minutes and seconds that the process has been running
-  * CMD – name of the command that launched the process.
-  Note – Sometimes when we execute ps command, it shows TIME as 00:00:00. It is nothing but the total accumulated CPU utilization time for any process and 00:00:00 indicates no CPU time has been given by the kernel till now. In above example we found that, for bash no CPU time has been given. This is because bash is just a parent process for different processes which needs bash for their execution and bash itself is not utilizing any CPU time till now.
+      ```bash
+        ps
+          PID TTY          TIME CMD
+        12330 pts/0    00:00:00 bash
+        21621 pts/0    00:00:00 ps
+      ```
+      Result contains four columns of information.
+      Where,
+      * PID – the unique process ID
+      * TTY – terminal type that the user is logged into
+      * TIME – amount of CPU in minutes and seconds that the process has been running
+      * CMD – name of the command that launched the process.
+      Note – Sometimes when we execute ps command, it shows TIME as 00:00:00. It is nothing but the total accumulated CPU utilization time for any process and 00:00:00 indicates no CPU time has been given by the kernel till now. In above example we found that, for bash no CPU time has been given. This is because bash is just a parent process for different processes which needs bash for their execution and bash itself is not utilizing any CPU time till now.
 
-2. View Processes : View all the running processes use either of the following option with ps –
-[root@rhel7 ~]# ps -A
-[root@rhel7 ~]# ps -e
-View Processes not associated with a terminal : View all processes except both session leaders and processes not associated with a terminal.
-[root@rhel7 ~]# ps -a
+2. View Processes: View all the running processes use either of the following option with ps –
+$ ps -A
+$ ps -e
+3. View Processes not associated with a terminal : View all processes except both session leaders and processes not associated with a terminal.
+$ ps -a
   PID TTY          TIME CMD
 27011 pts/0    00:00:00 man
 27016 pts/0    00:00:00 less
 27499 pts/1    00:00:00 ps
 Note – You may be thinking that what is session leader? A unique session is assing to evry process group. So, session leader is a process which kicks off other processes. The process ID of first process of any session is similar as the session ID.
 
-3. View all the processes except session leaders :
+4. View all the processes except session leaders :
 $ ps -d
-View all processes except those that fulfill the specified conditions (negates the selection) : 
+5. View all processes except those that fulfill the specified conditions (negates the selection) : 
 Example – If you want to see only session leader and processes not associated with a terminal. Then, run
 $ ps -a -N
 OR
