@@ -12,12 +12,9 @@ ps [options]
 
 **Options:**
 
-1. Simple process selection : Shows the processes for the current shell –
+1. Simple process selection: Shows the processes for the current shell
       ```bash
-        ps
-          PID TTY          TIME CMD
-        12330 pts/0    00:00:00 bash
-        21621 pts/0    00:00:00 ps
+       ps
       ```
       Result contains four columns of information.
       Where,
@@ -27,36 +24,39 @@ ps [options]
       * CMD – name of the command that launched the process.
       Note – Sometimes when we execute ps command, it shows TIME as 00:00:00. It is nothing but the total accumulated CPU utilization time for any process and 00:00:00 indicates no CPU time has been given by the kernel till now. In above example we found that, for bash no CPU time has been given. This is because bash is just a parent process for different processes which needs bash for their execution and bash itself is not utilizing any CPU time till now.
 
-2. View Processes: View all the running processes use either of the following option with ps –
-$ ps -A
-$ ps -e
-3. View Processes not associated with a terminal : View all processes except both session leaders and processes not associated with a terminal.
-$ ps -a
-  PID TTY          TIME CMD
-27011 pts/0    00:00:00 man
-27016 pts/0    00:00:00 less
-27499 pts/1    00:00:00 ps
-Note – You may be thinking that what is session leader? A unique session is assing to evry process group. So, session leader is a process which kicks off other processes. The process ID of first process of any session is similar as the session ID.
+2. List all processes: To list all processes on a system use the -e option.
+    ```bash
+    ps -e
+    ```
+    This option can be combined with the -f and -F options to provide more information on processes. The -f option offers full-format listing.
 
-4. View all the processes except session leaders :
-$ ps -d
-5. View all processes except those that fulfill the specified conditions (negates the selection) : 
-Example – If you want to see only session leader and processes not associated with a terminal. Then, run
-$ ps -a -N
-OR
-$ ps -a --deselect
-View all processes associated with this terminal :
-$ ps -T
-View all the running processes :
-$ ps -r
-View all processes owned by you : Processes i.e same EUID as ps which means runner of the ps command, root in this case –
+    Another commonly used syntax to achieve seeing every process on the system using BSD syntax is 
+    ```bash
+    ps aux
+   ```
+    
+3. View Processes not associated with a terminal: View all processes except both session leaders and processes not associated with a terminal.
+    ```bash
+    ps -a
+   ```
+
+    Note – You may be thinking that what is session leader? A unique session is assing to evry process group. So, session leader is a process which kicks off other processes. The process ID of first process of any session is similar as the session ID.
+
+
+4. View all the running processes:
+    ```bash
+    ps -r
+    ```
+5. View all processes owned by you: Processes i.e same EUID as ps which means runner of the ps command, root in this case –
 $ ps -x
 Process selection by list
 
-Here we will discuss how to get the specific processes list with the help of ps command. These options accept a single argument in the form of a blank-separated or comma-separated list. They can be used multiple times.
+Here we will discuss how to get the specific processes list with the help of ps command. These options accept a single 
+argument in the form of a blank-separated or comma-separated list. They can be used multiple times.
 For example: ps -p “1 2” -p 3,4
 
-Select the process by the command name. This selects the processes whose executable name is given in cmdlist. There may be a chance you won’t know the process ID and with this command it is easier to search.
+Select the process by the command name. This selects the processes whose executable name is given in cmdlist.
+There may be a chance you won’t know the process ID and with this command it is easier to search.
 Syntax : ps -C command_name
 Syntax :
 ps -C command_name
@@ -139,18 +139,7 @@ $ ps -s 1248
  1447 ?        00:00:00 wnck-applet
  1453 ?        00:00:00 notification-ar
  1454 ?        00:00:02 clock-applet
-Select by tty. This selects the processes associated with the mentioned tty :
-Syntax :
-ps t tty
-ps -t tty
-ps --tty tty
 
-Example:
-$ ps -t pts/0
-  PID TTY          TIME CMD
-31199 pts/0    00:00:00 bash
-31275 pts/0    00:00:00 man
-31280 pts/0    00:00:00 less
 Select by effective user ID or name.
 Syntax :
 ps U user_name/ID
@@ -190,36 +179,7 @@ CMD                           PID USER      PPID
 [watchdog/0]                   10 root         2
 In this example I wish to see command, process ID, username and parent process ID, so I pass the arguments cmd, pid, user and ppid respectively.
 
-View in BSD job control format :
-$ ps -j
-  PID  PGID   SID TTY          TIME CMD
-16373 16373 16373 pts/0    00:00:00 bash
-19734 19734 16373 pts/0    00:00:00 ps
-Display BSD long format :
-$ ps l
-F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
-4     0   904   826  20   0 306560 51456 ep_pol Ssl+ tty1       1:32 /usr/bin/X -core -noreset :0 -seat seat0 -auth /var/run/lightdm/root/:0 -noli
-4     0 11692 11680  20   0 115524  2132 do_wai Ss   pts/2      0:00 -bash
-Add a column of security data.
-$ ps -aM
-LABEL                                                  PID  TTY    TIME    CMD
-unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 19534 pts/2 00:00:00 man
-unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 19543 pts/2 00:00:00 less
-unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 20469 pts/0 00:00:00 ps
-View command with signal format.
-$ ps s 766
-Display user-oriented format
-$ ps u 1
-USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         1  0.0  0.6 128168  6844 ?        Ss   Apr08   0:16 /usr/lib/systemd/systemd --switched-root --system --deserialize 21
-Display virtual memory format
-$ ps v 1
-  PID TTY      STAT   TIME  MAJFL   TRS   DRS   RSS %MEM COMMAND
-    1 ?        Ss     0:16     62  1317 126850 6844  0.6 /usr/lib/systemd/systemd --switched-root --system --deserialize 21
-If you want to see environment of any command. Then use option **e** –
-$ ps ev 766
-  PID TTY      STAT   TIME  MAJFL   TRS   DRS   RSS %MEM COMMAND
-  766 ?        Ssl    0:08     47  2441 545694 10448  1.0 /usr/sbin/NetworkManager --no-daemon LANG=en_US.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+
 View processes using highest memory.
 ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem
 12 – print a process tree
