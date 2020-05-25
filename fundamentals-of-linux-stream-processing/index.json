@@ -1,0 +1,55 @@
+{
+  "title": "Dealing with stream processing and manipulation.",
+  "description": "The goal of this course is to present some common tools for stream processing and manipulation in the Unix environment ",
+  "difficulty": "Beginner",
+  "time": "45 minutes",
+  "details": {
+    "assets": {
+      "client": [
+        {
+          "file": "*.sed",
+          "target": "/root"
+        },
+        {
+          "file": "data/*",
+          "target": "/root/"
+        },
+        {
+          "file": "scripts/*",
+          "target": "/root/",
+          "chmod": "+x"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": "Step 1: Introduction to a sample stream processing use case",
+        "text": "step1.md",
+		    "answer": "step1-answer.md"
+      },
+      {
+        "title": "Step 2: Understanding sed basic elements",
+        "text": "step2.md",
+		    "answer": "step2-answer.md"
+      },
+      {
+        "title": "Step 3: Using sed to address a toy use case",
+        "text": "step3.md",
+		    "answer": "step3-answer.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+	"uimessage1": "\u001b[32_Your Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu1804"
+  }
+}
