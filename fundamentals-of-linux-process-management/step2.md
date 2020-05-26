@@ -1,7 +1,7 @@
 ## Display processes
 
 In the introduction we mentioned briefly the ``ps`` command and showed a possible output. <br>
-We said that it stands for **process state** and it displays some information on the process running on the machine.
+We said that it stands for **process state** and it displays some information of the processes running on the machine.
 ``ps`` command is used to list the currently running processes and their PIDs (process identification numbers) along with 
 some other information depends on different options. It reads the process information from the virtual files in ``/proc`` file-system.<br>
 ``ps`` command provides numerous options for manipulating the output according to our need. The syntax:
@@ -57,104 +57,39 @@ There may be a chance you won’t know the process ID and with this command it i
     ```
 
     Example:
-$ ps -C dhclient
-  PID TTY          TIME CMD
-19805 ?        00:00:00 dhclient
+    ```bash
+    $ ps -C dhclient
+      PID TTY          TIME CMD
+    19805 ?        00:00:00 dhclient
+    ```
+7. View process by process ID.
+    Syntax:
+    ```bash
+    ps p process_id
+    ps -p process_id
+    ps --pid process_id
+    ```
+    You can also view multiple processes by specifying multiple process IDs separated by blank or comma –
 
-View process by process ID.
-Syntax :
-ps p process_id
-ps -p process_id
-ps --pid process_id
-
-Example :
-$  ps p 27223
-  PID TTY      STAT   TIME COMMAND
-27223 ?        Ss     0:01 sshd: root@pts/2
-
-$  ps -p 27223
-  PID TTY          TIME CMD
-27223 ?        00:00:01 sshd
-
-$ ps --pid 27223
-  PID TTY          TIME CMD
-27223 ?        00:00:01 sshd
-You can view multiple processes by specifying multiple process IDs separated by blank or comma –
-Example :
-
-$ ps -p 1 904 27223
-  PID TTY      STAT   TIME COMMAND
-    1 ?        Ss     0:13 /usr/lib/systemd/systemd --switched-root --system --d
-  904 tty1     Ssl+   1:02 /usr/bin/X -core -noreset :0 -seat seat0 -auth /var/r
-27223 ?        Ss     0:01 sshd: root@pts/2
-Here, we mentioned three process IDs – 1, 904 and 27223 which are separated by blank.
-
-Select by parent process ID. By using this command we can view all the processes owned by parent process except the parent process.
-$ ps -p 766
-  PID TTY          TIME CMD
-  766 ?        00:00:06 NetworkManager
-
-$ ps --ppid 766
-  PID TTY          TIME CMD
-19805 ?        00:00:00 dhclient
-In above example process ID 766 is assigned to NetworkManager and this is the parent process for dhclient with process ID 19805.
-
-Select by effective user ID or name.
-Syntax :
-ps U user_name/ID
-ps -U user_name/ID
-ps -u user_name/ID
-ps –User user_name/ID
-ps –user user_name/ID
-Output Format control
-
-These options are used to choose the information displayed by ps. There are multiple options to control output format. These option can be combined with any other options like e, u, p, G, g etc, depends on our need.
-
- Use -f to view full-format listing.
-$ ps -af
-tux      17327 17326  0 12:42 pts/0    00:00:00 -bash
-tux      17918 17327  0 12:50 pts/0    00:00:00 ps -af
-Use -F to view Extra full format.
-$ ps -F
-UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
-tux      17327 17326  0 28848  2040   0 12:42 pts/0    00:00:00 -bash
-tux      17942 17327  0 37766  1784   0 12:50 pts/0    00:00:00 ps -F
-To view process according to user-defined format.
-Syntax :
-$ ps --formate column_name
-$ ps -o column_name
-$ ps o column_name
-
-Example :
-$ ps -aN --format cmd,pid,user,ppid
-CMD                           PID USER      PPID
-/usr/lib/systemd/systemd --     1 root         0
-[kthreadd]                      2 root         0
-[ksoftirqd/0]                   3 root         2
-[kworker/0:0H]                  5 root         2
-[migration/0]                   7 root         2
-[rcu_bh]                        8 root         2
-[rcu_sched]                     9 root         2
-[watchdog/0]                   10 root         2
-In this example I wish to see command, process ID, username and parent process ID, so I pass the arguments cmd, pid, user and ppid respectively.
-
-
-View processes using highest memory.
+8. Select by effective user ID or name.
+    Syntax :
+    ```bash
+    ps U user_name/ID
+    ps -U user_name/ID
+    ps -u user_name/ID
+    ps –User user_name/ID
+    ps –user user_name/ID
+    ```
+Beside these simple usage of flags, you can also combine them to list processes according to some criteria you may want.
+For instance, you can list processes using highest memory.
+```bash
 ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem
-12 – print a process tree
+```
 
-$ ps --forest -C sshd
-  PID TTY          TIME CMD
-  797 ?        00:00:00 sshd
-11680 ?        00:00:03  \_ sshd
-16361 ?        00:00:02  \_ sshd
-List all threads for a particular process. Use either the -T or -L option to display threads of a process.
-$ ps -C sshd -L
-  PID   LWP TTY          TIME CMD
-  797   797 ?        00:00:00 sshd
-11680 11680 ?        00:00:03 sshd
-16361 16361 ?        00:00:02 sshd
-Note – For the explanation of different column contents refer man page.
+There are many other flags, both to display different kind of information and to format this information on the shell in many ways.
+Here’s a [link to the man page](http://man7.org/linux/man-pages/man1/ps.1.html), in which you can find the complete flag list.
+
+ 
 
 ## Grep command
 
