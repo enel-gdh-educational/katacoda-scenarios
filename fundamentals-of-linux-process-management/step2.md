@@ -72,7 +72,7 @@ There may be a chance you won’t know the process ID and with this command it i
     You can also view multiple processes by specifying multiple process IDs separated by blank or comma –
 
 8. Select by effective user ID or name.
-    Syntax :
+    Some possible cases:
     ```bash
     ps U user_name/ID
     ps -U user_name/ID
@@ -115,27 +115,26 @@ Options can be:
 |-c	| Print only a count of selected lines per FILE |
 |--color | Display matched pattern in colors |
 
-grep 'word' filename
-fgrep 'word-to-search' file.txt
-grep 'word' file1 file2 file3
-grep 'string1 string2'  filename
-cat otherfile | grep 'something'
-command | grep 'something'
-command option1 | grep 'data'
-grep --color 'data' fileName
-grep [-options] pattern filename
-fgrep [-options] words file
-How do I use grep to search a file on Linux?
+
+Grep can be useful in many situations:
+* find a specific file after an `ls` command
+* search for a word (or more than one) in a document
+* in the case of process management, we can use it to display only the information about the processes that we are interested in
 
 
+**Some examples**:
 
 When you search for boo, grep will match fooboo, boo123, barfoo35 and more. You can force the grep command to select only those lines containing matches that form whole words i.e. match only boo word:
-$ grep -w "boo" file
+```bash
+grep -w word file
+```
 
-How to use grep to search 2 different words
+Try to search a specific word ("stop", for instance) in *script1* file.
 
-Use the egrep command as follows:
-$ egrep -w 'word1|word2' /path/to/file
+You can also search for more than one word, thanks to the variant `egrep` command:
+```bash
+egrep -w 'word1|word2' /path/to/file
+```
 
 How can I count line when words has been matched
 
@@ -144,27 +143,6 @@ $ grep -c 'word' /path/to/file
 
 Pass the -n option to precede each line of output with the number of the line in the text file from which it was obtained:
 $ grep -n 'root' /etc/passwd
-
-1:root:x:0:0:root:/root:/bin/bash
-1042:rootdoor:x:0:0:rootdoor:/home/rootdoor:/bin/csh
-3319:initrootapp:x:0:0:initrootapp:/home/initroot:/bin/ksh
-Force grep invert match
-
-You can use -v option to print inverts the match; that is, it matches only those lines that do not contain the given word. For example print all line that do not contain the word bar:
-$ grep -v bar /path/to/file
-
-Display lines before and after the match
-
-Want to see the lines before your matches? Try passing the -B to the grep:
-grep -B NUM "word" file
-grep -B 3 "foo" file1
-
-Similarly, display the lines after your matches by passing the -A to the grep:
-grep -A NUM "string" /pth/to/file
-grep -A 4 "dropped" /var/log/ufw.log
-
-We can combine those two options to get most meaningful outputs:
-grep -C 4 -B 5 -A 6 --color 'error-code' /var/log/httpd/access_log
 
 
 
@@ -182,9 +160,7 @@ GREP_COLOR='1;36' grep --color=always nobody /etc/passwd
 
 Visual grepping
 In addition, to default red color now we can define colors using GREP_COLOR shell variable. The differnt color helps us massivly with visual grepping.
-Conclusion
 
-The grep command is a very versatile and many new Linux or Unix users find it complicated.
 I suggest you read the grep man page too.
 
 
