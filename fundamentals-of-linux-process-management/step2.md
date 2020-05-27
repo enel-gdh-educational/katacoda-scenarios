@@ -102,6 +102,7 @@ The syntax is as follows:
 grep [option] 'word-to-search' [filename]
 ```
 Options can be:
+
 | **Option** | **Description** |
 | ------ | ----------- |
 | -i | Ignore case distinctions on Linux and Unix |
