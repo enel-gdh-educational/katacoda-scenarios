@@ -102,18 +102,18 @@ The syntax is as follows:
 grep [option] 'word-to-search' [filename]
 ```
 Options can be:
-| Option | Description |
+| **Option** | **Description** |
 | ------ | ----------- |
 | -i | Ignore case distinctions on Linux and Unix |
-|-w	| Force PATTERN to match only whole words |
-|-v	| Select non-matching lines |
-|-n	| Print line number with output lines |
-|-h	| Suppress the Unix file name prefix on output |
-|-r	| Search directories recursivly on Linux |
-|-R	| Just like -r but follow all symlinks |
-|-l	| Print only names of FILEs with selected lines |
-|-c	| Print only a count of selected lines per FILE |
-|--color | Display matched pattern in colors |
+| -w | Force PATTERN to match only whole words |
+| -v | Select non-matching lines |
+| -n | Print line number with output lines |
+| -h | Suppress the Unix file name prefix on output |
+| -r | Search directories recursivly on Linux |
+| -R | Just like -r but follow all symlinks |
+| -l | Print only names of FILEs with selected lines |
+| -c | Print only a count of selected lines per FILE |
+| --color | Display matched pattern in colors |
 
 
 Grep can be useful in many situations:
