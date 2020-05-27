@@ -17,6 +17,7 @@ The following table lists out common signals you might encounter and want to use
 
 There is an easy way to list down all the signals supported by your system. Just issue the ``kill -l`` command and it would display all the supported signals:
 
+#signalist
 ```bash
 $ kill -l
  1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL
@@ -52,11 +53,11 @@ There are several methods of delivering signals to a program or script. One of t
 
 When you press the **Ctrl+c** key, a **SIGINT** is sent to the script and as per defined default action script terminates.
 
-The other common method for delivering signals is to use the ``kill`` command, the syntax of which is as follows −
+The other common method for delivering signals is to use the ``kill`` command, the syntax of which is as follows:
 ```bash
 $ kill -signal pid
 ```
-Note that the word *kill* might be misleading, since it sounds like something that is specifically designed to end a process, which is not. The ``kill`` command is designed for sending a signal of set we listed above: the most proper word, maybe, should have been "hit".
+Note that the word *kill* might be misleading, since it sounds like something that is specifically designed to end a process, which is not. The ``kill`` command is designed for sending a signal of the set we [listed](#signalist) above: the most proper word, maybe, should have been "hit".
 <br>
 Let's go back to the command itself.<br>
 The *signal* is either **the number or name of the signal to deliver** and *pid* is the **process ID that the signal should be sent to**. For example:
@@ -64,7 +65,7 @@ The *signal* is either **the number or name of the signal to deliver** and *pid*
 ```bash
 $ kill -1 666
 ```
-The above command sends the HUP or hang-up signal to the program that is running with process ID 666.
+The above command sends the SIGHUP (or hang-up signal) to the program that is running with process ID 666.
 
 To send a SIGKILL signal to the same process, use the following command:
 ```bash

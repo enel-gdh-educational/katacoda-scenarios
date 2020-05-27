@@ -1,4 +1,4 @@
-## Launching and stopping executables
+# Launching and stopping executables
 
 We can easily generate a new process by launching an executable.
 An **executable** is a file that we can run to start a new program, therefore a new process. <br>
@@ -60,7 +60,7 @@ When the execution is over, you can find a new file called ``output.txt`` inside
 you'll fine the same lines were previously printed on the screen. <br>
 So you have succesfully redirected the output from the standard output (the screen) to a selected file (output.txt).
 
-#### Concatenate two commands
+### Concatenate two commands
 
 In Linux terminals we can concatenate commands using the character ``|`` (called *pipe*). <br>
 For example, we can execute the script2 execution (without redirecting) the ``grep`` command to select only lines where a particular string appears. For instance, the string “2”.

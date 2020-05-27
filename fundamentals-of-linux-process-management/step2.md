@@ -1,4 +1,4 @@
-## Display processes
+# Display processes
 
 In the introduction we mentioned briefly the ``ps`` command and showed a possible output. <br>
 We said that it stands for **process state** and it displays some information of the processes running on the machine.
@@ -91,7 +91,7 @@ Here’s a [link to the man page](http://man7.org/linux/man-pages/man1/ps.1.html
 
  
 
-## Grep command
+# Grep command
 
 When we list processes via `ps` command, usually we see many more lines than we want. So here's where ``grep`` command can come in handy.
 The grep command is used to search text. It searches the given file for lines containing a match to the given strings or words. It is one of the most useful commands on Linux and Unix-like system. Let us see how to use grep on a Linux or Unix like system.

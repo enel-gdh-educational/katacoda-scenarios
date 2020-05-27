@@ -1,4 +1,4 @@
-## Netstat command in Linux
+# Netstat command in Linux
 
 Some processes make use of the network, and it can happen that they are *listening* on an address and a port.
 Let’s first explain this two concepts. <br>
