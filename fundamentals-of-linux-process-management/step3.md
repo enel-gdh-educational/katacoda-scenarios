@@ -1,7 +1,7 @@
 # Signals
 Signals are software interrupts sent to a program to indicate that an important event has occurred. The events can vary from user requests to illegal memory access errors. 
 Some signals, such as the interrupt signal, indicate that a user has asked the program to do something that is not in the usual flow of control.
-The following table lists out common signals you might encounter and want to use in your programs −
+The following table lists out common signals you might encounter and want to use in your programs:
 
 | **Signal Name** |	**Signal Number** | **Description** |
 | --- | --- | --- |
@@ -14,7 +14,8 @@ The following table lists out common signals you might encounter and want to use
 | SIGTERM | 15 | Software termination signal (sent by kill by default). |
 
 **List of Signals**
-There is an easy way to list down all the signals supported by your system. Just issue the kill -l command and it would display all the supported signals −
+
+There is an easy way to list down all the signals supported by your system. Just issue the ``kill -l`` command and it would display all the supported signals:
 
 ```bash
 $ kill -l
@@ -36,10 +37,8 @@ $ kill -l
 63) SIGRTMAX-1  64) SIGRTMAX
 ```
 
-Default Actions
-Every signal has a default action associated with it. The default action for a signal is the action that a script or program performs when it receives a signal.
-
-Some of the possible default actions are −
+Every signal has a default action associated with it. The default action for a signal is the action that a script or program performs when it receives a signal.<br>
+Some of the possible default actions are:
 
 * Terminate the process.
 * Ignore the signal.
@@ -48,24 +47,33 @@ Some of the possible default actions are −
 * Continue a stopped process.
 
 **Sending Signals**
-There are several methods of delivering signals to a program or script. One of the most common is for a user to type CONTROL-C or the INTERRUPT key while a script is executing.
 
-When you press the Ctrl+C key, a SIGINT is sent to the script and as per defined default action script terminates.
+There are several methods of delivering signals to a program or script. One of the most common is for a user to type Control+c or the INTERRUPT key while a script is executing.
 
-The other common method for delivering signals is to use the kill command, the syntax of which is as follows −
+When you press the **Ctrl+c** key, a **SIGINT** is sent to the script and as per defined default action script terminates.
+
+The other common method for delivering signals is to use the ``kill`` command, the syntax of which is as follows −
 ```bash
 $ kill -signal pid
 ```
+Note that the word *kill* might be misleading, since it sounds like something that is specifically designed to end a process, which is not. The ``kill`` command is designed for sending a signal of set we listed above: the most proper word, maybe, should have been "hit".
+<br>
+Let's go back to the command itself.<br>
+The *signal* is either **the number or name of the signal to deliver** and *pid* is the **process ID that the signal should be sent to**. For example:
 
-Here signal is either the number or name of the signal to deliver and pid is the process ID that the signal should be sent to. For Example −
+```bash
+$ kill -1 666
+```
+The above command sends the HUP or hang-up signal to the program that is running with process ID 666.
 
-$ kill -1 1001
-The above command sends the HUP or hang-up signal to the program that is running with process ID 1001. To send a kill signal to the same process, use the following command −
-
-$ kill -9 1001
-This kills the process running with process ID 1001.
+To send a SIGKILL signal to the same process, use the following command:
+```bash
+$ kill -9 666
+```
+This kills (terminates) the process running with process ID 666.
 
 ## The nohup command
+
 When exiting the shell of a Linux System, all running processes are usually terminated or hang up. So what do you do If you still want 
 to keep the processes running even exiting the shell/terminal? This is where the ``nohup`` command comes in.
 Nohup, short for *no hang up* is a command in Linux systems that keep processes running even after quitting the shell or terminal.
@@ -158,7 +166,6 @@ Output
 
 Kill  PID
 
-Summary
 
 All processes that are run using the nohup command will ignore the SIGHUP signal even upon exiting the shell.
 Once a job is started or executed using the nohup command, stdin will not be available to the user.
