@@ -46,6 +46,16 @@
         "file": "*.py",
         "target": "/root/"
       }
+    ],
+    "host01": [
+      {
+        "file": "script*",
+        "target": "/root/"
+      },
+      {
+        "file": "*.py",
+        "target": "/root/"
+      }
     ]
   }
 }
