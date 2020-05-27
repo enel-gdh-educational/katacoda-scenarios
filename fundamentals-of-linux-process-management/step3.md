@@ -13,7 +13,7 @@ The following table lists out common signals you might encounter and want to use
 | SIGALRM | 14 | Alarm clock signal (used for timers). |
 | SIGTERM | 15 | Software termination signal (sent by kill by default). |
 
-List of Signals
+**List of Signals**
 There is an easy way to list down all the signals supported by your system. Just issue the kill -l command and it would display all the supported signals −
 
 ```bash
@@ -41,17 +41,13 @@ Every signal has a default action associated with it. The default action for a s
 
 Some of the possible default actions are −
 
-Terminate the process.
+* Terminate the process.
+* Ignore the signal.
+* Dump core. This creates a file called core containing the memory image of the process when it received the signal.
+* Stop the process.
+* Continue a stopped process.
 
-Ignore the signal.
-
-Dump core. This creates a file called core containing the memory image of the process when it received the signal.
-
-Stop the process.
-
-Continue a stopped process.
-
-Sending Signals
+**Sending Signals**
 There are several methods of delivering signals to a program or script. One of the most common is for a user to type CONTROL-C or the INTERRUPT key while a script is executing.
 
 When you press the Ctrl+C key, a SIGINT is sent to the script and as per defined default action script terminates.
