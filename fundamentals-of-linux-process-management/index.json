@@ -40,11 +40,11 @@
     "client": [
       {
         "file": "script*",
-        "target": "/root"
+        "target": "/root/"
       },
       {
         "file": "*.py",
-        "target": "/root"
+        "target": "/root/"
       }
     ]
   }
