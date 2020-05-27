@@ -122,11 +122,11 @@ Grep can be useful in many situations:
 * in the case of process management, we can use it to display only the information about the processes that we are interested in
 
 
-**Some examples**:
+**Some examples**
 
-When you search for boo, grep will match fooboo, boo123, barfoo35 and more. You can force the grep command to select only those lines containing matches that form whole words i.e. match only boo word:
+A common usage of ``grep`` is finding words inside files. Flag **-w** indicates to the command that it has to seek for a word.
 ```bash
-grep -w word file
+grep -w word-to-search /path/to/file
 ```
 
 Try to search a specific word ("stop", for instance) in *script1* file.
@@ -136,31 +136,34 @@ You can also search for more than one word, thanks to the variant `egrep` comman
 egrep -w 'word1|word2' /path/to/file
 ```
 
-How can I count line when words has been matched
+You can also count lines in which the words you search for have been matched
+The ``grep`` command can report the number of times that the pattern has been matched for each file using **-c** (count) option:
+```bash
+grep -c 'word-to-search' /path/to/file
+```
 
-The grep can report the number of times that the pattern has been matched for each file using -c (count) option:
-$ grep -c 'word' /path/to/file
+Passing the **-n** option, you obtain each output line preceded with the *line number* in the text file from which it was obtained:
+```bash
+grep -n 'word-to-search' /path/to/file
+```
 
-Pass the -n option to precede each line of output with the number of the line in the text file from which it was obtained:
-$ grep -n 'root' /etc/passwd
+We can force ``grep`` to display output in colors, enter:
+```bash
+grep --color word-to-search /path/to/file
+```
 
+Finally, ``grep`` is often used in sequence with other operation. How? Linux uses the 'pipe' character (him -> ``|``) to concatenate commands in the terminal.
+For instance,
+```bash
+ls -l | wc -l
+```
+counts the the file listed in the current directory. ``ls -l`` produces the list of files, then ``wc -l`` runs immediately after to count the elements of the list and print the counter on the screen.
 
+Similarly, we can use grep to pick specific process informations provided py ``ps`` command. For instance:
+```bash
+ps -ef | grep script2
+```
 
-Finally, we can force grep to display output in colors, enter:
-$ grep --color vivek /etc/passwd
-
-Grep command in action on Linux and Unix like system
-Grep command in action
-
-In conclusion, the --color option increase readblity. For example, the GREP_COLOR environment variable and the grep --color=always can be used as follows:
-GREP_COLOR='1;35' grep --color=always 'vivek' /etc/passwd
-GREP_COLOR='1;32' grep --color=always 'vivek' /etc/passwd
-GREP_COLOR='1;37' grep --color=always 'root' /etc/passwd
-GREP_COLOR='1;36' grep --color=always nobody /etc/passwd
-
-Visual grepping
-In addition, to default red color now we can define colors using GREP_COLOR shell variable. The differnt color helps us massivly with visual grepping.
-
-I suggest you read the grep man page too.
+I suggest you to read the [grep man page](http://linuxcommand.org/lc3_man_pages/grep1.html) too.
 
 
