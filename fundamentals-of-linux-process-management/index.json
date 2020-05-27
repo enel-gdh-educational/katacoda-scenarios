@@ -32,11 +32,11 @@
     "assets": {
       "client": [
         {
-          "file": "script1",
+          "file": "script*",
           "target": "/root/"
         },
         {
-          "file": "api_server.py",
+          "file": "*.py",
           "target": "/root/"
         }
       ],
