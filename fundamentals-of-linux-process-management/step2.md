@@ -151,8 +151,11 @@ We can force ``grep`` to display output in colors, enter:
 ```bash
 grep --color word-to-search /path/to/file
 ```
+We suggest to read the [grep man page](http://linuxcommand.org/lc3_man_pages/grep1.html) too.
 
-Finally, ``grep`` is often used in sequence with other operation. How? Linux uses the 'pipe' character (him -> ``|``) to concatenate commands in the terminal.
+### Concatenate commands
+
+Finally, ``grep`` is often used in sequence with other operation. Let's see how. Linux uses the 'pipe' character (it -> ``|``) to concatenate commands in the terminal.
 For instance,
 ```bash
 ls -l | wc -l
@@ -164,6 +167,6 @@ Similarly, we can use grep to pick specific process informations provided py ``p
 ps -ef | grep script2
 ```
 
-I suggest you to read the [grep man page](http://linuxcommand.org/lc3_man_pages/grep1.html) too.
+
 
 

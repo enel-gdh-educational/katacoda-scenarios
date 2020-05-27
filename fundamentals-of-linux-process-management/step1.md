@@ -60,16 +60,6 @@ When the execution is over, you can find a new file called ``output.txt`` inside
 you'll fine the same lines were previously printed on the screen. <br>
 So you have succesfully redirected the output from the standard output (the screen) to a selected file (output.txt).
 
-### Concatenate two commands
-
-In Linux terminals we can concatenate commands using the character ``|`` (called *pipe*). <br>
-For example, we can execute the script2 execution (without redirecting) the ``grep`` command to select only lines where a particular string appears. For instance, the string “2”.
-
-```bash 
-./script2 | grep 2
-```
-In this way you see on the screen only the third line of the process' output, because the grep command follows directly the script2 execution.
-
 ---
 **Exercise 1**
 

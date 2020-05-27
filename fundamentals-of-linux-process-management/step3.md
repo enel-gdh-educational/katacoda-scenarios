@@ -113,31 +113,22 @@ nohup: ignoring input and appending output to 'nohup.out'
 
 From the output above, the output of the command has been saved to nohup.out to verify this run,
 ```bash
-cat nohup.out
+less nohup.out
 ```
 Output
 
 Cat Nohup Out file
 
-Additionally, you can opt to redirect the output to a different file as shown
+Additionally, you can specify the output file in which redirecting the output:
 
 ```bash
-nohup ./hello.sh > output.txt
+nohup ./some-executable > custom-output-file.txt
 ```
 
 Once again, to view the file run
 
 cat output.txt
 Output
-
-**Redirect Nohup Output To A text File**
-
-To redirect to a file and to standard error and output use the > filename 2>&1 attribute as shown
-
-nohup ./hello.sh > myoutput.txt >2&1 
-Output
-
-Redirect to Standard Out And Standard Error
 
 **Starting a process in the background using Nohup**
 
@@ -147,25 +138,6 @@ In this example, we are pinging google.com and sending it to the background.
 nohup ping google.com &
 ```
 
-Output
-
-**Nohup Run Process In The Background**
-
-To check the process when resuming the shell use the pgrep command as shown
-```bash
-pgrep -a ping
-```
-
-Output
-
-Pgrep Ping Google
-
-If you want to stop or kill the running process, use the killcommand followed by the process ID as shown
-
-kill 2565
-Output
-
-Kill  PID
 
 
 All processes that are run using the nohup command will ignore the SIGHUP signal even upon exiting the shell.
