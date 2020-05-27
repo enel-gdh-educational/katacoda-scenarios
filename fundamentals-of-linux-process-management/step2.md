@@ -45,7 +45,8 @@ ps [options]
     ```bash
     ps -r
     ```
-5. View all processes owned by you: Processes i.e same EUID as ps which means runner of the ps command, root in this case –
+
+5. View all processes owned by you: Processes i.e same EUID as ps which means runner of the ps command, root in this case
     ```bash
     ps -x
     ```
@@ -62,6 +63,7 @@ There may be a chance you won’t know the process ID and with this command it i
       PID TTY          TIME CMD
     19805 ?        00:00:00 dhclient
     ```
+
 7. View process by process ID.
     Syntax:
     ```bash
@@ -80,6 +82,7 @@ There may be a chance you won’t know the process ID and with this command it i
     ps –User user_name/ID
     ps –user user_name/ID
     ```
+
 Beside these simple usage of flags, you can also combine them to list processes according to some criteria you may want.
 For instance, you can list processes using highest memory.
 ```bash
