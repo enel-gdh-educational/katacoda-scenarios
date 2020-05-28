@@ -1,0 +1,30 @@
+{
+  "title": "03 Environment Variables",
+  "description": "What are environment variables and what is bash profile",
+  "difficulty": "Beginner",
+  "details": {
+    "steps": [
+      {
+        "title": "Environment variables",
+        "courseData": "background.sh",
+        "text": "envvars.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "hidefinish": true,
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
+

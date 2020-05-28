@@ -1,0 +1,34 @@
+{
+  "title": "02 Switch between users",
+  "description": "How to change user on a linux server",
+  "difficulty": "Beginner",
+  "details": {
+    "steps": [
+      {
+        "title": "sudo",
+        "courseData": "background.sh",
+        "text": "sudo.md"
+      },
+      {
+        "title": "su",
+        "text": "su.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "hidefinish": true,
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
+

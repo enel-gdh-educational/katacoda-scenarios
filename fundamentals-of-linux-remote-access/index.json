@@ -1,0 +1,35 @@
+{
+  "title": "04 Connect to a remote server",
+  "description": "Use SSH to connect to a remote host",
+  "difficulty": "beginner",
+  "details": {
+    "steps": [{
+      "title": "Clear console",
+      "text": "step1.md",
+	  "code": "step1-foreground.sh"
+    },
+	{
+      "title": "Connect to a remote host",
+      "text": "step2.md"
+    }
+	],
+    "intro": {
+      "text": "intro.md",
+      "credits": "JrCs",
+      "courseData": "courseBase.sh",
+	  "code": "intro.sh"
+    },
+    "assets": {
+      "host01": [{"file": "courseBase.sh", "target": "/root"}]
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "hidefinish": true,
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster"
+  }
+}

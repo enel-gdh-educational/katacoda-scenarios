@@ -1,0 +1,41 @@
+{
+  "title": "01 Explore the file system",
+  "description": "How to use cd, pwd, and ls to explore the file system on a linux server",
+  "difficulty": "Beginner",
+  "details": {
+    "steps": [  
+      {
+        "title": "User accounts",
+        "courseData": "who-background.sh",
+        "text": "who.md"
+      },
+      {
+        "title": "pwd",
+        "text": "pwd.md"
+      },
+      {
+        "title": "ls",
+        "text": "ls.md"
+      },
+      {
+        "title": "cd",
+        "text": "cd.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "hideintro": true,
+    "hidefinish": true,
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
