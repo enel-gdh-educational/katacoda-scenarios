@@ -40,7 +40,7 @@ Then execute the script *script4*.
 This script launches a simple server which is listening on port **8087**.
 
 1. Use netstat command to find the ip address on which the process is listening.
-  Hint: netstat displays <ip address>:\<port>
+  Hint: netstat displays \<**ip address**>:\<**port**>
 
 ---
 
