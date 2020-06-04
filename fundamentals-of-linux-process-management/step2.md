@@ -171,6 +171,21 @@ Similarly, we can use grep to pick specific process informations provided py ``p
 ps -ef | grep script2
 ```
 
+---
+**Exercise 1**
+
+Launching executable, find it - different ways to find it
+
+---
+
+
+---
+**Exercise 2**
+
+Find number of lines in a file
+find the number of occurences of a word in a file
+ 
+---
 
 
 

@@ -11,11 +11,34 @@ in order to communicate with the specific process they intend to.
 There's a useful Linux command to display the running processes that are also listening on a port: ``netstat`` command.
 
 
-Netstat command displays various network related information such as network connections, routing tables, interface statistics, 
-masquerade connections, multicast memberships etc.
+Netstat command displays various network related information such as network connections, routing tables, interface statistics, masquerade connections, multicast memberships etc. This course does not cover these topics, since they are quite advanced. For us, ``netstat`` is a monitoring tool such as ``ps``.
 
-Examples of some practical ``netstat`` command :
+### Examples of some practical ``netstat`` command
 
--a -all : Show both listening and non-listening sockets. With the –interfaces option, show interfaces that are not up
-netstat -a | more : To show both listening and 
-non-listening sockets.
+We said that we use ``netstat`` as a monitoring tool. For what? It's useful when we search for information about processes listening on addresses and ports. <br>
+Here are some flags we can use:
+
+| **Flag** | **Description** |
+| -------- | --------------- |
+| -a | Displays all connections and listening ports. |
+| -b | Displays the executable involved in creating each connection or listening port. |
+| -n | Displays addresses and port numbers in numerical form. |
+| -o | Displays the owning process ID associated with each connection. |
+
+-a (or -all): Show both listening and non-listening sockets. With the –interfaces option, show interfaces that are not up
+netstat.
+
+---
+**Exercise 1**
+
+
+
+---
+
+
+---
+**Exercise 2**
+
+
+ 
+---

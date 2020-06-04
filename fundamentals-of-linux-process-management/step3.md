@@ -127,3 +127,20 @@ In this example, we are pinging google.com and sending it to the background.
 ```bash
 nohup ping google.com &
 ```
+
+---
+**Exercise 1**
+
+Launch executable with nohup and &, then find it and kill it.
+
+[1]+  Killed
+
+---
+
+
+---
+**Exercise 2**
+
+
+ 
+---
