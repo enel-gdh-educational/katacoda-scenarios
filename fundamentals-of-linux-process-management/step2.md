@@ -174,13 +174,19 @@ ps -ef | grep script2
 ---
 **Exercise 1**
 
-Launching executable, find it - different ways to find it
+Execute twice *script2* concatenating the two execution in a single command. Use the output redirecting on the same file in the append mode.
 
 ---
-
 
 ---
 **Exercise 2**
+
+ps qualcosa
+ 
+---
+
+---
+**Exercise 3**
 
 Find number of lines in a file
 find the number of occurences of a word in a file

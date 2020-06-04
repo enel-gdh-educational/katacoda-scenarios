@@ -13,7 +13,7 @@ There's a useful Linux command to display the running processes that are also li
 
 Netstat command displays various network related information such as network connections, routing tables, interface statistics, masquerade connections, multicast memberships etc. This course does not cover these topics, since they are quite advanced. For us, ``netstat`` is a monitoring tool such as ``ps``.
 
-### Examples of some practical ``netstat`` command
+#### Examples of some practical ``netstat`` command
 
 We said that we use ``netstat`` as a monitoring tool. For what? It's useful when we search for information about processes listening on addresses and ports. <br>
 Here are some flags we can use:
@@ -31,7 +31,16 @@ netstat.
 ---
 **Exercise 1**
 
+Prerequisite: execute this command
+```bash
+pip2 install flask
+```
+Then execute the script *script4*.
+<br>
+This script launches a simple server which is listening on port **8087**.
 
+1. Use netstat command to find the ip address on which the process is listening.
+  Hint: netstat displays <ip address>:\<port>
 
 ---
 
@@ -40,5 +49,5 @@ netstat.
 **Exercise 2**
 
 
- 
+ Hint: if you type a second enter, ``[1]+  Killed`` should appear on the terminal.
 ---
