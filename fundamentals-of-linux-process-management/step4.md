@@ -48,9 +48,9 @@ This script launches a simple server which is listening on port **8087**.
 ---
 **Exercise 2**
 
-Find the process launched by *script4* and kill it by pid.
+Find the process launched by *script3* and kill it by pid.
 <br>
-  [Hint: if you type a second enter, ``[1]+  Killed`` should appear on the terminal.]
+  [Hint: *script3* launches the application **api_server.py**].
 
 If you search for port 8087 with netstat again, you should not find it among the listed.
 
