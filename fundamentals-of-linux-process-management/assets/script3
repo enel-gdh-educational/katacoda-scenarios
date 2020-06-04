@@ -1,0 +1,2 @@
+#!/bin/bash
+nohup python2 api_server.py &

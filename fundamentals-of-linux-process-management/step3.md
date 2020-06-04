@@ -131,9 +131,11 @@ nohup ping google.com &
 ---
 **Exercise 1**
 
-Launch executable with nohup and &, then find it and kill it.
+1. Launch *script1* in background and also using nohup.
+2. Find the launched process running.
+3. Kill it using its pid.
 
-[1]+  Killed
+  [Hint: if you type a second enter, the shell should display ``[1]+  Killed``.]
 
 ---
 

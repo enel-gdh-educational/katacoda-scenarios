@@ -39,8 +39,8 @@ Then execute the script *script4*.
 <br>
 This script launches a simple server which is listening on port **8087**.
 
-1. Use netstat command to find the ip address on which the process is listening.
-  Hint: netstat displays \<**ip address**>:\<**port**>
+1. Use netstat command to find the ip address on which the process is listening.<br>
+  [Hint: netstat displays \<**ip address**>:\<**port**>]
 
 ---
 
@@ -48,6 +48,11 @@ This script launches a simple server which is listening on port **8087**.
 ---
 **Exercise 2**
 
+Find the process launched by *script4* and kill it by pid.
+<br>
+  [Hint: if you type a second enter, ``[1]+  Killed`` should appear on the terminal.]
 
- Hint: if you type a second enter, ``[1]+  Killed`` should appear on the terminal.
+If you search for port 8087 with netstat again, you should not find it among the listed.
+
+
 ---
