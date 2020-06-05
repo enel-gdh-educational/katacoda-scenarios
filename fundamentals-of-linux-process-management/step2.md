@@ -174,7 +174,12 @@ ps -ef | grep script2
 ---
 **Exercise 1**
 
-Execute twice *script2* concatenating the two execution in a single command. Use the output redirecting on the same file in the append mode.
+Execute twice *script2* concatenating the two execution in a single command. Use the output redirecting on the same file (called *output_twice.txt*) in the append mode. <br>
+What do you see inside output_twice.txt?
+
+1. Only the output of the second execution.
+2. The outputs of the two executions mixed up.
+3. The output of the first execution followed by the output of the second execution.
 
 ---
 
