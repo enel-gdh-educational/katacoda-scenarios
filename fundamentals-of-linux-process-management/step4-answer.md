@@ -45,5 +45,5 @@ Another cool method is using ``lsof`` command to display all listening processes
 ```bash
 lsof | grep LISTEN
 ```
-You should find in the list your process listening on port 8087. The second information in the lines is the PID. <b>
+You should find in the list your process listening on port 8087. The second information in the lines is the PID. <br>
 So you found it, and you can easily kill it with ``kill -9`` as previously showed.

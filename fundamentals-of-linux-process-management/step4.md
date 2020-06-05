@@ -27,6 +27,8 @@ Here are some flags we can use:
 
 We recommend to use the -a flag: in this way you are sure that you list all the listening processes. «But there are a lot!»
  you might say. Yes, but you can select only the ones you need using ``grep`` command.
+ 
+Here's the [netstat man page](https://linux.die.net/man/8/netstat), if you want to go deeper in details.
 
 ---
 **Exercise 1**
@@ -40,7 +42,7 @@ Then execute the script *script3*.
 This script launches a simple server which is listening on port **8087**.
 
 Use netstat command to find the **numerical** IP address on which the process is listening.<br>
-  [Hint: ``netstat`` displays \<**IP address**>:\<**port**>]
+  [Hint: ``netstat`` displays **IP address**:**port**]
 
 Which one of the listed is the correct IP address?
 1. 127.0.0.1

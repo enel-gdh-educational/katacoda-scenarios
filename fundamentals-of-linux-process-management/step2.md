@@ -33,7 +33,7 @@ Try to see the output of these different configurations of ``ps`` command.
     ```bash
     ps -ef
     ```
-    As you see, the first information displayed is the process owner (for example *root*). The second is the **process ID (PID)**.
+    If you execute it, you see that the first information displayed is the process owner (for example *root*). The second is the **process ID (PID)**.
     Keep in mind that the PID is in second position, it will be crucial to solve some exercises.
     
     Another commonly used syntax to achieve seeing every process on the system using BSD syntax is 
@@ -95,7 +95,7 @@ Here’s a [link to the man page](http://man7.org/linux/man-pages/man1/ps.1.html
 # Grep command
 
 When we list processes via `ps` command, usually we see many more lines than we want. So here's where ``grep`` command can come in handy.
-The grep command is used to search text. It searches the given file for lines containing a match to the given strings or words. It is one of the most useful commands on Linux and Unix-like system. Let us see how to use grep on a Linux or Unix like system.
+The grep command is used to search text. It searches in the given text (that could be in a file or on the shell screen) all the lines containing a match to the given strings or words. It is one of the most useful commands on Linux and Unix-like system.
 
 **Syntax**
 
@@ -120,9 +120,9 @@ Options can be:
 
 
 Grep can be useful in many situations:
-* find a specific file after an `ls` command
-* search for a word (or more than one) in a document
-* in the case of process management, we can use it to display only the information about the processes that we are interested in
+* find a specific file after an `ls` command;
+* search for a word (or more than one) in a document;
+* in the case of process management, we can use it to display only the information about the processes that we are interested in.
 
 
 **Some examples**

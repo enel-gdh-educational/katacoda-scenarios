@@ -75,9 +75,9 @@ This kills (terminates) the process running with process ID 666.
 
 ## The nohup command
 
-When exiting the shell of a Linux System, all running processes are usually terminated or hang up. So what do you do if you want your process to "survive" the terminale, which means to be independent, to keep running even though you end the shell session?<br>
+When exiting the shell of a Linux System, all running processes are usually terminated or hang up. So what do you do if you want your process to "survive" the terminal, which means to be independent, to keep running even though you end the shell session?<br>
 This is where the ``nohup`` command comes in.<br>
-Nohup, short for *no hang up* is a command in Linux systems that keep processes running even after quitting the shell or terminal.
+Nohup, short for *no hang up*, is a command in Linux systems that keep processes running even after quitting the shell or terminal.
 Nohup prevents the processes or jobs from receiving the **SIGHUP** (Signal Hang UP) signal, that is sent to a process upon closing or exiting the terminal.
 
 **Nohup command syntax**
@@ -98,12 +98,12 @@ Let’s see how the command comes into play.
 
 When you start a process on a shell, the *parent process* of this new process launched is the shell itself. But if you use nohup, the process becomes indepedent from the "destiny" of the shell: if the terminal dies, or if you quit the session, the process will continue its run.
 ```bash
-nohup ./hello.sh 
+nohup ./some-executable 
 ```
 
 Output
 ```bash
-$ nohup ./hello.sh
+$ nohup ./some-executable
 nohup: ignoring input and appending output to 'nohup.out'
 ```
 
@@ -120,7 +120,7 @@ Additionally, you can specify the output file in which redirecting the output:
 nohup ./some-executable > custom-output-file.txt
 ```
 
-**Starting a process in the background using Nohup**
+**Starting a process in background using Nohup**
 
 To start a process in the background use the **&** symbol at the end of the command. 
 In this example, we are pinging google.com and sending it to the background.

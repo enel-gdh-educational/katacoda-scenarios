@@ -8,7 +8,7 @@ then
 ```bash
 ps -ef | grep script1
 ``` 
-You select the pid **\<PROCESS PID\>** (which is not fixed) of the process.
+You select the pid **PROCESS PID** (which is not fixed) of the process.
 Then
 ```bash
 kill -9 <PROCESS PID>
