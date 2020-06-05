@@ -1,4 +1,6 @@
-Solution to exercise 1
+### Solution to exercise 1
+
+Make sure your *script1* is an executable. If it is, run it:
 ```bash
 nohup ./script1 &
 ``` 
@@ -12,7 +14,7 @@ Then
 kill -9 <PROCESS PID>
 ``` 
 
-Solution to exercise 2 (hard)
+### Solution to exercise 2
 
 ```bash
 dpkg -l | tail +6 | awk '{print $2}' | xargs -exec dpkg-query -f '${Package} ${Installed-Size}\n' -W | sort -k 2 -n -r | head -5

@@ -12,6 +12,8 @@ ps [options]
 
 **Options:**
 
+Try to see the output of these different configurations of ``ps`` command.
+
 1. Simple process selection: Shows the processes for the current shell
       ```bash
        ps
@@ -29,7 +31,12 @@ ps [options]
     ps -e
     ```
     This option can be combined with the -f and -F options to provide more information on processes. The -f option offers full-format listing.
-
+    ```bash
+    ps -ef
+    ```
+    As you see, the first information displayed is the process owner (for example *root*). The second is the **process ID (PID)**.
+    Keep in mind that the PID is in second position, it will be crucial to solve some exercises.
+    
     Another commonly used syntax to achieve seeing every process on the system using BSD syntax is 
     ```bash
     ps aux
@@ -188,15 +195,8 @@ Can you also figure out why?
 ---
 **Exercise 2**
 
-ps qualcosa
- 
----
-
----
-**Exercise 3**
-
-Find number of lines in a file
-find the number of occurences of a word in a file
+1. Find number of lines in text.txt file. How many are them?
+2. Find the total occurrences of the word *Jude* in text.txt file. Can you find the number?
  
 ---
 

@@ -1,11 +1,4 @@
-Solution to exercise 1
+### Solution to exercise
 ```bash
-dpkg -l | grep emacs
+boh
 ``` 
-
-
-Solution to exercise 2 (hard)
-
-```bash
-dpkg -l | tail +6 | awk '{print $2}' | xargs -exec dpkg-query -f '${Package} ${Installed-Size}\n' -W | sort -k 2 -n -r | head -5
-```
