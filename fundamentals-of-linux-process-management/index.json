@@ -41,6 +41,10 @@
         {
           "file": "*.py",
           "target": "/root/"
+        },
+        {
+          "file": "text.txt",
+          "target": "/root/"
         }
       ],
       "host01": [

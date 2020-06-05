@@ -17,6 +17,10 @@ which we said was **8087**.
 ```bash
 netstat -na | grep 8087
 ``` 
+The output:
+```bash
+tcp        0      0 127.0.0.1:8087          0.0.0.0:*               LISTEN
+```
 The IP address that you'll see associated with the port is 127.0.0.1, so the right answer is **number 1**.
 
 Solution to exercise 2 (hard)
