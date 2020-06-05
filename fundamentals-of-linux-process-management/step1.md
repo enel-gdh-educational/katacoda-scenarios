@@ -58,10 +58,10 @@ The answer is yes, and to do so we can use the **output redirecting**. Launch th
 ```
 When the execution is over, you can find a new file called ``output.txt`` inside the folder. If you show its content (using ``less`` command),
 you'll fine the same lines were previously printed on the screen. <br>
-So you have succesfully redirected the output from the standard output (the screen) to a selected file (output.txt).
+So you have successfully redirected the output from the standard output (the screen) to a selected file (output.txt).
 
-With the single angle bracket (>) the output is redirected to a brand new file; so it already existed, the new file overwrites the pre-exising one. <br>
-With the double angle bracket (>>), instead, the output is appended to the *same* file, if it already existed; otherwise a a new file is created.
+With the single greater-than symbol (>) the output is redirected to a brand new file; so it already existed, the new file overwrites the pre-exising one. <br>
+With the double greater-than symbol (>>), instead, the output is appended to the *same* file, if it already existed; otherwise a a new file is created.
 
 ---
 **Exercise**
