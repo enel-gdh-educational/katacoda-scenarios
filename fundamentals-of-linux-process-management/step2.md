@@ -1,6 +1,6 @@
 # Display processes
 
-In the introduction we mentioned briefly the ``ps`` command and showed a possible output. <br>
+In the introduction we mentioned briefly the ``ps`` command. <br>
 We said that it stands for **process state** and it displays some information of the processes running on the machine.
 ``ps`` command is used to list the currently running processes and their PIDs (process identification numbers) along with 
 some other information depends on different options. It reads the process information from the virtual files in ``/proc`` file-system.<br>
@@ -14,7 +14,7 @@ ps [options]
 
 Try to see the output of these different configurations of ``ps`` command.
 
-1. Simple process selection: Shows the processes for the current shell
+1. Simple process selection: shows the processes for the current shell
       ```bash
        ps
       ```
@@ -24,13 +24,12 @@ Try to see the output of these different configurations of ``ps`` command.
       * TTY – terminal type that the user is logged into
       * TIME – amount of CPU in minutes and seconds that the process has been running
       * CMD – name of the command that launched the process.
-      Note – Sometimes when we execute ps command, it shows TIME as 00:00:00. It is nothing but the total accumulated CPU utilization time for any process and 00:00:00 indicates no CPU time has been given by the kernel till now. In above example we found that, for bash no CPU time has been given. This is because bash is just a parent process for different processes which needs bash for their execution and bash itself is not utilizing any CPU time till now.
-
-2. List all processes: To list all processes on a system use the -e option.
+      
+2. List all processes: to list all processes on a system use the -e option.
     ```bash
     ps -e
     ```
-    This option can be combined with the -f and -F options to provide more information on processes. The -f option offers full-format listing.
+    This option can be combined with the -f and -F options to provide more information on processes.
     ```bash
     ps -ef
     ```
@@ -42,23 +41,17 @@ Try to see the output of these different configurations of ``ps`` command.
     ps aux
    ```
     
-3. View Processes not associated with a terminal: View all processes except both session leaders and processes not associated with a terminal.
-   ```bash
-    ps -a
-   ```
-   Note – You may be thinking that what is session leader? A unique session is assing to evry process group. So, session leader is a process which kicks off other processes. The process ID of first process of any session is similar as the session ID.
-
-4. View all the running processes:
+3. View all the running processes:
     ```bash
     ps -r
     ```
 
-5. View all processes owned by you: Processes i.e same EUID as ps which means runner of the ps command, root in this case
+4. View all processes owned by you: processes with the same EUID as the runner of `ps` command, *root* in this case
     ```bash
     ps -x
     ```
 
-6. Select the process by the command name. This selects the processes whose executable name is given in cmdlist.
+5. Select the process by the command name. This selects the processes whose executable name is given in cmdlist.
 There may be a chance you won’t know the process ID and with this command it is easier to search.
     ```bash
     ps -C command_name
@@ -66,21 +59,19 @@ There may be a chance you won’t know the process ID and with this command it i
 
     Example:
     ```bash
-    $ ps -C dhclient
-      PID TTY          TIME CMD
-    19805 ?        00:00:00 dhclient
+    ps -C script1
     ```
 
-7. View process by process ID.
+6. View process by process ID.
     Syntax:
     ```bash
     ps p process_id
     ps -p process_id
     ps --pid process_id
     ```
-    You can also view multiple processes by specifying multiple process IDs separated by blank or comma –
+    You can also view multiple processes by specifying multiple process IDs separated by blank space or comma.
 
-8. Select by effective user ID or name.
+7. Select by effective user ID or name.
     Some possible cases:
     ```bash
     ps U user_name/ID
@@ -105,7 +96,8 @@ Here’s a [link to the man page](http://man7.org/linux/man-pages/man1/ps.1.html
 
 When we list processes via `ps` command, usually we see many more lines than we want. So here's where ``grep`` command can come in handy.
 The grep command is used to search text. It searches the given file for lines containing a match to the given strings or words. It is one of the most useful commands on Linux and Unix-like system. Let us see how to use grep on a Linux or Unix like system.
-Syntax
+
+**Syntax**
 
 The syntax is as follows:
 ```bash
