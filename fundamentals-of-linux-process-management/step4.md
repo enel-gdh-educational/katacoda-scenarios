@@ -35,15 +35,19 @@ Prerequisite: execute this command
 ```bash
 pip2 install flask
 ```
-Then execute the script *script4*.
+Then execute the script *script3*.
 <br>
 This script launches a simple server which is listening on port **8087**.
 
-1. Use netstat command to find the ip address on which the process is listening.<br>
-  [Hint: netstat displays \<**ip address**>:\<**port**>]
+Use netstat command to find the IP address on which the process is listening.<br>
+  [Hint: ``netstat`` displays \<**IP address**>:\<**port**>]
+
+Which one of the listed is the correct IP address?
+1. 127.0.0.1
+2. 0.0.0.0
+3. 6.6.6.6
 
 ---
-
 
 ---
 **Exercise 2**
@@ -52,7 +56,7 @@ Find the process launched by *script3* and kill it by pid.
 <br>
   [Hint: *script3* launches the application **api_server.py**].
 
-If you search for port 8087 with netstat again, you should not find it among the listed.
+If you search for port 8087 with ``netstat`` again, you should not find it among the listed.
 
 
 ---

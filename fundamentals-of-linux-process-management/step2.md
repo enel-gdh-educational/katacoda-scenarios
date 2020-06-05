@@ -181,6 +181,8 @@ What do you see inside output_twice.txt?
 2. The outputs of the two executions mixed up.
 3. The output of the first execution followed by the output of the second execution.
 
+Can you also figure out why?
+
 ---
 
 ---

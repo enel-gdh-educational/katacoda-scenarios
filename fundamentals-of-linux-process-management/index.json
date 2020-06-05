@@ -1,6 +1,6 @@
 {
   "title": "Fundamentals of Linux: Process management",
-  "description": "---",
+  "description": "Learn how to manage processes in Linux shell.",
   "difficulty": "Beginner",
   "time": "60 minutes",
   "details": {
@@ -12,15 +12,18 @@
       },
       {
         "title": "Step 2",
-        "text": "step2.md"
+        "text": "step2.md",
+        "answer": "step2-answer.md"
       },
       {
         "title": "Step 3",
-        "text": "step3.md"
+        "text": "step3.md",
+        "answer": "step3-answer.md"
       },
       {
         "title": "Step 4",
-        "text": "step4.md"
+        "text": "step4.md",
+        "answer": "step4-answer.md"
       }
     ],
     "intro": {

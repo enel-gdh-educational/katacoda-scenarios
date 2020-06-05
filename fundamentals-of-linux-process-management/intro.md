@@ -12,6 +12,6 @@ But there's more: we'll show you some extra Linux functionalities, for instance 
 You'll see how this additions help in the context of process management.
 
 We'll provide you the basic tools to be aware at anytime of what is running on your machine and the power to decide what to do with it. <br>
-Just remember that with great power comes great responsibility.
+Just remember that **with great power comes great responsibility**.
 
 

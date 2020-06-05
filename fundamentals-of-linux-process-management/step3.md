@@ -131,7 +131,7 @@ nohup ping google.com &
 ---
 **Exercise 1**
 
-1. Launch *script1* in background and also using nohup.
+1. Launch *script1* in background and also using *nohup*.
 2. Find the launched process running.
 3. Kill it using its pid.
 
