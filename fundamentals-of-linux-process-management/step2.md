@@ -181,7 +181,7 @@ ps -ef | grep script2
 ---
 **Exercise 1**
 
-Execute twice *script2* concatenating the two execution in a single command. Use the output redirecting on the same file (called *output_twice.txt*) in the append mode. <br>
+Execute twice *script2* concatenating the two executions in a single command. Use the output redirecting on the same file (called *output_twice.txt*) in the append mode. <br>
 What do you see inside output_twice.txt?
 
 1. Only the output of the second execution.
@@ -195,8 +195,8 @@ Can you also figure out why?
 ---
 **Exercise 2**
 
-1. Find number of lines in text.txt file. How many are them?
-2. Find the total occurrences of the word *Jude* in text.txt file. Can you find the number?
+1. Find number of lines in *text.txt* file. How many are them?
+2. Find the total occurrences of the word **Jude** in *text.txt* file. Can you find the number?
  
 ---
 

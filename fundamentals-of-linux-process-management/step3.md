@@ -129,7 +129,7 @@ nohup ping google.com &
 ```
 
 ---
-**Exercise 1**
+**Exercise**
 
 1. Launch *script1* in background and also using *nohup*.
 2. Find the launched process running.
@@ -139,10 +139,3 @@ nohup ping google.com &
 
 ---
 
-
----
-**Exercise 2**
-
-
- 
----

@@ -25,8 +25,8 @@ Here are some flags we can use:
 | -n | Displays addresses and port numbers in numerical form. |
 | -o | Displays the owning process ID associated with each connection. |
 
--a (or -all): Show both listening and non-listening sockets. With the –interfaces option, show interfaces that are not up
-netstat.
+We recommend to use the -a flag: in this way you are sure that you list all the listening processes. «But there are a lot!»
+ you might say. Yes, but you can select only the ones you need using ``grep`` command.
 
 ---
 **Exercise 1**
@@ -39,13 +39,13 @@ Then execute the script *script3*.
 <br>
 This script launches a simple server which is listening on port **8087**.
 
-Use netstat command to find the IP address on which the process is listening.<br>
+Use netstat command to find the **numerical** IP address on which the process is listening.<br>
   [Hint: ``netstat`` displays \<**IP address**>:\<**port**>]
 
 Which one of the listed is the correct IP address?
 1. 127.0.0.1
 2. 0.0.0.0
-3. 6.6.6.6
+3. localhost
 
 ---
 

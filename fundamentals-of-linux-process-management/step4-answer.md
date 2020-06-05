@@ -22,6 +22,8 @@ The output:
 tcp        0      0 127.0.0.1:8087          0.0.0.0:*               LISTEN
 ```
 The IP address that you'll see associated with the port is 127.0.0.1, so the right answer is **number 1**.
+<br>
+If you chose *localhost*, maybe you didn't use the -n flag.
 
 ### Solution to exercise 2
 
