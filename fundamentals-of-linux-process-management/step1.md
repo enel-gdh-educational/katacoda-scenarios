@@ -61,13 +61,13 @@ When the execution is over, you can find a new file called ``output.txt`` inside
 you'll fine the same lines were previously printed on the screen. <br>
 So you have successfully redirected the output from the standard output (the screen) to a selected file (output.txt).
 
-With the single greater-than symbol (>) the output is redirected to a brand new file; so if already exists, the new file overwrites the pre-existing one. <br>
-With the double greater-than symbol (>>), instead, the output is appended to the *same* file, if it already exists; otherwise a a new file is created.
+With the **single greater-than symbol** (>) the output is redirected to a brand new file; so if already exists, the new file overwrites the pre-existing one. <br>
+With the **double greater-than symbol** (>>), instead, the output is appended to the *same* file, if it already exists; otherwise a a new file is created.
 
 ---
 **Exercise**
 
-If you have not already done it, execute all the step we listed in Step 1 content.
+If you have not already done it, execute all the activities we listed in Step 1 content.
 1. Execute *script1* and stop it manually.
 2. Execute *script2* and redirect its output to *output.txt* file.
 

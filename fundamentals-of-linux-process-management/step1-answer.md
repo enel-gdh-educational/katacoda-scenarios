@@ -6,7 +6,7 @@ chmod +x script1
 ```bash
 ./script1
 ``` 
-Control+c to stop it.
+**Control+c** to stop it.
 
 2 -
 ```bash

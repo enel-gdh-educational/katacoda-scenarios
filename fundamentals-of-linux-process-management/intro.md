@@ -2,9 +2,9 @@
 
 Let's start with defining what a process is. <br>
 Practically speaking, a **process** in Linux system is a program (or part of a program) in execution on the machine;
- we say also "part of" because a program might be composed of more than one single process (and it often is). The Linux operative system itself runs a lot of processes in background.
+ we said also "part of" because a program might be composed of more than one single process (and it often is). The Linux operative system itself runs a lot of processes in background.
 <br>
-The ``ps`` command (ps stands for **P**rocess **S**tate) is one of the most popular Linux command to display the status of the processes that the system is executing, at the time you input the command.
+The ``ps`` command (ps stands for **P**rocess **S**tate) is one of the most popular Linux commands to display the status of the processes that the system is executing, at the time you input the command.
 
  --- 
 In this section you'll familiarize with processes: launching, monitoring and also stopping them.<br>
