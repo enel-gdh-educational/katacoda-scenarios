@@ -11,7 +11,7 @@ touch foo
 ```
 ---
 **Exercise 1**
-    
+
 Check that `foo` is an empty file
 
 Hint: look at its size.
@@ -30,7 +30,7 @@ To print the content of a file on the terminal:
 cat foo
 ```
 
-This is a quick way to check what is in text files, but you might want open a file in a text editor to modify or search it. 
+This is a quick way to check what is in text files, but you might want open a file in a text editor to modify or search it.
 Worry not, we have as dedicated scenario to play with a text editor.
 
 However, the original purpose of `touch` is not to create a file, but to update its last modification date.
@@ -47,7 +47,7 @@ Now, `foo` has become a text file and you might want to rename it to make its ty
 
 ```bash
 mv foo foo.txt
-``` 
+```
 
 where the first argument after `mv` is the current name and the second is the new name.
 
@@ -91,7 +91,7 @@ Here the syntax is different. All the arguments after `rm` are names of files th
 #### Operations with folders
 
 In Linux a folder is a special file that acts as a container of other files. Let us assume that you want to reorder your files and collect all the
-newly created files in one place. Then, use `mkdir` to create a directory 
+newly created files in one place. Then, use `mkdir` to create a directory
 
 ```bash
 mkdir textfiles
@@ -109,12 +109,12 @@ with the usual syntax in which the first argument is the source and the second i
 ------------------
 **Exercise 6**
 
-Check that the files are in the new place 
+Check that the files are in the new place
 
 ------------------
 
 
-You should have noticed that `mv` serves two purposes: to rename and to move a file. 
+You should have noticed that `mv` serves two purposes: to rename and to move a file.
 
 
 -----------------
@@ -153,9 +153,9 @@ Basically, this command attempts deleting all the content of the filesystem. Yes
 While running this in a katacoda scenario would just screw up the environment, in an actual system this would make your computer useless,
  until you reinstall the operating system, not to mention that you would lose all your files.
 
-In truth, in a standard system unlike katacoda most files are protected and removing them require invoking root permissions.
+In truth, in a standard system (unlike katacoda) most files are protected and removing them require invoking root permissions.
 
-However, If who made you the trick is really a badass and knows you have admin priviliges, they would recommend running:
+However, if who made you the trick is really a badass and knows you have admin priviliges, they would recommend running:
 
 ```bash
 
@@ -163,26 +163,44 @@ sudo rm -rf /*
 
 ```
 
-Well, you choose what to answer them!
+Well, you deecide what to answer them!
 
 ------------------
-
 
 
 
 --------------------------
 **Question 1**
 
-mv (make it notice how fast it is, would be nice). Should be done with a pre-existent big file. 
+We have included in your environment a relatively big file. Find it at ``/root/big-file.txt`` and tell what is its size.
+
+Now:
+
+- make a copy of its file in the same folder
+- move the original file to a folder of your choice
+
+Which of the two operations took longer? Why?
+
 
 -----------------------------
 
 
 
 ----------------------------
-**Discuss with your tutors **
+**Discuss with your tutors**
 
 
+If you are familiar with Google Drive, you might have noticed that the URL to share a file contains a long string, e.g.
+
+https://drive.google.com/file/d/**1Wvx33gRmzkQ8uhGLMLpr2RZZ0Ko7qc3R**/view?usp=sharing
+
+This is the unique identifier of the file stored on the Google servers that serves to locate it.
+
+On the other hand, when you browse your Drive space, you experience the familiar interface based on the a folder tree.
+
+Compare this with the filesystem organization that you learnt so far.
+
+If you want to challenge your tutors, ask them what is an object store is, e.g. AWS S3.
 
 ----------------------------
 
