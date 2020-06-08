@@ -172,7 +172,12 @@ Well, you deecide what to answer them!
 --------------------------
 **Question 1**
 
-We have included in your environment a relatively big file. Find it at ``/root/big-file.txt`` and tell what is its size.
+The next command creates a file text of about Mbs.
+
+`for n in $(seq 5000000); do echo "This is the $n-th line" >> big-file.txt; done`
+
+Run it and wait until it is completed (it can take up to 1 minute). 
+What it does will become clear by the end of the course. Check what is the size of the file `big-file.txt`.
 
 Now:
 
@@ -181,6 +186,10 @@ Now:
 
 Which of the two operations took longer? Why?
 
+
+Hint: if you prepend `time` to any command, you will get an accurate measurement of the time the command took to execute, e.g.:
+
+`time cp big-file.txt big-file-copy.txt`
 
 -----------------------------
 

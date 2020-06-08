@@ -4,15 +4,6 @@
   "difficulty": "Beginner",
   "time": "60",
   "details": {
-    "assets":
-    {
-      "client": [
-        {
-          "file": "big-file.txt",
-          "target": "/root"
-        }
-      ]
-    },
     "steps": [
       {
         "title": "Step 1",

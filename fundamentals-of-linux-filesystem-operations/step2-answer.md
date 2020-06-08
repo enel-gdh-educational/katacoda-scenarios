@@ -78,7 +78,7 @@ If you change the file's location, you change the portion of the path that prece
 --------------------------
 **Question 1**
 
-The file's size is about 115Mbs.
+The file's size is about 164Mbs.
 
 The copy took longer than the move. In the former, the operating system has to physically copy bit by bit the first file
  into some empty space of the disk reserved to the newly created file. Since the file size amounts to about 100 Mbs, this can take a while.
