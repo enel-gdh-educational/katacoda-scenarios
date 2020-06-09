@@ -7,7 +7,7 @@ even at the same time, each one experiencing their configuration of the environm
  they automatically land into their home folder. The multi-user capability of Linux derives directly from its ancestor, Unix,
   which was used for servers and multi-terminal systems. In fact, nowadays most Linux distribution are installed without modifications on servers.
 
-Therefore, tt is very important that a user can decide what files can be read, modified or executed by other users,
+Therefore, it is very important that a user can decide what files can be read, modified or executed by other users,
 for privacy reasons. 
 
 Moreover, the system files should be modifiable exclusivey by the system administrator, 
@@ -125,7 +125,7 @@ The group is created via:
 
 and the users are added to the new group via:
 
-``usermod -a -G newgroup prova2`` and ``usermod -G -a newgroup prova3``
+``usermod -a -G newgroup prova2`` and ``usermod -a -G newgroup prova3``
 
 In the last command the flag `-G` is to associate one or more supplementary groups listed after the flag `-a`
  to the user defined as the last argument.
