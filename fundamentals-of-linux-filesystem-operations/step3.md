@@ -157,8 +157,136 @@ Check that the users `prova2` and `prova3` can modify the usual file.
 
 #### File permissions
 
+Get back to the user root and to the folder ``/root`` (it should suffice to type `exit`).
+
+Now, type `ls -la` to show the list of files of the current folder.
+ The first column contains ten characters and for several files, for instance, `.profile` looks like:
+ 
+ `-rw-r--r--`
+
+Notice that the first character is `d` for directories, instead is `-` for regular files.
+
+Then you have three groups of three characters, in the previous example `rw-`, `r--`, and `r--`.
+
+The first group expresses the permissions of the owner of the file, 
+the second group those of the group associated to the file, 
+and the third the persmissions of all other users (that is, other than the owner, 
+and not in the file group) .
+
+Within a group, each of the three characters can be either `-` or, respectively, `r`, `w`, and `x`.
+meaning, respectively, read, write, and execution permission.
+
+If you feel lost at this point, it is pretty normal, everyone has gone through it!
+
+Taking as an example `.profile` whose signature is `-rw-r--r--`, we can tell that:
+
+- the owner (`root`) can read and modify it, but not execute it 
+- the users owing to its group (`root`) can only read it
+- all other users can only read it
+
+Instead, the folder `.ssh` can be:
+
+- read, written, executed by its owner
+- read and executed by the users in its group
+- read and executed by all the others
+
+What exaclty mean "executed"? For folders it means that they can be accessed through `cd` 
+and their content can be listed via `ls`. Pretty easy.
+
+For regular files it means that they can be interpreted as a program or a script. 
+This is probably harder to understand. Let me tell you something. When you run a command, 
+you are actually asking the operating system to execute a file, 
+which you can retreive through the command ``which``. Say you want to know what is 
+the executable file of `ls`, then type:
+
+`which ls`
+
+and you will learn that it is `/bin/ls`. Running `ls -l /bin/ls` will show you that 
+its permissions are `-rwxr-xr-x`. In short, the file can be executed by any user (which implies it must be readable too),
+and can be modified only by its owner, which is `root`.
+
+This totally makes sense, because any user must be able to use `ls`
+ and none except the super user should be able to modify it or remove it. 
+ Imagine, if by mistake you removed `/bin/ls` from a server, then all other users could not use `ls`
+ without knowing what happended.
+ 
+-----------
+**Exercise for the brave ones**
+
+as root, launch `rm /bin/ls`, then try to list the content of a folder.
+
+What happened?
+
+To restore `ls`:
+
+`apt install coreutils`
+
+-----------
 
 
+#### Modify the file permissions
+
+File permissions can be modified through the command `chmod`.
+
+Create a new file `permissions.txt` and check its permissions. Assume that you want to make modifiable by anyone:
+
+`chmod o+w permissions.txt`
+
+In this command you what is are the target users (`o`, others) 
+to whom you want o add a permission (`+`), and this permission is the write one (`w`).
+
+In general, the syntax of the options of chmod requires:
+
+- one or more characters among `u`, `g`, and `o` to tell whether you want to modify permissions for, respectively,
+the owner of the file, its group, or the any other user.
+- '+' or '-', depending on whether you want of to add or remove permissions
+- one or more characters among 'r', 'w', 'x' to select read, write or execute permissions.
+
+---------------
+**Exercise 4**
+
+1. Set the permissions to `permissions.txt`
+ so that the owner and the user of its group can read, write, and execute it
+  and the others cannot do anything.
+
+2. Then change the group of the file to `newgroup` and verify that the users `prova2` and `prova3`
+can actually modify it.
+
+**N.B.** Because the file ``permissions.txt`` is in the folder `/root` which is non-accessible by users other than root,
+even though the group has r/w permissions, the user `prova 2` won't be able to operate on the file.
+
+To prevent this copy `permissions.txt` into a folder accessible by `prova2`, for instance,
+`/home/prova2`.
+
+---------------
+
+Notice that `chmod` allows multiple ways to specify permissions, which are all documented in its manual page
+(`man chmod`).
+
+But let us still tell you about what we believe is the most direct and elegant way to set permissions.
+
+
+Think of it: the permissions characters are equivalent to three triplets of binary digits.
+
+For instance, `110 101 100` is equivalent to `rw- r-x r--`.
+
+Now, if one interprets each of the triplet as a base-2 number these are equivalent to `6 5 4`, 
+according to the formula 4*[1/0]+2*[1/0]+1[1/0]).
+
+Now if you want to attain these permissions on a file, say `permissiosn.txt`, you can just run:
+
+`chmod 654 permissions.txt`
+
+------------
+**Exercise 5**
+
+1. Verify that the last command has set the expected permissions
+2. Change the permissions of the same file to `r--rw-r-x` using the numeric notation.
+
+-----------
+
+
+`chmod `
 
 
 *[1] N.B. you should have noticed that no password is required to change user. 
