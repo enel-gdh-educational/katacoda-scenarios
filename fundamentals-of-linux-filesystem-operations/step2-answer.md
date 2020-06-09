@@ -81,7 +81,7 @@ If you change the file's location, you change the portion of the path that prece
 The file's size is about 164Mbs.
 
 The copy took longer than the move. In the former, the operating system has to physically copy bit by bit the first file
- into some empty space of the disk reserved to the newly created file. Since the file size amounts to about 100 Mbs, this can take a while.
+ into some empty space of the disk reserved to the newly created file. Since the file size is relevant, this can take a while.
 
 In the latter, the operating system simply updates the path associated to the original file. Paths are variables stored in a dedicated portion of the disk,
 and, being strings, they typically occupy at most few hundreds of bytes. So, a move operation, effectively boils down to changing less than a thousand bits.
