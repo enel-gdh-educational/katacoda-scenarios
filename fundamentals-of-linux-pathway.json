@@ -4,44 +4,48 @@
   "courses": [
     {
       "course_id": "fundamentals-of-linux-explore-the-file-system",
-      "title": "Explore the filesystem",
-      "description": ""
+      "title": "Fundamentals of Linux: Explore the file system",
+      "description": "How to use cd, pwd, and ls to explore the file system on a linux server"
     },
     {
       "course_id": "fundamentals-of-linux-switch-between-users",
-      "title": "Switch between users",
-      "description": ""
+      "title": "Fundamentals of Linux: Switch between users",
+      "description": "How to change user on a linux server"
     },
     {
       "course_id": "fundamentals-of-linux-environment-variables",
-      "title": "Environment variables",
-      "description": ""
+      "title": "Fundamentals of Linux: Environment variables",
+      "description": "What are environment variables and what is bash profile"
+    },
+    {
+      "course_id": "fundamentals-of-linux-filesystem-operations",
+      "title": "Fundamentals of Linux: Filesystem operations",
+      "description": "Tutorial to learn navigating the Linux filesystem and the basic operations on files"
     },
     {
       "course_id": "fundamentals-of-linux-process-management",
-      "title": "Process management",
-      "description": ""
+      "title": "Fundamentals of Linux: Process management",
+      "description": "Learn how to manage processes in Linux shell."
     },
     {
       "course_id": "fundamentals-of-linux-text-manipulation",
-      "title": "Text manipulation",
-      "description": ""
+      "title": "Fundamentals of Linux: Unix Scripts For Text Manipulation",
+      "description": "The goal of this course is to present the most common Unix\ntext manipulation commands "
     },
     {
       "course_id": "fundamentals-of-linux-stream-processing",
-      "title": "Stream processing",
-      "description": ""
+      "title": "Fundamentals of linux: Stream processing and manipulation.",
+      "description": "The goal of this course is to present some common tools for stream processing and manipulation in the Unix environment "
     },
     {
       "course_id": "fundamentals-of-linux-remote-access",
-      "title": "Remote access",
-      "description": ""
+      "title": "Fundamentals of Linux: Connect to a remote server",
+      "description": "Use SSH to connect to a remote host"
     },
     {
       "course_id": "fundamentals-of-linux-package-manager",
-      "title": "Package manager",
-      "description": ""
-    },
-
+      "title": "Fundamentals of Linux: Package manager",
+      "description": "Tutorial to familiarize with Linux software packages and the tools to manage them."
+    }
   ]
 }

@@ -46,16 +46,6 @@
           "file": "text.txt",
           "target": "/root/"
         }
-      ],
-      "host01": [
-        {
-          "file": "script*",
-          "target": "/root/"
-        },
-        {
-          "file": "*.py",
-          "target": "/root/"
-        }
       ]
     }
   },
