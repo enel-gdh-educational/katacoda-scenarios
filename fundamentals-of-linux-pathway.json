@@ -1,0 +1,47 @@
+{
+  "title": "Fundamentals of Linux",
+  "description": "Data school course aimed at beginners to learn about the Linux operating system",
+  "courses": [
+    {
+      "course_id": "fundamentals-of-linux-explore-the-file-system",
+      "title": "Explore the filesystem",
+      "description": ""
+    },
+    {
+      "course_id": "fundamentals-of-linux-switch-between-users",
+      "title": "Switch between users",
+      "description": ""
+    },
+    {
+      "course_id": "fundamentals-of-linux-environment-variables",
+      "title": "Environment variables",
+      "description": ""
+    },
+    {
+      "course_id": "fundamentals-of-linux-process-management",
+      "title": "Process management",
+      "description": ""
+    },
+    {
+      "course_id": "fundamentals-of-linux-text-manipulation",
+      "title": "Text manipulation",
+      "description": ""
+    },
+    {
+      "course_id": "fundamentals-of-linux-stream-processing",
+      "title": "Stream processing",
+      "description": ""
+    },
+    {
+      "course_id": "fundamentals-of-linux-remote-access",
+      "title": "Remote access",
+      "description": ""
+    },
+    {
+      "course_id": "fundamentals-of-linux-package-manager",
+      "title": "Package manager",
+      "description": ""
+    },
+
+  ]
+}
