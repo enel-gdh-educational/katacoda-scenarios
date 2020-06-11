@@ -31,7 +31,7 @@ cat foo
 ```
 
 This is a quick way to check what is in text files, but you might want open a file in a text editor to modify or search it.
-Worry not, we have as dedicated scenario to play with a text editor.
+Don't worry, we have as dedicated scenario to play with a text editor.
 
 However, the original purpose of `touch` is not to create a file, but to update its last modification date.
  It creates a new empty file only if it does not find a file with that name.
@@ -209,7 +209,7 @@ On the other hand, when you browse your Drive space, you experience the familiar
 
 Compare this with the filesystem organization that you learnt so far.
 
-If you want to challenge your tutors, ask them what is an object store is, e.g. AWS S3.
+If you want to challenge your tutors, ask them what is an object store, e.g. AWS S3.
 
 ----------------------------
 

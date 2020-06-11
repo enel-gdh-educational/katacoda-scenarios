@@ -30,7 +30,7 @@ ls -a
 
 If you see any additional files, their name will certainly begin with a dot `.`. 
 
-This is the way for the filesystem to recognize that a file is meant o be hidden. 
+This is the way for the filesystem to recognize that a file is meant to be hidden. 
 Everytime you will create a file prepending `.` to its name, the file will be hidden.
 
 
