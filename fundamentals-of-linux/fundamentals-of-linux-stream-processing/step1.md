@@ -16,7 +16,7 @@ display the user manual you can run on the terminal
 man command
 ```
 
-First of all let's start with README.txt file to start this new session.. What do you get?
+First of all let's start with README.txt file located in the "data" directory to start this new session.. What do you get?
 
 <u>Hint:</u> use the **more**, **less** or **cat** commands.
 
