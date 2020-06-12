@@ -7,23 +7,7 @@
      "assets": {
       "client": [
         {
-          "file": "data/*",
-          "target": "/root/"
-        },
-        {
-          "file": "data/*",
-          "target": "/root/"
-        },
-        {
-          "file": "data/*",
-          "target": "/root/"
-        },
-        {
-          "file": "data/*",
-          "target": "/root/"
-        },
-        {
-          "file": "data/*",
+          "file": "data/divina_commedia.txt",
           "target": "/root/"
         }
       ]
