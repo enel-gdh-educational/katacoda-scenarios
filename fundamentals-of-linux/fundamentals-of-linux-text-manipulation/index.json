@@ -4,6 +4,30 @@
   "difficulty": "Beginner",
   "time": "45 minutes",
   "details": {
+     "assets": {
+      "client": [
+        {
+          "file": "data/*",
+          "target": "/root/"
+        },
+        {
+          "file": "data/*",
+          "target": "/root/"
+        },
+        {
+          "file": "data/*",
+          "target": "/root/"
+        },
+        {
+          "file": "data/*",
+          "target": "/root/"
+        },
+        {
+          "file": "data/*",
+          "target": "/root/"
+        }
+      ]
+    },
     "steps": [
       {
         "title": "Step 1: Set-up - learn how to use more, less and cat command",
