@@ -7,7 +7,7 @@
      "assets": {
       "client": [
         {
-          "file": "data/divina_commedia.txt",
+          "file": "divina_commedia.txt",
           "target": "/root/"
         }
       ]
