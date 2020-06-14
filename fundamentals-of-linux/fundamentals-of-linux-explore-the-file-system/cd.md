@@ -59,3 +59,22 @@ Let’s move back up a level:
 If you want to go back to home directory you can type
 
 `cd`{{execute}}
+
+##### Exercise
+________
+
+1. Go to root directory
+
+2. List all the folders
+
+3. Go to the folder which name starting with "m" 
+
+4. Go to the folder which name starting with "c"
+
+5. List the content  
+
+5. Go back two level 
+
+
+
+2. List only directories names into /root folder

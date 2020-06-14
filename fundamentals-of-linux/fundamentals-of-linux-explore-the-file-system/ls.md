@@ -32,7 +32,9 @@ For instance, we can view the contents of a directory called /etc that is availa
 
 `ls /etc`{{execute}}
 
-##### Exercise
+##### Exercises
 ________
 
-List directories names into /root folder
+1. List /root/report content
+
+2. List only directories names into /root folder
