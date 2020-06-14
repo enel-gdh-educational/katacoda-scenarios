@@ -16,8 +16,7 @@ touch .conf1 .conf2
 touch report1.csv report2.csv
 echo "root:p0" | chpasswd
 echo "U1 ALL=(ALL) ALL" >> /etc/sudoers
-echo "U3 ALL=(root) ls" >> /etc/sudoers
-tomc ALL=(root) /bin/vim /etc/myapp.conf
+echo "U3 ALL=(root) /bin/ls" >> /etc/sudoers
 
 
 
