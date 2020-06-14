@@ -8,37 +8,35 @@ cd /path/to/directory
 
 Thus if you want to enter /root/report directory you have to digit
 
-`cd /root/report`{{execute}}
-
+`cd /root/report`
 
 Now you can verify which is the current folder using
 
-`pwd`{{execute}}
+`pwd`
 
 For instance, to change to the 'root' directory, specified by a single slash (/), which is the top of the tree, we can type:
 
-`cd /`{{execute}}
+`cd /`
 
-`pwd`{{execute}}
+`pwd`
 
 The root directory (specified by a single forward slash '/') is different from the home directory of the root user (located at '/root'). This can be confusing at first, but just remember that the top of the directory tree is called the file system root.
 
 Come back to /root
 
-`cd /root`{{execute}}
+`cd /root`
 
-`ls`{{execute}}
-
+`ls`
 
 Since /report directory is contained into /root directory we can enter /report typing
 
-`cd report`{{execute}}
+`cd report`
 
 Now if you type
 
-`cd /root`{{execute}}
+`cd /root`
 
-`cd /report`{{execute}}
+`cd /report`
 
 you will get an error because cd /report refers to an absolute path and there is not a folder called report in the directory tree, while cd report refers to a relative path and it is equivalent to cd /root/path. 
 
@@ -48,17 +46,17 @@ We can reference the directory that contains our current directory using a speci
 
 Now enter /root/report:
 
-`cd /root/report`{{execute}}
+`cd /root/report`
 
 Let’s move back up a level:
 
-`cd ..`{{execute}}
+`cd ..`
 
-`pwd`{{execute}}
+`pwd`
 
 If you want to go back to home directory you can type
 
-`cd`{{execute}}
+`cd`
 
 ##### Exercise
 ________
@@ -73,8 +71,8 @@ ________
 
 5. List the content  
 
-5. Go back two level 
+6. Go back two level 
 
+7. List only directories names into /root folder
 
-
-2. List only directories names into /root folder
+8. Go to root home
