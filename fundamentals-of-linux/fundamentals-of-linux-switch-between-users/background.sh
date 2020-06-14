@@ -17,8 +17,9 @@ touch report1.csv report2.csv
 echo "root:p0" | chpasswd
 echo "U1 ALL=(ALL) ALL" >> /etc/sudoers
 echo "U3 ALL=(root) /bin/ls" >> /etc/sudoers
-
-
-
+touch /home/U1/script1.py
+touch /home/U2/script2.py
+touch /home/U3/script3.py
+touch /home/U4/script4.py
 
 

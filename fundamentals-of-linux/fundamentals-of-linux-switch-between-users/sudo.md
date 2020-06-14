@@ -8,7 +8,11 @@ sudo or superuser is a utility used on Unix systems that provides the running co
 
 Su and sudo commands have different ways to act for similar aims.
 
-### List Available Commands
+### sudoers
+
+The sudoers file is a file Linux and Unix administrators use to allocate system rights to system users. This allows the administrator to control who does what. Remember, Linux is built with security in mind. When you want to run a command that requires root rights, Linux checks your username against the sudoers file. This happens when you type the command “sudo”. If it determines, that your username is not on the list, you cannot run the command/program logged in as that user.
+
+`vim /etc/sudoers`
 
 Now switch to user U1
 
@@ -20,11 +24,8 @@ We can list available commands with sudo and the -l option which will list curre
 
 This will list all of the rules in the /etc/sudoers file that apply to your user. This gives you a good idea of what you will or will not be allowed to do with sudo as any user.
 
-`vim /etc/sudoers`
+U1  ALL=(ALL) ALL indicates that the user U1 on all hosts using any user can run all commands. 
 
-root  ALL=(ALL) ALL indicates that the user root on all hosts using any user can run all commands. 
-
-### List Available Commands
 
 Now switch to user U2
 
@@ -36,11 +37,27 @@ You could list the content of /root folder using sudo and then entering password
 
 But you cannot list the content of /root folder because U2 is not into /etc/sudoers 
 
-If you try using U1 (password: p1)
+##### Exercise
+________
 
-`su U1`
+1. Switch to user U1 (password p1)
+2. List available commands for U1
+3. List the content of /root folder
 
-`sudo ls /root`
 
-you list the content of /root folder because U1 is into /etc/sudoers 
+Now switch to user U2
+
+You could list the content of /root folder using su and then entering root password (p0)
+
+`su -c ls root `
+
+##### Exercise
+________
+
+1. Switch to user U3 (password p3)
+2. List available commands for U3
+3. List the content of /home/U1 folder
+
+
+
 
