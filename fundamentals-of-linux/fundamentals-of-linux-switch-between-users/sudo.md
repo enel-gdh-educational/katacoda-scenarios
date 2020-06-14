@@ -1,14 +1,30 @@
+### su
+
+The su short for substitute super user command using to change currently logged user. This makes things practical because the user change made without login. Su command can be used to get root privileges too. 
+
+### sudo
+
 sudo or superuser is a utility used on Unix systems that provides the running command with root or Administrator privileges. Not every user needs to have root privileges but in some cases needs to run commands with root privileges. We can use sudo to run some specific or all provided commands and edit files with the root privileges.
+
+Su and sudo commands have different ways to act for similar aims.
 
 ### List Available Commands
 
-We can list available commands with the -l option which will list currently used root privileged commands the current user can execute.
+Now switch to user U1
+
+`su U1`
+
+We can list available commands with sudo and the -l option which will list currently used root privileged commands the current user can execute.
 
 `sudo -l`
 
 This will list all of the rules in the /etc/sudoers file that apply to your user. This gives you a good idea of what you will or will not be allowed to do with sudo as any user.
 
+`vim /etc/sudoers`
+
 root  ALL=(ALL) ALL indicates that the user root on all hosts using any user can run all commands. 
+
+### List Available Commands
 
 Now switch to user U2
 
