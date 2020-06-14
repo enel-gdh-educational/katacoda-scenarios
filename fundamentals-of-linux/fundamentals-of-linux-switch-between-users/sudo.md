@@ -4,7 +4,7 @@ sudo or superuser is a utility used on Unix systems that provides the running co
 
 We can list available commands with the -l option which will list currently used root privileged commands the current user can execute.
 
-`sudo -l`{{execute}}
+`sudo -l`
 
 This will list all of the rules in the /etc/sudoers file that apply to your user. This gives you a good idea of what you will or will not be allowed to do with sudo as any user.
 
@@ -12,19 +12,19 @@ root  ALL=(ALL) ALL indicates that the user root on all hosts using any user can
 
 Now switch to user U2
 
-`su U2`{{execute}}
+`su U2`
 
 You could list the content of /root folder using sudo and then entering password of U2 (p2)
 
-`sudo ls /root`{{execute}}
+`sudo ls /root`
 
 But you cannot list the content of /root folder because U2 is not into /etc/sudoers 
 
 If you try using U1 (password: p1)
 
-`su U1`{{execute}}
+`su U1`
 
-`sudo ls /root`{{execute}}
+`sudo ls /root`
 
 you list the content of /root folder because U1 is into /etc/sudoers 
 
