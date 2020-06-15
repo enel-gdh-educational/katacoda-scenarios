@@ -33,4 +33,4 @@ NAME=''
 ________
 
 1. Unset SHAPE 
-2. Verify that it is empty
+2. Verify that SHAPE is empty
