@@ -2,7 +2,7 @@ SSH, or Secure Shell, is a protocol used to securely log onto remote systems. It
 
 The tool on Linux for connecting to a remote system using SSH is called ssh.
 
-`man`{{execute}}
+`man`
 
 The most basic form of the command is:
 

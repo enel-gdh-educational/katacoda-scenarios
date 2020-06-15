@@ -1,3 +1,4 @@
+
 ### su
 
 The su short for substitute super user command using to change currently logged user. This makes things practical because the user change made without login. Su command can be used to get root privileges too. 
