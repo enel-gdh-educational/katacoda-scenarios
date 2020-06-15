@@ -3,9 +3,9 @@ files according to the requirement. These variables can be accessed by a particu
 
 You can visualize the content of bashrc using vim
 
-`vi /.bashrc`
+`vim /.bashrc`
 
-you can quit without saving typing CRTL+c, :q, ENTER
+you can quit without saving typing :q and ENTER
 
 ##### Exercise
 ________
