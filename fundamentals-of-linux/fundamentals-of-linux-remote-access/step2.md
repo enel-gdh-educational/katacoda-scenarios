@@ -38,5 +38,3 @@ ________
 6. List all files 
 
 7. Exit back into local session
-
-
