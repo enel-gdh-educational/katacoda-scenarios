@@ -1,18 +1,18 @@
-These variable are set and configured in ~/.bashrc or ~/.bash_profile
+These variable are set and configured in /root/.bashrc or /root/.bash_profile
 files according to the requirement. These variables can be accessed by a particular user and persist through power offs.
 
 You can visualize the content of bashrc using vim
 
-`vim /.bashrc`
+`vim /root/.bashrc`
 
 you can quit without saving typing :q and ENTER
 
 ##### Exercise
 ________
 
-1. Visualize the content of bash_profile 
+1. Visualize the content of bashrc 
 2. Find the value associated to userwide ENV HISTSIZE
-3. Close bash_profile and exit without save
+3. Close bashrc and exit without save
 4. Print HISTSIZE
 5. Switch to user U2
 6. Print HISTSIZE
