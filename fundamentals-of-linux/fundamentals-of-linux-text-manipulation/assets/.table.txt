@@ -1,0 +1,2003 @@
+tanto 57 113
+questo 45 94
+quella 72 80
+altro 80 77
+occhi 47 76
+perché 60 67
+esser 42 64
+mondo 52 62
+quando 100 60
+tutto 66 59
+questa 48 55
+quanto 26 54
+prima 37 54
+canto 38 48
+mente 17 45
+donna 7 42
+dentro 37 41
+beatrice 2 41
+ancor 63 41
+altra 60 41
+veder 30 40
+tutti 39 37
+primo 16 37
+parte 37 37
+grazia 3 37
+colui 35 36
+terra 50 35
+sempre 17 35
+dolce 15 35
+sanza 47 34
+vista 13 33
+natura 10 32
+disse 111 32
+virtù 7 31
+poscia 26 31
+cielo 11 31
+altri 52 31
+fosse 26 30
+fatto 25 30
+questi 40 29
+tutta 22 28
+santo 3 28
+nostra 16 28
+tutte 25 27
+amore 4 27
+queste 7 26
+quasi 7 26
+quelle 18 25
+padre 16 25
+tempo 28 24
+tosto 21 23
+quinci 5 23
+nostro 17 23
+assai 30 23
+sotto 47 22
+raggio 1 22
+quindi 9 22
+quale 10 22
+cominciò 15 22
+voglia 4 21
+quivi 29 21
+disio 9 21
+vostro 6 20
+parole 29 20
+gente 47 20
+etterno 11 20
+dietro 32 20
+bella 7 20
+vostra 10 19
+sopra 12 19
+santa 2 19
+punto 11 19
+convien 24 19
+segno 5 18
+secondo 14 18
+perch 18 18
+parlar 17 18
+maggior 11 18
+divina 8 18
+quello 14 17
+occhio 18 17
+nulla 8 17
+mezzo 19 17
+altre 14 17
+sarebbe 7 16
+regno 5 16
+quelli 20 16
+figlio 7 16
+cerchio 13 16
+ancora 17 16
+altrui 19 16
+acqua 24 16
+stella 5 15
+quant 8 15
+piacer 1 15
+ombra 12 15
+infino 13 15
+grado 5 15
+fiamma 11 15
+fanno 19 15
+etterna 4 15
+dunque 5 15
+corpo 14 15
+aspetto 8 15
+alcun 33 15
+affetto 1 15
+venne 10 14
+vedere 5 14
+tanta 11 14
+quest 11 14
+principio 8 14
+hanno 16 14
+grande 16 14
+forte 19 14
+forse 18 14
+ciascun 30 14
+appresso 11 14
+anima 27 14
+veggio 7 13
+sommo 4 13
+pensier 11 13
+mosse 12 13
+molto 10 13
+intorno 15 13
+insieme 16 13
+cotanto 12 13
+cagion 8 13
+volte 16 12
+voler 8 12
+umana 5 12
+spera 1 12
+piedi 18 12
+madre 3 12
+essere 4 12
+detto 8 12
+chiaro 2 12
+certo 15 12
+vedrai 11 11
+troppo 9 11
+sùbito 4 11
+spirito 4 11
+sovra 36 11
+retro 13 11
+pietro 2 11
+intra 1 11
+genti 13 11
+forma 3 11
+fatta 9 11
+dinanzi 31 11
+credo 12 11
+credi 8 11
+contra 12 11
+cantando 1 11
+caldo 5 11
+vostri 3 10
+verace 2 10
+ultima 5 10
+terzo 3 10
+sangue 20 10
+quell 26 10
+puote 5 10
+presso 13 10
+parve 12 10
+morte 16 10
+molte 11 10
+intelletto 3 10
+gloria 2 10
+entro 12 10
+croce 2 10
+cotal 9 10
+corte 1 10
+color 17 10
+beato 2 10
+anime 17 10
+valor 1 9
+ultimo 3 9
+stelle 4 9
+spira 2 9
+segue 1 9
+santi 1 9
+rispuose 29 9
+porta 12 9
+pensa 5 9
+parea 20 9
+nostri 8 9
+monte 8 9
+molti 4 9
+intende 1 9
+giusto 5 9
+giustizia 7 9
+giuso 13 9
+consiglio 4 9
+colpa 16 9
+cerchi 3 9
+carne 3 9
+viver 2 8
+virtute 3 8
+verso 17 8
+veramente 2 8
+universo 4 8
+tratto 2 8
+sposa 1 8
+spirto 9 8
+siede 6 8
+segno 4 8
+raggi 1 8
+quantunque 2 8
+quanta 3 8
+quand 27 8
+qualunque 5 8
+quali 15 8
+parti 6 8
+oltre 14 8
+misura 1 8
+guisa 4 8
+guarda 14 8
+frate 7 8
+fosser 1 8
+fiorenza 5 8
+figlia 1 8
+fiate 5 8
+diverse 6 8
+dissi 24 8
+dintorno 6 8
+dicer 4 8
+degno 3 8
+costui 11 8
+ciascuna 11 8
+buona 9 8
+avesse 6 8
+angeli 2 8
+anche 11 8
+volse 21 7
+vince 3 7
+vento 14 7
+vedea 6 7
+vanno 12 7
+tardo 2 7
+splendor 1 7
+puote 2 7
+provedenza 1 7
+proprio 2 7
+piacque 5 7
+parer 2 7
+opere 2 7
+merto 1 7
+maraviglia 4 7
+lieta 3 7
+innanzi 16 7
+igualmente 1 7
+gravi 6 7
+giorno 5 7
+favella 5 7
+fatti 9 7
+diletto 1 7
+creder 3 7
+comincia 4 7
+carità 1 7
+bontà 1 7
+allora 8 7
+alcuna 17 7
+volta 13 6
+volsi 9 6
+vinse 6 6
+verità 1 6
+valore 1 6
+valle 13 6
+spene 1 6
+saper 9 6
+riso 1 6
+render 2 6
+quella 2 6
+prende 2 6
+posson 2 6
+piace 9 6
+petto 19 6
+pastor 2 6
+parlare 7 6
+officio 2 6
+novella 6 6
+nostre 4 6
+nacque 4 6
+mille 12 6
+mentre 15 6
+memoria 5 6
+meglio 3 6
+lunga 13 6
+lume 1 6
+lascia 5 6
+ingegno 3 6
+furon 7 6
+fonte 2 6
+faville 1 6
+facea 13 6
+dolci 4 6
+divino 2 6
+diversi 2 6
+dicea 5 6
+destra 11 6
+creatura 1 6
+creata 1 6
+corse 3 6
+corpi 3 6
+contenta 1 6
+carlo 2 6
+beata 3 6
+avria 2 6
+aspetta 4 6
+argomento 2 6
+aperse 6 6
+antico 4 6
+alquanto 9 6
+vuole 3 5
+volume 1 5
+volto 15 5
+voglio 3 5
+vita 2 5
+vinto 2 5
+venire 7 5
+venir 14 5
+veggion 1 5
+uscir 3 5
+testa 14 5
+tante 9 5
+stesso 10 5
+stato 11 5
+speranza 7 5
+specchio 1 5
+silenzio 1 5
+sentir 2 5
+senti 6 5
+sembianza 1 5
+sembiante 2 5
+seguir 2 5
+scala 2 5
+saria 2 5
+sappi 12 5
+sante 1 5
+rivolsi 1 5
+riguarda 1 5
+puose 6 5
+prova 2 5
+profondo 3 5
+profonda 1 5
+prima 3 5
+prieghi 1 5
+possa 2 5
+popol 2 5
+piena 6 5
+percuote 1 5
+nessun 6 5
+mover 1 5
+messo 4 5
+mente 3 5
+manifesto 2 5
+loco 3 5
+lingua 15 5
+lieto 1 5
+levai 1 5
+legge 5 5
+inver 8 5
+intender 1 5
+infin 9 5
+incontro 1 5
+imagine 9 5
+guida 2 5
+guardando 3 5
+grave 4 5
+gradi 1 5
+fuoro 6 5
+fronde 3 5
+fossi 13 5
+fortuna 10 5
+fondo 24 5
+figliuol 7 5
+effetto 1 5
+dovea 4 5
+distinto 2 5
+disio 2 5
+discende 4 5
+dimandar 2 5
+danno 5 5
+credendo 2 5
+corona 1 5
+cominciai 9 5
+collo 11 5
+cinque 3 5
+ciascuno 4 5
+cesare 3 5
+centro 2 5
+bocca 12 5
+animo 7 5
+amore 3 5
+allor 35 5
+vòlto 6 4
+volle 4 4
+volere 4 4
+viste 3 4
+violenza 1 4
+verrà 6 4
+vergine 2 4
+venìa 4 4
+vendetta 8 4
+veduta 5 4
+vedi 2 4
+vederai 1 4
+uomini 4 4
+turba 1 4
+trasse 5 4
+torna 4 4
+talvolta 3 4
+tacer 3 4
+surge 3 4
+strada 6 4
+stava 7 4
+spirti 5 4
+spiriti 7 4
+specchi 1 4
+sostener 1 4
+sorte 2 4
+sorrise 1 4
+somma 4 4
+sofferse 1 4
+siete 13 4
+sicura 1 4
+sguardo 2 4
+sette 4 4
+sentenza 4 4
+seguiva 1 4
+segnor 8 4
+segni 1 4
+seconda 2 4
+scrisse 2 4
+santa 1 4
+rota 1 4
+rivolse 6 4
+risposta 10 4
+risponder 1 4
+rimane 3 4
+regina 1 4
+ragione 3 4
+quivi 1 4
+quinto 3 4
+quinta 1 4
+question 2 4
+quattro 4 4
+quante 5 4
+primi 1 4
+priego 2 4
+presente 4 4
+prese 14 4
+potenza 3 4
+posto 2 4
+posso 5 4
+persona 10 4
+pensando 6 4
+penna 2 4
+parver 1 4
+parte 4 4
+parola 8 4
+parlando 8 4
+oramai 1 4
+nullo 4 4
+nasconde 1 4
+mostra 5 4
+medesmo 6 4
+marte 2 4
+maravigliar 1 4
+manifesta 1 4
+maestro 77 4
+legno 9 4
+lasciò 7 4
+larga 1 4
+grido 1 4
+grandi 3 4
+giusta 1 4
+girando 1 4
+fugge 2 4
+forza 11 4
+folle 5 4
+foglie 1 4
+foco 2 4
+fisso 1 4
+figura 3 4
+felice 2 4
+fede 2 4
+fatte 3 4
+famiglia 4 4
+fallo 2 4
+faccia 20 4
+etternalmente 1 4
+emisperio 4 4
+ebber 4 4
+drizza 3 4
+dritto 9 4
+disposto 2 4
+davante 3 4
+crescer 2 4
+creature 2 4
+costa 1 4
+cose 1 4
+corno 4 4
+conviene 2 4
+convenne 2 4
+concetto 1 4
+cima 4 4
+chiara 2 4
+cantare 1 4
+campo 3 4
+cammino 10 4
+bontate 1 4
+bianca 3 4
+benigna 1 4
+bello 4 4
+basti 2 4
+basta 3 4
+avvegna 2 4
+avrebbe 1 4
+attento 3 4
+apparve 4 4
+aperta 2 4
+antica 2 4
+amaro 1 4
+acquista 3 4
+vuoli 1 3
+vostre 1 3
+volger 2 3
+volge 7 3
+volando 2 3
+vinta 2 3
+vicino 5 3
+vesta 1 3
+vero 1 3
+vergogna 6 3
+verbo 1 3
+venuto 6 3
+venni 6 3
+vendetta 1 3
+veggia 3 3
+veduto 3 3
+vapor 3 3
+unita 1 3
+udire 3 3
+trema 1 3
+torto 3 3
+tornare 1 3
+tondo 4 3
+tonda 1 3
+tolta 2 3
+tolse 4 3
+tesoro 1 3
+terra 4 3
+tenne 8 3
+suono 5 3
+suole 4 3
+stessa 3 3
+stata 1 3
+sonar 1 3
+solea 3 3
+sinistra 10 3
+settimo 1 3
+sesta 2 3
+sento 1 3
+semenza 3 3
+sembianti 1 3
+seguente 1 3
+seguendo 1 3
+sedere 2 3
+scritto 1 3
+scese 1 3
+scendere 2 3
+scema 2 3
+saranno 3 3
+risponda 2 3
+rimase 3 3
+riguardi 2 3
+riguardando 3 3
+riede 3 3
+ricominciò 3 3
+reverenza 1 3
+ragion 4 3
+radici 1 3
+queta 3 3
+quarto 3 3
+quanti 6 3
+provide 1 3
+poter 1 3
+potea 6 3
+posta 7 3
+portò 3 3
+poria 2 3
+pioggia 7 3
+pietra 6 3
+picciola 4 3
+picciol 5 3
+pianta 3 3
+persone 5 3
+persona 3 3
+perfetta 1 3
+perde 2 3
+pensiero 1 3
+penne 2 3
+pelle 4 3
+peggio 2 3
+pecore 1 3
+peccato 2 3
+passo 12 3
+pareva 6 3
+parere 1 3
+parenti 2 3
+ordini 1 3
+occulto 1 3
+ntorno 5 3
+novelle 2 3
+notte 5 3
+mostrò 2 3
+mostrar 3 3
+mostrando 1 3
+mosso 5 3
+moisè 1 3
+minor 4 3
+menti 1 3
+membra 11 3
+martiro 4 3
+manco 1 3
+magno 1 3
+luogo 4 3
+latino 3 3
+lasciar 1 3
+intrar 3 3
+intero 2 3
+inferno 41 3
+indarno 2 3
+imagini 1 3
+guardi 1 3
+grida 3 3
+governa 1 3
+giustizia 1 3
+giunto 6 3
+giudicio 3 3
+futura 1 3
+fuochi 2 3
+frutto 1 3
+fronte 7 3
+fronda 1 3
+francesco 2 3
+fonda 2 3
+figli 2 3
+fiata 3 3
+fiammeggiar 1 3
+fessi 2 3
+ferro 3 3
+fassi 2 3
+fascia 2 3
+falso 3 3
+facieno 1 3
+etterne 3 3
+essilio 1 3
+eletto 3 3
+duce 1 3
+dubitar 1 3
+dubbio 1 3
+dove 2 3
+dottrina 1 3
+dottor 2 3
+donne 3 3
+dolcezza 1 3
+divino 1 3
+ditemi 2 3
+disiri 2 3
+disdegno 6 3
+discerni 1 3
+dipinta 1 3
+dimostra 1 3
+dimmi 14 3
+dimanda 3 3
+diede 6 3
+destro 4 3
+deriva 1 3
+degna 3 3
+cupidigia 1 3
+cristiano 1 3
+credette 1 3
+crede 1 3
+costume 1 3
+costa 13 3
+cosa 1 3
+corto 2 3
+corta 3 3
+corso 7 3
+corda 3 3
+convenia 3 3
+contrario 1 3
+conio 2 3
+congiunto 1 3
+conforto 3 3
+cominciar 5 3
+colei 7 3
+città 14 3
+ciglio 2 3
+chiuso 3 3
+chiavi 1 3
+carco 5 3
+carca 2 3
+cappello 1 3
+bianco 5 3
+bene 1 3
+belli 2 3
+beati 1 3
+batter 1 3
+avvien 2 3
+avessi 5 3
+avanti 4 3
+ascolta 2 3
+arte 2 3
+argomenti 1 3
+argento 5 3
+antichi 1 3
+animal 1 3
+altezza 3 3
+aguglia 1 3
+agnel 1 3
+acceso 1 3
+accese 3 3
+abbandona 1 3
+volto 1 2
+volta 1 2
+volse 1 2
+volle 3 2
+voglia 3 2
+vittoria 3 2
+visto 2 2
+virgilio 4 2
+vinci 1 2
+villa 2 2
+vider 1 2
+vetro 3 2
+veste 1 2
+versi 2 2
+verde 3 2
+venendo 2 2
+veloce 1 2
+vegna 5 2
+veggio 1 2
+veggendo 7 2
+vedra 1 2
+vedere 1 2
+vecchio 6 2
+varca 2 2
+vapori 1 2
+vaneggia 1 2
+valse 2 2
+uscìo 2 2
+uscia 4 2
+umile 1 2
+ultime 1 2
+tutto 2 2
+turbo 2 2
+trova 1 2
+troppa 3 2
+trista 12 2
+tratto 2 2
+trapassar 2 2
+torta 3 2
+tornò 3 2
+torni 3 2
+tornar 7 2
+torcer 1 2
+tolto 4 2
+tolle 2 2
+tocca 4 2
+testimonio 1 2
+tesoro 1 2
+tener 3 2
+tempra 1 2
+temendo 4 2
+tacendo 3 2
+sùbita 1 2
+surse 1 2
+superbia 2 2
+suoni 2 2
+suona 3 2
+stuolo 2 2
+strinse 2 2
+stringe 1 2
+stremo 1 2
+stesso 1 2
+stare 2 2
+spesso 5 2
+spanda 1 2
+spalle 11 2
+spagna 1 2
+spada 2 2
+sorella 2 2
+sonare 1 2
+soglia 1 2
+soave 2 2
+simile 6 2
+simil 2 2
+sicuri 1 2
+sesto 4 2
+servo 3 2
+serra 4 2
+sera 1 2
+sentì 4 2
+sembiante 5 2
+seguitar 2 2
+seguette 1 2
+secondo 1 2
+seconda 1 2
+scrivo 2 2
+sciolte 1 2
+schiera 7 2
+scende 2 2
+scemo 1 2
+sazio 1 2
+saver 4 2
+sarebbero 1 2
+saran 3 2
+sapienza 3 2
+santo 1 2
+sanno 1 2
+saetta 2 2
+romani 1 2
+rodano 1 2
+rivolto 1 2
+riva 6 2
+ritorna 4 2
+rispuose 1 2
+rispondo 2 2
+rimaso 1 2
+riguardo 1 2
+riguardar 8 2
+rietro 1 2
+riedi 1 2
+ricorda 1 2
+ricolto 1 2
+riceve 2 2
+rende 3 2
+regno 1 2
+ratto 4 2
+ragionar 1 2
+questo 2 2
+quando 5 2
+puossi 1 2
+puoser 1 2
+punto 5 2
+punti 2 2
+punta 4 2
+prove 1 2
+pronte 2 2
+pronta 2 2
+produce 1 2
+proceder 1 2
+preso 1 2
+prender 4 2
+prende 1 2
+porto 3 2
+porti 7 2
+porte 1 2
+porta 4 2
+porse 5 2
+poeta 14 2
+pochi 1 2
+piove 1 2
+piombo 2 2
+pinse 2 2
+pieno 3 2
+piante 6 2
+perfezion 1 2
+perder 2 2
+pente 3 2
+pensieri 1 2
+pensi 1 2
+pensai 2 2
+pelago 1 2
+patto 1 2
+pastore 1 2
+passar 3 2
+parvemi 1 2
+partì 1 2
+parrà 1 2
+parole 1 2
+parlò 3 2
+parla 4 2
+palese 1 2
+paia 1 2
+paese 3 2
+ottava 2 2
+ordinò 1 2
+onde 2 2
+oncia 1 2
+offerse 1 2
+nulla 2 2
+ntesi 1 2
+nodo 2 2
+ngegno 2 2
+necessità 2 2
+nature 2 2
+natural 1 2
+nacqui 1 2
+muoversi 1 2
+mperador 1 2
+mossa 1 2
+morti 5 2
+mortale 1 2
+morta 8 2
+morir 3 2
+montar 2 2
+molta 4 2
+misto 1 2
+mirava 4 2
+mira 1 2
+minori 1 2
+miglior 3 2
+metter 1 2
+messo 1 2
+mercé 1 2
+mentr 5 2
+medesma 2 2
+matera 3 2
+martiro 1 2
+manto 4 2
+lungo 12 2
+lungi 7 2
+lucerna 1 2
+lucenti 1 2
+lontano 2 2
+lievemente 1 2
+lieti 1 2
+lieta 2 2
+levato 2 2
+lettore 1 2
+lettor 4 2
+letto 4 2
+leone 2 2
+legno 1 2
+leggi 1 2
+lavoro 1 2
+lasso 9 2
+lasciando 2 2
+lasciai 4 2
+largo 4 2
+inteso 3 2
+intese 2 2
+intendi 2 2
+incendio 1 2
+imago 1 2
+guiglielmo 1 2
+guidi 3 2
+guerra 8 2
+guance 1 2
+grosse 1 2
+grembo 2 2
+greci 1 2
+glorioso 2 2
+giusti 1 2
+giuso 1 2
+giunse 6 2
+giudei 2 2
+giova 1 2
+gioia 1 2
+giogo 1 2
+giocondo 1 2
+gioco 3 2
+fuori 2 2
+fuggir 5 2
+frutta 1 2
+fronte 3 2
+fretta 3 2
+freddo 4 2
+frati 4 2
+fosti 6 2
+fossero 4 2
+fissa 1 2
+figure 1 2
+fiesole 1 2
+ficca 1 2
+fianco 2 2
+fesse 3 2
+feroce 1 2
+fermo 4 2
+fermi 1 2
+fenno 3 2
+fecer 5 2
+farai 1 2
+falsa 2 2
+facean 2 2
+faccian 2 2
+facci 2 2
+facce 2 2
+etterni 1 2
+esperienza 4 2
+errore 2 2
+erano 6 2
+empie 2 2
+dubbiar 1 2
+drizzò 4 2
+dovrien 1 2
+doppia 1 2
+doglia 2 2
+diversa 5 2
+distilla 1 2
+distende 2 2
+disii 1 2
+diserto 2 2
+diserra 2 2
+discese 6 2
+discerno 2 2
+dirizzò 1 2
+diritto 2 2
+diparte 1 2
+dimesso 1 2
+dimando 4 2
+dimandi 1 2
+diletto 1 2
+digiuno 3 2
+diece 4 2
+diceva 1 2
+dicendo 15 2
+denti 11 2
+degna 1 2
+davanti 2 2
+cupido 1 2
+crudo 1 2
+cristallo 1 2
+credetti 3 2
+credea 3 2
+cotanta 1 2
+cotai 5 2
+costrutto 1 2
+costoro 3 2
+cortese 5 2
+coro 1 2
+conviensi 1 2
+convenne 1 2
+convene 2 2
+contenti 1 2
+conoscenza 3 2
+conduce 1 2
+condizion 2 2
+concede 1 2
+compagnia 5 2
+come 1 2
+colpo 3 2
+colpi 2 2
+coloro 2 2
+colore 4 2
+colle 1 2
+colei 1 2
+cittadini 2 2
+cinse 1 2
+cieco 2 2
+ciascuna 1 2
+chiusa 1 2
+chiedi 3 2
+chiama 3 2
+certo 3 2
+cento 6 2
+carte 1 2
+cantava 1 2
+canta 1 2
+cammino 1 2
+cammin 4 2
+caldi 1 2
+cagione 4 2
+cadere 3 2
+cadde 6 2
+buoni 1 2
+bruto 2 2
+bruno 1 2
+briga 1 2
+brama 3 2
+borsa 2 2
+bisogna 1 2
+benigno 1 2
+benedetta 1 2
+becco 1 2
+battesmo 1 2
+basso 10 2
+barca 1 2
+avieno 3 2
+avere 5 2
+avanza 1 2
+attesi 2 2
+attender 3 2
+aspettava 1 2
+aspettar 1 2
+ascose 1 2
+ascosa 1 2
+arrigo 1 2
+ardore 2 2
+aquila 1 2
+appar 3 2
+anni 2 2
+angelica 2 2
+anchise 1 2
+amendue 5 2
+amendue 1 2
+altrove 3 2
+altrimenti 8 2
+affezion 1 2
+acquistar 1 2
+acque 1 2
+acerbo 3 2
+accorsi 3 2
+accoglie 1 2
+acciò 8 2
+accesi 2 2
+abito 1 2
+xxxiii 1 1
+xxxii 1 1
+xxxi 1 1
+xxviii 1 1
+xxvii 1 1
+xxvi 1 1
+xxix 1 1
+xxiv 1 1
+xxiii 1 1
+xxii 1 1
+xviii 1 1
+xvii 1 1
+xiii 1 1
+vostr 1 1
+volser 1 1
+volontier 1 1
+volgiti 2 1
+voleva 1 1
+volesse 1 1
+volar 1 1
+visse 2 1
+vinco 1 1
+vincer 3 1
+viltà 3 1
+ville 1 1
+villan 2 1
+viii 1 1
+vigna 1 1
+vigilia 1 1
+vieni 3 1
+vidimi 1 1
+vicini 1 1
+vicin 1 1
+vestito 3 1
+vestigio 1 1
+verria 1 1
+verno 3 1
+verna 1 1
+vermiglio 1 1
+vergogna 1 1
+ventura 1 1
+ventre 8 1
+venti 2 1
+venner 2 1
+venne 2 1
+venire 2 1
+velo 1 1
+vello 2 1
+velame 2 1
+vegnon 2 1
+vedete 1 1
+vedesti 1 1
+vedessi 3 1
+vedesse 1 1
+vede 1 1
+vecchie 1 1
+vasello 1 1
+vanità 1 1
+valore 1 1
+vacante 1 1
+usura 1 1
+usciva 1 1
+usciro 1 1
+umano 2 1
+umani 4 1
+umane 2 1
+ulisse 1 1
+udito 3 1
+uccello 2 1
+turbe 1 1
+truova 1 1
+trovai 4 1
+trova 4 1
+troiani 1 1
+trita 1 1
+tristi 5 1
+trenta 1 1
+tremò 2 1
+tratti 1 1
+trassi 1 1
+trasmutò 1 1
+trasmutato 1 1
+trasmutare 1 1
+trascorse 1 1
+trascende 1 1
+trarre 1 1
+tragge 2 1
+traendo 1 1
+traccia 1 1
+tosto 1 1
+tosco 3 1
+torti 1 1
+torse 2 1
+tornato 2 1
+tondo 2 1
+tolomeo 1 1
+toglie 1 1
+timido 1 1
+tiene 2 1
+tetro 2 1
+testo 1 1
+testamento 1 1
+terza 2 1
+terrà 1 1
+termini 1 1
+tenuto 1 1
+tenta 1 1
+tenendo 1 1
+tenea 9 1
+tempra 1 1
+tempio 1 1
+tempie 3 1
+tegna 1 1
+tarda 1 1
+tanto 2 1
+talor 2 1
+taglia 1 1
+tacque 1 1
+tacette 1 1
+tacere 2 1
+sùbiti 1 1
+suso 3 1
+superno 1 1
+superbo 6 1
+suggel 1 1
+successor 1 1
+subitamente 1 1
+studio 1 1
+stretto 2 1
+strade 1 1
+strada 1 1
+stette 4 1
+stessi 1 1
+stesse 2 1
+sterpi 2 1
+stende 1 1
+stavan 1 1
+stati 1 1
+state 7 1
+stanno 1 1
+stanchi 2 1
+spuola 1 1
+spoglia 1 1
+splende 2 1
+spirando 1 1
+spira 1 1
+spiega 1 1
+spessi 1 1
+spesse 4 1
+spessa 2 1
+spera 1 1
+spento 3 1
+spenta 1 1
+spense 1 1
+sparte 2 1
+spande 1 1
+sovresso 2 1
+sovrano 3 1
+sovente 2 1
+sottilmente 1 1
+sostenne 2 1
+sospinto 1 1
+sospese 1 1
+sortille 1 1
+soperchia 1 1
+sono 2 1
+sonno 6 1
+sommi 1 1
+solvi 2 1
+solvetemi 1 1
+solver 2 1
+solo 2 1
+soldan 1 1
+sogno 1 1
+sognando 1 1
+sogna 3 1
+sogliono 1 1
+soglio 1 1
+sofferto 1 1
+soccorso 2 1
+soccorse 1 1
+smarrito 5 1
+smarrita 1 1
+sinistro 3 1
+simon 1 1
+similmente 1 1
+similemente 3 1
+simigliante 1 1
+silvestro 1 1
+sicuro 4 1
+sicuramente 1 1
+sicheo 1 1
+siamo 2 1
+sette 2 1
+setta 3 1
+sete 1 1
+sermoni 1 1
+sermone 4 1
+sermo 1 1
+serena 2 1
+serba 1 1
+sentia 3 1
+sente 1 1
+senta 2 1
+senta 1 1
+senso 2 1
+senno 7 1
+senno 1 1
+semelè 1 1
+seme 2 1
+sembiava 1 1
+seguire 1 1
+segnore 5 1
+segnato 2 1
+seggio 2 1
+sederà 1 1
+seder 3 1
+secreto 2 1
+scuro 1 1
+scudo 1 1
+scrive 1 1
+scrissi 1 1
+scotto 1 1
+scosse 1 1
+scoscende 1 1
+scorta 6 1
+scoperta 1 1
+scocca 1 1
+sciolto 1 1
+sciolta 2 1
+scienza 2 1
+schiatta 1 1
+scheggia 2 1
+scender 7 1
+scelse 1 1
+scale 2 1
+scaldar 1 1
+sasso 6 1
+sassi 1 1
+sarei 7 1
+sapere 2 1
+salute 1 1
+saltò 1 1
+salmi 1 1
+salire 2 1
+saette 1 1
+ruppe 2 1
+ruine 1 1
+ruberto 1 1
+rossa 1 1
+rose 1 1
+rocce 1 1
+rivolve 1 1
+riveder 2 1
+ritrova 1 1
+ritrassi 1 1
+ritrar 1 1
+ritenne 1 1
+rispuosi 5 1
+rispuoser 1 1
+rispuos 7 1
+risposto 2 1
+risposta 1 1
+risponde 1 1
+risonar 1 1
+riprendo 1 1
+riposo 2 1
+riposato 1 1
+riparo 1 1
+ringrazio 1 1
+rimossa 1 1
+rimirar 1 1
+rimaser 2 1
+rimani 1 1
+riguardommi 1 1
+ridir 1 1
+ridico 1 1
+ricordo 1 1
+richiude 1 1
+ricevesse 1 1
+ricco 1 1
+regola 1 1
+regna 1 1
+rapaci 1 1
+ragiono 1 1
+raggio 1 1
+raccolta 1 1
+questa 1 1
+quarta 2 1
+quanto 1 1
+quali 1 1
+puzzo 3 1
+puose 1 1
+punir 1 1
+punger 1 1
+pruno 1 1
+prova 1 1
+prora 1 1
+proposto 3 1
+propinqua 1 1
+pronte 1 1
+proda 6 1
+procede 2 1
+procede 1 1
+principe 1 1
+primo 1 1
+prime 5 1
+prete 1 1
+presto 5 1
+presta 1 1
+prendendo 1 1
+precinto 1 1
+prato 2 1
+potrebbe 1 1
+potei 1 1
+possente 2 1
+possendo 1 1
+posato 1 1
+porti 2 1
+portar 2 1
+portai 2 1
+porsi 2 1
+porre 3 1
+porco 3 1
+porci 1 1
+popolo 3 1
+ponte 11 1
+ponno 2 1
+ponesse 1 1
+pone 1 1
+poetando 1 1
+platone 1 1
+pirro 1 1
+pinse 1 1
+pingue 1 1
+piglio 2 1
+pigliare 1 1
+pietà 7 1
+pietate 1 1
+piene 1 1
+piega 1 1
+piedi 2 1
+piede 3 1
+piante 2 1
+piano 4 1
+piango 2 1
+pianger 3 1
+piangendo 7 1
+piaga 1 1
+pesci 1 1
+peschiera 1 1
+permutasse 1 1
+periglio 1 1
+perdei 1 1
+percosso 1 1
+percosse 7 1
+penso 2 1
+penitenza 1 1
+pende 3 1
+pecorelle 1 1
+peccator 7 1
+paura 18 1
+paulo 1 1
+patriarca 1 1
+patria 2 1
+patre 1 1
+pastori 1 1
+pasto 2 1
+passo 4 1
+passion 2 1
+passi 11 1
+passeggiando 1 1
+passava 1 1
+paschi 1 1
+pasca 1 1
+parton 1 1
+partito 3 1
+partire 2 1
+partir 2 1
+partio 1 1
+parlo 2 1
+parli 1 1
+parente 2 1
+paion 1 1
+paglia 1 1
+oscura 4 1
+orgoglio 2 1
+orazion 2 1
+opera 2 1
+onore 4 1
+onesto 2 1
+onda 1 1
+omero 2 1
+ombre 12 1
+offici 1 1
+offense 1 1
+occidente 1 1
+occhi 2 1
+nvidia 2 1
+nuovo 4 1
+ntendi 1 1
+ntende 1 1
+nsieme 2 1
+nsegna 1 1
+novità 2 1
+notturno 1 1
+noto 1 1
+notai 1 1
+norma 1 1
+nondimen 1 1
+nominar 1 1
+nomato 2 1
+nomar 2 1
+nocchier 2 1
+nimico 2 1
+nfino 2 1
+nferno 8 1
+nettuno 1 1
+nessuno 1 1
+nemici 3 1
+ncontro 2 1
+ncontra 1 1
+navarra 1 1
+nati 1 1
+mutato 1 1
+muover 3 1
+muffa 1 1
+movien 1 1
+movete 1 1
+mova 1 1
+mostrommi 1 1
+mostrava 1 1
+mostrato 1 1
+mostrarti 1 1
+mossi 5 1
+mosse 1 1
+morsi 1 1
+morse 3 1
+morisse 1 1
+morde 1 1
+monti 3 1
+monte 3 1
+monta 1 1
+monaci 1 1
+molle 1 1
+molesta 1 1
+modo 3 1
+misericordia 1 1
+miseri 4 1
+miserere 1 1
+miran 2 1
+minore 1 1
+mille 1 1
+miglia 2 1
+miei 1 1
+michel 2 1
+metti 2 1
+mettere 1 1
+metro 3 1
+mestieri 2 1
+mestier 4 1
+menzogna 2 1
+mentre 1 1
+menti 1 1
+menava 1 1
+medicina 2 1
+matta 1 1
+maschi 2 1
+martìri 2 1
+marito 1 1
+maraviglia 2 1
+manifesto 1 1
+manda 2 1
+mancia 1 1
+manca 1 1
+mammella 1 1
+malvagia 2 1
+malizia 4 1
+malizia 1 1
+maladetto 2 1
+maggiori 1 1
+maggio 2 1
+maestro 1 1
+lussuria 1 1
+lungamente 1 1
+luna 1 1
+lucrezia 1 1
+lucia 2 1
+loro 1 1
+loquela 1 1
+lontana 1 1
+lontan 1 1
+lingue 4 1
+licito 1 1
+licenza 1 1
+libro 1 1
+libito 1 1
+liberamente 1 1
+levate 1 1
+levarsi 1 1
+levando 2 1
+levan 1 1
+lettura 1 1
+lento 2 1
+lenta 2 1
+legato 2 1
+lega 1 1
+lavina 1 1
+latin 1 1
+lasso 1 1
+lassi 2 1
+lascio 1 1
+lasciare 1 1
+langue 1 1
+lamenti 3 1
+iunone 1 1
+italia 3 1
+isola 3 1
+invola 1 1
+inverno 1 1
+intesa 1 1
+intento 2 1
+intanto 1 1
+insegna 1 1
+innocenti 1 1
+inganni 2 1
+ingannate 1 1
+inebriate 1 1
+indugio 1 1
+india 1 1
+incredibile 1 1
+incominciai 2 1
+iasón 2 1
+hanno 2 1
+gusto 1 1
+guiscardo 1 1
+guido 5 1
+guerra 3 1
+guardò 2 1
+guardia 2 1
+guardava 1 1
+guancia 2 1
+gridar 3 1
+greggia 1 1
+greco 2 1
+grazioso 1 1
+graverà 1 1
+grattar 1 1
+grasso 1 1
+grand 5 1
+gradita 1 1
+gliel 4 1
+giunta 2 1
+giugne 1 1
+giuda 3 1
+gitta 1 1
+giron 5 1
+giri 1 1
+girar 2 1
+giovinetta 1 1
+giove 3 1
+giovanni 1 1
+gialla 2 1
+giace 7 1
+giace 3 1
+ghiotto 1 1
+geomètra 1 1
+genti 3 1
+gente 1 1
+generata 1 1
+general 1 1
+gelati 1 1
+garra 1 1
+galli 1 1
+gaeta 1 1
+fummo 19 1
+fuggendo 1 1
+frutti 1 1
+fretta 2 1
+fredda 2 1
+fratel 1 1
+francia 1 1
+fossi 2 1
+fosse 3 1
+fortunata 2 1
+forti 2 1
+forte 3 1
+forse 4 1
+formata 1 1
+formar 1 1
+forato 1 1
+foran 1 1
+fonte 2 1
+fondo 2 1
+folgore 2 1
+foglie 1 1
+fiume 6 1
+fiumana 1 1
+fisamente 1 1
+fioretti 1 1
+fiorentino 1 1
+fioche 1 1
+finito 1 1
+figura 1 1
+figli 1 1
+fidanza 1 1
+fida 3 1
+ficcar 1 1
+fianco 1 1
+fiammette 1 1
+fiamme 6 1
+fetonte 1 1
+ferza 1 1
+feroci 1 1
+feltro 2 1
+fello 3 1
+federigo 2 1
+fedeli 1 1
+fecesi 1 1
+fecemi 1 1
+fece 3 1
+fattore 2 1
+fatica 1 1
+fatica 1 1
+farem 2 1
+faran 1 1
+fante 1 1
+falcon 2 1
+facevan 3 1
+faceva 2 1
+fabbro 1 1
+etterno 1 1
+essercito 1 1
+essa 1 1
+esperto 1 1
+escono 1 1
+esca 1 1
+error 2 1
+eretto 1 1
+entre 1 1
+eletti 1 1
+elesse 1 1
+duolo 5 1
+dubitava 1 1
+dritta 2 1
+dovrìa 1 1
+dottore 2 1
+dote 1 1
+dosso 6 1
+dosso 3 1
+doppiar 1 1
+domanda 2 1
+dolorosa 1 1
+dolor 12 1
+dolente 6 1
+diviso 1 1
+divin 2 1
+diverso 1 1
+divenuta 1 1
+divenne 1 1
+distrutto 1 1
+disteso 3 1
+distese 7 1
+distesa 1 1
+distanza 1 1
+dissemi 1 1
+dispregi 1 1
+dispoglia 1 1
+dispetto 2 1
+dispetta 1 1
+disgrava 1 1
+diserta 3 1
+disceso 1 1
+discesi 2 1
+discente 1 1
+discende 2 1
+diritti 1 1
+direi 2 1
+dipigne 1 1
+dionisio 1 1
+dimostrato 1 1
+dimora 2 1
+dimandi 1 1
+dimandare 2 1
+digrada 1 1
+difetto 2 1
+difesi 1 1
+difese 1 1
+diedi 3 1
+dicesti 2 1
+dicesse 2 1
+dicerò 1 1
+dicean 2 1
+dannò 1 1
+danni 2 1
+cuori 1 1
+cuopre 1 1
+cuoio 1 1
+crude 2 1
+cristianesmo 1 1
+credi 2 1
+creda 2 1
+coverto 2 1
+cotali 2 1
+cotale 1 1
+costumi 1 1
+costei 1 1
+costantin 2 1
+coscienza 4 1
+corto 1 1
+corti 3 1
+cortesia 2 1
+corse 1 1
+correr 2 1
+correndo 2 1
+corniglia 1 1
+coppa 1 1
+coperte 2 1
+conven 1 1
+convegnon 1 1
+contrada 1 1
+continuando 1 1
+contenti 1 1
+conte 5 1
+conte 2 1
+consuma 2 1
+consorti 2 1
+consorte 1 1
+consigli 1 1
+conservi 1 1
+consente 1 1
+conosco 1 1
+conosciuto 1 1
+conobbi 4 1
+conobbe 1 1
+conforti 2 1
+confessa 1 1
+condanna 1 1
+concetto 1 1
+concedette 1 1
+comprender 2 1
+compié 2 1
+compiuto 1 1
+compenso 1 1
+compagno 3 1
+cominciare 1 1
+comandò 1 1
+colui 3 1
+coltura 1 1
+colse 1 1
+colmo 3 1
+collo 1 1
+colli 2 1
+colle 1 1
+cinto 1 1
+cinge 1 1
+cimitero 1 1
+cigner 1 1
+cigne 2 1
+ciglia 7 1
+ciglia 1 1
+cieca 2 1
+cicogna 1 1
+ciascuno 1 1
+chiusi 2 1
+chiuse 1 1
+chiuder 2 1
+chiome 1 1
+china 3 1
+chiese 4 1
+chiamò 2 1
+chiami 1 1
+cheggio 2 1
+cessar 2 1
+certi 2 1
+certe 1 1
+cerchia 2 1
+cerchia 1 1
+cera 1 1
+centro 1 1
+cenno 2 1
+cenno 2 1
+cener 3 1
+casso 2 1
+cassio 1 1
+carro 2 1
+cardinali 1 1
+carcata 1 1
+caramente 1 1
+cappe 2 1
+capelli 2 1
+canto 2 1
+canti 2 1
+cantar 1 1
+cangiando 1 1
+campi 1 1
+calle 1 1
+cader 2 1
+cade 1 1
+caccia 7 1
+buono 4 1
+brutto 2 1
+bruno 2 1
+brenta 1 1
+brame 1 1
+braccia 13 1
+bolle 4 1
+bogliente 1 1
+biece 1 1
+biasmo 2 1
+bestie 3 1
+bestia 7 1
+benedetto 1 1
+belle 2 1
+belle 1 1
+batte 3 1
+battaglia 1 1
+batista 1 1
+basti 1 1
+basso 2 1
+bassi 2 1
+barba 4 1
+bando 1 1
+bagna 5 1
+avvolse 1 1
+avviso 1 1
+avresti 1 1
+avien 1 1
+avete 3 1
+avesser 1 1
+avean 8 1
+avarizia 3 1
+avara 1 1
+avaccio 1 1
+autorità 1 1
+autore 1 1
+attraversa 1 1
+assetta 1 1
+assalto 1 1
+ascoltando 1 1
+ascolta 1 1
+arno 1 1
+armava 1 1
+ardori 1 1
+ardore 1 1
+ardito 5 1
+arco 2 1
+archi 1 1
+arche 2 1
+appresso 1 1
+appressando 1 1
+appressa 4 1
+apprende 1 1
+apporta 1 1
+aperto 2 1
+aperto 1 1
+aperte 3 1
+aperte 1 1
+antico 1 1
+antiche 2 1
+anno 1 1
+animali 3 1
+andava 6 1
+andare 6 1
+andar 9 1
+andando 3 1
+andai 1 1
+ancora 3 1
+ampio 1 1
+ampiezza 1 1
+amico 2 1
+amiche 1 1
+ambedue 3 1
+ambascia 1 1
+amato 1 1
+amante 1 1
+altissimo 2 1
+alito 1 1
+alcuno 3 1
+alberto 1 1
+albero 2 1
+aiuta 3 1
+aggiunto 1 1
+adice 1 1
+accorti 1 1
+accorte 1 1
+accorsi 2 1
+accorse 4 1
+accetto 1 1
+accendea 1 1
+abbraccia 1 1
+abbia 4 1
+abbandono 1 1

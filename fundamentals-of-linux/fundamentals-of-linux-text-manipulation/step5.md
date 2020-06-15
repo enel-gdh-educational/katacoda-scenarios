@@ -3,7 +3,7 @@
 
 #### A) Sort the words according to their occurrencies,
  
-Sort them in decresing frequency order (having the most frequent words at the top of the file)
+For each of the table files, sort the words in decresing frequency order (having the most frequent words at the top of the file)
 
 <u>Hint:</u> use **sort -k -nr**
 
@@ -17,7 +17,7 @@ Sort them in decresing frequency order (having the most frequent words at the to
 
 #### C) Create a file with all words longer than 5 letters appearing both in Inferno and Paradiso 
 
-For each word list the occurrencies in the two sections 
+Each row of the file should contain the word and the occurrencies in the two sections Inferno and Paradiso 
 
 <u>Hint:</u> Use **join** command 
 
@@ -37,7 +37,7 @@ join  -1 field1 -2 field2  file1 file2
 
 
 
-Compute a *'paradisiac' score* for each word comparing its occurrency in Paradiso and Inferno.
+Compute a *'paradisiac' score* for each word comparing the frequency of occurrency in Paradiso and Inferno.
 
 Define the *'paradisiac' score* score for word x as: 
 
@@ -78,6 +78,6 @@ and writes the resulting lines to standard   output.
 
 #### F) Sort words according to the 'paradisiac' score 
 
-Which are the 10 most 'paradisiac'? 
+Which are the 15 most 'paradisiac'? 
 
-and what about the 10 most 'infernal' words?
+and what about the 15 most 'infernal' words?

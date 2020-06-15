@@ -77,13 +77,4 @@ will execute command, and then redirect its output as input of command2.
 
 Try again to count the number of lines in which Beatrice using the pipe and verify you get the same number as before.
 
---------------
-
-#### E) At which line does the Inferno section starts? And what about Purgatorio? and Paradiso?
-
-<u>Hint 1:</u> Note that each section starts with the name of the section in upper case
-
-<u>Hint 2:</u> use **grep -n** to identify the line number where 'INFERNO', 'PURGATORIO' and 'PARADISO' words occur
-
-
 
