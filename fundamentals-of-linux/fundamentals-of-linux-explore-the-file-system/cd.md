@@ -65,9 +65,9 @@ ________
 
 2. List all the folders
 
-3. Go to the folder which name starting with "m" 
+3. Go to the folder with name starting with "m" 
 
-4. Go to the folder which name starting with "c"
+4. Go to the folder with name starting with "c"
 
 5. List the content  
 
