@@ -32,7 +32,9 @@ sed -n start_line,end_line p  file_input > file_output3
 
 -----------
 
-#### C) Create a file containing three lines: the first one contains number of words found in the Inferno Section, the second one the number of words in Purgatorio, the third one the number of words for Paradiso 
+#### C) Count the number of words for each section of Divina Commedia
+
+Create a file containing three lines: the first one contains number of words found in the Inferno Section, the second one the number of words in Purgatorio, the third one the number of words for Paradiso 
 
 Hint: use the **wc** command and output redirection
 
