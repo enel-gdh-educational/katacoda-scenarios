@@ -6,4 +6,4 @@ chown -R U1 /home/U1
 chown -R U2 /home/U2 
 ssh -oStrictHostKeyChecking=no root@[[HOST2_IP]] 
 useradd -d /home/W1 -p $(openssl passwd -1 p1) W1
-ssh -oStrictHostKeyChecking=no U1@127.0.0.1 -p p1
+exit
