@@ -2,7 +2,7 @@ SSH, or Secure Shell, is a protocol used to securely log onto remote systems. It
 
 The tool on Linux for connecting to a remote system using SSH is called ssh.
 
-`man`
+`man ssh`
 
 The most basic form of the command is:
 
@@ -31,7 +31,7 @@ ________
 
 3. Exit back into your local session
 
-4. Connect to `[[HOST2_IP]]` using last user in the user list printed at 2. (password: p1)
+4. Connect to `[[HOST2_IP]]` using last user in the user list printed at 3. (password: p1)
 
 5. Go to /lib/
 
