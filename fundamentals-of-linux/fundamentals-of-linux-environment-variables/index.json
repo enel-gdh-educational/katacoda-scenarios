@@ -8,32 +8,24 @@
         "title": "Introduction",
         "courseData": "background.sh",
         "text": "introd.md"
-      }
-    ],
-    "steps": [
+      },
       {
         "title": "Global ENVs",
         "text": "global_envs.md"
-      }
-    ],	
-    "steps": [
+      },	
       {
         "title": "Local ENVs",
         "text": "local_envs.md"
-      }
-    ],	
-    "steps": [
+      },	
       {
         "title": "Some commonly used ENVs",
         "text": "common_envs.md"
-      }
-    ],		
-    "steps": [
+      },		
       {
         "title": "User wide ENVs",
         "text": "user_wide_envs.md"
       }
-    ],		
+	],		
     "intro": {
       "text": "intro.md"
     },
