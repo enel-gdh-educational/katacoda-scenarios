@@ -2,12 +2,12 @@
 
 -----------
 
-#### A) For each section, create a new file containing one word per line
+#### A) Create a new file containing one word of the Inferno section per line
 	
 Substitute spaces and punctuations marks with the new line symbol, 
 so that there is no punctuation and there is at most one word per line.
 
-<u>Hint:</u> use **tr** command and wildcards:
+<u>Hint:</u> use **tr** command:
 
 The tr utility copies the standard input to the standard output with 
 substitution or deletion of selected characters:
@@ -17,22 +17,31 @@ tr string1 string2 < file_input
 tr -d string1 < file_input
 tr "[:lower:]" "[:upper:]" < file_input
 tr "[:punct:]" "[:space:]" < file_input
+tr string1 '\n' < file_input
 ```
 
-- the first command replaces all string1 in file_input with string2
+- the first command replaces string1 in file_input with string2
 - the second command deletes all occurrencies of string1
 - the third command replaces all lower letters with capital letters
 - the forth command replaces all punctuations with empty spaces
+- the fifth command replaces string1 with new line symbol
+
 
 -----------
 
-#### B) Remove the word shorter than 5 letters
+#### B) Replace al capital letters to lower letters from the single word files
 
-<u>Hint:</u> use **grep -v**
+<u>Hint:</u> use again **tr** 
+
+-----------
+
+#### C) Remove the word shorter than 5 letters
+
+<u>Hint:</u> use **grep** 
 
 --------
 
-#### C) Sort words
+#### D) Sort words
 
 <u>Hint:</u> use **sort**
 
@@ -52,9 +61,13 @@ sort -R
 - the forth command sorts in reverse order 
 - the fifth command sorts in random order
 
+Using the sort command, sort alphabetically all words of inferno section. 
+
+Which is the first word from the Inferno section? Which is the last one?
+
 ------------
 
-#### D) Remove duplicated words and count the number of occurrences of each word
+#### E) Remove duplicated words and count the number of occurrences of each word
 
 Create 3 files (one per section) such that the first column of each file contains 
 all distinct words longer than 5 letters appearing in the section and the second column contains the number of occurrencies of 
@@ -72,4 +85,8 @@ uniq -c file_input
 and writes a copy of each unique input line to the output_file
 - the second command also counts of the number of times the 
 line occurred in the input
+
+
+Using pipes and output redirection, write a composite command which performs all the task listed in this page
+and produce the desired output, and replicate if for Inferno, Purgatorio and Paradiso.
 
