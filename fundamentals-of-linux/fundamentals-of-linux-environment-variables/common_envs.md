@@ -21,6 +21,8 @@ $SHELL: Gives location of current user's shell program.
 ##### Exercise
 ________
 
+Use ENVs as much as you can
+
 1. Print current directory
 2. Print user name
 3. List the content of root HOME directory
@@ -28,4 +30,9 @@ ________
 5. Go to U2 HOME directory
 6. List the content of U2 HOME directory
 7. List the content of root HOME directory
+8. Unset HOME
+9. List the content of U2 HOME directory
+10. Switch to root
+11. List the content of root HOME directory
+
 
