@@ -23,9 +23,9 @@ ________
 
 1. Print current directory
 2. Print user name
-3. List the content of HOME directory
+3. List the content of root HOME directory
 4. Switch to user U2
-5. Go to HOME directory
-6. List the content
-6. List the content of root HOME directory
+5. Go to U2 HOME directory
+6. List the content of U2 HOME directory
+7. List the content of root HOME directory
 

@@ -15,7 +15,8 @@ ________
 2. Print SHAPE
 3. Switch to user U2
 4. Print SHAPE
-5. Refresh page and print SHAPE
+5. Switch to root
+6. Refresh page and print SHAPE
 
 
 ### How to unset enviornment variables?
