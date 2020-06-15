@@ -6,9 +6,9 @@ We can ask our server what files and directories are in the current directory wi
 
 You see that /root directory contains some files and a folder called report which is blue coloured.
 
-Not all commands have a built-in help option, but we many do. Most of the time, you can access this by adding a --help or -h at the end of the command. We can try this with the ls command now:
+Not all commands have a built-in help option, but we many do. Most of the time, you can access this by adding a --help. We can try this with the ls command now:
 
-`ls -h`
+`ls --help`
 
 Thus if you want more informations about the content listed you can digit 
 
@@ -38,3 +38,5 @@ ________
 1. List /root/report content
 
 2. List only directories names into /root folder
+
+3. List /root content, descending sorted by modification time
