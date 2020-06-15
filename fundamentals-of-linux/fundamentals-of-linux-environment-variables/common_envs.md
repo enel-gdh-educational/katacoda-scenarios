@@ -1,3 +1,6 @@
+Here is a list of common environment variables in Linux:
+
+
 $USER: Gives current user's name.
 
 $PATH: Gives search path for commands.
@@ -23,4 +26,5 @@ ________
 3. List all the files into HOME directory
 4. Switch to user U2
 5. Go to HOME directory
+6. List all the files into HOME directory
 
