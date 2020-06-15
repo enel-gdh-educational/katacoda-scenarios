@@ -10,28 +10,24 @@
         "text": "introd.md"
       }
     ],
-  "details": {
     "steps": [
       {
         "title": "Global ENVs",
         "text": "global_envs.md"
       }
     ],	
-  "details": {
     "steps": [
       {
         "title": "Local ENVs",
         "text": "local_envs.md"
       }
     ],	
-  "details": {
     "steps": [
       {
         "title": "Some commonly used ENVs",
         "text": "common_envs.md"
       }
     ],		
-  "details": {
     "steps": [
       {
         "title": "User wide ENVs",
