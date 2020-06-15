@@ -18,19 +18,9 @@ $SHELL: Gives location of current user's shell program.
 ##### Exercise
 ________
 
-List all the files into HOME directory
+1. Print current directory
+2. Print user name
+3. List all the files into HOME directory
+4. Switch to user U2
+5. Go to HOME directory
 
-### How to unset enviornment variables?
-
-SYNTAX:
-
-unset NAME
-
-or
-
-$ NAME=''
-
-##### Exercise
-________
-
-Unset COLOUR ENV and verify that it is empty

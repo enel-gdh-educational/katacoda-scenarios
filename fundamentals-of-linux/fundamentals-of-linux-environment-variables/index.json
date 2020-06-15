@@ -9,21 +9,21 @@
         "courseData": "background.sh",
         "text": "introd.md"
       },
+	  {
+        "title": "Local ENVs",
+        "text": "local_envs.md"
+      },	
       {
         "title": "Global ENVs",
         "text": "global_envs.md"
-      },	
-      {
-        "title": "Local ENVs",
-        "text": "local_envs.md"
       },	
       {
         "title": "Some commonly used ENVs",
         "text": "common_envs.md"
       },		
       {
-        "title": "User wide ENVs",
-        "text": "user_wide_envs.md"
+        "title": "System-wide ENVs",
+        "text": "system_wide_envs.md"
       }
 	],		
     "intro": {

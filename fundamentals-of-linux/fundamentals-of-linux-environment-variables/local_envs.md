@@ -1,49 +1,22 @@
-A locally scoped ENV that is defined in a terminal cannot be accessed by any program or process running in the terminal. It can only be accessed by the terminal( in which it was defined) itself.
+A locally scoped ENV that is defined in a terminal cannot be accessed by any program or process running in the terminal. It can only be accessed by the terminal (in which it was defined) itself.
 
-To set a global ENV you can use
+To set a local ENV you can use:
 
 NAME=Value
 
-##### Exercise
-________
+To print a local ENV you can use:
 
-Set a global ENV called SHAPE equal to "square" and print it
-
-
-### How to access ENVs?
-
-SYNTAX:
-
-$NAME
+echo $NAME
 
 ##### Exercise
 ________
 
-List all the files into /root folder replacing "/root" with a local ENV called myPATH
+1. Set a local ENV called SHAPE equal to "square"
+2. Print SHAPE
+3. Switch to user U2
+4. Print SHAPE
+5. Refresh page and print SHAPE
 
-### Some commonly used ENVs in Linux
-
-$USER: Gives current user's name.
-
-$PATH: Gives search path for commands.
-
-$PWD: Gives the path of present working directory.
-
-$HOME: Gives path of home directory.
-
-$HOSTNAME: Gives name of the host.
-
-$LANG: Gives the default system language.
-
-$UID: Gives user ID of current user.
-
-$SHELL: Gives location of current user's shell program.
-
-
-##### Exercise
-________
-
-List all the files into HOME directory
 
 ### How to unset enviornment variables?
 
@@ -53,9 +26,10 @@ unset NAME
 
 or
 
-$ NAME=''
+NAME=''
 
 ##### Exercise
 ________
 
-Unset COLOUR ENV and verify that it is empty
+1. Unset SHAPE 
+2. Verify that it is empty
