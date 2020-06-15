@@ -15,7 +15,11 @@ more divina_commedia.txt
 
 ```
 chardetect3  divina_commedia.txt
+```
+```
 iconv -f ISO-8859-1 -t UTF8 divina_commedia.txt -o divina_commedia_utf8.txt
+```
+```
 more divina_commedia_utf8.txt
 ```
 

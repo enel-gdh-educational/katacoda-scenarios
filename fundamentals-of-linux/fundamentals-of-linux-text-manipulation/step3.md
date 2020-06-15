@@ -7,6 +7,7 @@ Split the text in 3 files such that:
 - the first file named 'sect_purgatorio.txt' starts from the beginning of the PURGATORIO section and end ends with the last word of the PURGATORIO section
 - the first file named 'sect_paradiso.txt' starts from the beginning of the PARADISO section and end ends with the last line of the divina_commedia.txt file
 
+Use the UTF-8 encoded version of the file.
 
 Hint: use **head**, **tail** or **sed** to split the text, and then redirection to an output file using the using the > operator:
 
