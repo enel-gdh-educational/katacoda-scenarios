@@ -1,31 +1,39 @@
 #### A)
 
 ```
-tr  ' ' '\n' < inferno.txt | tr  '\r' '\n'  | tr '[:punct:]' '\n' > inferno_temp1.txt
+tr  ' ' '\n' < inferno.txt  > inferno_temp1.txt
+```
+
+```
+tr  '\r' '\n' < inferno_temp1.txt  > inferno_temp2.txt
+```
+
+```
+tr '[:punct:]' '\n' < inferno_temp2.txt > inferno_temp3.txt
 ```
 
 #### B)
 
 ```
-tr  "[:lower:]" "[:upper:]" < inferno_temp1.txt  > inferno_temp2.txt
+tr  "[:lower:]" "[:upper:]" < inferno_temp3.txt  > inferno_temp4.txt
 ```
 
 #### C)
 
 ```
-grep '.....' inferno_temp2.txt > inferno_temp3.txt
+grep '.....' inferno_temp4.txt > inferno_temp5.txt
 ```
 
 #### D)
 
 ```
-sort inferno_temp3.txt > inferno_temp4.txt
+sort inferno_temp5.txt > inferno_temp6.txt
 ```
 
 #### E)
 
 ```
-sort inferno_temp4.txt | uniq -c > inferno_temp.txt
+sort inferno_temp6.txt | uniq -c > inferno_temp7.txt
 ```
 
 ```

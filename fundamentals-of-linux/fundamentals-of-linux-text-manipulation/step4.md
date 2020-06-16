@@ -18,6 +18,8 @@ tr -d string1 < file_input
 tr "[:lower:]" "[:upper:]" < file_input
 tr "[:punct:]" "[:space:]" < file_input
 tr string1 '\n' < file_input
+tr '\r' '\n' < file_input
+
 ```
 
 - the first command replaces string1 in file_input with string2
@@ -25,6 +27,8 @@ tr string1 '\n' < file_input
 - the third command replaces all lower letters with capital letters
 - the forth command replaces all punctuations with empty spaces
 - the fifth command replaces string1 with new line symbol
+- the sixth command replaces carriage return symbol with new line symbol
+
 
 
 -----------
