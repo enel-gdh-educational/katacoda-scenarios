@@ -25,6 +25,6 @@ To display all the system-wide and global ENVs you can type:
 ##### Exercise
 ________
 
-1. Set a local ENV called NAME equal to "alpha"
-2. Set a global ENV called NAME equal to "beta"
+1. Set a local ENV called LENGTH equal to 50
+2. Set a global ENV called WEIGHT equal to 30
 3. Display all the ENVs

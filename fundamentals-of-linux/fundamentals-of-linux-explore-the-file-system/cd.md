@@ -73,6 +73,6 @@ ________
 
 6. Go back two levels 
 
-7. List only directories names into /root folder
+7. List only directories into /root folder
 
 8. Go to root home

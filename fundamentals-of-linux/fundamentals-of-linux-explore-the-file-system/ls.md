@@ -37,6 +37,6 @@ ________
 
 1. List /root/report content
 
-2. List only directories names into /root folder
+2. List only directories into /root folder
 
 3. List /root content, ascending sorted by modification time
