@@ -4,7 +4,7 @@
 
 #### A) Create a new file containing one word of the Inferno section per line
 	
-Substitute spaces and punctuations marks with the new line symbol, 
+Substitute spaces, carriage returns and punctuations marks with the new line symbol, 
 so that there is no punctuation and there is at most one word per line.
 
 <u>Hint:</u> use **tr** command:
