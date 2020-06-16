@@ -39,4 +39,4 @@ ________
 
 2. List only directories names into /root folder
 
-3. List /root content, descending sorted by modification time
+3. List /root content, ascending sorted by modification time

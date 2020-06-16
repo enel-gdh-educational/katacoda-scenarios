@@ -65,13 +65,13 @@ ________
 
 2. List all the folders
 
-3. Go to the folder with name starting with "m" 
+3. Go to the folder media 
 
-4. Go to the folder with name starting with "c"
+4. Go to the folder cdrom
 
 5. List the content  
 
-6. Go back two level 
+6. Go back two levels 
 
 7. List only directories names into /root folder
 

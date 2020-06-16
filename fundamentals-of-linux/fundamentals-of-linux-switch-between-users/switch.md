@@ -33,21 +33,21 @@ Now switch to user U2
 
 You could list the content of /root folder using su and then entering root password (p0)
 
-`su -c ls root `
+`su -c "ls /root" root `
 
 ##### Exercise
 ________
 
 1. Switch to user U3 (password p3)
 2. List available commands for U3
-3. List the content of /home/U1 folder
+3. List the content of /root folder
 
 ##### Exercise
 ________
 
 1. Switch to user U4 (password p4)
 2. List available commands for U4
-3. List the content of /home/U2 folder
+3. List the content of /root folder
 
 
 
