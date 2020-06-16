@@ -16,8 +16,7 @@
    2 abito
    1 aborre
    1 accenda
-   6 accende
-   4 accende
+  10 accende
    1 accendea
    2 accender
    1 accennava
@@ -28,8 +27,7 @@
    3 accese
    1 accesero
    2 accesi
-   3 acceso
-   1 acceso
+   4 acceso
    1 accetta
    1 accetto
    1 accidenti
@@ -47,8 +45,7 @@
    1 accorgimento
    4 accors
    1 accorse
-   2 accorsi
-   1 accorsi
+   3 accorsi
    1 accorte
    1 accorti
    2 accosta
@@ -63,8 +60,7 @@
   16 acqua
    1 acquasparta
    2 acque
-   4 acquista
-   1 acquista
+   5 acquista
    2 acquistar
    1 acquistavan
    3 acquisto
@@ -80,10 +76,8 @@
    1 addivien
    1 addobbi
    1 addolcisce
-   1 addorna
-   2 addorna
-   3 addorno
-   1 addorno
+   3 addorna
+   4 addorno
    1 addrizzaro
    1 addua
    1 addusse
@@ -98,8 +92,7 @@
    1 adora
    1 adriano
    1 adulto
-   2 aduna
-   1 aduna
+   3 aduna
    1 adunate
    1 affanna
    1 affanni
@@ -108,8 +101,7 @@
    1 affaticava
    1 afferma
    2 affetti
-  15 affetto
-   4 affetto
+  19 affetto
    2 affezion
    3 affezione
    1 affige
@@ -150,19 +142,16 @@
    1 albergo
    1 alberichi
    1 albero
-   1 alberto
-   1 alberto
+   2 alberto
    1 albor
    1 alcide
   15 alcun
-   7 alcuna
-   1 alcuna
+   8 alcuna
    1 alcuno
    1 alementi
    1 alito
    1 allaga
-   4 allegrezza
-   2 allegrezza
+   6 allegrezza
    1 allegrezze
    1 allenta
    1 allentava
@@ -170,19 +159,15 @@
    1 alleviò
    1 allodetta
    5 allor
-   7 allora
-   1 allora
+   8 allora
    1 alloro
-   1 alluma
-   1 alluma
+   2 alluma
    1 allumò
    1 allungata
-   1 alma
    1 almeone
    1 alpestre
    6 alquanto
-   3 altezza
-   1 altezza
+   4 altezza
    1 altissimo
   41 altra
   17 altre
@@ -205,8 +190,7 @@
    1 ambascia
    1 ambedue
    1 ambra
-   2 amendue
-   2 amendue
+   4 amendue
    1 amforismi
    1 amiche
    2 amici
@@ -224,22 +208,18 @@
    1 ammiri
    1 ammiro
    1 ammorza
-  27 amore
-   5 amore
-   3 amori
-   2 amori
+  32 amore
+   5 amori
    2 amoroso
    1 ampiezza
    1 ampio
    1 anania
-   1 ancella
-   1 ancella
+   2 ancella
    8 anche
    2 anchise
    1 anciso
   41 ancor
-  16 ancora
-   1 ancora
+  17 ancora
    1 andai
    1 andando
    1 andar
@@ -266,32 +246,23 @@
    1 animali
   10 anime
    5 animo
-   2 anni
    1 annibale
    1 annida
    1 annidi
-   1 anno
    1 annual
    1 anselmo
    1 antandro
    4 antica
-   1 antiche
-   1 antiche
+   2 antiche
    3 antichi
-   6 antico
-   1 antico
+   7 antico
    1 antivedesse
    1 antonio
-   6 aperse
-   3 aperse
-   4 aperta
-   1 aperta
-   1 aperte
-   1 aperte
-   1 aperto
-   1 aperto
-   2 appaga
-   1 appaga
+   9 aperse
+   5 aperta
+   2 aperte
+   2 aperto
+   3 appaga
    1 appaia
    1 appaion
    2 appar
@@ -301,8 +272,7 @@
    3 apparenza
    1 apparer
    1 apparinno
-   1 appariro
-   1 appariro
+   2 appariro
    2 appariva
    1 apparse
    4 apparve
@@ -315,27 +285,23 @@
    1 apporta
    1 apporterai
    2 appostolico
-   3 apprende
-   1 apprende
+   4 apprende
    1 apprender
    1 apprendo
-   1 appresenta
-   1 appresenta
+   2 appresenta
    1 appresenti
    2 appreso
    1 appressa
    1 appressando
    1 appressavamo
-  14 appresso
-   1 appresso
+  15 appresso
    1 apprezza
    1 approbo
    1 appropinquava
    2 appropria
    1 approvarla
    1 approvo
-   2 appunta
-   3 appunta
+   5 appunta
    1 aprio
    1 aprir
    1 aprire
@@ -348,11 +314,9 @@
    1 arche
    1 archi
    1 archimandrita
-   1 arco
    2 ardea
    1 ardendo
-   7 ardente
-   1 ardente
+   8 ardente
    3 ardenti
    1 arder
    2 ardesse
@@ -360,29 +324,22 @@
    1 ardinghi
    1 ardirei
    1 ardita
-   1 ardito
-   1 ardito
-   1 ardo
+   2 ardito
    6 ardor
-   2 ardore
-   1 ardore
+   3 ardore
    1 ardori
    2 ardua
    3 argento
    3 argomenta
    1 argomentar
    1 argomentare
-   3 argomenti
-   1 argomenti
-   6 argomento
-   1 argomento
+   4 argomenti
+   7 argomento
    1 ariete
    1 aringo
    1 armasse
    1 armava
    3 armonia
-   1 arno
-   1 arra
    1 arrestavano
    1 arrestin
    1 arretri
@@ -395,21 +352,14 @@
    1 arrivi
    1 arrossan
    1 arrosso
-   2 arsi
-   3 arte
-   1 arti
    1 artigli
-   3 artista
-   1 artista
+   4 artista
    1 aràbi
    1 ascesi
-   3 ascolta
-   1 ascolta
-   1 ascoltando
-   1 ascoltando
+   4 ascolta
+   2 ascoltando
    2 ascoltar
-   1 ascolti
-   2 ascolti
+   3 ascolti
    1 asconder
    2 ascondeva
    1 ascondo
@@ -420,24 +370,19 @@
    2 aspettar
    1 aspettare
    2 aspettava
-   2 aspetti
-   3 aspetti
-  15 aspetto
-   3 aspetto
+   5 aspetti
+  18 aspetto
   23 assai
    1 assalto
    1 assegnò
-   1 assenso
-   1 assenso
-   3 asseta
-   1 asseta
+   2 assenso
+   4 asseta
    1 assetta
    2 assicura
    1 assicuri
    1 assisi
    1 assiso
-   1 assolto
-   1 assolto
+   2 assolto
    2 assoluta
    1 assomigliarsi
    1 assommi
@@ -451,8 +396,7 @@
    1 atleta
    2 attender
    2 attendere
-   4 attenta
-   2 attenta
+   6 attenta
    1 attenti
    4 attento
    2 atterra
@@ -461,7 +405,6 @@
    2 attesi
    1 atteso
    1 attivi
-   2 atto
    1 attraversa
    1 attribuisce
    1 audienza
@@ -470,14 +413,12 @@
    1 augusta
    2 augustin
    1 augustino
-   1 ausi
    1 ausonia
    1 autore
    1 autoritadi
    1 autorità
    1 avaccio
-   3 avanti
-   1 avanti
+   4 avanti
    2 avanza
    1 avara
    1 avarizia
@@ -487,8 +428,7 @@
    1 averle
    1 aversi
    1 averti
-   8 avesse
-   1 avesse
+   9 avesse
    1 avesser
    3 avessi
    1 avesti
@@ -498,8 +438,7 @@
    1 avolo
    1 avoltero
    4 avrebbe
-   1 avresti
-   1 avresti
+   2 avresti
    6 avria
    1 avvalora
    1 avvalorava
@@ -509,13 +448,11 @@
    1 avvede
    1 avvedrai
    4 avvegna
-   1 avverso
-   1 avverso
+   2 avverso
    3 avvien
    1 avvisar
    1 avviso
-   3 avviva
-   1 avviva
+   4 avviva
    1 avvivan
    1 avvivava
    1 avvocato
@@ -523,7 +460,6 @@
    1 babillòn
    1 baccialier
    1 bacco
-   1 badi
    1 badia
    1 bagna
    1 bagni
@@ -536,80 +472,62 @@
    1 balenar
    1 baleno
    1 balia
-   1 ballo
-   1 ballo
-   2 banco
-   1 banco
-   1 bando
-   1 bando
+   2 ballo
+   3 banco
+   2 bando
    1 barattare
    1 barba
    1 barbari
-   2 barca
-   3 barca
+   5 barca
    1 baron
-   1 barone
-   1 barone
+   2 barone
    1 barucci
    1 basilica
    1 basse
    1 bassi
-   2 basso
-   1 basso
+   3 basso
    4 basta
    1 bastavasi
-   4 basti
-   1 basti
+   5 basti
    1 batista
    1 batisteo
    1 battaglia
    1 batte
    3 batter
-   2 battesmo
-   1 battesmo
+   3 battesmo
    1 battezzar
    1 battezzati
    1 battezzato
    1 battuta
    6 beata
-   3 beati
-   1 beati
+   4 beati
    1 beatitudo
-  10 beato
-   1 beato
-  41 beatrice
-   3 beatrice
+  11 beato
+  44 beatrice
    1 becchetto
    2 becco
    1 belisar
-  20 bella
-   1 bella
-   1 belle
-   1 belle
+  21 bella
+   2 belle
    5 bellezza
    2 bellezze
    3 belli
    1 bellincion
    1 bellincione
-   4 bello
-   2 bello
+   6 bello
    1 benché
    1 bende
-   3 bene
    2 benedetta
    1 benedette
-   7 benedetto
-   1 benedetto
+   8 benedetto
    1 benedicendomi
    1 benefici
-   4 benigna
-   1 benigna
+   5 benigna
    1 benignità
    2 benigno
    2 beninanza
    1 beringhiere
-   3 bernardo
-   1 bernardo
+   4 bernardo
    1 bernardone
    1 berta
    1 berti
@@ -623,14 +541,12 @@
    4 bianca
    2 bianche
    1 biancheggia
-   3 bianco
-   1 bianco
+   4 bianco
    1 biasmerebbe
    1 biasmo
    1 biece
    1 bieci
    1 bifolco
-   1 biga
    1 bigoncia
    2 bilancia
    1 bindi
@@ -646,8 +562,7 @@
    1 bogliente
    1 bolle
    1 bonaventura
-   4 bontate
-   4 bontate
+   8 bontate
    7 bontà
    1 borea
    1 borgo
@@ -667,8 +582,7 @@
    2 briga
    1 brisso
    1 broglia
-   2 bruno
-   1 bruno
+   3 bruno
    1 brusca
    2 bruto
    1 brutto
@@ -678,35 +592,28 @@
    1 buondelmonte
    1 buondelmonti
    2 buone
-   2 buoni
-   1 buoni
+   3 buoni
    1 buono
    1 caccia
    1 cacciaguida
    1 cacciata
-   1 cacume
-   1 cacume
+   2 cacume
    2 cadde
-   1 cade
    1 cader
-   2 cadere
-   1 cadere
+   3 cadere
    1 cadrai
    1 caduci
    1 caggia
   13 cagion
    1 cagiona
-   1 cagione
-   2 cagione
+   3 cagione
    1 cagioni
    1 cagnan
-   1 cala
    1 calare
    1 calaroga
    1 calavrese
    2 caldi
-  11 caldo
-   2 caldo
+  13 caldo
    1 caler
    1 calfucci
    1 caliga
@@ -722,8 +629,7 @@
    2 cammin
    1 cammina
    1 cammine
-   4 cammino
-   2 cammino
+   6 cammino
    1 campi
    1 campioni
    4 campo
@@ -739,8 +645,7 @@
    1 cangerebbe
    1 cangerà
    1 cangiando
-   2 canta
-   2 canta
+   4 canta
   11 cantando
    1 cantar
    4 cantare
@@ -748,11 +653,9 @@
    2 cantava
    1 cantavano
    1 canterebbe
-   1 canti
-   2 canti
+   3 canti
    1 cantilena
-  48 canto
-   1 canto
+  49 canto
    5 cantor
    1 cantò
    1 caorsini
@@ -767,32 +670,25 @@
    1 caramente
    1 carbon
    1 carbone
-   3 carca
-   1 carca
+   4 carca
    1 carcar
    1 carcata
    3 carco
    1 cardinali
-   1 carezza
-   1 carezza
-   1 cari
+   2 carezza
    3 caritate
    7 carità
    1 carizia
    6 carlo
    1 carmi
-   9 carne
-   1 carne
-   2 caro
+  10 carne
    2 carole
    1 carpir
    1 carro
    1 carta
    2 carte
-   1 casa
    1 casal
    1 caschi
-   1 caso
    1 cassi
    1 cassino
    1 cassio
@@ -814,39 +710,30 @@
    1 celesti
    1 celestial
    1 celorum
-   1 cena
    1 cener
-   1 cenno
-   1 cenno
+   2 cenno
    1 centesimo
    1 centesma
    1 centesmo
    2 cento
-   5 centro
-   1 centro
+   6 centro
    1 cenìt
    1 ceppo
-   1 cera
    2 cerca
    1 cercasse
    9 cerchi
-   1 cerchia
-   1 cerchia
+   2 cerchia
    1 cerchiando
   16 cerchio
    1 cerna
-   1 cerne
-   1 cerne
+   2 cerne
    2 cerner
-   1 cero
-   1 certa
-   1 certa
+   2 certa
    1 certaldo
    1 certe
    1 certi
    1 certificato
-  12 certo
-   2 certo
+  14 certo
    5 cesare
    1 cessa
    1 cessar
@@ -860,23 +747,19 @@
    1 chiamar
    2 chiamata
    1 chiameranno
-   1 chiami
-   1 chiami
+   2 chiami
    1 chiamò
    1 chiana
-   4 chiara
-   1 chiara
+   5 chiara
    2 chiare
-   3 chiarezza
-   1 chiarezza
+   4 chiarezza
    1 chiari
    1 chiarir
    1 chiarirti
    1 chiarissima
    1 chiarito
    1 chiarità
-  12 chiaro
-   1 chiaro
+  13 chiaro
    1 chiascheduno
    1 chiavasse
    2 chiave
@@ -896,43 +779,34 @@
    1 chiose
    1 chiostra
    1 chiostri
-   1 chiostro
-   1 chiostro
+   2 chiostro
    1 chiude
    1 chiuder
    1 chiudere
    1 chiudon
    2 chiusa
    1 chiuse
-   1 chiusi
-   1 chiusi
+   2 chiusi
    3 chiuso
    1 ciance
    1 ciancia
    1 cianghella
   14 ciascun
-   8 ciascuna
-   2 ciascuna
-   5 ciascuno
-   1 ciascuno
-   1 ciba
+  10 ciascuna
+   6 ciascuno
    1 cicogna
    1 cieca
    2 cieco
    1 cieldauro
    1 cieli
-  31 cielo
-   3 cielo
+  34 cielo
    2 cigli
-   1 ciglia
-   1 ciglia
+   2 ciglia
    3 ciglio
    1 cigne
    1 cigner
    1 cignersi
-   4 cima
-   1 cimitero
-   1 cimitero
+   2 cimitero
    1 cincinnato
    1 cinge
    1 cinger
@@ -941,10 +815,8 @@
    1 cinquecento
    2 cinse
    1 cinsela
-   1 cinto
-   1 cinto
-   1 cintura
-   1 cintura
+   2 cinto
+   2 cintura
    1 ciocchi
    1 ciotto
    1 ciprigna
@@ -957,8 +829,7 @@
    1 circulazion
    1 circumcinto
    1 circuncidere
-   1 circunferenza
-   2 circunferenza
+   3 circunferenza
    1 circunferenze
    1 circunfulse
    1 circunscritto
@@ -974,12 +845,10 @@
    2 cittadini
    1 cittadino
    3 città
-   1 civi
    2 civil
    1 claritate
    1 classe
-   1 clavi
-   1 clavi
+   2 clavi
    1 clemenza
    1 cleopatra
    1 cleto
@@ -993,16 +862,13 @@
    1 coglie
    1 cognazione
    1 colco
-   3 colei
-   2 colei
-   2 colle
-   1 colle
+   5 colei
+   3 colle
    1 collega
    2 collegi
    2 collegio
    1 colli
-   5 collo
-   1 collo
+   6 collo
    1 collòca
    1 colmo
    1 cologna
@@ -1018,15 +884,13 @@
    1 colse
    1 coltura
    1 colubro
-  36 colui
-   1 colui
+  37 colui
    1 comanda
    1 comando
    1 comandò
    1 combatte
    1 combatter
    1 combattesse
-   2 come
    1 comete
    1 comico
    1 comincerebber
@@ -1057,8 +921,7 @@
    1 comperare
    1 compiacemmi
    1 compiacermi
-   2 compiute
-   1 compiute
+   3 compiute
    1 compiuto
    1 compié
    1 complession
@@ -1081,8 +944,7 @@
    1 concetta
    1 concette
    4 concetti
-   4 concetto
-   1 concetto
+   5 concetto
    1 conchiude
    1 conchiusa
    1 conchiuse
@@ -1091,8 +953,7 @@
    1 concipio
    1 concolori
    1 concorda
-   1 concorde
-   1 concorde
+   2 concorde
    1 concordi
    1 concordia
    1 concorsi
@@ -1128,13 +989,11 @@
    4 congiunta
    1 congiunte
    1 congiunti
-   3 congiunto
-   1 congiunto
+   4 congiunto
    1 congratulando
    3 conio
    1 conobbe
-   1 conobbi
-   1 conobbi
+   2 conobbi
    8 conosce
    2 conoscenza
    1 conosceranno
@@ -1152,8 +1011,7 @@
    1 conserte
    1 conservi
    1 considerar
-   1 consigli
-   1 consigli
+   2 consigli
    9 consiglio
    1 consistorio
    1 consistoro
@@ -1168,8 +1026,7 @@
    1 consunsi
    1 consunta
    1 consuona
-   1 conte
-   1 conte
+   2 conte
    1 contemplando
    1 contemplante
    1 contemplanti
@@ -1179,11 +1036,9 @@
    2 contemplo
    1 contenenza
    1 contenerlo
-   6 contenta
-   3 contenta
+   9 contenta
    1 contentava
-   2 contenti
-   1 contenti
+   3 contenti
    5 contento
    1 contenute
    1 contesto
@@ -1209,13 +1064,11 @@
    1 convegnon
    1 convegnono
    1 conven
-   5 convene
-   2 convene
+   7 convene
    1 convenenza
    3 convenia
    3 conveniesi
-   4 convenne
-   2 convenne
+   6 convenne
    3 convento
    1 converse
    1 conversione
@@ -1225,26 +1078,20 @@
    4 conviene
    1 convienmi
    2 conviensi
-   1 convienti
-   1 convienti
+   2 convienti
    1 coperte
    1 coperti
    1 coppa
    1 coprisse
    2 coram
-   3 corda
-   1 corda
-   1 corde
-   2 corde
+   4 corda
+   3 corde
    1 corni
    1 cornice
    1 corniglia
-   4 corno
-   2 corno
-   2 coro
+   6 corno
    1 corollario
-   5 corona
-   2 corona
+   7 corona
    1 coronarmi
    1 coronata
    1 coronava
@@ -1266,43 +1113,32 @@
    1 corruzion
    1 corruzione
    1 corrègger
-   6 corse
-   1 corse
+   7 corse
    1 corsi
    3 corso
    3 corta
-  10 corte
-   2 corte
-   2 cortese
-   1 cortese
-   1 cortesia
-   2 cortesia
+  12 corte
+   3 cortese
+   3 cortesia
    1 corti
-   3 corto
-   1 corto
+   4 corto
    2 corusca
    1 coruscar
-   3 cosa
    1 coscienza
-   4 cose
    1 cosperso
    2 cospetto
-   3 costa
-   4 costa
+   7 costa
    1 costante
    1 costantin
-   1 costanza
-   1 costanza
-   1 costei
-   2 costei
+   2 costanza
+   3 costei
    1 costellati
    1 costellazion
    1 costellazione
    2 costoro
    1 costretto
    1 costrinse
-   2 costrutto
-   1 costrutto
+   3 costrutto
    8 costui
    3 costume
    1 costumi
@@ -1312,32 +1148,25 @@
    1 cotale
    1 cotali
    2 cotanta
-  13 cotanto
-   1 cotanto
+  14 cotanto
    1 cotenna
    1 coverta
    1 coverti
-   1 coverto
-   1 coverto
+   2 coverto
    1 crastino
    2 creando
    1 creasse
    1 creasti
    6 creata
    1 create
-   2 creati
-   1 creati
+   3 creati
    3 creato
    1 creatore
-   6 creatura
-   2 creatura
-   4 creature
-   1 creature
-   1 crebbe
-   1 crebbe
+   8 creatura
+   5 creature
+   2 crebbe
    1 crebra
-   1 creda
-   1 creda
+   2 creda
    3 crede
    2 credea
    5 credendo
@@ -1349,11 +1178,9 @@
    3 credette
    1 credettero
    2 credetti
-  11 credi
-   1 credi
+  12 credi
    1 crediate
-  11 credo
-   1 credo
+  12 credo
    1 credute
    1 cresca
    1 cresce
@@ -1362,16 +1189,13 @@
    1 cresciuto
    1 creusa
    1 crisostomo
-   2 cristallo
-   1 cristallo
+   3 cristallo
    1 cristian
    1 cristiana
    1 cristianesmo
-   2 cristiani
-   1 cristiani
+   3 cristiani
    3 cristiano
-  32 cristo
-   3 cristo
+  35 cristo
    1 croazia
   10 croce
    1 croci
@@ -1386,11 +1210,9 @@
    1 cuopre
    1 cuopron
    1 cuori
-   1 cupe
    3 cupidigia
    1 cupidità
    2 cupido
-   4 cura
    1 curar
    1 curasse
    1 currado
@@ -1406,17 +1228,13 @@
    1 dannando
    1 dannerà
    1 danni
-   5 danno
-   1 danno
+   6 danno
    1 dannò
    1 danubio
-   1 danza
-   1 danza
+   2 danza
    1 danzando
-   1 dape
    1 darli
-   1 darmi
-   1 darmi
+   2 darmi
    4 davante
    2 davanti
    2 debili
@@ -1434,12 +1252,10 @@
    1 defettivo
    1 defunta
    1 defunto
-   3 degna
-   2 degna
+   5 degna
    1 degnamente
    1 degne
-   8 degno
-   2 degno
+  10 degno
    1 degnò
    1 deiforme
    1 deità
@@ -1453,8 +1269,7 @@
    1 densa
    1 densi
    2 denso
-   1 dente
-   1 dente
+   2 dente
    2 denti
   41 dentro
    1 depende
@@ -1476,9 +1291,7 @@
   12 detto
    1 deturpa
    1 devoti
-   1 devoto
-   1 devoto
-   3 dice
+   2 devoto
    6 dicea
    1 dicean
    1 dicend
@@ -1500,8 +1313,7 @@
    1 difalta
    1 difende
    2 difesa
-   1 difese
-   1 difese
+   2 difese
    1 difesi
    1 difettivi
    1 difetto
@@ -1518,8 +1330,7 @@
    1 digiun
    1 digiuna
    1 digiuni
-   2 digiuno
-   3 digiuno
+   5 digiuno
    1 dignitadi
    1 dignità
    1 digrada
@@ -1534,8 +1345,7 @@
    1 dilettarne
    1 dilette
    1 diletti
-   7 diletto
-   2 diletto
+   9 diletto
    1 dilibra
    1 diligite
    3 dille
@@ -1545,8 +1355,7 @@
    1 dimandarla
    1 dimandarvi
    1 dimandati
-   2 dimandi
-   1 dimandi
+   3 dimandi
    2 dimando
    1 dimensione
    1 dimessa
@@ -1555,8 +1364,7 @@
    1 dimora
    3 dimostra
    1 dimostran
-   1 dimostraro
-   2 dimostraro
+   3 dimostraro
    1 dimostrato
    1 dimostrazion
    1 dimostri
@@ -1564,20 +1372,16 @@
    8 dintorno
    2 dione
    1 dionisio
-   2 diparte
-   3 diparte
-   1 dipigne
-   1 dipigne
+   5 diparte
+   2 dipigne
    1 dipinge
    1 dipingon
    1 dipinse
    3 dipinta
    1 dipinte
-   3 dipinto
-   1 dipinto
+   4 dipinto
    2 dirai
    1 dirama
-   3 dire
    1 direbbe
    1 direi
    2 diretta
@@ -1591,26 +1395,22 @@
    1 disagguaglianza
    1 disasconda
    1 discarchi
-   5 discende
-   1 discende
+   6 discende
    1 discendea
    1 discendendo
    1 discender
    1 discendeva
    1 discente
-   1 discerna
-   1 discerna
+   2 discerna
    2 discerne
    1 discerner
    1 discernesi
    3 discerni
    2 discerno
-   2 discese
-   1 discese
+   3 discese
    1 disceser
    1 discesi
-   1 disceso
-   1 disceso
+   2 disceso
    1 discetti
    1 dischiava
    1 dischiude
@@ -1629,8 +1429,7 @@
    1 discuopre
    3 disdegno
    1 disdegnò
-   2 diserra
-   1 diserra
+   3 diserra
    1 diserta
    2 diserto
    1 diseta
@@ -1641,8 +1440,7 @@
    1 disfranca
    1 disgrava
    1 disia
-   1 disiando
-   1 disiando
+   2 disiando
    1 disiante
    3 disianza
    1 disiar
@@ -1650,17 +1448,13 @@
    1 disiati
    1 disiderate
    1 disigilla
-   1 disii
-   2 disii
-  21 disio
-   5 disio
+   3 disii
+  26 disio
    2 disir
    2 disira
    3 disire
-   3 disiri
-   1 disiri
-   2 disiro
-   2 disiro
+   4 disiri
+   4 disiro
    1 disleghe
    1 disleghi
    1 disnodi
@@ -1730,21 +1524,16 @@
    1 diverrebbe
    2 diversa
    4 diversamente
-   8 diverse
-   1 diverse
+   9 diverse
    6 diversi
-   1 diverso
-   1 diverso
+   2 diverso
    1 divien
    1 divima
    1 divin
-  18 divina
-   1 divina
+  19 divina
    1 divine
-   1 divini
-   1 divini
-   6 divino
-   3 divino
+   2 divini
+   9 divino
    2 divise
    1 division
    1 diviso
@@ -1752,14 +1541,12 @@
    1 divora
    3 divota
    1 divotamente
-   1 divoto
-   1 divoto
+   2 divoto
    1 divozione
    1 dodici
    2 doglia
   35 dolce
-   3 dolcezza
-   1 dolcezza
+   4 dolcezza
    6 dolci
    2 dolcissimo
    1 dolente
@@ -1772,12 +1559,9 @@
    1 domandi
    2 domenico
    1 dominazioni
-   1 dona
    2 donato
    1 donerà
-   1 doni
-  42 donna
-   2 donna
+  44 donna
    3 donne
    2 donnea
    2 doppia
@@ -1788,18 +1572,13 @@
    1 dorma
    1 dormendo
    1 dormi
-   1 dosso
-   1 dosso
-   1 dota
+   2 dosso
    1 dotar
    1 dotate
    1 dotato
-   1 dote
    3 dottor
    1 dottore
-   3 dottrina
-   1 dottrina
-   3 dove
+   4 dottrina
    5 dovea
    1 dover
    1 dovere
@@ -1808,8 +1587,7 @@
    1 dovria
    2 dovrien
    1 dovrìa
-   1 dritta
-   1 dritta
+   2 dritta
    1 drittamente
    1 dritti
    4 dritto
@@ -1826,20 +1604,15 @@
    2 dubbiar
    1 dubbiava
    3 dubbio
-   1 dubi
    2 dubitando
    3 dubitar
    1 dubitava
    1 dubitazion
-   1 duca
-   3 duce
-   1 duci
   15 dunque
    1 duolo
    1 durabile
    1 durar
    1 durazzo
-   3 ebbe
    4 ebber
    1 ebbrezza
    1 ebree
@@ -1854,8 +1627,7 @@
    1 eclissò
    2 effetti
    5 effetto
-   1 effige
-   1 effige
+   2 effige
    1 efigènia
    1 egidio
    1 egitto
@@ -1872,7 +1644,6 @@
    1 eliseo
    1 eliso
    1 eliòs
-   1 ella
    1 emerse
    4 emisperio
    1 empia
@@ -1880,7 +1651,6 @@
    1 empierti
    1 empierà
    2 empio
-   1 enno
    3 entra
    1 entrano
    1 entrar
@@ -1893,48 +1663,37 @@
    1 equalità
    1 equivocando
    2 erano
-   1 erba
-   1 erbe
    1 eretica
    1 eretici
    1 eretta
    1 eretto
-   1 erra
-   1 errante
-   1 errante
+   2 errante
    1 error
    2 errore
-   1 esca
    1 escono
    1 escusar
    1 escusarmi
-   2 esperienza
-   1 esperienza
+   3 esperienza
    1 esperto
    1 espremer
    2 espressi
    1 espresso
-   1 essa
    1 essaltasti
    1 essaltate
    1 essaltato
    1 essaminando
    1 essausto
    1 essemplare
-   2 essemplo
-   1 essemplo
+   3 essemplo
    2 essempro
-   4 essenza
-   1 essenza
+   5 essenza
    1 essenze
   64 esser
    1 essercito
   12 essere
    1 essermi
    1 esservi
-   3 essilio
-   1 essilio
-   2 esso
+   4 essilio
    1 essordire
    1 estrema
    1 estreme
@@ -1945,32 +1704,26 @@
   15 etterna
    1 etternal
    4 etternalmente
-   3 etterne
-   1 etterne
+   4 etterne
    2 etterni
    1 etternità
-  20 etterno
-   1 etterno
+  21 etterno
    1 ettore
    3 europa
    1 evangelica
    3 evangelio
    1 fabbro
-   1 fabi
    2 facce
    2 faccendosi
    2 facci
    4 faccia
    2 faccian
-   5 face
-   6 facea
-   1 facea
+   7 facea
    2 facean
    1 faceano
    1 faceasi
    1 facei
-   1 facella
-   2 facella
+   3 facella
    1 facen
    1 facesser
    1 faceva
@@ -1980,10 +1733,8 @@
    1 facultate
    1 falcon
    1 falcone
-   1 falla
-   1 falla
-   1 fallace
-   1 fallace
+   2 falla
+   2 fallace
    1 fallanza
    2 falli
    4 fallo
@@ -1992,12 +1743,10 @@
    1 falsificato
    3 falso
    1 famagosta
-   4 famiglia
-   4 famiglia
+   8 famiglia
    1 famigliar
    3 fammi
-  15 fanno
-   2 fanno
+  17 fanno
    1 fansi
    3 fantasia
    1 fantasie
@@ -2023,45 +1772,37 @@
    2 fasciato
    1 fassene
    3 fassi
-   1 fatica
-   1 fatica
+   2 fatica
   11 fatta
    4 fatte
    7 fatti
-  30 fatto
-   1 fatto
+  31 fatto
    2 fattor
-   1 fattore
-   3 fattore
+   4 fattore
    1 fattura
    1 fatture
    1 fatturo
    1 fausto
-   7 favella
-   1 favella
+   8 favella
    1 favellò
-   4 favilla
-   1 favilla
+   5 favilla
    6 faville
    1 favole
    1 favoleggiare
    1 favoleggiava
    1 favore
    1 favorò
-   1 fece
    1 fecemi
    2 fecer
    1 fecesi
    1 fecimi
-   4 fede
    2 fedel
    1 fedeli
    1 federigo
    1 fegghine
    4 felice
    1 felices
-   1 felici
-   1 felici
+   2 felici
    1 felicitando
    1 felle
    1 fello
@@ -2078,11 +1819,9 @@
    2 fermar
    1 fermarsi
    2 fermato
-   2 fermi
-   1 fermi
+   3 fermi
    2 fermo
    1 fermossi
-   2 fero
    2 feroce
    1 feroci
    1 ferrarese
@@ -2091,22 +1830,17 @@
    1 fertilemente
    4 ferve
    1 ferza
-   2 fesse
-   1 fesse
-   3 fessi
-   1 fessi
-   3 festa
-   2 festa
+   3 fesse
+   4 fessi
+   5 festa
    1 festanti
-   1 feste
-   1 feste
+   2 feste
    1 festinata
    1 festini
    1 festino
    1 fetonte
    1 fiala
-  15 fiamma
-   1 fiamma
+  16 fiamma
    1 fiammando
    1 fiamme
    3 fiammeggiar
@@ -2115,32 +1849,26 @@
    2 fiammeggio
    1 fiammelle
    1 fiammette
-   2 fianco
-   1 fianco
+   3 fianco
    3 fiata
-   8 fiate
-   1 fiate
+   9 fiate
    2 ficca
    1 ficcar
-   1 fida
    1 fidanza
    1 fiede
    1 fieno
    1 fieri
    2 fiesole
    1 fifanti
-   3 figli
-   1 figli
-   8 figlia
-   1 figlia
+   4 figli
+   9 figlia
    1 figlie
   16 figlio
    5 figliuol
    1 figliuola
    1 figliuolo
    1 figluol
-   4 figura
-   1 figura
+   5 figura
    1 figurando
    2 figure
    1 figuri
@@ -2148,21 +1876,18 @@
    1 filippi
    1 filosofando
    1 filosofici
-   3 fine
    1 finii
    1 finito
    1 fiocca
    1 fioccar
    1 fioche
    1 fioco
-   3 fiore
-   2 fiore
+   5 fiore
    1 fiorentini
    1 fiorentino
    8 fiorenza
    1 fioretti
-   3 fiori
-   2 fiori
+   5 fiori
    1 fiorian
    1 fiorisce
    1 fisamente
@@ -2172,18 +1897,13 @@
    5 fissi
    4 fisso
    1 fiumana
-   1 fiume
-   2 fiume
+   3 fiume
    1 flailli
    2 fleto
    1 flette
-   1 foci
-   4 foco
    3 foglia
-   4 foglie
-   1 foglie
-   1 foglio
-   1 foglio
+   5 foglie
+   2 foglio
    1 folco
    1 folgorando
    1 folgorate
@@ -2191,29 +1911,21 @@
    1 folgorò
    4 folgór
    1 folgóri
-   4 folle
-   1 folle
+   5 folle
    1 folli
    1 follia
    1 fommi
-   3 fonda
-   1 fonda
+   4 fonda
    2 fondamento
    1 fondi
-   5 fondo
-   1 fondo
+   6 fondo
    3 fontana
    1 fontane
-   6 fonte
-   1 fonte
-   1 fora
+   7 fonte
    1 foran
    1 forato
    1 force
-   2 fore
-   1 fori
-  11 forma
-   1 forma
+  12 forma
    1 formal
    1 formale
    1 formali
@@ -2222,30 +1934,23 @@
    1 formati
    1 fornir
    1 fornisce
-   1 foro
-  14 forse
-   1 forse
-  14 forte
-   1 forte
-   1 forti
-   2 forti
+  15 forse
+  15 forte
+   3 forti
    5 fortuna
    1 fortunata
    1 fortunate
    4 forza
-  30 fosse
-   1 fosse
+  31 fosse
    8 fosser
    2 fossero
-   5 fossi
-   1 fossi
+   6 fossi
    2 fosti
    3 francesco
    1 francia
    1 frange
    1 frasca
-   8 frate
-   1 frate
+   9 frate
    1 fratel
    1 fratello
    2 frati
@@ -2258,21 +1963,15 @@
    1 freno
    1 frequentato
    1 frequente
-   2 fretta
-   1 fretta
-   3 fronda
-   2 fronda
-   5 fronde
-   1 fronde
-   3 fronte
-   2 fronte
+   3 fretta
+   5 fronda
+   6 fronde
+   5 fronte
    2 frusto
    1 frustra
    2 frutta
-   1 frutti
-   1 frutti
-   3 frutto
-   3 frutto
+   2 frutti
+   6 frutto
    4 fugge
    1 fuggendo
    1 fuggendoli
@@ -2291,13 +1990,11 @@
    1 fummo
    3 fuochi
    2 fuori
-   5 fuoro
-   1 fuoro
+   6 fuoro
    1 furare
    6 furon
    1 fusca
-   3 futura
-   1 futura
+   4 futura
    1 gabriel
    1 gabriello
    1 gaeta
@@ -2314,11 +2011,9 @@
    1 gaudiose
    2 gaudioso
    1 gelati
-   1 gemelli
-   1 gemelli
+   2 gemelli
    1 gemma
    1 gemme
-   1 gene
    1 general
    1 generanti
    1 generata
@@ -2326,10 +2021,8 @@
    1 generò
    1 gennaio
    1 genovese
-  20 gente
-   1 gente
-  11 genti
-   1 genti
+  21 gente
+  12 genti
    1 gentili
    1 geomètra
    1 gerarcia
@@ -2340,50 +2033,38 @@
    1 ghiotto
    1 ghirlanda
    1 ghirlande
-   1 giace
-   1 giace
+   2 giace
    1 giaci
-   3 giacque
-   1 giacque
+   4 giacque
    1 gialla
    1 gialli
    1 giallo
    1 giano
-   3 giardino
-   1 giardino
+   4 giardino
    1 gibbo
-   2 gigli
-   1 gigli
+   3 gigli
    1 giglio
    1 ginevra
    1 giochi
-   2 gioco
-   1 gioco
-   1 gioconde
-   1 gioconde
-   2 giocondo
-   1 giocondo
+   3 gioco
+   2 gioconde
+   3 giocondo
    2 giogo
-   2 gioia
-   3 gioia
+   5 gioia
    1 gioie
    1 gioir
    1 gioire
-   7 giorno
-   2 giorno
+   9 giorno
    2 giova
    1 giovacchino
    1 giovanetti
    1 giovani
    1 giovanna
-   1 giovanni
-   2 giovanni
-   1 giove
-   2 giove
+   3 giovanni
+   3 giove
    1 giovial
    1 giovinetta
    1 giovinetto
-   1 gira
    1 giran
    4 girando
    1 girano
@@ -2394,8 +2075,6 @@
    1 girato
    2 girava
    1 girerommi
-   1 giri
-   5 giro
    1 giron
    1 girossi
    1 gitta
@@ -2415,23 +2094,18 @@
    1 giunture
    1 giuochi
    1 giura
-   9 giuso
-   2 giuso
+  11 giuso
    4 giusta
-   1 giustamente
-   2 giustamente
+   3 giustamente
    2 giuste
    2 giusti
    1 giustissimo
-   9 giustizia
-   3 giustizia
+  12 giustizia
    9 giusto
-   1 giùe
    1 glauco
    1 gliel
    1 globo
-  10 gloria
-   3 gloria
+  13 gloria
    1 gloriai
    1 gloriar
    1 gloriarla
@@ -2439,9 +2113,7 @@
    1 gloriosamente
    2 gloriose
    2 gloriosi
-   2 glorioso
-   1 glorioso
-   1 gode
+   3 glorioso
    1 godeva
    1 golfo
    1 gonfia
@@ -2454,21 +2126,17 @@
    1 grada
    5 gradi
    1 gradir
-   1 gradita
-   1 gradita
+   2 gradita
   15 grado
    1 grand
-  14 grande
-   1 grande
-   4 grandi
-   1 grandi
+  15 grande
+   5 grandi
    1 grassi
    1 grasso
    3 grata
    1 grati
    2 gratia
-   3 grato
-   2 grato
+   5 grato
    1 grattar
    1 gratuito
    1 gratulando
@@ -2477,8 +2145,7 @@
    1 graverà
    7 gravi
    1 gravò
-  37 grazia
-   2 grazia
+  39 grazia
    1 grazian
    1 grazioso
    2 greci
@@ -2486,12 +2153,10 @@
    1 greggia
    1 gregorio
    2 grembo
-   3 grida
-   1 grida
+   4 grida
    2 gridan
    1 gridar
-   4 grido
-   1 grido
+   5 grido
    1 gromma
    1 gronda
    2 grosse
@@ -2501,8 +2166,7 @@
    1 gualdo
    1 gualterotti
    2 guance
-   1 guancia
-   1 guancia
+   2 guancia
    8 guarda
    5 guardando
    1 guardassi
@@ -2515,16 +2179,13 @@
    1 guasco
    1 guasti
    1 guelfi
-   2 guerra
-   1 guerra
-   5 guida
-   1 guida
+   3 guerra
+   6 guida
    2 guidi
    1 guido
    2 guidò
    2 guiglielmo
-   8 guisa
-   1 guisa
+   9 guisa
    1 guiscardo
    1 guise
    1 guizzo
@@ -2533,11 +2194,9 @@
    3 gustar
    1 gustata
    1 gustava
-   1 gusto
-   1 gusto
+   2 gusto
    1 gustò
-  14 hanno
-   1 hanno
+  15 hanno
    1 horum
    1 iacobbe
    1 iacòb
@@ -2546,15 +2205,11 @@
    1 iattanza
    1 iattura
    2 iddio
-   1 idea
    1 ideale
-   1 idioma
-   1 idioma
+   2 idioma
    1 ieptè
    1 ieronimo
-   1 ierusalemme
-   1 ierusalemme
-   1 igne
+   2 ierusalemme
    1 ignes
    1 ignito
    1 ignota
@@ -2592,10 +2247,8 @@
    1 impola
    1 importuni
    2 impossibil
-   3 imprenta
-   1 imprenta
-   1 impressa
-   1 impressa
+   4 imprenta
+   2 impressa
    1 impresso
    1 impulse
    1 incappelli
@@ -2622,7 +2275,6 @@
    1 incredibili
    1 incude
    3 indarno
-   1 indi
    1 india
    1 indige
    1 indonna
@@ -2651,8 +2303,7 @@
    5 infin
    2 infinito
   15 infino
-   1 infiora
-   3 infiora
+   4 infiora
    1 influenza
    1 infonde
    1 informante
@@ -2665,10 +2316,8 @@
    1 ingannata
    1 ingannate
    1 inganni
-   1 ingegna
-   1 ingegna
-   6 ingegno
-   1 ingegno
+   2 ingegna
+   7 ingegno
    1 ingemmato
    1 ingemme
    1 ingemmi
@@ -2683,15 +2332,13 @@
    1 ingrassa
    2 ingrata
    1 iniqua
-   1 inizia
-   2 inizia
+   3 inizia
    1 inlei
    1 inlibra
    1 inluia
    1 inmii
    1 inmilla
-   2 innamora
-   2 innamora
+   4 innamora
    1 innamorata
    1 innamorato
    1 innamorava
@@ -2712,8 +2359,7 @@
    1 insusi
    1 intanto
    1 intelletta
-  10 intelletto
-   1 intelletto
+  11 intelletto
    1 intellettual
    1 intelligenti
    3 intelligenza
@@ -2727,12 +2373,10 @@
    2 intenza
    5 intenzion
    2 intenzione
-   2 intera
-   1 intera
+   3 intera
    1 intercisi
    1 interciso
-   4 interna
-   1 interna
+   5 interna
    1 interne
    1 interno
    3 intero
@@ -2744,8 +2388,7 @@
    2 intese
    2 inteso
    1 intima
-  13 intorno
-   1 intorno
+  14 intorno
   11 intra
    1 intrambo
    3 intrar
@@ -2782,14 +2425,11 @@
    1 isidoro
    1 isola
    1 isplendor
-   1 isso
    1 istinto
-   1 italia
-   1 italia
+   2 italia
    2 italica
    1 iudicatis
    1 iudìt
-   1 iuno
    1 iunone
    1 iustiniano
    1 iustitiam
@@ -2802,15 +2442,13 @@
    1 lamenti
    1 lampa
    1 lampeggiava
-   1 lampo
-   1 lampo
+   2 lampo
    1 lance
    2 lancia
    1 langue
    1 lapilli
    4 larga
-   1 larghezza
-   4 larghezza
+   5 larghezza
    1 largirmi
    1 largiscon
    1 largita
@@ -2818,8 +2456,7 @@
    1 larve
    1 lascerai
    1 lascerà
-   6 lascia
-   2 lascia
+   8 lascia
    2 lasciai
    2 lasciando
    3 lasciar
@@ -2829,30 +2466,21 @@
    1 lascivo
    4 lasciò
    1 lassi
-   2 lasso
-   1 lasso
+   3 lasso
    1 latebra
    1 latente
    1 laterano
-   1 lati
    1 latin
    3 latino
-   1 lato
-   2 latona
-   1 latona
+   3 latona
    1 latra
    1 latria
-   4 latte
-   1 latte
+   5 latte
    1 laudamo
    1 laudando
    1 laude
-   1 lava
    1 lavina
-   2 lavoro
-   1 lavoro
-   2 lece
-   1 lega
+   3 lavoro
    1 legame
    1 legasse
    1 legato
@@ -2863,8 +2491,7 @@
    1 leggerebbe
    2 leggi
    1 leggiadria
-   4 legno
-   2 legno
+   6 legno
    1 lenta
    1 lente
    1 lenti
@@ -2872,8 +2499,7 @@
    2 leone
    1 letargo
    1 letigio
-  18 letizia
-   4 letizia
+  22 letizia
    1 letizian
    1 letiziar
    1 lettere
@@ -2881,77 +2507,58 @@
    2 lettor
    2 lettore
    1 lettura
-   1 leva
    5 levai
    1 levan
    1 levando
    1 levaro
-   1 levarsi
-   1 levarsi
+   2 levarsi
    1 levasti
    1 levate
    1 levati
    2 levato
-   2 levi
    1 libelli
    1 libente
    1 liber
    1 liberamente
    1 libere
    4 libero
-   1 libertate
-   1 libertate
+   2 libertate
    1 libertà
    1 libito
    1 libra
    1 libro
    1 licenza
    1 licito
-   7 lieta
-   2 lieta
+   9 lieta
    1 lietamente
-   1 liete
-   1 liete
+   2 liete
    2 lieti
-   5 lieto
-   1 lieto
+   6 lieto
    2 lievemente
    1 lievi
-   5 lingua
-   1 lingua
-   1 lingue
-   1 lingue
+   6 lingua
+   2 lingue
    1 liqua
    1 liquor
-   1 lira
-   1 lista
-   1 lista
+   2 lista
    1 litare
-   1 lito
    1 litorano
    1 livore
    1 locata
    1 locati
-   5 loco
    1 loderebbe
    1 loglio
    1 lombardo
    1 longevi
    1 longobardo
    1 lontan
-   1 lontana
-   1 lontana
-   2 lontano
-   2 lontano
-   1 loquela
-   1 loquela
+   2 lontana
+   4 lontano
+   2 loquela
    1 lorenzo
-   1 loro
-   2 luce
    1 lucemi
    1 lucendo
-   4 lucente
-   1 lucente
+   5 lucente
    2 lucenti
    2 lucerna
    2 lucerne
@@ -2960,13 +2567,8 @@
    1 lucidi
    1 lucore
    1 lucrezia
-   1 luculenta
-   1 luculenta
-   1 lude
-   6 lume
+   2 luculenta
    3 lumera
-   2 lumi
-   1 luna
    6 lunga
    1 lungamente
    1 lungh
@@ -2985,12 +2587,9 @@
    1 madonna
   12 madre
    1 madri
-   4 maestro
-   1 maestro
-   1 maggi
-   1 maggi
-   1 maggio
-   2 maggio
+   5 maestro
+   2 maggi
+   3 maggio
   18 maggior
    1 maggiore
    1 maggiori
@@ -3002,10 +2601,8 @@
    1 magri
    1 magro
    1 malacòth
-   1 maladetto
-   1 maladetto
-   1 malizia
-   1 malizia
+   2 maladetto
+   2 malizia
    1 malmenare
    1 malta
    1 maltolletto
@@ -3017,8 +2614,7 @@
    1 manca
    2 manchi
    1 mancia
-   3 manco
-   1 manco
+   4 manco
    1 mancò
    1 manda
    1 mandommi
@@ -3027,29 +2623,23 @@
    1 maniera
    4 manifesta
    1 manifeste
-   2 manifesti
-   1 manifesti
-   5 manifesto
-   1 manifesto
+   3 manifesti
+   6 manifesto
    2 manna
-   2 mano
    1 mantener
    1 manti
    2 manto
-   7 maraviglia
-   1 maraviglia
+   8 maraviglia
    4 maravigliar
    2 margarita
    1 margherite
   12 maria
    1 marito
    1 marsia
-   4 marte
-   1 marte
+   5 marte
    1 martello
    1 martino
-   3 martiro
-   2 martiro
+   5 martiro
    1 martìri
    1 maschi
    2 matera
@@ -3065,42 +2655,32 @@
    2 maturo
    1 medesimo
    2 medesma
-   4 medesmo
-   1 medesmo
+   5 medesmo
    1 medicina
-   6 meglio
-   1 meglio
+   7 meglio
    1 melchisedèch
    1 melisso
-   2 melode
-   1 melode
-   2 melodia
-   1 melodia
+   3 melode
+   3 melodia
    3 membra
-   6 memoria
-   2 memoria
+   8 memoria
    2 menar
-   1 menava
-   1 menava
+   2 menava
    1 mendaci
    1 mendicando
    1 mendici
    2 mensa
    1 mensurati
-  45 mente
-   5 mente
-   3 menti
-   1 menti
+  50 mente
+   4 menti
    1 mentire
    2 mentr
-   6 mentre
-   1 mentre
+   7 mentre
    1 menzogna
    2 merca
    1 mercato
    1 merce
-   2 mercede
-   2 mercede
+   4 mercede
    1 mercurio
    1 mercè
    2 mercé
@@ -3114,8 +2694,7 @@
    1 merti
    7 merto
    1 mesca
-   5 messo
-   2 messo
+   7 messo
    1 mestier
    1 mestieri
    1 metafisice
@@ -3128,11 +2707,8 @@
    1 mettìen
   17 mezzo
    1 michel
-   1 miei
-   1 miglia
-   1 miglia
-   1 migliaia
-   1 migliaia
+   2 miglia
+   2 migliaia
    2 miglior
    2 migliore
    1 migliori
@@ -3140,10 +2716,8 @@
    1 militante
    1 militar
    1 militaro
-   7 milizia
-   2 milizia
-   6 mille
-   1 mille
+   9 milizia
+   7 mille
    1 millecent
    2 millesmo
    1 minerva
@@ -3155,7 +2729,6 @@
    1 minore
    2 minori
    1 minuzie
-   2 mira
    7 mirabil
    2 mirabile
    1 mirabili
@@ -3172,8 +2745,7 @@
    1 miseri
    1 misericordia
    1 misesi
-   3 mista
-   1 mista
+   4 mista
    2 misto
    1 misture
    8 misura
@@ -3184,33 +2756,26 @@
    1 moderni
    1 modesta
    1 modesti
-   1 modi
-   1 modo
-   1 moia
    3 moisè
    1 molesta
    1 molle
    2 molta
   10 molte
-   9 molti
-   1 molti
+  10 molti
    1 moltitudine
   13 molto
    1 monaci
    1 mondana
    1 mondano
-  62 mondo
-   6 mondo
+  68 mondo
    3 moneta
    1 monta
    1 montando
    2 montar
-   9 monte
-   1 monte
+  10 monte
    1 montemalo
    1 montemurlo
-   1 monti
-   1 monti
+   2 monti
    1 montone
    1 morde
    2 morir
@@ -3222,28 +2787,23 @@
    1 moronto
    1 morria
    1 morrà
-   1 morse
-   1 morse
+   2 morse
    1 morsi
    2 morta
    1 mortai
   15 mortal
    2 mortale
-  16 mortali
-   1 mortali
+  17 mortali
    1 mortalità
   10 morte
    2 morti
    2 mossa
-  13 mosse
-   1 mosse
+  14 mosse
    2 mosser
    1 mossero
    1 mossi
-   3 mosso
-   1 mosso
-   4 mostra
-   1 mostra
+   4 mosso
+   5 mostra
    3 mostrando
    3 mostrar
    1 mostraro
@@ -3251,17 +2811,13 @@
    1 mostrarti
    1 mostrate
    1 mostrato
-   1 mostrava
-   1 mostrava
+   2 mostrava
    1 mostrommi
    3 mostrò
-   1 moto
    2 motor
    1 motori
    1 motti
    1 motum
-   1 mova
-   5 move
    3 movea
    3 movendo
    1 moventi
@@ -3277,8 +2833,7 @@
    1 mozze
    1 mparadisa
    2 mperador
-   1 mprenta
-   1 mprenta
+   2 mprenta
    2 mprenti
    1 mpresa
    1 mpresso
@@ -3294,15 +2849,13 @@
    1 muovervi
    1 muovon
    1 muovono
-   1 muro
    1 mutandom
    1 mutato
    1 mutua
    1 mutui
    1 muzio
    1 nabuccodonosor
-   6 nacque
-   1 nacque
+   7 nacque
    1 nacquero
    2 nacqui
    1 narrai
@@ -3317,16 +2870,12 @@
    1 nascesti
    1 nascete
    1 nasceva
-   4 nasconde
-   1 nasconde
+   5 nasconde
    1 nascosa
-   2 nascose
-   2 nascose
+   4 nascose
    1 nascosta
    1 nastro
-   1 nati
-  32 natura
-   6 natura
+  38 natura
    2 natural
    1 naturale
    1 naturalmente
@@ -3345,18 +2894,14 @@
    3 necesse
    1 necessitato
    2 necessità
-   1 nega
    1 negasse
    1 negletta
    1 negletti
    1 negletto
    1 negozio
    1 nembròt
-   1 nemici
-   1 nemici
-   2 nequizia
-   1 nequizia
-   1 nera
+   2 nemici
+   3 nequizia
    1 nerli
    1 nescia
    5 nessun
@@ -3369,8 +2914,7 @@
    1 ngegni
    2 ngegno
    1 niccosia
-   1 niente
-   1 niente
+   2 niente
    1 nimico
    1 ninfe
    1 nitide
@@ -3381,7 +2925,6 @@
    1 nocchier
    1 nocera
    1 nocivo
-   2 nodo
    1 nodrimento
    1 noiando
    1 nomar
@@ -3389,34 +2932,26 @@
    1 nomati
    1 nomato
    1 nomava
-   3 nome
    1 nomerò
    1 nominar
    1 nondimen
    1 nondimeno
-   1 norma
-   1 norma
+   2 norma
    1 norvegia
    2 nostr
   28 nostra
    6 nostre
    9 nostri
-  23 nostro
-   1 nostro
-   5 nota
+  24 nostro
    1 notabili
-   1 notai
-   1 notai
+   2 notai
    1 notar
    1 noteranno
    1 notizia
-   1 noto
    3 notte
    1 notturno
-   1 nove
    1 novecento
-   6 novella
-   1 novella
+   7 novella
    1 novellamente
    3 novelle
    1 novello
@@ -3426,8 +2961,7 @@
    2 nozze
    1 nsegna
    1 nsidie
-   1 nsieme
-   1 nsieme
+   2 nsieme
    1 ntelletti
    1 ntende
    1 ntendendo
@@ -3435,13 +2969,10 @@
    2 ntesi
    2 nteso
    3 ntorno
-   1 nube
-  17 nulla
-   2 nulla
+  19 nulla
    4 nullo
    1 numerando
    6 numero
-   1 numi
    2 nuove
    1 nuovi
    1 nuovo
@@ -3456,8 +2987,7 @@
    1 oblio
    1 oblita
    1 occaso
-  76 occhi
-   1 occhi
+  77 occhi
   17 occhio
    1 occidente
    3 occulto
@@ -3472,8 +3002,7 @@
    1 offerta
    1 offerti
    1 offerto
-   1 offici
-   1 offici
+   2 offici
    6 officio
    1 ognora
    1 olocausto
@@ -3485,16 +3014,13 @@
    1 ombre
    1 omero
    2 oncia
-   1 onda
-   2 onde
    1 ondeggiar
    1 onesta
    1 onestadi
    1 onesto
    1 onorata
    1 onoravano
-   1 onore
-   2 onore
+   3 onore
    1 onorio
    1 opera
    2 operando
@@ -3528,22 +3054,18 @@
    1 oriental
    1 oriente
    1 oriuoli
-   3 orizzonte
-   1 orizzonte
+   4 orizzonte
    1 orlando
-   1 orma
    1 ormanni
    1 ornati
    1 orologio
-   2 orto
    1 ortolano
    4 osanna
    1 osannar
    1 oscura
    1 osserve
    1 ostante
-   3 ostello
-   1 ostello
+   4 ostello
    1 ostiense
    2 ottava
    1 ottavo
@@ -3551,7 +3073,6 @@
    1 ottusi
    1 ovile
    1 ovrar
-   3 pace
    1 pachino
    1 pacifica
    1 padova
@@ -3561,7 +3082,6 @@
    1 pagando
    1 paganesmo
    1 paglia
-   2 paia
    1 paion
    1 paladino
    1 palafreni
@@ -3569,24 +3089,20 @@
    1 palazzo
    1 paleo
    1 palermo
-   2 palese
-   1 palese
+   3 palese
    1 paleso
    1 palido
    1 pallante
    1 palle
-   2 palma
-   2 palma
+   4 palma
    1 palpebre
    1 palude
    1 pande
    1 pandi
    2 panno
-  44 paradiso
-   2 paradiso
+  46 paradiso
    1 paralelli
-   1 parca
-   1 parca
+   2 parca
    9 parea
    2 pareggio
    2 pareglio
@@ -3600,27 +3116,22 @@
    3 pareva
    2 parevi
    1 pariemi
-   2 parla
-   1 parla
+   3 parla
    2 parlai
    4 parlando
   18 parlar
    6 parlare
    1 parlassi
-   4 parlato
-   1 parlato
+   5 parlato
    1 parli
-   1 parlo
-   1 parlo
+   2 parlo
    1 parlommi
    2 parlò
    1 parmenide
    1 parnaso
    1 paroffia
-   4 parola
-   1 parola
-  20 parole
-   2 parole
+   5 parola
+  22 parole
    1 parolette
    1 parran
    1 parranno
@@ -3628,8 +3139,7 @@
    1 parrebber
    1 parria
    2 parrà
-  37 parte
-   4 parte
+  41 parte
    8 parti
    1 partio
    1 partir
@@ -3642,14 +3152,11 @@
    2 partorisce
    1 parturir
    2 partì
-  10 parve
-   1 parve
+  11 parve
    2 parvemi
-   4 parvente
-   1 parvente
+   5 parvente
    1 parventi
-   4 parvenza
-   2 parvenza
+   6 parvenza
    1 parvenze
    4 parver
    1 parvermi
@@ -3664,38 +3171,31 @@
    1 pasco
    2 passar
    1 passarmen
-   1 passaro
-   1 passaro
+   2 passaro
    1 passava
    1 passeggiando
    1 passi
    1 passion
    1 passione
-   3 passo
-   1 passo
+   4 passo
    1 passuri
    1 pasto
    6 pastor
    2 pastore
    1 pastori
-   1 pastura
-   1 pastura
-   1 pasture
-   1 pasture
-   2 pate
+   2 pastura
+   2 pasture
    1 paterna
    1 paterno
    2 patio
    1 patre
    1 patria
-   1 patriarca
-   1 patriarca
+   2 patriarca
    1 patrici
    2 patto
    1 paulo
    1 pauperum
-   1 paura
-   2 paura
+   3 paura
    1 pausa
    1 pazienza
    1 peana
@@ -3707,8 +3207,7 @@
    1 pecorelle
    1 pecuglio
    1 pegasea
-   3 peggio
-   1 peggio
+   4 peggio
    2 pelago
    1 pelegrin
    3 pelle
@@ -3722,12 +3221,10 @@
    1 penetrare
    1 penitenza
    4 penna
-   3 penne
-   3 penne
+   6 penne
    1 pennecchio
    1 pennuti
-   9 pensa
-   2 pensa
+  11 pensa
    2 pensai
    4 pensando
    1 pensar
@@ -3735,8 +3232,7 @@
    1 pense
    2 pensi
   13 pensier
-   2 pensieri
-   1 pensieri
+   3 pensieri
    3 pensiero
    1 penso
    2 pente
@@ -3746,8 +3242,7 @@
   18 perch
   67 perché
    1 percossa
-   1 percosse
-   2 percosse
+   3 percosse
    1 percosso
    1 percuota
    5 percuote
@@ -3786,33 +3281,26 @@
    3 perse
    1 persevra
    1 persi
-   4 persona
-   3 persona
-   3 persone
-   1 persone
+   7 persona
+   4 persone
    1 pertugio
    2 perugia
    1 pervenne
    1 perverse
    1 perverso
-   1 pesa
    1 pesasse
    1 pesca
    1 pescator
    1 peschiera
    1 pesci
-   1 peso
-   6 petto
-   1 petto
-   6 piace
-   2 piace
+   7 petto
+   8 piace
    1 piacente
   15 piacer
    6 piacere
    1 piacermi
    1 piacerti
-   7 piacque
-   1 piacque
+   8 piacque
    1 piacqui
    1 piaga
    1 piagne
@@ -3829,10 +3317,8 @@
    1 piano
    2 pianse
    1 pianser
-   3 pianta
-   2 pianta
-   2 piante
-   1 piante
+   5 pianta
+   3 piante
    1 pianto
    1 piava
    3 piccarda
@@ -3840,17 +3326,13 @@
    3 picciola
    2 piccioletta
    1 piede
-  12 piedi
-   1 piedi
-   1 piega
-   1 piega
+  13 piedi
+   2 piega
    1 piegar
    1 pieghe
    5 piena
-   1 piene
-   1 piene
-   1 pieni
-   1 pieni
+   2 piene
+   2 pieni
    2 pieno
    1 pietate
    3 pietra
@@ -3863,22 +3345,19 @@
    1 piglio
    1 pinge
    1 pingue
-   2 pinse
-   1 pinse
+   3 pinse
    2 pinta
    1 pinti
    3 pioggia
    2 piombo
    1 piota
-   2 piove
-   2 piove
+   4 piove
    1 piover
    1 piovier
    1 pirro
    1 pistola
    1 pitture
    2 piume
-   3 piùe
    2 placa
    2 plaga
    1 plage
@@ -3886,13 +3365,11 @@
    1 plaude
    1 plena
    1 plenilunii
-   1 ploia
-   1 ploia
+   2 ploia
    1 plora
    1 poche
    2 pochi
-   2 podere
-   2 podere
+   4 podere
    1 podestadi
    2 poema
    2 poeta
@@ -3905,9 +3382,7 @@
    1 pompeana
    1 pompeo
    1 ponderoso
-   1 pondo
-   1 pondo
-   1 pone
+   2 pondo
    1 ponesse
    1 ponete
    1 pongon
@@ -3926,11 +3401,9 @@
    1 porgo
    3 poria
    1 porre
-   2 porse
-   1 porse
+   3 porse
    1 porsi
-   9 porta
-   2 porta
+  11 porta
    1 portai
    1 portar
    1 portarno
@@ -3939,12 +3412,10 @@
    1 portava
    2 porte
    1 portera
-   2 porti
-   1 porti
+   3 porti
    2 porto
    1 portogallo
    3 portò
-   3 posa
    1 posano
    1 posarmi
    1 posasi
@@ -3953,31 +3424,24 @@
    1 posponendo
    1 posposta
    1 pospuosi
-   5 possa
-   1 possa
-   3 possanza
-   1 possanza
+   6 possa
+   4 possanza
    1 posse
    1 possendo
-   1 possente
-   2 possente
+   3 possente
    1 possenti
    1 possessivo
    2 possibil
-   4 posso
-   1 posso
+   5 posso
    6 posson
    3 posta
    1 postille
-   4 posto
-   1 posto
+   5 posto
    1 postrema
    3 potea
    1 potei
-   4 potenza
-   1 potenza
-   1 potenze
-   1 potenze
+   5 potenza
+   2 potenze
    1 potenziata
    3 poter
    1 potere
@@ -3990,8 +3454,7 @@
    1 potrebbe
    2 potrà
    1 poverel
-   1 poverella
-   1 poverella
+   2 poverella
    1 poverelli
    1 poveri
    2 povero
@@ -4002,8 +3465,7 @@
    1 prava
    1 precedente
    1 precinto
-   2 preciso
-   1 preciso
+   3 preciso
    1 preclara
    1 preco
    1 preconio
@@ -4024,15 +3486,12 @@
    1 pregiando
    1 pregio
    1 pregna
-   1 pregno
-   1 pregno
+   2 pregno
    1 prego
-   1 preliba
-   1 preliba
+   2 preliba
    1 preme
    1 prendan
-   6 prende
-   2 prende
+   8 prende
    1 prendendo
    2 prender
    1 prenderai
@@ -4046,18 +3505,15 @@
    1 prescrisser
    1 prescritto
    4 prese
-   4 presente
-   2 presente
+   6 presente
    1 presenti
    2 presenza
    2 preso
    1 pressa
   10 presso
    1 presta
-   1 presti
-   2 presti
-   1 presto
-   1 presto
+   3 presti
+   2 presto
    1 presumma
    1 presunsi
    1 prete
@@ -4067,26 +3523,19 @@
    1 previsa
    1 preziosa
    1 prezioso
-   2 pria
    1 prieghe
-   5 prieghi
-   1 prieghi
+   6 prieghi
    4 priego
-  54 prima
-   5 prima
-   1 primai
-   1 primai
+  59 prima
+   2 primai
    1 primaia
    2 primavera
    1 prime
-   4 primi
-   1 primi
+   5 primi
    1 primiero
    1 primipilo
-   1 primizia
-   1 primizia
-  37 primo
-   1 primo
+   2 primizia
+  38 primo
    1 primum
    1 principati
    1 principe
@@ -4100,44 +3549,37 @@
    1 privo
    1 probo
    1 proceda
-   1 procede
-   1 procede
+   2 procede
    1 procedea
    2 proceder
    2 procedesse
    1 procedette
    1 procedetter
    1 procella
-   2 processo
-   1 processo
+   3 processo
    1 proda
    1 prode
    1 prodotto
-   2 produce
-   2 produce
+   4 produce
    1 producerebbe
    1 produtto
    1 proferer
    1 proferse
-   1 proferta
-   1 proferta
+   2 proferta
    2 professione
    2 profeta
    1 profeti
    1 profetico
-   5 profonda
-   3 profonda
+   8 profonda
    2 profonde
-   5 profondo
-   2 profondo
+   7 profondo
    1 prole
    1 prome
    1 promessa
    1 promession
    1 promisi
    2 pronta
-   2 pronte
-   1 pronte
+   3 pronte
    3 pronto
    1 prope
    1 propinqua
@@ -4152,8 +3594,7 @@
    1 prora
    1 prore
    1 protezion
-   5 prova
-   1 prova
+   6 prova
    1 provando
    1 provarsi
    2 prove
@@ -4164,8 +3605,7 @@
    1 provenzai
    1 proverai
    1 provi
-   3 provide
-   1 provide
+   4 provide
    1 prudenza
    1 pruno
    1 pubblico
@@ -4181,47 +3621,35 @@
    1 punse
    2 punta
    2 punti
-  19 punto
-   2 punto
-   2 puoi
+  21 punto
    1 puollo
    1 puommi
-   5 puose
-   1 puose
+   6 puose
    2 puoser
    2 puossi
-  10 puote
-   7 puote
+  17 puote
    2 pupilla
    1 pupille
-   2 pura
    1 purette
    1 purga
-   1 puri
    1 pusillo
    1 puzza
-   1 puzzo
-   1 puzzo
+   2 puzzo
    1 quaderno
    1 quadra
    1 quadranti
    1 quadrel
-  22 quale
-   2 quale
-   8 quali
-   1 quali
+  24 quale
+   9 quali
    8 qualunque
    8 quand
-  60 quando
-   2 quando
+  62 quando
    1 quandunque
   15 quant
    8 quanta
-   4 quante
-   2 quante
+   6 quante
    3 quanti
-  54 quanto
-   1 quanto
+  55 quanto
    8 quantunque
    1 quarta
    3 quarto
@@ -4229,54 +3657,42 @@
    4 quattro
    1 quattromilia
   10 quell
-  80 quella
-   6 quella
+  86 quella
   25 quelle
   16 quelli
-  17 quello
-   3 quello
+  20 quello
    1 quercia
    1 querente
   14 quest
-  55 questa
-   1 questa
-  26 queste
-   1 queste
-  29 questi
-   1 questi
+  56 questa
+  27 queste
+  30 questi
    4 question
    1 questioni
-  94 questo
-   2 questo
+  96 questo
    3 queta
    1 quetaro
-   1 quetarsi
-   1 quetarsi
+   2 quetarsi
    2 quici
-   1 quiditate
-   1 quiditate
+   2 quiditate
    2 quieta
    1 quietar
    1 quietarmi
    1 quietata
    2 quiete
-   2 quieto
-   1 quieto
+   3 quieto
    1 quietò
   23 quinci
   22 quindi
    1 quindici
-   4 quinta
-   1 quinta
-   4 quinto
-   1 quinto
+   5 quinta
+   5 quinto
    1 quinzio
    1 quirino
    1 quisquilia
    1 quistione
    1 quive
-  21 quivi
-   4 quivi
+  25 quivi
    1 rabano
    1 raccese
    1 raccesi
@@ -4295,15 +3711,13 @@
    1 raffigurar
    1 raggeran
    1 raggerà
-   8 raggi
-   1 raggi
+   9 raggi
    4 raggia
    1 raggiandomi
    1 raggiare
    1 raggiasse
    2 raggiava
-  22 raggio
-   1 raggio
+  23 raggio
    1 raggiò
    3 ragion
    1 ragiona
@@ -4311,18 +3725,15 @@
    2 ragionar
    2 ragionare
    1 ragionarmi
-   4 ragione
-   3 ragione
+   7 ragione
    1 ragioni
    1 ragiono
    1 ragna
-   1 raia
    1 rallegrano
    2 rammenta
    1 ramondo
    1 rampollo
    1 rapaci
-   1 rape
    1 rapiron
    1 rapiva
    1 rapporta
@@ -4341,8 +3752,7 @@
    1 rebecca
    1 recasse
    1 recenti
-   1 recepe
-   1 recepe
+   2 recepe
    1 recettacolo
    1 recirculando
    1 reclusa
@@ -4366,28 +3776,22 @@
    1 regal
    1 regalmente
    1 regger
-   4 regina
-   1 regina
+   5 regina
    5 region
-   1 regna
-   1 regna
+   2 regna
    1 regnar
    1 regni
-  16 regno
-   2 regno
+  18 regno
    1 regnum
    1 regola
    1 reina
-   1 religione
-   1 religione
+   2 religione
    1 relinqua
    1 relusse
    1 remedio
    1 rememorar
-   1 remota
-   1 remota
-   1 remote
-   1 remote
+   2 remota
+   2 remote
    2 remoto
    1 remunerar
    2 rende
@@ -4405,8 +3809,7 @@
    1 resistenze
    1 respetto
    1 respiri
-   3 resplende
-   1 resplende
+   4 resplende
    1 resplendo
    1 restaro
    1 resurger
@@ -4426,8 +3829,7 @@
    1 rialto
    1 riarmar
    1 riccardo
-   2 ricchezza
-   1 ricchezza
+   3 ricchezza
    1 ricchi
    1 ricchissime
    1 ricco
@@ -4442,8 +3844,7 @@
    1 richiuse
    1 riciso
    1 ricolta
-   2 ricolte
-   1 ricolte
+   3 ricolte
    2 ricolto
    1 ricominciai
    1 ricominciaron
@@ -4452,23 +3853,18 @@
    1 riconforta
    1 riconoscer
    1 riconoscerai
-   1 riconosco
-   1 riconosco
+   2 riconosco
    1 ricoperchia
-   2 ricorda
-   2 ricorda
+   4 ricorda
    1 ricordo
    3 ricorre
    1 ricorsi
    1 ricovrar
    1 ricrea
-   2 ride
    1 ridea
    4 ridendo
-   1 ridente
-   1 ridente
-   1 ridenti
-   1 ridenti
+   2 ridente
+   2 ridenti
    1 rider
    1 ridere
    1 ridessi
@@ -4476,16 +3872,13 @@
    1 ridice
    1 ridico
    1 ridir
-   1 ridire
-   1 ridire
+   2 ridire
    1 ridolfo
    1 ridure
    1 ridurlasi
-   3 riede
-   1 riede
+   4 riede
    2 riedi
-   1 riempie
-   1 riempie
+   2 riempie
    2 rietro
    1 rifatti
    2 rifece
@@ -4495,12 +3888,10 @@
    1 rifrangesse
    1 rifuggir
    1 rifulgea
-   1 riga
    2 rigido
    1 rigira
    5 riguarda
-   3 riguardando
-   1 riguardando
+   4 riguardando
    2 riguardar
    1 riguarde
    3 riguardi
@@ -4527,8 +3918,7 @@
    4 rimira
    2 rimirando
    1 rimirar
-   1 rimiri
-   1 rimiri
+   2 rimiri
    1 rimossa
    2 rimosso
    1 rimote
@@ -4537,8 +3927,7 @@
    1 rinchiusa
    1 rinfiammarsi
    3 ringrazia
-   1 ringrazio
-   1 ringrazio
+   2 ringrazio
    1 rinoardo
    1 rinovando
    1 rinovella
@@ -4569,13 +3958,11 @@
    1 rischio
    1 risense
    1 risente
-   6 riso
    2 risolve
    1 risonar
    2 risonò
    1 risplenda
-   2 risplende
-   1 risplende
+   3 risplende
    1 risplendendo
    1 risplendere
    3 risponda
@@ -4583,12 +3970,10 @@
    1 rispondendo
    4 risponder
    2 rispondo
-   4 risposta
-   1 risposta
+   5 risposta
    1 risposto
    1 rispuos
-   9 rispuose
-   2 rispuose
+  11 rispuose
    1 rispuoser
    1 rispuosi
    1 ristoro
@@ -4597,12 +3982,10 @@
    1 ritegna
    1 ritenere
    1 ritenga
-   3 ritenne
-   1 ritenne
+   4 ritenne
    1 ritondo
    1 ritorci
-   2 ritorna
-   1 ritorna
+   3 ritorna
    2 ritornai
    1 ritornerò
    3 ritorno
@@ -4610,27 +3993,21 @@
    1 ritorsili
    1 ritrae
    1 ritrar
-   1 ritrassi
-   1 ritrassi
+   2 ritrassi
    1 ritroso
    1 ritrova
    1 ritrovar
    1 ritrovi
    1 riudir
-   2 riva
-   1 rive
    1 riveder
    1 rivedrai
    1 rivegno
    1 riveli
    1 rivene
-   1 rivera
-   1 rivera
+   2 rivera
    1 rivestire
    1 rivestita
-   1 rivi
    1 rivide
-   1 rivo
    1 rivolge
    1 rivolgi
    1 rivolgiti
@@ -4638,8 +4015,7 @@
    4 rivolse
    1 rivolsersi
    5 rivolsi
-   3 rivolta
-   1 rivolta
+   4 rivolta
    2 rivolto
    1 rivolve
    1 robbi
@@ -4654,14 +4030,10 @@
    2 romeo
    1 romoaldo
    1 roratelo
-   1 rosa
-   1 rose
    1 rossa
    2 rostro
-   4 rota
    1 rotante
    1 rotar
-   2 rote
    3 roteando
    1 rovinar
    1 rubare
@@ -4673,7 +4045,6 @@
    1 ruine
    1 ruote
    1 ruppe
-   1 róse
    1 sabaòth
    1 sabellio
    1 sabine
@@ -4684,19 +4055,15 @@
    1 sacrato
    3 sacre
    3 sacrificio
-   2 sacro
-   1 sacro
+   3 sacro
    1 sacrosanto
-   3 saetta
-   2 saetta
+   5 saetta
    1 saette
    1 saggi
    1 salda
    1 saldo
-   2 sale
    4 salir
-   1 salire
-   1 salire
+   2 salire
    1 salirla
    1 saliro
    1 salissi
@@ -4708,8 +4075,7 @@
    1 salterello
    2 salti
    1 saltò
-   9 salute
-   1 salute
+  10 salute
    1 salvamento
    1 sampogna
    1 samuel
@@ -4718,19 +4084,14 @@
    1 sanguis
    1 sannella
    2 sanno
-   1 sano
-  19 santa
-   4 santa
-   5 sante
-   1 sante
+  23 santa
+   6 sante
    9 santi
-  28 santo
-   2 santo
+  30 santo
   34 sanza
    1 sapean
    6 saper
-   1 sapere
-   1 sapere
+   2 sapere
    1 sapesse
    2 sapete
    1 sapeva
@@ -4760,40 +4121,32 @@
    2 saver
    1 savere
    1 savesse
-   1 savi
-   4 sazia
-   2 sazia
+   6 sazia
    1 saziarti
    2 sazio
    1 sbandita
    1 sberna
    1 scacchi
-   5 scala
-   1 scala
+   6 scala
    2 scalda
    1 scaldar
    1 scaldò
-   1 scale
-   1 scale
+   2 scale
    1 scalee
    1 scaleo
    2 scalzasi
    2 scalzi
    1 scalzò
    1 scandi
-   3 scanni
-   2 scanni
+   5 scanni
    1 scanno
    1 scarse
-   2 scarsi
-   1 scarsi
+   3 scarsi
    1 scelse
-   3 scema
-   1 scema
+   4 scema
    2 scemo
    1 scempia
-   2 scende
-   1 scende
+   3 scende
    1 scendean
    1 scender
    3 scendere
@@ -4835,21 +4188,17 @@
    1 scriba
    4 scrisse
    1 scrissi
-   3 scritto
-   1 scritto
+   4 scritto
    1 scrittor
-   6 scrittura
-   1 scrittura
-   1 scritture
-   1 scritture
+   7 scrittura
+   2 scritture
    1 scriva
    1 scrive
    1 scriveste
    1 scrivi
    2 scrivo
    1 scrivon
-   1 scudo
-   1 scudo
+   2 scudo
    1 scura
    1 scuro
    1 scusa
@@ -4857,10 +4206,8 @@
    1 scusate
    1 scuserà
    4 secoli
-   4 seconda
-   2 seconda
-  18 secondo
-   2 secondo
+   6 seconda
+  20 secondo
    1 secreta
    1 secreto
    1 seder
@@ -4880,16 +4227,14 @@
    1 segnato
    1 segnerà
    4 segni
-  18 segno
-   8 segno
+  26 segno
    4 segnor
    1 segnore
    1 segnoria
    9 segue
    3 seguendo
    3 seguente
-   2 seguette
-   1 seguette
+   3 seguette
    2 seguio
    5 seguir
    2 seguirai
@@ -4909,15 +4254,12 @@
    1 seguon
    1 seguono
    4 seguì
-   2 sembiante
-   5 sembiante
+   7 sembiante
    3 sembianti
-   5 sembianza
-   2 sembianza
+   7 sembianza
    1 sembianze
    1 sembiava
    1 sembiò
-   1 seme
    1 semelè
    1 semente
    3 semenza
@@ -4926,35 +4268,28 @@
    1 semilia
    2 seminar
    1 seminarla
-   1 sempiterna
-   2 sempiterna
+   3 sempiterna
    3 sempiterne
    1 sempiterni
    3 semplice
    2 sempr
   35 sempre
-   1 sene
    2 senna
-   1 senno
-   1 senno
-   2 seno
+   2 senno
    1 sensato
    1 sensi
    1 sensibil
    1 sensibile
    1 senso
-   1 senta
-   1 senta
+   2 senta
    1 sente
    4 sentenza
-   5 senti
-   1 senti
+   6 senti
    1 sentia
    1 sentiero
    5 sentir
    1 sentirà
-   1 sentito
-   1 sentito
+   2 sentito
    1 sentiva
    3 sento
    2 sentì
@@ -4962,7 +4297,6 @@
    1 sepulcro
    1 sepulto
    1 sepultura
-   2 sera
    1 serafi
    1 serafico
    2 serafin
@@ -4972,13 +4306,11 @@
    1 serena
    1 serene
    1 sereni
-   1 sereno
-   3 sereno
+   4 sereno
    1 sermo
    1 sermone
    1 sermoni
-   2 serra
-   1 serra
+   3 serra
    1 serrato
    1 serse
    1 serto
@@ -4988,12 +4320,9 @@
    2 servigio
    2 servo
    3 sesta
-   2 sesto
-   2 sesto
-   1 sete
+   4 sesto
    1 setta
-   4 sette
-   1 sette
+   5 sette
    3 settimo
    1 severo
    1 sezzai
@@ -5003,31 +4332,25 @@
    1 sfogato
    1 sforza
    1 sgorga
-   4 sguardo
-   4 sguardo
+   8 sguardo
    1 siamo
    4 siate
    1 sibilla
    1 sicheo
-   4 sicura
-   1 sicura
+   5 sicura
    1 sicuramente
-   1 sicure
-   1 sicure
+   2 sicure
    2 sicuri
-   1 sicuro
-   1 sicuro
+   2 sicuro
    1 sicut
    8 siede
    1 siedi
    2 sieno
    4 siete
    1 sigieri
-   2 sigilla
-   1 sigilla
+   3 sigilla
    1 sigillava
-   2 sigillo
-   1 sigillo
+   3 sigillo
    1 signa
    1 signaculo
    1 significar
@@ -5050,35 +4373,27 @@
    1 similitudine
    1 similmente
    1 simon
-   2 sincera
-   2 sincera
-   1 sincero
-   1 sincero
+   4 sincera
+   2 sincero
    1 sinfonia
    1 sinigaglia
    3 sinistra
    1 sinistro
-   1 sire
    1 sisto
-   1 sito
    1 sizii
    1 smaga
    1 smarrita
    1 smarriti
    1 smarrito
    1 smarriva
-   2 soave
-   1 soave
+   3 soave
    2 soblima
    1 soblimi
-   1 sobranza
-   1 sobranza
+   2 sobranza
    1 sobria
-   1 soccorre
-   2 soccorre
+   3 soccorre
    1 soccorrà
-   1 soccorse
-   1 soccorse
+   2 soccorse
    1 soccorso
    1 sodalizio
    3 sodisfar
@@ -5087,10 +4402,8 @@
    1 sodisfatto
    1 sodisfece
    1 soffera
-   4 sofferse
-   1 sofferse
-   1 soffersi
-   1 soffersi
+   5 sofferse
+   2 soffersi
    1 sofferto
    1 soffia
    1 soffolce
@@ -5100,33 +4413,27 @@
    1 soffristi
    1 sofismi
    1 sofista
-   2 soggiace
-   1 soggiace
+   3 soggiace
    1 soggioga
    1 soggiorna
    2 soggiorno
    2 soggiunse
-   2 soglia
-   3 soglia
+   5 soglia
    1 soglie
    1 soglio
    1 sogliono
    1 sogna
    1 sognando
    1 sogno
-   2 sola
    4 solamente
    1 solco
    1 soldan
    1 soldanieri
-   2 sole
    3 solea
    1 solere
    1 solfo
-   1 soli
    1 solida
    1 solieno
-   1 solo
    1 solone
    1 solver
    1 solverò
@@ -5136,8 +4443,7 @@
    1 somiglia
    1 somigliante
    1 somigliarsi
-   4 somma
-   1 somma
+   5 somma
    1 sommerso
    1 sommi
   13 sommo
@@ -5147,7 +4453,6 @@
    1 sonasser
    1 sonava
    1 sonno
-   1 sono
    1 soperchia
   19 sopra
    1 sopranome
@@ -5162,8 +4467,7 @@
    1 sorpresa
    1 sorrida
    1 sorridea
-   1 sorridendo
-   1 sorridendo
+   2 sorridendo
    4 sorrise
    1 sorrisi
    1 sorriso
@@ -5172,10 +4476,8 @@
    1 sorti
    1 sortille
    1 sortillo
-   1 sortiro
-   1 sortiro
-   1 sortita
-   1 sortita
+   2 sortiro
+   2 sortita
    1 sosine
    1 sospeccioso
    3 sospesa
@@ -5214,16 +4516,13 @@
    1 sparser
    1 sparte
    1 sparto
-   1 spazia
-   2 spazia
+   3 spazia
    4 specchi
-   1 specchia
-   1 specchia
+   2 specchia
    1 specchiarsi
    1 specchiati
    1 specchiato
-   5 specchio
-   1 specchio
+   6 specchio
    1 spece
    3 specie
    1 speculi
@@ -5233,13 +4532,11 @@
    2 speglio
    1 spelonche
    6 spene
-   1 spense
-   1 spense
+   2 spense
    1 spenta
    1 spenti
    1 spento
-  12 spera
-   1 spera
+  13 spera
    1 sperando
    5 speranza
    1 sperate
@@ -5252,14 +4549,12 @@
    1 spessa
    1 spesse
    1 spessi
-   2 spesso
-   1 spesso
+   3 spesso
    3 spezza
    1 spiega
    1 spietata
    1 spietato
-   9 spira
-   1 spira
+  10 spira
    1 spirando
    1 spirar
    1 spirarmi
@@ -5270,8 +4565,7 @@
    1 spiritali
    4 spiriti
   11 spirito
-   5 spiro
-   2 spiro
+   7 spiro
    4 spirti
    8 spirto
    3 spirò
@@ -5279,15 +4573,12 @@
    1 splendeva
    1 splendido
    7 splendor
-   3 splendore
-   2 splendore
-   2 splendori
-   2 splendori
+   5 splendore
+   4 splendori
    1 spoglia
    1 sponsalizie
    1 sporge
-   8 sposa
-   1 sposa
+   9 sposa
    3 sposo
    1 spreme
    1 sprona
@@ -5314,25 +4605,21 @@
    4 stava
    1 stavan
    1 stavano
-  15 stella
-   7 stella
+  22 stella
    9 stelle
    1 stelo
    1 stenda
-   1 stende
-   1 stende
+   2 stende
    1 sterna
    1 sterne
    1 sternel
    1 sternilmi
    1 sterpi
    1 stese
-   3 stessa
-   1 stessa
+   4 stessa
    1 stesse
    1 stessi
-   5 stesso
-   2 stesso
+   7 stesso
    1 stette
    1 stilla
    1 stillar
@@ -5350,19 +4637,16 @@
    3 stole
    1 stolta
    1 stoltezza
-   2 stolti
-   1 stolti
+   3 stolti
    1 stolto
    1 storia
-   4 strada
-   1 strada
+   5 strada
    1 strade
    1 stral
    1 strale
    1 strali
    1 strami
-   2 stremo
-   1 stremo
+   3 stremo
    1 stretti
    1 stretto
    2 stringe
@@ -5378,8 +4662,7 @@
    1 stupor
    1 stupore
    1 suadi
-   1 subitamente
-   1 subitamente
+   2 subitamente
    1 subitana
    1 subsisto
    1 succeda
@@ -5391,23 +4674,17 @@
    1 suggel
    1 suggella
    1 suggelli
-   1 suggello
-   1 suggello
+   2 suggello
    1 suggetti
-   1 suggetto
-   1 suggetto
+   2 suggetto
    1 suocero
-   1 suoi
-   3 suole
-   1 suole
-   2 suona
-   1 suona
+   4 suole
+   3 suona
    1 suonan
    1 suonano
    1 suone
    2 suoni
-   3 suono
-   1 suono
+   4 suono
    1 suora
    1 suore
    1 superba
@@ -5426,18 +4703,15 @@
    1 supplìco
    2 supprema
    1 suprema
-   4 surge
-   1 surge
+   5 surge
    1 surgere
    1 surgon
    1 surgono
    2 surse
    1 surti
    1 suscitarla
-   1 suso
    1 sussistenza
-   1 sussistenze
-   1 sussistenze
+   2 sussistenze
    5 sustanza
    8 sustanze
    1 svegli
@@ -5459,34 +4733,25 @@
    1 tacita
    1 tacite
    2 tacito
-   1 tacque
-   1 tacque
+   2 tacque
    2 tacqui
    1 taddeo
-   1 taglia
-   1 taglia
+   2 taglia
    1 tagliamento
    1 talor
    4 talvolta
   14 tanta
    5 tante
-   6 tanti
-   1 tanti
- 113 tanto
-   1 tanto
+   7 tanti
+ 114 tanto
    1 tarda
    1 tardato
-   1 tarde
-   1 tarde
-   7 tardo
-   1 tardo
+   2 tarde
+   8 tardo
    1 tauro
    1 tedesche
    1 tegna
-   1 tela
-   2 tema
    2 temendo
-   1 temo
    1 temono
    1 tempera
    1 temperanze
@@ -5499,8 +4764,7 @@
    1 tempio
    2 templo
   24 tempo
-   2 tempra
-   1 tempra
+   3 tempra
    1 temprando
    1 temprata
    1 tende
@@ -5530,8 +4794,7 @@
    1 termini
    1 terminonno
    2 ternaro
-  35 terra
-   3 terra
+  38 terra
    1 terrai
    1 terram
    1 terrene
@@ -5541,9 +4804,7 @@
    1 terza
    1 terzi
   10 terzo
-   1 tesa
-   3 tesoro
-   2 tesoro
+   5 tesoro
    5 testa
    1 testamento
    1 testeso
@@ -5560,7 +4821,6 @@
    1 timida
    1 timido
    1 tintinno
-   2 tira
    1 tirano
    1 tirarti
    1 tirati
@@ -5572,20 +4832,16 @@
    1 tocco
    1 toglie
    1 togliendo
-   2 tolle
-   1 tolle
+   3 tolle
    1 tolomeo
    3 tolse
-   3 tolta
-   1 tolta
+   4 tolta
    2 tolto
    1 tomma
    3 tommaso
-   1 tona
    3 tonda
    1 tonde
-   3 tondo
-   1 tondo
+   4 tondo
    1 topazi
    1 topazio
    2 torce
@@ -5608,8 +4864,7 @@
    1 torpente
    1 torquato
    2 torrente
-   1 torse
-   2 torse
+   3 torse
    1 torsi
    2 torta
    2 torte
@@ -5619,8 +4874,7 @@
    1 toscano
    1 tosco
    1 tossio
-  23 tosto
-   1 tosto
+  24 tosto
    1 traccia
    1 traendo
    1 traesti
@@ -5629,15 +4883,12 @@
    1 tragge
    1 traggi
    1 traggonsi
-   1 traligna
-   1 traligna
-   2 traluce
-   1 traluce
+   2 traligna
+   3 traluce
    1 trama
    1 tramuti
    1 trani
-   1 tranquilla
-   1 tranquilla
+   2 tranquilla
    1 tranquille
    1 tranquilli
    1 transito
@@ -5653,8 +4904,7 @@
    1 trascolorar
    1 trascoloro
    1 trascorsa
-   2 trascorse
-   1 trascorse
+   3 trascorse
    1 trascorso
    1 traslatò
    1 trasmoda
@@ -5675,27 +4925,22 @@
    4 trasse
    1 trasser
    1 trassi
-   1 trastulla
-   1 trastulla
+   2 trastulla
    1 trasumanar
    1 trasvolar
    1 tratta
    1 tratte
    1 tratterò
-   1 tratti
-   1 tratti
-   8 tratto
-   2 tratto
+   2 tratti
+  10 tratto
    1 travagliava
    1 travasa
    2 trecento
-   1 tree
    3 trema
    1 tremolava
    1 tremolerà
    1 tremò
-   1 trenta
-   1 trenta
+   2 trenta
    1 trespiano
    2 triangol
    1 tricordo
@@ -5718,14 +4963,12 @@
    1 trivia
    1 troiani
    1 troiano
-   3 troni
-   1 troni
+   4 troni
    2 trono
    1 tronto
    2 troppa
   11 troppo
-   1 trova
-   2 trova
+   3 trova
    1 trovai
    1 trovan
    1 trovandoli
@@ -5747,8 +4990,7 @@
   28 tutta
   27 tutte
   37 tutti
-  59 tutto
-   2 tutto
+  61 tutto
    1 ubaldo
    1 ubertin
    2 ubertà
@@ -5756,9 +4998,7 @@
    2 uccel
    1 uccellatoio
    1 uccello
-   1 udio
-   3 udire
-   1 udire
+   4 udire
    1 udirne
    1 udirti
    1 udito
@@ -5770,8 +5010,7 @@
   12 umana
    1 umane
    1 umani
-   1 umano
-   2 umano
+   3 umano
    1 umbriferi
    2 umile
    1 umiliato
@@ -5808,29 +5047,23 @@
    2 uscìo
    1 usura
    2 usurpa
-   1 vaca
    1 vacante
-   1 vado
-   2 vaga
    1 vagabunde
-   2 vagheggia
-   1 vagheggia
+   3 vagheggia
    1 vagheggiar
    1 vagina
    1 vaglio
    1 valdigrieve
    6 valle
    9 valor
-   6 valore
-   1 valore
+   7 valore
    2 valse
    1 vampa
    2 vaneggia
    1 vangelio
    1 vanio
    1 vanità
-   7 vanno
-   1 vanno
+   8 vanno
    3 vapor
    2 vapori
    2 varca
@@ -5840,9 +5073,7 @@
    1 vasello
    1 vaticano
    1 vecchie
-   2 vecchio
-   1 vecchio
-   1 vede
+   3 vecchio
    7 vedea
    1 vedeasi
    2 vedem
@@ -5851,33 +5082,27 @@
    1 vedente
   40 veder
    4 vederai
-  14 vedere
-   2 vedere
+  16 vedere
    1 vederebbe
    1 vederla
    1 vederli
    1 vedermi
    2 vedersi
    1 vedesse
-   1 vedessi
-   1 vedessi
-   1 vedesti
-   1 vedesti
+   2 vedessi
+   2 vedesti
    1 vedete
    1 vedeva
-   4 vedi
    1 vediesi
    1 vedovella
    2 vedra
-  11 vedrai
-   1 vedrai
+  12 vedrai
    1 vedranno
    3 vedrassi
    1 vedresti
    5 vedrà
    4 veduta
-   3 vedute
-   2 vedute
+   5 vedute
    1 veduti
    3 veduto
    2 veggendo
@@ -5886,8 +5111,7 @@
    1 vegghiava
    5 veggi
    3 veggia
-  13 veggio
-   2 veggio
+  15 veggio
    5 veggion
    1 veglio
    2 vegna
@@ -5897,18 +5121,13 @@
    1 velen
    1 veleno
    2 velle
-   1 vello
-   1 vello
-   1 velo
-   2 veloce
-   1 veloce
-   4 veloci
-   1 veloci
+   2 vello
+   3 veloce
+   5 veloci
    1 velocissime
    1 velocissimo
    1 vender
-   4 vendetta
-   3 vendetta
+   7 vendetta
    1 venduti
    2 venendo
    1 venerabil
@@ -5916,45 +5135,37 @@
    1 venerati
    1 vengiata
    5 venir
-   5 venire
-   1 venire
+   6 venire
    1 venissero
    1 venisti
-  14 venne
-   1 venne
+  15 venne
    1 venner
    1 vennero
    3 venni
-   1 venti
-   2 venti
+   3 venti
    1 venticinque
    1 ventilando
    1 ventiquattro
    7 vento
-   1 ventre
-   1 ventre
+   2 ventre
    1 ventura
    1 venturo
    1 venusto
    1 venute
    3 venuto
    4 venìa
-   1 vera
   10 verace
    8 veramente
    1 verba
-   3 verbo
-   2 verbo
+   5 verbo
    2 verde
    4 vergine
-   3 vergogna
-   1 vergogna
+   4 vergogna
    1 veritate
    6 verità
    1 vermiglio
    1 verna
    1 verno
-   3 vero
    1 veronica
    1 verria
    4 verrà
@@ -5971,29 +5182,21 @@
    1 vestito
    1 vestì
    1 vetri
-   2 vetro
-   2 vetro
-   1 vetusto
-   1 vetusto
+   4 vetro
+   2 vetusto
    1 vicari
    1 vicin
-   3 vicine
-   1 vicine
+   4 vicine
    1 vicini
    3 vicino
    1 vicita
-   1 vide
    2 vider
-   4 vidi
    1 vidimi
-   2 viene
-   1 viene
+   3 viene
    1 vieni
    1 vigilia
-   1 vigna
-   1 vigna
+   2 vigna
    1 vignaio
-   1 viii
    2 villa
    1 villan
    1 ville
@@ -6017,14 +5220,11 @@
    6 vinse
    3 vinta
    1 vinti
-   5 vinto
-   2 vinto
+   7 vinto
    4 violenza
    2 virgilio
-   1 viro
    1 virtudi
-   8 virtute
-   7 virtute
+  15 virtute
   31 virtù
    1 visibile
    2 visibili
@@ -6032,25 +5232,18 @@
    4 visione
    1 visivi
    1 visivo
-   4 viso
    1 visse
-  33 vista
-   3 vista
+  36 vista
    4 viste
-   2 visto
-   1 visto
-   5 vita
+   3 visto
    1 vital
    2 vittima
    1 vittore
-   2 vittoria
-   1 vittoria
-   5 vivace
-   1 vivace
+   3 vittoria
+   6 vivace
    1 vivagni
    1 vivamente
    1 vivanda
-   2 vive
    8 viver
    1 vivere
    1 vivesi
@@ -6058,9 +5251,7 @@
    1 vizia
    3 vocabol
    1 vocali
-   1 voci
-  21 voglia
-   2 voglia
+  23 voglia
    3 voglie
    5 voglio
    1 voglion
@@ -6068,7 +5259,6 @@
    3 volando
    1 volante
    1 volar
-   1 vole
    2 volea
    1 volem
    1 volemo
@@ -6094,26 +5284,20 @@
    1 volgiti
    1 volgon
    1 volitando
-   4 volle
-   2 volle
+   6 volle
    2 volontade
    2 volontate
    1 volontier
    6 volontà
-   7 volse
-   2 volse
+   9 volse
    1 volser
    1 volsesi
    6 volsi
-   6 volta
-   2 volta
+   8 volta
   12 volte
-   2 volti
-   1 volti
-   5 volto
-   2 volto
-   5 volume
-   1 volume
+   3 volti
+   7 volto
+   6 volume
    2 volumi
    1 volve
    1 vonno
@@ -6130,17 +5314,10 @@
    5 vuole
    3 vuoli
    4 vòlto
-   1 xiii
-   1 xvii
    1 xviii
-   1 xxii
    1 xxiii
-   1 xxiv
-   1 xxix
-   1 xxvi
    1 xxvii
    1 xxviii
-   1 xxxi
    1 xxxii
    1 xxxiii
    1 zaffiro
