@@ -31,7 +31,7 @@ ________
 
 Now switch to user U2
 
-You could list the content of /root folder using su and then entering root password (p0)
+You could list the content of /root folder using su -c and then entering root password (p0)
 
 `su -c "ls /root"`
 
