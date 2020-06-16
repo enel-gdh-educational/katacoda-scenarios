@@ -4,7 +4,7 @@
 
 #### A) Create a new file containing one word of the Inferno section per line
 	
-Substitute spaces, carriage returns and punctuations marks with the new line symbol, 
+Substitute spaces, carriage returns ('\r') and punctuations marks with the new line symbol ('\n'), 
 so that there is no punctuation and there is at most one word per line.
 
 <u>Hint:</u> use **tr** command:
@@ -17,8 +17,7 @@ tr string1 string2 < file_input
 tr -d string1 < file_input
 tr "[:lower:]" "[:upper:]" < file_input
 tr "[:punct:]" "[:space:]" < file_input
-tr string1 '\n' < file_input
-tr '\r' '\n' < file_input
+
 
 ```
 
@@ -26,8 +25,6 @@ tr '\r' '\n' < file_input
 - the second command deletes all occurrencies of string1
 - the third command replaces all lower letters with capital letters
 - the forth command replaces all punctuations with empty spaces
-- the fifth command replaces string1 with new line symbol
-- the sixth command replaces carriage return symbol with new line symbol
 
 
 

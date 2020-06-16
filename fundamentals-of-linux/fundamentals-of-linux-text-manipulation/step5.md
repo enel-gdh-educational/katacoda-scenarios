@@ -78,6 +78,6 @@ and writes the resulting lines to standard   output.
 
 #### F) Sort words according to the 'paradisiac' score 
 
-Which are the 15 most 'paradisiac'? 
+Which are the 10 most 'paradisiac'? 
 
-and what about the 15 most 'infernal' words?
+and what about the 10 most 'infernal' words?

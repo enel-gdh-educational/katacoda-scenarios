@@ -15,7 +15,7 @@ join -1 2 -2 2 <(sort -k 2 inferno_sorted.txt) <(sort -k 2 paradiso_sorted.txt) 
 ```
 #### D)
 ```
-awk -F " "  '{print ($2-$3)/($2+$3)}'  table.txt > score.txt
+awk -F " "  '{print ($3-$2)/($2+$3)}'  table.txt > score.txt
 ```
 #### E)
 ```
@@ -27,7 +27,7 @@ paste joined.txt score.txt > paradisiac_table.txt
 You could achieve the same results of commands D+E with a slight modification of the awk command:
 
 ```
-awk -F " "  '{print $1, $2, $3, ($2-$3)/($2+$3)} ' table.txt > paradisiac_table.txt
+awk -F " "  '{print $1, $2, $3, ($3-$2)/($2+$3)} ' table.txt > paradisiac_table.txt
 ```
 
 #### F)
