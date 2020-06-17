@@ -192,4 +192,27 @@ When you list the content of a folder with `ls -la`, you will see two special fo
 ----------------------------
 ##### Master tips:
 
-$PS1
+The environment variable PS1 sets the message that is prompted by the terminal.
+The katacoda default is just ``$``, but there is a whole syntax to customize 
+the prompt message.
+
+For instance:
+
+```bash
+export PS1="\W"
+```
+
+will show you the present syntax.
+
+Find more syntax at this (link:)[https://ss64.com/bash/syntax-prompt.html].
+
+---------------
+**Exercise 2**
+
+VModify the prompt so that is shows the username after the folder, like;
+
+```bash
+<present folder> <username>$
+```
+
+---------------
