@@ -6,12 +6,12 @@ Needless to say, all these operations can be accomplished through the terminal a
  for example, if you access a remote machine via SSH, say an AWS EC2 instance. 
  However, even when you can use a graphical interface, the terminal might be convenient to accelerate and automate certain tasks.
 
-In this tutorial we assume that you are broadly familiar with the concepts of file, directories, extension,    
+In this tutorial we assume that you are broadly familiar with the concepts of file, directories, extensions.    
 
 Before diving in the hands-on tutorial, we would like to tell you a couple of fundamental concepts that will let you understand faster the behaviour of the filesystem.
 
 First, a filesystem is all about organizing files on the hard disk and it is basically formed by two things: the content of the files stored on the disk and the information about the files,
- which comprises their size, permissions, and most importantly position within the file tree. One thing that you should bear in mind is that the actual position of a file on the disk
+ which comprises their size, permissions, and most importantly position within the filesystem tree. One thing that you should bear in mind is that the actual position of a file on the disk
   does not reflect its position within the tree of directories. For instance, the content of two files that are located in the same directory, most probably will not be contiguous on the disk. 
 However, the filesystem knows that it has to present the two files to the user so that they appear close to each other. 
 If this looks strange to you, think of this situation: you have created a file `pippo.txt` in a certain folder and two months later you create another file `ciccio.txt` in the same folder.

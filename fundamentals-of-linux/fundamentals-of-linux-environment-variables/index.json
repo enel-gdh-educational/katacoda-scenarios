@@ -5,11 +5,27 @@
   "details": {
     "steps": [
       {
-        "title": "Environment variables",
+        "title": "Introduction",
         "courseData": "background.sh",
-        "text": "envvars.md"
+        "text": "introd.md"
+      },
+	  {
+        "title": "Local ENVs",
+        "text": "local_envs.md"
+      },	
+      {
+        "title": "Global ENVs",
+        "text": "global_envs.md"
+      },
+      {
+        "title": "System-wide ENVs",
+        "text": "system_wide_envs.md"
+      },	  
+      {
+        "title": "Some commonly used ENVs",
+        "text": "common_envs.md"
       }
-    ],
+	],		
     "intro": {
       "text": "intro.md"
     },

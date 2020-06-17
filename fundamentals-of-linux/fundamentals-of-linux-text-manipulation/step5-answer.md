@@ -1,7 +1,7 @@
 #### A)
 ```
-sort -nr inferno_words.txt > inferno_sorted.txt
-sort -nr paradiso_words.txt > paradiso_sorted.txt
+sort -nr inferno_table.txt > inferno_sorted.txt
+sort -nr paradiso_table.txt > paradiso_sorted.txt
 ```
 #### B)
 
@@ -11,15 +11,15 @@ head -10 paradiso_sorted.txt
 ```
 #### C)
 ```
-join -1 2 -2 2 <(sort -k 2 inf_sorted.txt) <(sort -k 2 par_sorted.txt) | sort -nr -k 3 > joined.txt
+join -1 2 -2 2 <(sort -k 2 inferno_sorted.txt) <(sort -k 2 paradiso_sorted.txt) | sort -nr -k 3 > table.txt
 ```
 #### D)
 ```
-awk -F " "  {print ($2-$3)/($2+$3)}  joined.txt > paradisiac_score.txt
+awk -F " "  '{print ($3-$2)/($2+$3)}'  table.txt > score.txt
 ```
 #### E)
 ```
-paste 
+paste joined.txt score.txt > paradisiac_table.txt
 ```
 
 **NB:**
@@ -27,13 +27,13 @@ paste
 You could achieve the same results of commands D+E with a slight modification of the awk command:
 
 ```
-awk -F " "  {print $1; $2; $3; ($2-$3)/($2+$3)} ' joined.txt > paradisiac_score.txt
+awk -F " "  '{print $1, $2, $3, ($3-$2)/($2+$3)} ' table.txt > paradisiac_table.txt
 ```
 
 #### F)
 
 ```
-sort paradisiac_score.txt -k4 -nr > paradisiac_sorted.txt
+sort paradisiac_table.txt -k4 -nr > paradisiac_sorted.txt
 ```
 
 ```

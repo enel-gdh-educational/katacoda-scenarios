@@ -12,15 +12,22 @@ grep [xw] divina_commedia.txt
 
 #### C)
 
+
 ```
-grep Beatrice divina_commedia.txt | wc -l
+grep Beatrice divina_commedia.txt > Beatrice.txt
 ```
+
+```
+wc -l Beatrice.txt
+```
+
 
 #### D)
 
 ```
-grep INFERNO divina_commedia.txt -n 
-grep PURGATORIO divina_commedia.txt -n 
-grep PARADISO divina_commedia.txt -n  
+grep Beatrice divina_commedia.txt | wc -l
 ```
+
+
+
 

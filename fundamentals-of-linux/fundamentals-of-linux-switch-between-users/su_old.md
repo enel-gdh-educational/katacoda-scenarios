@@ -4,14 +4,14 @@ The su short for substitute super user command using to change currently logged 
 
 This commands the main usage area is changing current user and open the new shell for the specified new user. While changing user current environment variables will not change and stay as old users environment variable. In this example, we will change to the user root.
 
-`su root`{{execute}} 
+`su root`
 
 
 ### Man
 
 Manpage of the su command is like below.
 
-`man su`{{execute}}
+`man su`
 
 You can scroll man using arrows or quit man typing "q"
 
@@ -19,13 +19,13 @@ You can scroll man using arrows or quit man typing "q"
 
 To get fast and simple help the -h parameter can be used like below. As we can see there is very few options about the su command.
 
-`su -h`{{execute}} 
+`su -h`
 
 ### Change User With Environment Variables
 
 While changing user environment variables can get with the - parameter. If this parameter is not specified previous user’s environment variables will be used. We can see that after the user is changed the working directory is also changed as root’s home.
 
-`su - root`{{execute}} 
+`su - root` 
 
 
 ### Run Command As Different User
@@ -34,11 +34,11 @@ Some commands may be needed to run as a different user. Every time changing user
 
 Now switch to user U1
 
-`su U2`{{execute}}
+`su U2`
 
 You could list the content of /root folder using su and then entering root password (p0)
 
-`su -c ls root `{{execute}} 
+`su -c ls root `
 
 
 

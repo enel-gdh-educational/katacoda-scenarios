@@ -5,13 +5,13 @@
   "details": {
     "steps": [
       {
-        "title": "sudo",
+        "title": "Introduction",
         "courseData": "background.sh",
-        "text": "sudo.md"
+        "text": "introd.md"
       },
       {
-        "title": "su",
-        "text": "su.md"
+        "title": "Switch between users",
+        "text": "switch.md"
       }
     ],
     "intro": {

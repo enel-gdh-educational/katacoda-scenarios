@@ -1,7 +1,7 @@
 #### A)
 
 ```
-less README.txt
+less data/README.txt
 ```
 
 

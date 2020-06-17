@@ -171,7 +171,7 @@ Then you have three groups of three characters, in the previous example `rw-`, `
 The first group expresses the permissions of the owner of the file, 
 the second group those of the group associated to the file, 
 and the third the persmissions of all other users (that is, other than the owner, 
-and not in the file group) .
+and not in the file group).
 
 Within a group, each of the three characters can be either `-` or, respectively, `r`, `w`, and `x`.
 meaning, respectively, read, write, and execution permission.
@@ -190,7 +190,7 @@ Instead, the folder `.ssh` can be:
 - read and executed by the users in its group
 - read and executed by all the others
 
-What exaclty mean "executed"? For folders it means that they can be accessed through `cd` 
+What exactly mean "executed"? For folders it means that they can be accessed through `cd` 
 and their content can be listed via `ls`. Pretty easy.
 
 For regular files it means that they can be interpreted as a program or a script. 
