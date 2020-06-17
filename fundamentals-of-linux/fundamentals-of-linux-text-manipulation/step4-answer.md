@@ -37,13 +37,13 @@ sort inferno_temp6.txt | uniq -c > inferno_temp7.txt
 ```
 
 ```
-cat inferno.txt | tr ' ' '\n' | tr  '\r' '\n'  | tr [:punct:] '\n' | tr [:upper:] [:lower:] | grep '.....' | sort | uniq -c > inferno_table.txt
+cat inferno.txt | tr "[:space:][:punct:]" "\n" | tr [:upper:] [:lower:] | grep '.....' | sort | uniq -c > inferno_table.txt
 ```
 
 ```
-cat purgatorio.txt | tr ' ' '\n' |  tr  '\r' '\n'  | tr [:punct:] '\n' | tr [:upper:] [:lower:] | grep '.....' | sort | uniq -c > purgatorio_table.txt
+cat purgatorio.txt | tr "[:space:][:punct:]" "\n" | tr [:upper:] [:lower:] | grep '.....' | sort | uniq -c > purgatorio_table.txt
 ```
 
 ```
-cat paradiso.txt | tr ' ' '\n' | tr  '\r' '\n'  | tr [:punct:] '\n' | tr [:upper:] [:lower:] | grep '.....' | sort | uniq -c > paradiso_table.txt
+cat paradiso.txt | tr "[:space:][:punct:]" "\n" | tr [:upper:] [:lower:] | grep '.....' | sort | uniq -c > paradiso_table.txt
 ```
