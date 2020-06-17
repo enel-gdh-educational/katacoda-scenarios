@@ -4,5 +4,6 @@ As you can imagine, the Linux filesystem is a much wider topic than what we cove
 If you are interested in knowing more, be brave and begin by checking the folowing references.
 
 For reference: 
-- [filesystem-basics](https://)
-- [filesystem-advanced](https://)
+- [Linux filesystem explained](https://www.linux.com/training-tutorials/linux-filesystem-explained/)
+- [Linux filesystem basics](https://opensource.com/life/16/10/introduction-linux-filesystems)
+- [The ext4 filesystem](https://en.wikipedia.org/wiki/Ext4)
