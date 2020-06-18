@@ -11,10 +11,10 @@ tr 'a-zA-Z' 'n-za-mN-ZA-M' < README.txt | sed -n '3,5p'
 
 First of all, let's create a toy scenario. Let's do the following activities:
 - Generate 15 random addresses into data/ip_addresses.txt
-```. scripts/ip_address_generator.sh 15```
+```./scripts/ip_address_generator.sh 15```
 - Duplicate your bash tab in order to have double view and facilitate switching between them
 - Execute the toy logger. The logging will be carried out by writing into the file "data/ping.log":
-```. scripts/log_generator.sh```
+```./scripts/log_generator.sh```
 
 
 Do you remember how to keep reading lines from continuosly appendend file?
