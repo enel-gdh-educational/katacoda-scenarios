@@ -28,11 +28,13 @@ Use the UTF-8 converted version of the Divina Commedia.
 grep mystring filename
 grep -n mystring filename
 grep -v mystring filename
+grep z..r filename
 ```
 
 - the first command will print all lines containing the pattern 'mystring';
 - the second will also print the line number;
-- the third one will print all lines **not** containing the pattern.
+- the third one will print all lines **not** containing the pattern
+- the forth will print all lines containing the following pattern: a character 'z', followed by any two characters (excluded new lines), followed by a character 'r'
 
 
 ----------------
