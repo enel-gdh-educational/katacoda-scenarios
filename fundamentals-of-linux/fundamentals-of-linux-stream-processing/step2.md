@@ -5,7 +5,7 @@ In general, the way sed works is that it is given either a single editing comman
 or the name of a script file containing multiple commands, and it then performs these commands 
 upon *each line* in the stream of text.
 
-In order to reproduce some example of sed usage, please consider using the file attached (XXX).
+In order to reproduce some example of sed usage, please consider using the file attached (data/README.txt).
 
 <u>Hint:</u> Use the command: **sed [-Ealn] command [file ...]**.
 
@@ -86,4 +86,8 @@ commands. Let's assume we want to:
 - Remove the alias 'localhost' word and substitute with address 127.0.0.1.
 - Do not print any other row containing unnecessary word or string
 
-<u>Hint:</u> To run a sed script you can use ```sed -f sed_file.sed data/ip_addresses_with_host.txt```.
+<u>Hint:</u> To run a sed script you can use ```sed -f sed_file.sed data/ip_address_with_host.txt```.
+
+**Questions**:
+ - Can you look where your interventions are located in the printed output ? 
+ - Do you see something strange in printed output ? 
