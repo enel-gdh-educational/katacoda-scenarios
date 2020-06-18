@@ -40,7 +40,7 @@ The strategy could be the following:
 
 Let's address the first two phases tagged with [FILTERING].
 
-First: text lines have the same format, i.e "64 bytes from <IP_ADDRESS>: icmp_seq=1 ttl=64 time=0.0032 ms"
+<u>Hint</u> Text lines have the same format, i.e ```64 bytes from <IP_ADDRESS>: icmp_seq=1 ttl=64 time=0.0032 ms```
 
 <u>Hint</u> Use intermediate files as output in order to perform filtering step-by-step.
 
