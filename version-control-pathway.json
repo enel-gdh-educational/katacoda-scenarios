@@ -6,6 +6,21 @@
       "course_id": "basics",
       "title": "Version Control System: Basics",
       "description": "This scenario will teach you the basic operations to control the time evolution of a project"
+    },
+    {
+      "course_id": "multi-branching",
+      "title": "Version Control Systems: Branching",
+      "description": "This scenario will teach you what are branches in git and how to deal with multiple of those"
+    },
+    {
+      "course_id": "remotes",
+      "title": "Version Control System: Working with remotes",
+      "description": "This scenario will teach you how to sync your repository with its remote instances"
+    },
+    {
+      "course_id": "web-repo-hosting",
+      "title": "Version Control System: web collaboration tools",
+      "description": "This scenario demonstrates how to use Bitbucket to coordinate the work of many developers"
     }
   ]
 }
