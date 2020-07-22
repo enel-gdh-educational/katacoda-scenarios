@@ -7,7 +7,7 @@
     "assets": {
       "client": [
         {
-          "file": "basics_project/",
+          "file": "basics_project/*",
           "target": "/root/"
         }
       ]
