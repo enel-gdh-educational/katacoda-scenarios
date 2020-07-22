@@ -8,7 +8,7 @@
       "client": [
         {
           "file": "basics_project/*",
-          "target": "/root/"
+          "target": "/home/scrapbook/tutorial"
         }
       ]
     },
