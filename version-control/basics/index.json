@@ -4,6 +4,14 @@
   "difficulty": "Beginner",
   "time": "60",
   "details": {
+    "assets": {
+      "client": [
+        {
+          "file": "basics_project/",
+          "target": "/root/"
+        }
+      ]
+    },
     "steps": [
       {
         "title": "Step 1",
