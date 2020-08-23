@@ -56,6 +56,11 @@
           "file": "datasets/zips.json",
           "target": "/root/datasets",
           "chmod": "+x"
+        },
+        {
+          "file": "datasets/zips.json",
+          "target": "/root/datasets",
+          "chmod": "+x"
         }
       ]
     },
