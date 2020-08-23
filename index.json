@@ -58,7 +58,7 @@
           "chmod": "+x"
         },
         {
-          "file": "datasets/zips.json",
+          "file": "datasets/movies.json",
           "target": "/root/datasets",
           "chmod": "+x"
         }
