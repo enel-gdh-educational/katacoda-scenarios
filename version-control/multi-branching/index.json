@@ -3,12 +3,12 @@
   "description": "This scenario will teach you what are branches and how to deal with multiple of those",
   "difficulty": "Intermediate",
   "time": "60",
-  "courseData": "preparation.sh",
   "details": {
     "steps": [
       {
         "title": "Step 1",
-        "text": "step1.md"
+        "text": "step1.md",
+        "courseData": "preparation.sh"
       },
       {
         "title": "Step 2",
