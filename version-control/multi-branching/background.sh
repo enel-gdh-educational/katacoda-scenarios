@@ -1,5 +1,5 @@
-git config color.ui false
 git init
+git config color.ui false
 touch installation.txt
 touch user_manual.txt
 git add *
