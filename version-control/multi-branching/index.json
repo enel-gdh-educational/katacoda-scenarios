@@ -6,28 +6,52 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Basic branching",
         "courseData": "preparation.sh",
-        "text": "step1.md"
+        "text": "01-basicbranching.md"
       },
       {
-        "title": "Step 2",
-        "text": "step2.md"
+        "title": "Switching branches",
+        "text": "02-checkout1.md"
       },
       {
-        "title": "Step 3",
-        "text": "step3.md"
+        "title": "Advanced checkout",
+        "text": "03-checkout2.md"
       },
       {
-        "title": "Step 4",
-        "text": "step4.md"
+        "title": "Switching branches (again)",
+        "text": "04-switch.md"
+      },
+      {
+        "title": "HEAD",
+        "text": "Head.md"
+      },
+      {
+        "title": "Saving changes for later",
+        "text": "stash.md"
+      },
+      {
+        "title": "Merging branches",
+        "text": "05-merge.md"
+      },
+      {
+        "title": "Merging strategies",
+        "text": "06-strategies.md"
+      },
+      {
+        "title": "Rebasing",
+        "text": "07-rebase.md"
+      },
+      {
+        "title": "Branching models",
+        "text": "models.md"
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "00-intro.md"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "99-finish.md"
     }
   },
   "environment": {
