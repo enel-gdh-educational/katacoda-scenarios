@@ -10,7 +10,7 @@
     {
       "course_id": "multi-branching",
       "title": "Version Control Systems: Branching",
-      "description": "This scenario will teach you what are branches in git and how to deal with multiple of those"
+      "description": "This scenario will teach you what branches are in git, and how to work with them"
     },
     {
       "course_id": "remotes",
