@@ -1,5 +1,3 @@
-mkdir /home/repo
-cd /home/repo
 git init
 git config color.ui false
 touch installation.txt
