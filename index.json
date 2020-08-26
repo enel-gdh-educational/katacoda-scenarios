@@ -53,6 +53,21 @@
           "chmod": "+x"
         },
         {
+          "file": "datasets/airbnb.json",
+          "target": "/root/",
+          "chmod": "+x"
+        },
+        {
+          "file": "datasets/customers.csv",
+          "target": "/root/",
+          "chmod": "+x"
+        },
+        {
+          "file": "datasets/items_ordered.csv",
+          "target": "/root/",
+          "chmod": "+x"
+        },
+        {
           "file": "datasets/zips.json",
           "target": "/root/datasets",
           "chmod": "+x"
