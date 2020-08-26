@@ -3,5 +3,10 @@
 blurb on branches
 
 ---
-In this scenario you will learn...stuff
 
+A bit more verbose explanation on branches.
+Explain that branches are POINTERS to COMMITS
+
+---
+
+In this scenario you will learn...stuff
