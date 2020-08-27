@@ -10,5 +10,5 @@ The friendly name allows you to refer to the location in other commands.
 If local repository is created using `git clone`, location from which repository is cloned will be automatically added as a remote with the name 'origin'
 
 #### Task
-The remote repository location of this scenario is ___. 
+The remote repository location of this scenario is `/s/remote-location/myproject.git`. 
 Set this remote location with the name 'origin' using `git remote add`.
