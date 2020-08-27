@@ -1,5 +1,3 @@
-# Solution
-
 A branch named "user_manual" can be created with:  
 `git branch user_manual`{{execute}}
 

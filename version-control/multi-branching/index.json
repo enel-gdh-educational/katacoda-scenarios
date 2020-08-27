@@ -6,6 +6,7 @@
   "details": {
     "steps": [
       {
+        "title":"Basic branching",
         "courseData": "preparation.sh",
         "text": "01-basicbranching.md",
         "answer": "01-answer.md"
