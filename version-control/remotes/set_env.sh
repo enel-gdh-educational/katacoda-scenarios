@@ -1,8 +1,6 @@
-mkdir remote_location
-cd remote_location
-git init
+mkdir /s/remote-location
+git init --bare /s/remote-location/myproject.git
 
-cd ..
-mkdir local_location
-cd local_location
 git init
+git remote add origin /s/remote-location/myproject.git
+git push origin master
