@@ -1,4 +1,4 @@
-# Switching branches: `git checkout`
+# Switching branches
 
 You created a new branch, however `git branch` shows you're still on `master`.  
 If you commit now, new commits will still go on `master`.

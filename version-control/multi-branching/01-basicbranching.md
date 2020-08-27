@@ -1,4 +1,4 @@
-# Creating and inspecting branches: `git branch`
+# Creating and inspecting branches
 
 You are working on a new project, so you created a repository and already made a couple of commits to it.
 

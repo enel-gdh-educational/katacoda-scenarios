@@ -11,8 +11,11 @@
         "answer": "01-answer.md"
       },
       {
-        "title": "Switching branches",
-        "text": "02-checkout1.md"
+        "text": "02-checkout1.md",
+        "answer":"02-answer.md"
+      },
+      {
+        "text": "03-merge.md"
       },
       {
         "title": "Advanced checkout",
