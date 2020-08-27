@@ -7,7 +7,8 @@
     "steps": [
       {
         "courseData": "preparation.sh",
-        "text": "01-basicbranching.md"
+        "text": "01-basicbranching.md",
+        "answer": "01-answer.md"
       },
       {
         "title": "Switching branches",
