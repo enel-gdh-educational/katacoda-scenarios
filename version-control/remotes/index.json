@@ -1,25 +1,58 @@
 {
   "title": "Version Control System: Working with remotes",
-  "description": "This scenario will teach you how to sync your repository with its remote instances",
+  "description": "In this scenario you'll learn basic commands to share the changes in your repository with other people and combine their changes into your repository.",
   "difficulty": "Intermediate",
   "time": "60",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "title": "Git remote - set url of remote folder",
+        "text": "01-remote.md",
+        "answer"
       },
       {
-        "title": "Step 2",
-        "text": "step2.md"
+        "title": "Git fetch - get updates from remote folder, preserving local status",
+        "text": "02-fetch.md"
       },
       {
-        "title": "Step 3",
-        "text": "step3.md"
+        "title": "Git log",
+        "text": "03-log.md"
       },
       {
-        "title": "Step 4",
-        "text": "step4.md"
+        "title": "Git merge - merge updates from remote folder to local without conflicts (fast-forward)",
+        "text": "04-ff_merge.md"
+      },
+      {
+        "title": "Git merge - merge updates from remote folder to local, with automatic-solvable conflicts (non fast-forward)",
+        "text": "05-nff_merge.md"
+      },
+      {
+        "title": "Git merge - merge updates from remote folder to local, with conflicts to solve manually",
+        "text": "06-merge_w_conflict.md"
+      },
+      {
+        "title": "Git merge - view conflict",
+        "text": "07-view_conflict.md"
+      },
+      {
+        "title": "Git merge - solve conflict",
+        "text": "08-solve_conflict.md"
+      },
+      {
+        "title": "Git pull - get and merge updates from remote folder (fetch+merge)",
+        "text": "09-pull.md"
+      },
+      {
+        "title": "Undo changes - git checkout",
+        "text": "10-checkout.md"
+      },
+      {
+        "title": "Undo changes - git reset",
+        "text": "11-reset.md"
+      },
+      {
+        "title": "Undo changes - git revert",
+        "text": "12-revert.md"
       }
     ],
     "intro": {
