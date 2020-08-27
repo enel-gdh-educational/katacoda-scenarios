@@ -8,11 +8,12 @@
       {
         "title": "Git remote - set url of remote folder",
         "text": "01-remote.md",
-        "answer"
+        "answer": "01-remote-answer.md"
       },
       {
         "title": "Git fetch - get updates from remote folder, preserving local status",
-        "text": "02-fetch.md"
+        "text": "02-fetch.md",
+	"answer": "02-fetch-answer.md"
       },
       {
         "title": "Git log",
