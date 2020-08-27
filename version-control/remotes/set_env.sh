@@ -1,5 +1,6 @@
-git config --global user.name "pippo baudo"
-git config --global user.email "pippo.baudo@rai.com"
+mkdir remote_location
+cd remote_location
 git init
-touch superpippo.txt
-"super mega pippo" >> superpippo.txt
+
+cd ..
+git init
