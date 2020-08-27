@@ -1,1 +1,1 @@
-`git remote add origin ___`
+`git remote add origin /s/remote-location/myproject.git`

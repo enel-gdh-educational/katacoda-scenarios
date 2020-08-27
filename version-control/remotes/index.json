@@ -6,73 +6,73 @@
   "details": {
     "steps": [
       {
-        "courseData": "set_env.sh",
+        "courseData": "01-set_env.sh",
 	"title": "Git remote - set url of remote folder",
         "text": "01-remote.md",
         "answer": "01-remote-answer.md"
       },
       {
-        "courseData": "set_env.sh",
+        "courseData": "02-set_env.sh",
         "title": "Git fetch - get updates from remote folder, preserving local status",
         "text": "02-fetch.md",
 	"answer": "02-fetch-answer.md"
       },
       {
-        "courseData": "set_env.sh",
+        "courseData": "01-set_env.sh",
         "title": "Git log",
         "text": "03-log.md",
         "answer": "01-remote-answer.md"
       },
       {
-        "courseData": "set_env.sh",
+        "courseData": "01-set_env.sh",
         "title": "Git merge - merge updates from remote folder to local without conflicts (fast-forward)",
         "text": "04-ff_merge.md",
         "answer": "01-remote-answer.md"
       },
       {
-        "courseData": "set_env.sh",
+        "courseData": "01-set_env.sh",
         "title": "Git merge - merge updates from remote folder to local, with automatic-solvable conflicts (non fast-forward)",
         "text": "05-nff_merge.md",
         "answer": "01-remote-answer.md"
       },
       {
-        "courseData": "set_env.sh",
+        "courseData": "01-set_env.sh",
         "title": "Git merge - merge updates from remote folder to local, with conflicts to solve manually",
         "text": "06-merge_w_conflict.md",
         "answer": "01-remote-answer.md"
       },
       {
-        "courseData": "set_env.sh",
+        "courseData": "01-set_env.sh",
         "title": "Git merge - view conflict",
         "text": "07-view_conflict.md",
         "answer": "01-remote-answer.md"
       },
       {
-        "courseData": "set_env.sh",
+        "courseData": "01-set_env.sh",
         "title": "Git merge - solve conflict",
         "text": "08-solve_conflict.md",
         "answer": "01-remote-answer.md"
       },
       {
-        "courseData": "set_env.sh",
+        "courseData": "01-set_env.sh",
         "title": "Git pull - get and merge updates from remote folder (fetch+merge)",
         "text": "09-pull.md",
         "answer": "01-remote-answer.md"
       },
       {
-        "courseData": "set_env.sh",
+        "courseData": "01-set_env.sh",
         "title": "Undo changes - git checkout",
         "text": "10-checkout.md",
         "answer": "01-remote-answer.md"
       },
       {
-        "courseData": "set_env.sh",
+        "courseData": "01-set_env.sh",
         "title": "Undo changes - git reset",
         "text": "11-reset.md",
         "answer": "01-remote-answer.md"
       },
       {
-        "courseData": "set_env.sh",
+        "courseData": "01-set_env.sh",
         "title": "Undo changes - git revert",
         "text": "12-revert.md",
         "answer": "01-remote-answer.md"
