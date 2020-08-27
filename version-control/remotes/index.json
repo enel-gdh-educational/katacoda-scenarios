@@ -56,10 +56,10 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "00-intro.md"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "99-finish.md"
     }
   },
   "environment": {
