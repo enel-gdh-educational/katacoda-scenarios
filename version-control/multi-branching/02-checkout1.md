@@ -15,15 +15,15 @@ This would be a shortcut for:
 `git branch <new branch>`  
 `git checkout <new branch>`  
 
-Git v2.23 introduced a new command, `git switch`, which works in exactly the same way (e.g. `git switch <new branch`> would) switch you to `<new branch>`).
-The rationale for introducing the `git switch` command is that `checkout` does other things too (we'll see them in a couple of steps), so its functions might be reduced at some point, with `git switch` becoming the standard way to switch branches. In Katacoda, however, we can't yet test it, so we're going to use `git checkout`.
+*Note: Git v2.23 introduced a new command, `git switch`, which works in exactly the same way (e.g. `git switch <branch_name>` would switch you to that branch).
+The rationale for introducing the `git switch` command is that `checkout` does other things too (we'll see them in a couple of steps), so its functions might be reduced at some point, with `git switch` becoming the standard way to switch branches. In Katacoda, however, we can't yet test it, so we're going to use `git checkout`.*
 
 ## Exercise:
 
-**Before we can write the user manual, we should actually write an installation guide!
+**Before we can write the user manual, we should actually write an installation guide!**
 
-1. Make sure you're on master.
-2. Create a new branch named `installation`.
-3. Switch to the newly created branch.
-4. Create a new empty file called "installation.txt" by using `touch installation.txt`{{execute}}.
-5. Commit the new file to the installation branch.**
+**1. Make sure you're on master.**  
+**2. Create a new branch named `installation`.**  
+**3. Switch to the newly created branch.**  
+**4. Create a new empty file called "installation.txt" by using `touch installation.txt`.**  
+**5. Commit the new file to the installation branch.**
