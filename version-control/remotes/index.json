@@ -21,7 +21,7 @@
         "courseData": "01-set_env.sh",
         "title": "Git fetch - get updates from remote folder, preserving local status",
         "text": "03-fetch.md",
-        "answer": "03-remote-answer.md"
+        "answer": "03-fetch-answer.md"
       },
       {
         "courseData": "01-set_env.sh",
