@@ -6,8 +6,8 @@
 #### Task
 
 Changes have been made in the origin repository. 
-Use `git fetch` to download the changes,  and then checkout the branch to view them.
+- Use `git branch -a` to list all the branches available
+- Use `git fetch` to download the changes in the remote repository
+- Use `git branch -a` to list all the branches available
 
-Protip
-You can view a list of all the remote branches using the command git branch -r
-T
+Now you should be able to see the remote branch *origin/master*

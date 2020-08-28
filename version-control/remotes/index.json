@@ -13,75 +13,75 @@
       },
       {
         "courseData": "01-set_env.sh",
-        "title": "Git push - share your commits with remote repository",
-        "text": "02-push.md",
-	"answer": "02-push-answer.md"
-      },
-      {
-        "courseData": "01-set_env.sh",
         "title": "Git fetch - get updates from remote folder, preserving local status",
-        "text": "03-fetch.md",
-        "answer": "03-fetch-answer.md"
-      },
-      {
-        "courseData": "01-set_env.sh",
-        "title": "Git log - review commits history on repository",
-        "text": "03-log.md",
-        "answer": "03-log-answer.md"
+        "text": "02-fetch.md",
+        "answer": "02-fetch-answer.md"
       },
       {
         "courseData": "01-set_env.sh",
         "title": "Git merge - merge updates from remote folder to local without conflicts (fast-forward)",
-        "text": "04-ff_merge.md",
-        "answer": "01-remote-answer.md"
+        "text": "03-ff_merge.md",
+        "answer": "03-ff_merge-answer.md"
       },
       {
         "courseData": "01-set_env.sh",
-        "title": "Git merge - merge updates from remote folder to local, with automatic-solvable conflicts (non fast-forward)",
-        "text": "05-nff_merge.md",
-        "answer": "01-remote-answer.md"
+        "title": "Git push - share your commits with remote repository",
+        "text": "04-push.md",
+	"answer": "04-push-answer.md"
       },
       {
         "courseData": "01-set_env.sh",
-        "title": "Git merge - merge updates from remote folder to local, with conflicts to solve manually",
-        "text": "06-merge_w_conflict.md",
-        "answer": "01-remote-answer.md"
-      },
-      {
-        "courseData": "01-set_env.sh",
-        "title": "Git merge - view conflict",
-        "text": "07-view_conflict.md",
-        "answer": "01-remote-answer.md"
-      },
-      {
-        "courseData": "01-set_env.sh",
-        "title": "Git merge - solve conflict",
-        "text": "08-solve_conflict.md",
-        "answer": "01-remote-answer.md"
+        "title": "Git log - review commits history on repository",
+        "text": "05-log.md",
+        "answer": "05-log-answer.md"
       },
       {
         "courseData": "01-set_env.sh",
         "title": "Git pull - get and merge updates from remote folder (fetch+merge)",
-        "text": "09-pull.md",
-        "answer": "01-remote-answer.md"
+        "text": "06-pull.md",
+        "answer": "06-pull-answer.md"
+      },
+      {
+        "courseData": "01-set_env.sh",
+        "title": "Git merge - merge updates from remote folder to local, with automatic-solvable conflicts (non fast-forward)",
+        "text": "07-nff_merge.md",
+        "answer": "07-nff_merge-answer.md"
+      },
+      {
+        "courseData": "01-set_env.sh",
+        "title": "Git merge - merge updates from remote folder to local, with conflicts to solve manually",
+        "text": "08-merge_w_conflict.md",
+        "answer": "08-merge_w_conflict-answer.md"
+      },
+      {
+        "courseData": "01-set_env.sh",
+        "title": "Git merge - view conflict",
+        "text": "09-view_conflict.md",
+        "answer": "09-view_conflict-answer.md"
+      },
+      {
+        "courseData": "01-set_env.sh",
+        "title": "Git merge - solve conflict",
+        "text": "10-solve_conflict.md",
+        "answer": "10-solve_conflict-answer.md"
       },
       {
         "courseData": "01-set_env.sh",
         "title": "Undo changes - git checkout",
-        "text": "10-checkout.md",
-        "answer": "01-remote-answer.md"
+        "text": "11-checkout.md",
+        "answer": "11-checkout-answer.md"
       },
       {
         "courseData": "01-set_env.sh",
         "title": "Undo changes - git reset",
-        "text": "11-reset.md",
-        "answer": "01-remote-answer.md"
+        "text": "12-reset.md",
+        "answer": "12-reset-answer.md"
       },
       {
         "courseData": "01-set_env.sh",
         "title": "Undo changes - git revert",
-        "text": "12-revert.md",
-        "answer": "01-remote-answer.md"
+        "text": "13-revert.md",
+        "answer": "13-revert-answer.md"
       }
     ],
     "intro": {
