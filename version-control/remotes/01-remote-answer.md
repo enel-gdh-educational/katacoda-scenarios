@@ -1,4 +1,4 @@
-`git remote add origin /s/remote-location/myproject.git`
+`git remote add origin /s/remote-location/0/myproject.git`
 `git branch new_branch`
 `git checkout new_branch`
 `touch new_file.txt`
