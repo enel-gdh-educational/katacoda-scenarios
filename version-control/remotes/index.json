@@ -13,15 +13,21 @@
       },
       {
         "courseData": "01-set_env.sh",
-        "title": "Git fetch - get updates from remote folder, preserving local status",
-        "text": "02-fetch.md",
-	"answer": "02-fetch-answer.md"
+        "title": "Git push - share your commits with remote repository",
+        "text": "02-push.md",
+	"answer": "02-push-answer.md"
       },
       {
         "courseData": "01-set_env.sh",
-        "title": "Git log",
+        "title": "Git fetch - get updates from remote folder, preserving local status",
+        "text": "03-fetch.md",
+        "answer": "03-remote-answer.md"
+      },
+      {
+        "courseData": "01-set_env.sh",
+        "title": "Git log - review commits history on repository",
         "text": "03-log.md",
-        "answer": "01-remote-answer.md"
+        "answer": "03-log-answer.md"
       },
       {
         "courseData": "01-set_env.sh",
