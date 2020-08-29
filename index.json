@@ -33,6 +33,11 @@
         "title": "Step 6 - Import and export",
         "text": "step_import_export.md",
         "answer": "step_import_export-answer.md"
+      },
+      {
+        "title": "Step 7 - Aggregation",
+        "text": "step_aggregation.md",
+        "answer": "step_aggregation-answer.md"
       }
     ],
     "assets": {
@@ -74,6 +79,16 @@
         },
         {
           "file": "datasets/movies.json",
+          "target": "/root/datasets",
+          "chmod": "+x"
+        },
+        {
+          "file": "datasets/movies_limited.json",
+          "target": "/root/datasets",
+          "chmod": "+x"
+        },
+        {
+          "file": "datasets/cities.csv",
           "target": "/root/datasets",
           "chmod": "+x"
         }
