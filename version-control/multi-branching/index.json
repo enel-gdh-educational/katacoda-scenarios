@@ -15,7 +15,8 @@
         "answer":"02-answer.md"
       },
       {
-        "text": "03-merge.md"
+        "text": "03-merge.md",
+        "answer": "03-answer.md"
       },
       {
         "title": "Advanced checkout",

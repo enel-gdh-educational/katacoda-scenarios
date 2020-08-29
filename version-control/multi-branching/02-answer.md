@@ -1,6 +1,6 @@
 #### Solution:
 
-1. We can to switch back to `master`, by running `checkout master`{{execute}} (If you happen to be on `master` already, Git will print a warning and nothing will happen).
+1. We can to switch back to `master` by running `git checkout master`{{execute}} (If you happen to be on `master` already, Git will print a warning and nothing will happen).
 
 2. As we did before, we create a branch named "installation" with `git branch installation`{{execute}}.  
 3. We switch to the installation with `git checkout installation`{{execute}}.
