@@ -8,7 +8,7 @@ The **mongoimport** tool imports content from an Extended JSON, CSV, or TSV expo
 
 Guide: https://docs.mongodb.com/v4.2/reference/program/mongoimport/
 
-*Tip: mongoimport is a command that you need to run outside the mongo shell.*
+*Tip:* `mongoimport` *is a command that you need to run outside the mongo shell.*
 
 ### Exercise 1) import json
 1. Create a new collection *movies* in the db *databases* by importing the json file */root/datasets/movies_limited.json*. Use the **mongoimport** command.
@@ -28,7 +28,7 @@ Guide: https://docs.mongodb.com/v4.2/reference/program/mongoimport/
 
 Guide: https://docs.mongodb.com/v4.2/reference/program/mongoexport/
 
-*Tip: mongoexport is a command that you need to run outside the mongo shell.*
+*Tip:* `mongoexport` *is a command that you need to run outside the mongo shell.*
 
 ### Exercise 4) export as json
 1. Export the collection *datasets.cities* and store it as a json file in the folder *exported_data*. Use the **mongoexport** command.
