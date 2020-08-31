@@ -1,4 +1,4 @@
-### Step 4 - Git Push
+### Step 4 - Git Push - share your commits with remote repository
 
 When you make a modification on the local repository, you can share you work with following steps:
 - add files modified to staging area with command `git add <file name>`
@@ -17,3 +17,6 @@ A typical Git workflow would be to perform multiple small commits as you work on
 - Add the file to staging area with `git add`
 - Commit the change with `git commit -m`
 - Push the commit to the new remote branch *new_branch*
+- Switch to master branch
+- Merge *master* with *new_branch*
+- Push *master* to remote repository
