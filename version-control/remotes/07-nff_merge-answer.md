@@ -10,5 +10,5 @@
 `touch new_new_feature.py`
 `git add new_new_feature.py`
 `git commit -m "starting newnew feature"` 
-`git pull origin new_branch`
+`git pull --no-edit origin new_branch`
 `git push origin new_branch`

@@ -40,6 +40,8 @@ If you try to push to *new_branch* Git will throw an error.
 This is because there are modifications in remote *new_branch* you have not in local branch.
 Therefore you need first to align local with remote:
 
-- Run `git pull --no-edit <remote name> <branch name>`
+- Run `git pull --no-edit <remote name> <branch name>`, use *--no-edit* to avoid writing in commit message
 - Push your modifications to remote branch
+
+Now your branch is aligned with remote and you have pushed your modifications
 
