@@ -1,3 +1,5 @@
+#### Solution
+
 **1. Switch to `user_manual` with `git checkout user_manual`{{execute}}**  
 **2. Create the file with `touch user_manual.txt`{{execute}} (or any other way).**  
 **3. Stage the changes with `git add user_manual.txt`{{execute}}.**

@@ -1,4 +1,4 @@
-#### Solution:
+#### Solution
 
 A branch named "user_manual" can be created with:  
 

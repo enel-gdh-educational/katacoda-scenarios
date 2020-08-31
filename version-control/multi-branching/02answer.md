@@ -1,4 +1,4 @@
-#### Solution:
+#### Solution
 
 1. We can to switch back to `master` by running `git checkout master`{{execute}} (If you happen to be on `master` already, Git will print a warning and nothing will happen).
 
