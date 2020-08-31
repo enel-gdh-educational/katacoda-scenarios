@@ -38,6 +38,9 @@
         "text": "07-rebase.md"
       },
       {
+        "title": "Cherrypicking"
+      },
+      {
         "title": "Branching models",
         "text": "models.md"
       }
