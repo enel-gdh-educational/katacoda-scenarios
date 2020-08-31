@@ -6,6 +6,6 @@ Changes from the remote repository are automatically merged into the branch you'
 #### Task
 
 Use `git pull <remote> <branch>` to update master branch in local repository 
-- Switch to local repository in `/s/remote-location/1/`
+- Go to git repository in `/s/remote-location/1/`
 - Verify that you are on branch *master*
 - Pull the changes from the remote into your master branch
