@@ -4,3 +4,6 @@
 `git add new_feature.py`
 `git commit -m "adding new feature"`
 `git push origin new_branch`
+`git checkout master`
+`git merge new_branch`
+`git push origin master`
