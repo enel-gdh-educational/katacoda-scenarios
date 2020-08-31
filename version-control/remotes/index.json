@@ -35,7 +35,6 @@
         "answer": "07-nff_merge-answer.md"
       },
       {
-        "title": "Git merge - merge updates from remote folder to local, with conflicts to solve manually",
         "text": "08-merge_w_conflict.md",
         "answer": "08-merge_w_conflict-answer.md"
       },
