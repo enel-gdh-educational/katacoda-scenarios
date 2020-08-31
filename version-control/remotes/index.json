@@ -35,19 +35,8 @@
         "answer": "07-nff_merge-answer.md"
       },
       {
-        "title": "Git merge - merge updates from remote folder to local, with conflicts to solve manually",
         "text": "08-merge_w_conflict.md",
         "answer": "08-merge_w_conflict-answer.md"
-      },
-      {
-        "title": "Git merge - view conflict",
-        "text": "09-view_conflict.md",
-        "answer": "09-view_conflict-answer.md"
-      },
-      {
-        "title": "Git merge - solve conflict",
-        "text": "10-solve_conflict.md",
-        "answer": "10-solve_conflict-answer.md"
       },
       {
         "title": "Undo changes - git checkout",
