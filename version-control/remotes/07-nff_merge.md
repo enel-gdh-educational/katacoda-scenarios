@@ -1,4 +1,4 @@
-### Step 7 - merge updates from remote folder to local, with automatic-solvable conflicts (non fast-forward)
+### Step 7 - Merge updates from remote folder to local, with automatic-solvable conflicts (non fast-forward)
 
 Non-fast forward merge happens in scenarios like the following one:
 

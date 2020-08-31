@@ -18,5 +18,10 @@
 `git checkout --ours new_feature.py`
 `git add new_feature.py`
 `git commit -m "conflict on new_feature solved"`
-`git push origin new_branch` 
+`git push origin new_branch`
+
+`cd /s/remote-location/1/`
+`git checkout new_branch`
+`git pull origin new_branch`
+`cat new_feature.py`
 

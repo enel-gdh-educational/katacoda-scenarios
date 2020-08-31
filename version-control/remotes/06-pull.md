@@ -1,4 +1,4 @@
-### Step 6 - Git pull - get and merge updates from remote folder (fetch+merge)
+### Step 6 - Git Pull - get and merge updates from remote folder (fetch+merge)
 
 `git pull <remote> <branch to pull from>` allows synchronization of local repository with remote repository.
 Changes from the remote repository are automatically merged into the branch you're currently working on. 

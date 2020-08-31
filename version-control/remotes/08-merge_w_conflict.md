@@ -1,4 +1,4 @@
-### Step 8 - merge updates from remote folder to local, with conflicts to solve manually
+### Step 8 - Merge updates from remote folder to local, with conflicts to solve manually
 
 A conflict does exist when merging modifications if the merge cannot be done automatically.
 In these cases Git throws an error and repository will be in merging state.
@@ -17,7 +17,7 @@ We will push a modification on remote folder which will cause conflict when work
 - Go to git repository `/s/remote-location/1/`
 - Switch to branch *new_branch*
 - Use `git pull origin new_branch` to align with remote branch
-- Modify file *new_feature.py* to print "Goodmorning World"
+- Modify file *new_feature.py* to print "Good morning World"
 - Add file *new_feature.py* to staging area 
 - Commit changes
 - Push to remote branch *new_branch*
@@ -35,15 +35,26 @@ Now remote branch *new_branch* is different from our local repository
 
 You will see Git throwing an error due to modification made on *new_feature.py*
 You can use:
+
 - `git checkout --ours <file name>` to keep local version of the file 
 - `git checkout --theirs <file name>` to keep remote version of the file 
 - Launch *mergetool* using command `git mergetool` to edit resulting file
 
 If you use *mergetool* in the upper part of the screen you will see:
+
 - on the left side: the file in your local folder
 - on the right side: the file in remote folder
+
+In this case you want to keep your version
 
 - Run `git checkout --ours <file name>` to keep local version of the file
 - Add file to staging area
 - Commit 
 - Push to remote *new_branch*
+
+Verify content in remote folder:
+
+- Go to git repository `/s/remote-location/1/`
+- Switch to branch *new_branch*
+- Use `git pull origin new_branch` to align with remote branch
+- Print content of file *new_feature.py*
