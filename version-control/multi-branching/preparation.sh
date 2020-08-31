@@ -5,6 +5,6 @@ git config color.ui false
 touch README.txt
 git add README.txt
 git commit -m "readme created"
-echo "README" >> README.txt
+echo "This is a README file" >> README.txt
 git add README.txt
 git commit -m "readme edited"
