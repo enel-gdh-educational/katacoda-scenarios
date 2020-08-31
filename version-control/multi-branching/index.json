@@ -8,23 +8,22 @@
       {
         "courseData": "preparation.sh",
         "text": "01-basicbranching.md",
-        "answer": "01-answer.md"
+        "answer": "01answer.md"
       },
       {
         "text": "02-checkout1.md",
-        "answer":"02-answer.md"
+        "answer":"02answer.md"
       },
       {
         "text": "03-merge.md",
-        "answer": "03-answer.md"
+        "answer": "03answer.md"
       },
       {
-        "title": "Advanced checkout",
-        "text": "03-checkout2.md"
+        "text": "04-checkout2.md"
       },
       {
         "title": "HEAD",
-        "text": "Head.md"
+        "text": "05-Head.md"
       },
       {
         "title": "Saving changes for later",

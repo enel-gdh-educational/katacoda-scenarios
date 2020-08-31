@@ -11,17 +11,17 @@ If you switch back to the `master` branch, you'll notice that the work you commi
 
 To make that file available to the master branch, we need to merge `installation` into `master`.
 
-We can do with the command:  
+We can do this with:  
 `git merge installation`
 
-Generally speaking, to merge `branch A` into `branch B` we need to:  
-1. `git checkout branch B`  
-2. `git merge branch A`  
+> Generally speaking, to merge `branch A` into `branch B` we need to:  
+> 1. `git checkout branch B`  
+> 2. `git merge branch A`  
 
 
-*Try merging `installation` into `master` and rerunning `git log` again: what changed since last time?*
+*Try merging `installation` into `master` and running `git log` again: what changed since last time?*
 
-## Exercise:
+## Exercise
 
 **Now that the installation guide is merged in, let's merge in the user manual too.**
 

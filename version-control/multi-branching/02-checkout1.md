@@ -18,7 +18,7 @@ This would be a shortcut for:
 *Note: Git v2.23 introduced a new command, `git switch`, which works in exactly the same way (e.g. `git switch <branch_name>` would switch you to that branch).
 The rationale for introducing the `git switch` command is that `checkout` does other things too (we'll see them in a couple of steps), so its functions might be reduced at some point, with `git switch` becoming the standard way to switch branches. In Katacoda, however, we can't yet test it, so we're going to use `git checkout`.*
 
-## Exercise:
+## Exercise
 
 **Before we can write the user manual, we should actually write an installation guide!**
 
