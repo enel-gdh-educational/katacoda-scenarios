@@ -22,7 +22,7 @@ You can view the commits with git log --all --decorate --oneline
 
 #### Task
 
-- You are still in in repository `/s/remote-location/1/`
+- You are still in in repository `/s/<name_surname>/remote_repository/`
 - use `git fetch` to fetch remote branches
 - Switch to branch *new_branch*
 - Modify file *new_feature.py* to print "Hello World"
@@ -30,7 +30,7 @@ You can view the commits with git log --all --decorate --oneline
 - Commit changes
 - Push to remote branch *new_branch*
 - Switch to *master* branch
-- Go to local repository `/home/scrapbook/tutorial/`
+- Go to local repository `/home/scrapbook/tutorial/<name_surname>`
 - Switch to branch *new_branch*
 - Create file *new_new_feature.py*
 - Add *new_new_feature.py* to staging area 
