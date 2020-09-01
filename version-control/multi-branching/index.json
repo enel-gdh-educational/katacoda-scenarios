@@ -7,25 +7,33 @@
     "steps": [
       {
         "courseData": "preparation.sh",
+        "title": "Creating and inspecting branches",
         "text": "01-basicbranching.md",
         "answer": "01answer.md"
       },
       {
+        "title": "Switching branches",
         "text": "02-checkout1.md",
         "answer":"02answer.md"
       },
       {
+        "title": "Merging branches",
         "text": "03-merge.md",
         "answer": "03answer.md"
       },
       {
-        "text": "04-checkout2.md"
-      },
-      {
         "title": "HEAD",
-        "text": "05-Head.md"
+        "text": "04-Head.md"
       },
       {
+        "title": "Advanced `checkout` usage",
+        "text": "05-checkout2.md"
+      },
+      {
+        "title": "Cherrypicking"
+      },
+      {
+        "title": "Saving changes for later",
         "text": "06-stash.md"
       },
       {
@@ -33,11 +41,8 @@
         "text": "06-strategies.md"
       },
       {
-        "title": "Rebasing",
+        "title": "Relocating branches",
         "text": "07-rebase.md"
-      },
-      {
-        "title": "Cherrypicking"
       },
       {
         "title": "Branching models",

@@ -1,5 +1,3 @@
-# Saving changes for later
-
 As you keep working on the project, you might need to change back and forth between different branches. As you do this, some changes you make might be "incompatible" between two branches. 
 
 ---

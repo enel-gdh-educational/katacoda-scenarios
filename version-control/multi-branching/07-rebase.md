@@ -1,5 +1,3 @@
-# Relocating branches
-
 As the commit history of your project grows, it tends to get messier as well. Git has, however, a way to make it cleaner.  
 
 ---
