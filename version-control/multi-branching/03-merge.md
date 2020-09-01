@@ -1,3 +1,5 @@
+PARLARE DI merge commits
+
 # Merging branches
 
 You've created a new branch and switched to it; you also committed some work to the new branch.  

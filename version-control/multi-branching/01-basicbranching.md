@@ -10,7 +10,7 @@ As the project expands, you would like to work on the separate portions of the p
 
 The first and most important command to know is `git branch`.
 
-Without passing any argument, `git branch` lists the current branches of the repo.
+Without passing any argument, `git branch` lists the current branches of the repository.
 
 *What do you get if you try running `git branch` now?*
 
