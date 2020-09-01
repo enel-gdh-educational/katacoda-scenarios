@@ -12,14 +12,10 @@ Specifying <branch> is optional: if you don't, the currently checked-out branch 
 
 Esempio
 
-### The risk of rebasing...SERVE???
-
-While useful, rebasing branches can lead to ambiguities. When rebasing commits in one branch are deleted and reapplied on another branch; if the former branch is then extended, and merged back to the latter, commits might be...
-
 ### Rebase or merge?
 
 Either `merge` and `rebase` have their own pros and cons, and should be used accordingly.  
 When using `merge`, the commit history is preserved and can be traced back, allowing developers to identify where and when ALL changes happened – even those that were subequently reverted or discarded: this can result in a rather convoluted history.  
-On the other hand, `rebase` rewrites the branching structure of the repository, resulting in a cleaner, more readable history. However, rebasing branches can lead to ambiguities especially when multiple contributors work on 
+On the other hand, `rebase` rewrites the branching structure of the repository, resulting in a cleaner, more readable history. However, as rebasing effectively relocates commits, is prone to ambiguities. This is particularly true when multiple developers working off a remote repository are involved: in this scenario, `rebase` should be used with caution.
 
 ## Exercise
