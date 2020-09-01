@@ -1,5 +1,3 @@
-# Advanced `checkout` usage
-
 You already added several files to the project, which now spans several branches. As the project grows, mistakes can happen – but no worries: Git has ways to revert them.
 
 ---

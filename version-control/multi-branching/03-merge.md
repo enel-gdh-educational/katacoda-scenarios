@@ -1,7 +1,5 @@
 PARLARE DI merge commits
 
-# Merging branches
-
 You've created a new branch and switched to it; you also committed some work to the new branch.  
 Now, it's time to bring this work into the main stream of our project.
 
