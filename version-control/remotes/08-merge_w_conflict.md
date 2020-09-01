@@ -14,7 +14,7 @@ To resolve the conflict the files need to be edited to match our desired end sta
 
 We will push a modification on remote folder which will cause conflict when working on local repository
 
-- Go to git repository `/s/remote-location/1/`
+- Go to git repository `/s/<name_surname>/remote_repository/`
 - Switch to branch *new_branch*
 - Use `git pull origin new_branch` to align with remote branch
 - Modify file *new_feature.py* to print "Good morning World"
@@ -54,7 +54,7 @@ In this case you want to keep your version
 
 Verify content in remote folder:
 
-- Go to git repository `/s/remote-location/1/`
+- Go to git repository `/s/remote-location/<name_surname>1/`
 - Switch to branch *new_branch*
 - Use `git pull origin new_branch` to align with remote branch
 - Print content of file *new_feature.py*

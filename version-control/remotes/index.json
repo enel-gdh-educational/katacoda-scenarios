@@ -6,7 +6,10 @@
   "details": {
     "steps": [
       {
-        "courseData": "01-set_env.sh",
+        "text": "00-set_env.md",
+        "answer": "00-set_env-answer.md"
+      },
+      {
         "text": "01-remote.md",
         "answer": "01-remote-answer.md"
       },

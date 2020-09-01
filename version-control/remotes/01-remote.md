@@ -11,5 +11,5 @@ If local repository is created using `git clone`, location from which repository
 
 #### Task
 
-The remote repository location of this scenario is `/s/remote-location/0/myproject.git`. 
+The remote repository location of this scenario is `/s/<name_surname>/remote_repository/project.git`. 
 - Set this remote location with the name *origin* using `git remote add`.
