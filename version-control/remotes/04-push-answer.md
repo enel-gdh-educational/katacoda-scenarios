@@ -5,5 +5,7 @@
 `git commit -m "adding new feature"`
 `git push origin new_branch`
 `git checkout master`
+`ls`
 `git merge new_branch`
+`ls`
 `git push origin master`
