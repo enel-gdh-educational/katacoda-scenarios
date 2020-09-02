@@ -4,7 +4,7 @@ When working with Git, a common scenario is to undo changes in your working dire
 
 The command `git checkout` will replace everything in the working directory to the last committed version.
 
-To replace all files then use a dot (.) to indicate the current directory, otherwise use a list the directories/files separated by spaces.
+To replace all files then use a dot (`git checkout .`) to indicate the current directory, otherwise use a list the directories/files separated by spaces (`git checkout <file name> <file name>`).
 
 #### Task
 
