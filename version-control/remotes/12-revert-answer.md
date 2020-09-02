@@ -2,3 +2,4 @@
 `git commit -m "Commit we will regret"`
 `git push origin new_branch`
 `git revert HEAD`
+`git status`

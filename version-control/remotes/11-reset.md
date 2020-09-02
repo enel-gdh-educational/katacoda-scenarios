@@ -19,7 +19,7 @@ If you want to reset all files then use a dot (`git reset .`) to indicate curren
 - Add *new_new_feature.py* to the staging area
 - Use `git status` to see status of repository
 
-You decided want to commit just updates on *new_feature.py*
+You want to commit just updates on *new_feature.py*
 
 - Remove *new_new_feature.py* from stagin area using `git reset`
 - Use `git status` to see status of repository
@@ -30,7 +30,7 @@ You decided want to commit just updates on *new_feature.py*
 
 A `git reset --hard` will combine both git reset and git checkout in a single command. 
 
-The result will be the files removed from the staging area and the working directory is taken back to the state of the last commit.
+The result will be that the files are removed from the staging area and the working directory is taken back to the state of the last commit.
 
 Using `HEAD` will clear the state back to the last commit. Using `git reset --hard <commit-hash>` allows you to go back to any commit state. 
 

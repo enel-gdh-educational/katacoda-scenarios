@@ -12,7 +12,9 @@ To replace all files then use a dot (`git checkout .`) to indicate the current d
 - Switch to branch *new_branch*
 - Modify *new_feature.py* and write "aaa" inside of it
 - Modify *new_new_feature.py* and write "aaa" inside of it
+- Use `git status` to examine status of repository 
 - Use `git checkout <file name>` to undo the modification in file *new_feature.py*
 - Print content of *new_feature.py* and *new_new_feature.py*
 - Use `git checkout .` to undo the modification also in file *new_new_feature.py*
+- Use `git status` to examine status of repository 
 - Print content of *new_feature.py* and *new_new_feature.py*
