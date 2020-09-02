@@ -25,12 +25,13 @@
     "assets": { 
       "client": [{
           "file": "*", 
-          "target": "/home/scrapbook/tutorial/assets"
+          "target": "/home/scrapbook/tutorial"
           }] 
         }
     ,
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "background.sh"
     },
     "finish": {
       "text": "finish.md"
