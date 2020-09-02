@@ -29,16 +29,22 @@ Create a new local folder called project:
 create a file called *hello_word.py* in the project folder.
 ```cd project && touch hello_world.py```{{execute}}
 
-open the file and paste this content:
+modify the file and paste this content (don't worry about the wrong sum function):
 
-```
+```python
 class Calculator:
     def sum(a: int, b: int):
-        return a - b 
+        return a - b
 ```
-{{copy}}
 
-`hello_word.py`{{open}}
+Now, initialize the local repository and add all files:
+
+```git init```{{execute}}
+```git add --all```{{execute}}
+```git commit -m "First commit"```{{execute}}
+
+
+
 
 
 
