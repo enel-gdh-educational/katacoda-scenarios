@@ -23,9 +23,9 @@
       }
     ],
     "assets": { 
-      "host01": [{
+      "client": [{
           "file": "*", 
-          "target": "/home/scrapbook/tutorial/assets"
+          "target": "/home/scrapbook/tutorial"
           }] 
         }
     ,
