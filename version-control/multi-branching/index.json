@@ -27,10 +27,12 @@
       },
       {
         "title": "Advanced `checkout` usage",
-        "text": "05-checkout2.md"
+        "text": "05-checkout2.md",
+        "answer": "05answer.md"
       },
       {
-        "title": "Cherrypicking"
+        "title": "Cherry picking",
+        "text": "cherrypick.md"
       },
       {
         "title": "Saving changes for later",

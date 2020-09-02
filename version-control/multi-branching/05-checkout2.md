@@ -6,24 +6,21 @@ As anticipated, `checkout` has different uses beyond switching from one branch t
 
 If a file has *unstaged* changes, these can be reverted with `git checkout -- <file>`:
 
-Esempio
+This can also bring back files that were accidentally deleted.
 
-This can also bring back files that were accidentally deleted:
-
-Esempio.
+> *Note that the "--" is used to avoid ambiguities between files and branches with the same name. It can be omitted: in this case, Git will treat the argument as a branch name first, then as a filename a
+if it doesn't find a suitable branch.*
 
 Generally speaking, `git checkout` accepts a "path-like" argument and will restore the state of all files at that path.
 For instance, to revert changes to all files in the preset working directory, you could run `git checkout -- .`.
 
-> *Note that the "--" is used to avoid ambiguities between files and branches with the same name. If this is not the case, it could potentially be omitted, but I find it's good practice to use it.*
-
-If the change(s) were staged already, `git checkout` won't work – and Git will ask you to unstage things first.
-
-Esempio.
+If the change(s) were staged already, `git checkout` won't work – and Git will ask you to unstage things first using `git revert`.
 
 ---
 
 Another way `checkout` could be used is moving files between branches. In this case, the syntax is `git checkout <branch> <file>`.  
 This command would bring the file named "file", FROM the branch named "branch", INTO the branch currently checked out, and **stage** that change.
 
-Esempio.
+## Exercise
+
+**Something's gone wrong...**
