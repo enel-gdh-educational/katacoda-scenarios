@@ -22,8 +22,23 @@ The repository name must be the concatenation of yours surname with "_" as delim
 ##### Create your local project 
 Now it's time to write some code and begin your new project. This project will be host on the repository created at step before.
 
-Create a new local folder called project with:
+Create a new local folder called project:
+
 ```mkdir project```{{execute}}
+
 create a file called *hello_word.py* in the project folder.
-```touch project/hello_workd```{{execute}}
+```cd project && touch hello_world.py```{{execute}}
+
+open the file and paste this content:
+
+```
+class Calculator:
+    def sum(a: int, b: int):
+        return a - b 
+```
+{{copy}}
+
+`hello_word.py`{{open}}
+
+
 
