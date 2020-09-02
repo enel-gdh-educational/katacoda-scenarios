@@ -10,7 +10,8 @@ It will create a new commit which has the inverse affect of the commit being rev
 - Add *new_new_feature.py* to the staging area
 - Commit modification to file *new_new_feature.py*
 - Push to remote *new_branch*
-- Use git revert to revert the changes in the last commit
+- Use `git revert HEAD` to revert the changes in the last commit
+- Use `git status` to see status of repository
 
 This will open an Vim editor session to create a commit message for each commit.
 
