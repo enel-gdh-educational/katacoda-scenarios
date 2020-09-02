@@ -13,3 +13,4 @@ If local repository is created using `git clone`, location from which repository
 
 The remote repository location of this scenario is `/s/<name_surname>/remote_repository/project.git`. 
 - Set this remote location with the name *origin* using `git remote add`.
+- Run `git remote -v` to see the remote you have set

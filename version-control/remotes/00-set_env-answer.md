@@ -6,6 +6,7 @@
 `mkdir /s/<name_surname>/working_dir`
 `cd /s/<name_surname>/working_dir`
 `git clone /s/<name_surname>/remote_repository/project.git`
+`cd project`
 `touch base_feature.py`
 `git add base_feature.py`
 `git commit m "first commit"`

@@ -19,5 +19,7 @@ A typical Git workflow would be to perform multiple small commits as you work on
 - Commit the change with `git commit -m`
 - Push the commit to the new remote branch *new_branch*
 - Switch to master branch
+- Run `ls` to list available files, you will see that *new_feature.py* is not there
 - Merge *master* with *new_branch*
+- Run `ls` to list available files, you will now see *new_feature.py*
 - Push *master* to remote repository

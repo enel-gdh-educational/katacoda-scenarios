@@ -26,6 +26,7 @@ It will consist of:
 - Use `mkdir` to create directory `/s/<name_surname>/working_dir`, this will simulate another user working on the same project
 - Go to `/s/<name_surname>/working_dir`
 - Initialize folder using `git clone /s/<name_surname>/remote_repository/project.git`
+- Go to `/s/<name_surname>/working_dir/project`
 - Create file `base_feature.py`
 - Add `base_feature.py` to staging area using `git add`
 - Commit modification using `git commit`
