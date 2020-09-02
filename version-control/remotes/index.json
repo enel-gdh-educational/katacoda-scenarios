@@ -42,17 +42,14 @@
         "answer": "09-merge_w_conflict-answer.md"
       },
       {
-        "title": "Undo changes - git checkout",
         "text": "10-checkout.md",
         "answer": "10-checkout-answer.md"
       },
       {
-        "title": "Undo changes - git reset",
         "text": "11-reset.md",
         "answer": "11-reset-answer.md"
       },
       {
-        "title": "Undo changes - git revert",
         "text": "12-revert.md",
         "answer": "12-revert-answer.md"
       }
