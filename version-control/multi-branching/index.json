@@ -31,8 +31,10 @@
         "answer": "05answer.md"
       },
       {
+        "courseData": "cherrypick_prep.sh",
         "title": "Cherry picking",
-        "text": "cherrypick.md"
+        "text": "cherrypick.md",
+        "answer": "cherrypick_answer.md"
       },
       {
         "title": "Saving changes for later",
