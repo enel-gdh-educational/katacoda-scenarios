@@ -1,4 +1,4 @@
-### Step 1 - Git Remote - set url of remote folder
+### Step 2 - Git Remote - set url of remote folder
 
 Remote repositories are centralized stores for code (such as GitHub or Bitbucket). 
 They allow to share changes from or to your repository.

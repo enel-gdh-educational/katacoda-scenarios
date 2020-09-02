@@ -1,4 +1,4 @@
-### Step 0 - Set environment - set url of remote folder
+### Step 1 - Set environment - set url of remote folder
 
 In this step we will initialize the environment required for following steps.
 It will consist of:

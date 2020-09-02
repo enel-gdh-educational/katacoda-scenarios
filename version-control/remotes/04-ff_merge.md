@@ -1,4 +1,4 @@
-### Step 3 - Git merge - merge updates from remote folder to local without conflicts (fast-forward)
+### Step 4 - Git merge - merge updates from remote folder to local without conflicts (fast-forward)
 
 `git fetch` downloads changes into a separate branch which can be checked out and merged.
 During a *merge* Git will attempt to automatically combine the commits.

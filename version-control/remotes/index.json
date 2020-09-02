@@ -6,55 +6,55 @@
   "details": {
     "steps": [
       {
-        "text": "00-set_env.md",
-        "answer": "00-set_env-answer.md"
+        "text": "01-set_env.md",
+        "answer": "01-set_env-answer.md"
       },
       {
-        "text": "01-remote.md",
-        "answer": "01-remote-answer.md"
+        "text": "02-remote.md",
+        "answer": "02-remote-answer.md"
       },
       {
-        "text": "02-fetch.md",
-        "answer": "02-fetch-answer.md"
+        "text": "03-fetch.md",
+        "answer": "03-fetch-answer.md"
       },
       {
-        "text": "03-ff_merge.md",
-        "answer": "03-ff_merge-answer.md"
+        "text": "04-ff_merge.md",
+        "answer": "04-ff_merge-answer.md"
       },
       {
-        "text": "04-push.md",
-	"answer": "04-push-answer.md"
+        "text": "05-push.md",
+	"answer": "05-push-answer.md"
       },
       {
-        "text": "05-log.md",
-        "answer": "05-log-answer.md"
+        "text": "06-log.md",
+        "answer": "06-log-answer.md"
       },
       {
-        "text": "06-pull.md",
-        "answer": "06-pull-answer.md"
+        "text": "07-pull.md",
+        "answer": "07-pull-answer.md"
       },
       {
-        "text": "07-nff_merge.md",
-        "answer": "07-nff_merge-answer.md"
+        "text": "08-nff_merge.md",
+        "answer": "08-nff_merge-answer.md"
       },
       {
-        "text": "08-merge_w_conflict.md",
-        "answer": "08-merge_w_conflict-answer.md"
+        "text": "09-merge_w_conflict.md",
+        "answer": "09-merge_w_conflict-answer.md"
       },
       {
         "title": "Undo changes - git checkout",
-        "text": "11-checkout.md",
-        "answer": "11-checkout-answer.md"
+        "text": "10-checkout.md",
+        "answer": "10-checkout-answer.md"
       },
       {
         "title": "Undo changes - git reset",
-        "text": "12-reset.md",
-        "answer": "12-reset-answer.md"
+        "text": "11-reset.md",
+        "answer": "11-reset-answer.md"
       },
       {
         "title": "Undo changes - git revert",
-        "text": "13-revert.md",
-        "answer": "13-revert-answer.md"
+        "text": "12-revert.md",
+        "answer": "12-revert-answer.md"
       }
     ],
     "intro": {
