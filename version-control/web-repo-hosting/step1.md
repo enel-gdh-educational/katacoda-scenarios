@@ -11,4 +11,5 @@ First of all we need a new remote repository. Such repository will host our team
 
 Go to [version_control_course](https://bitbucket.springlab.enel.com/projects/ITDSVER) project on Springlab and create a new repository using the "Create Repository" button at top right corner.
 
+![](./assets/create_new_repository_button.png)
 

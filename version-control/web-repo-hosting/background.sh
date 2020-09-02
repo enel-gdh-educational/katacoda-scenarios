@@ -1,1 +1,1 @@
-mkdir assets
+mkdir /home/scrapbook/tutorial/assets
