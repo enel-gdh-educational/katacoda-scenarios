@@ -7,8 +7,9 @@ It will consist of:
 - a remote working directory containing revision history and copies of project files
 - a local working directory containing revision history and copies of project files
 
-`git init` command creates an empty Git repository. Running git init in an existing repository will not overwrite contents of the folder.
-`git init --bare` creates a bare repository. Bare repos contain no working or checked out copy of your source files and are customarily given a .git extension
+`git init` command creates an empty Git repository. Running `git init` in an existing repository will not overwrite contents of the folder.
+
+`git init --bare` creates a bare repository. Bare repos contain no working or checked out copy of your source files and are customarily given a *.git* extension
 
 
 #### Task
