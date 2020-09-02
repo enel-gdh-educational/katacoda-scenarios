@@ -23,5 +23,7 @@ The repository name must be the concatenation of yours surname with "_" as delim
 Now it's time to write some code and begin your new project. This project will be host on the repository created at step before.
 
 Create a new local folder called project with:
+```mkdir project```{{execute}}
+create a file called *hello_word.py* in the project folder.
+```touch project/hello_workd```{{execute}}
 
-`mkdir project`{{copy}}
