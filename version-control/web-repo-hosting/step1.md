@@ -85,6 +85,8 @@ Finally, we can push our changes to this new remote!
 
 You must insert your username that corresponds to your Enel id with the first letter in uppercase. (*E.g. A459578*) and your Enel account password.
 
+##### Exercises
+
 ---
 **Exercise 1**
 See what happend on bitbucket repository after your first push through your browser.

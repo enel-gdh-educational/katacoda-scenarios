@@ -12,7 +12,8 @@
       },
       {
         "title": "Cloning a remote repository",
-        "text": "step2.md"
+        "text": "step2.md",
+        "answer": "step2-answer.md"
       },
       {
         "title": "Git Workflow",
