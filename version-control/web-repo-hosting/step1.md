@@ -37,10 +37,14 @@ class Calculator:
         return a - b
 ```
 
+`./project/myfile.js`{{open}}
+
 Now, initialize the local repository and add all files:
 
 ```git init```{{execute}}
+
 ```git add --all```{{execute}}
+
 ```git commit -m "First commit"```{{execute}}
 
 
