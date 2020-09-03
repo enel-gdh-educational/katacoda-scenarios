@@ -9,29 +9,30 @@
         "courseData": "preparation.sh",
         "title": "Creating and inspecting branches",
         "text": "01-basicbranching.md",
-        "answer": "01answer.md"
+        "answer": "01-basicbranching_answer.md"
       },
       {
         "title": "Switching branches",
         "text": "02-checkout1.md",
-        "answer":"02answer.md"
+        "answer":"02-checkout1_answer.md"
       },
       {
         "title": "Merging branches",
         "text": "03-merge.md",
-        "answer": "03answer.md"
+        "answer": "03-merge_answer.md"
       },
       {
         "title": "HEAD",
         "text": "04-Head.md"
       },
       {
+        "courseData":"checkout2.sh",
         "title": "Advanced `checkout` usage",
         "text": "05-checkout2.md",
-        "answer": "05answer.md"
+        "answer": "05-checkout2_answer.md"
       },
       {
-        "courseData": "cherrypick_prep.sh",
+        "courseData": "cherrypick.sh",
         "title": "Cherry picking",
         "text": "cherrypick.md",
         "answer": "cherrypick_answer.md"
