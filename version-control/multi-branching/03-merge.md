@@ -14,9 +14,9 @@ To make that file available to the master branch, we need to merge `installation
 We can do this with:  
 `git merge installation`
 
-> Generally speaking, to merge `branch A` into `branch B` we need to run:  
-`git checkout branch B`  
-`git merge branch A`  
+> Generally speaking, to merge `<branch_B>` into `<branch_A>` we need to run:  
+`git checkout <branch_A>`  
+`git merge <branch_B>`  
 
 *Try merging `installation` into `master` and running `git log` again: what changed since last time?*
 
