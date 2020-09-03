@@ -19,6 +19,8 @@ The repository name must be the concatenation of yours surname with "_" as delim
 
 > Surname1: Bianchi, Surname2: Rossi -> Repository name: Bianchi_Rossi
 
+![](./assets/create_repo_name.png)
+
 ##### Create your local project 
 Now it's time to write some code and begin your new project. This project will be host on the repository created at step before.
 
@@ -51,7 +53,7 @@ This commit reside in your local repository for sure and now we are ready to *sy
 
 We'll use the `git remote add` command to do this.
 
-```git remote add origin https://bitbucket.springlab.enel.com/scm/itdsver/<your repository name>.git``` {{copy}}
+```git remote add origin https://bitbucket.springlab.enel.com/scm/itdsver/<your repository name>.git```{{copy}}
 
 Substitute, *<your repository name>* with the actual name of repository.
 
