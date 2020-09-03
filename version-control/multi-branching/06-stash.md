@@ -4,7 +4,7 @@ As you keep working on the project, you might need to change back and forth betw
 
 Changes, either staged or unstaged, that are "compatible" between branches, i.e. don't conflict between branches as they don't affect the same lines in the same files, are usually carried over when checking out to a different branch.  
 
-On the other hand, if a change cannot be carried over (for instance, one or more lines of the same file is different between two branches), Git will abort the `git checkout` command. At this point, you have two options:  
+On the other hand, some changes will result in conflicts (for instance, one or more lines of the same file have been modified differently between two branches), Git will abort the `git checkout` command. At this point, you have two options:  
 
 **1. Force the checkout and delete the changes**
 
@@ -25,3 +25,5 @@ To reapply stashed changes we have two options:
 `git stash drop #`  
 
 In both cases, the slot number can be omitted – this will default the command to stash 0, i.e. the latest changes that were stashed.
+
+## Exercise

@@ -27,10 +27,14 @@
       },
       {
         "title": "Advanced `checkout` usage",
-        "text": "05-checkout2.md"
+        "text": "05-checkout2.md",
+        "answer": "05answer.md"
       },
       {
-        "title": "Cherrypicking"
+        "courseData": "cherrypick_prep.sh",
+        "title": "Cherry picking",
+        "text": "cherrypick.md",
+        "answer": "cherrypick_answer.md"
       },
       {
         "title": "Saving changes for later",

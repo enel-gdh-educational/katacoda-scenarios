@@ -14,9 +14,9 @@ To make that file available to the master branch, we need to merge `installation
 We can do this with:  
 `git merge installation`
 
-> Generally speaking, to merge `branch A` into `branch B` we need to:  
-> 1. `git checkout branch B`  
-> 2. `git merge branch A`  
+> Generally speaking, to merge `branch A` into `branch B` we need to run:  
+`git checkout branch B`  
+`git merge branch A`  
 
 *Try merging `installation` into `master` and running `git log` again: what changed since last time?*
 
@@ -24,8 +24,5 @@ We can do this with:
 
 **Now that the installation guide is merged in, let's merge in the user manual too.**
 
-**1. Switch to the `user_manual` branch we created earlier.**  
-**2. Create a new empty file called "user_manual.txt" by using `touch user_manual.txt`{{execute}}.**  
-**3. Commit the new file to the branch.**  
-**4. Merge the `user_manual` branch into `master`.**  
-**5. Let's say we don't want to continue working on the `user_manual`, so we should delete that branch to avoid clutter. Do you remember how to do it?**
+**Switch to the `user_manual` branch we created earlier and create a new empty file called "user_manual.txt" (you can use `touch user_manual.txt`{{execute}}.**
+**Commit the new file to the branch, then merge the `user_manual` branch into `master`.**
