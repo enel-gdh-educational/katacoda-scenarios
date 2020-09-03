@@ -6,11 +6,12 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "title": "Create a new repository",
+        "text": "step1.md",
+        "answer": "step1-answer.md"
       },
       {
-        "title": "Step 2",
+        "title": "Git workflow",
         "text": "step2.md"
       },
       {
@@ -22,8 +23,16 @@
         "text": "step4.md"
       }
     ],
+    "assets": { 
+      "client": [{
+          "file": "*", 
+          "target": "/home/scrapbook/tutorial/assets"
+          }] 
+        }
+    ,
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "background.sh"
     },
     "finish": {
       "text": "finish.md"

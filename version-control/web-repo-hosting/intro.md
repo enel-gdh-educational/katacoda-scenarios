@@ -1,0 +1,1 @@
+In this scenario you will learn how to use the major functionalities of bitbucket in the Springlab environment.
