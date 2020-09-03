@@ -1,4 +1,4 @@
-# Branching in git
+# Branching in Git
 
 blurb on branches
 

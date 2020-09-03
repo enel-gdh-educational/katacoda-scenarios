@@ -5,13 +5,13 @@ When a new branch is created using `git branch`, git will not automatically move
 
 ---
 
-To switch to the new branch, you can use `git checkout <new branch>`.
+To switch to the new branch, you can use `git checkout <new_branch>`.
 
-Alternatively, you can create a new branch AND switch to it using `git checkout -b <new branch>`.  
+Alternatively, you can create a new branch AND switch to it using `git checkout -b <new_branch>`.  
 
 This would be a shortcut for:  
-`git branch <new branch>`  
-`git checkout <new branch>`  
+`git branch <new_branch>`  
+`git checkout <new_branch>`  
 
 *Note: Git v2.23 introduced a new command, `git switch`, which works in exactly the same way (e.g. `git switch <branch_name>` would switch you to that branch).
 The rationale for introducing the `git switch` command is that `checkout` does other things too (we'll see them in a couple of steps), so its functions might be reduced at some point, with `git switch` becoming the standard way to switch branches. In Katacoda, however, we can't yet test it, so we're going to use `git checkout`.*
