@@ -6,6 +6,7 @@
   "details": {
     "steps": [
       {
+        "courseData": "set_env.sh",
         "text": "01-set_env.md",
         "answer": "01-set_env-answer.md"
       },
@@ -23,7 +24,7 @@
       },
       {
         "text": "05-push.md",
-	"answer": "05-push-answer.md"
+	    "answer": "05-push-answer.md"
       },
       {
         "text": "06-log.md",
