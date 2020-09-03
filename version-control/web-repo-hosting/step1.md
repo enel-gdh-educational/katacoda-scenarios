@@ -47,8 +47,17 @@ Now, initialize the local repository and add all files:
 
 ```git commit -m "First commit"```{{execute}}
 
+This commit reside in your local repository for sure and now we are ready to *sync* your local repository to the remote repository created.
 
+We'll use the `git remote add` command to do this.
 
+```git remote add origin https://bitbucket.springlab.enel.com/scm/itdsver/<your repository name>.git``` {{copy}}
 
+Substitute, *<your repository name>* with the actual name of repository.
 
+> E.g.: Bianchi_Rossi is the name of repository, the command is `git remote add origin https://bitbucket.springlab.enel.com/scm/itdsver/Bianchi_Rossi.git`
+
+With this command we've added a new origin and we can push on remote repository to sync our changes.
+
+```git push -u origin master```{{execute}}
 
