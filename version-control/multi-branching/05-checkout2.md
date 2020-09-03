@@ -23,4 +23,5 @@ This command would bring the file named "file", FROM the branch named "branch", 
 
 ## Exercise
 
-**Something's gone wrong...**
+**Something's wrong...our files seem to be missing.**
+**Try to bring them back on the `master` branch, using `git checkout`.**
