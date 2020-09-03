@@ -16,7 +16,7 @@ Go to [version_control_course](https://bitbucket.springlab.enel.com/projects/ITD
 
 ![](./assets/create_new_repository_button.png)
 
-The repository name must be the concatenation of yours surname with "_" as delimiter
+The repository name must be the concatenation of yours surnames with "_" as delimiter.
 
 > Surname1: Bianchi, Surname2: Rossi -> Repository name: Bianchi_Rossi
 

@@ -18,6 +18,6 @@ Then:
 
 `git commit -m "added div function"`
 
-`git push -u <your remote name>`
+`git push -u <your remote name> master`
 
 ---
