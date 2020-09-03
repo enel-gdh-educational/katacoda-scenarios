@@ -1,12 +1,10 @@
-## Step 1 - Create new repository and initialize a project
+## Step 2 - Cloning an existing repository
 In this step:
-* we will clone locally an existing remote repository in the **version_control_course** bitbucket project available [here](https://bitbucket.springlab.enel.com/projects/ITDSVER) 
-* we'll create a new project locally
-* we'll sync our local repository with the remote one
+* you'll discover the first step to collaborate with other developers.
+* you'll clone an existing remote repository in the **version_control_course** bitbucket project available [here](https://bitbucket.springlab.enel.com/projects/ITDSVER) 
 
 ##### Prerequisites
 * You must have an Enel account and be able to access the Springlab environment.
-* You must have a partner. (*Collaboration* is the key! :-))
 
 ##### Clone an existing repository
 Your collegaues started a new project few months ago and now want you as developer because they have an huge amount of work.
@@ -38,7 +36,7 @@ Now you have your cloned local repository. This local repository is in sync to r
 
 ---
 **Exercise 1**
-See the log of the remote repository after cloning.
+See the logs of the remote repository after cloning.
 
 ---
 
@@ -47,3 +45,7 @@ What's the name of the remote added by the clone command?
 
 ---
 
+**Exercise 3**
+Clone the repo you created at step 1 in your **local** machine using *Git bash*.
+
+---
