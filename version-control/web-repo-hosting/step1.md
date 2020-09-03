@@ -1,5 +1,8 @@
 ## Step 1 - Create new repository and initialize a project
-In this step we will create a new repository in the **version_control_course** bitbucket project available [here](https://bitbucket.springlab.enel.com/projects/ITDSVER) 
+In this step:
+* we will create a new repository in the **version_control_course** bitbucket project available [here](https://bitbucket.springlab.enel.com/projects/ITDSVER) 
+* we'll create a new project locally
+* we'll sync our local repository with the remote one
 
 ##### Prerequisites
 * You must have an Enel account and be able to access the Springlab environment.
@@ -16,7 +19,7 @@ Go to [version_control_course](https://bitbucket.springlab.enel.com/projects/ITD
 
 ![](./assets/create_new_repository_button.png)
 
-The repository name must be the concatenation of yours surname with "_" as delimiter
+The repository name must be the concatenation of yours surnames with "_" as delimiter.
 
 > Surname1: Bianchi, Surname2: Rossi -> Repository name: Bianchi_Rossi
 
@@ -84,7 +87,7 @@ You must insert your username that corresponds to your Enel id with the first le
 
 ---
 **Exercise 1**
-See what happend on bitbucket repository though your browser.
+See what happend on bitbucket repository after your first push through your browser.
 
 ---
 
@@ -94,4 +97,4 @@ Try to rename the `origin` remote name to `enel` (then check with `git remote -v
 ---
 
 **Exercise 3**
-Add a new function in `calculator.py` that execute the division between two number and push this new code.
+Add a new function in `calculator.py` that executes the division between two number and push this new code.
