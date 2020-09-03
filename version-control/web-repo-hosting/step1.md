@@ -84,7 +84,7 @@ You must insert your username that corresponds to your Enel id with the first le
 
 ---
 **Exercise 1**
-See what happend on bitbucket repository though your browser.
+See what happend on bitbucket repository after your first push through your browser.
 
 ---
 
