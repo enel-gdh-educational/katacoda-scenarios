@@ -20,7 +20,7 @@ You keep on working on the file, so does Bob: the two stories of the file saved 
 
 
 Two days later, your boss asks to present the final version of the file, so Bob sends you `sample_file_Bob.txt` and you start assembling
- the final "good" version by merging the two. you do good (and tedious) job and you come out with
+ the final "good" version by merging the two. You do good (and tedious) job and you come out with
  
 ---
 
@@ -29,8 +29,8 @@ Two days later, your boss asks to present the final version of the file, so Bob 
 ---
  
 , which you send by email to those who will attend the presentation. Your boss is happy about the presentation, nevertheless asked to clarify some slides.
- Your colleague offers to do that. Easy enough, you might think!
-  Well, it turns out that by mistake, he applies the changes to `sample_file_Bob.txt` and sends you a version called:
+ Your colleague Bob offers to do that and you are relieved about that!
+  Well, it turns out that, by mistake, Bob applies the changes to `sample_file_Bob.txt` and sends you a version called:
   
 ---
 
@@ -47,8 +47,8 @@ After a while, you realize Bob's mistake, and you try to amend it. So you work o
 
 ---
 
-and circulate it to the others. Someone who has not followed the thread of email asks to include some additional super important changes,
-doe the job for you and sends you a version that is
+and circulate it to the others. Someone who has not followed the thread of email asks to include some additional super important changes, includes the changes 
+ on his version and sends a file named:
 
 ---
 
@@ -112,15 +112,16 @@ However, a modern version control systems allows you to:
 - enable the collaboration between different contributors by providing tools to merge changes and reconcile diverging versions; 
 - let you syncronize you local project with another repository over the network, say taking the last changes done by someone else
  or publishing your changes;
-- revert to a previous version. Think, for instance, when you introduce a change that breaks the code...oups!
+- revert to a previous version. Think, for instance, when you introduce a change that breaks an application...oups!
 - tell you who has modified what part of the project.
 - ...and much more 
 
-Git is a version control system, out of many others.
+Git is a version control system, selected among many others. It comes as a command line interface, that is, a tool that
+ you can use from the terminal of your computer.
 
 
 #### Why git
-##### and not other version control systems
+###### and not other version control systems
 
 Git has overwhelmed all other version control systems int terms of usage prevalence (>90% as of 2020). 
 
@@ -130,7 +131,7 @@ Changes are copied from one such repository to another. Even tough this may seem
  understanding decentralization is key to use git effectively.
 
 Many other systems are centralized (e.g. CVS, Apache SVN), meaning that they oblige you to connect to a server to push and store your changes.
- Also they give you less freedom to let your local version of the project diverge from the central one.
+ Also they give you limited freedom to let your local version of the project diverge from the central one.
   
 Instead, git allows you to diverge from any other copy of the repository, track your development locally,
  and decide when you want to reconcile your development with any other copy of the repository. 
@@ -143,14 +144,15 @@ To have fun, as a note on how Git compares to other VCS, one of its development 
 
 - Take Concurrent Versions System (CVS) as an example of what not to do; if in doubt, make the exact opposite decision.
 
-####Git is not Github! 
+#### Git is not Github! 
 ##### nor Bitbucket or any other web code hosting service or graphical interface.
 
 Remember, git is a decentralized version control system, that is, there is no principal copy of the repository! 
 The repo on your computer has the same importance as the repos on your peers' laptops as well as that saved on a company server.
 
 Despite there are good reasons why it is so, in real-world collaborative software development, it is useful to have a copy of the repository that is conceptually the main one.
-For instance, that repository that will be the one officially published, say to install the code, or that one clones to start working on the project. 
+For instance, the repository that will be the one officially published, say to install the code, or the one to be cloned
+ to start working on the project. 
 
 Services like Github and Bitbucket provide a code hosting service with a browser interface that allows developers
  to visually inspect and browse the repository together with its history.

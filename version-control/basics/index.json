@@ -2,7 +2,7 @@
   "title": "Version Control System: Basics",
   "description": "This scenario will teach you the basic operations to control the time evolution of a project",
   "difficulty": "Beginner",
-  "time": "60",
+  "time": "180",
   "details": {
     "assets": {
       "client": [
