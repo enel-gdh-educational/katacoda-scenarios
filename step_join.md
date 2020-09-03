@@ -21,7 +21,7 @@ whole structure.
 Once you are confident on the structure it is time
 to perform a *join* among two collections. This operation
 is called [aggregation](https://docs.mongodb.com/manual/reference/operator/aggregation/lookup/).
-To flatten the risultant array we perform the 
+To flatten the risulting array we perform the 
 so-called [unwind](https://docs.mongodb.com/manual/reference/operator/aggregation/unwind/)
 manipulation.
 
@@ -45,6 +45,8 @@ In this example we perform a join on the `customerid`
 ```
 
 Tricky enough? 
+
+### Exercise
 
 Suppose you want to select item for fields where the state
 of the customer is Colorado, can you do this?

@@ -14,9 +14,11 @@ In the mongo cli use the following command
 With the `use` statement a new database is created.
 Now if you type `db` (which give us the current
 database) you should get `users`. 
+
+### Exercise
 We are ready to insert a new collection, let's call
 it *people*. 
-Once you insert the first document the colletion is created.
+Once you insert the first document the collection is created.
 To insert a document use the following command 
 ```javascript
 > db.people.insert({"id": <ID>, "name": <NAME>})

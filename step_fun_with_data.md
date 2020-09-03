@@ -23,6 +23,8 @@ As a first step let's count the number of items
 ```
 You should get 27. 
 
+### Exercise
+
 In the following you should use the `find` command 
 to select documents. We want to select data based on
 the following criteria:

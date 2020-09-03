@@ -47,6 +47,8 @@ useful for large samples.
 
 Use `print(data)` to show the content.
 
+### Exercise
+
 As a simple test write a `python` code that select
 the data in the *airbnb* databases:
 1. select apartments where the number of bedrooms is 2 or 3 and city is New York or Chicago;
