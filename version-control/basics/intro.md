@@ -9,8 +9,10 @@ You have faced the following situation dozens or hundred of times: you are worki
 
 ---
   
-and you send a version to a collaborator who will contribute revising and editing the file. Let us say you are Alice and your colleague is Bob.
-You keep on working on the file, so does Bob: the two stories of the file saved on Alice's and Bob's computers diverge and we will call them:
+and you send a version to a collaborator who will contribute revising and editing the file.
+ Let us say you are Alice and your colleague's name is Bob.
+You keep on working on the file, so does Bob: the two stories of the file saved on Alice's and Bob's computers diverge
+ and we will call them, respectively:
 
 ---
 
@@ -20,7 +22,7 @@ You keep on working on the file, so does Bob: the two stories of the file saved 
 
 
 Two days later, your boss asks to present the final version of the file, so Bob sends you `sample_file_Bob.txt` and you start assembling
- the final "good" version by merging the two. You do good (and tedious) job and you come out with
+ the final "good" version by merging the two. You do good (and tedious) job and come out with
  
 ---
 
@@ -47,8 +49,8 @@ After a while, you realize Bob's mistake, and you try to amend it. So you work o
 
 ---
 
-and circulate it to the others. Someone who has not followed the thread of email asks to include some additional super important changes, includes the changes 
- on his version and sends a file named:
+and circulate it to the others. Someone who has not followed the thread of email asks to include some additional 
+super important changes, applies the modifications in his version and sends a file named:
 
 ---
 
@@ -93,7 +95,7 @@ Discuss the advantages of:
 - Avoiding email exchanges, rather using OneDrive or Sharepoint
 - Use the cloud version of Office 365
 - Use Microsoft's Teams online file editing
-- use the revision control embedded in Word
+- use the revision control embedded in Microsoft Word
 
 -------------------------
 
@@ -123,7 +125,7 @@ Git is a version control system, selected among many others. It comes as a comma
 #### Why git
 ###### and not other version control systems
 
-Git has overwhelmed all other version control systems int terms of usage prevalence (>90% as of 2020). 
+Git has overwhelmed all other version control systems int terms of usage prevalence (>90% as of 2020, from Stack Overflow trends). 
 
 One of the reasons is because git is a decentralized repository, that is, there is no main authoritative data store on a server,
  which collects the "official" versions. Git gives each developer a local copy of the full development history, which increase safety and redundance.
