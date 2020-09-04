@@ -38,6 +38,11 @@
         "answer": "cherrypick_answer.md"
       },
       {
+        "title": "Undoing commits",
+        "text": "revert.md",
+        "answer": "revert_answer.md"
+      },
+      {
         "title": "Saving changes for later",
         "text": "06-stash.md"
       },
