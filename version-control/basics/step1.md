@@ -109,7 +109,7 @@ No commit has been saved so far other than the default initial commit.
  The only file is ``README.md``.
 
 
-#### File tracking and commit  
+#### File tracking and committing  
 
 Well, let us track ``README.md`` then. This is achieved by
 
