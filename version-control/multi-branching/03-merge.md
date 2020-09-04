@@ -10,7 +10,8 @@ If you switch back to the `master` branch, you'll notice that the work you commi
 To make that file available to the master branch, we need to merge `installation` into `master`.
 
 We can do this with:  
-`git merge installation`
+`git checkout master`{{execute}}  
+`git merge installation`{{execute}}
 
 > Generally speaking, to merge `<branch_B>` into `<branch_A>` we need to run:  
 `git checkout <branch_A>`  

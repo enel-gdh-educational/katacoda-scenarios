@@ -6,7 +6,7 @@
   "details": {
     "steps": [
       {
-        "courseData": "preparation.sh",
+        "background": "preparation.sh",
         "title": "Creating and inspecting branches",
         "text": "01-basicbranching.md",
         "answer": "01-basicbranching_answer.md"
@@ -26,16 +26,21 @@
         "text": "04-Head.md"
       },
       {
-        "courseData":"checkout2.sh",
+        "background":"checkout2.sh",
         "title": "Advanced `checkout` usage",
         "text": "05-checkout2.md",
         "answer": "05-checkout2_answer.md"
       },
       {
-        "courseData": "cherrypick.sh",
+        "background": "cherrypick.sh",
         "title": "Cherry picking",
         "text": "cherrypick.md",
         "answer": "cherrypick_answer.md"
+      },
+      {
+        "title": "Undoing commits",
+        "text": "revert.md",
+        "answer": "revert_answer.md"
       },
       {
         "title": "Saving changes for later",
