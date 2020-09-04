@@ -39,6 +39,37 @@ The graph below shows this workflow:
 
 ![](./assets/feature_branch_workflow.png)
 
+To see a concrete implementation of this workflow, clone the **awesome project** repository:
+
+```git clone https://<your-enel-id>@bitbucket.springlab.enel.com/scm/itdsver/awesome_project.git```{{copy}}
+
+> Remember to replace your Enel id before the '@'.
+
+and then use the `git log` command with some useful arguments:
+
+```git log --all --decorate --oneline --graph ```{{execute}}
+
+The output should looks like this:
+
+```shell
+*   e40b952 (HEAD -> develop, origin/develop) Merge pull request #1 in ITDSVER/awesome_project from feature-adding-comments to develop
+|\  
+| * 60cd855 (origin/feature-adding-comments, feature-adding-comments) add some documentations
+|/  
+* c16c590 next calculator with * operator
+* 9e29755 (origin/master, master) added calculator
+```
+
+There are some interesting informations:
+
+1. There is a branch called **feature-adding-comments** with one commit *"add some documentation"*
+2. This branch was merged into develop and the message of the merge commit message is *"Merge pull request #1 in ITDSVER/awesome_project from feature-adding-comments to develop"*
+
+
+The feature branch called *feature-adding-comments* was born from develop branch and then merged back into develop with a Pull Request.
+
+What's a pull request? We'll know more on the next step.
+
 In the next step we'll create our first feature branch.
 
 
