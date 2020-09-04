@@ -9,3 +9,5 @@ In this step:
 * You must have an Enel account and be able to access the Springlab environment.
 * You must have a partner. (*Collaboration* is the key! :-))
 * All this task must be executed with only one account. (let's say pair programming style!)
+
+> dire che una volta completato bisogna fare il merge ma come informo gli altri se sto mergiando? Introdurre il prossimo passo delle pull requests.

@@ -47,7 +47,7 @@ To see a concrete implementation of this workflow, clone the **awesome project**
 
 and then use the `git log` command with some useful arguments:
 
-```git log --all --decorate --oneline --graph ```{{execute}}
+```cd awesome_project && git log --all --decorate --oneline --graph ```{{execute}}
 
 The output should looks like this:
 
@@ -65,8 +65,7 @@ There are some interesting informations:
 1. There is a branch called **feature-adding-comments** with one commit *"add some documentation"*
 2. This branch was merged into develop and the message of the merge commit message is *"Merge pull request #1 in ITDSVER/awesome_project from feature-adding-comments to develop"*
 
-
-The feature branch called *feature-adding-comments* was born from develop branch and then merged back into develop with a Pull Request.
+This is a concrete application of the feature branch git workflow! 
 
 What's a pull request? We'll know more on the next step.
 
@@ -83,10 +82,12 @@ Suppose you have to fix a bug instead of develop a new feature. Can you follow t
 
 **Exercise 2**
 
-Why we branch off develop instead of master? 
+Why, for developing a new feature, we should branch off develop instead of master? 
 
 ---
 
 **Exercise 3**
+
+Try to modify the `calculator.py` file in `develop`, push your changes and see what happens.
 
 ---

@@ -17,7 +17,8 @@
       },
       {
         "title": "Git Workflow",
-        "text": "step3.md"
+        "text": "step3.md",
+        "answer": "step3-answer.md"
       },
       {
         "title": "Pull Request",
