@@ -1,5 +1,6 @@
 ## Step 4 - Pull Requests
 In this step:
+* you'll create your first feature branch
 * you'll create your first pull request
 * you'll leave your first comment on a pull request
 * you'll update a pull request
@@ -9,5 +10,14 @@ In this step:
 * You must have an Enel account and be able to access the Springlab environment.
 * You must have a partner. (*Collaboration* is the key! :-))
 * All this task must be executed with only one account. (let's say pair programming style!)
+
+> configure git user in order to have the right username in the commits
+
+* setting branch permission explanation
+* creare feature branch
+* push e creazione pull request da browser
+* commento pull request
+* update pull request
+* merge through browser 
 
 > dire che una volta completato bisogna fare il merge ma come informo gli altri se sto mergiando? Introdurre il prossimo passo delle pull requests.
