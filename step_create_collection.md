@@ -8,7 +8,7 @@ The aim of this step is to create a collection
 in a new db called *users* with your id `<ID>` and 
 your name  `<NAME>`. 
 In the mongo cli use the following command
-```javascript
+```
 > use users
 ```
 With the `use` statement a new database is created.
@@ -20,7 +20,7 @@ We are ready to insert a new collection, let's call
 it *people*. 
 Once you insert the first document the collection is created.
 To insert a document use the following command 
-```javascript
+```
 > db.people.insert({"id": <ID>, "name": <NAME>})
 ```
 The next step is to insert more than one record
@@ -42,7 +42,7 @@ can be found here [Indexes](https://docs.mongodb.com/manual/indexes/).
 
 Now you should be able to retrieve data using
 the following command
-```javascript
+```
 > db.people.find()
 ```
 

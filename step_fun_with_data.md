@@ -5,7 +5,7 @@ for further details.
 
 The data can be stored in MongoDB running the
 following bash script 
-```bash
+```
 $ bash loader.sh
 ```
 The script also installed the `python` package `pymongo` that
@@ -17,7 +17,7 @@ are correctly loaded you can use the `show dbs` statement.
 
 To get the collections you can use the command [show collections](https://docs.mongodb.com/manual/release-notes/4.0-compatibility/#compat-show-collections).
 As a first step let's count the number of items
-```javascript
+```
 > use airbnb
 > db.sample_data.count()
 ```

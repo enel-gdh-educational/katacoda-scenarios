@@ -3,7 +3,7 @@
 The first step is the installation of a local
 version of MongoDB. Just type in your terminal
 the following command
-```bash
+```
 $ bash installer.sh
 ```
 It may require few time to be completed. This
@@ -19,7 +19,7 @@ In the terminal just type
 
 To show what is contained in the environment
 use the following command
-```javascript
+```
 > show dbs
 ``` 
 You should see the following output
@@ -30,6 +30,6 @@ local   0.000GB
 ```
 
 To exit use the command
-```javascript
+```
 > quit()
 ``` 

@@ -1,5 +1,5 @@
 ### Exercise 1
-```javascript
+```
 > db.movies.aggregate([
     {$match:{"genres":"Action", cast:"Bruce Willis"}},
     {$sort: {year:-1}}
@@ -8,53 +8,53 @@
 
 ### Exercise 2
 
-```javascript
+```
 > db.movies.aggregate([
 	{$match:{"cast":"Mack Sennett"}},
-	{$group:{_id:0,conteggio:{$sum:1}}}
+	{$group:{_id:0,counts:{$sum:1}}}
   ])
 ```
 An alternative solution could be
-```javascript
+```
 > db.movies.aggregate([
 	{$unwind:"$cast"},
 	{$match:{"cast":"Mack Sennett"}},
-	{$group:{_id:0,conteggio:{$sum:1}}}
+	{$group:{_id:0,counts:{$sum:1}}}
   ])
 ```
 
 ### Exercise 3
 
-```javascript
+```
 > db.movies.aggregate([
 	{$unwind:"$cast"},
-	{$group:{_id:"$cast",conteggio:{$sum:1}}},
-	{$sort:{"conteggio":-1}}
+	{$group:{_id:"$cast",counts:{$sum:1}}},
+	{$sort:{"counts":-1}}
   ])
 ```
 ### Exercise 4
 
-```javascript
+```
 > db.movies.aggregate([
 	{$unwind:"$cast"},
 	{$match:{"cast":{$ne:"and"}}},
-	{$group:{_id:"$cast",conteggio:{$sum:1}}},
-	{$sort:{"conteggio":-1}}
+	{$group:{_id:"$cast",counts:{$sum:1}}},
+	{$sort:{"counts":-1}}
   ])
 ```
 
 ### Exercise 5
-```javascript
+```
 > db.movies.aggregate([
 	{$unwind:"$cast"},
 	{$match:{"cast":{$ne:"and"}}},
-	{$group:{_id:"$cast",conteggio:{$sum:1}}},
-	{$sort:{"conteggio":-1}},
+	{$group:{_id:"$cast",counts:{$sum:1}}},
+	{$sort:{"counts":-1}},
 	{$out:"top_actors"}
   ])
 ```
 ### Exercise 6
-```javascript
+```
 > db.movies.aggregate([
 	{$unwind:"$cast"},
 	{$unwind:"$genres"},

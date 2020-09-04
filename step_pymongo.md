@@ -8,7 +8,7 @@ used languages.
 In the following we use the [pymongo](https://api.mongodb.com/python/current/) driver.
 
 Open a `python3`, or even better an `ipython`, terminal terminal using the following command
-```bash
+```
 $ ipython
 ```
 

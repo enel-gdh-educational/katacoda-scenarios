@@ -26,7 +26,7 @@ Write a query with aggregation and a query with find.*
 Hint: the aggregation could may have this structure.
 The `$match` aggregator operator and the `$sort` 
 aggregator operator have the same syntax of the correspondant match and sort operators of the find query.
-```javascript
+```
 > db.movies.aggregate(
 	[
 		{$match:{ *insert here the filter conditions* }},
@@ -41,7 +41,7 @@ Create an aggregation to count the movies in which
 acted Mack Sennett.
 
 The expected output and structure is:
-```javascript
+```
 {actor:"Mack Sennett", movies:__TODO__}
 ```
 Hint: use the `$match` operator to filter data, 
@@ -51,7 +51,7 @@ to rename variables.
  
 Remember that the aggregate pipeline 
 structure have the following structure:
-```javascript
+```
 > db.movies.aggregate(
 	[
 		{operator1},
@@ -68,7 +68,7 @@ Create an aggregation query to get all the actors
 ordered by the ones that appeared in more movies.
 
 The output must have these first lines with this structure
-```javascript
+```
 { "actor" : "Harold Lloyd", "count_movies" : 190 }
 [...]
 ```
@@ -97,7 +97,7 @@ in which is stored the list and the count of the movies grouped
 by actor and genre, sorted by actor and the by genre, descending.
 
 The final TODO result and structure must be the following:
-```javascript
+```
 { "_id" : ObjectId("5f4a118594ac7614919532bd"), "actor" : "Édgar Ramírez", "genre" : "Action", "count_movies" : 2, "list_movies" : [ "Zero Dark Thirty", "Wrath of the Titans" ]  }
 ```
 *Optional: you can filter out some output dirty records you find*

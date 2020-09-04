@@ -3,7 +3,7 @@
 In this step we analyze a different dataset. It should
 be already loaded in the database. You can access
 via command line using the following command
-```javascript
+```
 > use orders
 ```
 This database has a more complex structure.
@@ -11,7 +11,7 @@ It contains five collection. We can get information
 regarding the collections using the following commands
 [listCollections](https://docs.mongodb.com/manual/reference/command/listCollections/).
 For our purpose just type
-```javascript
+```
 > db.getCollectionNames()
 ```
 
@@ -26,7 +26,7 @@ so-called [unwind](https://docs.mongodb.com/manual/reference/operator/aggregatio
 manipulation.
 
 In this example we perform a join on the `customerid`
-```javascript
+```
 > db.item_ordered.aggregate([
     // first stage in the pipe
     {

@@ -1,6 +1,6 @@
 ### Exercise 1 
 In the bash shell
-```bash
+```
 # import data
 $ mongoimport --db=datasets --collection=movies --file=/root/datasets/movies_limited.json 
 
@@ -8,7 +8,7 @@ $ mongoimport --db=datasets --collection=movies --file=/root/datasets/movies_lim
 $ mongo
 ```
 In the cli
-```javascript
+```
 # switch database
 > use datasets;
 # count the rows
@@ -18,16 +18,16 @@ In the cli
 
 ### Exercise 2 
 In the bash shell:
-```bash
+```
 # import data
 $ mongoimport --db=datasets --collection=cities --type=csv --headerline --file=/root/datasets/cities.csv 
 ```
 Then enter inside the mongo shell
-```bash
+```
 $ mongo
 ```
 In the cli use the following commands
-```javascript
+```
 # switch database
 > use datasets;
 # count the rows
@@ -36,7 +36,7 @@ In the cli use the following commands
 
 ### Exercise 3 
 In the bash shell
-```bash
+```
 # import data
 $ mongoimport --db=datasets --collection=movies --drop --file=/root/datasets/movies.json 
 
@@ -53,7 +53,7 @@ Then in the cli
 
 ### Exercise 4 
 In the bash shell
-```bash
+```
 # create folder (if needed)
 $ mkdir -p /root/exported_data
 
@@ -66,7 +66,7 @@ $ head /root/exported_data/cities.json
 
 ### Exercise 5
 In the bash shell
-```bash
+```
 # create folder (if needed)
 $ mkdir -p /root/exported_data
 
