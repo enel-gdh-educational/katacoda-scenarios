@@ -146,4 +146,4 @@ git commit -m "First commit. Added README"
 
 Congratulations! 
 
-Before, you go to the next step, we suggest to take a couple of minutes to watch (this video)[[I'm an inline-style link](https://www.google.com)]
+Before, you go to the next step, we suggest to take a couple of minutes to watch [this video](https://www.youtube.com/watch?v=t6GMcIoCD9Q)
