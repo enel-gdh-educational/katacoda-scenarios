@@ -62,15 +62,19 @@ The output should looks like this:
 
 There are some interesting informations:
 
-1. There is a branch called **feature-adding-comments** with one commit *"add some documentation"*
+1. There is a branch with one commit having the message *"add some documentation"*
 2. This branch was merged into develop and the message of the merge commit message is *"Merge pull request #1 in ITDSVER/awesome_project from feature-adding-comments to develop"*
+3. The master branch is behind the develop branch.
 
-This is a concrete application of the feature branch git workflow! 
+This is an extremely simple application of the feature branch git workflow! 
 
-What's a pull request? We'll know more on the next step.
+Meantime the project is growing and your teammates is having fun..
 
-In the next step we'll create our first feature branch.
+![](./assets/huge_feature_branch_workflow.png)
 
+
+
+**Hold on...I know you are wondering what a pull request actually is. We'll know more on the next step.**
 
 ##### Exercises
 
