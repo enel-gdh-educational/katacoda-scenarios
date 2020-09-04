@@ -13,7 +13,7 @@ Guide: https://docs.mongodb.com/v4.2/reference/program/mongoimport/
 
 *Tip:* `mongoimport` *is a command that you need to run outside the mongo shell.*
 
-### Exercise 1) 
+### Exercise 1 
 Import json:
 1. Create a new collection `movies` in the db `databases` by importing the 
 json file `/root/datasets/movies_limited.json`. Use the `mongoimport` command.
@@ -21,7 +21,7 @@ json file `/root/datasets/movies_limited.json`. Use the `mongoimport` command.
 rows of your new collection. There should be 16 documents.
 
 
-### Exercise 2) 
+### Exercise 2 
 Import csv:
 1. Create a new collection `cities` in the db `databases` 
 by importing the csv file `datasets/cities.csv`. 
@@ -32,7 +32,7 @@ Use the `mongoimport` command.
 2. Test the result of your import by counting the rows of your 
 new collection. They should be 128
 
-### Exercise 3) 
+### Exercise 3 
 Import truncating existing data:
 1. Import the json file `datasets/movies.json` into the existing 
 collection `datasets.movies`, truncating the old data, that we don't need anymore. 
@@ -46,13 +46,13 @@ Guide: https://docs.mongodb.com/v4.2/reference/program/mongoexport/
 
 *Tip:* `mongoexport` *is a command that you need to run outside the mongo shell.*
 
-### Exercise 4) 
+### Exercise 4 
 Export as json:
 1. Export the collection `datasets.cities` and store it as a 
 json file in the folder `exported_data`. Use the `mongoexport` command.
 2. Check if the file has been created and read its content.
 
-### Exercise 5) 
+### Exercise 5
 Export as csv:
 1. Export the collection `datasets.movies` and store it as a csv file 
 in the folder `exported_data`. 
