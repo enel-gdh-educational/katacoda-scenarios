@@ -15,4 +15,4 @@ The cherry-picked commits are automatically committed to the new branch, with th
 ## Exercise
 
 **Some collaborator created a *model.py* file, which is vital for our project. However, they created it in the wrong branch.**  
-**Create a new `model` branch, then use `git cherry-pick` to apply the commits regarding *model.py* to that branch.**
+**From `master`, create a new `model` branch, then use `git cherry-pick` to apply the commits regarding *model.py* to that branch.**
