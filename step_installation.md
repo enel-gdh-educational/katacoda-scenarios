@@ -4,7 +4,7 @@ The first step is the installation of a local
 version of MongoDB. Just type in your terminal
 the following command
 ```bash
-bash installer.sh
+$ bash installer.sh
 ```
 It may require few time to be completed. This
 script is just a collection of instructions, see 
