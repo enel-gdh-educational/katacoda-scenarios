@@ -44,7 +44,8 @@
       },
       {
         "title": "Saving changes for later",
-        "text": "06-stash.md"
+        "text": "06-stash.md",
+        "answer": "06-stash_answer.md"
       },
       {
         "title": "Merging strategies",
