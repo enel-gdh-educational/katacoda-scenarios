@@ -81,9 +81,25 @@ Starting from the inspection of the file named after the id of your commit, cont
 
 ---
 
+#### Checkout folder
+
+Before going further, let us introduce a key notion in git: the checkout directory,
+ which is identified as the parent directory of ``.git``.
+
+The content of the checkout folder can be aligned by simple commands to any 
+versions of the repo, by specifying the minimal information to identify it uniquely.
+
+This operation is called ``checkout`` and can be applied
+ to all the files included in a repository, or to specific files.
+  
+From the checkout folder, you can make changes to the files, and, eventually,
+ save a new version by commiting the changes.
+
+To know what is the commit currently checked out, just look at the top entry outputted by ``git log``.
+
 #### Let us play more with commits
 
-So far, we have done something very simple: started tracking a new file, added it to the staging area, and made your forst commit.
+So far, we have done something very simple: started tracking a new file, added it to the staging area, and made your first commit.
 
 Let us simulate the natural evolution of a project.
 
@@ -99,9 +115,30 @@ and see how git reacts to this change.
 
 __Question 1__
 
-Explain what the output of ``git status``
+Explain the output of ``git status`` after the change.
 
 ---
+
+Git can tell you at any time the difference between the files in the folder and 
+
+
+```bash
+git diff
+```
+
+Alternatively, you can 
+
+
+Our goal is now to save a version of the latest changes. To this aim, we first have to _stage_ the modified file via:
+
+```bash
+git add README.md
+```
+
+N.B. this time the effect of ``git add`` is only that of adding the changes to the staging area, since `README.md` was already tracked by git.
+
+---
+
 
 
 

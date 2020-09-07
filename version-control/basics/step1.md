@@ -64,10 +64,9 @@ __Exercise 2__
 Check that the folder ``.git`` has been created
 
 ---
+ 
 
-#### Checkout folder
-
-TODO Let us introduce one fundamental concept, the checkout folder. Bla Bla 
+#### First commit
  
 Let us create a first file that will be included in our repo:
   
@@ -147,3 +146,5 @@ git commit -m "First commit. Added README"
 Congratulations! 
 
 Before, you go to the next step, we suggest to take a couple of minutes to watch [this video](https://www.youtube.com/watch?v=t6GMcIoCD9Q)
+
+

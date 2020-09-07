@@ -66,6 +66,22 @@ you'll get the content of README.txt.
 
 __Question 1__
 
+The output of `git status` should look like:
 
+```bash
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
 
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+```
+
+. This is signalling that the file `README.md` that is tracked by `git` has been modified. 
+You can now decide to stage the changes to eventually commit them
+ or restore the version stored in the present commit
 ---
