@@ -31,7 +31,6 @@ In both cases, the slot number can be omitted – this will default the command 
 **You're working on the installation guide. For instance, try adding a simple line to the file.**
 **Now, the boss tells you that the user manual needs to be expanded (even if your changes to the installation guide are not yet ready to be committed).**
 **Switch to the user_manual branch (using `git stash` to save your work on the installation guide) and work a bit on the file.**
-**Soon, however, the boss calls again to tell you that the model needs to be fixed ASAP.**
-**Switch to the model branch and add a line to the file, stage and commit.**
-**Now switch back to the manual branch and apply the changed you were implementing, stage and commit.**
-**What's left in the stash? Try emptying it – those changes were not that great anyway...**
+**Soon, however, the boss calls again and tells the changes are not needed anymore – you can resume working on the installation guide.**
+**Switch back to the installation branch (again saving your work with `git stash`) and apply the changed you were implementing, stage and commit.**
+**The changes to user_manual.txt were not that great after all...remove them from the stash.**
