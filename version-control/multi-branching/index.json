@@ -53,7 +53,8 @@
       },
       {
         "title": "Relocating branches",
-        "text": "07-rebase.md"
+        "text": "07-rebase.md",
+        "answer": "07-rebase_answer.md"
       },
       {
         "title": "Branching models",
