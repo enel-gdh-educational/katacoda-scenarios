@@ -7,7 +7,7 @@
     "assets": {
       "client": [
         {
-          "file": "basics_project/",
+          "file": "basic_project/*",
           "target": "/home/scrapbook/tutorial"
         }
       ]
