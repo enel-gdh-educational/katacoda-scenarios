@@ -1,0 +1,31 @@
+{
+  "title": "Kafka Scenario",
+  "description": "How to create a Kafka Cluster",
+  "difficulty": "Intermediate",
+  "time": "20",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+	  {
+        "title": "Step 2",
+        "text": "step2.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "minikube"
+  }
+}
