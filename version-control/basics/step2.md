@@ -89,6 +89,20 @@ Let us simulate the natural evolution of a project.
 
 Let us add a new line to the ``README.md`` file:
 
+```bash
+echo "Some additional info" >> README.md
+```
+
+and see how git reacts to this change.
+
+---
+
+__Question 1__
+
+Explain what the output of ``git status``
+
+---
+
 
 
 Make some changes or add a new file
