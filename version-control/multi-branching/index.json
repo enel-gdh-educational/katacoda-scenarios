@@ -44,7 +44,8 @@
       },
       {
         "title": "Saving changes for later",
-        "text": "06-stash.md"
+        "text": "06-stash.md",
+        "answer": "06-stash_answer.md"
       },
       {
         "title": "Merging strategies",
@@ -52,7 +53,8 @@
       },
       {
         "title": "Relocating branches",
-        "text": "07-rebase.md"
+        "text": "07-rebase.md",
+        "answer": "07-rebase_answer.md"
       },
       {
         "title": "Branching models",

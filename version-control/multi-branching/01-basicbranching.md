@@ -16,7 +16,7 @@ A new branch can be created by simply passing the new branch name to `git branch
 
 To rename an existing branch, use `git branch -m <old_branch_name> <new_branch_name>`.
 
-You can also delete a branch by using `git branch -d <branch_name>`.
+You can also delete a branch by using `git branch -d <branch_>`.
 
 ## Exercise
 
