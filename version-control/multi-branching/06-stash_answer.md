@@ -6,14 +6,14 @@ Try editing the installation.txt file. For instance, from the terminal you could
 `echo "This is the installation guide." >> installation.txt`{{execute}}  
 
 *Now try switching to the user_manual branch: what happens?*  
-`git checkout user_manual`  
+*`git checkout user_manual`*{{execute}}
 
 Save your work and finally switch to the user_manual branch:  
 `git stash`{{execute}}
 `git checkout user_manual`{{execute}}
 
 Edit the user_manual.txt file. For instance, you can edit from the terminal:  
-`echo "USER MANUAL" >> user_manual.txt`
+`echo "USER MANUAL" >> user_manual.txt`{{execute}}
 
 Save the change and switch back to installation:  
 `git stash`{{execute}}
@@ -26,3 +26,4 @@ Now, apply and commit the changes you saved earlier:
 
 Finally, empty the stash:  
 `git stash drop`{{execute}}
+
