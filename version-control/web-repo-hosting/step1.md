@@ -28,6 +28,12 @@ The repository name must be the concatenation of yours surnames with "_" as deli
 ##### Create your local project 
 Now it's time to write some code and begin your new project. This project will be host on the repository created at step before.
 
+Before write some code we need to configure Git with our username and password:
+
+```git config --global user.name "<your-name>"```{{copy}}
+
+```git config --global user.email "<your-enel-email-address>```{{copy}}
+
 Create a new local folder called project:
 
 ```mkdir project```{{execute}}
