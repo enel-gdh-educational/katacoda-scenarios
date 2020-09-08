@@ -12,15 +12,6 @@ In this step:
 * You must have a partner. (*Collaboration* is the key! :-))
 * All this task must be executed with only one account. (let's say pair programming style!)
 
-> configure git user in order to have the right username in the commits
-
-* setting branch permission explanation
-* creare feature branch
-* push e creazione pull request da browser
-* commento pull request
-* update pull request
-* merge through browser 
-
 > dire che una volta completato bisogna fare il merge ma come informo gli altri se sto mergiando? Introdurre il prossimo passo delle pull requests.
 
 ##### Configure branch permission
@@ -48,10 +39,66 @@ and create the feature branch. The feature branch name must be the concatenation
 
 > Surname1: Bianchi, Surname2: Rossi -> Repository name: feature_bianchi_rossi
 
-```cd /home/scrapbook/tutorial/awesome_project```{{execute}}
+We'll work on this branch, so use `git checkout` to switch the working branch.
+
+```git checkout -b <your-feature-branch-name>```{{copy}}
+
+Now we must add a new feature in the awesome_project adding a new file:
+
+```touch /home/scrapbook/tutorial/awesome_project/my_feature.py```{{execute}}
+
+Edit the file and add whatever you want.
+
+`./project/calculator.py`{{open}}
+
+Now, your new amazing feature is developed and you are ready to commit and push to remote repository.
+
+```cd /home/scrapbook/tutorial/awesome_project && git add .```{{execute}}
+
+```git commit -m "added new feature"```{{execute}}
+
+```git push -u origin <your-feature-branch-name>"```{{execute}}
+
+##### Pull request
+
+Now your new feature has been pushed to the remote repository. But we cannot push directly on develop because the push is blocked by a specific repository setting. 
+
+In the step before we focused on *feature branch* workflow and we need to integrate our feature in the next release code that resides in the develop branch.
+
+The only way he have to do this is to create a **Pull Request.**
+
+**Pull requests** let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
+
+##### Create a pull request
+
+Now it's time to discuss your changes with other guys. 
+Go to the [repository address](https://bitbucket.springlab.enel.com/projects/ITDSVER/repos/awesome_project/browse) with your browser and click on *Create pull request* button on the left pane.
+
+![](./assets/create_pull_request_button.png)
+
+Every Pull Request must have some mandatory fields:
+
+* a source (project + branch)
+* a destination (project + destination)
+* a title
+* one or more approvers
+
+![](./assets/create_pull_request_step_1.png)
 
 
+In the figure above we're creating a pull request from the `feature_di_stefano` branch to `develop` branch.
 
+Execute the same step substituting `feature_di_stefano` with `your-feature-branch-name` and click on **Continue** button.
 
+Now you should insert the title of this Pull Request, the approvers and the approvers list like the figure below shows:
 
+![](./assets/create_pull_request_step_2.png)
 
+> Add your colleague and Damiano Di Stefano as approver.
+
+Finally, you can create the Pull Request with the **Create** button.
+Every user added in the Reviewers field will be notified.
+
+##### Comment and update a pull request
+
+##### Approve pull request and merge
