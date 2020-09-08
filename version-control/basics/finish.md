@@ -6,6 +6,10 @@ We have covered the basis of git to a deeper level than what is usually done.
 At this point, if you are keen to revise the main topics or interested in knowing more,
  you can check the following references.
 
+TODO: Add a reminder
+
+
+
 Some additional resources, sorted by complexity: 
  
 - [Katacoda official git course](https://www.codecademy.com/learn/learn-git). A simple but less comprehensive course than the present one. 
