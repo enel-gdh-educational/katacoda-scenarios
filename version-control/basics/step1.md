@@ -85,7 +85,7 @@ The output should look like:
 ```
 On branch master
 
-Initial commit
+No commits yet
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -102,10 +102,12 @@ Let us inspect the output:
  of evolution of the project and you can have multiple branches in one repository. At need, you can always merge one branch into another.
 
 - The second line tells you what is the commit, that is, the snapshot of the project that is checked out in your folder. 
-No commit has been saved so far other than the default initial commit.
+No commit has been saved so far.
 
 - Then you are notified about the files in the present folder that might be tracked by git, but are not yet.
  The only file is ``README.md``.
+ 
+- Finally, a hint what you could do next, namely start tracking some files before you can actually commit anything. 
 
 
 #### File tracking and committing  
