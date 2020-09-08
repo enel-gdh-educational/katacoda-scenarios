@@ -1,10 +1,11 @@
-Now that we got the basics, we can introduce the HEAD concept.
+Now that we got the basics, we can introduce more advanced concepts.  
+Let's start with the HEAD.
 
 ---
 
-Generally speaking, HEAD is a reference to a specific commit in the repository. At any moment, you can check where HEAD is pointing using `cat .git/HEAD`{{execute}}  
+HEAD is a reference to a specific commit in the repository. At any moment, you can check where HEAD is pointing using `cat .git/HEAD`{{execute}}  
 
-In short, HEAD it's the "current branch". When a branch is checked out, HEAD points to the current branch reference, which is in turn a pointer to the last commit made on that branch. That means HEAD will be the parent of the next commit that is created.  
+In most cases, HEAD it's the "current branch". When a branch is checked out, HEAD points to the current branch reference, which is in turn a pointer to the last commit made on that branch. That means HEAD will be the parent of the next commit that is created.  
 When a new commit is added to that branch, HEAD (as well as the branch pointer) is updated and moved forward, to reference this last commit.  
 If we then switch branch with `git checkout`, HEAD is updated to point to the last commit of the new branch.
 
