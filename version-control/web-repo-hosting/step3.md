@@ -39,9 +39,9 @@ The graph below shows this workflow:
 
 ![](./assets/feature_branch_workflow.png)
 
-To see a concrete implementation of this workflow, clone the **awesome project** repository:
+To see a concrete implementation of this workflow, clone the **awesome project** repository in the `awesome_project` folder:
 
-```git clone https://<your-enel-id>@bitbucket.springlab.enel.com/scm/itdsver/awesome_project.git```{{copy}}
+```git clone https://<your-enel-id>@bitbucket.springlab.enel.com/scm/itdsver/awesome_project.git /home/scrapbook/tutorial/awesome_project```{{copy}}
 
 > Remember to replace your Enel id before the '@'.
 

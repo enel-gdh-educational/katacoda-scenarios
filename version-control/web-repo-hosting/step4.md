@@ -36,3 +36,22 @@ In order to enable the feature-branch workflow we must avoid changes directly in
 
 ![](./assets/add_branch_permission.png)
 
+##### Create your first feature branch
+
+Now it's time to create your first feature branch.
+
+Go on the awesome_project folder where you cloned the project in the previous step:
+
+```cd /home/scrapbook/tutorial/awesome_project```{{execute}}
+
+and create the feature branch. The feature branch name must be the concatenation of yours surnames with "_" as delimiter with `feature` keywork suffix.
+
+> Surname1: Bianchi, Surname2: Rossi -> Repository name: feature_bianchi_rossi
+
+```cd /home/scrapbook/tutorial/awesome_project```{{execute}}
+
+
+
+
+
+
