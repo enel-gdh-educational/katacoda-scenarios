@@ -120,6 +120,9 @@ However, a modern version control systems allows you to:
 
 Git is a version control system, selected among many others. It comes as a command line interface, that is, a tool that
  you can use from the terminal of your computer.
+ 
+Let us take a break, then watch a [short video](https://www.youtube.com/watch?v=M-O8ZNW9icQ&feature=youtu.be)
+ to add some more motivation why to use version control.
 
 
 #### Why git
@@ -145,6 +148,8 @@ Moreover, the operations of saving new project snapshots as well as applying the
 To have fun, as a note on how Git compares to other VCS, one of its development principle reads:
 
 - Take Concurrent Versions System (CVS) as an example of what not to do; if in doubt, make the exact opposite decision.
+
+
 
 #### Git is not Github! 
 ##### nor Bitbucket or any other web code hosting service or graphical interface.
