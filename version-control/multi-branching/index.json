@@ -48,10 +48,6 @@
         "answer": "06-stash_answer.md"
       },
       {
-        "title": "Merging strategies",
-        "text": "06-strategies.md"
-      },
-      {
         "title": "Relocating branches",
         "text": "07-rebase.md",
         "answer": "07-rebase_answer.md"
