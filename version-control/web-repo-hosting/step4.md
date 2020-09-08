@@ -1,5 +1,6 @@
 ## Step 4 - Pull Requests
 In this step:
+* you'll modify the branch permission of your repository
 * you'll create your first feature branch
 * you'll create your first pull request
 * you'll leave your first comment on a pull request
@@ -21,3 +22,17 @@ In this step:
 * merge through browser 
 
 > dire che una volta completato bisogna fare il merge ma come informo gli altri se sto mergiando? Introdurre il prossimo passo delle pull requests.
+
+##### Configure branch permission
+As you saw in the last exercise of the previous step, applying a specific workflow like the feature branch one means that you have to limit some branch permission in order to avoid modifications to master and/or develop branches.
+
+To setup your new remote correctly go to the repository page you created at step #1 in the [version_control_course](https://bitbucket.springlab.enel.com/projects/ITDSVER) project and click on *Repository Settings* button on the left pane.
+
+![](./assets/repository_setting_button.png)
+
+Then, go to branch permission and add a new branch permission for the **master** branch.
+
+In order to enable the feature-branch workflow we must avoid changes directly into the master branch selecting the permission *"Prevent changes without a pull request"* and leaving the exception textbox field empty.
+
+![](./assets/add_branch_permission.png)
+
