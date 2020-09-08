@@ -49,7 +49,7 @@ Now we must add a new feature in the awesome_project adding a new file:
 
 Edit the file and add whatever you want.
 
-`./project/calculator.py`{{open}}
+`./home/scrapbook/tutorial/awesome_project/my_feature.py`{{open}}
 
 Now, your new amazing feature is developed and you are ready to commit and push to remote repository.
 
@@ -57,7 +57,7 @@ Now, your new amazing feature is developed and you are ready to commit and push 
 
 ```git commit -m "added new feature"```{{execute}}
 
-```git push -u origin <your-feature-branch-name>"```{{execute}}
+```git push -u origin <your-feature-branch-name>"```{{copy}}
 
 ##### Pull request
 
