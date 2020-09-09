@@ -90,7 +90,7 @@ In the figure above we're creating a pull request from the `feature_di_stefano` 
 
 Execute the same step substituting `feature_di_stefano` with `your-feature-branch-name` and click on **Continue** button.
 
-Now you should insert the title of this Pull Request, the approvers and the approvers list like the figure below shows:
+Now you should insert the title of this Pull Request and the approvers.
 
 ![](./assets/create_pull_request_step_2.png)
 
@@ -101,4 +101,37 @@ Every user added in the Reviewers field will be notified.
 
 ##### Comment and update a pull request
 
+Now you can view your pull request through your browser and the approvers can leave some comments to require some changes or clarifications. 
+
+To update a pull request you have to simply add a new commit to your feature branch and then push to origin.
+
 ##### Approve pull request and merge
+
+Approvers can accept the changes with the *Approve* button at the right top of pull request page.
+
+##### Exercises
+
+---
+**Exercise 1**
+The repository you created at step #1 is now enabled for the feature branch workflow. The master branch is locked and you can't push.
+
+In this exercise you have to:
+
+1. Create a new feature branch with some changes
+2. Add your colleague as approver
+3. Update your pull request
+4. Merge your feature branch into the master branch
+
+---
+
+**Exercise 2**
+The repository you created at step #1 is now enabled for the feature branch workflow but the `develop` branch is missing.
+
+In order to fix this situation you have to:
+
+1. Create the `develop` branch from master.
+2. Set the proper branch permission to `develop` branch.
+3. Create a feature branch from `develop` make some modifications and then create a PR `feature-branch -> develop`
+4. Merge this PR
+5. Create a PR from `develop -> master``
+6. Update `master` branch merging the last PR
