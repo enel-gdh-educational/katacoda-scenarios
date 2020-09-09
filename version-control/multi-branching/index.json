@@ -6,7 +6,7 @@
   "details": {
     "steps": [
       {
-        "background": "preparation.sh",
+        "background": "01-preparation.sh",
         "title": "Creating and inspecting branches",
         "text": "01-basicbranching.md",
         "answer": "01-basicbranching_answer.md"
@@ -26,35 +26,35 @@
         "text": "04-Head.md"
       },
       {
-        "background":"checkout2.sh",
+        "background":"05-checkout2.sh",
         "title": "Advanced `checkout` usage",
         "text": "05-checkout2.md",
         "answer": "05-checkout2_answer.md"
       },
       {
-        "background": "cherrypick.sh",
+        "background": "06-cherrypick.sh",
         "title": "Cherry picking",
-        "text": "cherrypick.md",
-        "answer": "cherrypick_answer.md"
+        "text": "06-cherrypick.md",
+        "answer": "06-cherrypick_answer.md"
       },
       {
         "title": "Undoing commits",
-        "text": "revert.md",
-        "answer": "revert_answer.md"
+        "text": "'07-revert.md",
+        "answer": "07-revert_answer.md"
       },
       {
         "title": "Saving changes for later",
-        "text": "06-stash.md",
-        "answer": "06-stash_answer.md"
+        "text": "08-stash.md",
+        "answer": "08-stash_answer.md"
       },
       {
         "title": "Relocating branches",
-        "text": "07-rebase.md",
-        "answer": "07-rebase_answer.md"
+        "text": "09-rebase.md",
+        "answer": "09-rebase_answer.md"
       },
       {
         "title": "Branching workflows",
-        "text": "models.md"
+        "text": "10-workflows.md"
       }
     ],
     "intro": {
