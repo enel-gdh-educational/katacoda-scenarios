@@ -7,8 +7,8 @@
     "assets": {
       "client": [
         {
-          "file": ".gitignore",
-          "target": "/home/scrapbook/tutorial/basic_project"
+          "file": "gitignore",
+          "target": "/home/scrapbook/tutorial/"
         }
       ]
     },
