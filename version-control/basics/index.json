@@ -7,7 +7,7 @@
     "assets": {
       "client": [
         {
-          "file": "gitignore",
+          "file": "basic_project/*",
           "target": "/home/scrapbook/tutorial/"
         }
       ]
@@ -16,19 +16,26 @@
       {
         "title": "Step 1",
         "text": "step1.md",
-        "answer": "step1-answers.md"
+        "answer": "step1-answers.md",
+        "code": "step1.sh"
       },
       {
         "title": "Step 2",
-        "text": "step2.md"
+        "text": "step2.md",
+        "answer": "step2-answers.md",
+        "code": "step2.sh"
       },
       {
         "title": "Step 3",
-        "text": "step3.md"
+        "text": "step3.md",
+        "answer": "step3-answers.md",
+        "code": "step3.sh"
       },
       {
         "title": "Step 4",
-        "text": "step4.md"
+        "text": "step4.md",
+        "answer": "step4-answers.md",
+        "code": "step4.sh"
       }
     ],
     "intro": {
