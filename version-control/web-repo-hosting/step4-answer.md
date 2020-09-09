@@ -15,6 +15,5 @@ Go to repository and set the proper branch permissions to `develop` to inhibit t
 
 now you can execute the same steps explained in this lesson.
 
-
-
 ---
+

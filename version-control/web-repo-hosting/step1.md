@@ -1,8 +1,8 @@
 ## Step 1 - Create new repository and initialize a project
 In this step:
-* we will create a new repository in the **version_control_course** bitbucket project available [here](https://bitbucket.springlab.enel.com/projects/ITDSVER) 
-* we'll create a new project locally
-* we'll sync our local repository with the remote one
+* you'll create a new repository in the **version_control_course** bitbucket project available [here](https://bitbucket.springlab.enel.com/projects/ITDSVER) 
+* you'll create a new project locally
+* you'll sync your local repository with the remote one
 
 ##### Prerequisites
 * You must have an Enel account and be able to access the Springlab environment.
@@ -25,6 +25,8 @@ The repository name must be the concatenation of yours surnames with "_" as deli
 
 ![](./assets/create_repo_name.png)
 
+Once you create the repository, if you come back at the [version_control_course](https://bitbucket.springlab.enel.com/projects/ITDSVER) project you'll see the new repository in the repositories page.
+
 ##### Create your local project 
 Now it's time to write some code and begin your new project. This project will be host on the repository created at step before.
 
@@ -32,14 +34,14 @@ Before write some code we need to configure Git with our username and password:
 
 ```git config --global user.name "<your-name>"```{{copy}}
 
-```git config --global user.email "<your-enel-email-address>```{{copy}}
+```git config --global user.email "<your-enel-email-address>"```{{copy}}
 
 Create a new local folder called project:
 
-```mkdir project```{{execute}}
+```mkdir /home/scrapbook/tutorial/project```{{execute}}
 
 create a file called *calculator.py* in the project folder.
-```cd project && touch calculator.py```{{execute}}
+```cd /home/scrapbook/tutorial/project && touch calculator.py```{{execute}}
 
 modify the file and paste this content (don't worry about the wrong sum function, we will fix this in the next steps):
 
@@ -106,3 +108,6 @@ Try to rename the `origin` remote name to `enel` (then check with `git remote -v
 
 **Exercise 3**
 Add a new function in `calculator.py` that executes the division between two number and push this new code.
+
+**Exercise 4**
+How can I see my current git config values?
