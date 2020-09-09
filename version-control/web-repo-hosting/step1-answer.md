@@ -21,3 +21,8 @@ Then:
 `git push -u <your remote name> master`
 
 ---
+**Exercise 4**
+
+`git config -l`
+
+---
