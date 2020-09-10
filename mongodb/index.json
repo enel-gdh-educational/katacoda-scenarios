@@ -1,0 +1,111 @@
+{
+  "title": "Enel MongoDB scenario",
+  "description": "A tutorial on MongoDB",
+  "difficulty": "Beginner",
+  "time": "30 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - Installation",
+        "text": "step_installation.md"
+      },
+      {
+        "title": "Step 2 - Create a collection",
+        "text": "step_create_collection.md",
+        "answer": "step_create_collection-answer.md"
+      },
+      {
+        "title": "Step 3 - Fun with data",
+        "text": "step_fun_with_data.md",
+        "answer": "step_fun_with_data-answer.md"
+      },
+      {
+        "title": "Step 4 - Import and export",
+        "text": "step_import_export.md",
+        "answer": "step_import_export-answer.md"
+      },
+      {
+        "title": "Step 5 - Aggregation",
+        "text": "step_aggregation.md",
+        "answer": "step_aggregation-answer.md"
+      },
+      {
+        "title": "Step 6 - Join",
+        "text": "step_join.md",
+        "answer": "step_join-answer.md"
+      },
+      {
+        "title": "Step 7 - Using pymongo",
+        "text": "step_pymongo.md",
+        "answer": "step_pymongo-answer.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {
+          "file": "loader.py",
+          "target": "/root/",
+          "chmod": "+x"
+        },
+        {
+          "file": "loader.sh",
+          "target": "/root/",
+          "chmod": "+x"
+        },
+        {
+          "file": "installer.sh",
+          "target": "/root/",
+          "chmod": "+x"
+        },
+        {
+          "file": "datasets/airbnb.json",
+          "target": "/root/",
+          "chmod": "+x"
+        },
+        {
+          "file": "datasets/customers.csv",
+          "target": "/root/",
+          "chmod": "+x"
+        },
+        {
+          "file": "datasets/items_ordered.csv",
+          "target": "/root/",
+          "chmod": "+x"
+        },
+        {
+          "file": "datasets/zips.json",
+          "target": "/root/datasets",
+          "chmod": "+x"
+        },
+        {
+          "file": "datasets/movies.json",
+          "target": "/root/datasets",
+          "chmod": "+x"
+        },
+        {
+          "file": "datasets/movies_limited.json",
+          "target": "/root/datasets",
+          "chmod": "+x"
+        },
+        {
+          "file": "datasets/cities.csv",
+          "target": "/root/datasets",
+          "chmod": "+x"
+        }
+      ]
+    },
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uimessage1": "\u001b[32_Your Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
