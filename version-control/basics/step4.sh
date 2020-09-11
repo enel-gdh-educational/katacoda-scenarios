@@ -14,3 +14,4 @@ git commit -m "README modified. hello_world added."
 
 git gc
 
+clear

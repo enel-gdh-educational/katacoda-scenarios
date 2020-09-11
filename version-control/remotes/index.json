@@ -6,7 +6,7 @@
   "details": {
     "steps": [
       {
-        "courseData": "set_env.sh",
+        "courseData": "01-set_env.sh",
         "text": "01-set_env.md",
         "answer": "01-set_env-answer.md"
       },
