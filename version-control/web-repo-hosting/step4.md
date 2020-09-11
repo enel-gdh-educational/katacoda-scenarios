@@ -10,9 +10,7 @@ In this step:
 ##### Prerequisites
 * You must have an Enel account and be able to access the Springlab environment.
 * You must have a partner. (*Collaboration* is the key! :-))
-* All this task must be executed with only one account. (let's say pair programming style!)
-
-> dire che una volta completato bisogna fare il merge ma come informo gli altri se sto mergiando? Introdurre il prossimo passo delle pull requests.
+* All this task (except where specified) must be executed with only one account. (let's say pair programming style!)
 
 ##### Configure branch permission
 As you saw in the last exercise of the previous step, applying a specific workflow like the feature branch one means that you have to limit some branch permission in order to avoid modifications to master and/or develop branches.
