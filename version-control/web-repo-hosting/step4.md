@@ -63,7 +63,7 @@ Now your new feature has been pushed to the remote repository. But we cannot pus
 
 In the step before we focused on *feature branch* workflow and we need to integrate our feature in the next release code that resides in the develop branch.
 
-The only way he have to do this is to create a **Pull Request.**
+The only way we have to do this is to create a **Pull Request.**
 
 **Pull requests** let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
 
