@@ -18,6 +18,8 @@ database) you should get `users`.
 ### Exercise
 We are ready to insert a new collection, let's call
 it *people*. 
+Notice that we have a text editor to write our queries, it
+might be useful.
 Once you insert the first document the collection is created.
 To insert a document use the following command 
 ```
