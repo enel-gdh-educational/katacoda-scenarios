@@ -77,7 +77,7 @@ echo "This repo contains the project for the course Version Control Systems" > R
 The main command to inspect the state of your project is:
 
 ```bash
-git status
+git status {{copy}}
 ```
 
 The output should look like:
