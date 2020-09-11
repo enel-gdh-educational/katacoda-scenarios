@@ -1,0 +1,1 @@
+mongoimport -d datasets -c zip --file zips.json
