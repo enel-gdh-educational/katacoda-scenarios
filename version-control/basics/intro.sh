@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-git config color.ui false
+git config --global color.ui false
