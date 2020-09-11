@@ -133,5 +133,5 @@ In order to fix this situation you have to:
 2. Set the proper branch permission to `develop` branch.
 3. Create a feature branch from `develop` make some modifications and then create a PR `feature-branch -> develop`
 4. Merge this PR
-5. Create a PR from `develop -> master``
+5. Create a PR from `develop -> master`
 6. Update `master` branch merging the last PR
