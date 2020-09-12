@@ -10,7 +10,7 @@ Let's see some common workflows; for more information, check the [Pro Git book c
 
 A centralized workflow doesn't use any branch other than `master`. All changes are committed to `master`; commits diverging from it are rebased on `master` and conflicts are manually resolved.
 
-![](./assets/centralized.svg)
+![](./assets/centralized.png)
 
 *Note that conflicts will be explained in detail in the next scenario.*
 
