@@ -9,7 +9,7 @@ In this step:
 * You must have the right permission level to create a new repository in the 
 **version_control_course_project**
 * You must have a partner. (*Collaboration* is the key! :-))
-* All this task must be executed with only one account. (let's say pair programming style!)
+* All this task (except where specified) must be executed with only one account. (let's say pair programming style!)
 
 ##### Create new Repository
 First of all we need a new remote repository. Such repository will host our awesome code.
@@ -31,6 +31,8 @@ Once you create the repository, if you come back at the [version_control_course]
 Now it's time to write some code and begin your new project. This project will be host on the repository created at step before.
 
 Before write some code we need to configure Git with our username and password:
+
+>This task must be executed in both accounts.
 
 ```git config --global user.name "<your-name>"```{{copy}}
 

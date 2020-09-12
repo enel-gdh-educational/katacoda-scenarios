@@ -10,9 +10,7 @@ In this step:
 ##### Prerequisites
 * You must have an Enel account and be able to access the Springlab environment.
 * You must have a partner. (*Collaboration* is the key! :-))
-* All this task must be executed with only one account. (let's say pair programming style!)
-
-> dire che una volta completato bisogna fare il merge ma come informo gli altri se sto mergiando? Introdurre il prossimo passo delle pull requests.
+* All this task (except where specified) must be executed with only one account. (let's say pair programming style!)
 
 ##### Configure branch permission
 As you saw in the last exercise of the previous step, applying a specific workflow like the feature branch one means that you have to limit some branch permission in order to avoid modifications to master and/or develop branches.
@@ -65,7 +63,7 @@ Now your new feature has been pushed to the remote repository. But we cannot pus
 
 In the step before we focused on *feature branch* workflow and we need to integrate our feature in the next release code that resides in the develop branch.
 
-The only way he have to do this is to create a **Pull Request.**
+The only way we have to do this is to create a **Pull Request.**
 
 **Pull requests** let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
 
@@ -133,5 +131,5 @@ In order to fix this situation you have to:
 2. Set the proper branch permission to `develop` branch.
 3. Create a feature branch from `develop` make some modifications and then create a PR `feature-branch -> develop`
 4. Merge this PR
-5. Create a PR from `develop -> master``
+5. Create a PR from `develop -> master`
 6. Update `master` branch merging the last PR

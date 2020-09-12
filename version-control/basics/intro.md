@@ -149,6 +149,7 @@ To have fun, as a note on how Git compares to other VCS, one of its development 
 
 - Take Concurrent Versions System (CVS) as an example of what not to do; if in doubt, make the exact opposite decision.
 
+Finally, [this short video](https://www.youtube.com/watch?v=_yQlKEq-Ueg) might help you getting an idea of what a distributed VCS is.
 
 
 #### Git is not Github! 
