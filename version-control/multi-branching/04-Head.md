@@ -19,6 +19,4 @@ Checking out a commit will update HEAD to that commit. This situation, where HEA
 
 In this situation too, new commits will be added to the commit HEAD is pointing to, and HEAD will be updated each time to refer to the most recent commit in the new line. The new commits, however, are only referenced to by HEAD – and not by any other branch. If we `checkout` another branch, HEAD will be updated to this branch and those commits will be deleted by Git. To avoid this, we need to create a new branch or tag that will point to them.
 
-![Detached Head][detachedhead]
-
-[detachedhead]: https://github.com/dcc-sapienza/katacoda-scenarios/blob/master/version-control/multi-branching/assets/detached_head.png
+![Detached Head](https://github.com/dcc-sapienza/katacoda-scenarios/blob/master/version-control/multi-branching/assets/detached_head.png)

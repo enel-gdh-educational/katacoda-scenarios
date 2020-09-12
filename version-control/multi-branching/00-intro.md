@@ -1,7 +1,7 @@
 # Branching in Git
 
-Branches are a powerful feature in Git, enabling free experimentation and a modular development of a software project.  
-As branches in Git are lightweight, operating with them is extremely fast – even instantneous at time. This encourages workflows that branch and merge often,
+Branches are a powerful Git feature, enabling free experimentation and a modular development of a software project.  
+Branches in Git are lightweight, and operating with them is extremely fast – often instantneous: this encourages workflows that branch and merge often.
 
 ---
 
