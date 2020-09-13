@@ -7,8 +7,8 @@
     "assets": {
       "client": [
         {
-          "file": "basic_project/",
-          "target": "/home/scrapbook/tutorial/"
+          "file": "basic_project/*",
+          "target": "/home/scrapbook/tutorial/basic_project"
         }
       ]
     },
@@ -38,10 +38,10 @@
         "code": "step4.sh"
       },
       {
-        "title": "Step 4",
-        "text": "step4.md",
-        "answer": "step4-answers.md",
-        "code": "step4.sh"
+        "title": "Step 5",
+        "text": "step5.md",
+        "answer": "step5-answers.md",
+        "code": "step5.sh"
       }
 
     ],

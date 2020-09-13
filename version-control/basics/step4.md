@@ -86,65 +86,75 @@ ___
 
 
 
+#### `git commit -a` is so so! `git commit -A` is the devil. 
 
-#### `git commit -a` is the devil!
+Let us admit it, adding file one by one is tedious, so if there were a method to spare time everyone would be tempted to use it.
+Actually, that method exists and is
 
-So, if anyone recommends you to use ``git commit -a``, you can tell them this story:
+```bash
+git commit -a
+```
+, which basically `git adds` all the files that have changes (in their content, name, placing etc.) and had been already tracked by `git`.
+
+This means that you won't revise what files you are actually going to commit, to avoid committing accidental changes.
  
- "there was an instructor that once said
- to me that some day I would certainly meet an asshole suggesting me to use ``git commit -a``. I guess that moment has come."
+ Also, if you wanted to start tracking new files, this command wouldn't help.
+
+Even worse, the form
+
+```bash
+git commit -A
+```
+
+will commit _all files_ in the work tree, even those that have been accidentally created, which is very common in software development.
+
+Instead, we suggest to revise the changes one by one before adding them. There are GUIs like GitKraken that help you with this.
+
+A valid alternative is the interactive add:
+
+```bash
+git commit -i
+``` 
+
+ To conclude, if anyone recommends you to use ``git commit -a`` or ``git commit -A``, you can tell them this story:
+ 
+ "Once upon a day an instructor said to me that some day,
+  I would certainly meet an dummy suggesting me to use ``git commit -a``. I guess that moment has come."
 
 
+#### `.gitignore`
 
+You should have noticed that when you add a file in the work tree, ``git status`` lists it under _untracked files_.
+You will eventually add that file and commit it, but sometimes there are files that you do not want to track at all.
 
-Other topics
+For instance, it is customary to never track object and data files in software projects, such as `.o` files in C/C++,
+`.jar` in JAVA, `.pyc` in Python and the like. Also some IDE write their own scratch or checkpoint folders (e.g. PyCharm creates `.idea`).
 
-Git diff —staged
+In a `git` repository you should track only the source code. Therefore, __do not__ store objects, executable files, data, compiled documentation,
+binary files unless strictly necessary (that is, never), but __do__ store default configurations, documentation source, 
+static immutable files).
 
-Git compresses the contents of these files with zlib,
+There are several good reason for that, bu the main perhaps is that _should_ be avoided because they _can_ be avoided.
+ In fact, such kind of files can be recreated at any time fron the source code, e.g. objects
+  and executable result from a build, documentation can be rendered into html or pdf through compilation,
+ and configurations should be user-defined, therefore a default or example configuration is enough.
+ 
+ You should always keep your repository as lightweight as possible, so that it faster to clone. Moreover, ``git`` cannot calculate the diff 
+ of binary objects in an efficient way, so the compression would be inefficient, the updates become slow.
+ 
+ So, how can you tell `git` to avoid signalling untracked files? You just list the files that you do not want to track in a file
+ named `.gitignore` and placed in the root of the worktree. Its is detailed [here](https://git-scm.com/docs/gitignore). 
+ 
+Instead of creating a ``.gitignore`` file for your own project, check for [``.gitignore`` templates](https://github.com/github/gitignore)
+ on Github. There are templates for all programming languages, and if your project is multi-language, just merge multiple `.gitignore` files.
 
-.gitignore
+___
 
-git tag
+__Exercise 5__
 
-https://git-scm.com/book/en/v2/Git-Tools-Searching
-git grep -n gmtime_r
+1. Create two files named `foo` and `bar`. 
+2. Let `git status` not mention them among the untracked files.
+3. Add the two files, even though `git` has been told to not track them.
+4. Up to you whether to commit the changes or note or not.
 
-
-
-
-
-#####
-
-Amend a commit
-
-git commit --amend
-######
-
-git ls-tree -r HEAD
-
-reset
-https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified
-
-(super simple)
-revert
-https://git-scm.com/docs/git-revert
-
-
-
-#### 
-
-git diff between two commits ?
-
-
-Rearrange some material perhaps to make it litgher?
-
-
-####
-
-.git/config
-
-
-####
-
-some other things randomly
+___

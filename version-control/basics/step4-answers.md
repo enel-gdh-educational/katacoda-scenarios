@@ -82,3 +82,34 @@ git add src/*.py
 
 there is no need to commit, since ``git`` will look at the index and realize that, effectively, nothing has changed.
 ___
+
+
+___
+
+__Exercise 5__
+
+-  
+```bash
+touch foo
+touch bar
+
+```
+
+- 
+
+```bash
+echo "foo" >> .gitignore
+echo "bar" >> .gitignore
+```
+
+-  
+The output 
+```bash
+git add foo bar
+```
+suggests to us `--force` flag, therefore 
+
+```bash
+git add -f foo bar
+``` 
+___
