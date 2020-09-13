@@ -77,7 +77,7 @@ echo "This repo contains the project for the course Version Control Systems" > R
 The main command to inspect the state of your project is:
 
 ```bash
-git status {{copy}}
+git status
 ```
 
 The output should look like:
@@ -124,7 +124,7 @@ and to make sure the file has gone under Git's radar, just list the files that g
 git ls-files
 ```
 The command ``git add`` has also the effect to put the file in the so-called __staging area__, that is,
- a special hidden folder in the git repo where files are put ready to be committed. 
+ a special hidden folder in the git repo where files are put, ready to be committed. 
 
 Indeed, now in the output ``git status`` output, you should recognize the snippet:
 
