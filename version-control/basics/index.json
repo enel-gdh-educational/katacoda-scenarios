@@ -36,7 +36,14 @@
         "text": "step4.md",
         "answer": "step4-answers.md",
         "code": "step4.sh"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md",
+        "answer": "step4-answers.md",
+        "code": "step4.sh"
       }
+
     ],
     "intro": {
       "text": "intro.md",
