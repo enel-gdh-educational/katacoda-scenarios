@@ -42,10 +42,10 @@ _Hint_: type ``git config --help`` and look for the option to list all the confi
 #### Your first git repo
 
 Ok, now that we have done the _paperwork_, you want to start playing with a repository. 
-To work on this scenario, move to the folder ``basics``:
+To work on this scenario, move to the folder ``basic_project``:
 
 ```bash
-cd basics
+cd basic_project
 ```
 
 Now, create your first git repo via
