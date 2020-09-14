@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-bash step1.sh
+git config --global color.ui false
 
 cd basic_project
 
