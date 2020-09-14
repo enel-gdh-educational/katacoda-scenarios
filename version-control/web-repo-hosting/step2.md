@@ -26,9 +26,12 @@ The copied link looks like:
 
 `https://<your-enel-id>@bitbucket.springlab.enel.com/scm/itdsver/default.git`
 
-Now, we can clone this repo with the following command (substitute the <your-enel-id> with your real Enel id of cours ):
+Now, we can clone this repo with the following command (substitute the <your-enel-id> with your real Enel id of course):
 
-```cd /home/scrapbook/tutorial/default git clone https://<your-enel-id>@bitbucket.springlab.enel.com/scm/itdsver/default.git```{{copy}}
+
+```cd /home/scrapbook/tutorial/```{{execute}}
+
+```git clone https://<your-enel-id>@bitbucket.springlab.enel.com/scm/itdsver/default.git```{{copy}}
 
 Now you have your cloned local repository. This local repository is in sync to remote and contains all the commit, branches and the history hosted in the remote repository.
 

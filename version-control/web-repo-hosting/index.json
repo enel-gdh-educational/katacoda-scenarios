@@ -24,6 +24,11 @@
         "title": "Pull Request",
         "text": "step4.md",
         "answer": "step4-answer.md"
+      },
+      {
+        "title": "SSH Keys",
+        "text": "step5.md",
+        "answer": "step5-answer.md"
       }
     ],
     "assets": { 
