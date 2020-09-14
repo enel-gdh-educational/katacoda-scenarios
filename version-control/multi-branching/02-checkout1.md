@@ -23,5 +23,5 @@ The rationale for introducing the `git switch` command is that `checkout` does o
 **1. Make sure you're on master.**  
 **2. Create a new branch named `installation`.**  
 **3. Switch to the newly created branch.**  
-**4. Create a new empty file called "installation.txt" by using `touch installation.txt`.**  
+**4. Create a new empty file called "installation.txt" by using `touch installation.txt`{{execute}}.**  
 **5. Commit the new file to the installation branch.**

@@ -21,8 +21,12 @@ We can do this with:
 
 ---
 
-This example is what is called an **explicit** merge. This means that it takes two *parent* commits and creates a third commit (called a *merge commit*) containing the changes in both parents. Other merges are called **implicit**, and do not produce a merge commit.  
-In both case, a merge can follow several strategies. More material on merging strategies, and on the options for the `git merge` command, can be found in the [Git manual][1] and in the [Atlassian tutorial][2].
+In this case, Git performed a *Fast Forward* merge. This happens when the commit histories of the two branches have not diverged. In this case, all Git does is push one branch forward to match the other. This is also called an **implicit** merge: this means that it does not add a new commit to the history of the repository.  
+The oppsite is a 3-way merge, which compares the two branches (that is, the commits the two branches are pointing to) and creates a new commit (called a *merge commit*) containing the changes in both parents. As it creates a new commit, it is also called an **explicit** merge. This behaviour can be forced even when a fast forward forward would be used, using the command `git merge --no-ff`.
+
+![](.assets/merge_cut.png)
+
+In both cases, a merge can follow several strategies. More material on merging strategies, and on the options for the `git merge` command, can be found in the [Git manual][1] and in the [Atlassian tutorial][2].
 
 ## Exercise
 
