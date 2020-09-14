@@ -33,7 +33,7 @@ git commit -m "Some renaming and file repositioning"
 touch foo
 touch bar
 
-touch "foo \n bar" > .gitignore
+echo "foo \n bar" > .gitignore
 
 git add .gitignore
 

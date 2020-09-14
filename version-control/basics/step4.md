@@ -1,6 +1,4 @@
-git ls-files -s
-
-#### Special changes, move, rename, and delete.
+### Special changes, move, rename, and delete.
 
 So far we have dealt with how you let git know about the addition of new files, and changes to the content of existing files.
 What about renaming or moving files? Say, you want to rename ``hello_world.py`` in ``hello_world_v1.py``.
@@ -86,7 +84,7 @@ ___
 
 
 
-#### `git commit -a` is bad, `git commit -A` is the devi!. 
+### `git commit -a` is bad, `git commit -A` is the devi!. 
 
 Let us admit it, adding file one by one is tedious, so if there were a method to spare time everyone would be tempted to use it.
 Actually, that method exists and is
@@ -120,9 +118,24 @@ git commit -i
  
  "Once upon a day an instructor said to me that some day,
   I would certainly meet an dummy suggesting me to use ``git commit -a``. I guess that moment has come."
+  
+  
+ ___
+__Remember__ 
 
+You can always unstage a file, that is, perform the opposite operation than ``git add`` via the command:
 
-#### `.gitignore`
+```bash
+git restore  <filename>
+```
+or 
+```bash
+git reset  <filename>
+```
+
+___
+
+### `.gitignore`
 
 You should have noticed that when you add a file in the work tree, ``git status`` lists it under _untracked files_.
 You will eventually add that file and commit it, but sometimes there are files that you do not want to track at all.
