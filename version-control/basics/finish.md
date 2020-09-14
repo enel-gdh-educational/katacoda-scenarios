@@ -18,3 +18,4 @@ It could be useful for a quick refresh of the material covered.
 - [Git objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects). This is the paragraph is part of a chapter about
  the internals of git of the book [ProGit](https://git-scm.com/book/en/v2). We strongly recommend to use it as a reference.
 
+- [Atlassian Git course](https://www.atlassian.com/git)
