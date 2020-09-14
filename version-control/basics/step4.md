@@ -86,7 +86,7 @@ ___
 
 
 
-#### `git commit -a` is so so! `git commit -A` is the devil. 
+#### `git commit -a` is bad, `git commit -A` is the devi!. 
 
 Let us admit it, adding file one by one is tedious, so if there were a method to spare time everyone would be tempted to use it.
 Actually, that method exists and is

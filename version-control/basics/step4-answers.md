@@ -100,7 +100,11 @@ touch bar
 ```bash
 echo "foo" >> .gitignore
 echo "bar" >> .gitignore
+git add .gitignore
+
+
 ```
+
 
 -  
 The output 
