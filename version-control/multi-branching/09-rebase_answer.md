@@ -6,5 +6,8 @@ First, switch to the master branch
 At this point, you can simply relocate the model branch  
 `git rebase model`{{execute}}
 
-To delete the model branch, we can use  
+*In one command, we could have used*
+*`git rebase model master`*
+
+Finally, delete the model branch  
 `git branch -d model`{{execute}}

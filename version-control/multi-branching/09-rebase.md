@@ -4,11 +4,13 @@ As the commit history of your project grows and branches proliferate, the pictur
 
 Beyond `git merge`, Git offers another way of integrating changes from one branch into another: `git rebase`.
 
-If you run `git rebase <upstream_branch> <branch>`, Git will undo all changes applied to `<branch>` and not yet merged in `<upstream_branch>`, reapply them on the tip of `<upstream_branch>`, and fast-forward (merge) `<upstream_branch>` to `<branch>`. Effectively, this "relocates" a branch from its position to the tip of `<upstream_branch>`.
+If you run `git rebase <branch>`, Git will undo all changes applied to `<branch>` and not yet merged in the current branch, apply them on the tip of the present branch, and fast-forward (merge) `<branch>` to it. Effectively, this "relocates" `<branch>` from its position to the tip of the current branch.
 
-Specifying `<branch>` is optional: if you don't, the currently checked-out branch will be used for it. On the other hand, if the changes should be applied to a branch different than `<upstream_branch>`, this can be specified with the `--onto` option: `git rebase --onto <target_branch> <upstream_branch> <branch>` will take all commits differentiating `<branch>` from `<upstream_branch>`, and transplant them on the tip of `<target_branch>`.
+Another way of using this command is specifying two branches. In this case, using `git rebase <branch_A> <branch_B>` is the shorthand for:  
+`git checkout <branch_B>`  
+`git rebase <branch_A>`  
 
-Esempio
+Finally, we can specify a target branch to which the changes should be applied (rather than the current branch) with the `--onto` option: `git rebase --onto <target_branch> <branch_A> <branch_B>` will take all commits differentiating `<branch_A>` from `<branch_B>`, and transplant them on the tip of `<target_branch>`.
 
 ### Rebase or merge?
 
