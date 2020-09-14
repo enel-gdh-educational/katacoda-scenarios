@@ -45,12 +45,12 @@ Create a new local folder called project:
 create a file called *calculator.py* in the project folder.
 ```cd /home/scrapbook/tutorial/project && touch calculator.py```{{execute}}
 
-modify the file and paste this content (don't worry about the wrong sum function, we will fix this in the next steps):
+modify the file and paste this content:
 
 ```python
 class Calculator:
     def sum(a: int, b: int):
-        return a - b
+        return a + b
 ```
 
 `./project/calculator.py`{{open}}
@@ -63,7 +63,7 @@ Now, initialize the local repository and add all files:
 
 ```git commit -m "First commit"```{{execute}}
 
-This commit reside in your local repository for sure and now we are ready to *sync* your local repository to the remote repository created.
+This commit resides in your local repository for sure and now we are ready to *sync* your local repository to the remote repository created.
 
 We'll use the `git remote add` command to do this.
 

@@ -80,7 +80,7 @@ Meantime the project is growing and your teammates is having fun..
 
 ---
 **Exercise 1**
-Suppose you have to fix a bug instead of develop a new feature. Can you follow this workflow? 
+Suppose you have to fix a bug rather than develop a new feature. Can you follow this workflow? 
 
 ---
 
