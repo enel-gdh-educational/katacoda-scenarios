@@ -14,6 +14,8 @@ git add README.md
 
 git commit -m "First commit"
 
+rm .gitignore
+
 echo "Some additional info" >> README.md
 
 echo "print('Hello world')" > hello_world.py
