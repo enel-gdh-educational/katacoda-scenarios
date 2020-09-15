@@ -1,5 +1,3 @@
-# git config --global user.name "Andrea Massaia"
-# git config --global user.email andreamassaia@katacoda.com
 git init
 git config color.ui false
 touch README.txt
