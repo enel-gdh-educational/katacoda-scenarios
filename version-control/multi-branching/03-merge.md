@@ -26,7 +26,7 @@ The oppsite is a 3-way merge, which compares the two branches (that is, the comm
 
 ![](./assets/merge_cut.png)
 
-In both cases, a merge can follow several strategies. More material on merging strategies, and on the options for the `git merge` command, can be found in the [Git manual][1] and in the [Atlassian tutorial][2].
+Beyond these, a merge can follow several strategies. More material on merging strategies, and on the options for the `git merge` command, can be found in the [Git manual][1] and in the [Atlassian tutorial][2].
 
 ## Exercise
 
