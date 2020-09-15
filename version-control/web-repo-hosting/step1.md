@@ -49,7 +49,7 @@ modify the file and paste this content:
 
 ```python
 class Calculator:
-    def sum(a: int, b: int):
+    def sum(self, a: int, b: int):
         return a + b
 ```
 
