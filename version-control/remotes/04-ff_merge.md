@@ -7,6 +7,8 @@ When no conflicts exist then the merge will be 'fast-forwarded' and can be done 
 
 If a conflict does exist an error is retrieved and the repository will be in a merging state.
 
+---
+
 #### Task
 
 Merge content fetched from *origin/master* on your local repositoy.

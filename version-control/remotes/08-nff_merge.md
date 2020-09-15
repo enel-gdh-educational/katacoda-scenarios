@@ -7,11 +7,13 @@ Non-fast forward merge happens in scenarios like the following one:
 - Developer A commits non-conflicting changes to local repository.
 - Developer A pulls the latest changes from Developer B.
 
-In this scenario Git is unable to fast-forward the changes from Developer B because Developer A also has made changes.
+In this scenario Git is **unable to fast-forward** the changes from Developer B because Developer A also has made changes.
 
 When this happens, Git will attempt to auto-merge the changes. If no conflicts exist then the merge will be completed and a new commit will be created.
 
 The default commit message for merges is "Merge branch '' of ". These commits can be useful to indicate synchronisation points.
+
+---
 
 #### Task
 

@@ -1,9 +1,10 @@
 ### Step 12 - Git Revert - undo commits
 
-`git revert` allows you to undo the commits, if you have already committed files but realised you made a mistake.
+`git revert` allows you to **undo the commits**, if you have already committed files but realised you made a mistake.
 
-It will create a new commit which has the inverse affect of the commit being reverted.
+It will create a **new commit** which has the **inverse** affect of the commit being reverted.
 
+---
 
 #### Task
 

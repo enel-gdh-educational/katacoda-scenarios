@@ -1,8 +1,12 @@
 ### Step 3 - Git Fetch - get updates from remote folder, preserving local status
 
-`git fetch` command downloads changes from the remote repository into a separate branch named `remotes/<remote-name>/<remote-branch-name>`. This branch can be accessed using git checkout.
+`git fetch <remote>` command downloads **new data** from the remote repository. 
+It allows user to have references to all branches from remote into **separate branches** with names `remotes/<remote-name>/<remote-branch-name>`.
+Branches downloaded `git fetch <remote>` can be **accessed** using `git checkout <remote-name>/<remote-branch-name>`.
+After you do this, you should have references to all the branches from that remote, which you can merge in or inspect at any time.
+`git fetch <remote>` allows reviewing the changes without affecting your current branch. You have to merge it manually into your work when ready
 
-`git fetch` allows reviewing the changes without affecting your current branch.
+---
 
 #### Task
 

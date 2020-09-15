@@ -1,14 +1,16 @@
 ### Step 9 - Merge updates from remote folder to local, with conflicts to be solved manually
 
-A conflict does exist when modifications merge cannot be done automatically.
+A **conflict** does exist when modifications merge cannot be done automatically.
 
-In these cases Git throws an error and repository will be in merging state.
+In these cases Git throws an **error** and repository will be in merging state.
 
-Such conflicts need to be solved manually editing interested files or choosing between local and remote files status.
+Such conflicts need to be **solved manually** editing interested files or choosing between local and remote files status.
 
 In tools used solving conflict changes from both the local and remote will appear in the same file in the unix diff format.
 - Local changes will appear at the top between `<<<<<<< HEAD and =======` 
 - Remote changes will appear underneath between `======= and >>>>>>>`
+
+---
 
 #### Task
 

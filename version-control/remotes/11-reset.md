@@ -1,12 +1,14 @@
 ### Step 11 - Git Reset - remove files from staging area
 
-When you are about to commit but you have added files in the staging area you want to remove you can use `git reset`. 
+When you are about to commit but you have added files in the **staging** area you want to **remove** you can use `git reset`. 
 
 `git reset` moves files back from the staging area to the working directory.
  
 If you want to reset all files then use a dot (`git reset .`) to indicate current directory, otherwise list the files separated by spaces (`git reset <file name> <file name> <file name>`).
 
 `git reset` is useful when trying to keep your commits small and focused as you can move files back out of the staging area if you've added too many.
+
+---
 
 #### Task
 
