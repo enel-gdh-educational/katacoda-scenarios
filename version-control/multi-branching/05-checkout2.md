@@ -14,7 +14,7 @@ if it doesn't find a suitable branch.*
 Generally speaking, `git checkout` accepts a "path-like" argument and will restore the state of all files at that path.
 For instance, to revert changes to all files in the preset working directory, you could run `git checkout -- .`.
 
-If the change(s) were staged already, `git checkout` won't work – and Git will ask you to unstage things first using `git revert`.
+If the change(s) were staged already, `git checkout` won't work – and Git will ask you to unstage things first using `git reset HEAD <file>`.
 
 ---
 
