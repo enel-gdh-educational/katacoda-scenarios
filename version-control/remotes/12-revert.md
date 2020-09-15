@@ -1,8 +1,11 @@
-### Step 12 - Git Revert - undo commits
+### Step 12 - Git Amend/Revert - modify/undo commits
 
-`git revert` allows you to **undo the commits**, if you have already committed files but realised you made a mistake.
+To modify or undo a commit you can use:
 
-It will create a **new commit** which has the **inverse** affect of the commit being reverted.
+- `git commit --amend`: allows you to **replace** the commit just made when it is still not pushed. You can make modifications to the staging area and then commit again using `git commit --amend`. This commit will **delete** the previous 
+
+- `git revert` allows you to **undo the commits**, if you have already committed files but realised you made a mistake. It will create a **new commit** which has the **inverse** affect of the commit being reverted.
+
 
 ---
 

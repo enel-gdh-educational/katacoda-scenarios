@@ -15,6 +15,7 @@
 `git fetch`
 `git merge origin/new_branch`
 
+`git status`
 `git checkout --ours new_feature.py`
 `git add new_feature.py`
 `git commit -m "conflict on new_feature solved"`

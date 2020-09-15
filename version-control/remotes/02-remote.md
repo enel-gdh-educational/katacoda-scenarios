@@ -8,6 +8,7 @@ Most common *git* transfer protocols are `https://` protocol, `git://` or `user@
 Remotes are **added** using command `git remote add <a friendly name> <the remote location>`. 
 Typically the friendly name is 'origin' and the remote location is a HTTPS URL or a SSH connection.
 The friendly name allows you to refer to the location in other commands without specifying the whole URL
+
 Remotes location can be **updated** using `git remote set-url <a friendly name> <new remote location>`.
 
 Remotes **renamed** changing remotes friendly names using `git remote rename <friendly name> <new friendly name>`.
@@ -22,8 +23,23 @@ If you have more than one remote, the command lists them all.
 
 If local repository is created using `git clone`, location from which repository is **cloned** will be automatically added as a remote with default name 'origin'.
 
+To get a full **list of** remote **references** explicitly, we can use `git ls-remote <remote name>`
+
 To see more **information** about a remote, we can use `git remote show <remote name>` command. 
 It lists the *URL* for the remote repository as well as the tracking branch information. 
+
+---
+
+##### *Remote tracking branches*
+
+Remote-tracking branches are **local references** to the state of remote branches. 
+
+They represent remote branch as they were last time you connected to them.
+
+Remote-tracking branch names take the **form** `<remote>/<branch name>`
+
+If remote branch is modified but local reference is not updated, remote and local versions **diverge**
+
 
 ---
 

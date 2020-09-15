@@ -4,11 +4,16 @@ A **conflict** does exist when modifications merge cannot be done automatically.
 
 In these cases Git throws an **error** and repository will be in merging state.
 
-Such conflicts need to be **solved manually** editing interested files or choosing between local and remote files status.
+To **see** which files are **unmerged** at any point after a merge conflict, you can run `git status`
 
-In tools used solving conflict changes from both the local and remote will appear in the same file in the unix diff format.
-- Local changes will appear at the top between `<<<<<<< HEAD and =======` 
-- Remote changes will appear underneath between `======= and >>>>>>>`
+Files with unsolved merge conflicts are listed as unmerged. 
+Git adds standard **conflict-resolution markers** to those files so they can be opened to solve those conflicts.
+Changes from both the local and remote will appear in the same file in the **unix diff** format.
+
+- **Local** changes will appear at the top between `<<<<<<< HEAD and =======` 
+- **Remote** changes will appear underneath between `======= and >>>>>>>`
+
+If we want to use a **graphical tool** to resolve these issues, we can run `git mergetool`, which fires up a visual merge tool and walks the user through the conflicts
 
 ---
 
@@ -39,7 +44,7 @@ You will see Git throwing an error due to modification made on *new_feature.py*.
 Repository is now in *merging state*
 
 You can:
-
+- Run `git status` to see the conflict
 - Run `git checkout --ours <file name>` to keep local version of the file 
 - Run `git checkout --theirs <file name>` to keep remote version of the file 
 - Launch *mergetool* using command `git mergetool` to edit resulting file

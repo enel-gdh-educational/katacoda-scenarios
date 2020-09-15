@@ -23,7 +23,7 @@ If you want to reset all files then use a dot (`git reset .`) to indicate curren
 
 You want to commit just updates on *new_feature.py*
 
-- Remove *new_new_feature.py* from stagin area using `git reset`
+- Remove *new_new_feature.py* from staging area using `git reset`
 - Use `git status` to see status of repository
 - Commit modification to file *new_feature.py*
 - Push to remote *new_branch*
