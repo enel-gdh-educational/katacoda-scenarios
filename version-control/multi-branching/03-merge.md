@@ -32,7 +32,7 @@ In both cases, a merge can follow several strategies. More material on merging s
 
 **Now that the installation guide is merged in, let's merge in the user manual too.**
 
-**Switch to the `user_manual` branch we created earlier and create a new empty file called "user_manual.txt" (you can use `touch user_manual.txt`{{execute}}.**
+**Switch to the `user_manual` branch we created earlier and create a new empty file called "user_manual.txt" (you can use `touch user_manual.txt`{{execute}}).**  
 **Commit the new file to the branch, then merge the `user_manual` branch into `master`.**
 
 [1]: https://git-scm.com/docs/merge-strategies
