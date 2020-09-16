@@ -38,8 +38,20 @@ They represent remote branch as they were last time you connected to them.
 
 Remote-tracking branch names take the **form** `<remote>/<branch name>`
 
-If remote branch is modified but local reference is not updated, remote and local versions **diverge**
+If remote branch is modified but local reference is not updated, remote and remote-tracking **diverge**
 
+To create a ***tracking branch*** having a **direct relationship** to the remote branch we can:
+
+- **Checkout** a local branch **from a remote-tracking** branch creates.
+This can be done using `git checkout -b <branch> <remote>/<branch>` or `git checkout --track <remote>/<branch>` shorthand. 
+
+- **Set upstream** of a local existing branch. 
+This can be done using `git branch -u <remote>/<branch>` or `git branch --set-upstream-to <remote>/<branch>`
+ 
+Git automatically knows which server to fetch from and which branch to merge in when pulling from a tracking branch.
+
+To **see tracking branches** set we can use the `git branch -vv`. 
+This will list local branches with more information including what each branch is tracking and if your local branch is ahead, behind or both.
 
 ---
 

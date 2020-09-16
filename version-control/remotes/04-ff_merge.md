@@ -3,7 +3,7 @@
 `git fetch` downloads changes into a separate branch which can be checked out and merged.
 During a *merge* Git will attempt to automatically combine the commits.
 
-When no conflicts exist then the merge will be 'fast-forwarded' and can be done automatically.
+When **no conflicts** exist then the merge will be 'fast-forwarded' and can be done automatically.
 
 If a conflict does exist an error is retrieved and the repository will be in a merging state.
 

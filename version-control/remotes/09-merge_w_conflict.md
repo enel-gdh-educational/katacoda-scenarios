@@ -17,6 +17,13 @@ If we want to use a **graphical tool** to resolve these issues, we can run `git 
 
 ---
 
+##### *Deleting Remote Branches*
+
+Once we are finished with a feature and have merged its branch into remote master branch, maybe we would like to delete the remote branch we have been using.
+Remote branch can be deleted using `git push origin --delete <branch name>`
+
+---
+
 #### Task
 
 We will push a modification on remote folder which will cause a conflict when working on local repository

@@ -16,6 +16,10 @@ If another user has pushed in the meantime, your push will be rejected and you w
 
 A typical Git workflow would be to perform **multiple small commits** as you work on a task and **push** to a remote **at relevant points**, such as when the task is completed.
  
+ 
+ *Note: If you use an HTTPS URL to push, the Git server will ask you for your username and password for authentication.
+If you don’t want to type it for every push, you can set up  `git config --global credential.helper cache`*
+ 
  ---
 
 #### Task
