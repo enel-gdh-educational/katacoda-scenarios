@@ -10,7 +10,7 @@ Users generally have permissions to:
 Sharing work involves:
 - **managing** remote repositories locations
 - **send** and **receive** updates and changes on work
-- **analyze** and **solve** conflicts when working on common project parts 
+- **analyze** and **solve** conflicts when working on common project parts
 
 ---
 
