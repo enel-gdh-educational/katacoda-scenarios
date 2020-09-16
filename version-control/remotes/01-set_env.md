@@ -11,7 +11,7 @@ We will see three ways of initializing a *git* repository:
 
 - with `git init` command, which creates an empty Git repository. Running `git init` in an existing repository will create a `.git` folder and will not overwrite contents of the folder
 - with `git init --bare`, which creates a bare repository. Bare repos contain no working or checked out copy of your source files and are customarily given a *.git* extension
-- with `git clone <url to clone from> <directory name>` command, which creates a local copy of the repository at `<url to clone from>`, version control information included. `<directory name>` is optional
+- with `git clone <url to clone from> <directory name>` command, which creates a local copy of the repository at `<url to clone from>` which includes also version control history. `<directory name>` is optional
 
 ---
 

@@ -1,4 +1,4 @@
-### Step 6 - Git Log and git Show - review commits history on repository
+### Step 6 - Git Log - review commits history on repository
 
 ##### *Git log*
 
@@ -14,12 +14,8 @@ Some of `git log` useful options are:
 - `--stat` which shows, for each commit, list and number of modified files and how many lines in those files were added and removed.
 - `--pretty=<value>` changes the log output to formats other than the default, examples of `<value>`  are `oneline`, `short`, `full`, `fuller`, and `format` (where you specify your own format).
 
-##### *Git show*
-
-The `git show` command will allow you to view the changes made in each commit.
-
 ---
 
 #### Task
 
-Analyze the output of commands `git log` and `git show`
+Analyze the output of commands `git log`

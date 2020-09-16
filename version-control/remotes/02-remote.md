@@ -6,27 +6,19 @@ They allow to share changes from or to your repository.
 Most common *git* transfer protocols are `https://` protocol, `git://` or `user@server:path/to/repo.git` which use SSH protocol       
 
 Remotes are **added** using command `git remote add <a friendly name> <the remote location>`. 
-Typically the friendly name is 'origin' and the remote location is a HTTPS URL or a SSH connection.
+Typically the friendly name is *origin* and the remote location is a HTTPS URL or a SSH connection.
 The friendly name allows you to refer to the location in other commands without specifying the whole URL
-
-Remotes location can be **updated** using `git remote set-url <a friendly name> <new remote location>`.
-
-Remotes **renamed** changing remotes friendly names using `git remote rename <friendly name> <new friendly name>`.
-`git remote rename` changes all remote-tracking branch names also.
-
-To **remove** a remote (for some reason) either use `git remote remove <friendly name>` or `git remote rm <friendly name>`. 
-Once the reference to a remote is deleted, all remote-tracking branches and configuration settings associated with that remote are also deleted.
-
-To **see** which **remote** servers you have configured, you can run the `git remote` command, which lists friendly names of each remote handle specified.
-Option `-v` shows the URLs that Git has stored for the friendly name to be used when reading and writing to that remote.
-If you have more than one remote, the command lists them all. 
 
 If local repository is created using `git clone`, location from which repository is **cloned** will be automatically added as a remote with default name 'origin'.
 
-To get a full **list of** remote **references** explicitly, we can use `git ls-remote <remote name>`
+Some operations on **remotes** are:
 
-To see more **information** about a remote, we can use `git remote show <remote name>` command. 
-It lists the *URL* for the remote repository as well as the tracking branch information. 
+- **update url**, using `git remote set-url <a friendly name> <new remote location>`
+- **rename the remote**, changing remotes friendly names using `git remote rename <friendly name> <new friendly name>`.
+`git remote rename` changes all remote-tracking branch names also
+- **remove a remote**, for some reason, either using `git remote remove <friendly name>` or `git remote rm <friendly name>` (once the reference to a remote is deleted, all remote-tracking branches and configuration settings associated with that remote are also deleted)
+- **list remotes**configured, runnig the `git remote` command to see the **names** or using option `-v` which shows the URLs stored for the friendly name
+- **see more information** about a remote, we can use `git remote show <remote name>` command, which lists the *URL* for the remote repository as well as the tracking branch information  
 
 ---
 
@@ -49,9 +41,6 @@ This can be done using `git checkout -b <branch> <remote>/<branch>` or `git chec
 This can be done using `git branch -u <remote>/<branch>` or `git branch --set-upstream-to <remote>/<branch>`
  
 Git automatically knows which server to fetch from and which branch to merge in when pulling from a tracking branch.
-
-To **see tracking branches** set we can use the `git branch -vv`. 
-This will list local branches with more information including what each branch is tracking and if your local branch is ahead, behind or both.
 
 ---
 

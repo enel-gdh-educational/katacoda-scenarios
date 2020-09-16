@@ -1,2 +1,1 @@
-`git log`
-`git show`
+`git log -p -1`
