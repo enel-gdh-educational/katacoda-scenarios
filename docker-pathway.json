@@ -1,0 +1,11 @@
+{
+  "title": "Docker",
+  "description": "Prova descrizione",
+  "courses": [
+    {
+      "course_id": "part1",
+      "title": "docker part1",
+      "description": "part1 descrizione"
+    }
+  ]
+}
