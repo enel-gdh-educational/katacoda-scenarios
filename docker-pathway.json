@@ -4,8 +4,13 @@
   "courses": [
     {
       "course_id": "part1",
-      "title": "docker part1",
+      "title": "Docker course part 1",
       "description": "part1 descrizione"
+    },
+    {
+      "course_id": "part2",
+      "title": "Docker course part 2",
+      "description": "part2 descrizione"
     }
   ]
 }
