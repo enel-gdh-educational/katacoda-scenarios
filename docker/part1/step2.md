@@ -44,7 +44,7 @@ Now, we have executed our first container. To see all running containers run:
 
 We have zero containers running, and it's exact because our container started, executed something and exited. To see all containers run:
 `docker ps -a`{{execute}}
-Here we can see out hello-world container with "Exited" status. 
+Here we can see our hello-world container with "Exited" status. 
 
 We told before the difference between container and images. We can also list all the images available locally with the command `docker images`{{execute}}
 
