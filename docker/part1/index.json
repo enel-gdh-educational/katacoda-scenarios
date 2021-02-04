@@ -4,10 +4,16 @@
   "difficulty": "beginner",
   "time": "3 hours",
   "details": {
-    "steps": [{
-      "title": "Step 1 - Foundamentals",
-      "text": "step1.md"
-    }],
+    "steps": [
+      {
+        "title": "Step 1 - Foundamentals",
+        "text": "step1.md"
+      } ,
+      {
+        "title": "Step 2 - Experiment with containers",
+        "text": "step2.md"
+      }
+    ],
     "intro": {
       "text": "intro.md",
       "credits": ""
