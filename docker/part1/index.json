@@ -1,11 +1,11 @@
 {
   "title": "Docker course part 1",
-  "description": "docker description",
+  "description": "This scenario explain Dockers foundamentals.",
   "difficulty": "beginner",
-  "time": "2 years",
+  "time": "3 hours",
   "details": {
     "steps": [{
-      "title": "Step 1 - Run Command",
+      "title": "Step 1 - Foundamentals",
       "text": "step1.md"
     }],
     "intro": {
