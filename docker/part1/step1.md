@@ -13,7 +13,7 @@ In container-based virtualization (or OS-level virtualization) we can think that
 
 ![Containers stack](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part1/images/containers.png)
 
-There is a shared kernel in the host system that handle all the resources of host system and containers. All containers share this kernel, but every one has his own operating system and is isolated from others. Isolation is achieved through some Unix tools like *containered, runc, cgroups and namespace.*
+There is a shared kernel in the host system that handle all the resources of host system and containers. All containers share this kernel, but every one has his own operating system and is isolated from others. Isolation is achieved through some Unix tools like *containerd, runc, cgroups and namespace.*
 
 So containers are a lighter and faster than virtual machines, because there is a lower overhead between the process inside the containers and the hardware. But to use a container is necessary that the container's OS is compatible with the host OS. This is the reason why you can't run a Windows container on Linux or MacOS.
 
