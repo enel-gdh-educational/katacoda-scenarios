@@ -7,11 +7,11 @@ The idea of container is older than Docker and is different from the idea of vir
 
 Virtual machines are based on system virtualization, where a real computer can host more virtual machines, every one with his own operating system. In this case what is virtualized is the hardware.
 
-![Vm stack](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part1/assets/vms.png)
+![Vm stack](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part1/images/vms.png)
 
 In container-based virtualization (or OS-level virtualization) we can think that a container is an entity that include not only hardware but also a virtual operating system's kernel. So containers use the kernel of the real machine, as they use the real hardware.
 
-![Containers stack](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part1/assets/containers.png)
+![Containers stack](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part1/images/containers.png)
 
 There is a shared kernel in the host system that handle all the resources of host system and containers. All containers share this kernel, but every one has his own operating system and is isolated from others. Isolation is achieved through some Unix tools like *containered, runc, cgroups and namespace.*
 
