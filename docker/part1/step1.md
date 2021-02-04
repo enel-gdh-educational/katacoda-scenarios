@@ -29,4 +29,4 @@ Other important benefits are:
 - Container orchestration: compatible with systems like Kubernetes
 
 
-Ok, let's use containers!
+**Ok, let's use containers!** In the text step we will use Docker for building our first container! 
