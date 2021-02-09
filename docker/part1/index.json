@@ -9,6 +9,10 @@
         {
           "file": "step2",
           "target": "/root/project"
+        },
+        {
+          "file": "step3",
+          "target": "/root/project"
         }
       ]
     },
@@ -20,6 +24,10 @@
       {
         "title": "Step 2 - Experiment with containers",
         "text": "step2.md"
+      } ,
+      {
+        "title": "Step 3 - Real app with Docker",
+        "text": "step3.md"
       }
     ],
     "intro": {
