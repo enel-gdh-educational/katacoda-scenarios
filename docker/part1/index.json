@@ -7,8 +7,8 @@
     "assets": {
       "host1": [
         {
-          "file": "step2/Dockerfile",
-          "target": "/project"
+          "file": "step2",
+          "target": "/root/project/step2"
         }
       ]
     },
