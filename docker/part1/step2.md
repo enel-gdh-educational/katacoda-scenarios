@@ -62,7 +62,7 @@ Now it's time to create our own images and containers. To create a custom image 
 
 Let's start with the simple Dockerfile that you can find in /root/project/step2/Dockerfile. 
 
-`FROM alpine:latest` is an instruction that specifies the base image. Docker start from this to build our own image putting some other layers on it. Usually the application and his dependencies are added to a base image. Base images can be retrieved from DockerHub, from another registries (public or private) or build from another file and used as base. The ":latest" represents the version of the image. 
+`FROM alpine:latest` is an instruction that specifies the base image. Docker starts from this to build our own image putting some other layers on it. Usually the application and his dependencies are added to a base image. Base images can be retrieved from DockerHub, from another registries (public or private) or build from another file and used as base. The ":latest" represents the version of the image. 
 
 `ENTRYPOINT [ "echo", "Hello, World!" ]` The ENTRYPOINT instruction specifies the executable program that will be executed in the container. His syntax is `ENTRYPOINT [ "command", "param1", "param2", ...]`. Usually a Dockerfile starts with FROM instruction and end with an ENTRYPOINT.
 
@@ -81,7 +81,7 @@ We can now start a container based on our image as we did for the first hello wo
 
 Now we introduce another important instruction, the `CMD` instruction. It allows specifying arguments and parameters for the ENTRYPOINT instruction. 
 So... What is the difference between specify parameters in ENTRYPOINT and in CMD?
-Answer: The parameters in ENTRYPOINT instruction are immutable, once you build the image you can't change them with rebuilding it. The arguments in the CMD instruction, instead, can be overwritten when the container is runned.
+Answer: The parameters in ENTRYPOINT instruction are immutable, once you build the image you can't change them without rebuilding it. The arguments in the CMD instruction, instead, can be overwritten when the container is runned.
 
 Let's edit our Dockerfile in this way:
 ```Dockerfile
