@@ -1,6 +1,6 @@
 {
   "title": "Docker",
-  "description": "Prova descrizione",
+  "description": "Course about Docker foundamentals.",
   "courses": [
     {
       "course_id": "part1",
