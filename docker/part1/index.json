@@ -4,6 +4,14 @@
   "difficulty": "beginner",
   "time": "3 hours",
   "details": {
+    "assets": {
+      "client": [
+        {
+          "file": "step2",
+          "target": "/project"
+        }
+      ]
+    },
     "steps": [
       {
         "title": "Step 1 - Foundamentals",
