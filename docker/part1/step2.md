@@ -55,3 +55,45 @@ And see that we have two containers created from the same image. Check it!
 Containers remain until we delete them with `docker rm hello hello2`{{execute}} command. This command remove one or more container. You must pass the container name or the container ID.
 We can also delete images with the command:
 `docker image rm hello-world`{{execute}} 
+
+## Create our own image
+
+Now it's time to create our own images and containers. To create a custom image we need to define a Dockerfile. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. 
+
+Let's start with the simple Dockerfile that you can fine in /root/project/step2/Dockerfile. 
+
+`FROM alpine:latest` is an instruction that specifies tha base image. Docker start from this to build our own image putting some other layers on it. Usually the application and his dependencies are added to a base image. Base images can be retrivied from DockerHub, from another registries (public or private) or build from another file and used as base. The ":latest" represents the version of the image. 
+
+`ENTRYPOINT [ "echo", "Hello, World!" ]` The ENRTYPOINT instruction specifies the executable program that will be executed in the container. His sintax is `ENTRYPOINT [ "command", "param1", "param2", ...]`. Usually a Dockerfile starts with FROM instruction and end with an ENTRYPOINT.
+
+Once we writed our Dockerfile, we can build our image. To do this, use the `docker build` command. Run:
+`cd /root/project/step2 && docker build -t my-hello:latest .`{{execute}}
+
+The `-t` allows us to tag the image with a name and a version (tag). In this case we called our image "my-hello" and tagged as "latest" version. If you don't specify a tag, the "latest" is the default. After this option, we must specify the context. In this case we moved in the same directory of the Dockerfile, so we use "." context.
+
+Now check that the new image is available with `docker images`{{execute}}
+
+We can now start a container based on our image as we done for the first hello world container.
+
+**EXERCISE 1:** Start a container based on the new image.
+
+---
+
+Now we introduce another important instruction, the `CMD` instruction. It allows to specify arguments and parameters for the ENTRYPOINT instruction. 
+So... What is the difference between specify parameters in ENTRYPOINT and in CMD?
+Answer: The parameters in ENTRYPOINT instruction are immuatable, once you build the image you can't change them with rebuilding it. The arguments in the CMD instructino, instead, can be overwrited when the container is runned.
+
+Let's edit our Dockerfile in this way:
+```Dockerfile
+FROM alpine:latest
+ENTRYPOINT [ "echo" ]
+CMD ["Hello, World!"]
+```
+
+**EXERCISE 2:** Rebuild the image, run a container and check that it has the same behavior of the previous version.
+
+For overwrite arguments simply pass them at the end of the `docker run` command.
+
+Try this: `docker run --name custom-hello my-hello Hello from the Docker course!`{{execute}}
+
+**EXERCISE 3:** Clean all stopped containers.
