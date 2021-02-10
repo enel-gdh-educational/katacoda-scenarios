@@ -1,0 +1,40 @@
+{
+  "title": "Docker course part 3",
+  "description": "docker description",
+  "difficulty": "beginner",
+  "time": "3 hours",
+  "details": {
+    "steps": [
+      {
+      "title": "Docker Registry",
+      "text": "step1.md"
+      },
+      {
+      "title": "Docker Network",
+      "text": "step1.md"
+      },
+      {
+      "title": "Docker Compose",
+      "text": "step1.md"
+      },
+      {
+      "title": "Docker in Global Data Hub",
+      "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "bash"
+  }
+}
