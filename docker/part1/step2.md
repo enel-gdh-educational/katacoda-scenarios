@@ -109,7 +109,7 @@ Usage: `CMD ["executable","param1","param2"]`
 There can only be one CMD instruction in a Dockerfile. If you list more than one CMD then only the last CMD will take effect. The main purpose of a CMD is to provide defaults for an executing container. These defaults can include an executable, or they can omit the executable, in which case you must specify an ENTRYPOINT instruction as well.
 
 So... What is the difference between specify parameters in ENTRYPOINT and in CMD?
-Answer: The parameters in ENTRYPOINT instruction are immutable, once you build the image you can't change them without rebuilding it. The arguments in the CMD instruction, instead, can be overwritten when the container is run. If you specify also the command in the CMD instruction in the Dockerfile, also the commmand can be overwritten.
+Answer: The parameters in ENTRYPOINT instruction are immutable, once you build the image you can't change them without rebuilding it or without substitute all ENTRYPOINT with a specific option of `docker run` command. The arguments in the CMD instruction, instead, can be overwritten when the container is run. If you specify also the command in the CMD instruction in the Dockerfile, also the commmand can be overwritten.
 
 Let's edit our Dockerfile in this way:
 ```Dockerfile

@@ -28,6 +28,10 @@
       {
         "title": "Step 3 - Real app with Docker",
         "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Recap of Docker commands",
+        "text": "step4.md"
       }
     ],
     "intro": {
