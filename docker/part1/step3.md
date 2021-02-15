@@ -21,7 +21,19 @@ Inside the `step3` directory, create a Dockerfile. `touch Dockerfile`{{execute}}
 
 As usual, start with the "FROM" instruction. We will use the `python` image, publicly available on DockerHub [(link)](https://hub.docker.com/_/python). So, insert `FROM python:3` in the Dockerfile.
 
-Now we need to provision the environment with the dependencies. So we will copy the `requirements.txt` file in the container and use it to install dependencies. To copy files in a container we can use the `COPY` instruction in this way `COPY src/path dest/path`. To execute commands we can't use `CMD` or `ENTRYPOINT`, but there is a specific instruction for this. It's `RUN`. The commands specified with the RUN instruction are executed during the image building. The command in the ENTRYPOINT instruction, instead, is executed directly from the container.
+Now we need to provision the environment with the dependencies. So we will copy the `requirements.txt` file in the container and use it to install dependencies. To copy files in a container we can use the `COPY` instruction.
+
+Usage: `COPY [--chown=<user>:<group>] <src>... <dest>`. 
+
+The COPY instruction copies new files or directories from `<src>` and adds them to the filesystem of the container at the path `<dest>`.The --chown feature is only supported on Dockerfiles used to build Linux containers, and will not work on Windows containers. Since user and group ownership concepts do not translate between Linux and Windows, the use of /etc/passwd and /etc/group for translating user and group names to IDs restricts this feature to only be viable for Linux OS-based containers.
+
+To execute commands we can't use `CMD` or `ENTRYPOINT`, but there is a specific instruction for this. It's `RUN`. 
+
+Usage: `RUN <command>`.
+
+The RUN instruction will execute any commands in a new layer on top of the current image and commit the results. The resulting committed image will be used for the next step in the Dockerfile. Commands specified in this format run in a shell, which by default is /bin/sh -c on Linux or cmd /S /C on Windows.
+
+The commands specified with the RUN instruction are executed during the image building. The command in the ENTRYPOINT instruction, instead, is executed directly from the container.
 
 So, add these lines to the Dockefile:
 ```Dockerfile
@@ -47,8 +59,15 @@ Why doesn't it work? Because our app needs a port to communicate with the host. 
 ![Docker ports](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part1/images/docker_ports.png)
 
 We need tell Docker that our app need to **expose** the port 5000, and we need also to tell Docker to link a port on our machine to the container port.
-The first thing is possible with the `EXPOSE` instruction. In the Dockerfile, before the ENTRYPOINT, add `EXPOSE 5000`. This lets the container open the port 5000, so our app can receive requests. 
-The second thing isn't specified in the Dockerfile, but it's possible with the "-p host-port:container-port" option of Docker.
+The first thing is possible with the `EXPOSE` instruction. 
+
+Usage: `EXPOSE <port> [<port>/<protocol>...]`.
+
+The EXPOSE instruction informs Docker that the container listens on the specified network ports at runtime. You can specify whether the port listens on TCP (default) or UDP, and the default is TCP if the protocol is not specified.
+
+In the Dockerfile, before the ENTRYPOINT, add `EXPOSE 5000`. The EXPOSE instruction does not actually publish the port. It functions as a type of documentation between the person who builds the image and the person who runs the container, about which ports are intended to be published. To actually publish the port when running the container, use the -p flag on docker run to publish and map one or more ports, or the -P flag to publish all exposed ports and map them to high-order ports.
+
+So, the second thing isn't specified in the Dockerfile, but it's possible with the "-p host-port:container-port" option of Docker.
 This is necessary because we want to communicate with the container, but Docker containers can communicate to each others also without binding their port to the host machine. In this case, the first step (EXPOSE) is always necessary.
 
 TODO: finish this step: docker stop, restart the container, exec some commands inside the container.

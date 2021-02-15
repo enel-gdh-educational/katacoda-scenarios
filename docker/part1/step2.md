@@ -60,16 +60,32 @@ We can also delete images with the command:
 
 Now it's time to create our own images and containers. To create a custom image we need to define a Dockerfile. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. 
 
+All comands have this format: `INSTRUCTION arguments`. The instruction is not case-sensitive. However, convention is for them to be UPPERCASE to distinguish them from arguments more easily. Docker runs instructions in a Dockerfile in order.
+
+## Build our image
+
 Let's start with the simple Dockerfile that you can find in /root/project/step2/Dockerfile. 
 
-`FROM alpine:latest` is an instruction that specifies the base image. Docker starts from this to build our own image putting some other layers on it. Usually the application and his dependencies are added to a base image. Base images can be retrieved from DockerHub, from another registries (public or private) or build from another file and used as base. The ":latest" represents the version of the image. 
+The first line we find is `FROM alpine:latest`. FROM is an instruction that specifies the base image. 
 
-`ENTRYPOINT [ "echo", "Hello, World!" ]` The ENTRYPOINT instruction specifies the executable program that will be executed in the container. His syntax is `ENTRYPOINT [ "command", "param1", "param2", ...]`. Usually a Dockerfile starts with FROM instruction and end with an ENTRYPOINT.
+Usage: `FROM [--platform=<platform>] <image>[:<tag>] [AS <name>]` 
 
-Once we wrote our Dockerfile, we can build our image. To do this, use the `docker build` command. Run:
+The FROM instruction initializes a new build stage and sets the Base Image for subsequent instructions. As such, a valid Dockerfile must start with a FROM instruction.  The optional --platform flag can be used to specify the platform of the image in case FROM references a multi-platform image. For example, linux/amd64, linux/arm64, or windows/amd64.
+
+Docker starts from this to build our own image putting some other layers on it. Usually the application and his dependencies are added to a base image. Base images can be retrieved from DockerHub, from another registries (public or private) or build from another file and used as base. The ":latest" represents the version of the image. 
+
+Next line is `ENTRYPOINT [ "echo", "Hello, World!" ]` 
+
+The ENTRYPOINT instruction specifies the executable program that will be executed in the container. His syntax is `ENTRYPOINT [ "command", "param1", "param2", ...]`. Usually a Dockerfile starts with FROM instruction and end with an ENTRYPOINT.
+
+Once we wrote our Dockerfile, we can build our image. To do this, use the `docker build` command. 
+
+Usage: `docker build [OPTIONS] PATH | URL `
+
+Run:
 `cd /root/project/step2 && docker build -t my-hello:latest .`{{execute}}
 
-The `-t` allows us to tag the image with a name and a version (tag). In this case we called our image "my-hello" and tagged as "latest" version. If you don't specify a tag, the "latest" is the default. After this option, we must specify the context. In this case we moved in the same directory of the Dockerfile, so we use "." context.
+The `-t` allows us to tag the image with a name and a version (tag). In this case we called our image "my-hello" and tagged as "latest" version. If you don't specify a tag, the "latest" is the default. After this option, we must specify the context.  A build’s context is the set of files located in the specified `PATH` or `URL`. In this case we moved in the same directory of the Dockerfile, so we use "." context.
 
 Now check that the new image is available with `docker images`{{execute}}
 
@@ -79,9 +95,14 @@ We can now start a container based on our image as we did for the first hello wo
 
 ---
 
-Now we introduce another important instruction, the `CMD` instruction. It allows specifying arguments and parameters for the ENTRYPOINT instruction. 
+Now we introduce another important instruction, the `CMD` instruction. 
+
+Usage: `CMD ["executable","param1","param2"]`
+
+There can only be one CMD instruction in a Dockerfile. If you list more than one CMD then only the last CMD will take effect. The main purpose of a CMD is to provide defaults for an executing container. These defaults can include an executable, or they can omit the executable, in which case you must specify an ENTRYPOINT instruction as well.
+
 So... What is the difference between specify parameters in ENTRYPOINT and in CMD?
-Answer: The parameters in ENTRYPOINT instruction are immutable, once you build the image you can't change them without rebuilding it. The arguments in the CMD instruction, instead, can be overwritten when the container is runned.
+Answer: The parameters in ENTRYPOINT instruction are immutable, once you build the image you can't change them without rebuilding it. The arguments in the CMD instruction, instead, can be overwritten when the container is run. If you specify also the command in the CMD instruction in the Dockerfile, also the commmand can be overwritten.
 
 Let's edit our Dockerfile in this way:
 ```Dockerfile
