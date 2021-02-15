@@ -15,7 +15,9 @@ and run `python3 app/main.py`{{execute}}
 
 We started our app locally. Now, open a new Terminal windows and test it. Try to run `curl http://localhost:5000/health`{{execute}}
 
-Does it work? Ok, but... how we deploy it? This is the perfect situation to use Docker. Let's package our application in a Docker image with all his dependencies and code.
+Does it work? Ok... Now imagine that you have to ship it to someone else. What should you do? At least, you must pass his the code, you must be sure he has Python installed and has the right version of Python, he has to install dependencies. There can be conflicts between different versions of libraries or different versions of Python. But, fortunately, this is the perfect situation to use Docker! If we package our application in a Docker image, all we need to ensure is that the other person has Docker installed. Simple, right?
+
+Let's package our application in a Docker image with all his dependencies and code.
 
 Inside the `step3` directory, create a Dockerfile. `touch Dockerfile`{{execute}}
 
