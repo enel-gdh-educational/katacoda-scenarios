@@ -1,7 +1,6 @@
-# Recap
+# Dockerfile commands recap
 
-Commands recap:
-`FROM [--platform=<platform>] <image>[:<tag>] [AS <name>]` 
+    `FROM [--platform=<platform>] <image>[:<tag>] [AS <name>]` 
 
 The FROM instruction initializes a new build stage and sets the Base Image for subsequent instructions. As such, a valid Dockerfile must start with a FROM instruction.  The optional --platform flag can be used to specify the platform of the image in case FROM references a multi-platform image. For example, linux/amd64, linux/arm64, or windows/amd64.
 
@@ -38,7 +37,7 @@ There can only be one CMD instruction in a Dockerfile. If you list more than one
 Unlike the shell form, the exec form does not invoke a command shell. This means that normal shell processing does not happen. For example, CMD [ "echo", "$HOME" ] will not do variable substitution on $HOME. If you want shell processing then either use the shell form or execute a shell directly, for example: CMD [ "sh", "-c", "echo $HOME" ]. When using the exec form and executing a shell directly, as in the case for the shell form, it is the shell that is doing the environment variable expansion, not docker.
 
 ---
-`COPY [--chown=<user>:<group>] <src>... <dest>`
+    `COPY [--chown=<user>:<group>] <src>... <dest>`
 
 The COPY instruction copies new files or directories from `<src>` and adds them to the filesystem of the container at the path `<dest>`.The --chown feature is only supported on Dockerfiles used to build Linux containers, and will not work on Windows containers. Since user and group ownership concepts do not translate between Linux and Windows, the use of /etc/passwd and /etc/group for translating user and group names to IDs restricts this feature to only be viable for Linux OS-based containers.
 
@@ -52,14 +51,16 @@ RUN has 2 forms:
 The RUN instruction will execute any commands in a new layer on top of the current image and commit the results. The resulting committed image will be used for the next step in the Dockerfile. The exec form makes it possible to avoid shell string munging, and to RUN commands using a base image that does not contain the specified shell executable.
 
 The default shell for the shell form can be changed using the SHELL command.
+
 ---
 
-`EXPOSE <port> [<port>/<protocol>...]`
+    `EXPOSE <port> [<port>/<protocol>...]`
 
 The EXPOSE instruction informs Docker that the container listens on the specified network ports at runtime. You can specify whether the port listens on TCP or UDP, and the default is TCP if the protocol is not specified.
 
 The EXPOSE instruction does not actually publish the port. It functions as a type of documentation between the person who builds the image and the person who runs the container, about which ports are intended to be published. To actually publish the port when running the container, use the -p flag on docker run to publish and map one or more ports, or the -P flag to publish all exposed ports and map them to high-order ports.
+
 ---
-`ENV <key>=<value> ...`
+    `ENV <key>=<value> ...`
 
 The `ENV` instruction sets the environment variable `<key>` to the value `<value>`. This value will be in the environment for all subsequent instructions in the build stage and can be replaced inline in many as well. The value will be interpreted for other environment variables, so quote characters will be removed if they are not escaped. Like command line parsing, quotes and backslashes can be used to include spaces within values.
