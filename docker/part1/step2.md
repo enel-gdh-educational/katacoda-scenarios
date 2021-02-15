@@ -74,6 +74,8 @@ The FROM instruction initializes a new build stage and sets the Base Image for s
 
 Docker starts from this to build our own image putting some other layers on it. Usually the application and his dependencies are added to a base image. Base images can be retrieved from DockerHub, from another registries (public or private) or build from another file and used as base. The ":latest" represents the version of the image. 
 
+In this exercise we use the alphine image. The alphine is a minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size! It's used when lightness is needed and we use it also because we don't have big requirements for a Hello world exercise. 
+
 Next line is `ENTRYPOINT [ "echo", "Hello, World!" ]` 
 
 The ENTRYPOINT instruction specifies the executable program that will be executed in the container. His syntax is `ENTRYPOINT [ "command", "param1", "param2", ...]`. Usually a Dockerfile starts with FROM instruction and end with an ENTRYPOINT.

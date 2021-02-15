@@ -19,7 +19,11 @@ Does it work? Ok, but... how we deploy it? This is the perfect situation to use 
 
 Inside the `step3` directory, create a Dockerfile. `touch Dockerfile`{{execute}}
 
-As usual, start with the "FROM" instruction. We will use the `python` image, publicly available on DockerHub [(link)](https://hub.docker.com/_/python). So, insert `FROM python:3` in the Dockerfile.
+As usual, start with the "FROM" instruction. In this exercise we could use alphine and install all requirements we need (python, Flask and other dependencies). Fortunately, there is an image called `python`, publicly available [here](https://hub.docker.com/_/python) on DockerHub, that is a image ready to execute Python code. So, insert `FROM python:3` in the Dockerfile. 
+
+With the ":3" we are specifing the version 3 of Python. But it's not a magic process! Someone built Docker images with python3, python2, python2.7 and so on... So we can go to the [(Docker image page)](https://hub.docker.com/_/python) and choose the right version for our use-case between the versions available.
+
+**NOTE:** It's not recommended to use `alphine` image for data science, since it's difficult to install `pandas` library.
 
 Now we need to provision the environment with the dependencies. So we will copy the `requirements.txt` file in the container and use it to install dependencies. To copy files in a container we can use the `COPY` instruction.
 
