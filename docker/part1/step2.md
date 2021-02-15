@@ -21,7 +21,7 @@ To generate this message, Docker took the following steps:
 Let's explain these steps.
 
 ### 1. Docker daemon
-This is the persistent process that manages containers. We interact with it through the CLI.
+This is the persistent process that manages containers. We interact with it through the docker client (CLI).
 
 ### 2. Images and Docker Hub
 The container's images are one of the most important elements. Someone can confuse Docker containers and Docker images, so let's explain.
@@ -31,6 +31,11 @@ An **image** is a model for the creation of one or more containers. It's a stati
 A **container** is a running entity, created from an image. So, from an image, we can create more containers.
 
 So Docker, for create our "hello world" container used the "hello-world" image. But where Docker found it? Answer: in Docker Hub. It's a public registry that contains Docker images ready to be executed. Docker Hub it's the public registry of Docker, but there are also private registries. These public registries usually contains base images that can be used to package our applications. For example there are images for Ubuntu, PostgreSQL, MongoDB, Kafka, and Python.
+
+### Docker client VS Docker deamon VS Docker Registry
+Docker uses a client-server architecture. The Docker client talks to the Docker daemon, which does the heavy lifting of building, running, and distributing your Docker containers. The Docker client and daemon can run on the same system, or you can connect a Docker client to a remote Docker daemon. The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface. Another Docker client is Docker Compose, that lets you work with applications consisting of a set of containers. A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default. You can even run your own private registry.
+
+![Docker architecture](https://docs.docker.com/engine/images/architecture.svg)
 
 ### 3. Run the container
 At this point Docker created and executed the container. This is because we told him to do it. We executed `docker run` command. 
