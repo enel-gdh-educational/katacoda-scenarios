@@ -7,11 +7,11 @@
     "assets": {
       "host1": [
         {
-          "file": "step2",
+          "file": "step3",
           "target": "/root/project"
         },
         {
-          "file": "step3",
+          "file": "step4",
           "target": "/root/project"
         }
       ]
