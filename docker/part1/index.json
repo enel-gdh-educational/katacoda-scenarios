@@ -26,11 +26,15 @@
         "text": "step2.md"
       } ,
       {
-        "title": "Step 3 - Real app with Docker",
+        "title": "Step 3 - Create a custom image",
         "text": "step3.md"
       },
       {
-        "title": "Step 4 - Recap of Docker commands",
+        "title": "Step 4 - Real app with Docker",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 5 - Recap of Docker commands",
         "text": "step4.md"
       }
     ],

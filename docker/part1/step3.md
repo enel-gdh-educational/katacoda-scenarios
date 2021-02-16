@@ -1,80 +1,77 @@
-Now we start to build a real app and Dockerize it. For this step use code in /root/project/step3 directory
+## Create our own image
 
-Let's assume that we want to build a simple microservice that expose two endpoints:
-- /health : to check the health of the service
-- /predict : to make predictions using an AI model
+Now it's time to create our own images and containers. To create a custom image we need to define a Dockerfile. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. 
 
-For developing our app we will use Flask, a framework to build web applications in Python. Look at the `app/main.py` file. In this script we define the Flask app, define the `/health` endpoint and run the app. This base app will be expanded in the next steps.
+All comands have this format: `INSTRUCTION arguments`. The instruction is not case-sensitive. However, convention is for them to be UPPERCASE to distinguish them from arguments more easily. Docker runs instructions in a Dockerfile in order.
 
-Let's try this app locally.
-Navigate in the step3 directory `cd /root/project/step3`{{execute}},
+Let's start with the simple Dockerfile that you can find in /root/project/step2/Dockerfile. During the costruction of our image we'll discover some useful Dockerfile commands.
 
-install dependencies with `pip install -r requirements.txt`{{execute}}
+## FROM Command
 
-and run `python3 app/main.py`{{execute}}
+The first line we find is `FROM alpine:latest`. FROM is an instruction that specifies the base image. 
 
-We started our app locally. Now, open a new Terminal windows and test it. Try to run `curl http://localhost:5000/health`{{execute}}
+Usage: `FROM [--platform=<platform>] <image>[:<tag>] [AS <name>]` 
 
-Does it work? Ok... Now imagine that you have to ship it to someone else. What should you do? At least, you must pass his the code, you must be sure he has Python installed and has the right version of Python, he has to install dependencies. There can be conflicts between different versions of libraries or different versions of Python. But, fortunately, this is the perfect situation to use Docker! If we package our application in a Docker image, all we need to ensure is that the other person has Docker installed. Simple, right?
+The FROM instruction initializes a new build stage and sets the Base Image for subsequent instructions. As such, a valid Dockerfile must start with a FROM instruction.  The optional --platform flag can be used to specify the platform of the image in case FROM references a multi-platform image. For example, linux/amd64, linux/arm64, or windows/amd64.
 
-Let's package our application in a Docker image with all his dependencies and code.
+Docker starts from this to build our own image putting some other layers on it. Usually the application and his dependencies are added to a base image. Base images can be retrieved from DockerHub, from another registries (public or private) or build from another file and used as base. The ":latest" represents the version of the image. 
 
-Inside the `step3` directory, create a Dockerfile. `touch Dockerfile`{{execute}}
+In this exercise we use the alphine image. The alphine is a minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size! It's used when lightness is needed and we use it also because we don't have big requirements for a Hello world exercise. 
 
-As usual, start with the "FROM" instruction. In this exercise we could use alphine and install all requirements we need (python, Flask and other dependencies). Fortunately, there is an image called `python`, publicly available [here](https://hub.docker.com/_/python) on DockerHub, that is a image ready to execute Python code. So, insert `FROM python:3` in the Dockerfile. 
+## ENRTYPOINT Command
 
-With the ":3" we are specifing the version 3 of Python. But it's not a magic process! Someone built Docker images with python3, python2, python2.7 and so on... So we can go to the [(Docker image page)](https://hub.docker.com/_/python) and choose the right version for our use-case between the versions available.
+Next line is `ENTRYPOINT [ "echo", "Hello, World!" ]` 
 
-**NOTE:** It's not recommended to use `alphine` image for data science, since it's difficult to install `pandas` library.
+The ENTRYPOINT instruction specifies the executable program that will be executed in the container. His syntax is `ENTRYPOINT [ "command", "param1", "param2", ...]`. Usually a Dockerfile starts with FROM instruction and end with an ENTRYPOINT.
 
-Now we need to provision the environment with the dependencies. So we will copy the `requirements.txt` file in the container and use it to install dependencies. To copy files in a container we can use the `COPY` instruction.
+## Build the image
+Once we wrote our Dockerfile, we can build our image. To do this, use the `docker build` command. 
 
-Usage: `COPY [--chown=<user>:<group>] <src>... <dest>`. 
+Usage: `docker build [OPTIONS] PATH | URL `
 
-The COPY instruction copies new files or directories from `<src>` and adds them to the filesystem of the container at the path `<dest>`.The --chown feature is only supported on Dockerfiles used to build Linux containers, and will not work on Windows containers. Since user and group ownership concepts do not translate between Linux and Windows, the use of /etc/passwd and /etc/group for translating user and group names to IDs restricts this feature to only be viable for Linux OS-based containers.
+Run:
+`cd /root/project/step2 && docker build -t my-hello:latest .`{{execute}}
 
-To execute commands we can't use `CMD` or `ENTRYPOINT`, but there is a specific instruction for this. It's `RUN`. 
+The `-t` allows us to tag the image with a name and a version (tag). In this case we called our image "my-hello" and tagged as "latest" version. If you don't specify a tag, the "latest" is the default. After this option, we must specify the context.  A build’s context is the set of files located in the specified `PATH` or `URL`. In this case we moved in the same directory of the Dockerfile, so we use "." context.
 
-Usage: `RUN <command>`.
+Now check that the new image is available with `docker images`{{execute}}
 
-The RUN instruction will execute any commands in a new layer on top of the current image and commit the results. The resulting committed image will be used for the next step in the Dockerfile. Commands specified in this format run in a shell, which by default is /bin/sh -c on Linux or cmd /S /C on Windows.
+We can now start a container based on our image as we did for the first hello world container.
 
-The commands specified with the RUN instruction are executed during the image building. The command in the ENTRYPOINT instruction, instead, is executed directly from the container.
+---
 
-So, add these lines to the Dockefile:
+**EXERCISE 1:** Start a container based on the new image.
+
+---
+
+## CMD Command
+Now we introduce another important instruction, the `CMD` instruction. 
+
+Usage: `CMD ["executable","param1","param2"]`
+
+There can only be one CMD instruction in a Dockerfile. If you list more than one CMD then only the last CMD will take effect. The main purpose of a CMD is to provide defaults for an executing container. These defaults can include an executable, or they can omit the executable, in which case you must specify an ENTRYPOINT instruction as well.
+
+So... What is the difference between specify parameters in ENTRYPOINT and in CMD?
+Answer: The parameters in ENTRYPOINT instruction are immutable, once you build the image you can't change them without rebuilding it or without substitute all ENTRYPOINT with a specific option of `docker run` command. The arguments in the CMD instruction, instead, can be overwritten when the container is run. If you specify also the command in the CMD instruction in the Dockerfile, also the commmand can be overwritten.
+
+Let's edit our Dockerfile in this way:
 ```Dockerfile
-COPY requirements.txt /requirements.txt
-RUN python3 -m pip install --upgrade pip && pip3 install -r /requirements.txt
+FROM alpine:latest
+ENTRYPOINT [ "echo" ]
+CMD ["Hello, World!"]
 ```
+---
 
-When we will build this image, Docker will put the requirements file in / path, will update pip and will install all dependencies.
+**EXERCISE 2:** Rebuild the image, run a container and check that it has the same behaviour of the previous version.
 
-Now, we can copy also the code of our app. We can do this in this way: 
-```Dockerfile
-COPY app /app
-```
+---
 
-The last missing thing is the ENTRYPOINT instruction. So, insert 
-```Dockerfile
-ENTRYPOINT [ "python3", "/app/main.py" ]
-```
+For overwrite arguments simply pass them at the end of the `docker run` command.
 
-**EXERCISE:** Build the image and run the container.
+Try this: `docker run --name custom-hello my-hello Hello from the Docker course!`{{execute}}
 
-Why doesn't it work? Because our app needs a port to communicate with the host. In particular, it needs the port 5000.
-![Docker ports](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part1/images/docker_ports.png)
+---
 
-We need tell Docker that our app need to **expose** the port 5000, and we need also to tell Docker to link a port on our machine to the container port.
-The first thing is possible with the `EXPOSE` instruction. 
+**EXERCISE 3:** Clean all stopped containers.
 
-Usage: `EXPOSE <port> [<port>/<protocol>...]`.
-
-The EXPOSE instruction informs Docker that the container listens on the specified network ports at runtime. You can specify whether the port listens on TCP (default) or UDP, and the default is TCP if the protocol is not specified.
-
-In the Dockerfile, before the ENTRYPOINT, add `EXPOSE 5000`. The EXPOSE instruction does not actually publish the port. It functions as a type of documentation between the person who builds the image and the person who runs the container, about which ports are intended to be published. To actually publish the port when running the container, use the -p flag on docker run to publish and map one or more ports, or the -P flag to publish all exposed ports and map them to high-order ports.
-
-So, the second thing isn't specified in the Dockerfile, but it's possible with the "-p host-port:container-port" option of Docker.
-This is necessary because we want to communicate with the container, but Docker containers can communicate to each others also without binding their port to the host machine. In this case, the first step (EXPOSE) is always necessary.
-
-TODO: finish this step: docker stop, restart the container, exec some commands inside the container.
-
+---
