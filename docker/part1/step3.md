@@ -4,7 +4,7 @@ Now it's time to create our own images and containers. To create a custom image 
 
 All comands have this format: `INSTRUCTION arguments`. The instruction is not case-sensitive. However, convention is for them to be UPPERCASE to distinguish them from arguments more easily. Docker runs instructions in a Dockerfile in order.
 
-Let's start with the simple Dockerfile that you can find in /root/project/step2/Dockerfile. During the costruction of our image we'll discover some useful Dockerfile commands.
+Let's start with the simple Dockerfile that you can find in /root/project/3/Dockerfile. During the costruction of our image we'll discover some useful Dockerfile commands.
 
 ## FROM Command
 
@@ -30,7 +30,7 @@ Once we wrote our Dockerfile, we can build our image. To do this, use the `docke
 Usage: `docker build [OPTIONS] PATH | URL `
 
 Run:
-`cd /root/project/step2 && docker build -t my-hello:latest .`{{execute}}
+`cd /root/project/3 && docker build -t my-hello:latest .`{{execute}}
 
 The `-t` allows us to tag the image with a name and a version (tag). In this case we called our image "my-hello" and tagged as "latest" version. If you don't specify a tag, the "latest" is the default. After this option, we must specify the context.  A build’s context is the set of files located in the specified `PATH` or `URL`. In this case we moved in the same directory of the Dockerfile, so we use "." context.
 

@@ -1,4 +1,4 @@
-Now we start to build a real app and Dockerize it. For this step use code in /root/project/step3 directory
+Now we start to build a real app and Dockerize it. For this step use code in /root/project/step4 directory
 
 # Idea
 
@@ -11,7 +11,7 @@ For developing our app we will use Flask, a framework to build web applications 
 ## Try it locally
 
 Let's try this app locally.
-Navigate in the step3 directory `cd /root/project/step3`{{execute}},
+Navigate in the step4 directory `cd /root/project/step4`{{execute}},
 
 install dependencies with `pip install -r requirements.txt`{{execute}}
 
@@ -25,7 +25,7 @@ Let's package our application in a Docker image with all his dependencies and co
 
 ## Dockerize it!
 
-Inside the `step3` directory, create a Dockerfile. `touch Dockerfile`{{execute}}
+Inside the `step4` directory, create a Dockerfile. `touch Dockerfile`{{execute}}
 
 As usual, start with the "FROM" instruction. In this exercise we could use alphine and install all requirements we need (python, Flask and other dependencies). Fortunately, there is an image called `python`, publicly available [here](https://hub.docker.com/_/python) on DockerHub, that is a image ready to execute Python code. So, insert `FROM python:3` in the Dockerfile. 
 
