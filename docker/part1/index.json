@@ -31,7 +31,7 @@
         "answer": "step3-answers.md"
       },
       {
-        "title": "Step 4 - Real app with Docker",
+        "title": "Step 4 - Inference app with Docker",
         "text": "step4.md",
         "answer": "step4-answers.md"
       },
