@@ -14,4 +14,4 @@ Assuming we built the "ai-app" image, we can run two replicas of our application
 
 `docker run --name app-replica2 -p 8081:5000 ai-app`
 
-now, to reach the application you can use `localhost:8080` or `localhost:8081`. 
+now, to reach the application you can use `localhost:8080` or `localhost:8081` 
