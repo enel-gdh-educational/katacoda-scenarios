@@ -8,6 +8,8 @@ Let's assume that we want to build a simple microservice that expose two endpoin
 
 For developing our app we will use Flask, a framework to build web applications in Python. Look at the `app/main.py` file. In this script we define the Flask app, define the `/health` endpoint and run the app. This base app will be expanded in the next steps.
 
+*NOTE: Here we are using Flask to keep things simple and focus on Docker. If you need to develop a web service you can choose to use Flask with a more complex stack (like Nginx + uWSGI + Flask) or you can use FastAPI. This second choise is recommended for new projects.*
+
 ## Try it locally
 
 Let's try this app locally.
@@ -19,7 +21,9 @@ and run `python3 app/main.py`{{execute}}
 
 We started our app locally. Now, open a new Terminal windows and test it. Try to run `curl http://localhost:5000/health`{{execute}}
 
-Does it work? Ok... Now imagine that you have to ship it to someone else. What should you do? At least, you must pass his the code, you must be sure he has Python installed and has the right version of Python, he has to install dependencies. There can be conflicts between different versions of libraries or different versions of Python. But, fortunately, this is the perfect situation to use Docker! If we package our application in a Docker image, all we need to ensure is that the other person has Docker installed. Simple, right?
+Does it work? Ok... Now imagine that you have to ship it to someone else. What should you do? At least, you must pass him the code, you must be sure he has Python installed and has the right version of Python, he has to install dependencies. There can be conflicts between different versions of libraries or different versions of Python. 
+
+Fortunately, this is the perfect situation to use Docker! If we package our application in a Docker image, all we need to ensure is that the other person has Docker installed. Simple, right?
 
 Let's package our application in a Docker image with all his dependencies and code.
 
@@ -29,7 +33,7 @@ Inside the `step4` directory, create a Dockerfile. `touch Dockerfile`{{execute}}
 
 As usual, start with the "FROM" instruction. In this exercise we could use alphine and install all requirements we need (python, Flask and other dependencies). Fortunately, there is an image called `python`, publicly available [here](https://hub.docker.com/_/python) on DockerHub, that is a image ready to execute Python code. So, insert `FROM python:3` in the Dockerfile. 
 
-With the ":3" we are specifing the version 3 of Python. But it's not a magic process! Someone built Docker images with python3, python2, python2.7 and so on... So we can go to the [(Docker image page)](https://hub.docker.com/_/python) and choose the right version for our use-case between the versions available.
+With the ":3" we are specifing the version 3 of Python. But it's not a magic process! Someone built Docker images with python3, python2, python2.7 and so on... So we can go to the [Python Docker image page](https://hub.docker.com/_/python) and choose the right version for our use-case between the versions available.
 
 **NOTE:** It's not recommended to use `alphine` image for data science, since it's difficult to install `pandas` library.
 
@@ -39,7 +43,7 @@ Now we need to provision the environment with the dependencies. So we will copy 
 
 Usage: `COPY [--chown=<user>:<group>] <src>... <dest>`. 
 
-The COPY instruction copies new files or directories from `<src>` and adds them to the filesystem of the container at the path `<dest>`.The --chown feature is only supported on Dockerfiles used to build Linux containers, and will not work on Windows containers. Since user and group ownership concepts do not translate between Linux and Windows, the use of /etc/passwd and /etc/group for translating user and group names to IDs restricts this feature to only be viable for Linux OS-based containers.
+The COPY instruction copies new files or directories from `<src>` and adds them to the filesystem of the container at the path `<dest>`.The `--chown` feature is only supported on Dockerfiles used to build Linux containers, and will not work on Windows containers. Since user and group ownership concepts do not translate between Linux and Windows, the use of /etc/passwd and /etc/group for translating user and group names to IDs restricts this feature to only be aviable for Linux OS-based containers.
 
 ### RUN Command
 
@@ -47,7 +51,7 @@ To execute commands we can't use `CMD` or `ENTRYPOINT`, but there is a specific 
 
 Usage: `RUN <command>`.
 
-The RUN instruction will execute any commands in a new layer on top of the current image and commit the results. The resulting committed image will be used for the next step in the Dockerfile. Commands specified in this format run in a shell, which by default is /bin/sh -c on Linux or cmd /S /C on Windows.
+The RUN instruction will execute any commands in a new layer on top of the current image and commit the results. The resulting committed image will be used for the next step in the Dockerfile. Commands specified in this format run in a shell, which by default is `/bin/sh -c` on Linux or `cmd /S /C` on Windows.
 
 The commands specified with the RUN instruction are executed during the image building. The command in the ENTRYPOINT instruction, instead, is executed directly from the container.
 
@@ -75,9 +79,9 @@ ENTRYPOINT [ "python3", "/app/main.py" ]
 
 ---
 
-Why doesn't it work? Because our app needs a port to communicate with the host. In particular, it needs the port 5000.
+Let's try to call the health endpoint. Why doesn't it work? Because our app needs a port to communicate with the host. In particular, it needs the port 5000.
 
-## Port binding
+## Port binding - EXPOSE command
 
 ![Docker ports](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part1/images/docker_ports.png)
 
