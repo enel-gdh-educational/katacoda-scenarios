@@ -38,6 +38,10 @@
       {
         "title": "Step 5 - Recap of Docker commands",
         "text": "step5.md"
+      },
+      {
+        "title": "Step 6 - Container lifecycle, detached and interactive mode.",
+        "text": "step6.md"
       }
     ],
     "intro": {
