@@ -97,5 +97,19 @@ In the Dockerfile, before the ENTRYPOINT, add `EXPOSE 5000`. The EXPOSE instruct
 So, the second thing isn't specified in the Dockerfile, but it's possible with the "-p host-port:container-port" option of Docker.
 This is necessary because we want to communicate with the container, but Docker containers can communicate to each others also without binding their port to the host machine. In this case, the first step (EXPOSE) is always necessary.
 
+As we said, we can also run other replicas of our applications simply running more containers of the same image. Let's try:
+
+`docker run --name app-replica2 -p 5000:5000 ai-app`
+
+Why doesn't work? Because we run two distinct containers that listen on the same port, but we mapped them to the same host port! So, it's not a problem having two or more container that listen on the same port, because these are container's ports. 
+
+But, when we map these ports to the host, we must be sure to map them to different ports. 
+
+---
+
+**EXERCISE 5:** Run more replicas of the application and check that you can reach all of them.
+
+---
+
 TODO: finish this step: docker stop, restart the container, exec some commands inside the container.
 
