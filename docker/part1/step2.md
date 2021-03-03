@@ -78,7 +78,7 @@ We have zero containers running, and it's exact because our container started, e
 `docker ps -a`{{execute}}
 Here we can see our hello-world container with "Exited" status. 
 
-## docker images command
+## docker image command
 We told before the difference between container and images. As we have commands to manage containers, we have also commands to manage images. The `docker image` commands allows us to list local images, delete them and so on.
 
 We can list all the images available locally with the command `docker image ls`{{execute}}
