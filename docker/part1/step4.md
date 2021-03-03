@@ -73,7 +73,7 @@ ENTRYPOINT ["uvicorn", "app.api:app", "--host", "0.0.0.0", "--port", "80"]
 
 ---
 
-**EXERCISE 4:** Build the image and run the container. For semplicity, map the port to the port 80 of the host.
+**EXERCISE 4:** Build the image and run the container.
 
 ---
 
