@@ -14,7 +14,7 @@ For this scenario you can run the container like we did for the "Hello world" co
   
 This can be the scenario of our inference app. We built a Docker image for our web app and we want to run a contaier, but we don't want to have our terminal locked on the container output stream. In this case, we can run the container in detached mode with the `-d` option.
 
-Try it: `docker run --name my-app -d docker-course-app`{{execute}}
+Try it: `docker run --name my-app -p 80:80 -d docker-course-app`{{execute}}
 
 You can manage the running container using commands like `docker stop`, `docker pause`, `docker kill` and so on.  All these commands have the same syntax `docker <action> <contaier-id/name>`, but they can have different options.
 
