@@ -95,9 +95,11 @@ In the Dockerfile, before the ENTRYPOINT, add `EXPOSE 80`. The EXPOSE instructio
 So, the second thing isn't specified in the Dockerfile, but it's possible with the "-p host-port:container-port" option of Docker.
 This is necessary because we want to communicate with the container, but Docker containers can communicate to each others also without binding their port to the host machine. In this case, the first step (EXPOSE) is always necessary.
 
+The right command is: `docker run --name app -p 80:80 docker-course-app`{{execute}}
+
 As we said, we can also run other replicas of our applications simply running more containers of the same image. Let's try:
 
-`docker run --name app-replica2 -p 80:80 docker-course-app`
+`docker run --name app-replica2 -p 80:80 docker-course-app`{{execute}}
 
 Why doesn't work? Because we run two distinct containers that listen on the same port, but we mapped them to the same host port! So, it's not a problem having two or more container that listen on the same port, because these are container's ports. 
 
