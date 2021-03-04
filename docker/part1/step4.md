@@ -29,7 +29,7 @@ Let's package our application in a Docker image with all his dependencies and co
 
 Inside the `step4` directory, create a Dockerfile. `touch Dockerfile`{{execute}}
 
-As usual, start with the "FROM" instruction. In this exercise we could use alphine and install all requirements we need (python, Flask and other dependencies). Fortunately, there is an image called `python`, publicly available [here](https://hub.docker.com/_/python) on DockerHub, that is a image ready to execute Python code. So, insert `FROM python:3` in the Dockerfile. 
+As usual, start with the "FROM" instruction. In this exercise we could use alphine and install all requirements we need (python, Flask and other dependencies). Fortunately, there is an image called `python`, publicly available [here](https://hub.docker.com/_/python) on DockerHub, that is a image ready to execute Python code. So, insert `FROM python:3.7` in the Dockerfile. 
 
 With the ":3" we are specifing the version 3 of Python. But it's not a magic process! Someone built Docker images with python3, python2, python2.7 and so on... So we can go to the [Python Docker image page](https://hub.docker.com/_/python) and choose the right version for our use-case between the versions available.
 
