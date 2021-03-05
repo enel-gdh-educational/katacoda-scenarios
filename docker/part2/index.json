@@ -4,6 +4,14 @@
   "difficulty": "beginner",
   "time": "3 hours",
   "details": {
+    "assets": {
+      "host1": [
+        {
+          "file": "step1",
+          "target": "/root/project"
+        }
+      ]
+    },
     "steps": [
       {
       "title": "Step 1",
