@@ -10,10 +10,10 @@ file system.
 
 Execute `cd /root/project/`{{execute}} to explore the project folder.
 
-Using the Dockerfile located at `/root/project/Dockerfile`  (that it's the same resulting 
+Using the Dockerfile located at `/root/project/Dockerfile`  (that it's the resulting one 
 from first part of this course) we can build this simple web app as a Docker image.
 
-Execute `docker build -t simple_api_img /root/project/` {{execute}}
+Execute `docker build -t simple_api_img /root/project/`{{execute}}
 
 As you can see from the console output the Dockerfile it's executed in 4 step
 
