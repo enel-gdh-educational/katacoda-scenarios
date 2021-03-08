@@ -18,7 +18,7 @@ Try it: `docker run --name my-app -p 80:80 -d docker-course-app`{{execute}}
 
 You can manage the running container using commands like `docker stop`, `docker pause`, `docker kill` and so on.  All these commands have the same syntax `docker <action> <contaier-id/name>`, but they can have different options.
 
-Now the container run in backgroud and you have you terminal free again. Don't warry, you can still see your container's log using the `docker logs` command.
+Now the container run in backgroud and you have you terminal free again. Don't worry, you can still see your container's log using the `docker logs` command.
 
 Usage: `docker logs [OPTIONS] CONTAINER`
 
