@@ -16,9 +16,9 @@ The FROM instruction initializes a new build stage and sets the Base Image for s
 
 Docker starts from this to build our own image putting some other layers on it. Usually the application and his dependencies are added to a base image. Base images can be retrieved from DockerHub, from another registries (public or private) or built from another file and used as base. The ":latest" represents the version of the image. 
 
-**NOTE:** In this exercise we use the alphine image. The alphine is a minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size! It's used when lightness is needed and we use it also because we don't have big requirements for a Hello world exercise.
+**NOTE:** In this exercise we use the alpine image. The alpine is a minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size! It's used when lightness is needed and we use it also because we don't have big requirements for a Hello world exercise.
 
-If you need a complex environment for your application you should not use alphine image. In these cases you have two possibilities:
+If you need a complex environment for your application you should not use alpine image. In these cases you have two possibilities:
 - Choose a specific image that provide you all tools and stacks you need. (Great advantage of Docker!)
 - Choose a complete base image (e.g. Ubuntu, Debian) that offer you a solid base where you can install your stack, tools, libraries and dependencies without too many problems. 
 

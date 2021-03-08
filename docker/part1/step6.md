@@ -57,7 +57,7 @@ Start the container: `docker run --name my-app -d docker-course-app`{{execute}}
 
 We don't bind the container's port with a host's port, so we can't communicate with the app from the host. 
 
-Now open a shell in it: `docker exec -it my-app bash` and try to call health endpoint. 
+Now open a shell in it: `docker exec -it my-app bash`{{execute}} and send a request to the health endpoint. 
 
-It works! Because we are executing commands from inside the container!
+It works! Because we are executing commands from inside the container! Actually, opening a shell in a running container is a very useful and common operation, expecially at debug time. So, keep in mind this trick! 
 
