@@ -33,7 +33,9 @@ Once we wrote our Dockerfile, we can build our image. To do this, use the `docke
 
 Usage: `docker build [OPTIONS] PATH | URL `
 
-The `docker build` command builds Docker images from a Dockerfile and a “context”. A build’s context is the set of files located in the specified `PATH` or `URL`. The build process can refer to any of the files in the context. For example, your build can use a [_COPY_](https://docs.docker.com/engine/reference/builder/#copy) instruction to reference a file in the context.
+The `docker build` command builds Docker images from a Dockerfile and a “context”. A build’s context is the set of files located in the specified `PATH` or `URL`. The build process can refer to any of the files in the context. For example, your build can use a `COPY` instruction to reference a file in the context.
+
+Usually, the Dockerfile is put on the context root and this fits with the majority of use cases. In fact, usually there is only one Dockerfile for each context. Other more particular use cases can be handled with the `-f` option of the `docker build` command, that allows you to specify a different location for the Dockerfile.  
  
 The `URL` parameter can refer to three kinds of resources: Git repositories, pre-packaged tarball contexts and plain text files.
 
