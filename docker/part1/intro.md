@@ -5,4 +5,3 @@ What we will do in this scenario:
 - We will experiment with containers: creating, executing, stopping, removing
 - We will discover Dockerfile commands creating and building a custom Hello world image
 - We will start building an inference app with Docker
-- *TODO: FILL THIS BULLETED LIST*
