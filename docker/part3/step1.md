@@ -5,7 +5,7 @@ It has many repositories and each repository has different versions of the same 
 individually versioned with tags.
 
 
-Pros Docker Registry
+Pros Docker Registry:
 - Team collaboration
 - Quality and reuse
 - Automate development: we can integrate images storage with pipelines and workflow development
