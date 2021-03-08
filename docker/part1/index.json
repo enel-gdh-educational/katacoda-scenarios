@@ -4,6 +4,18 @@
   "difficulty": "beginner",
   "time": "3 hours",
   "details": {
+    "assets": {
+      "host1": [
+        {
+          "file": "step3",
+          "target": "/root/project"
+        },
+        {
+          "file": "step4",
+          "target": "/root/project"
+        }
+      ]
+    },
     "steps": [
       {
         "title": "Step 1 - Foundamentals",
@@ -12,11 +24,30 @@
       {
         "title": "Step 2 - Experiment with containers",
         "text": "step2.md"
+      } ,
+      {
+        "title": "Step 3 - Create a custom image",
+        "text": "step3.md",
+        "answer": "step3-answers.md"
+      },
+      {
+        "title": "Step 4 - Inference app with Docker",
+        "text": "step4.md",
+        "answer": "step4-answers.md"
+      },
+      {
+        "title": "Step 5 - Recap of Docker commands",
+        "text": "step5.md"
+      },
+      {
+        "title": "Step 6 - Container lifecycle, detached and interactive mode.",
+        "text": "step6.md"
       }
     ],
     "intro": {
       "text": "intro.md",
-      "credits": ""
+      "credits": "",
+      "code": "intro.sh"
     },
     "finish": {
       "text": "finish.md"

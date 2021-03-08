@@ -1,6 +1,6 @@
 {
   "title": "Docker",
-  "description": "Prova descrizione",
+  "description": "Course about Docker foundamentals.",
   "courses": [
     {
       "course_id": "part1",
@@ -15,7 +15,7 @@
     {
       "course_id": "part3",
       "title": "Docker course part 3",
-      "description": "part3 descrizione"
+      "description": "Develop AI code with Docker. Overview on layers, cache and volumes."
     }
   ]
 }

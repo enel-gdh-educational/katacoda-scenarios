@@ -2,6 +2,18 @@
 
 Now that we learned some basics concepts, let's start experimenting with Docker and Containers!
 
+---
+
+## docker run command
+
+The first command we need to start using containers is `docker run`. 
+
+Usage: `docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]`
+
+The docker run command must specify an IMAGE to derive the container from. With the docker run [OPTIONS] an operator can add to or override the image defaults set by a developer. And, additionally, operators can override nearly all the defaults set by the Docker runtime itself. 
+
+---
+
 Every journey in IT starts with a Hello world, so run:
 `docker run --name hello hello-world`{{execute}} 
 
@@ -20,8 +32,10 @@ To generate this message, Docker took the following steps:
 
 Let's explain these steps.
 
-### 1. Docker daemon
-This is the persistent process that manages containers. We interact with it through the CLI.
+### 1. Docker client and Docker daemon
+The Docker client is the Docker command line tool. We can use it to interact with Docker.
+
+This is the persistent process that manages containers. We interact with it through the docker client (CLI).
 
 ### 2. Images and Docker Hub
 The container's images are one of the most important elements. Someone can confuse Docker containers and Docker images, so let's explain.
@@ -30,28 +44,59 @@ An **image** is a model for the creation of one or more containers. It's a stati
 
 A **container** is a running entity, created from an image. So, from an image, we can create more containers.
 
-So Docker, for create our "hello world" container used the "hello-world" image. But where Docker found it? Answer: in Docker Hub. It's a public registry that contains Docker images ready to be executed. Docker Hub it's the public registry of Docker, but there are also private registries. These public registries usually contains base images that can be used to package our applications. For example there are images for Ubuntu, PostgreSQL, MongoDB, Kafka, and Python.
+So Docker, to create our "hello world" container used the "hello-world" image. But where did Docker find it? Answer: in Docker Hub. It's a public registry that contains Docker images ready to be executed. Docker Hub it's the public registry of Docker, but there are also private registries. These public registries usually contains base images that can be used to package our applications. For example there are images for Ubuntu, PostgreSQL, MongoDB, Kafka, and Python.
+
+### Docker client VS Docker deamon VS Docker Registry
+Docker uses a client-server architecture. The Docker client talks to the Docker daemon, which does the heavy lifting of building, running, and distributing your Docker containers. The Docker client and daemon can run on the same system, or you can connect a Docker client to a remote Docker daemon. The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface. Another Docker client is Docker Compose, that lets you work with applications consisting of a set of containers. A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default. You can even run your own private registry.
+
+![Docker architecture](https://docs.docker.com/engine/images/architecture.svg)
 
 ### 3. Run the container
 At this point Docker created and executed the container. This is because we told him to do it. We executed `docker run` command. 
 
 "Docker run" is used to execute containers. It must specify an *IMAGE* to derive the container from. 
 
+### 4. Stream output
+The Docker daemon streams the output of your countainer to the Docker client. It's the default behavior, but you can always ovveride it.
+
 ---
+## docker ps command
 
-Now, we have executed our first container. To see all running containers run:
-`docker ps`{{execute}} 
+Now, we have executed our first container. To see all running containers we can use the `docker ps` command.
 
-We have zero containers running, and it's exact because our container started, executed something and exited. To see all containers run:
+Usage: `docker ps [OPTIONS]`
+
+Some important and useful options are:
+- `--all , -a` Show all containers (default shows just running)
+- `--filter , -f` Filter output based on conditions provided
+- `--format` Pretty-print containers using a Go template
+- `--last , -n` Show n last created containers (includes all states)
+
+So, to see all runnign containers run: `docker ps`{{execute}} 
+
+We have zero containers running, and it's exact because our container started, executed something and exited. To see **all** containers, in every status, run:
 `docker ps -a`{{execute}}
 Here we can see our hello-world container with "Exited" status. 
 
-We told before the difference between container and images. We can also list all the images available locally with the command `docker images`{{execute}}
+## docker image command
+We told before the difference between container and images. As we have commands to manage containers, we have also commands to manage images. The `docker image` commands allows us to list local images, delete them and so on.
+
+We can list all the images available locally with the command `docker image ls`{{execute}}
 
 We can see that we have the "hello-world" image pulled. But the relationship between images and container is not 1:1, so we can create another container name "hello2" with this command
 `docker run --name hello2 hello-world`{{execute}} 
-And see that we have two containers created from the same image. Check it!
 
-Containers remain until we delete them with `docker rm hello hello2`{{execute}} command. This command remove one or more container. You must pass the container name or the container ID.
+We can observe two things:
+1. Docker didn't pulled the image again.
+2. We have two containers created from the same image. Check it!
+
+## docker rm commands
+
+Containers remain until we delete them with `docker rm` command. This command remove one or more container. You must pass the container name or the container ID.
+
+USAGE: `docker rm [OPTIONS] CONTAINER [CONTAINER...]`
+
+Try to run `docker rm hello hello2`{{execute}}
+
 We can also delete images with the command:
 `docker image rm hello-world`{{execute}} 

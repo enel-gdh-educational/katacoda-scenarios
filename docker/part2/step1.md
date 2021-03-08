@@ -1,7 +1,19 @@
-This is your first step.
+# Keep on developing the inference app of the last course part
 
-## Task
+In the last course part we defined a simple FastAPI web application that exposes just 
+a health-check endpoint. Now it's time to add more logic to our Dockerized app. 
 
-This is an _example_ of creating a scenario and running a **command**
+In the `/root/project/step1/api.py` script now we expose a '/predict' endpoint that triggers 
+a prediction operation using the model contained in `/root/project/step1/model/` path and then 
+writes the results on the `/app/results/last_results.json` file placed inside the container 
+file system.
 
-`echo 'Hello World'`{{execute}}
+Execute `cd /root/project/step1/`{{execute}} to explore the project folder.
+
+Using the Dockerfile located at `/root/project/step1/Dockerfile`  (that it's the resulting one 
+from first part of this course) we can build this simple web app as a Docker image.
+
+Execute `docker build -t simple_api_img /root/project/step1`{{execute}}
+
+As you can see from the console output the Dockerfile it's executed in 4 step
+
