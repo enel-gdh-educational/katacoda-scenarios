@@ -1,4 +1,4 @@
-# Step 1 - Keep on developing the inference app of the last course part
+# Keep on developing the inference app of the last course part
 
 In the last course part we defined a simple FastAPI web application that exposes just 
 a health-check endpoint. Now it's time to add more logic to our Dockerized app. 
@@ -14,9 +14,8 @@ Using the Dockerfile located at `/root/project/step1/Dockerfile`  (that it's the
 from first part of this course) we can build this simple web app as a Docker image.
 
 But first, let's add another COPY operation in the Dockerfile to bring also the model folder 
-inside the container file system.
+inside the container file system: `COPY model /model`
 
-`COPY model /model`
 
 > Now execute `docker build -t simple_api_img /root/project/step1`{{execute}}
 
@@ -30,9 +29,9 @@ the docker run command.
 > Execute `docker run --name simple_api -p 80:80 simple_api_img`{{execute}}.
 
 We're now seeing the stdout of the running container that says that we have Uvicorn
-running on http://0.0.0.0:80. 
+running on `http://0.0.0.0:80`. 
 
-> Open a new terminal window and execute `curl http://0.0.0.0:80/health`.
+> Open a new terminal window and execute `curl http://0.0.0.0:80/health`{{execute}}.
 
 Go back to the first terminal window to see the information logged.
 
@@ -51,7 +50,7 @@ already produced. Without this option we could only see the past logs.
 Now let's call the '/predict' endpoint in order to request a simulation run.
 
 > Go back to the second terminal window and execute 
-> `curl -X POST http://0.0.0.0:80/predict`
+> `curl -X POST http://0.0.0.0:80/predict`{{execute}}
 
 The response says that the results are stored in a file inside the container file system.
 We're simulating a scenario where the required operation could last long, and so the results 
@@ -84,7 +83,8 @@ the host machine at /root/project/step1/svm.joblib
 Now the application will use the new model to execute the prediction. So let's call
 again the '/predict' endpoint.
 
-> Go back to the second terminal window and execute `curl -X POST http://0.0.0.0:80/predict`
+> Go back to the second terminal window and execute 
+> `curl -X POST http://0.0.0.0:80/predict`{{execute}}
 
 > Now execute `docker cp simple_api://results /root/secon_result/`{{execute}} to see the
 > new results.
