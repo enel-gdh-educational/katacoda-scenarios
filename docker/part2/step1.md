@@ -38,11 +38,12 @@ Go back to the first terminal window to see the information logged.
 ---
 ### Docker logs
 
-Stop this container (press ctrl+c) and then restart it using `docker start simple_api`
+Stop this container (press ctrl+c) and then restart it using 
+`docker start simple_api`{{execute}}.
 Now we're not seeing the application logs because the start command runs detached by default.
 This means that the application is running but its stdout is not attached to our console.
 
-In this case we can execute `docker logs -f simple_api` to see it. The -f option stands for
+In this case we can execute `docker logs -f simple_api`{{execute}} to see it. The -f option stands for
 "follow" that means we will see the future logs emitted by the container in addition to the
 already produced. Without this option we could only see the past logs.
 ---
@@ -58,11 +59,11 @@ cannot be returned in the HTTP response.
 
 So let's explore the container file system:
 
-> Execute `docker exec -it simple_api /bin/bash` to open a console on the container.  
+> Execute `docker exec -it simple_api /bin/bash`{{execute}} to open a console on the container.  
 
 With `ls /results`{{execute}} we should see a file named "last_results.json"
 
-> Execute `more last_results.json` to see its content.
+> Execute `more /results/last_results.json`{{execute}} to see its content.
 
 In this demo app if we call again the '/predict' endpoint this file will be overwritten.
 
@@ -76,7 +77,7 @@ First exit the container, then:
 In addition to this, let's say that for development purposes we want to change the model 
 used by our application with a new one without rebuilding the container.
 We can execute the copy in the reverse way to bring inside the new model located on 
-the host machine at /root/project/step1/svm.joblib
+the host machine at `/root/project/step1/svm.joblib`
 
 > Execute `docker cp /root/project/step1/svm.joblib simple_api://model`{{execute}} 
 
@@ -86,7 +87,7 @@ again the '/predict' endpoint.
 > Go back to the second terminal window and execute 
 > `curl -X POST http://0.0.0.0:80/predict`{{execute}}
 
-> Now execute `docker cp simple_api://results /root/secon_result/`{{execute}} to see the
+> Now execute `docker cp simple_api://results /root/second_result/`{{execute}} to see the
 > new results.
 
 As you're seeing extracting data from the container file system or, backwards, putting them
