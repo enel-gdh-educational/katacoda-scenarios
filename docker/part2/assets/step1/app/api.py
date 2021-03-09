@@ -3,24 +3,16 @@ from joblib import load
 from pydantic import BaseModel
 import os
 import json
+import glob
 
-# GET ROOT
-ROOT = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(ROOT, "models")
-MODEL = load(os.path.join(MODEL_PATH, 'Decision_Tree_Classifier', 'model.joblib'))
-RESULTS_PATH = "/app/results/last_results.json"
 
-# LOAD MODELS
-# MODEL_LIST = {
-#     'Decision_Tree_Classifier': load(os.path.join(MODEL_PATH, 'Decision_Tree_Classifier', 'model.joblib')),
-#     'Gaussian_NB': load(os.path.join(MODEL_PATH, 'Gaussian_NB', 'model.joblib')),
-#     'Kernel_SVM': load(os.path.join(MODEL_PATH, 'Kernel_SVM', 'model.joblib')),
-#     'KNN': load(os.path.join(MODEL_PATH, 'KNN', 'model.joblib')),
-#     'Logistic_Regression': load(os.path.join(MODEL_PATH, 'Logistic_Regression', 'model.joblib')),
-#     'Random_Forest': load(os.path.join(MODEL_PATH, 'Random_Forest', 'model.joblib')),
-#     'SVC': load(os.path.join(MODEL_PATH, 'SVC', 'model.joblib')),
-# }
+RESULTS_PATH = "/results/last_results.json"
 
+
+def _get_last_model():
+    list_of_files = glob.glob('/model/*.joblib')
+    latest_file = max(list_of_files, key=os.path.getctime)
+    return latest_file
 
 # PREDICTION RETURN
 # def get_prediction(clf, params):
@@ -31,7 +23,6 @@ RESULTS_PATH = "/app/results/last_results.json"
 
 
 # INITIATE API
-
 def write_prediction_on_file(clf, params):
 
     x = [list(params.values())]
@@ -75,14 +66,21 @@ default_model = ModelParams()
 
 @app.get("/health")
 def healthcheck():
-    return {"health": True}
+    print("You have called the health-check endpoint. Great!")
+    return {"healthy": True}
 
 
 @app.post("/predict")
 def predict(params: ModelParams = default_model):
-    params = params.dict()
-    print(params)
+    print("You have called the predict endpoint. Great!")
 
-    results_path = write_prediction_on_file(MODEL, params)
+    model = _get_last_model()
+    print("Predict operation is using model: {}".format(model))
+
+    params = params.dict()
+    # print("Using the default parameters: {}\n".format(params))
+
+    results_path = write_prediction_on_file(load(model), params)
+    print("Results written on file: {}\n".format(results_path))
 
     return {"results_path": results_path}

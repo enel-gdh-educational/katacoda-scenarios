@@ -1,7 +1,4 @@
-This is your first step.
+### Container file system is ephemeral
 
-## Task
-
-This is an _example_ of creating a scenario and running a **command**
-
-`echo 'Hello World'`{{execute}}
+By default, all files created inside a container are stored on a writable container layer.
+This means that the data doesn’t persist when that container no longer exists.
