@@ -1,6 +1,6 @@
 # Docker in Enel
 
-In this third part of the course you have seen and analyzed all basic concept about Docker:
+In this third part of the course you have studied and analyzed all basic concept about Docker:
 - Registry to pull or push image in your own repository
 - Docker network to connect different running container
 - Docker compose to set up infrastructure of containers docker

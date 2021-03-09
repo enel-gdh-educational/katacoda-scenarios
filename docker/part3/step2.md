@@ -175,9 +175,9 @@ Then you must run the frontend container using the `--network` parameter, includ
 This time you don't get any error and you can see the dashboard with histogram graph with data
 fetched from backend container `dockerchurn`
 
-It is worth noting that using docker network, Docker resolve the container alias specified in
+It is worth noting that using docker network, Docker resolves the container alias specified in
 command `docker run` with ip that network has assigned to the container.
-So this test will work also if you use the ip directly take from command `docker network inspect`
+So this test will work also if you use the ip directly taken from command `docker network inspect`
 
 
 
