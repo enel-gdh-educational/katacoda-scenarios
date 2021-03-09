@@ -1,6 +1,6 @@
 {
   "title": "Docker course part 1",
-  "description": "This scenario explain Dockers foundamentals.",
+  "description": "This scenario explains Dockers foundamentals: containers, images, main commands, Dockerfile and other main concepts.",
   "difficulty": "beginner",
   "time": "3 hours",
   "details": {

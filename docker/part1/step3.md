@@ -16,9 +16,9 @@ The FROM instruction initializes a new build stage and sets the Base Image for s
 
 Docker starts from this to build our own image putting some other layers on it. Usually the application and his dependencies are added to a base image. Base images can be retrieved from DockerHub, from another registries (public or private) or built from another file and used as base. The ":latest" represents the version of the image. 
 
-**NOTE:** In this exercise we use the alphine image. The alphine is a minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size! It's used when lightness is needed and we use it also because we don't have big requirements for a Hello world exercise.
+**NOTE:** In this exercise we use the alpine image. The alpine is a minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size! It's used when lightness is needed and we use it also because we don't have big requirements for a Hello world exercise.
 
-If you need a complex environment for your application you should not use alphine image. In these cases you have two possibilities:
+If you need a complex environment for your application you should not use alpine image. In these cases you have two possibilities:
 - Choose a specific image that provide you all tools and stacks you need. (Great advantage of Docker!)
 - Choose a complete base image (e.g. Ubuntu, Debian) that offer you a solid base where you can install your stack, tools, libraries and dependencies without too many problems. 
 
@@ -33,7 +33,9 @@ Once we wrote our Dockerfile, we can build our image. To do this, use the `docke
 
 Usage: `docker build [OPTIONS] PATH | URL `
 
-The `docker build` command builds Docker images from a Dockerfile and a “context”. A build’s context is the set of files located in the specified `PATH` or `URL`. The build process can refer to any of the files in the context. For example, your build can use a [_COPY_](https://docs.docker.com/engine/reference/builder/#copy) instruction to reference a file in the context.
+The `docker build` command builds Docker images from a Dockerfile and a “context”. A build’s context is the set of files located in the specified `PATH` or `URL`. The build process can refer to any of the files in the context. For example, your build can use a `COPY` instruction to reference a file in the context.
+
+Usually, the Dockerfile is put on the context root and this fits with the majority of use cases. In fact, usually there is only one Dockerfile for each context. Other more particular use cases can be handled with the `-f` option of the `docker build` command, that allows you to specify a different location for the Dockerfile.  
  
 The `URL` parameter can refer to three kinds of resources: Git repositories, pre-packaged tarball contexts and plain text files.
 
