@@ -6,20 +6,40 @@
   "details": {
     "steps": [
       {
-      "title": "Docker Registry",
-      "text": "step1.md"
+      "title": "Docker Registry: Introduction",
+      "text": "step1a.md"
       },
       {
-      "title": "Docker Network",
-      "text": "step1.md"
+      "title": "Docker Registry: Tag",
+      "text": "step1b.md"
       },
       {
-      "title": "Docker Compose",
-      "text": "step1.md"
+      "title": "Docker Registry: Push and Pull",
+      "text": "step1c.md"
+      },
+      {
+      "title": "Docker Network: Basic Commands",
+      "text": "step2a.md"
+      },
+      {
+      "title": "Docker Network: Add a Contaner to a Network",
+      "text": "step2b.md"
+      },
+      {
+      "title": "Docker Network: Connect Multiple Containers",
+      "text": "step2c.md"
+      },
+      {
+      "title": "Docker Compose: Introduction and Service",
+      "text": "step3a.md"
+      },
+      {
+      "title": "Docker Compose: Volumes and Network",
+      "text": "step3b.md"
       },
       {
       "title": "Docker in Global Data Hub",
-      "text": "step1.md"
+      "text": "step4.md"
       }
     ],
     "intro": {
