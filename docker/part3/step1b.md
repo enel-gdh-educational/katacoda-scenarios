@@ -21,9 +21,13 @@ You can tag local image by different ways:
 - By using `docker commit <existing-container> <hub-user>/<repo-name>[:<tag>]` to commit changes
 
 You can use the following command to tag the existing image hello-world to push it to a 
-third party repository. In this case you use Enel `artifactory.springlab.enel.com`
+third party repository. This will be useful for the next step of this course.
+In this case you can use Enel `artifactorydocker.springlab.enel.com` **(\*)**
 
-`docker tag hello-world artifactory.springlab.enel.com/enel-docker-course-img/hello-world:v0.1`{{execute}}
+`docker tag hello-world artifactorydocker.springlab.enel.com/enel-docker-course-img/hello-world:v0.1`{{execute}}
+
+**(\*): for the next steps, in order to use Enel Artifactory registry you must connect
+to ENEL VPN. For this reason you must use your local pc with a version of Docker installed**
 
 
 

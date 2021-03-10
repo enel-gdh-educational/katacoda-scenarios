@@ -1,0 +1,29 @@
+version: "3.9"
+services:
+  dockerchurn:
+    build: .
+    networks:
+      - course_net
+    ports:
+      - "8080:80"
+    container_name: dockerchurn-container
+    volumes:
+      - type: volume
+        source: models-vol
+        target: /app/models
+  dockerchurn-fe:
+    build: ./frontend
+    networks:
+      - course_net
+    ports:
+      - "8081:8081"
+    container_name: dockerchurn-container-fe
+    environment:
+      - HOST=dockerchurn-container
+      - PORT=80
+    depends_on:
+      - "dockerchurn"
+volumes:
+  models-vol:
+networks:
+  course_net:
