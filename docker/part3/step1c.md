@@ -36,7 +36,7 @@ and put your username and artifactory api-key interactively
 
 Then you can push the image on Artifactory
 
-`docker image push artifactorydocker.springlab.enel.com/enel-docker-course-img/hello-world:v0.1`{{execute}}
+`docker image push artifactorydocker.springlab.enel.com/enel-docker-course-img/hello-world-{Enel Id Number Axxxxxx}:v0.1`{{execute}}
 
 
 ### Docker pull
@@ -45,11 +45,11 @@ By default, docker pull pulls images from Docker Hub.
 It is also possible to manually specify the path of a registry to pull from. 
 
 For test purpose, fisrt you delete local image just created
-`docker rmi artifactory.springlab.enel.com/enel-docker-course-img/hello-world:v0.1`
+`docker rmi artifactory.springlab.enel.com/enel-docker-course-img/hello-world-{Enel Id Number Axxxxxx}:v0.1`
 
-Then you pull the same image from Enel Artifactory
+Then you pull the same image from Enel Artifactory:
 
-`docker pull artifactorydocker.springlab.enel.com/enel-docker-course-img/hello-world:v0.1`{{execute}}
+`docker pull artifactorydocker.springlab.enel.com/enel-docker-course-img/hello-world-{Enel Id Number Axxxxxx}:v0.1`{{execute}}
 
 Check the result using this command
 

@@ -22,9 +22,14 @@ You can tag local image by different ways:
 
 You can use the following command to tag the existing image hello-world to push it to a 
 third party repository. This will be useful for the next step of this course.
-In this case you can use Enel `artifactorydocker.springlab.enel.com` **(\*)**
+In this case you can use Enel `artifactorydocker.springlab.enel.com` **(\*)**.
 
-`docker tag hello-world artifactorydocker.springlab.enel.com/enel-docker-course-img/hello-world:v0.1`{{execute}}
+-- insert screen --
+
+To avoid conflicts
+when you use Docker Enel Artifactory, please use your Enel Id in the tag name below:
+
+`docker tag hello-world artifactorydocker.springlab.enel.com/enel-docker-course-img/hello-world-{Enel Id Number Axxxxxx}:v0.1`{{execute}}
 
 **(\*): for the next steps, in order to use Enel Artifactory registry you must connect
 to ENEL VPN. For this reason you must use your local pc with a version of Docker installed**
