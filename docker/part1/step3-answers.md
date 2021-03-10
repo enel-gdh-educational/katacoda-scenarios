@@ -4,7 +4,7 @@ To start a container based on the new "my-hello" image, you have to use the `doc
 ```bash
 docker run --name my-hello-container my-hello
 ```
-Naturally you can change the name.
+You can change the name if you want.
 
 ## Exercise 2
 
@@ -20,7 +20,7 @@ docker run --name my-hello-container2 my-hello
 
 ## Exercise 3
 
-FIrstly, get all stopped containers:
+Firstly, get all stopped containers:
 ```bash
 docker ps -a
 ```
@@ -36,4 +36,4 @@ Another way is to execute
 ```bash
 docker rm $(docker ps -a -f status=exited -q)
 ```
-This is a shorter command that remove all exited containers.
+This is a shorter command that removes all exited containers.

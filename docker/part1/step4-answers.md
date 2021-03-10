@@ -4,7 +4,7 @@ To build the new image use the `docker build` command in the step4 path, for exa
 ```bash
 docker build -t docker-course-app:latest .
 ```
-Naturally you can change the tag.
+Naturally, you can change the tag.
 
 ## Exercise 5
 
