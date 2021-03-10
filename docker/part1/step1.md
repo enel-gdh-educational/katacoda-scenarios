@@ -9,7 +9,7 @@ Virtual machines are based on system virtualization, where a real computer can h
 
 ![Vm stack](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part1/images/vms.png)
 
-In container-based virtualization (or OS-level virtualization) we can think of container as an entity including not only the hardware but also a virtual operating system kernel. This allows the containers to use the hosting machine kernel, and its real hardware.
+In container-based virtualization (or OS-level virtualization) we can think of a container as an entity including not only the hardware but also a virtual operating system kernel. This allows the containers to use the hosting machine kernel, and its real hardware.
 
 ![Containers stack](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part1/images/containers.png)
 
