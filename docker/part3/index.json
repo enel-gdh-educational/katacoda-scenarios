@@ -1,0 +1,60 @@
+{
+  "title": "Docker course part 3",
+  "description": "docker description",
+  "difficulty": "beginner",
+  "time": "3 hours",
+  "details": {
+    "steps": [
+      {
+      "title": "Docker Registry: Introduction",
+      "text": "step1a.md"
+      },
+      {
+      "title": "Docker Registry: Tag",
+      "text": "step1b.md"
+      },
+      {
+      "title": "Docker Registry: Push and Pull",
+      "text": "step1c.md"
+      },
+      {
+      "title": "Docker Network: Basic Commands",
+      "text": "step2a.md"
+      },
+      {
+      "title": "Docker Network: Add a Contaner to a Network",
+      "text": "step2b.md"
+      },
+      {
+      "title": "Docker Network: Connect Multiple Containers",
+      "text": "step2c.md"
+      },
+      {
+      "title": "Docker Compose: Introduction and Service",
+      "text": "step3a.md"
+      },
+      {
+      "title": "Docker Compose: Volumes and Network",
+      "text": "step3b.md"
+      },
+      {
+      "title": "Docker in Global Data Hub",
+      "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "bash"
+  }
+}
