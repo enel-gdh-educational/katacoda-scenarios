@@ -99,6 +99,6 @@ Dockerized application we would prefer an easier way to do it. The answer is vol
 do the same. When you remove a container, also the file system is removed.
 To persist data beyond containers' life volumes must be used.
 
-So let's explore volumes in the next step.
+So let's explore Docker volumes in the next step.
 
 ---
