@@ -66,8 +66,8 @@ with no values
    
 This is an example of the dashboard where you can find all the elements described above
 
-![dockerchurn_ko](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part3/images/dockerchurn_ok.png)
-![dockerchurn_ok](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part3/images/dockerchurn_ko.png)
+![dockerchurn_ok](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part3/images/dockerchurn_ok.png)
+![dockerchurn_ko](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part3/images/dockerchurn_err.png)
 
 
 To start this frontend container, first you must build the image with the name `dockerchurn-fe`
@@ -83,7 +83,7 @@ the frontend containers has not been included in the same network of backend. In
 the two containers live and run in different and isolated environment.
 
 To connect to browser using Katacoda environment select the icon "+" near terminal, choose the option
-"Select port to view on Host 1" and insert the value 8081, Since frontend container is exposed on
+"Select port to view on Host 1" and insert the value 8081, since frontend container is exposed on
 port 8081
 
 ![browser](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part3/images/browser.png)
