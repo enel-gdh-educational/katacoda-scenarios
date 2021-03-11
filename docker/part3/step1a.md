@@ -35,8 +35,7 @@ a third party registry.
 For this course you can use this docker registry created on Enel Artifactory 
 https://artifactory.springlab.enel.com/artifactory/webapp/#/artifacts/browse/tree/General/enel-docker-course-img
 
---INSERT SCREENSHOT--
-
+![artifactory](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part3/images/artifactory.png)
 
 
 

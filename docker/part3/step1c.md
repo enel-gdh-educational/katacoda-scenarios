@@ -40,7 +40,7 @@ Here https://artifactory.springlab.enel.com/artifactory/webapp/#/artifacts/brows
 you can see the result of pushing image (see example in screenshot below if you don't have reading permissions
 on repository)
 
---INSERIRE SCREENSHOT--
+![artifactory_push](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part3/images/artifactory_push.png)
 
 ### Docker pull
 You can use docker pull to save locally an image from a Docker registry.

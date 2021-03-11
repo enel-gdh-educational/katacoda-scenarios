@@ -21,7 +21,6 @@ You can use the following command to tag the existing image hello-world to push 
 third party repository. This will be useful for the next step of this course.
 In this case you can use Enel `artifactorydocker.springlab.enel.com` **(\*)**.
 
--- insert screen --
 
 To avoid conflicts
 when you use Docker Enel Artifactory, please use your Enel Id in the tag name below:

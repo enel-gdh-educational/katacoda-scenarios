@@ -64,9 +64,11 @@ field `predictions` and a histogram graph with the two values of field `probabil
 4. If the result of the call is ko the page will show an error message and an empty histogram 
 with no values
    
-This is an example of the dashboard where you can find all the elements described
+This is an example of the dashboard where you can find all the elements described above
 
---IMMAGINE_DA_INSERIRE--
+![dockerchurn_ko](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part3/images/dockerchurn_ok.png)
+![dockerchurn_ok](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part3/images/dockerchurn_ko.png)
+
 
 To start this frontend container, first you must build the image with the name `dockerchurn-fe`
 
@@ -84,7 +86,7 @@ To connect to browser using Katacoda environment select the icon "+" near termin
 "Select port to view on Host 1" and insert the value 8081, Since frontend container is exposed on
 port 8081
 
--- screenshot da inserire --
+![browser](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part3/images/browser.png)
 
 You can fix this error including all the containers in the same network. You get the ip using the
 inspection command or the label name of container. 
