@@ -9,12 +9,12 @@ MODEL_PATH = os.path.join(ROOT, "models")
 
 # LOAD MODELS
 MODEL_LIST = {
-    'Decision Tree Classifier': load(os.path.join(MODEL_PATH, 'Decision Tree Classifier', 'model.joblib')),
-    'Gaussian NB': load(os.path.join(MODEL_PATH, 'Gaussian NB', 'model.joblib')),
-    'Kernel SVM': load(os.path.join(MODEL_PATH, 'Kernel SVM', 'model.joblib')),
+    'Decision Tree Classifier': load(os.path.join(MODEL_PATH, 'Decision_Tree_Classifier', 'model.joblib')),
+    'Gaussian NB': load(os.path.join(MODEL_PATH, 'Gaussian_NB', 'model.joblib')),
+    'Kernel SVM': load(os.path.join(MODEL_PATH, 'Kernel_SVM', 'model.joblib')),
     'KNN': load(os.path.join(MODEL_PATH, 'KNN', 'model.joblib')),
-    'Logistic Regression': load(os.path.join(MODEL_PATH, 'Logistic Regression', 'model.joblib')),
-    'Random Forest': load(os.path.join(MODEL_PATH, 'Random Forest', 'model.joblib')),
+    'Logistic Regression': load(os.path.join(MODEL_PATH, 'Logistic_Regression', 'model.joblib')),
+    'Random Forest': load(os.path.join(MODEL_PATH, 'Random_Forest', 'model.joblib')),
     'SVC': load(os.path.join(MODEL_PATH, 'SVC', 'model.joblib')),
 }
 

@@ -11,6 +11,7 @@ If you don't have the image built you can find source code with dockerfile in fo
 and build image with command that you have seen in the previous lessons
 
 `cd project/step2c`{{execute}}
+
 `docker build -t dockerchurn .`{{execute}}
 
 Then run container adding it to the docker network that you have just created in the previous steps:
