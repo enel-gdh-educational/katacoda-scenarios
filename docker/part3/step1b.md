@@ -6,8 +6,8 @@ same image.
 `hostname/image_name:tag_name`
 
 The name is made up slash-separated name components:
-- `hostname` To push an image to a private registry and not the Docker Hub registry you 
-  must tag it with the registry hostname and port (if needed)
+- `hostname` To push an image to a private Registry and not the Docker Hub Registry you 
+  must tag it with the Registry hostname and port (if needed)
 - `image_name` Custom image name
 - `tag name` It contains the version of the image; if it’s not specified, the tag defaults to latest
 
@@ -34,7 +34,7 @@ You can get the list of your docker images and check the result:
 
 **(\*): for the next steps, in order to use Enel Artifactory registry you must connect
 to ENEL VPN. For this reason you must use your local pc with a version of Docker installed and
-not Katacoda environment**
+not Katacoda virtual environment**
 
 
 

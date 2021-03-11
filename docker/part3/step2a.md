@@ -10,9 +10,9 @@ You can create a network using this command
 `docker network create [OPTIONS] NETWORK`
 
 For this course step the goal is creating a new docker container connected to the Docker Churn
-Model that you have used in the second part of the course
+Model that you have used in the second part of the course.
 
-First you create a custom network with name course_net
+First you create a custom network with name `course_net`
 
 `docker network create -d bridge course_net`{{execute}}
 
@@ -20,8 +20,8 @@ You can see the list of network in your docker environment using this command:
 
 `docker network ls`{{execute}}
 
-In particular for each network of the list we have a recap of most important details about the
-newtwork:
+In particular for each network of the list we have a recap of most important details about
+networks:
 - **name**: alias of the network just created
 - **network id**: network hash identifier
 - **scope**: it is the target environment of the network. For this purpose to connect containers running

@@ -1,5 +1,5 @@
 ### Docker push
-Command Docker push allow you to save and share a local image to your own Docker registry.
+Command `docker push` allows you to save and share a local image to your own Docker registry.
 For this purpose you can use Enel Artifactory.
 
 In order to pull/push docker images to Enel Artifactory from your terminal you must use
@@ -7,7 +7,8 @@ In order to pull/push docker images to Enel Artifactory from your terminal you m
 configuration (see more details in https://docs.docker.com/registry/insecure)
 
 If you have **Docker Desktop** application o your Windows/Mac you can copy and paste this snippet
-in section 'Docker > Preferences > Docker Engine' After that apply and restart.
+in section 'Docker > Preferences > Docker Engine'.
+After that apply and restart.
 
 ```
 {
@@ -36,7 +37,8 @@ Then you can push the image on Artifactory
 `docker image push artifactorydocker.springlab.enel.com/enel-docker-course-img/hello-world-{Enel Id Number Axxxxxx}:v0.1`
 
 Here https://artifactory.springlab.enel.com/artifactory/webapp/#/artifacts/browse/tree/General/enel-docker-course-img
-you can see the result of pushing image (example in screenshot below)
+you can see the result of pushing image (see example in screenshot below if you don't have reading permissions
+on repository)
 
 --INSERIRE SCREENSHOT--
 

@@ -1,9 +1,9 @@
 ### Connect multiple containers
 In this section you can test and check all the features and advantages of Docker Network
-when you need to connect multiple containers
+when you need to connect multiple containers.
 
 First check that the model container `dockerchurn-container` is running inside the `course_net`.
-Check that container is running:
+Check that container up and running:
 
 `docker ps | grep dockerchurn-container`{{execute}}
 
@@ -11,8 +11,8 @@ and check the network status
 
 `docker network inspect course_net`{{execute}}
 
-As precondition we need that backend container is inside the network that we have just created.
-So add it with the command seen in the previous step
+As precondition, you need that backend container is inside the network that we have just created.
+So in case you need, add the container with the command seen in the previous step
 
 `docker network connect course_net dockerchurn-container`{{execute}}
 
@@ -25,10 +25,11 @@ web applications. It is built on top of Flask, Plotly.js and React Js.
 It enables you to build dashboards using pure Python. Dash is open source,
 and its apps run on the web browser. 
 
-You can find the frontend code folder `DockerChurn/frontend`. It has:
+You can find the frontend python script in folder `project/step2c/frontend`. It has:
 - `fe.py`: it is the python script that contains code to run the server, fetch data from api model,
 show dashboard with results of prediction
 - `Dockerfile`: it is the dockerfile to build the image needed to run the container
+- `requirements.txt`: it is the dependencies file to install with `pip install`
 
 
 Open the file `frontend/fe.py` with Katacoda editor or using `vim` and analyze its content.
@@ -42,7 +43,7 @@ HOST = os.environ['HOST']
 PORT = os.environ['PORT']
 ```
    
-2. Calling to backend model container using the host and port at the previous step; for this testing
+2. Calling the backend model container using the host and port defined at the previous course steps; for this testing
 purpose we use the "Random Forest model" with this POST API 
    `http://{HOST}:{PORT}/Random%20Forest/predict"`. This is the expected json output for this call
    
@@ -67,7 +68,7 @@ This is an example of the dashboard where you can find all the elements describe
 
 --IMMAGINE_DA_INSERIRE--
 
-To start this frontend container, first you build the image with the name `dockerchurn-fe`
+To start this frontend container, first you must build the image with the name `dockerchurn-fe`
 
 `docker build -t dockerchurn-fe ./frontend`{{execute}}
 
@@ -79,15 +80,16 @@ Connecting to the browser at port 8081 you can see an error on the dashboard. Th
 the frontend containers has not been included in the same network of backend. In this way
 the two containers live and run in different and isolated environment.
 
-To connect to browser using Katacoda environment select the icon "+" near terminal and select
+To connect to browser using Katacoda environment select the icon "+" near terminal, choose the option
 "Select port to view on Host 1" and insert the value 8081, Since frontend container is exposed on
 port 8081
 
+-- screenshot da inserire --
 
 You can fix this error including all the containers in the same network. You get the ip using the
 inspection command or the label name of container. 
 
-First you must stop and delete the frontend:
+So close your browser opened tab and first stop and delete the frontend container:
 
 `docker stop dockerchurn-fe-container`{{execute}}
 
@@ -107,7 +109,4 @@ So this test will work also if you use the ip directly taken from inspect comman
 
 `docker network inspect course_net`{{execute}}
 
-and check the log of the frontend container:
-
-`docker logs dockerchurn-fe-container`
 

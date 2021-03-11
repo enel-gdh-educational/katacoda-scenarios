@@ -1,6 +1,7 @@
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
+from dash.dependencies import Input, Output
 import requests
 import os
 
@@ -35,25 +36,20 @@ data_json_in = {
 }
 
 app = dash.Dash("name dashboard", external_stylesheets=external_stylesheets)
-
-# get data from dockerchurn model
 msg_dash = ""
 series_out = [0, 0]
-try:
-  response = requests.post(query_url, json=data_json_in, timeout=1200)
-  resp_json = response.json()
-  msg_dash = f"Output for prediction: {resp_json['prediction']}"
-  series_out = resp_json['probability']
-  print(f"response json from server: {resp_json}")
-except Exception as e:
-  print(f"Exception during retrieve {str(e)}")
-  msg_dash = f"Error fetch data {str(e)}"
-
 
 app.layout = html.Div(children=[
   html.H1(children='Dockerchurn Model'),
 
   html.Div(children=msg_dash),
+
+  html.Button(
+      id='button',
+      children='Update',
+      n_clicks=0
+  ),
+
 
   dcc.Graph(
     id='example-graph',
@@ -67,6 +63,34 @@ app.layout = html.Div(children=[
     }
   )
 ])
+
+
+@app.callback(Output('example-graph', 'figure'), [Input('button', 'n_clicks')])
+def update_graph(n_clicks):
+  series_out_call = [0, 0]
+  title = "Press Update Button to start prediction"
+
+  try:
+    if n_clicks > 0:
+      response = requests.post(query_url, json=data_json_in, timeout=1200)
+      resp_json = response.json()
+      series_out_call = resp_json['probability']
+      title = f"Probability Response Visualization for model: {resp_json['prediction']}"
+      print(f"response json from server: {resp_json}")
+
+  except Exception as e:
+    title = f"An error occurred during the connection: {str(e)}"
+    print(f"Exception during retrieve {str(e)}")
+
+  return {
+    'data': [
+      {'x': [1, 2], 'y': series_out_call, 'type': 'bar', 'name': 'Probability'}
+    ],
+    'layout': {
+      'title': title
+    }
+  }
+
 
 if __name__ == '__main__':
   app.run_server(host='0.0.0.0', port=8081, debug=True)

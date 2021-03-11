@@ -1,8 +1,8 @@
 # Docker Compose Introduction
 
 Docker Compose allows you to define and running multiple containers using a yaml file configuration.
-With a single command in CLI you can start and stop different containers that share the same network
-or resource.
+With a single command in terminal you can start and stop different containers that share the same network
+or resources.
 
 Using Docker Compose you can easily deploy in local environment all the resources you need to test
 your application. For example, you can create volumes, network or running containers defining them in 
@@ -22,18 +22,22 @@ You need to create the following resources:
 - volumes
 - networks
 
-For each resource you have to add a new section in docker compose file.
+For each resource you must add a new section in docker compose file.
 
-First create the configuration file in the root directory of project `project/step2c`.
+First delete the old containers of previous steps and then
+create the configuration file in the root directory of project `project/step2c`.
+
+`docker stop $(docker ps -a -q); docker rm $(docker ps -a -q)`{{execute}}
+
 Move to root project:
 
-`cd project/step2c`
+`cd project/step2c`{{execute}}
 
 then create an empty docker-compose
 
 `touch docker-compose.yml`{{execute}}
 
-then we add the following lines with visual text editor or `vim` (you can find this configuration
+Now we add the following lines with visual text editor or `vim` (you can find this configuration
 also in the file `docker-compose-temp1.yml` in the root project directory:
 
 ```
@@ -62,7 +66,7 @@ scenario you need building images from source code seen in the previous steps:
     directory (`build: ./frontend`)
     
 - `ports`: In `ports` field there is the value of port mapping that you used in `docker run`
-command ith the parameter `-p`
+command with the parameter `-p`
   
 - `container_name`: this is the container name that Docker Compose create when start the
 application
@@ -94,3 +98,5 @@ or use this command to get logs
 Using this command you can stop all the containers:
 
 `docker-compose stop`{{execute}}
+
+It is worth noting that the application is not working yet, because you must add network resource

@@ -1,5 +1,3 @@
-#Docker Registry
-
 ### Introduction
 
 A Docker registry is a server side application that allows you to share docker
@@ -11,7 +9,7 @@ individually versioned with tags.
 Pros Docker Registry:
 - Team collaboration
 - Quality and reuse
-- Automate development: we can integrate images storage with pipelines and workflow development
+- Automate development: you can integrate images storage with pipelines and workflow development
 - Secure docker images: you can use a private docker registry and limit the access to your 
   docker image
 

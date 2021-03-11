@@ -1,8 +1,6 @@
-# Docker Compose
-
 ### Creating volumes
 
-To start correctly your application you need also volume for the model of the backend service.
+To start correctly your application you need also volume for the models of the backend service.
 You can add this resource in `docker-compose.yml`
 
 First define the volume name at the end of file. For this application we use the names `models-vol`
@@ -57,13 +55,17 @@ Check also the correct bind of the volume mounted using the inspection on contai
 in the `Mounts` section you can get information about name of the volume and target folder
 specified in the docker-compose.yml
 
-`docker inspect dockerchurn`{{execute}}
+`docker inspect dockerchurn-container`{{execute}}
 
 ### Creating network
 
-At this step, the application is not working yet because you miss the network configuration
+At this step, the application is not working yet because you miss the network configuration.
+First stop your application:
 
-Let's add in docker compose configuration file this resource. First you should 
+`docker-compose stop`{{execute}}
+
+
+Now let's add in docker compose configuration file this resource. First you should 
 define the `course_net`
 network at the end of docker-compose
 
@@ -94,7 +96,7 @@ dockerchurn-fe:
     - "dockerchurn"
 ```
 
-Use the text editor to add this lines or copy the file `docker-compose-temp3.yml` with this
+Use the text editor to add these lines or copy the file `docker-compose-temp3.yml` with this
 command:
 
 `cp docker-compose-temp3.yml docker-compose.yml`{{execute}}
@@ -109,10 +111,11 @@ Check that network is created correctly with containers that you need
 
 `docker network ls`{{execute}}
 
-`docker network inspect dockerchurn_course_net`{{execute}}
+`docker network inspect step2c_course_net`{{execute}}
  
 
-At the end use this command to delete containers and network just created
+At the end use check the result connecting to the port 8081 and
+use this command to delete containers and network just created
 
 `docker-compose down`{{execute}}
 
