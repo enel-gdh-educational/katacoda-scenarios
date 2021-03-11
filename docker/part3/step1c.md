@@ -1,6 +1,3 @@
-#Docker Registry
-
-
 ### Docker push
 Command Docker push allow you to save and share a local image to your own Docker registry.
 For this purpose you can use Enel Artifactory.
@@ -32,16 +29,20 @@ in https://docs.docker.com/registry/insecure
 Since we use a private Docker registry we use command docker login to access to the registry
 and put your username and artifactory api-key interactively
 
-`docker login artifactorydocker.springlab.enel.com`{{execute}}
+`docker login artifactorydocker.springlab.enel.com`
 
 Then you can push the image on Artifactory
 
-`docker image push artifactorydocker.springlab.enel.com/enel-docker-course-img/hello-world-{Enel Id Number Axxxxxx}:v0.1`{{execute}}
+`docker image push artifactorydocker.springlab.enel.com/enel-docker-course-img/hello-world-{Enel Id Number Axxxxxx}:v0.1`
 
+Here https://artifactory.springlab.enel.com/artifactory/webapp/#/artifacts/browse/tree/General/enel-docker-course-img
+you can see the result of pushing image (example in screenshot below)
+
+--INSERIRE SCREENSHOT--
 
 ### Docker pull
 You can use docker pull to save locally an image from a Docker registry.
-By default, docker pull pulls images from Docker Hub. 
+By default, docker pulls images from Docker Hub. 
 It is also possible to manually specify the path of a registry to pull from. 
 
 For test purpose, fisrt you delete local image just created
@@ -49,7 +50,7 @@ For test purpose, fisrt you delete local image just created
 
 Then you pull the same image from Enel Artifactory:
 
-`docker pull artifactorydocker.springlab.enel.com/enel-docker-course-img/hello-world-{Enel Id Number Axxxxxx}:v0.1`{{execute}}
+`docker pull artifactorydocker.springlab.enel.com/enel-docker-course-img/hello-world-{Enel Id Number Axxxxxx}:v0.1`
 
 Check the result using this command
 

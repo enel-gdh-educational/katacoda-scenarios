@@ -1,7 +1,4 @@
-#Docker Registry
-
-
-### Docker tag
+### Docker Tag
 To push your image to a docker registry you must first name your local image.
 A tag is an image name that gives you specific information about the different versions of the
 same image.
@@ -10,9 +7,9 @@ same image.
 
 The name is made up slash-separated name components:
 - `hostname` To push an image to a private registry and not the Docker Hub registry you 
-  must tag it with the registry hostname and port (if needed).
+  must tag it with the registry hostname and port (if needed)
 - `image_name` Custom image name
-- `tag name` It contains the version of the image; if it’s not specified, the tag defaults to latest.
+- `tag name` It contains the version of the image; if it’s not specified, the tag defaults to latest
 
 
 You can tag local image by different ways:
@@ -29,10 +26,15 @@ In this case you can use Enel `artifactorydocker.springlab.enel.com` **(\*)**.
 To avoid conflicts
 when you use Docker Enel Artifactory, please use your Enel Id in the tag name below:
 
-`docker tag hello-world artifactorydocker.springlab.enel.com/enel-docker-course-img/hello-world-{Enel Id Number Axxxxxx}:v0.1`{{execute}}
+`docker tag hello-world artifactorydocker.springlab.enel.com/enel-docker-course-img/hello-world-{Enel Id Number Axxxxxx}:v0.1`
+
+You can get the list of your docker images and check the result:
+
+`docker images`{{execute}}
 
 **(\*): for the next steps, in order to use Enel Artifactory registry you must connect
-to ENEL VPN. For this reason you must use your local pc with a version of Docker installed**
+to ENEL VPN. For this reason you must use your local pc with a version of Docker installed and
+not Katacoda environment**
 
 
 

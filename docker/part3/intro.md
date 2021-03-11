@@ -1,6 +1,6 @@
 Welcome to the third part of Docker Course!
 
-This is what you are going study do in this scenario:
+This is what you are going to study in this scenario:
 - Docker Registry Fundamentals:
     - Basic concepts of a Docker registry
     - Tag an image
@@ -14,7 +14,7 @@ This is what you are going study do in this scenario:
     - Introduction and Service
     - Volumes and network definitions
     
-- Docker in Global data Hub:
-    - Practical example of using Docker in our Enel Global data Hub context
+- Docker in Global Data Hub:
+    - Practical examples of using Docker in our Enel Global Data Hub context
     
     

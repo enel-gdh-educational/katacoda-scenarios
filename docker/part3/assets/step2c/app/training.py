@@ -41,13 +41,13 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random
 
 # =============================================================================
 models = []
-models.append(('Logistic Regression', LogisticRegression(solver='liblinear')))
+models.append(('Logistic_Regression', LogisticRegression(solver='liblinear')))
 models.append(('SVC', SVC(kernel = 'linear', probability=True)))
-models.append(('Kernel SVM', SVC(kernel = 'rbf', probability=True)))
+models.append(('Kernel_SVM', SVC(kernel = 'rbf', probability=True)))
 models.append(('KNN', KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)))
-models.append(('Gaussian NB', GaussianNB()))
-models.append(('Decision Tree Classifier', DecisionTreeClassifier(criterion = 'entropy')))
-models.append(('Random Forest', RandomForestClassifier( n_estimators=100, criterion = 'entropy')))
+models.append(('Gaussian_NB', GaussianNB()))
+models.append(('Decision_Tree_Classifier', DecisionTreeClassifier(criterion = 'entropy')))
+models.append(('Random_Forest', RandomForestClassifier( n_estimators=100, criterion = 'entropy')))
 
 #Evaluating Model Results:
 acc_results = []

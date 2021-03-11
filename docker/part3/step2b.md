@@ -1,5 +1,3 @@
-# Docker Network
-
 ### Add a container to a network
 You can add a container to an existing docker network in the creation step of the container,
 using the parameters `--network`
@@ -9,11 +7,17 @@ First check that you have dockerchurn image in your local environment
 
 `docker images | grep dockerchurn`{{execute}}
 
+If you don't have the image built you can find source code with dockerfile in folder `project/step2c`
+and build image with command that you have seen in the previous lessons
+
+`cd project/step2c`{{execute}}
+`docker build -t dockerchurn .`{{execute}}
+
 Then run container adding it to the docker network that you have just created in the previous steps:
 
 `docker run -d -p 8080:80 --name dockerchurn-container --network=course_net  dockerchurn`{{execute}}
 
-You can check that containers is executing inside the network using inspect:
+You can check that this container is executing inside the network using inspect:
 
 `docker network inspect course_net`{{execute}}
 

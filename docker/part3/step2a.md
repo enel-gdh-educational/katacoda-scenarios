@@ -23,13 +23,13 @@ You can see the list of network in your docker environment using this command:
 In particular for each network of the list we have a recap of most important details about the
 newtwork:
 - **name**: alias of the network just created
-- **network** id: network hash identifier
+- **network id**: network hash identifier
 - **scope**: it is the target environment of the network. For this purpose to connect containers running
-  in a local environment, we have always the keyword local  
+  in a local environment, we have always the keyword `local`  
 - **driver**: it describes the type of network driver that is the component that provides core network
-  functionality to the containers. **Bridge** is the default type of network
+  functionality to the containers. `Bridge` is the default type of network
   you are creating if you don't specify the driver. Bridge networks are usually used when
-  your applications run in standalone containers that need to communicate each others.
+  your application is composed by standalone containers that need to communicate each others.
 
 You can get useful information about docker network using the inspect command. Let's try to get
 information about the network that you have just created
