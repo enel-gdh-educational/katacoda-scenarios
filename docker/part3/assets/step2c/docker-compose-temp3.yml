@@ -1,4 +1,4 @@
-version: "3.9"
+version: "2.2"
 services:
   dockerchurn:
     build: .
@@ -8,9 +8,7 @@ services:
       - "8080:80"
     container_name: dockerchurn-container
     volumes:
-      - type: volume
-        source: models-vol
-        target: /app/models
+      - models-vol:/app/models
   dockerchurn-fe:
     build: ./frontend
     networks:

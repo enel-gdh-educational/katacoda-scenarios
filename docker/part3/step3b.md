@@ -2,8 +2,8 @@
 
 ### Creating volumes
 
-To start correctly your application you need also volume for the model of backend service.
-You can add this resources in docker-compose.yml
+To start correctly your application you need also volume for the model of the backend service.
+You can add this resource in `docker-compose.yml`
 
 First define the volume name at the end of file. For this application we use the names `models-vol`
 
@@ -17,6 +17,16 @@ Then bind the defined module under the section of the backend container `dockerc
 ```
 ...
 volumes:
+      - models-vol:/app/models
+...
+```
+
+If you use docker-compose 3.9 specification (see field `version` of docker-compose file)
+you can add also this lines
+
+```
+...
+volumes:
   - type: volume
     source: models-vol
     target: /app/models    
@@ -24,12 +34,18 @@ volumes:
 ```
 
 With this configuration you define:
-- `source`: this is the name of the volume defined in configuration file
-- `target`: this is the target path that you want to mount inside persistent volume; for this case
-you can use `/app/module` which is the folder containing all input modules used by application
+- `source` or the first string `models-vol`: this is the name of the volume defined in configuration file
+- `target` or the second string `/app/modules`: this is the target path that you want to mount inside
+  persistent volume; for this case you can use `/app/module` which is the folder
+  containing all input modules used by application
   
 
-Now start you application 
+Now add the volumes lines configuration inside docker-compose or
+copy the file `docker-compose-temp2.yml` with this command
+
+`cp docker-compose-temp2.yml docker-compose.yml`{{execute}}
+
+then start your application 
 
 `docker-compose up -d`{{execute}}
 
@@ -68,8 +84,8 @@ services:
       ...
 ```
 
-Finally, you need to specify a dependency between the tho services. In particular the frontend
-service need that backend service is correctly running so that the api call is working. 
+Finally, you need to specify a dependency between the two services. In particular the frontend
+service need that backend service container is started so that the api call is working. 
 For this you must add the `depends_on` field
 
 ```
@@ -78,13 +94,18 @@ dockerchurn-fe:
     - "dockerchurn"
 ```
 
+Use the text editor to add this lines or copy the file `docker-compose-temp3.yml` with this
+command:
 
-After that you have the correct final version of docker-compose. Start the application and
+`cp docker-compose-temp3.yml docker-compose.yml`{{execute}}
+
+
+At this point you have the correct final version of docker-compose. Start the application and
 check the results in the dashboard
 
 `docker-compose up -d`{{execute}}
 
-Check that network is created correctly with containers correctly bound
+Check that network is created correctly with containers that you need
 
 `docker network ls`{{execute}}
 
@@ -95,6 +116,6 @@ At the end use this command to delete containers and network just created
 
 `docker-compose down`{{execute}}
 
-To remove also the volume, add the `--volumes` parameter
+To remove also the volume, you can use also the `--volumes` parameter
 
 `docker-compose down --volumes`{{execute}}

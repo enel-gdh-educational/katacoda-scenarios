@@ -1,4 +1,4 @@
-# Docker Compose
+# Docker Compose Introduction
 
 Docker Compose allows you to define and running multiple containers using a yaml file configuration.
 With a single command in CLI you can start and stop different containers that share the same network
@@ -18,20 +18,26 @@ The first step is creating the configuration file for your environment. Let's tr
 file for the project that you have just deployed in the previous steps
 
 You need to create the following resources:
-- volume containers
-- network
 - running containers
+- volumes
+- networks
 
-For each resources you have to add a new section in docker compose file.
+For each resource you have to add a new section in docker compose file.
 
-First create the configuration file in the root directory of project
+First create the configuration file in the root directory of project `project/step2c`.
+Move to root project:
+
+`cd project/step2c`
+
+then create an empty docker-compose
 
 `touch docker-compose.yml`{{execute}}
 
-then we add the following lines:
+then we add the following lines with visual text editor or `vim` (you can find this configuration
+also in the file `docker-compose-temp1.yml` in the root project directory:
 
 ```
-version: "3.9"
+version: "2.2"
 services:
   dockerchurn:
     build: .
@@ -50,7 +56,7 @@ services:
  In this step you are including:
 - `services`: Services are docker containers that compose your application. You can include
 containers from images in Dockerhub or you can build your own image using Dockerfile. In this 
-scenario you build image from source code of the previous step
+scenario you need building images from source code seen in the previous steps:
   - `dockerchurn`: the backend service built from Dockerfile in the root directory (`build: .`)
   - `dockerchurn-fe`: the frontend servicebuilt from Dockerfile in the frontend folder
     directory (`build: ./frontend`)
@@ -70,7 +76,10 @@ command
 
 `docker-compose up -d`{{execute}}
 
-As you can see from the output Docker has done the following steps automatically:
+The first time this operation requires several minutes since you have to build
+all the images for the containers that you defined in configuration file.
+
+As you can see from the output, Docker has done the following steps automatically:
 1. build image of the frontend and backend services
 2. starts container using the specified port mapping, environment variables and container names
 
@@ -78,6 +87,10 @@ You can check the result using this command:
 
 `docker ps`{{execute}}
 
+or use this command to get logs
+
+`docker-compose logs`{{execute}}
+
 Using this command you can stop all the containers:
 
-`docker-compose stop`
+`docker-compose stop`{{execute}}
