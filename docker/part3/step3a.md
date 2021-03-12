@@ -29,10 +29,7 @@ create the configuration file in the root directory of project `project/step2c`.
 
 `docker stop $(docker ps -a -q); docker rm $(docker ps -a -q)`{{execute}}
 
-Move to root project:
-
-`cd project/step2c`{{execute}}
-
+Check that you current directory is the root project folder `cd project/step2c` and
 then create an empty docker-compose
 
 `touch docker-compose.yml`{{execute}}
@@ -62,7 +59,7 @@ services:
 containers from images in Dockerhub or you can build your own image using Dockerfile. In this 
 scenario you need building images from source code seen in the previous steps:
   - `dockerchurn`: the backend service built from Dockerfile in the root directory (`build: .`)
-  - `dockerchurn-fe`: the frontend servicebuilt from Dockerfile in the frontend folder
+  - `dockerchurn-fe`: the frontend service built from Dockerfile in the frontend folder
     directory (`build: ./frontend`)
     
 - `ports`: In `ports` field there is the value of port mapping that you used in `docker run`
@@ -98,5 +95,3 @@ or use this command to get logs
 Using this command you can stop all the containers:
 
 `docker-compose stop`{{execute}}
-
-It is worth noting that the application is not working yet, because you must add network resource

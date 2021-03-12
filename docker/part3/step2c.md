@@ -3,7 +3,7 @@ In this section you can test and check all the features and advantages of Docker
 when you need to connect multiple containers.
 
 First check that the model container `dockerchurn-container` is running inside the `course_net`.
-Check that container up and running:
+Check that container is up and running:
 
 `docker ps | grep dockerchurn-container`{{execute}}
 
@@ -80,7 +80,7 @@ Then run the container using the command
 
 Connecting to the browser at port 8081 you can see an error on the dashboard. This is because
 the frontend containers has not been included in the same network of backend. In this way
-the two containers live and run in different and isolated environment.
+the two containers live and run in different and isolated environments.
 
 To connect to browser using Katacoda environment select the icon "+" near terminal, choose the option
 "Select port to view on Host 1" and insert the value 8081, since frontend container is exposed on

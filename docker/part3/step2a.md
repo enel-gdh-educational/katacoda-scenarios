@@ -36,7 +36,7 @@ information about the network that you have just created
 
 `docker network inspect course_net`{{execute}}
 
-The output contains the following useful information:
+The output contains the following useful informations:
 - **Name**: it's the name of the network
 - **Id**: the unique id that identifies the network
 - **timestamp** of creation

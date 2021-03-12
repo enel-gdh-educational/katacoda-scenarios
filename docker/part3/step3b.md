@@ -59,8 +59,7 @@ specified in the docker-compose.yml
 
 ### Creating network
 
-At this step, the application is not working yet because you miss the network configuration.
-First stop your application:
+At this step, you can define also a custom network using docker compose configuration:
 
 `docker-compose stop`{{execute}}
 
