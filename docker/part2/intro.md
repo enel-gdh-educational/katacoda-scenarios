@@ -10,3 +10,7 @@
 3. How Docker layering really works and how to use that in our favor
 
 4. How to use an Enel private library inside a Docker container
+
+
+**NOTE:** Katacoda is preparing your environment. It can take a while. 
+When the preparation is over, you will have a ready to use shell and a text editor.
