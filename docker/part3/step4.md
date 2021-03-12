@@ -6,7 +6,7 @@ In this third part of the course you have studied and analyzed all basic concept
 - Docker compose to set up infrastructure of containers docker with a single command line
 
 In Enel World and in particular Global Data Hub, Docker is the technology that leverages the
-development, testing and deployment of microservice.
+development, testing and deployment of microservices.
 
 You could use Docker in the following scenarios:
 - Set up local environment

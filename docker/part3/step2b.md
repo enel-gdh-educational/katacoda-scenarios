@@ -7,7 +7,7 @@ First check that you have `dockerchurn` image in your local environment
 
 `docker images | grep dockerchurn`{{execute}}
 
-If you don't have the image built you can find source code with dockerfile in folder `project/step2c`
+If you don't have the image built getting an empty output, you can find source code with dockerfile in folder `project/step2c`
 and build image with command that you have seen in the previous lessons
 
 `cd project/step2c`{{execute}}

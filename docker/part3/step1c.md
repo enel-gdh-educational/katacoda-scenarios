@@ -6,7 +6,7 @@ In order to pull/push docker images to Enel Artifactory from your terminal you m
 **Enel VPN** and add `artifactorydocker.springlab.enel.com` as insecure registry inside your docker
 configuration (see more details in https://docs.docker.com/registry/insecure)
 
-If you have **Docker Desktop** application o your Windows/Mac you can copy and paste this snippet
+If you have **Docker Desktop** application on your Windows/Mac you can copy and paste this snippet
 in section 'Docker > Preferences > Docker Engine'.
 After that apply and restart.
 
