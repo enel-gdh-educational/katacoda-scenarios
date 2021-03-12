@@ -26,12 +26,12 @@ to the number of the instructions declared inside it. That's because Docker imag
 For the moment let's bring the application to life by creating and starting a container 
 from this image with the docker run command.
 
-> Execute `docker run --name simple_api -p 80:80 simple_api_img`{{execute}}.
+> Execute `docker run --name simple_api -p 80:80 simple_api_img`{{execute}}
 
 We're now seeing the stdout of the running container that says that we have Uvicorn
 running on `http://0.0.0.0:80`. 
 
-> Open a new terminal window and execute `curl http://0.0.0.0:80/health`{{execute}}.
+> Open a new terminal window and execute `curl http://0.0.0.0:80/health`{{execute}}
 
 Go back to the first terminal window to see the information logged.
 
@@ -104,5 +104,3 @@ do the same. When you remove a container, also the file system is removed.
 To persist data beyond containers' life volumes must be used.
 
 So let's explore Docker volumes in the next step.
-
----

@@ -3,11 +3,10 @@
 In this section we'll explore different kinds of Docker volumes and how we can use them
 to our advantage.
 
-
 ### Main reasons to volumes
 
-* **Containers file systems are ephemeral**: by default, all files created inside a container are 
-  stored on a writable container layer. This means that the data doesn’t persist when that 
+* **Containers file systems are ephemeral**: by default, all files created inside a container 
+  are stored on a writable container layer. This means that the data doesn’t persist when that 
   container no longer exists.
   
 
@@ -18,7 +17,7 @@ to our advantage.
 * **Developing on host**: as we have seen in the previous section, while developing 
   and debugging an application it could be useful to bring files and folders inside a
   running container and vice versa. This could be made by mounting host partitions as 
-  volumes into the container.
+  volumes into the container (called *bind mounts*).
   
 *For more examples of use cases visit 
 https://docs.docker.com/storage/#good-use-cases-for-volumes*
@@ -53,6 +52,8 @@ declaring a volume mount in the "docker run" command.
 Let's try to create and run a new container from the "simple_api_img" Docker image that we 
 previously built, but this time adding the -v volume_name:/path/in/container option that 
 creates the volume with the requested name and mounts it on the requested path of the container.
+Again, if we didn't specify the volume name then a random hash will be used instead by the 
+Docker host. Specifying the name, we could also use an already existent volume.
 
 > Execute `docker run --name simple_api_with_volume -p 81:80 -v second_vol:/results -d simple_api_img`{{execute}}.
 
@@ -93,7 +94,9 @@ Running `docker volume ls`{{execute}} we can see the same output as before.
 
 Running `docker ps`{{execute}} we can see three containers now.
 
-####TODO: aggiungi qui docker inspect simple_api_with_volume_1 per mostrare lo stesso volume montato
+And then running 
+`docker inspect -f '{{ json .Mounts }}' simple_api_with_volume_1 | jq`{{execute}}
+we have the certainty that this new container is mounting the same volume.
 
 Go inside this last container to check the results folder
 > Execute `docker exec -it simple_api_with_volume /bin/bash`{{execute}} to open a 
@@ -103,19 +106,19 @@ Go inside this last container to check the results folder
 This is just an example made to give you the potential of using volumes to share contents 
 between containers. Of course, there will be more useful scenarios than this.
 
-####TODO: fai tentare di cancellare il volume mentre i container sono su. Errore
-####TODO: tira giu i container e cancella il volume
+As the final step, let's see how to delete a Docker volume.
 
+> Execute `docker volume rm second_vol`
+
+If we're seeing an error, that's okay because the volume is still used by some containers 
+and cannot be deleted!
+
+So, stop and remove the containers *simple_api_with_volume* and *simple_api_with_volume_1*
+and retry to remove the volume. This time it should work.
+
+Another way to delete volumes is using `docker volumes prune` that remove **all** the local
+volumes not used by at least one container.
 
 In conclusion, we explored why Docker volumes are useful, we learnt two different ways of 
-creating Docker volumes and tried
-
----
-
-### Types of volumes
-
-We learnt how to create a Docker volume 
-
-* **Anonymous volumes**: 
-* **Named volumes**: 
-* **Host volumes**: also called bind mounts 
+creating Docker volumes and explored their lifecycles. Now continue to the next step where we'll
+experiment to mount a host partition as a volume in to a container, the so called *bind mounts*.
