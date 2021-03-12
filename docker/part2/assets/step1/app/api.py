@@ -10,7 +10,7 @@ RESULTS_PATH = "/results/last_results.json"
 
 
 def _get_last_model():
-    list_of_files = glob.glob('/model/*.joblib')
+    list_of_files = glob.glob('/models/*.joblib')
     latest_file = max(list_of_files, key=os.path.getctime)
     return latest_file
 
