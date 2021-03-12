@@ -29,7 +29,7 @@ https://docs.docker.com/storage/#good-use-cases-for-volumes*
 
 A Docker volume is basically a directory external to the containers file systems that can 
 be mounted on them. Volumes can be created independently of containers or while creating
-one of them.
+one of them but, in both cases, will have an independent life-cycle.
 
 In the first case this can be done by executing a docker command. Let's try it and create
 our first Docker volume!
@@ -54,13 +54,12 @@ Let's try to create and run a new container from the "simple_api_img" Docker ima
 previously built, but this time adding the -v volume_name:/path/in/container option that 
 creates the volume with the requested name and mounts it on the requested path of the container.
 
-> Execute `docker run --name simple_api_with_volume -p 81:80 
-> -v second_vol:/results -d simple_api_img`{{execute}}.
+> Execute `docker run --name simple_api_with_volume -p 81:80 -v second_vol:/results -d simple_api_img`{{execute}}.
 
 This time we used the -d option in order to run the new container in detached mode 
 because we're not interested in seeing its logs.
 
-As you can see, we mounted the volume in the path where the application will store 
+As you may have noticed, we mounted the volume in the path where the application will store 
 prediction results. In this way we can maintain the results beyond the containers lives and
 also share them between multiple containers.
 
@@ -70,15 +69,17 @@ also share them between multiple containers.
 > And now running `docker volume ls`{{execute}} we can see that a volume named "second_vol"
 > has been created.
 
-####TODO: aggiungi qui docker inspect simple_api_with_volume per mostrare il volume montato
+You can also check the result of the -v option by issuing `docker inspect simple_api_with_volume` 
+and looking for "Mounts" field or to simplify: 
+`docker inspect -f '{{ json .Mounts }}' simple_api_with_volume | jq`{{execute}}
 
-Go inside the container to check the results folder
+Ok, now go inside the container to check the results folder
 > Execute `docker exec -it simple_api_with_volume /bin/bash`{{execute}} to open a 
 > console on the container. And then `ls /results`{{execute}} to check that it's empty.
 
 So, call the /predict endpoint in order to create a result file.
 
-> Go back to the second terminal window and execute 
+> Open a new terminal window and execute 
 > `curl -X POST http://0.0.0.0:81/predict`{{execute}}
 > and be sure to **use port 81** where our host mapped the new container.
 
