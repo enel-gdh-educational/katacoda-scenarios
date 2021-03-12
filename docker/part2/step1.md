@@ -1,4 +1,4 @@
-# Keep on developing the inference app of the last course part
+# Keep on developing the inference app
 
 In the last course part we defined a simple FastAPI web application that exposes just 
 a health-check endpoint. Now it's time to add more logic to our Dockerized app. 
@@ -15,7 +15,7 @@ from the first part of this course) we can build this simple web app as a Docker
 
 But first, let's add another COPY operation in the Dockerfile to bring also the model folder 
 inside the container file system: `COPY model /models`
-
+For the moment write it right under the other COPY instruction.
 
 > Now execute `docker build -t simple_api_img /root/project/step1`{{execute}}
 
@@ -38,8 +38,9 @@ Go back to the first terminal window to see the information logged.
 ---
 ### Docker logs
 
-Stop this container (press ctrl+c) and then restart it using 
-`docker start simple_api`{{execute}}.
+Stop this container pressing ctrl+c (this is not the normal way of stopping containers, this
+happens because of Uvicorn. When terminating him we're also stopping the container)
+and then restart it using `docker start simple_api`{{execute}}.
 Now we're not seeing the application logs because the start command runs detached by default.
 This means that the application is running but its stdout is not attached to our console.
 
