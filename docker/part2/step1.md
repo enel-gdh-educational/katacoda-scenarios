@@ -90,7 +90,7 @@ run the predictions, now the application will use the new inserted model. So let
 again the '/predict' endpoint.
 
 > Execute `curl -X POST http://0.0.0.0:80/predict`{{execute}} and check the application
-> logs in the other terminal window. You should note some changes in the them.
+> logs in the other terminal window. You should note some changes in them.
 
 > Now run `docker cp simple_api://results /root/second_result/`{{execute}} to copy the
 > new results on another folder of your host file system.
@@ -100,7 +100,7 @@ inside it, is a tedious process. Since these actions could be useful while devel
 Dockerized application we would prefer an easier way to do it. The answer is volumes.
 
 **Most importantly** the container file system is ephemeral: it exists only until the container 
-do the same. When you remove a container, also the file system is removed.
+do the same. When you remove a container, also its file system is removed.
 To persist data beyond containers' life volumes must be used.
 
 So let's explore Docker volumes in the next step.
