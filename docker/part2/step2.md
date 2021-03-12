@@ -118,10 +118,19 @@ As the final step, let's see how to delete a Docker volume.
 If we're seeing an error, that's okay because the volume is still used by some containers 
 and cannot be deleted! This is valid also for stopped containers.
 
-So, stop and remove the containers *simple_api_with_volume* and *simple_api_with_volume_1*
-and retry to remove the volume. This time it should work.
+> So, stop and remove the containers with
 `docker stop simple_api_with_volume simple_api_with_volume_1`{{execute}}
 `docker rm simple_api_with_volume simple_api_with_volume_1`{{execute}}
+
+Executing now `docker volume ls`{{execute}} we have the confirmation that also after the
+death of the two containers that was using the volume, it remains up. In a way more realistic 
+scenario, for example when the application at the startup downloads the model used to 
+make the predictions from S3, we can store it on a Docker volume. Then we can define a logic ù
+in the application that checks if the model is already existent in the volume to prevent 
+unnecessary traffic when starting new containers.
+
+> Now retry to remove the volume. This time it should work.
+
 
 Another way to delete volumes is using `docker volume prune` that remove **all** the local
 volumes not used by at least one container.
