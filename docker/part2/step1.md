@@ -11,10 +11,10 @@ file system.
 > Execute `cd /root/project/step1/`{{execute}} to explore the project folder.
 
 Using the Dockerfile located at `/root/project/step1/Dockerfile`  (that it's the resulting one 
-from first part of this course) we can build this simple web app as a Docker image.
+from the first part of this course) we can build this simple web app as a Docker image.
 
 But first, let's add another COPY operation in the Dockerfile to bring also the model folder 
-inside the container file system: `COPY model /model`
+inside the container file system: `COPY model /models`
 
 
 > Now execute `docker build -t simple_api_img /root/project/step1`{{execute}}
@@ -23,8 +23,8 @@ As you can see from the console output, the Dockerfile is executed in 7 steps ac
 to the number of the instructions declared inside it. That's because Docker images 
 (and also containers) are made of layers, but we'll talk about it later.
 
-For now let's bring the application to life by creating and starting a container with 
-the docker run command.
+For the moment let's bring the application to life by creating and starting a container 
+from this image with the docker run command.
 
 > Execute `docker run --name simple_api -p 80:80 simple_api_img`{{execute}}.
 
@@ -55,7 +55,7 @@ Now let's call the '/predict' endpoint in order to request a simulation run.
 
 The response says that the results are stored in a file inside the container file system.
 We're simulating a scenario where the required operation could last long, and so the results 
-cannot be returned in the HTTP response.
+cannot be returned inside the HTTP response.
 
 So let's explore the container file system:
 
@@ -79,9 +79,10 @@ used by our application with a new one without rebuilding the container.
 We can execute the copy in the reverse way to bring inside the new model located on 
 the host machine at `/root/project/step1/svm.joblib`
 
-> Execute `docker cp /root/project/step1/svm.joblib simple_api://model`{{execute}} 
+> Execute `docker cp /root/project/step1/svm.joblib simple_api://models`{{execute}} 
 
-Now the application will use the new model to execute the prediction. So let's call
+Because the app is developed to always use the last updated file in the /models folder to
+run the predictions, now the application will use the new inserted model. So let's call
 again the '/predict' endpoint.
 
 > Go back to the second terminal window and execute 
@@ -90,7 +91,7 @@ again the '/predict' endpoint.
 > Now execute `docker cp simple_api://results /root/second_result/`{{execute}} to see the
 > new results.
 
-As you're seeing extracting data from the container file system or, backwards, putting them
+As you're seeing, extracting data from the container file system or, backwards, putting them
 inside it, is a tedious process. Since these actions could be useful while developing a 
 Dockerized application we would prefer an easier way to do it. The answer is volumes.
 
@@ -98,6 +99,6 @@ Dockerized application we would prefer an easier way to do it. The answer is vol
 do the same. When you remove a container, also the file system is removed.
 To persist data beyond containers' life volumes must be used.
 
-So let's explore volumes in the next step.
+So let's explore Docker volumes in the next step.
 
 ---

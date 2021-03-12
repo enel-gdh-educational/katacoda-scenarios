@@ -9,7 +9,7 @@
     },
     {
       "course_id": "part2",
-      "title": "Part 2",
+      "title": "Docker course part 2",
       "description": "Develop AI code with Docker. Overview on layers, cache and volumes."
     },
     {
