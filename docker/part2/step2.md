@@ -36,8 +36,9 @@ our first Docker volume!
 > Execute `docker volume create first_vol`{{execute}} and then 
 > `docker volume ls`{{execute}}
 
-We should see the new created volume with the chosen name. If we didn't specify the name then
-a random hash will be used instead by the Docker host.
+We should see the new created volume with the chosen name. 
+If we didn't specify the name then a random hash will be used instead by the Docker 
+host (in this case we're creating an *anonymous volume*).
 
 In order to know where this volume will actually store files we can execute:
 > `docker inspect first_vol`{{execute}}
@@ -53,7 +54,7 @@ Let's try to create and run a new container from the "simple_api_img" Docker ima
 previously built, but this time adding the -v volume_name:/path/in/container option that 
 creates the volume with the requested name and mounts it on the requested path of the container.
 Again, if we didn't specify the volume name then a random hash will be used instead by the 
-Docker host. Specifying the name, we could also use an already existent volume.
+Docker host. Specifying the name, instead, we can also use an already existent volume.
 
 > Execute `docker run --name simple_api_with_volume -p 81:80 -v second_vol:/results -d simple_api_img`{{execute}}.
 
