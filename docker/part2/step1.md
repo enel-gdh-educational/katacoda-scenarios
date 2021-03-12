@@ -14,7 +14,7 @@ Using the Dockerfile located at `/root/project/step1/Dockerfile`  (that it's the
 from the first part of this course) we can build this simple web app as a Docker image.
 
 But first, let's add another COPY operation in the Dockerfile to bring also the model folder 
-inside the container file system: `COPY model /models`
+inside the container file system: `COPY model /models`  
 For the moment write it right under the other COPY instruction.
 
 > Now execute `docker build -t simple_api_img /root/project/step1`{{execute}}
@@ -75,6 +75,9 @@ First exit the container, then:
 
 > Execute `docker cp simple_api://results /root/first_result/`{{execute}} 
 
+As you can see in the file explorer window in the upper-right corner of katacoda, now we have
+the /root/first_result/ folder that contains the results file.
+
 In addition to this, let's say that for development purposes we want to change the model 
 used by our application with a new one without rebuilding the container.
 We can execute the copy in the reverse way to bring inside the new model located on 
@@ -86,11 +89,11 @@ Because the app is developed to always use the last updated file in the /models 
 run the predictions, now the application will use the new inserted model. So let's call
 again the '/predict' endpoint.
 
-> Go back to the second terminal window and execute 
-> `curl -X POST http://0.0.0.0:80/predict`{{execute}}
+> Execute `curl -X POST http://0.0.0.0:80/predict`{{execute}} and check the application
+> logs in the other terminal window. You should note some changes in the them.
 
-> Now execute `docker cp simple_api://results /root/second_result/`{{execute}} to see the
-> new results.
+> Now run `docker cp simple_api://results /root/second_result/`{{execute}} to copy the
+> new results on another folder of your host file system.
 
 As you're seeing, extracting data from the container file system or, backwards, putting them
 inside it, is a tedious process. Since these actions could be useful while developing a 
