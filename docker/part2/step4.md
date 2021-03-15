@@ -63,3 +63,6 @@ But we haven't experiment it yet, so let's get our hands dirty.
 ---
 
 - alla fine link alle best practice per mantenere piccole le img (https://docs.docker.com/develop/dev-best-practices/#how-to-keep-your-images-small)
+- spiega opzione build --no-cache
+- spiega forse <none> images quando fai docker image ls -a
+- spiega docker image prune e quando usarlo
