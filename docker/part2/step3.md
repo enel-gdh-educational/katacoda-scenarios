@@ -37,7 +37,7 @@ It is exposed as either a directory or an individual file in the container’s f
 An easy way to visualize the difference among volumes, bind mounts, and tmpfs mounts is to think 
 about where the data lives on the Docker host.
 
-![Type of Mounts](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part2/images/types-of-mounts.png)
+![Type of Mounts](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part2/images/step3/types_of_mounts.png)
 
 
 ### Exercise with bind mounts
@@ -50,7 +50,7 @@ Dockerfile in order to bring a folder with the model file inside the container?
 <details>
     <summary>No?</summary>
 
-![understandable](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part2/images/understandable.jpg)
+![Understandable](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part2/images/step3/understandable.jpg)
 
 </details>
 
