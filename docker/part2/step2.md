@@ -101,7 +101,7 @@ Running `docker ps`{{execute}} we can see three containers now.
 
 And then running 
 `docker inspect -f '{{ json .Mounts }}' simple_api_with_volume_1 | jq`{{execute}}
-we have the certainty that this new container is mounting the same volume.
+we have the certainty that also the new container is mounting the same volume.
 
 Go inside this last container to check the results folder
 > Execute `docker exec -it simple_api_with_volume_1 /bin/bash`{{execute}} to open a 
@@ -119,22 +119,21 @@ If we're seeing an error, that's okay because the volume is still used by some c
 and cannot be deleted! This is valid also for stopped containers.
 
 > So, stop and remove the containers with
-`docker stop simple_api_with_volume simple_api_with_volume_1`{{execute}}
-`docker rm simple_api_with_volume simple_api_with_volume_1`{{execute}}
+> `docker stop simple_api_with_volume simple_api_with_volume_1`{{execute}}
+> `docker rm simple_api_with_volume simple_api_with_volume_1`{{execute}}
 
 Executing now `docker volume ls`{{execute}} we have the confirmation that also after the
 death of the two containers that was using the volume, it remains up. In a way more realistic 
 scenario, for example when the application at the startup downloads the model used to 
-make the predictions from S3, we can store it on a Docker volume. Then we can define a logic ù
+make the predictions from S3, we can store it on a Docker volume. Then we can define a logic 
 in the application that checks if the model is already existent in the volume to prevent 
 unnecessary traffic when starting new containers.
 
 > Now retry to remove the volume. This time it should work.
 
-
-Another way to delete volumes is using `docker volume prune` that remove **all** the local
+Another way to delete volumes is using `docker volume prune` that removes **all** the local
 volumes not used by at least one container.
 
 In conclusion, we explored why Docker volumes are useful, we learnt two different ways of 
 creating Docker volumes and explored their lifecycles. Now continue to the next step where we'll
-experiment to mount a host partition as a volume in to a container, the so called *bind mounts*.
+experiment to mount a host partition as a volume into a container, the so called *bind mount*.
