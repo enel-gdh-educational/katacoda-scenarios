@@ -21,7 +21,7 @@ manage bind mounts.
 
 ---
 
-###Tmpfs mounts
+### Tmpfs mounts
 
 If you’re running Docker on Linux you can also use a **tmpfs mount**. As opposed to volumes and 
 bind mounts, a tmpfs mount is temporary, and only persisted in the host memory. 
@@ -40,7 +40,7 @@ about where the data lives on the Docker host.
 ![Type of Mounts](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part2/images/types-of-mounts.png)
 
 
-###Exercise with bind mounts
+### Exercise with bind mounts
 
 Ok, after this little theoretical introduction, let's get practical on bind mounts.
 
@@ -75,7 +75,7 @@ will not work with this volume.
 > But, running `docker inspect -f '{{ json .Mounts }}' simple_api_bind | jq`{{execute}}
 > we can check that the binding worked correctly.
 
-####Exercise
+#### Exercise
 
 Let's do the same test as before: 
 
