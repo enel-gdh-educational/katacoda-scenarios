@@ -56,7 +56,54 @@ Dockerfile in order to bring a folder with the model file inside the container?
 
 Yes? Ok let's achieve the same result but this time using a bind mount. 
 First, remove the COPY instruction from the Dockerfile in */root/project/step1* and rebuild 
-the image with `docker build -t simple_api_img /root/project/step1`{{execute}}
+the image with:
 
-Now create and start a new container that binds */root/project/step1/model/* folder with */models*
-inside the container file system.
+>`docker build -t simple_api_img /root/project/step1`{{execute}}
+
+This will be super fast compared to the first time because Docker is smart and caches your layers.
+This is a key argument and will be explained in more detail further in the course.
+
+Now create and start a new container that binds */root/project/step1/model/* host directory with 
+*/models* inside the container file system.
+
+> Execute `docker run --name simple_api_bind -p 90:80 -v /root/project/step1/model/:/models -d simple_api_img`{{execute}}.
+
+Remember that this volume is not managed by Docker so executing `docker volume ls`{{execute}}
+will not show bind mounts. Any other docker volume command that we saw in the earlier step 
+will not work with this volume.
+
+> But, running `docker inspect -f '{{ json .Mounts }}' simple_api_bind | jq`{{execute}}
+> we can check that the binding worked correctly.
+
+####Exercise
+
+Let's do the same test as before: 
+
+1. Monitor (following) the logs of the container mapped on port 90 of your host
+
+2. Call the api on the */predict* endpoint to run a simulation and check in the logs which
+model is being used.
+   
+3. Working only on your host file system copy a new model (.joblib file) in the host volume
+
+4. Re-execute step 2 and you should see that the app is using the last copied model (because the
+   application code is written to do that). You can also see that is returning different results
+   
+5. <span style="color:orange">
+    [Optional]
+   </span> 
+   Check the container file system to see that matches the source folder on your host.
+   
+
+As intended, the content of the source folder used in a bind mount will persist beyond container 
+life. Stop and remove *simple_api_bind* container, and the folder will still be there on your 
+file system.
+
+Imagine a bind mount used for example, while executing a training operation instead of a 
+predict-one and this simple exercise acquires more sense.
+
+---
+
+Great! You should now have a good comprehension of storage options while working on Docker.
+Continue to the next step where we'll be facing how Docker layering really works and how we can
+use that in our favor while developing with Docker.

@@ -5,7 +5,7 @@
 
 1. Keep on developing the inference app of the last course part
 
-2. Docker volumes and their usage
+2. Docker volumes, different types and their usage
 
 3. How Docker layering really works and how to use that in our favor
 
