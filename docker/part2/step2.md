@@ -55,7 +55,7 @@ creates the volume with the requested name and mounts it on the requested path o
 Again, if we didn't specify the volume name then a random hash will be used instead by the 
 Docker host. Specifying the name, instead, we can also use an already existent volume.
 
-> Execute `docker run --name simple_api_with_volume -p 81:80 -v second_vol:/results -d simple_api_img`{{execute}}.
+> Execute `docker run --name simple_api_with_volume -p 81:80 -v second_vol:/results -d simple_api_img`{{execute}}
 
 This time we used the -d option in order to run the new container in detached mode 
 because we're not interested in seeing its logs.
