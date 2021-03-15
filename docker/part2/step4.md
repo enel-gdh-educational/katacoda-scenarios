@@ -27,7 +27,7 @@ steps of some Dockerfiles making use, instead, of their cached versions.
 You can see this intermediate layers as a sort of hashed checkpoints that are memorized by the 
 Docker host.
 
-![Sharing layers](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part2/images/step4/sharing_layers.png)
+![Sharing layers](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part2/images/step4/sharing_layers.jpg)
 
 **Important**: to be precise only RUN, COPY and ADD instructions actually create layers. All other 
 instructions create temporary intermediate images that do not increase the size of the build.
