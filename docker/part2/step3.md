@@ -20,7 +20,9 @@ manage bind mounts.
 > security implications, including impacting non-Docker processes on the host system.
 
 ---
+
 ###Tmpfs mounts
+
 If you’re running Docker on Linux you can also use a **tmpfs mount**. As opposed to volumes and 
 bind mounts, a tmpfs mount is temporary, and only persisted in the host memory. 
 When the container stops, the tmpfs mount is removed, and files written there won’t be persisted.
@@ -45,12 +47,14 @@ Ok, after this little theoretical introduction, let's get practical on bind moun
 Do you remember the first step of this course part when we added the COPY instruction on the 
 Dockerfile in order to bring a folder with the model file inside the container?
 
-No? 
->! ![understandable](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part2/images/understandable.jpg)
+<details>
+    <summary>No?</summary>
 
-Yes?
+![understandable](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part2/images/understandable.jpg)
 
-Ok let's achieve the same result but this time using a bind mount. 
+</details>
+
+Yes? Ok let's achieve the same result but this time using a bind mount. 
 First, remove the COPY instruction from the Dockerfile in */root/project/step1* and rebuild 
 the image with `docker build -t simple_api_img /root/project/step1`{{execute}}
 
