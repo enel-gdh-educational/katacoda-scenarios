@@ -51,8 +51,8 @@ Dockerfile in order to bring a folder with the model file inside the container?
     <summary>No?</summary>
 
 ![Understandable](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part2/images/step3/understandable.jpg)
-
-   <span>Ah ah. Ok enough. Check the Dockerfile at */root/project/step1*</span>
+<br/><br/>
+Ah ah. Ok enough. Check the Dockerfile at */root/project/step1*
 </details>
 
 Ok let's achieve the same result but this time using a bind mount. 
@@ -67,7 +67,7 @@ This is a key argument and will be explained in more detail further in the cours
 Now create and start a new container that binds */root/project/step1/model/* host directory with 
 */models* inside the container file system.
 
-> Execute `docker run --name simple_api_bind -p 90:80 -v /root/project/step1/model/:/models -d simple_api_img`{{execute}}.
+> Execute `docker run --name simple_api_bind -p 90:80 -v /root/project/step1/model/:/models -d simple_api_img`{{execute}}
 
 Remember that this volume is not managed by Docker so executing `docker volume ls`{{execute}}
 will not show bind mounts. Any other docker volume command that we saw in the earlier step 
