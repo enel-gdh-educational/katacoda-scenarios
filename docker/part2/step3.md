@@ -52,8 +52,7 @@ Dockerfile in order to bring a folder with the model file inside the container?
 
 ![Understandable](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part2/images/step3/understandable.jpg)
 
-
-Ah ah. Ok enough. Check the Dockerfile at */root/project/step1*
+   <span>Ah ah. Ok enough. Check the Dockerfile at */root/project/step1*</span>
 </details>
 
 Ok let's achieve the same result but this time using a bind mount. 
@@ -77,6 +76,7 @@ will not work with this volume.
 > But, running `docker inspect -f '{{ json .Mounts }}' simple_api_bind | jq`{{execute}}
 > we can check that the binding worked correctly.
 
+---
 #### Exercise
 
 Let's do the same test as before: 
