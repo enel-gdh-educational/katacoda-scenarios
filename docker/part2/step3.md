@@ -52,11 +52,12 @@ Dockerfile in order to bring a folder with the model file inside the container?
 
 ![Understandable](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part2/images/step3/understandable.jpg)
 
+
 Ah ah. Ok enough. Check the Dockerfile at */root/project/step1*
 </details>
 
 Ok let's achieve the same result but this time using a bind mount. 
-First, remove the COPY instruction from the Dockerfile in */root/project/step1* and rebuild 
+First, remove the second COPY instruction from the Dockerfile in */root/project/step1* and rebuild 
 the image with:
 
 >`docker build -t simple_api_img /root/project/step1`{{execute}}

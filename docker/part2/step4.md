@@ -35,21 +35,40 @@ instructions create temporary intermediate images that do not increase the size 
 
 If you think that when we update our application code and rebuild the image we are, in fact, 
 creating a different Docker image, this mechanism saves to Docker host a lot of unnecessary work 
-(and time to us) because we could reuse all the **previous** intermediate steps of the first image.
-
+(and time to us) because we could reuse all the **previous** cached intermediate steps of the first 
+image.
 
 Layers and cache are two of the most powerful aspect of Docker that can speed up our daily work and 
 are crucial when deploying our solutions on a production infrastructure. 
 But we haven't experiment it yet, so let's get our hands dirty.
 
 
-
-
 ### Visualizing layers
-    comando docker image history nome_img (anche con opzione --no-trunc) e spiegazione
-    spiego che anche base image proviene comunque da un dockerfile ed è fatta da layer 
-    che però non vengono cachati da dockerhost. Base img può quindi avere ENV o EXPOSE che
-    si riflettono sulle nostre custom img
+
+In order to visualize the composition of a built image, docker provides a specific command:
+
+> Execute `docker history simple_api_img`  
+> Using *--no-trunc* option we could print the full Docker instructions (but it's quite difficult to read 
+> on a console).
+
+Each line represents an intermediate image (layer) with its hash identifier, creation time, the command 
+contained in the Dockerfile that generated that layer and, finally, the size of the layer. Those are
+ordered top-down from the most recent instruction to the oldest one.
+
+As you can see there are more lines that you could have expected. The first five comes from our custom
+Dockerfile, then there's a line with *CMD ["python3"]* that we didn't write, and under that until the 
+bottom a lot with a "missing" image ID.
+
+The &lt;missing&gt; lines in the docker history output indicate that those layers were built on 
+another system. In fact those refer to the commands contained in the Dockerfile of our chosen base image
+and are not available locally (are not cached). 
+
+So, the *CMD ["python3"]* refers to the last layer of the base image that we used and that is saved on 
+our Docker host cache. To get the total size of the base image
+
+By issuing this command you can also verify if the base image has EXPOSE or ENV instructions which will 
+of course affect also your custom image. This could be useful while developing if you don't have the 
+Dockerfile of the base image.
 
 ---
 
