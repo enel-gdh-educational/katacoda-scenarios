@@ -7,4 +7,3 @@ Let's summarize what we learned!
 - We learned to use some basic commands like: docker build, docker run, docker rm, docker images.
 - We learned how to create a custom image with a Dockerfile. We also saw some basic and useful commands to use in Dockerfiles.
 - We started creating our inference app and we dockerize it. This app will be expanded in the next steps where you will learn other important Docker concepts.
-*TODO: COMPLETE WITH ACHIEVEMENTS*

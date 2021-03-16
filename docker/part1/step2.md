@@ -35,7 +35,7 @@ Let's explain these steps.
 ### 1. Docker client and Docker daemon
 The Docker client is the Docker command line tool. We can use it to interact with Docker.
 
-Docker Client is the persistent process that manages containers. We interact with it through the docker client (CLI).
+The Docker daemon, instead, is the persistent process that manages containers. We interact with it through the docker client (CLI).
 
 ### 2. Images and Docker Hub
 Container images are one of the most important elements when working with Docker. Someone can confuse Docker containers and Docker images, so let's explain the difference.
@@ -47,7 +47,18 @@ A **container** is a running entity, created from an image i.e. from one image, 
 So Docker, to create our "hello world" container used the "hello-world" image. But where did Docker find it? Answer: in Docker Hub. It's a public registry that contains Docker images ready to be executed. Docker Hub is the public registry of Docker, but there are also private registries. These public registries usually contains base images that can be used to package our applications. For example there are images for Ubuntu, PostgreSQL, MongoDB, Kafka, and Python.
 
 ### Docker client VS Docker deamon VS Docker Registry
-Docker uses a client-server architecture. The Docker client talks to the Docker daemon, which does the heavy lifting of building, running, and distributing your Docker containers. The Docker client and daemon can run on the same system, or you can connect a Docker client to a remote Docker daemon. The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface. Another Docker client is Docker Compose that lets you work with applications consisting of a set of containers. A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use. Docker is configured to look for images on Docker Hub by default. You can even run your own private registry.
+
+Docker uses a client-server architecture. 
+The Docker client talks to the Docker daemon, which does the heavy lifting of building, running, and distributing your Docker containers.
+ The Docker client and daemon can run on the same system, or you can connect a Docker client to a remote Docker daemon. 
+  The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface. 
+  Another Docker client is Docker Compose that lets you work with applications consisting of a set of containers. 
+
+In this course, the Docker client and the Docker daemon run on the same system, as if you were using Docker on your pc! 
+Actually, this is the most common scenario. Connecting the Docker client to a different deamon doesn't happen very often.
+
+A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default.
+ You can even run your own private registry.
 
 ![Docker architecture](https://docs.docker.com/engine/images/architecture.svg)
 
@@ -58,6 +69,8 @@ At this point Docker created and executed the container. This is because we told
 
 ### 4. Stream output
 The Docker daemon streams the output of your container to the Docker client. It's the default behavior, but you can always override it.
+
+So, if you have an application that prints or logs to the standard output, Docker automatically redirects them to the standard output of the host machine. As we will see in the next steps, we can access logs in different ways.
 
 ---
 ## docker ps command

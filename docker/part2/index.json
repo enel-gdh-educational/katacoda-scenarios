@@ -1,26 +1,49 @@
 {
   "title": "Docker course part 2",
-  "description": "docker description",
+  "description": "Develop AI code with Docker. Overview on layers, cache and volumes.",
   "difficulty": "beginner",
-  "time": "2 years",
+  "time": "3 hours",
   "details": {
-    "steps": [{
-      "title": "Step 1 - Run Command",
+    "assets": {
+      "host1": [
+        {
+          "file": "step1",
+          "target": "/root/project"
+        }
+      ]
+    },
+    "steps": [
+      {
+      "title": "Step 1",
       "text": "step1.md"
-    }],
+      },
+      {
+      "title": "Step 2",
+      "text": "step2.md"
+      },
+      {
+      "title": "Step 3",
+      "text": "step3.md"
+      },
+      {
+      "title": "Step 4",
+      "text": "step4.md"
+      }
+    ],
     "intro": {
       "text": "intro.md",
-      "credits": ""
+      "credits": "",
+      "code": "intro.sh"
     },
     "finish": {
       "text": "finish.md"
     }
   },
   "environment": {
-    "uilayout": "terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+    "uilayout": "editor-terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
   },
   "backend": {
-    "imageid": "bash"
+    "imageid": "ubuntu:2004"
   }
 }

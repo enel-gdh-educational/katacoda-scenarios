@@ -5,12 +5,17 @@
     {
       "course_id": "part1",
       "title": "Docker course part 1",
-      "description": "part1 descrizione"
+      "description": "Docker foundamentals, main commands, Dockerfile."
     },
     {
       "course_id": "part2",
       "title": "Docker course part 2",
-      "description": "part2 descrizione"
+      "description": "Develop AI code with Docker. Overview on layers, cache and volumes."
+    },
+    {
+      "course_id": "part3",
+      "title": "Docker course part 3",
+      "description": "Docker Registry, networks and Docker Compose fundamentals"
     }
   ]
 }

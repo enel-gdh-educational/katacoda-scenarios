@@ -18,7 +18,8 @@ Try it: `docker run --name my-app -p 80:80 -d docker-course-app`{{execute}}
 
 You can manage the running container using commands like `docker stop`, `docker pause`, `docker kill` and so on.  All these commands have the same syntax `docker <action> <contaier-id/name>`, but they can have different options.
 
-Now the container runs in backgroud and you have your terminal free again. Don't warry, you can still see your container's log using the `docker logs` command.
+Now the container runs in background and you have your terminal free again. 
+Don't worry, you can still read your container's log using the `docker logs` command.
 
 Usage: `docker logs [OPTIONS] CONTAINER`
 
@@ -57,7 +58,7 @@ Start the container: `docker run --name my-app -d docker-course-app`{{execute}}
 
 We don't bind the container's port with a host's port, so we can't communicate with the app from the host. 
 
-Now, open a shell in it: `docker exec -it my-app bash` and try to call /health endpoint. 
+Now open a shell in it: `docker exec -it my-app bash`{{execute}} and send a request to the health endpoint. 
 
-It works! Because we are executing commands from inside the container!
+It works! Because we are executing commands from inside the container! Actually, opening a shell in a running container is a very useful and common operation, expecially at debug time. So, keep in mind this trick! 
 
