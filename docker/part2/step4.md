@@ -109,13 +109,14 @@ Now modify the code in `/root/project/step1/app/api.py` adding, for example, ano
 
 This time too it was quite fast. Of course the size of the copied folder matters, but is nothing compared
 to downloading and installing again all the libraries declared in the requirements file!
-Just for saying if you have an heavy file to bring inside the container you could also split the COPY 
-instruction in multiple COPY where the first one move the heavy load. In this way changing files 
-interested in the last COPY builds will continue to be fast.
+
+Just for saying, if you have an heavy file to bring inside the container you could also split the COPY 
+instruction in multiple COPY where the first one move the heavy load. In this way, also changing files 
+interested in the last COPY, builds will continue to be fast.
 
 Inspecting the console output we can see that the first step is not executed because it's not pulling
-the image from library/python, steps 2 and 3 says *"Using cache"* and after that all the other 
-instead doesn't because those are executed again.
+the image from library/python, steps 2 and 3 says *"Using cache"* and, after that, all the other 
+doesn't because those are being executed again.
 
 If, for some reason, using the cached versions of layers could be a problem in some particular scenario,
 you can always make use of the **--no-cache** option while building your image and doing so Docker will 
@@ -130,7 +131,7 @@ To make this point even stronger move the `COPY app /app` instruction right afte
 
 Re-execute the previous test: build the image, change a code line, and build again.
 
-You can see that the in the second build, despite the requirements.txt didn't change,
+You can see that in the second build, despite the requirements.txt didn't change,
 (and in fact that COPY it's a cache-hit) the RUN step is being re-executed.
 
 ---
