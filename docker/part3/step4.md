@@ -36,10 +36,16 @@ start from a common image version to build new images specific for a certain pro
 
 ### CI/CD pipeline
 
-Docker is used in the configuration of CI/CD pipelines for models deployed as a microservices
-in kubernetes.
-At the end of the building step a new image version is pushed to an AWS registry (ECR)
-so that it can be deployed in a pod in the kubernetes cluster of your application
+Docker could be used in the configuration of CI/CD pipelines.
+
+In particular, you can have for example this two different use cases:
+
+- A commit or a merge operation on Bitbucket can trigger a pipeline that run tests,
+build a docker image and push it on Enel Artifactory Registry
+  
+- In the scenario of microservices application that run on AWS EKS, the configured
+Bamboo pipeline at the end of the building step push a new image version AWS registry (ECR)
+so that it can be deployed in a pod in your cluster
 
 
 # Install Docker

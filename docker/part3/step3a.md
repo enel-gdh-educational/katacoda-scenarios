@@ -1,5 +1,15 @@
 # Docker Compose Introduction
 
+Let's recap what you have just learned to create a full stack
+application:
+1. You have implemented a backend and frontend application using Pyhton scripts
+2. You have built an image for each application in your Docker environment
+3. You have defined and created a network so that the two applications can communicate each other
+4. You have run frontend and backend containers inside the network created
+
+Now can we define an overall Docker architecture using a single instruction or configuration?
+For this purpose you can use **Docker Compose**!
+
 Docker Compose allows you to define and running multiple containers using a yaml file configuration.
 With a single command in terminal you can start and stop different containers that share the same network
 or resources.
@@ -77,6 +87,10 @@ command
 
 `docker-compose up -d`{{execute}}
 
+With `-d` parameter you can start your Docker full-stack architecture in detach mode: this option
+run containers in background and print new container names (similar to `docker run`
+command).
+
 The first time this operation requires several minutes since you have to build
 all the images for the containers that you defined in configuration file.
 
@@ -92,6 +106,6 @@ or use this command to get logs
 
 `docker-compose logs`{{execute}}
 
-Using this command you can stop all the containers:
+[comment]: <> (Using this command you can stop all the containers:)
 
-`docker-compose stop`{{execute}}
+[comment]: <> (`docker-compose stop`{{execute}})
