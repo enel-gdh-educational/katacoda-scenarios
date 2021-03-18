@@ -5,19 +5,17 @@ In this section we'll explore Docker volumes and how we can use them to our adva
 ### Main reasons to volumes
 
 * **Containers file systems are ephemeral**: by default, all files created inside a container 
-  are stored on a writable container layer. This means that the data doesn’t persist when that 
+  are stored on a writable container layer. This means that data won’t persist when that 
   container no longer exists.
   
-
 * **Sharing data between containers**: multiple containers can mount the same volume 
-  simultaneously or in different times, either read-write or read-only.
+  simultaneously or at different times, either read-write or read-only.
 
-  
 * **Developing on host**: as we have seen in the previous section, while developing 
   and debugging an application it could be useful to bring files and folders inside a
-  running container and vice versa. This could be made by mounting host partitions as 
+  running container and vice versa. This could be done by mounting host partitions as 
   volumes into the container (called *bind mounts*).
-  
+
 *For more examples of use cases visit 
 https://docs.docker.com/storage/#good-use-cases-for-volumes*
 
@@ -36,7 +34,7 @@ our first Docker volume!
 > `docker volume ls`{{execute}}
 
 We should see the new created volume with the chosen name. 
-If we didn't specify the name then a random hash will be used instead by the Docker 
+If we didn't specify the name then a random hash would have been used instead by the Docker 
 host (in this case we would be creating an *anonymous volume*).
 
 In order to know where this volume will actually store files we can execute:
@@ -52,16 +50,14 @@ declaring a volume mount in the "docker run" command.
 Let's try to create and run a new container from the *simple_api_img* Docker image that we 
 previously built, but this time adding the *-v volume_name:/path/in/container* option that 
 creates the volume with the requested name and mounts it on the requested path of the container.
-Again, if we didn't specify the volume name then a random hash will be used instead by the 
-Docker host. Specifying the name, instead, we can also use an already existent volume.
+Again, if we didn't specify the volume name then a random hash would have been used instead by the Docker host. Specifying the name, instead, we can also use an already existent volume.
 
 > Execute `docker run --name simple_api_with_volume -p 81:80 -v second_vol:/results -d simple_api_img`{{execute}}
 
-This time we used the -d option in order to run the new container in detached mode 
-because we're not interested in seeing its logs.
+This time we used the -d option in order to run the new container in detached mode because we're not interested in seeing its logs.
 
 As you may have noticed, we mounted the volume in the path where the application will store 
-prediction results. In this way we can maintain the results beyond the containers lives and
+prediction results. In this way, we can maintain results beyond the containers lives and
 also share them between multiple containers.
 
 > Execute `docker ps`{{execute}} to check what's currently running on Docker host. There should
@@ -105,7 +101,7 @@ we have the certainty that also the new container is mounting the same volume.
 
 Go inside this last container to check the results folder
 > Execute `docker exec -it simple_api_with_volume_1 /bin/bash`{{execute}} to open a 
-> console on the container. And then `ls /results`{{execute}} to check that this time 
+> console on the container. Then, issue `ls /results`{{execute}} to check that this time 
 > a result file inside already exists.
 
 This is just an example made to give you the potential of using volumes to share contents 
@@ -123,13 +119,12 @@ and cannot be deleted! This is valid also for stopped containers.
 > `docker rm simple_api_with_volume simple_api_with_volume_1`{{execute}}
 
 Executing now `docker volume ls`{{execute}} we have the confirmation that also after the
-death of the two containers that was using the volume, it remains up. 
-
-In a way more realistic scenario, for example when the application at the startup downloads 
-the model used to make the predictions from S3, we can decide to store this model on a Docker volume. 
-Then we can define a logic in the application that checks if the model is already existent in the 
-volume to prevent another download and unnecessary traffic and also to save time when starting new 
-containers.
+death of the two containers that were using the volume, it remains up.
+ 
+In a way more realistic scenario, for example when the application at the startup downloads the model used to 
+make the predictions from S3, we can store it on a Docker volume. Then we can define a logic 
+in the application that checks if the model is already existent in the volume to prevent 
+unnecessary traffic when starting new containers.
 
 > Now retry to remove the volume. This time it should work.
 
@@ -137,5 +132,5 @@ Another way to delete volumes is using `docker volume prune` that removes **all*
 volumes not used by at least one container.
 
 In conclusion, we explored why Docker volumes are useful, we learnt two different ways of 
-creating Docker volumes and explored their lifecycles. Now continue to the next step where we'll
+creating Docker volumes and explored their life cycles. Now continue to the next step where we'll
 experiment to mount a host partition as a volume into a container, the so called *bind mount*.

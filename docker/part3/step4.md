@@ -14,7 +14,7 @@ You could use Docker in the following scenarios:
 - CI/CD pipeline
 
 ### Local environment
-You can use docker to start and test in your local pc microservices that will be deployed in 
+You can use docker to start and test in your local PC microservices that will be deployed in 
 kubernetes environment.
 
 You have the following pros:
@@ -23,11 +23,11 @@ You have the following pros:
   in order to have a running and working environment
 - You don't have to download dependencies in your local environment: a docker image described
 by a dockerfile have all dependecies you need to start your container. There aren't troubles about
-  conflict dependencies
+  conflicting dependencies
 
 ### Enel Artifactory
 Enel Artifactory is the repository where you publish and store artifacts written in different
-languages (e.g. python). Of course you could use Enel Artifactory to share also Docker images
+languages (e.g. python). Of course, you could use Enel Artifactory to share also Docker images
 
 Using Enel Artifactory has the following advantages:
 - the reuse of images: some images could be reused across different projects and contexts; you can

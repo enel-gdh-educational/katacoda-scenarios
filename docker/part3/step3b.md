@@ -1,9 +1,9 @@
 ### Creating volumes
 
-To start correctly your application you need also volume for the models of the backend service.
+To correctly start your application you also need volume for the models of the backend service.
 You can add this resource in `docker-compose.yml`
 
-First define the volume name at the end of file. For this application we use the names `models-vol`
+First, define the volume name at the end of file. For this application we use the names `models-vol`
 
 ```
 volumes:
@@ -20,7 +20,7 @@ volumes:
 ```
 
 If you use docker-compose 3.9 specification (see field `version` of docker-compose file)
-you can add also this lines
+you can add also these lines
 
 ```
 ...
@@ -51,7 +51,7 @@ You can check the correct creation of the volume with this command
 
 `docker volume ls`{{execute}}
 
-Check also the correct bind of the volume mounted using the inspection on container. In particular
+Check also the correct bind of the volume mounted using the inspection on container. In particular,
 in the `Mounts` section you can get information about name of the volume and target folder
 specified in the docker-compose.yml
 
@@ -85,8 +85,8 @@ services:
       ...
 ```
 
-Finally, you need to specify a dependency between the two services. In particular the frontend
-service need that backend service container is started so that the api call is working. 
+Finally, you need to specify a dependency between the two services. In particular, the frontend
+service needs that the backend service container is started so that the API call is working. 
 For this you must add the `depends_on` field
 
 ```
@@ -111,7 +111,7 @@ Check that network is created correctly with containers that you need
 `docker network ls`{{execute}}
 
 `docker network inspect step2c_course_net`{{execute}}
- 
+
 
 At the end use check the result connecting to the port 8081 and
 use this command to delete containers and network just created
