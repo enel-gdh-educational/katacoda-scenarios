@@ -9,20 +9,14 @@ import glob
 RESULTS_PATH = "/results/last_results.json"
 
 
+# function that returns the most recent .joblib file (model) inside /models folder
 def _get_last_model():
     list_of_files = glob.glob('/models/*.joblib')
     latest_file = max(list_of_files, key=os.path.getctime)
     return latest_file
 
-# PREDICTION RETURN
-# def get_prediction(clf, params):
-#     x = [list(params.values())]
-#     y = clf.predict(x)[0]  # just get single value
-#     prob = clf.predict_proba(x)[0].tolist()  # send to list for return
-#     return {'prediction': int(y), 'probability': prob}
 
-
-# INITIATE API
+# function that execute the prediction using given params and writes the results on a .json file
 def write_prediction_on_file(clf, params):
 
     x = [list(params.values())]
@@ -37,10 +31,11 @@ def write_prediction_on_file(clf, params):
     return RESULTS_PATH
 
 
+# INITIATE API
 app = FastAPI(title="Prediction API", docs_url="/", version="1.0.0")
 
 
-# DEFINE MODEL FOR POST
+# Those are the model params used in each POST request on /predict for simplicity of this demo
 class ModelParams(BaseModel):
     Account_Length: int = Query(102, description='Count, how long account has been active')
     VMail_Message: int = Query(8, description='Count, number of voice mail messages')
@@ -71,16 +66,15 @@ def healthcheck():
 
 
 @app.post("/predict")
-def predict(params: ModelParams = default_model):
+def predict(params: ModelParams = default_model):   # For simplicity in this demo we always use the same model params
     print("You have called the predict endpoint. Great!")
 
-    model = _get_last_model()
+    model = _get_last_model()   # Retrieving most recent model file
     print("Predict operation is using model: {}".format(model))
 
-    params = params.dict()
-    # print("Using the default parameters: {}\n".format(params))
+    params = params.dict()  # Using the default parameters
 
-    results_path = write_prediction_on_file(load(model), params)
+    results_path = write_prediction_on_file(load(model), params)    # Exec prediction and write results on file
     print("Results written on file: {}\n".format(results_path))
 
-    return {"results_path": results_path}
+    return {"results_path": results_path}   # Returning a dummy response in this demo
