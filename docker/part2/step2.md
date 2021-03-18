@@ -78,7 +78,7 @@ As you see, the *simple_api_with_volume* container has mounted the *second_vol* 
 in the /results path as requested.
 
 Ok, now go inside the container to check the results folder
-> Execute `docker exec -it simple_api_with_volume /bin/bash`{{execute}} to open a 
+> Execute `docker exec -it simple_api_with_volume /bin/bash`{{execute}} to open an interactive 
 > console on the container. And then `ls /results`{{execute}} to check that it's empty.
 
 So, call the /predict endpoint in order to create a result file.
@@ -111,7 +111,7 @@ Go inside this last container to check the results folder
 This is just an example made to give you the potential of using volumes to share contents 
 between containers. Of course, there will be more useful scenarios than this.
 
-As the final step, let's see how to delete a Docker volume.
+As a final step, let's see how to delete a Docker volume.
 
 > Execute `docker volume rm second_vol`{{execute}}
 
@@ -123,11 +123,13 @@ and cannot be deleted! This is valid also for stopped containers.
 > `docker rm simple_api_with_volume simple_api_with_volume_1`{{execute}}
 
 Executing now `docker volume ls`{{execute}} we have the confirmation that also after the
-death of the two containers that was using the volume, it remains up. In a way more realistic 
-scenario, for example when the application at the startup downloads the model used to 
-make the predictions from S3, we can store it on a Docker volume. Then we can define a logic 
-in the application that checks if the model is already existent in the volume to prevent 
-unnecessary traffic when starting new containers.
+death of the two containers that was using the volume, it remains up. 
+
+In a way more realistic scenario, for example when the application at the startup downloads 
+the model used to make the predictions from S3, we can decide to store this model on a Docker volume. 
+Then we can define a logic in the application that checks if the model is already existent in the 
+volume to prevent another download and unnecessary traffic and also to save time when starting new 
+containers.
 
 > Now retry to remove the volume. This time it should work.
 

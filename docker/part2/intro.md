@@ -5,11 +5,9 @@
 
 1. Keep on developing the inference app of the last course part
 
-2. Docker volumes, different types and their usage
+2. Storage solutions on Docker: volumes, bind mounts and their usage
 
 3. How Docker layering really works and how to use that in our favor
-
-4. How to use an Enel private library inside a Docker container
 
 ---
 **NOTE:** Katacoda is preparing your environment. It can take a while. 

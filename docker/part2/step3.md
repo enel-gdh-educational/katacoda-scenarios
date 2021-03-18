@@ -9,8 +9,10 @@ Non-Docker processes on the Docker host or a Docker container can modify them at
 
 The file or directory is referenced by its full path on the host machine. The file or directory 
 does not need to exist on the Docker host already. It is created on demand if it does not yet 
-exist. Because they're not managed by Docker, you cannot use Docker CLI commands to directly 
-manage bind mounts.
+exist. 
+
+Because they're not managed by Docker, you cannot use Docker CLI commands to directly 
+manage bind mounts as we did in the previous step with Docker volumes.
 
 > Attention!   
 > Bind mounts allow access to sensitive files.  
@@ -56,7 +58,7 @@ Ah ah. Ok enough. Check the Dockerfile at */root/project/step1*
 </details>
 
 Ok let's achieve the same result but this time using a bind mount. 
-First, remove the second COPY instruction from the Dockerfile in */root/project/step1* and rebuild 
+First, remove the `COPY model /models` instruction from the Dockerfile in */root/project/step1* and rebuild 
 the image with:
 
 >`docker build -t simple_api_img /root/project/step1`{{execute}}
@@ -70,7 +72,7 @@ Now create and start a new container that binds */root/project/step1/model/* hos
 > Execute `docker run --name simple_api_bind -p 90:80 -v /root/project/step1/model/:/models -d simple_api_img`{{execute}}
 
 Remember that this volume is not managed by Docker so executing `docker volume ls`{{execute}}
-will not show bind mounts. Any other docker volume command that we saw in the earlier step 
+will not show bind mounts. Any other `Docker volume` command that we saw in the earlier step 
 will not work with this volume.
 
 > But, running `docker inspect -f '{{ json .Mounts }}' simple_api_bind | jq`{{execute}}
@@ -89,7 +91,7 @@ model is being used.
 3. Working only on your host file system copy a new model (.joblib file) in the host volume
 
 4. Re-execute step 2 and you should see that the app is using the last copied model (because the
-   application code is written to do that). You can also see that is returning different results
+   application code is written to do that).
    
 5. <span style="color:orange">
     [Optional]
@@ -102,7 +104,8 @@ life. Stop and remove *simple_api_bind* container, and the folder will still be 
 file system.
 
 Imagine a bind mount used for example, while executing a training operation instead of a 
-predict-one and this simple exercise acquires more sense.
+predict-one and this simple exercise should acquire more sense. You can persist the trained model
+on your file system and execute the operation that you prefer on it.
 
 ---
 

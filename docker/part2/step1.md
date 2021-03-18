@@ -60,7 +60,8 @@ cannot be returned inside the HTTP response.
 
 So let's explore the container file system:
 
-> Execute `docker exec -it simple_api /bin/bash`{{execute}} to open a console on the container.  
+> Execute `docker exec -it simple_api /bin/bash`{{execute}} to open an interactive console on the 
+> container.  
 
 With `ls /results`{{execute}} we should see a file named "last_results.json"
 
@@ -101,6 +102,6 @@ Dockerized application we would prefer an easier way to do it. The answer is vol
 
 **Most importantly** the container file system is ephemeral: it exists only until the container 
 do the same. When you remove a container, also its file system is removed.
-To persist data beyond containers' life volumes must be used.
+To persist data beyond containers' life, volumes must be used.
 
 So let's explore Docker volumes in the next step.

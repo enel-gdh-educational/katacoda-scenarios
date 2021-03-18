@@ -13,11 +13,11 @@ can be written at runtime is the highest.
 > appears to contain their combined contents.  
 > For more info: https://en.wikipedia.org/wiki/Union_mount
 
-When you use an image to generate a container, you add a new writable layer (the “container layer”) 
-on top of the underlying layers. All changes made to the running container, such as writing new files, 
-modifying existing files, and deleting files, are written to this thin writable container layer. Any 
-files that the container doesn't change do not get copied to this writable layer. This means that the 
-writable layer is as small as possible.
+When you use an image to generate a container, you are in fact adding a new writable layer 
+(the “container layer”) on top of the underlying layers. All changes made to the running container, 
+such as writing new files, modifying existing files, and deleting files, are written to this thin 
+writable container layer. Any files that the container doesn't change do not get copied to this 
+writable layer. This means that the writable layer is as small as possible.
 
 ![Layers2](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part2/images/step4/layers_2.png)
 
@@ -27,16 +27,16 @@ some layers in common! Having decoupled a container image in a sequence of layer
 executing some steps of some Dockerfiles making use, instead, of their cached versions.
 
 You can see this intermediate layers as a sort of hashed checkpoints that are memorized by the 
-Docker host. Similar to a git commit that adds files or just some lines to the previous.
+Docker host. Similar to a git commit that adds files or just some code lines to the previous commit.
 
 ![Sharing layers](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part2/images/step4/sharing_layers.jpg)
 
-**Important**: to be precise only RUN, COPY and ADD instructions actually create layers. All other 
+To be precise only RUN, COPY and ADD instructions actually create layers. All other 
 instructions create temporary intermediate images that do not increase the size of the build.
 
 If you think that when we update our application code and rebuild the image we are, in fact, 
 creating a different Docker image, this mechanism saves to Docker host a lot of unnecessary work 
-(and time to us) because we could reuse all the **previous** cached intermediate steps of the first 
+(and time to us) because it could reuse all the **previous** cached intermediate steps of the first 
 image.
 
 **Layers and cache** are two of the most powerful aspect of Docker that can speed up our daily work and 
@@ -98,7 +98,7 @@ Enough with the theory, let's get back to being practical.
 
 Reopen `/root/project/step1/Dockerfile`. The COPY instruction that brings the app code inside the
 container is executed after the requirements install. This means that changing the code will not affect
-the previous layer that could be retrieved from cache.
+the previous layers that could be retrieved from cache.
 
 But first, a quick test. We should already had built this image at least one time so re-executing:
 `docker build -t simple_api_img /root/project/step1`{{execute}} should mean reusing all cached layers
