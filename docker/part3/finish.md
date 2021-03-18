@@ -8,10 +8,10 @@ Let's recap what you learned:
   
 - Create a docker network and adding a container inside it
   
-- Using a docker network in order to connect two different containers each others, for example
+- Using a docker network in order to connect two different containers to each other, for example
 for interactions between a frontend and backend application
   
 - Using Docker Compose to start and stop your application with several containers and Docker resources
 
-- Being aware of advantages of using Docker in Global Data Hub working experience
+- Being aware of the advantages of using Docker in Global Data Hub working experience
 

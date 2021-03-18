@@ -7,7 +7,7 @@
 
 2. Docker volumes, different types and their usage
 
-3. How Docker layering really works and how to use that in our favor
+3. How Docker layering really works and how to use it in our favor
 
 4. How to use an Enel private library inside a Docker container
 

@@ -9,7 +9,7 @@ can be written at runtime is the highest.
 
 ![Layers1](https://raw.githubusercontent.com/dcc-sapienza/katacoda-scenarios/master/docker/part2/images/step4/layers_1.png)
 
-> **Union mounting** is a technic aimed at combining multiple directories into one that 
+> **Union mounting** is a technique aimed at combining multiple directories into one that 
 > appears to contain their combined contents.  
 > For more info: https://en.wikipedia.org/wiki/Union_mount
 
@@ -32,15 +32,14 @@ Docker host.
 **Important**: to be precise only RUN, COPY and ADD instructions actually create layers. All other 
 instructions create temporary intermediate images that do not increase the size of the build.
 
-
 If you think that when we update our application code and rebuild the image we are, in fact, 
 creating a different Docker image, this mechanism saves to Docker host a lot of unnecessary work 
-(and time to us) because we could reuse all the **previous** intermediate steps of the first image.
+(and time for us) because we could reuse all the **previous** intermediate steps of the first image.
 
 
-Layers and cache are two of the most powerful aspect of Docker that can speed up our daily work and 
+Layers and cache are two of the most powerful aspects of Docker that can speed up our daily work and 
 are crucial when deploying our solutions on a production infrastructure. 
-But we haven't experiment it yet, so let's get our hands dirty.
+But we haven't experimented it yet, so let's get our hands dirty.
 
 
 

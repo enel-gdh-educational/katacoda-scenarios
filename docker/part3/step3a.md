@@ -8,7 +8,7 @@ Using Docker Compose you can easily deploy in local environment all the resource
 your application. For example, you can create volumes, network or running containers defining them in 
 yaml configuration file.
 
-Compose has commands for managing the whole lifecycle of your application:
+Compose has commands for managing the whole life cycle of your application:
 - Start and rebuild services
 - View the status of your services
 - Getting logs of running services

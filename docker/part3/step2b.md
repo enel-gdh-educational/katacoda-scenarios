@@ -2,7 +2,7 @@
 You can add a container to an existing docker network in the creation step of the container,
 using the parameters `--network`
 
-With the following commands you can run the container of Dockerchurn adding it to a newtork.
+With the following commands you can run the container of Dockerchurn adding it to a network.
 First check that you have `dockerchurn` image in your local environment
 
 `docker images | grep dockerchurn`{{execute}}
@@ -31,7 +31,7 @@ command:
 
 `docker stop dockerchurn-container; docker rm dockerchurn-container`{{execute}}
 
-The network at this moment has not containers. Then we run the container without `--network`
+The network at this moment has no containers. Then we run the container without `--network`
 parameter
 
 `docker run -d -p 8080:80 --name dockerchurn-container dockerchurn`{{execute}}
@@ -48,7 +48,7 @@ Of course, you can also remove the container from the network at runtime with th
 
 `docker network disconnect course_net dockerchurn-container`{{execute}}
 
-Then check the output effect using inspect:
+Then check the output using inspect:
 
 `docker network inspect course_net`{{execute}}
 

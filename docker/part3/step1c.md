@@ -8,7 +8,7 @@ configuration (see more details in https://docs.docker.com/registry/insecure)
 
 If you have **Docker Desktop** application on your Windows/Mac you can copy and paste this snippet
 in section 'Docker > Preferences > Docker Engine'.
-After that apply and restart.
+After this, apply and restart.
 
 ```
 {
@@ -27,7 +27,7 @@ After that apply and restart.
 If you have Linux you can paste the snippet in file `/etc/docker/daemon.json` as you can see
 in https://docs.docker.com/registry/insecure
 
-Since we use a private Docker registry we use command docker login to access to the registry
+Since we use a private Docker registry we use command docker login to access the registry
 and put your username and artifactory api-key interactively
 
 `docker login artifactorydocker.springlab.enel.com`
@@ -47,7 +47,7 @@ You can use docker pull to save locally an image from a Docker registry.
 By default, docker pulls images from Docker Hub. 
 It is also possible to manually specify the path of a registry to pull from. 
 
-For test purpose, fisrt you delete local image just created
+For test purpose, first you delete the local image just created
 `docker rmi artifactory.springlab.enel.com/enel-docker-course-img/hello-world-{Enel Id Number Axxxxxx}:v0.1`
 
 Then you pull the same image from Enel Artifactory:
@@ -60,7 +60,7 @@ Check the result using this command
 
 ### Docker logout
 
-You can use this command if you want logging out from artifactory
+You can use this command if you want to log out from artifactory
 
 `docker logout artifactorydocker.springlab.enel.com`
 

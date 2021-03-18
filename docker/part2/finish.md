@@ -1,4 +1,4 @@
-Great! You have complited the second part of the Docker course!
+Great! You have completed the second part of the Docker course!
 
 Let's summarize what we learned!
 

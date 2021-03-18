@@ -2,7 +2,7 @@
 
 Docker volumes aren't the only mount type available while working with Docker containers.
 
-In fact, there are also **bind mounts** sometime called *host volumes* that differs from the
+In fact, there are also **bind mounts** sometimes called *host volumes* that differ from the
 Docker volumes because they are not managed by Docker and because they may be stored 
 anywhere on the host system. They may even be important system files or directories. 
 Non-Docker processes on the Docker host or a Docker container can modify them at any time. 
@@ -27,9 +27,7 @@ If you’re running Docker on Linux you can also use a **tmpfs mount**. As oppos
 bind mounts, a tmpfs mount is temporary, and only persisted in the host memory. 
 When the container stops, the tmpfs mount is removed, and files written there won’t be persisted.
 
-This could be useful to temporarily store sensitive files that you don’t want to persist in 
-either the host or the container writable layer.
----
+This could be useful to temporarily store sensitive files that you don’t want to persist in either the host or the container writable layer.
 
 No matter which type of mount you choose to use, the data looks the same from within the container.
 It is exposed as either a directory or an individual file in the container’s filesystem.
@@ -44,7 +42,7 @@ about where the data lives on the Docker host.
 
 Ok, after this little theoretical introduction, let's get practical on bind mounts.
 
-Do you remember the first step of this course part when we added the COPY instruction on the 
+Do you remember the first step of this course part 1 when we added the COPY instruction on the 
 Dockerfile in order to bring a folder with the model file inside the container?
 
 <details>
@@ -82,13 +80,13 @@ Let's do the same test as before:
 
 1. Monitor (following) the logs of the container mapped on port 90 of your host
 
-2. Call the api on the */predict* endpoint to run a simulation and check in the logs which
+2. Call the API on the */predict* endpoint to run a simulation and check in the logs which
 model is being used.
    
 3. Working only on your host file system copy a new model (.joblib file) in the host volume
 
 4. Re-execute step 2 and you should see that the app is using the last copied model (because the
-   application code is written to do that). You can also see that is returning different results
+   application code is written to do that). You can also see that it os returning different results
    
 5. <span style="color:orange">
     [Optional]
@@ -96,8 +94,7 @@ model is being used.
    Check the container file system to see that matches the source folder on your host.
    
 
-As intended, the content of the source folder used in a bind mount will persist beyond container 
-life. Stop and remove *simple_api_bind* container, and the folder will still be there on your 
+As intended, the content of the source folder used in a bind mount will persist beyond the container's life. Stop and remove *simple_api_bind* container, and the folder will still be there on your 
 file system.
 
 Imagine a bind mount used for example, while executing a training operation instead of a 
@@ -107,4 +104,4 @@ predict-one and this simple exercise acquires more sense.
 
 Great! You should now have a good comprehension of storage options while working on Docker.
 Continue to the next step where we'll be facing how Docker layering really works and how we can
-use that in our favor while developing with Docker.
+use it in our favor while developing with Docker.
