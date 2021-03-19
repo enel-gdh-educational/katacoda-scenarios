@@ -1,6 +1,6 @@
 {
   "title": "Fundamentals of linux: Getting started with awk.",
-  "description": "The goal of this course is to present the awk tool for data manipulation.",
+  "description": "The goal of this course is to present the awk utility for data manipulation.",
   "difficulty": "Beginner",
   "time": "45 minutes",
   "details": {
