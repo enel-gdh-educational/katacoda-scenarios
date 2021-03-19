@@ -21,7 +21,6 @@ wget https://raw.githubusercontent.com/zioproto/hadoop-swift-tutorial/master/dcu
  - link 2:
 ```
 wget https://raw.githubusercontent.com/dlang/druntime/master/benchmark/extra-files/dante.txt -O divina_commedia.txt
-
 ```
 
 The download may take few seconds depending on the internet connection.
