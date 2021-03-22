@@ -15,7 +15,7 @@ from the first part of this course) we can build this simple web app as a Docker
 
 But first, let's add another COPY operation in the Dockerfile to bring also the model folder 
 inside the container file system: `COPY model /models`  
-For the moment write it right under the other COPY instruction.
+For the moment write it right under the `COPY app /app` instruction.
 
 > Now execute `docker build -t simple_api_img /root/project/step1`{{execute}}
 
@@ -71,6 +71,7 @@ In this demo app if we call again the '/predict' endpoint this file will be over
 
 In case we want to see the results of the predict operation without entering the 
 container we can copy the interested file out of it, using the 'docker copy' command.
+
 
 First exit the container, then:
 
