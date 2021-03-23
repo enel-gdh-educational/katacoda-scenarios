@@ -1,8 +1,6 @@
 #### A)
 
-```
-echo 'front' | sed 's/front/back/'
-```
+`echo 'front' | sed 's/front/back/'`{{execute}}
 
 #### B)
 
@@ -11,14 +9,10 @@ echo 'front' | sed 's/front/back/'
 #### C)
 
 **Q1**:
-```
-sed -n p assets/data/README_clear.txt
-```
+`sed -n p data/README_clear.txt`{{execute}}
 
 **Q2**:
-```
-sed -n 18,33p assets/data/README_clear.txt 
-```
+`sed -n 18,33p data/README_clear.txt`{{execute}}
 
 #### D)
 
