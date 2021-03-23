@@ -35,7 +35,9 @@
       {
         "title": "Step 3: Using sed to address a toy use case",
         "text": "step3.md",
-		    "answer": "step3-answer.md"
+		    "answer": "step3-answer.md",
+        "courseData": "scripts/step3-background.sh",
+        "code": "scripts/step3-foreground.sh"
       }
     ],
     "intro": {

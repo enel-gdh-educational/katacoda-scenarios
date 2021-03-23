@@ -1,0 +1,1 @@
+echo "Waiting for the step 3 configuration to complete.."; while [ ! -f /opt/.backgroundfinished ] ; do sleep 2; done; echo "Done"
