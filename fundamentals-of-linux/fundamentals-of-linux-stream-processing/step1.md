@@ -24,7 +24,7 @@ First of all let's start with README.txt file located in the "data" directory to
 
 #### B) ROT13: The Not-So-Secret Decoder Ring
 One amusing use of *tr* is to perform ROT13 encoding of text. ROT13 is a trivial type of encryption, 
-or more specifically “text obfuscation”, technique based on a simple substitution cipher. 
+or more specifically “text obfuscation” technique based on a simple substitution cipher. 
 It is used sometimes on text to obscure potentially offensive content. 
 
 The method simply moves each character 13 places up the alphabet. Since this is half way up the possible 26 characters, 
