@@ -36,6 +36,9 @@ and type ``Y`` to the prompt:
 Do you want to continue? [Y/n]
 ````
 
+Depending on how old is your system, the command may need to download and install several hundreds MBs of data. Actually running this command is not essential for this exercise.
+
+
 Sometimes, after an upgrade, some old packages become obsolete and are unused. 
 They can be deleted to free up some space on the disk. To do that, just run
 
