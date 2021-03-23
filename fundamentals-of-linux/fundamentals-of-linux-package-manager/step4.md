@@ -70,6 +70,7 @@ Finally, install the latest version of postgres
 apt install postgresql
 ```
 
+<!--- Exercise 5 not working! skipping in 2021 
 ---
 **Exercise 5**
 
@@ -78,7 +79,7 @@ R is a popular scripting environment mostly suitable to statistics and data scie
 *Hint*: Search the Internet to learn how!
 
 ---
-
+-->
 
 
 
