@@ -7,7 +7,7 @@ In this step:
 ##### Prerequisites
 * You must have an Enel account and be able to access the Springlab environment.
 * You must have the right permission level to create a new repository in the 
-**version_control_course_project**
+**version_control_course** project
 
 ##### Create new Repository
 First of all we need a new remote repository. Such repository will host our awesome code.
