@@ -1,7 +1,7 @@
 #### Version control, why?
 
-You have faced the following situation dozens or hundred of times: you are working on a file, a document, a code,
- a simple text, or a presentation. Let us assume the file is:
+You faced the following situation dozens or hundred of times already: you are working on a file, a document, a piece of code,
+ a simple text, or a presentation. Let's assume the file is:
  
 ---
 
@@ -10,9 +10,9 @@ You have faced the following situation dozens or hundred of times: you are worki
 ---
   
 and you send a version to a collaborator who will contribute revising and editing the file.
- Let us say you are Alice and your colleague's name is Bob.
+Let us say you are Alice and your colleague's name is Bob.
 You keep on working on the file, so does Bob: the two stories of the file saved on Alice's and Bob's computers diverge
- and we will call them, respectively:
+and we will call them, respectively:
 
 ---
 
@@ -22,7 +22,7 @@ You keep on working on the file, so does Bob: the two stories of the file saved 
 
 
 Two days later, your boss asks to present the final version of the file, so Bob sends you `sample_file_Bob.txt` and you start assembling
- the final "good" version by merging the two. You do good (and tedious) job and come out with
+ the final "good" version by merging the two. You do a good (and tedious) job and come out with
  
 ---
 
@@ -30,7 +30,7 @@ Two days later, your boss asks to present the final version of the file, so Bob 
 
 ---
  
-, which you send by email to those who will attend the presentation. Your boss is happy about the presentation, nevertheless asked to clarify some slides.
+which you send by email to those who will attend the presentation. Your boss is happy about the presentation, nevertheless asked to clarify some slides.
  Your colleague Bob offers to do that and you are relieved about that!
   Well, it turns out that, by mistake, Bob applies the changes to `sample_file_Bob.txt` and sends you a version called:
   
@@ -68,11 +68,11 @@ You are not happy with this, because they have accidentally screwed up the struc
 ---
 
 you send it out, and get ready for the new presentation. The people in the audience have had trouble following the file email exchanges
- and open many different versions of the file on their screen, so they start pointing out the inconsistencies,
-  thus getting you frustrated. 
+and open many different versions of the file on their screen, so they start pointing out the inconsistencies,
+thus getting you frustrated. 
 
 Well, you manage somehow to conclude your presentation and promise to send the "right final" version out to everyone.
- Of course, you take the chance to fix a couple of slides so you come out with a new version out under the name
+Of course, you take the chance to fix a couple of slides so you come out with a new version out under the name
  
 ---
 
