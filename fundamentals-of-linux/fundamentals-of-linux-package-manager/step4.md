@@ -30,9 +30,13 @@ What is the difference between the repositories `main`, `universe`, and `multive
 If you want to add repository entry you can do it manually via editing `/etc/apt/sources.list` or more easily via 
 the utility `add-apt-repository`.
 
-Let us install the latest version of the popular relational database `posttgresql`, which as of April 2020, is 12.2.
+Let us install the latest version of the popular relational database `posttgresql`, which as of March 2021, is 13+225.pgdg18.04+1.
+However, Ubuntu does not know whether the newly added source is authentic.
+To this end, the mainainer of the repo release a security key that should be communicated to `apt`, via `apt-key add`.
+The following command downloads the official postgresql key and loads it in the `apt` key manager:
 
 ```bash
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
 add-apt-repository "deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main"
 ```
 
@@ -43,14 +47,6 @@ What is the name of the repository that you have just added?
 
 ---
 
-However, Ubuntu does not know whether the newly added source is authentic.
- To this end, the mainainer of the repo release a security key that should be communicated to `apt`, via `apt-key add`.
- The following command downloads the official postgresql key and loads it in the `apt` key manager:
-
-
-```bash
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
-```
 
 ---
 **Question 5 (advanced)**
@@ -71,9 +67,10 @@ apt update
 Finally, install the latest version of postgres
 
 ```bash
-apt install postgresql-12   
+apt install postgresql
 ```
 
+<!--- Exercise 5 not working! skipping in 2021 
 ---
 **Exercise 5**
 
@@ -82,7 +79,7 @@ R is a popular scripting environment mostly suitable to statistics and data scie
 *Hint*: Search the Internet to learn how!
 
 ---
-
+-->
 
 
 

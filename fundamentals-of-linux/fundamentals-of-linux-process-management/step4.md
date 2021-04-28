@@ -21,9 +21,8 @@ Here are some flags we can use:
 | **Flag** | **Description** |
 | -------- | --------------- |
 | -a | Displays all connections and listening ports. |
-| -b | Displays the executable involved in creating each connection or listening port. |
 | -n | Displays addresses and port numbers in numerical form. |
-| -o | Displays the owning process ID associated with each connection. |
+| -p | Displays the owning process ID associated with each connection. |
 
 We recommend to use the -a flag: in this way you are sure that you list all the listening processes. «But there are a lot!»
  you might say. Yes, but you can select only the ones you need using ``grep`` command.

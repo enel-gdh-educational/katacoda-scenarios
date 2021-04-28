@@ -5,10 +5,7 @@ In general, the way sed works is that it is given either a single editing comman
 or the name of a script file containing multiple commands, and it then performs these commands 
 upon *each line* in the stream of text.
 
-In order to reproduce some example of sed usage, please consider using the file attached (data/README.txt).
-
 <u>Hint:</u> Use the command: **sed [-Ealn] command [file ...]**.
-
 
 The form of a sed command is as follows:
 
@@ -17,7 +14,7 @@ The form of a sed command is as follows:
 ```
 For the specific meaning of address - function - arguments let's have a look a manual documentation.
 
-Can you **echo** a string "front" and substitute it into "back" ? 
+**Exercise**: can you **echo** a string "front" and substitute it into "back" ? 
 
 -----------
 
@@ -50,7 +47,7 @@ or like this:
 echo "new string" | sed '2s/string/word/'
 ```
 
-why not printing anything?
+why is the result empty?
 
 
 #### C) Using addresses and editing commands
@@ -70,23 +67,29 @@ With **sed** you can use several editing commands. Here, the most common:
 - Use **y/set1/set2**: Perform transliteration by converting characters from set1 to the corresponding 
   characters in set2. Note that unlike tr, sed requires that both sets be of the same length.
 
-Consider reading the file data/ip_addresses_with_host.txt
+In order to reproduce some example of sed usage, please consider using the file attached (data/README.txt).
 
-How would you print it with sed ? 
+**Question 1**: Do you remember file data/README.txt ? How would you print it with sed ? 
 
-Could you print the records at line 2-5 ?
+<u>Hint:</u> Before printing the file, please consider moving it to normal text: ```cat data/README.txt | tr a-zA-Z n-za-mN-ZA-M > data/README_clear.txt```.
+
+**Question 2**: Could you print the Italian section only? 
 
 -----------
 
 #### D) Edit the file data/ip_addresses_with_host.txt by sed script
 
+Now, consider using the file data/ip_addresses_with_host.txt
+
 In order to provide sed with a list of command it is possible to create a script containing a list of
 commands. Let's assume we want to:
-- Before each matched line, write a new line like this: the following row has been edited:
-- Remove the alias 'localhost' word and substitute with address 127.0.0.1.
-- Do not print any other row containing unnecessary word or string
+1. Before each matched line (i.e. the ones containing the word 'localhost'), write a new line like this: 
 
-<u>Hint:</u> To run a sed script you can use ```sed -f sed_file.sed data/ip_address_with_host.txt```.
+        _the following row has been edited:_
+2. Remove the alias '_localhost_' word and substitute with address 127.0.0.1.
+3. Do not print any other row containing unnecessary word or string, but ip addresses
+
+<u>Hint:</u> To run a sed script you can use ```sed -f format_data.sed data/ip_address_with_host.txt```.
 
 **Questions**:
  - Can you look where your interventions are located in the printed output ? 

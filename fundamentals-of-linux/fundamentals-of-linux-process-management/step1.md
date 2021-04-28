@@ -7,7 +7,7 @@ We have provided you a simple bash script to do so: ``script1``, here inside the
 #!/bin/bash
 while [ 1 ]
 do
-echo "stop me if you can"
+echo "stop me if you can!"
 done
 ```
 (To exit the script view, just type ``q``).<br><br>

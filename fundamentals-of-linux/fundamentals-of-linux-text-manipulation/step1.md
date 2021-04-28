@@ -11,10 +11,17 @@ for example from the url http://www.hoepliscuola.it/download/2842/la-divina-comm
 wget http://www.hoepliscuola.it/download/2842/la-divina-commedia-txt -O divina_commedia.txt
 ```
 
+Alternative links:
 
+ - link 1:
+```
+wget https://raw.githubusercontent.com/zioproto/hadoop-swift-tutorial/master/dcu.txt -O divina_commedia.txt
+```
 
-
-
+ - link 2:
+```
+wget https://raw.githubusercontent.com/dlang/druntime/master/benchmark/extra-files/dante.txt -O divina_commedia.txt
+```
 
 The download may take few seconds depending on the internet connection.
 

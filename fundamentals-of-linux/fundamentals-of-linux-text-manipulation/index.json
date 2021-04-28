@@ -7,8 +7,23 @@
      "assets": {
       "client": [
         {
-          "file": ".*",
+          "file": "data/divina_commedia.zip",
           "target": "/root/"
+        },
+        {
+          "file": "checkpoint1.sh",
+          "target": "/root/",
+          "chmod": "+x"
+        },
+        {
+          "file": "checkpoint2.sh",
+          "target": "/root/",
+          "chmod": "+x"
+        },
+        {
+          "file": "checkpoint3.sh",
+          "target": "/root/",
+          "chmod": "+x"
         }
       ]
     },

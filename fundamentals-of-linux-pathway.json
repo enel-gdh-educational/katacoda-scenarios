@@ -38,6 +38,11 @@
       "description": "The goal of this course is to present some common tools for stream processing and manipulation in the Unix environment "
     },
     {
+      "course_id": "fundamentals-of-linux-processing-with-awk",
+      "title": "Fundamentals of linux: Stream processing with awk.",
+      "description": "The goal of this course is to present the awk utility for data manipulation "
+    },
+    {
       "course_id": "fundamentals-of-linux-remote-access",
       "title": "Fundamentals of Linux: Connect to a remote server",
       "description": "Use SSH to connect to a remote host"

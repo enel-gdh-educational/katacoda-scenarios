@@ -80,7 +80,7 @@ but this one applies also to packages which have not been downloaded yet since `
 For instace, let us check what is the content of `mysql`, a popular database management system:
 
 ```bash
-apt show mysql
+apt show mysql-server
 ```
 
 Finally, if you wonder what is the version of a package that would be installed, say python, if you did not specify a specific one, you can use:

@@ -9,8 +9,6 @@ In this step:
 
 ##### Prerequisites
 * You must have an Enel account and be able to access the Springlab environment.
-* You must have a partner. (*Collaboration* is the key! :-))
-* All this task (except where specified) must be executed with only one account. (let's say pair programming style!)
 
 ##### Configure branch permission
 As you saw in the last exercise of the previous step, applying a specific workflow like the feature branch one means that you have to limit some branch permission in order to avoid modifications to master and/or develop branches.
@@ -33,9 +31,9 @@ Go on the awesome_project folder where you cloned the project in the previous st
 
 ```cd /home/scrapbook/tutorial/awesome_project```{{execute}}
 
-and create the feature branch. The feature branch name must be the concatenation of yours surnames with "_" as delimiter with `feature` keywork suffix.
+and create the feature branch. The feature branch name must be the concatenation of `feature` keywork plus your name and surname with "_" as delimiter .
 
-> Surname1: Bianchi, Surname2: Rossi -> Repository name: feature_bianchi_rossi
+> Name: Mario, Surname: Rossi -> Feature name: feature_mario_rossi
 
 We'll work on this branch, so use `git checkout` to switch the working branch.
 
@@ -116,9 +114,8 @@ The repository you created at step #1 is now enabled for the feature branch work
 In this exercise you have to:
 
 1. Create a new feature branch with some changes
-2. Add your colleague as approver
-3. Update your pull request
-4. Merge your feature branch into the master branch
+2. Update your pull request
+3. Merge your feature branch into the master branch
 
 ---
 
