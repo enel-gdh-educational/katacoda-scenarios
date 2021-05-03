@@ -15,17 +15,13 @@ each commit of the repository, so to know who has introduced what changes in the
 
 Let us configure them in your git environment:
 
-```bash
-git config --global user.name 'your_name'
-```
+``git config --global user.name 'your_name'``
 
 and
 
-```bash
-git config --global user.email 'your_email@enel.com'
-```
+``git config --global user.email 'your_email@enel.com'``.
 
-. Now, you can list the configuration paramters via ``git config -l``.
+Now, you can list the configuration paramters via ``git config -l``.
 
 Notice that the ``--global`` flag serves to set a global configuration, namely not related to a specific repository. 
 
