@@ -51,10 +51,10 @@ __Question 1__
 How can you make sure that the commit that has been checked out is the right one? (Even though, the output should be talkative enough).
 ___
 
-As you've noticed, ``git status`` tells you that you are in a detached state. There will be a dedicated session to explain this concept,
- so we are not going in detail. Let us tell that a detached state should be treated with a lot of care though! Moreover, 
- 
- to get back to the previous commit, you should run:
+As you've noticed, ``git status`` tells you that you are in a detached HEAD state. There will be a dedicated session to explain this concept,
+ so we are not going in detail. For now, let's just say that a detached HEAD state should be treated with a lot of care! 
+
+To get back to the previous commit, you should run:
  
  ```bash
 git checkout master
@@ -100,7 +100,7 @@ ___
 
 __Reminder for later__ 
 
-Don't forget to ask your next tutor how to push (pull) tags to (from) the remotes.
+Don't forget to ask your next tutors how to push (pull) tags to (from) the remotes.
 
 ### Grepping files
 
@@ -127,7 +127,8 @@ The syntax of `git-grep` is substantially identical to the standard Unix `grep`.
 
 #### Additional content
 
-Finally we ancourage you experimenting with other commands that sort of allow you to, such as:
+Over the next days, we will explore additional commands that give you a lot of power and flexibility over the versions of your repo.
+If you can't wait, you could start experimenting with some of those, such as:
 
 - ``git commit --amend``: [guide](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History#_git_amend)
 

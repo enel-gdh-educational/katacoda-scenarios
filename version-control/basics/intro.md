@@ -76,7 +76,7 @@ Of course, you take the chance to fix a couple of slides so you come out with a 
  
 ---
 
-`sample_file_for_f***_sake_final_even_though_no_one_cares.txt`
+`sample_file_really_final_even_though_no_one_cares.txt`
 
 ---
  

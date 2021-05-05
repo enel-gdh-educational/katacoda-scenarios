@@ -1,11 +1,9 @@
 #### Let us play more with commits
 
-So far, we have done something very simple: started tracking a new file, added it to the staging area, 
-and made your first commit.
+So far, we did something very simple: started tracking a new file, added it to the staging area, 
+and made our first commit.
 
-Let us simulate the natural evolution of a project.
-
-Let us add a new line to the ``README.md`` file:
+Let's simulate the natural evolution of a project, for instance by adding a new line to the ``README.md`` file:
 
 ```bash
 echo "Some additional info" >> README.md
@@ -58,10 +56,8 @@ git config diff.tool vimdiff
 ```
 and try how different the output of `git diff` looks.
 
-Also, if you want to 
 
 ---
-
 
 
 Our goal is now to save a version of the latest changes. 
@@ -115,7 +111,7 @@ this time without the `-m` to specify a commit message. You will be redirected t
 and asked to write a commit message and save it.
 
 The editor is `nano`, therefore after having written your message, 
-type `Ctrl^O, Enter`, to save ther file and `Ctrl^X` to exit.
+type `Ctrl^O, Enter`, to save the file and `Ctrl^X` to exit.
 
 Once more, you can instruct git to use an editor other than the default one. 
 Say, you are more familiar with ``vim``, you can set it as the git editor via:
@@ -124,7 +120,7 @@ Say, you are more familiar with ``vim``, you can set it as the git editor via:
 git config core.editor vim
 ```
 
-#### A commit is not like a kiss! You remember the second better than the first.
+#### A commit is not like a kiss! You remember the second one better than the first.
 
 Now that we have a first and a **subsequent** commit, we should have a look at some interesting features of git.
 

@@ -1,6 +1,6 @@
 #### Get a deeper understanding of your commit
 
-You have done your first commit. Do you feel the subtle pleasure of saved a version of your work for the rest of the time?
+You have done your first commit. Do you feel the subtle pleasure of saved a version of your work for the rest of time?
 
 OK, let's get back to Earth. What has actually ``git`` done for you? This part is going to be a bit boring, but full of key concepts.
 
@@ -117,7 +117,7 @@ Finally, _work tree_ is a synonym for checkout folder.
 #### Staging area, again.
 
 We are now ready to give a better definition of the staging area. This area is also called _index_ or _cache_. 
-It is simplest to think of it as the _proposed next commit_, that is, unless you call ``git add``, it is a compressed tree whose content 
+It is simplest to think of it as the _proposed next commit_, and, until you call ``git add``, it is a compressed tree which content 
 coincides with the last commit that you have checked out.
 When you start _git adding_ files, ``git`` applies the changes from the working tree to the index,
 e.g. adding new files, moving, deleting, or modifying the existing ones. If any change has been applied you can make a new commit,
@@ -126,9 +126,4 @@ e.g. adding new files, moving, deleting, or modifying the existing ones. If any 
 #### To revise 
 Probably, the most definitive explaination of the concepts of working tree, index and are in the first part 
 of [this page of the Git book](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified)
-
-
-
-
-
 

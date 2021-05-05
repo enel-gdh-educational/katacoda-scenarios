@@ -35,7 +35,7 @@ __Exercise 1__
 
 Make sure that the new configurations have been entered correctly. 
 
-_Hint_: type ``git config`` with no options, and look for the option to list all the configurations 
+_Hint_: type ``git config`` with no options, and look for the option to list all the configurations. 
 
 ---
 
@@ -48,7 +48,7 @@ To work on this scenario, move to the folder ``basic_project``:
 cd basic_project
 ```
 
-Now, create your first git repo via
+Now, create your first git repo with
 
 ```bash
 git init
@@ -68,7 +68,7 @@ Check that the folder ``.git`` has been created
 
 #### First commit
  
-Let us create a first file that will be included in our repo:
+Let's create a first file that will be included in our repo:
   
 ```bash
 echo "This repo contains the project for the course Version Control Systems" > README.md
@@ -95,7 +95,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-Let us inspect the output:
+Let's inspect the output:
 
 - The first line tells you about the branch, which is __master__ by default.
  The next tutorial will go deeper on branches, but for now let's just describe a branch as one line of evolution of the project.
@@ -107,7 +107,7 @@ No commit has been saved so far.
 - Then you are notified about new files in the current folder that might be tracked by git, but are not (yet).
  The only file is ``README.md``.
  
-- Finally, a hint what you could do next, namely start tracking some files before you can actually commit anything. 
+- Finally, a hint on what you could do next, namely start tracking some files before you can actually commit anything. 
 
 
 #### File tracking and committing  
