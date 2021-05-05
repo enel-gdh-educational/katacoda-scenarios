@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 git config --global color.ui false
 
 cd basic_project
@@ -15,8 +13,3 @@ git add README.md
 git commit -m "First commit"
 
 rm .gitignore
-
-clear
-
-
-

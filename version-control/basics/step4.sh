@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 git config --global color.ui false
 
 cd basic_project
@@ -25,5 +23,3 @@ git add README.md hello_world.py
 git commit -m "README modified. hello_world added."
 
 git gc
-
-clear

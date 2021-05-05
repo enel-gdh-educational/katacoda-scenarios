@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 git config --global color.ui false
 
 cd basic_project
@@ -41,5 +39,3 @@ echo "bar" > .gitignore
 git add .gitignore
 
 git commit -m "Added .gitignore"
-
-clear
