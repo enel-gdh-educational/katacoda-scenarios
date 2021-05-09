@@ -111,7 +111,7 @@ git add foo bar
 suggests to us `--force` flag, therefore 
 
 ```bash
-git add -f foo bar
+git add -f bar
 ```
 
 Finally, commit the changes:

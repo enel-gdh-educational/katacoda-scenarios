@@ -13,30 +13,9 @@ would tell you what commit the worktree points too
 Or, just check the absence of the file ``.gitignore``
 ___
 
-
 ___
 
 __Exercise 1__
-
-First write a pattern in a non-tracked file:
-
-```bash
-echo "ciao" > foo
-```
-
-then, grep it: 
-
-```bash
-git grep -e "ciao"
-```
-
-, which won't return anything.
-___
-
-
-___
-
-__Exercise 2__
 
 
 Checkout a commit other than the latest:
@@ -58,3 +37,20 @@ git status
 ```
 will tell you where you are.
 ___
+
+__Exercise 2__
+
+First write a pattern in a non-tracked file:
+
+```bash
+echo "ciao" > foo
+```
+
+then, grep it: 
+
+```bash
+git grep -e "ciao"
+```
+and this shouldn't return anything.
+___
+

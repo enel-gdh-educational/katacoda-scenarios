@@ -42,7 +42,7 @@ echo "foo" > .gitignore
 echo "bar" > .gitignore
 
 git add .gitignore
-git add -f foo bar
+git add -f bar
 git commit -m "Added .gitignore"    
 
 clear

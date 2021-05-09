@@ -167,7 +167,7 @@ __Exercise 5__
 
 1. Create two files named `foo` and `bar`. 
 2. Let `git status` not mention them among the untracked files.
-3. Add the two files, even though `git` has been told to not track them.
+3. Add the bar file, even though `git` has been told to not track it.
 4. Finally, commit specifying in the message that the .gitignore was added
 
 ___

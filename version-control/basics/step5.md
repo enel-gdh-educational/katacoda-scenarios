@@ -34,10 +34,7 @@ git diff 434d4fe9720862c637a83de7df99135b7c28f6c7
 and we realize that in the previous commit the file `.gitignore` is missing.
 
 
-Finally check the previous commit out
-```
-
-and check it out:
+Finally checkout the previous commit:
 
 ```bash
 git checkout 434d4fe9720862c637a83de7df99135b7c28f6c7
@@ -50,7 +47,7 @@ __Question 1__
 How can you make sure that the commit that has been checked out is the right one? (Even though, the output should be talkative enough).
 ___
 
-As you've noticed, ``git status`` tells you that you are in a detached HEAD state. There will be a dedicated session to explain this concept,
+As you've noticed, the output of `git checkout` tells you that you are in a detached HEAD state. There will be a dedicated session to explain this concept,
  so we are not going in detail. For now, let's just say that a detached HEAD state should be treated with a lot of care! 
 
 To get back to the previous commit, you should run:
@@ -59,14 +56,11 @@ To get back to the previous commit, you should run:
 git checkout master
 ```
 
-which is definitely not clear, but assume it is you safe escape word!
-
-### Checking out single files
-
-You can also checkout a single file, meaning that you don't point to a different commit, but you just pick up a file from a different commit
+__You can also checkout a single file__, meaning that you don't point to a different commit, but you just pick up a file from a different commit
  and copy it into the staging area and the worktree.
 
-In a next scenario you will go into details.
+This may be not clear for now, but until tomorrow let's assume it's a safe escape word!
+The next scenario will go into details about evereything `git checkout` can do.
 
 ### Tags
 However checking out a commit by its id is very tedious. In truth, `git` is smart enough to let you specify only the first
@@ -92,14 +86,10 @@ The interesting thing is that you can checkout a commit by its tag, which is way
 
 ___
 
-__Exercise 2__
+__Exercise 1__
 
 Prove the previous statement
 ___
-
-__Reminder for later__ 
-
-Don't forget to ask your next tutors how to push (pull) tags to (from) the remotes.
 
 ### Grepping files
 
@@ -115,7 +105,7 @@ which will output `hello_world.py`. However, it only looks in the files which ar
 
 ___
 
-__Exercise 1__
+__Exercise 2__
 
 Prove the previous statement
 ___
