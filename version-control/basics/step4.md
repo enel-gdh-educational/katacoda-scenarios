@@ -54,7 +54,7 @@ git commit -m "readme deleted. It was too bad..."
 
 There could be times when yo just want ``git`` stop tracking a file, but you might want to keep it in the worktree.
 
-For this you should add the flag `--cached`:
+For this you should add the flag `--cached` to `git rm`.
 
 
 ___
@@ -67,24 +67,23 @@ ___
 
 ___
 
-__Tip of the expert__
+__Tip for the experts__
 
 In git you can only track files, not folders. `git` is aware of the tree structure
  through the placement of files in folders, therefore _no files -> no tracking_!
  
 You can check this by creating an empty folder, then trying to ``git add`` it.
 
-If you want an empty folder to be tracked, we suggest to make it _quasi-empty_, by including a file named `.gitignore```
+If you want an empty folder to be tracked, we suggest to make it _quasi-empty_, by including a file named ".gitignore"
 in the folder.
 
-Why ``.gitignore``? Well, any file would do the job, but this is empty (see the leading dot), and is a file that
-may be relevant for ``git``.
+Why ``.gitignore``? Well, any file would do the job, but this is empty (see the leading dot), and it's a file relevant for ``git``.
 
 ___
 
 
 
-### `git commit -a` is bad, `git commit -A` is the devi!. 
+### `git commit -a` is bad, `git commit -A` is the devil! 
 
 Let us admit it, adding file one by one is tedious, so if there were a method to spare time everyone would be tempted to use it.
 Actually, that method exists and is
@@ -92,7 +91,8 @@ Actually, that method exists and is
 ```bash
 git commit -a
 ```
-, which basically `git adds` all the files that have changes (in their content, name, placing etc.) and had been already tracked by `git`.
+
+which basically `git adds` all the files that have changes (in their content, name, placing etc.) and had been already tracked by `git`.
 
 This means that you won't revise what files you are actually going to commit, to avoid committing accidental changes.
  
@@ -121,9 +121,8 @@ git commit -i
   
   
  ___
-__Remember__ 
 
-You can always unstage a file, that is, perform the opposite operation than ``git add`` via the command:
+__Remember__ that you can always unstage a file, that is, perform the opposite operation than ``git add`` via the command:
 
 ```bash
 git restore  <filename>
@@ -132,7 +131,6 @@ or
 ```bash
 git reset  <filename>
 ```
-
 ___
 
 ### `.gitignore`
@@ -156,10 +154,12 @@ There are several good reason for that, bu the main perhaps is that _should_ be 
  of binary objects in an efficient way, so the compression would be inefficient, the updates become slow.
  
  So, how can you tell `git` to avoid signalling untracked files? You just list the files that you do not want to track in a file
- named `.gitignore` and placed in the root of the worktree. Its is detailed [here](https://git-scm.com/docs/gitignore). 
+ named `.gitignore` and place it in the root of the worktree. It is detailed [here](https://git-scm.com/docs/gitignore). 
  
 Instead of creating a ``.gitignore`` file for your own project, check for [``.gitignore`` templates](https://github.com/github/gitignore)
  on Github. There are templates for all programming languages, and if your project is multi-language, just merge multiple `.gitignore` files.
+
+__A .gitignore file is a key component of a repository__, as it allows to keep it lightweight and avoid tracking undesirable files.
 
 ___
 
@@ -168,6 +168,6 @@ __Exercise 5__
 1. Create two files named `foo` and `bar`. 
 2. Let `git status` not mention them among the untracked files.
 3. Add the two files, even though `git` has been told to not track them.
-4. Up to you whether to commit the changes or note or not.
+4. Finally, commit specifying in the message that the .gitignore was added
 
 ___

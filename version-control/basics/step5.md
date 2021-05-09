@@ -12,21 +12,20 @@ For instance, pick up the id second to last commit:
 ```bash
 $ git log
 commit f3a3d057de72531edd54b9d107f23dd09d06cc2c (HEAD -> master)
-Author: Katacoda Scenario <scenario@katacoda.com>
+Author: Andrea Massaia <andrea.massaia@enel.com>
 Date:   Mon Sep 14 05:23:21 2020 +0000
 
     Added .gitignore
 
 commit 434d4fe9720862c637a83de7df99135b7c28f6c7
-Author: Katacoda Scenario <scenario@katacoda.com>
+Author: Andrea Massaia <andrea.massaia@enel.com>
 Date:   Mon Sep 14 05:23:21 2020 +0000
 
     Some renaming and file repositioning
 
 ...
 ```
-
-. The commit message tells you how the last commit differs from its parent, but to be more precise you can:
+The commit message tells you how the last commit differs from its parent, but to be more precise you can:
 
 ```bash
 git diff 434d4fe9720862c637a83de7df99135b7c28f6c7
