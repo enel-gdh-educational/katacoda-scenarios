@@ -31,11 +31,14 @@ Date:   Tue Sep 8 15:21:40 2020 +0000
     First commit. Added README
 ```
 
-N.B. The first line will certainly look different.
+_N.B. The first line will certainly look different._
 
 The content is mostly self-explanatory, you can read the author, the date and the message of the commit.
  But what about the first line? The long string of characters is the __id__ of the commit (a sort of code),
  and it is uniquely generated from the content of your commit.
+
+ In other words, if you had a different content in `README.txt`, or had named it differently, `git` would have generated
+ a different code. 
 
 ---
 __Question 1__
@@ -45,10 +48,6 @@ are different?
 
 --- 
 
-In other words, if you had a different content in `README.txt`, or had named it differently, `git` would have generated
- a different code. 
-
---- 
 __Tips to show off__
 
 The commit id is also called the hash of the commit,
@@ -86,6 +85,8 @@ where the id is the concatenation of the folder name and the file name, e.g.
 ```bash
 git cat-file -p bb517dceabf63c23abbef923e4a171b281f33e37
 ```
+_Again, note that the id will certainly be different_
+
 Starting from the inspection of the file named after the id of your commit, continue the investigation
  and try to understand how ``git`` has stored all the information of your commit.
 
@@ -112,7 +113,7 @@ From the _git book_:
 "Think of the working directory as a sandbox,
  where you can try changes out before committing them to your staging area (index) and then to history."
 
-Finally, _work tree_ is a synonym for checkout folder.
+Finally, _working tree_ is a synonym for checkout folder.
 
 #### Staging area, again.
 
