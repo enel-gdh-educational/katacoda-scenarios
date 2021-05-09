@@ -111,6 +111,8 @@ git rev-parse HEAD
 
 ```bash
 git cat-file -p 
+
+6
 ```
 
 The output should look similar to:
@@ -118,8 +120,8 @@ The output should look similar to:
 ```bash
 tree 2836704d2b561a3fb838128bd16f5a86be175aa0
 parent bb517dceabf63c23abbef923e4a171b281f33e37
-author Fernando Gargiulo <fernando.gargiulo@enel.com> 1599581725 +0000
-committer Fernando Gargiulo <fernando.gargiulo@enel.com> 1599581836 +0000
+author Andrea Massaia <andrea.massaia@enel.com> 1599581725 +0000
+committer Andrea Massaia <andrea.massaia@enel.com> 1599581836 +0000
 ```
 
 whence you can check that the parent commit is ``bb517dceabf63c23abbef923e4a171b281f33e37``.
@@ -127,39 +129,5 @@ whence you can check that the parent commit is ``bb517dceabf63c23abbef923e4a171b
 No surprise, this is the id of the first commit; we are sure you know how to check that.
 
 Moreover, you can traverse downward the tree and check the full content of the commit.
-___
-
 
 ---
-__Question 3__
-
-It represents the delta with respect to the object referenced in the last field. This is the reason why
- it is very small in size.
-
-___
-
----
-__Exercise 3__
-
-1. You can print the content of the two blobs by using
-
-```bash
-$ git cat-file -p 7c21b9fe6a85e4569236c376dc0003968b6d42a0
-This repo contains the project for the course Version Control Systems
-
-$ git cat-file -p 298b04f8007204598d9f335a0507069539089aae
-This repo contains the project for the course Version Control Systems
-Some additional info
-```
-
-2. 
-
-Actually, `git cat-file` is smart enough to apply the deltas for you, so that you read the uncompressed content of each object.
-
-However, you can see that the second file, namely the reference one, coincides with `README.md` saved in the second commit.
-
-This means that ``git gc`` has calculated the deltas taking the most recent version as a reference. This makes sense, 
-
-since you are more likely to check out the most recent version of a certain file.
-
---- 

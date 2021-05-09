@@ -25,7 +25,7 @@ The output should look like:
 
 ```bash
 commit bb517dceabf63c23abbef923e4a171b281f33e37 (HEAD -> master)
-Author: Fernando Gargiulo <fernando.gargiulo@enel.com>
+Author: Andrea Massaia <andrea.massaia@enel.com>
 Date:   Tue Sep 8 15:21:40 2020 +0000
 
     First commit. Added README
