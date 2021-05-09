@@ -38,4 +38,4 @@ echo "bar" > .gitignore
 
 git add .gitignore
 
-git commit -m "Added .gitignore"
+git commit -m "Added .gitignore"    
