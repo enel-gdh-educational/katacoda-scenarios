@@ -71,7 +71,7 @@ Check that the folder ``.git`` has been created
 Let's create a first file that will be included in our repo:
   
 ```bash
-echo "This repo contains the project for the course Version Control Systems" > README.md
+echo "This repo contains the project for the course Version Control System" > README.md
 ```
 
 The main command to inspect the state of your project is:
