@@ -126,7 +126,7 @@ Let us take a break, then watch a [short video](https://www.youtube.com/watch?v=
 
 
 #### Why git
-###### and not other version control systems
+** and not other version control systems **
 
 Git has overwhelmed all other version control systems int terms of usage prevalence (>90% as of 2020, from Stack Overflow trends). 
 
@@ -153,12 +153,12 @@ Finally, [this short video](https://www.youtube.com/watch?v=_yQlKEq-Ueg) might h
 
 
 #### Git is not Github! 
-##### nor Bitbucket or any other web code hosting service or graphical interface.
+**nor Bitbucket or any other web code hosting service or graphical interface.**
 
-Remember, git is a decentralized version control system, that is, there is no principal copy of the repository! 
+Remember, git is a decentralized version control system, that is, there is no "official" copy of the repository! 
 The repo on your computer has the same importance as the repos on your peers' laptops as well as that saved on a company server.
 
-Despite there are good reasons why it is so, in real-world collaborative software development, it is useful to have a copy of the repository that is conceptually the main one.
+Despite there being good reasons why it is so, in real-world collaborative software development it is useful to have a copy of the repository that is conceptually the main one.
 For instance, the repository that will be the one officially published, say to install the code, or the one to be cloned
  to start working on the project. 
 
@@ -175,19 +175,6 @@ Also the main IDEs, (e.g. IntelliJ, VisualStudio) allow users to perform the mai
 We will explore demonstrate some of these tools.
 
 
-#### A historical note 
-why is git so special, in a good or bad way?
-Git has been developed primarily by Linus Torvalds, the same author of Linux. Some of the consequences are:
-
-- its name is a reference to his author: git = "unpleasent person", which is how Linus Torvalds appears.
-- it is (incredibly) solid: to break a repo sitory requires a strong commitment.
-- it is not easy to use by default and it is not meant to be.
-- it becomes easy if you understand the underlying principles, i.e. it is consistent and has no free complications. 
-- if you overcome the initial barrier, chances are high that you will fall in love. 
-
-Linus Torvalds has decided only twice to embark in a new project, since only twice he believed
- that he would change the world of software.
-
 #### In this scenario we are going to learn:
 
 - how to let git track files, namely, how to initiate a repository and include files in it
@@ -195,4 +182,18 @@ Linus Torvalds has decided only twice to embark in a new project, since only twi
 - how to inspect and browse the history of a repository, that is, jump between commits
 - how to start working on an existing repository
 
+---
 
+#### A historical note
+
+Why is git so special, in a good or bad way?
+Git has been developed primarily by Linus Torvalds, the same author of Linux. Some of the consequences are:
+
+- its name is a reference to his author: git = "unpleasant person", as Linus Torvalds jokingly described himself.
+- it is (incredibly) solid: to break a repo sitory requires a strong commitment.
+- it is not easy to use by default and it is not meant to be.
+- it becomes easy if you understand the underlying principles, i.e. it is consistent and has no free complications. 
+- if you overcome the initial barrier, chances are high that you will fall in love. 
+
+Linus Torvalds has decided only twice to embark in a new project, since only twice he believed
+ that he would change the world of software.
