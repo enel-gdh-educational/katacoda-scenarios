@@ -40,17 +40,16 @@ ___
 
 __Exercise 2__
 
-First write a pattern in a non-tracked file:
+First, write a pattern in a non-tracked file:
 
 ```bash
-echo "ciao" > foo
+echo "hello" > foo
 ```
 
 then, grep it: 
 
 ```bash
-git grep -e "ciao"
+git grep -e "hello"
 ```
 and this shouldn't return anything.
 ___
-

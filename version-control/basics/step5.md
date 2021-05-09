@@ -61,11 +61,12 @@ To get back to the previous commit, you should run:
 git checkout master
 ```
 
-__You can also checkout a single file__, meaning that you don't point to a different commit, but you just pick up a file from a different commit
+This may seem a bit unclear for now, but until tomorrow let's assume it's a safe escape word!
+The next scenario will go into details about evereything `git checkout` can do.
+For instance, __you could also checkout a single file__, meaning that you don't point to a different commit, but you just pick up a file from a different commit
  and copy it into the staging area and the worktree.
 
-This may be not clear for now, but until tomorrow let's assume it's a safe escape word!
-The next scenario will go into details about evereything `git checkout` can do.
+
 
 ### Tags
 However checking out a commit by its id is very tedious. In truth, `git` is smart enough to let you specify only the first
