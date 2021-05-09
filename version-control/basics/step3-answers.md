@@ -111,8 +111,6 @@ git rev-parse HEAD
 
 ```bash
 git cat-file -p 
-
-6
 ```
 
 The output should look similar to:
