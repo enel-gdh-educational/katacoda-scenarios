@@ -10,21 +10,26 @@ this command requires you to specify the id of the commit you want to checkout.
 For instance, pick up the id second to last commit:
 
 ```bash
-$ git log
-commit f3a3d057de72531edd54b9d107f23dd09d06cc2c (HEAD -> master)
+commit 7ce1a99c6a97ec648cd5986dbebb288aed1fd28a (HEAD -> master)
 Author: Andrea Massaia <andrea.massaia@enel.com>
-Date:   Mon Sep 14 05:23:21 2020 +0000
+Date:   Sun May 9 21:59:03 2021 +0000
 
     Added .gitignore
 
-commit 434d4fe9720862c637a83de7df99135b7c28f6c7
+commit 554a6d2cf62225ed96d901d6cd09ad72dc38907e
 Author: Andrea Massaia <andrea.massaia@enel.com>
-Date:   Mon Sep 14 05:23:21 2020 +0000
+Date:   Sun May 9 21:59:03 2021 +0000
+
+    readme deleted. It was too bad...
+
+commit a4c58aa9e4cf70182c92b0c0ddc2bbabf6210065
+Author: Andrea Massaia <andrea.massaia@enel.com>
+Date:   Sun May 9 21:59:03 2021 +0000
 
     Some renaming and file repositioning
-
 ...
 ```
+
 The commit message tells you how the last commit differs from its parent, but to be more precise you can:
 
 ```bash
