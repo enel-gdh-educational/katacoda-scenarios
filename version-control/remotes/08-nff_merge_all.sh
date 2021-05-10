@@ -70,10 +70,13 @@ git pull origin master
 
 echo "part 8"
 
+#### Solution
+
+cd /s/repo/working_dir/project
 git fetch
 git checkout new_branch
 echo "print('Hello World')" >> new_feature.py
-git add new_feature.py 
+git add new_feature.py
 git commit -m "added hello world"
 git push origin new_branch
 git checkout master
@@ -81,6 +84,6 @@ cd /home/scrapbook/tutorial/repo
 git checkout new_branch
 touch new_new_feature.py
 git add new_new_feature.py
-git commit -m "starting newnew feature" 
+git commit -m "starting newnew feature"
 git pull --no-edit origin new_branch
 git push origin new_branch
