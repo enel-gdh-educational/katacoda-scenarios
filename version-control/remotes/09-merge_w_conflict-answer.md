@@ -1,7 +1,7 @@
 #### Solution
 
 `name_surname="pippo_baudo"`{{execute}}
-`cd /s/<name_surname>/working_dir/project`{{execute}}
+`cd /s/$name_surname/working_dir/project`{{execute}}
 `git checkout new_branch`{{execute}}
 `git pull origin new_branch`{{execute}}
 `echo "print('Good morning World')" >> new_feature.py`{{execute}}

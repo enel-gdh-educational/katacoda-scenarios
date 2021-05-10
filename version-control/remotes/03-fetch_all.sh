@@ -34,3 +34,10 @@ echo "part 2"
 git remote add origin /s/$name_surname/remote_repository/project.git
 git remote -v
 git remote show origin
+
+
+echo "part 3"
+
+git branch
+git fetch
+git branch -a
