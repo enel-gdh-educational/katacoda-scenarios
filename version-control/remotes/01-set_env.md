@@ -1,16 +1,21 @@
 ### Step 1 - Set environment
 
 In this step we will initialize the environment required for following steps.
-It will consist of:
+This will simulate a network where different actors collaborate. 
 
-- a remote repository containing revision history
+In this network there will be *two types* of repositories: *bare* and *non-bare*.
+**Bare** repos contain no copy of working source files but only the information for versioning. They are customarily given a *.git* extension
+
+Being extremely simple, the network we will create will consist of:
+
+- a remote repository containing only revision history (**bare**)
 - a remote working directory containing revision history and copies of project files
 - a local working directory containing revision history and copies of project files
 
 We will see three ways of initializing a *git* repository:
 
 - with `git init` command, which creates an empty Git repository. Running `git init` in an existing repository will create a `.git` folder and will not overwrite contents of the folder
-- with `git init --bare`, which creates a bare repository. Bare repos contain no working or checked out copy of your source files and are customarily given a *.git* extension
+- with `git init --bare`, which creates a bare repository.
 - with `git clone <url to clone from> <directory name>` command, which creates a local copy of the repository at `<url to clone from>` which includes also version control history. `<directory name>` is optional
 
 ---
