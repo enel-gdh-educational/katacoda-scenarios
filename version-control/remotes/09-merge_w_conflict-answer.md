@@ -1,3 +1,5 @@
+#### Solution
+
 `cd /s/<name_surname>/working_dir/project`{{execute}}
 `git checkout new_branch`{{execute}}
 `git pull origin new_branch`{{execute}}

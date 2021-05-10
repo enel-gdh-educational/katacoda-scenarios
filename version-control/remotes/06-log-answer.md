@@ -1,1 +1,3 @@
+#### Solution
+
 `git log -p -1`{{execute}}
