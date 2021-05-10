@@ -16,6 +16,7 @@
         "answer": "02-remote-answer.md"
       },
       {
+        "background": "02-remote_all.sh",
         "text": "03-fetch.md",
         "answer": "03-fetch-answer.md"
       },
