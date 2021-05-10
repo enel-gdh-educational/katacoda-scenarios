@@ -10,7 +10,7 @@ To replace all files then use a dot (`git checkout .`) to indicate the current d
 
 #### Task
 
-- Go to `/home/scrapbook/tutorial/<name_surname>`
+- Go to `/home/scrapbook/tutorial/repo`
 - Switch to branch *new_branch*
 - Modify *new_feature.py* and write "aaa" inside of it
 - Modify *new_new_feature.py* and write "aaa" inside of it

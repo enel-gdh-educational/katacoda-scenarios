@@ -28,7 +28,7 @@ Remote branch can be deleted using `git push origin --delete <branch name>`
 
 We will push a modification on remote folder which will cause a conflict when working on local repository
 
-- Go to git repository `/s/<name_surname>/working_dir/project`
+- Go to git repository `/s/repo/working_dir/project`
 - Switch to branch *new_branch*
 - Use `git pull origin new_branch` to align with remote branch
 - Modify file *new_feature.py* to print "Good morning World"
@@ -39,7 +39,7 @@ We will push a modification on remote folder which will cause a conflict when wo
 
 Now remote branch *new_branch* is different from the one in our local repository. We modify local *new_branch* to create a conflict with remote.
 
-- Go to local repository `/home/scrapbook/tutorial/<name_surname>`
+- Go to local repository `/home/scrapbook/tutorial/repo`
 - Switch to branch *new_branch*
 - Modify file *new_feature.py* to print "Hola Mundo"
 - Add file *new_feature.py* to staging area 
@@ -70,7 +70,7 @@ In this case we choose to keep local version
 
 Verify content in remote folder:
 
-- Go to git repository `/s/<name_surname>/working_dir/project`
+- Go to git repository `/s/repo/working_dir/project`
 - Switch to branch *new_branch*
 - Run `cat new_feature.py` to see content of *new_feature.py* file
 - Use `git pull origin new_branch` to align with remote branch

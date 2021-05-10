@@ -4,34 +4,34 @@ git config --global color.ui false
 
 cd /
 
-name_surname="pippo_baudo"
-old_dir=/s/$name_surname
+
+old_dir=/s/repo
 if [ -d "$old_dir" ]; then rm -Rf $old_dir; fi
-old_dir=/home/scrapbook/tutorial/$name_surname
+old_dir=/home/scrapbook/tutorial/repo
 if [ -d "$old_dir" ]; then rm -Rf $old_dir; fi
 
-mkdir /s/$name_surname/
+mkdir /s/repo/
 
-mkdir /s/$name_surname/remote_repository
-git init --bare /s/$name_surname/remote_repository/project.git
+mkdir /s/repo/remote_repository
+git init --bare /s/repo/remote_repository/project.git
 
-mkdir /s/$name_surname/working_dir
-cd /s/$name_surname/working_dir
-git clone /s/$name_surname/remote_repository/project.git
+mkdir /s/repo/working_dir
+cd /s/repo/working_dir
+git clone /s/repo/remote_repository/project.git
 cd project
 touch base_feature.py
 git add base_feature.py
 git commit -m "first commit"
 git push origin master
 
-mkdir /home/scrapbook/tutorial/$name_surname
-cd /home/scrapbook/tutorial/$name_surname
+mkdir /home/scrapbook/tutorial/repo
+cd /home/scrapbook/tutorial/repo
 git init
 
 
 echo "part 2"
 
-git remote add origin /s/$name_surname/remote_repository/project.git
+git remote add origin /s/repo/remote_repository/project.git
 
 
 echo "part 3"
@@ -64,7 +64,7 @@ git log -p -1
 
 echo "part 7"
 
-cd /s/$name_surname/working_dir/project
+cd /s/repo/working_dir/project
 git pull origin master
 
 
@@ -77,7 +77,7 @@ git add new_feature.py
 git commit - m "added hello world"
 git push origin new_branch
 git checkout master
-cd /home/scrapbook/tutorial/$name_surname
+cd /home/scrapbook/tutorial/repo
 git checkout new_branch
 touch new_new_feature.py
 git add new_new_feature.py
@@ -88,7 +88,7 @@ git push origin new_branch
 
 echo "part 9"
 
-cd /s/$name_surname/working_dir/project
+cd /s/repo/working_dir/project
 git checkout new_branch
 git pull origin new_branch
 echo "print('Good morning World')" >> new_feature.py
@@ -97,7 +97,7 @@ git commit -m "improved greeting"
 git push origin new_branch
 git checkout master
 
-cd /home/scrapbook/tutorial/$name_surname
+cd /home/scrapbook/tutorial/repo
 git checkout new_branch
 echo "print('Hola Mundo')" >> new_feature.py
 git add new_feature.py
@@ -110,7 +110,7 @@ git add new_feature.py
 git commit -m "conflict on new_feature solved"
 git push origin new_branch
 
-cd /s/$name_surname/working_dir/project
+cd /s/repo/working_dir/project
 git checkout new_branch
 cat new_feature.py
 git pull origin new_branch
@@ -119,7 +119,7 @@ cat new_feature.py
 
 echo "step 10"
 
-cd /home/scrapbook/tutorial/$name_surname
+cd /home/scrapbook/tutorial/repo
 git checkout new_branch
 echo "aaa" >> new_feature.py
 echo "aaa" >> new_new_feature.py

@@ -17,7 +17,7 @@ The default commit message for merges is "Merge branch '' of ". These commits ca
 
 #### Task
 
-- You are still in in repository `/s/<name_surname>/working_dir/project`
+- You are still in in repository `/s/repo/working_dir/project`
 - use `git fetch` to fetch remote branches
 - Switch to branch *new_branch*
 - Modify file *new_feature.py* to print "Hello World"
@@ -25,7 +25,7 @@ The default commit message for merges is "Merge branch '' of ". These commits ca
 - Commit changes
 - Push to remote branch *new_branch*
 - Switch to *master* branch
-- Go to local repository `/home/scrapbook/tutorial/<name_surname>`
+- Go to local repository `/home/scrapbook/tutorial/repo`
 - Switch to branch *new_branch*
 - Create file *new_new_feature.py*
 - Add *new_new_feature.py* to staging area 

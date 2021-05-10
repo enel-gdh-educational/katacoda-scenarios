@@ -4,21 +4,20 @@
 
 *Create personal directory*
 
-`name_surname="pippo_baudo"`{{execute}}
-`mkdir /s/$name_surname/`{{execute}}
+`mkdir /s/repo/`{{execute}}
 
 
 *Create bare remote repository* 
 
-`mkdir /s/$name_surname/remote_repository`{{execute}}
-`git init --bare /s/$name_surname/remote_repository/project.git`{{execute}}
+`mkdir /s/repo/remote_repository`{{execute}}
+`git init --bare /s/repo/remote_repository/project.git`{{execute}}
 
 
 *Create remote working directory*
 
-`mkdir /s/$name_surname/working_dir`{{execute}}
-`cd /s/$name_surname/working_dir`{{execute}}
-`git clone /s/$name_surname/remote_repository/project.git`{{execute}}
+`mkdir /s/repo/working_dir`{{execute}}
+`cd /s/repo/working_dir`{{execute}}
+`git clone /s/repo/remote_repository/project.git`{{execute}}
 `cd project`{{execute}}
 `touch base_feature.py`{{execute}}
 `git add base_feature.py`{{execute}}
@@ -28,6 +27,6 @@
 
 *Create local working directory*
 
-`mkdir /home/scrapbook/tutorial/$name_surname`{{execute}}
-`cd /home/scrapbook/tutorial/$name_surname`{{execute}}
+`mkdir /home/scrapbook/tutorial/repo`{{execute}}
+`cd /home/scrapbook/tutorial/repo`{{execute}}
 `git init`{{execute}}

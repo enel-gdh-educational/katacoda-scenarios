@@ -22,19 +22,19 @@ We will see three ways of initializing a *git* repository:
 
 #### Task
 
-- Use `mkdir` to create directory `/s/<name_surname>/` 
+- Use `mkdir` to create directory `/s/repo/` 
 
 *Create bare remote repository* 
 
-- Use `mkdir` to create directory `/s/<name_surname>/remote_repository`, this will simulate the remote centralized repository
-- Use `git init` with `--bare` option to initialize remote repository at location `/s/<name_surname>/remote_repository/project.git` 
+- Use `mkdir` to create directory `/s/repo/remote_repository`, this will simulate the remote centralized repository
+- Use `git init` with `--bare` option to initialize remote repository at location `/s/repo/remote_repository/project.git` 
 
 *Create remote working directory*
 
-- Use `mkdir` to create directory `/s/<name_surname>/working_dir`, this will simulate another user working on the same project
-- Go to `/s/<name_surname>/working_dir`
-- Initialize folder using `git clone /s/<name_surname>/remote_repository/project.git`
-- Go to `/s/<name_surname>/working_dir/project`
+- Use `mkdir` to create directory `/s/repo/working_dir`, this will simulate another user working on the same project
+- Go to `/s/repo/working_dir`
+- Initialize folder using `git clone /s/repo/remote_repository/project.git`
+- Go to `/s/repo/working_dir/project`
 - Create file `base_feature.py`
 - Add `base_feature.py` to staging area using `git add`
 - Commit modification using `git commit`
@@ -42,6 +42,6 @@ We will see three ways of initializing a *git* repository:
 
 *Create local working directory*
 
-- Create folder `/home/scrapbook/tutorial/<name_surname>` using `mkdir`
-- Go to `/home/scrapbook/tutorial/<name_surname>`
+- Create folder `/home/scrapbook/tutorial/repo` using `mkdir`
+- Go to `/home/scrapbook/tutorial/repo`
 - Initialize *git* folder using `git init`
