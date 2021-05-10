@@ -29,6 +29,7 @@ Remote branch can be deleted using `git push origin --delete <branch name>`
 We will push a modification on remote folder which will cause a conflict when working on local repository
 
 - Go to git repository `/s/repo/working_dir/project`
+- Run `git fetch` to download remote changes
 - Switch to branch *new_branch*
 - Use `git pull origin new_branch` to align with remote branch
 - Modify file *new_feature.py* to print "Good morning World"

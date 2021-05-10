@@ -70,6 +70,7 @@ git pull origin master
 
 echo "part 8"
 
+cd /s/repo/working_dir/project
 git fetch
 git checkout new_branch
 echo "print('Hello World')" >> new_feature.py
@@ -89,6 +90,7 @@ git push origin new_branch
 echo "part 9"
 
 cd /s/repo/working_dir/project
+git fetch
 git checkout new_branch
 git pull origin new_branch
 echo "print('Good morning World')" >> new_feature.py

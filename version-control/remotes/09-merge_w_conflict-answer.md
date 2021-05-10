@@ -2,6 +2,7 @@
 
 
 `cd /s/repo/working_dir/project`{{execute}}
+`git fetch`{{execute}}
 `git checkout new_branch`{{execute}}
 `git pull origin new_branch`{{execute}}
 `echo "print('Good morning World')" >> new_feature.py`{{execute}}

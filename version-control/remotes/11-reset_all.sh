@@ -123,7 +123,8 @@ cd /home/scrapbook/tutorial/repo
 git checkout new_branch
 echo "aaa" >> new_feature.py
 echo "aaa" >> new_new_feature.py
-git status
+git add new_new_feature.py
+echo "bbb" >> new_new_feature.py
 git checkout new_feature.py
 git checkout .
 
