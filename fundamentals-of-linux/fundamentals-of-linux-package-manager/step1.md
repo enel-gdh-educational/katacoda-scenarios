@@ -96,8 +96,7 @@ However, if you try to launch emacs
 emacs
 ``` 
 
-you will get an error pointing out that emacs is looking for some libraries that are missing because the package in which
- they are included is not installed.
+you will get an error pointing out that emacs is not installed, with some help commands on how to install it.
 
 So, now you have two options: 
 

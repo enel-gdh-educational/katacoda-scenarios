@@ -88,32 +88,34 @@ ___
 
 __Exercise 5__
 
--  
+First, create the two (empty) files by using `touch <filename>`:7
 ```bash
 touch foo
 touch bar
 
 ```
-
-- 
+ 
+Then, add them to the .gitignore file, and track it in `git`:
 
 ```bash
 echo "foo" >> .gitignore
 echo "bar" >> .gitignore
 git add .gitignore
 
-
 ```
 
-
--  
-The output 
+The output of 
 ```bash
 git add foo bar
 ```
 suggests to us `--force` flag, therefore 
 
 ```bash
-git add -f foo bar
-``` 
+git add -f bar
+```
+
+Finally, commit the changes:
+```bash
+git commit -m ".gitignore added"
+```
 ___

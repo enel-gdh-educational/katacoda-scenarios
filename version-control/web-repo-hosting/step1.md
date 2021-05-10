@@ -7,9 +7,7 @@ In this step:
 ##### Prerequisites
 * You must have an Enel account and be able to access the Springlab environment.
 * You must have the right permission level to create a new repository in the 
-**version_control_course_project**
-* You must have a partner. (*Collaboration* is the key! :-))
-* All this task (except where specified) must be executed with only one account. (let's say pair programming style!)
+**version_control_course** project
 
 ##### Create new Repository
 First of all we need a new remote repository. Such repository will host our awesome code.
@@ -19,9 +17,9 @@ Go to [version_control_course](https://bitbucket.springlab.enel.com/projects/ITD
 
 ![](./assets/create_new_repository_button.png)
 
-The repository name must be the concatenation of yours surnames with "_" as delimiter.
+The repository name must be the concatenation of your name and surname with "_" as delimiter.
 
-> Surname1: Bianchi, Surname2: Rossi -> Repository name: Bianchi_Rossi
+> Name: Mario, Surname: Rossi -> Repository name: Mario_Rossi
 
 ![](./assets/create_repo_name.png)
 
@@ -31,8 +29,6 @@ Once you create the repository, if you come back at the [version_control_course]
 Now it's time to write some code and begin your new project. This project will be host on the repository created at step before.
 
 Before write some code we need to configure Git with our username and password:
-
->This task must be executed in both accounts.
 
 ```git config --global user.name "<your-name>"```{{copy}}
 
@@ -73,7 +69,7 @@ Issue the command below
 
 substituting `<your repository name>` with the actual name of repository you created before.
 
-> E.g.: Bianchi_Rossi is the name of repository, the command is `git remote add origin https://bitbucket.springlab.enel.com/scm/itdsver/Bianchi_Rossi.git`
+> E.g.: Mario_Rossi is the name of repository, the command is `git remote add origin https://bitbucket.springlab.enel.com/scm/itdsver/mario-rossi.git`
 
 With this command we've added a new origin and we can push on remote repository to sync our changes.
 

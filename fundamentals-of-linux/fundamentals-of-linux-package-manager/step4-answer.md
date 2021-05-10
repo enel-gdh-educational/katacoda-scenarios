@@ -36,7 +36,7 @@ adds a key taking it from the standard input, from the previous command.
 
 ---
 
-
+<!--- Exercise 5 not working! skipping in 2021 
 ---
 **Exercise 5**
 
@@ -60,3 +60,4 @@ apt install r-base
 ```
 
 ---
+-->

@@ -10,13 +10,13 @@ chmod +x script1
 
 2 -
 ```bash
-chmod +x script1
+chmod +x script2
 ``` 
 ```bash
 ./script2
 ``` 
 ```bash
-./script1 > output.txt
+./script2 > output.txt
 ``` 
 You can display the execution output via
 ```bash
