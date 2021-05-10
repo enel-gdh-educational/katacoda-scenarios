@@ -8,7 +8,7 @@ In this network there will be *two types* of repositories: *bare* and *non-bare*
 
 Being extremely simple, the network we will create will consist of:
 
-- a remote repository containing only revision history (**bare**)
+- a remote repository containing only revision history
 - a remote working directory containing revision history and copies of project files
 - a local working directory containing revision history and copies of project files
 
