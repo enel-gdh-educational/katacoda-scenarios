@@ -11,6 +11,7 @@
         "answer": "01-set_env-answer.md"
       },
       {
+        "courseData": "02-remote_all.sh",
         "text": "02-remote.md",
         "answer": "02-remote-answer.md"
       },
