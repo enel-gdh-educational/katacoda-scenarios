@@ -1,11 +1,11 @@
 #### Solution
 
-
+`cd /s/repo/working_dir/project`{{execute}}
 `git fetch`{{execute}}
 `git checkout new_branch`{{execute}}
 `echo "print('Hello World')" >> new_feature.py`{{execute}}
 `git add new_feature.py`{{execute}} 
-`git commit - m "added hello world"`{{execute}}
+`git commit -m "added hello world"`{{execute}}
 `git push origin new_branch`{{execute}}
 `git checkout master`{{execute}}
 `cd /home/scrapbook/tutorial/repo`{{execute}}

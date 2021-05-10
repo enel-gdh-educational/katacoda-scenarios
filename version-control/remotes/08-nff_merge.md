@@ -17,7 +17,7 @@ The default commit message for merges is "Merge branch '' of ". These commits ca
 
 #### Task
 
-- You are still in in repository `/s/repo/working_dir/project`
+- Go to remote working repository `/s/repo/working_dir/project`
 - use `git fetch` to fetch remote branches
 - Switch to branch *new_branch*
 - Modify file *new_feature.py* to print "Hello World"

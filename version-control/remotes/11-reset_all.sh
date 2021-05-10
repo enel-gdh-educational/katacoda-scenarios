@@ -74,7 +74,7 @@ git fetch
 git checkout new_branch
 echo "print('Hello World')" >> new_feature.py
 git add new_feature.py 
-git commit - m "added hello world"
+git commit -m "added hello world"
 git push origin new_branch
 git checkout master
 cd /home/scrapbook/tutorial/repo
