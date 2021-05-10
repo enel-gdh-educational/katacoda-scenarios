@@ -13,7 +13,7 @@ git clone /s/$name_surname/remote_repository/project.git
 cd project
 touch base_feature.py
 git add base_feature.py
-git commit m "first commit"
+git commit -m "first commit"
 git push origin master
 
 mkdir /home/scrapbook/tutorial/$name_surname
