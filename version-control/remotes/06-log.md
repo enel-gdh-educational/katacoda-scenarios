@@ -18,4 +18,4 @@ Some of `git log` useful options are:
 
 #### Task
 
-Analyze the output of commands `git log`
+Go to `/home/scrapbook/tutorial/repo` and analyze the output of commands `git log`
