@@ -1,3 +1,3 @@
-`git branch -a`
-`git fetch`
-`git branch -a`
+`git branch -a` {{execute}}
+`git fetch` {{execute}}
+`git branch -a` {{execute}}

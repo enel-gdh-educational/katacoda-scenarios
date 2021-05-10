@@ -1,4 +1,4 @@
-`ls`
-`git merge origin/master`
-`ls`
-`git branch -a`
+`ls` {{execute}}
+`git merge origin/master` {{execute}}
+`ls` {{execute}}
+`git branch -a` {{execute}}

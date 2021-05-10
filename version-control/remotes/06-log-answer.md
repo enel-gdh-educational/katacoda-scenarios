@@ -1,1 +1,1 @@
-`git log -p -1`
+`git log -p -1` {{execute}}

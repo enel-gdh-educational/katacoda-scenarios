@@ -1,3 +1,3 @@
-`cd /s/<name_surname>/working_dir/project`
-`git branch -a`
-`git pull origin master`
+`cd /s/<name_surname>/working_dir/project` {{execute}}
+`git branch -a` {{execute}}
+`git pull origin master` {{execute}}
