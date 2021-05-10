@@ -1,6 +1,6 @@
 #### Solution
 
-`name_surname = "pippo_baudo"`{{execute}}
+`name_surname="pippo_baudo"`{{execute}}
 `cd /s/<name_surname>/working_dir/project`{{execute}}
 `git checkout new_branch`{{execute}}
 `git pull origin new_branch`{{execute}}

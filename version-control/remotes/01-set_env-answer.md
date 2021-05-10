@@ -1,6 +1,6 @@
 #### Solution
 
-`name_surname = "pippo_baudo"`{{execute}}
+`name_surname="pippo_baudo"`{{execute}}
 
 `mkdir /s/$name_surname/`{{execute}}
 

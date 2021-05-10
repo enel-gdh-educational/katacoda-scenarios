@@ -1,6 +1,6 @@
 #### Solution
 
-`name_surname = "pippo_baudo"`{{execute}}
+`name_surname="pippo_baudo"`{{execute}}
 `cd /home/scrapbook/tutorial/$name_surname`{{execute}}
 `git checkout new_branch`{{execute}}
 `echo "aaa" >> new_feature.py`{{execute}}
