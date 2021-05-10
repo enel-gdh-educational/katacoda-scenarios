@@ -70,8 +70,6 @@ git pull origin master
 
 echo "part 8"
 
-#### Solution
-
 cd /s/repo/working_dir/project
 git fetch
 git checkout new_branch
