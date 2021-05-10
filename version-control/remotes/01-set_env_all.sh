@@ -1,6 +1,12 @@
 git config --global color.ui false
 
+cd /
+
 name_surname="pippo_baudo"
+old_dir=/s/$name_surname
+if [ -d "$old_dir" ]; then rm -Rf $old_dir; fi
+old_dir=/home/scrapbook/tutorial/$name_surname
+if [ -d "$old_dir" ]; then rm -Rf $old_dir; fi
 
 mkdir /s/$name_surname/
 
@@ -18,27 +24,4 @@ git push origin master
 
 mkdir /home/scrapbook/tutorial/$name_surname
 cd /home/scrapbook/tutorial/$name_surname
-git init
-
-
-
-mkdir /s/remote-location/
-mkdir /s/remote-location/$name_surname
-mkdir /s/remote-location/$name_surname
-mkdir /s/remote-location/$name_surname/0
-mkdir /s/remote-location/$name_surname/1
-
-git init --bare /s/remote-location/$name_surname/0/myproject.git
-
-cd /s/remote-location/$name_surname/1
-git init
-git remote add origin /s/remote-location/$name_surname/0/myproject.git
-touch base_feature.py
-git add base_feature.py
-git commit -m "first commit"
-git push origin master
-
-cd /home/scrapbook/tutorial/
-mkdir $name_surname
-cd /$name_surname
 git init
