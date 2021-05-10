@@ -1,6 +1,6 @@
 #### Solution
 
-`cd /`
+`cd /`{{execute}}
 
 *Create personal directory*
 

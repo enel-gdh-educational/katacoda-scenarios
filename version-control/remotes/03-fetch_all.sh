@@ -38,6 +38,4 @@ git remote show origin
 
 echo "part 3"
 
-git branch
 git fetch
-git branch -a
