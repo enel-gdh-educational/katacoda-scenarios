@@ -12,7 +12,7 @@ If you want to reset all files then use a dot (`git reset .`) to indicate curren
 
 #### Task
 
-- Go to `/home/scrapbook/tutorial/<name_surname>`
+- Go to `/home/scrapbook/tutorial/repo`
 - Switch to branch *new_branch*
 - Modify *new_feature.py* to print "Guten Morgen" inside of it
 - Modify *new_new_feature.py* to print "Buongiornissimo"

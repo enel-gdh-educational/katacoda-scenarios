@@ -1,4 +1,7 @@
-`cd /home/scrapbook/tutorial/<name_surname>`{{execute}}
+#### Solution
+
+
+`cd /home/scrapbook/tutorial/repo`{{execute}}
 `git checkout new_branch`{{execute}}
 `echo "print('Guten Morgen')" >> new_feature.py`{{execute}}
 `echo "print('Buongiornissimo')" >> new_new_feature.py`{{execute}}

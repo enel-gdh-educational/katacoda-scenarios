@@ -11,6 +11,9 @@ To modify or undo a commit you can use:
 
 #### Task
 
+- Go to `/home/scrapbook/tutorial/repo`
+- Switch to branch *new_branch*
+- Modify *new_new_feature.py* to print "Buongiornissimo"
 - Add *new_new_feature.py* to the staging area
 - Commit modification to file *new_new_feature.py*
 - Push to remote *new_branch*

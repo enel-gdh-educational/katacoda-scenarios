@@ -1,11 +1,11 @@
 # Working with Remotes
 
 Collaborating with others on any project requires a way to share work among colleagues.
-In Git this is done through remote repositories. These are versions of your project that are hosted on the Internet or network somewhere.
+In Git this is done through remote repositories. These are versions of your project that are hosted on the Internet or in some other network.
 
-Users generally have permissions to:
-- **read** work made by others fetching and pulling from remotes
-- **write** changes to project pushing and merging to remotes
+Collaborators generally have permissions to:
+- **read** work made by others, fetching and pulling from remotes
+- **write** changes to project, pushing and merging to remotes
 
 Sharing work involves:
 - **managing** remote repositories locations
