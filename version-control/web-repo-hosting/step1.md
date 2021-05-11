@@ -106,6 +106,3 @@ Try to rename the `origin` remote name to `enel` (then check with `git remote -v
 
 **Exercise 3**
 Add a new function in `calculator.py` that executes the division between two number and push this new code.
-
-**Exercise 4**
-How can I see my current git config values?
