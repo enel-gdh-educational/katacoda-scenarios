@@ -59,8 +59,6 @@ git push origin master
 
 echo "part 6"
 
-git log -p -1
-
 
 echo "part 7"
 
