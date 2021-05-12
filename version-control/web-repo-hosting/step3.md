@@ -47,7 +47,7 @@ To see a concrete implementation of this workflow, clone the **awesome project**
 
 and then use the `git log` command with some useful arguments:
 
-```cd awesome_project && git log --all --decorate --oneline --graph ```{{execute}}
+```cd awesome_project && git log --all --oneline --graph ```{{execute}}
 
 The output should looks like this:
 
