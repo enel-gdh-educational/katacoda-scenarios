@@ -91,6 +91,9 @@ Finally, we can push our changes to this new remote!
 
 You must insert your username that corresponds to your Enel id with the first letter in uppercase. (*E.g. A459578*) and your Enel account password.
 
+ *Note: If you use an HTTPS URL to push, the Git server will ask you for your username and password for authentication.
+If you don’t want to type it for every push, you can set up  `git config --global credential.helper cache`*
+
 ##### Exercises
 
 ---
