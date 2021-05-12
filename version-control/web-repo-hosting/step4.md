@@ -90,7 +90,7 @@ Now you should insert the title of this Pull Request and the approvers.
 
 ![](./assets/create_pull_request_step_2.png)
 
-> Add yourself as an approver.
+> Add someone as an approver.
 
 Finally, you can create the Pull Request with the **Create** button.
 Every user added in the Reviewers field will be notified.
