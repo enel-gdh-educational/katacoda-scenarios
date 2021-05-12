@@ -1,7 +1,7 @@
 ## Step 2 - Cloning an existing repository
 In this step:
 * you'll discover the first step to collaborate with other developers.
-* you'll clone an existing remote repository in the **version_control_course** bitbucket project available [here](https://bitbucket.springlab.enel.com/projects/ITDSVER) 
+* you'll clone an existing remote repository in the **Version Control Course** bitbucket project available [here](https://bitbucket.springlab.enel.com/projects/ITDSVER) 
 
 ##### Prerequisites
 * You must have an Enel account and be able to access the Springlab environment.
@@ -10,7 +10,7 @@ In this step:
 Your collegaues started a new project few months ago and now want you as developer because they have an huge amount of work.
 
 
-The address of the existing repository is: https://bitbucket.springlab.enel.com/projects/ITDSVER/repos/default/browse
+The address of the existing repository is: https://bitbucket.springlab.enel.com/projects/ITDSVER/repos/super-calculator/browse
 
 In order to start writing some code do you need your local copy of that repository and begin to work locally and then sync with the remote one. You just need the `git clone` command.
 

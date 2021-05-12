@@ -13,7 +13,7 @@ In this step:
 ##### Configure branch permission
 As you saw in the last exercise of the previous step, applying a specific workflow like the feature branch one means that you have to limit some branch permission in order to avoid modifications to master and/or develop branches.
 
-To setup your new remote correctly go to the repository page you created at step #1 in the [version_control_course](https://bitbucket.springlab.enel.com/projects/ITDSVER) project and click on *Repository Settings* button on the left pane.
+To setup your new remote correctly go to the repository page you created at step #1 in the [Version Control Course](https://bitbucket.springlab.enel.com/projects/ITDSVER) project and click on *Repository Settings* button on the left pane.
 
 ![](./assets/repository_setting_button.png)
 
