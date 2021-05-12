@@ -1,7 +1,7 @@
 # Working with Remotes
 
 Collaborating with others on any project requires a way to share work among colleagues.
-In Git this is done through remote repositories. Repositories are versions of your project that are hosted on the Internet or in some other network.
+In Git this is done through remote repositories. These are versions of your project that are hosted on the Internet or in some other network.
 
 Collaborators generally have permissions to:
 - **read** work made by others, fetching and pulling from remotes
