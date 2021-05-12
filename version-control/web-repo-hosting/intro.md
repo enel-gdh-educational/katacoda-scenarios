@@ -27,7 +27,6 @@ When you are using BitBucket your are still working with a Distributed Version C
 * Sync your local repo with the remote one
 * Discover the feature branch git workflow
 * Make your first pull request
-* Jira Integration
 
 *Advanced Topics (optional):*
 
