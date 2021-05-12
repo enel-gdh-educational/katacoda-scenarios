@@ -25,7 +25,9 @@ When you are using BitBucket your are still working with a Distributed Version C
 * Create repository in Springlab bitbucket (Check if you can correctly access the bitbucket project of this course at https://bitbucket.springlab.enel.com/projects/ITDSVER)
 
 * Sync your local repo with the remote one
+
 * Discover the feature branch git workflow
+
 * Make your first pull request
 
 *Advanced Topics (optional):*

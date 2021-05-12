@@ -1,19 +1,19 @@
 ## Step 1 - Create new repository and initialize a project
 In this step:
-* you'll create a new repository in the **version_control_course** bitbucket project available [here](https://bitbucket.springlab.enel.com/projects/ITDSVER) 
+* you'll create a new repository in the **Version Control Course** bitbucket project available [here](https://bitbucket.springlab.enel.com/projects/ITDSVER) 
 * you'll create a new project locally
 * you'll sync your local repository with the remote one
 
 ##### Prerequisites
 * You must have an Enel account and be able to access the Springlab environment.
 * You must have the right permission level to create a new repository in the 
-**version_control_course** project
+**Version Control Course** project
 
 ##### Create new Repository
 First of all we need a new remote repository. Such repository will host our awesome code.
 
 
-Go to [version_control_course](https://bitbucket.springlab.enel.com/projects/ITDSVER) project on Springlab and create a new repository using the "Create Repository" button at top right corner.
+Go to [Version Control Course](https://bitbucket.springlab.enel.com/projects/ITDSVER) project on Springlab and create a new repository using the "Create Repository" button at top right corner.
 
 ![](./assets/create_new_repository_button.png)
 
@@ -23,7 +23,7 @@ The repository name must be the concatenation of your name and surname with "_" 
 
 ![](./assets/create_repo_name.png)
 
-Once you create the repository, if you come back at the [version_control_course](https://bitbucket.springlab.enel.com/projects/ITDSVER) project you'll see the new repository in the repositories page.
+Once you create the repository, if you come back at the [Version Control Course](https://bitbucket.springlab.enel.com/projects/ITDSVER) project you'll see the new repository in the repositories page.
 
 ##### Create your local project 
 Now it's time to write some code and begin your new project. This project will be host on the repository created at step before.
