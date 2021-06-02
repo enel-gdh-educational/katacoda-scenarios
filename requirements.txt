@@ -17,6 +17,6 @@ scikit-learn==0.22
 scipy==1.4.1
 six==1.13.0
 sklearn==0.0
-urllib3==1.25.7
+urllib3==1.26.5
 Werkzeug==0.16.0
 xgboost==0.90
