@@ -5,31 +5,31 @@
   "time": "60",
   "details": {
     "steps": [
-//      {
-//        "title": "Create a new repository",
-//        "text": "step1.md",
-//        "answer": "step1-answer.md"
-//      },
-//      {
-//        "title": "Cloning a remote repository",
-//        "text": "step2.md",
-//        "answer": "step2-answer.md"
-//      },
-//      {
-//        "title": "Git Workflow",
-//        "text": "step3.md",
-//        "answer": "step3-answer.md"
-//      },
-//      {
-//        "title": "Pull Request",
-//        "text": "step4.md",
-//        "answer": "step4-answer.md"
-//      },
-//      {
-//        "title": "SSH Keys",
-//        "text": "step5.md",
-//        "answer": "step5-answer.md"
-//      }
+      {
+        "title": "Create a new repository",
+        "text": "step1.md",
+        "answer": "step1-answer.md"
+      },
+      {
+        "title": "Cloning a remote repository",
+        "text": "step2.md",
+        "answer": "step2-answer.md"
+      },
+      {
+        "title": "Git Workflow",
+        "text": "step3.md",
+        "answer": "step3-answer.md"
+      },
+      {
+        "title": "Pull Request",
+        "text": "step4.md",
+        "answer": "step4-answer.md"
+      },
+      {
+        "title": "SSH Keys",
+        "text": "step5.md",
+        "answer": "step5-answer.md"
+      }
     ],
     "assets": { 
       "client": [{

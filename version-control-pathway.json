@@ -17,10 +17,5 @@
       "title": "Version Control System: Working with remotes",
       "description": "This scenario will teach you how to sync your repository with its remote instances"
     },
-    {
-      "course_id": "web-repo-hosting",
-      "title": "Version Control System: web collaboration tools",
-      "description": "This scenario demonstrates how to use Bitbucket to coordinate the work of many developers"
-    }
   ]
 }
