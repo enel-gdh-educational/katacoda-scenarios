@@ -79,7 +79,7 @@ In order to reproduce some example of sed usage, please consider using the file 
 
 #### D) Edit the file data/ip_addresses_with_host.txt by sed script
 
-Now, consider using the file data/ip_addresses_with_host.txt
+Now, consider using the file data/ip_addresses_with_host.txt which contains randomly generated IP addresses.
 
 In order to provide sed with a list of command it is possible to create a script containing a list of
 commands. Let's assume we want to:
