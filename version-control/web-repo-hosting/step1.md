@@ -28,11 +28,11 @@ Once you create the repository, if you come back at the [Version Control Course]
 ##### Create your local project 
 Now it's time to write some code and begin your new project. This project will be host on the repository created at step before.
 
-Before write some code we need to configure Git with our username and password:
+Before write some code we need to configure Git with our username and email. Those can be any value, since they won't be used for authentication:
 
 ```git config --global user.name "<your-name>"```{{copy}}
 
-```git config --global user.email "<your-enel-email-address>"```{{copy}}
+```git config --global user.email "<your-email-address>"```{{copy}}
 
 Create a new local folder called project:
 
@@ -89,10 +89,7 @@ Finally, we can push our changes to this new remote!
 
 ```git push -u origin master```{{execute}}
 
-You must insert your username that corresponds to your Enel id with the first letter in uppercase. (*E.g. A459578*) and your Enel account password.
-
- *Note: If you use an HTTPS URL to push, the Git server will ask you for your username and password for authentication.
-If you don’t want to type it for every push, you can set up  `git config --global credential.helper cache`*
+You must insert your username that corresponds to your Enel id with the first letter in uppercase. (*E.g. A45XXXX*) and your Enel account password, which won't be neither stored by git nor saved on disk or memory by Katacoda. 
 
 ##### Exercises
 
