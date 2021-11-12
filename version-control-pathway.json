@@ -16,11 +16,6 @@
       "course_id": "remotes",
       "title": "Version Control System: Working with remotes",
       "description": "This scenario will teach you how to sync your repository with its remote instances"
-    },
-    {
-        "course_id": "test-scenario",
-        "title": "Scenario test without terminal",
-        "description": "Scenario test"
-      }
+    }
   ]
 }
