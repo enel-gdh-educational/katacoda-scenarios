@@ -74,9 +74,9 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "iframe"
   },
   "backend": {
-    "imageid": "git"
+    "url": "https://www.blank.org/"
   }
 }
