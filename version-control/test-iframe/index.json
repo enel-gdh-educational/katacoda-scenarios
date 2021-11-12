@@ -1,0 +1,82 @@
+{
+  "title": "Version Control System: Working with remotes",
+  "description": "In this scenario you'll learn basic commands to share the changes in your repository with other people and combine their changes into your repository.",
+  "difficulty": "Intermediate",
+  "time": "60",
+  "details": {
+    "steps": [
+      {
+        "background": "01-set_env.sh",
+        "text": "01-set_env.md",
+        "answer": "01-set_env-answer.md"
+      },
+      {
+        "background": "01-set_env_all.sh",
+        "text": "02-remote.md",
+        "answer": "02-remote-answer.md"
+      },
+      {
+        "background": "02-remote_all.sh",
+        "text": "03-fetch.md",
+        "answer": "03-fetch-answer.md"
+      },
+      {
+        "background": "03-fetch_all.sh",
+        "text": "04-ff_merge.md",
+        "answer": "04-ff_merge-answer.md"
+      },
+      {
+        "background": "04-ff_merge_all.sh",
+        "text": "05-push.md",
+	    "answer": "05-push-answer.md"
+      },
+      {
+        "background": "05-push_all.sh",
+        "text": "06-log.md",
+        "answer": "06-log-answer.md"
+      },
+      {
+        "background": "06-log_all.sh",
+        "text": "07-pull.md",
+        "answer": "07-pull-answer.md"
+      },
+      {
+        "background": "07-pull_all.sh",
+        "text": "08-nff_merge.md",
+        "answer": "08-nff_merge-answer.md"
+      },
+      {
+        "background": "08-nff_merge_all.sh",
+        "text": "09-merge_w_conflict.md",
+        "answer": "09-merge_w_conflict-answer.md"
+      },
+      {
+        "background": "09-merge_w_conflict_all.sh",
+        "text": "10-checkout.md",
+        "answer": "10-checkout-answer.md"
+      },
+      {
+        "background": "10-checkout_all.sh",
+        "text": "11-reset.md",
+        "answer": "11-reset-answer.md"
+      },
+      {
+        "background": "11-reset_all.sh",
+        "text": "12-revert.md",
+        "answer": "12-revert-answer.md"
+      }
+    ],
+    "intro": {
+      "text": "00-intro.md"
+    },
+    "finish": {
+      "text": "99-finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "git"
+  }
+}

@@ -18,7 +18,7 @@
       "description": "This scenario will teach you how to sync your repository with its remote instances"
     },
     {
-        "course_id": "test-scenario",
+        "course_id": "test-iframe",
         "title": "Scenario test without terminal",
         "description": "Scenario test"
       }
