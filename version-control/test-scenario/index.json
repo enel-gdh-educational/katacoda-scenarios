@@ -27,9 +27,9 @@
     }
   },
   "environment": {
-    "uilayout": "iframe"
+    "uilayout": "terminal"
   },
   "backend": {
-    "url": "about:blank"
+    "imageid": "bash1804"
   }
 }
