@@ -1,73 +1,74 @@
 {
-  "title": "Version Control Systems: Branching",
-  "description": "This scenario will teach you what branches are in git, and how to work with them",
-  "difficulty": "Intermediate",
-  "time": "60",
-  "details": {
-    "steps": [
-      {
-        "background": "01-preparation.sh",
-        "title": "Creating and inspecting branches",
-        "text": "01-basicbranching.md",
-        "answer": "01-basicbranching_answer.md"
-      },
-      {
-        "title": "Switching branches",
-        "text": "02-checkout1.md",
-        "answer":"02-checkout1_answer.md"
-      },
-      {
-        "title": "Merging branches",
-        "text": "03-merge.md",
-        "answer": "03-merge_answer.md"
-      },
-      {
-        "title": "HEAD",
-        "text": "04-Head.md"
-      },
-      {
-        "background":"05-checkout2.sh",
-        "title": "Advanced `checkout` usage",
-        "text": "05-checkout2.md",
-        "answer": "05-checkout2_answer.md"
-      },
-      {
-        "background": "06-cherrypick.sh",
-        "title": "Cherry picking",
-        "text": "06-cherrypick.md",
-        "answer": "06-cherrypick_answer.md"
-      },
-      {
-        "title": "Undoing commits",
-        "text": "07-revert.md",
-        "answer": "07-revert_answer.md"
-      },
-      {
-        "title": "Saving changes for later",
-        "text": "08-stash.md",
-        "answer": "08-stash_answer.md"
-      },
-      {
-        "title": "Relocating branches",
-        "text": "09-rebase.md",
-        "answer": "09-rebase_answer.md"
-      },
-      {
-        "title": "Branching workflows",
-        "text": "10-workflows.md"
-      }
-    ],
-    "intro": {
-      "text": "00-intro.md"
+    "title": "Version Control Systems: Branching",
+    "description": "This scenario will teach you what branches are in git, and how to work with them",
+    "difficulty": "Intermediate",
+    "time": "60",
+    "details": {
+        "steps": [
+            {
+                "background": "01-preparation.sh",
+                "title": "Creating and inspecting branches",
+                "text": "01-basicbranching.md",
+                "answer": "01-basicbranching_answer.md"
+            },
+            {
+                "title": "Switching branches",
+                "text": "02-checkout1.md",
+                "answer": "02-checkout1_answer.md"
+            },
+            {
+                "title": "Merging branches",
+                "text": "03-merge.md",
+                "answer": "03-merge_answer.md"
+            },
+            {
+                "title": "HEAD",
+                "text": "04-Head.md"
+            },
+            {
+                "background": "05-checkout2.sh",
+                "title": "Advanced `checkout` usage",
+                "text": "05-checkout2.md",
+                "answer": "05-checkout2_answer.md"
+            },
+            {
+                "background": "06-cherrypick.sh",
+                "title": "Cherry picking",
+                "text": "06-cherrypick.md",
+                "answer": "06-cherrypick_answer.md"
+            },
+            {
+                "title": "Undoing commits",
+                "text": "07-revert.md",
+                "answer": "07-revert_answer.md"
+            },
+            {
+                "title": "Saving changes for later",
+                "text": "08-stash.md",
+                "answer": "08-stash_answer.md"
+            },
+            {
+                "title": "Relocating branches",
+                "text": "09-rebase.md",
+                "answer": "09-rebase_answer.md"
+            },
+            {
+                "title": "Branching workflows",
+                "text": "10-workflows.md"
+            }
+        ],
+        "intro": {
+            "text": "00-intro.md"
+        },
+        "finish": {
+            "text": "99-finish.md"
+        }
     },
-    "finish": {
-      "text": "99-finish.md"
+    "environment": {
+        "uilayout": "iframe"
+    },
+    "backend": {
+        "imageid": "bash",
+        "url": "https://www.blank.org/"
     }
-  },
-  "environment": {
-    "uilayout": "editor-terminal"
-  },
-  "backend": {
-    "imageid": "git"
-  }
 }

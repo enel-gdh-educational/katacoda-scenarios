@@ -1,62 +1,62 @@
 {
-  "title": "Version Control System: Basics",
-  "description": "This scenario will teach you the basic operations to control the time evolution of a project",
-  "difficulty": "Beginner",
-  "time": "180",
-  "details": {
-    "assets": {
-      "client": [
-        {
-          "file": "basic_project/.gitignore",
-          "target": "/home/scrapbook/tutorial/basic_project"
+    "title": "Version Control System: Basics",
+    "description": "This scenario will teach you the basic operations to control the time evolution of a project",
+    "difficulty": "Beginner",
+    "time": "180",
+    "details": {
+        "assets": {
+            "client": [
+                {
+                    "file": "basic_project/.gitignore",
+                    "target": "/home/scrapbook/tutorial/basic_project"
+                }
+            ]
+        },
+        "steps": [
+            {
+                "title": "Step 1",
+                "text": "step1.md",
+                "answer": "step1-answers.md",
+                "code": "step1.sh"
+            },
+            {
+                "title": "Step 2",
+                "text": "step2.md",
+                "answer": "step2-answers.md",
+                "code": "step2.sh"
+            },
+            {
+                "title": "Step 3",
+                "text": "step3.md",
+                "answer": "step3-answers.md",
+                "code": "step3.sh"
+            },
+            {
+                "title": "Step 4",
+                "text": "step4.md",
+                "answer": "step4-answers.md",
+                "code": "step4.sh"
+            },
+            {
+                "title": "Step 5",
+                "text": "step5.md",
+                "answer": "step5-answers.md",
+                "code": "step5.sh"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "code": "intro.sh"
+        },
+        "finish": {
+            "text": "finish.md"
         }
-      ]
     },
-    "steps": [
-      {
-        "title": "Step 1",
-        "text": "step1.md",
-        "answer": "step1-answers.md",
-        "code": "step1.sh"
-      },
-      {
-        "title": "Step 2",
-        "text": "step2.md",
-        "answer": "step2-answers.md",
-        "code": "step2.sh"
-      },
-      {
-        "title": "Step 3",
-        "text": "step3.md",
-        "answer": "step3-answers.md",
-        "code": "step3.sh"
-      },
-      {
-        "title": "Step 4",
-        "text": "step4.md",
-        "answer": "step4-answers.md",
-        "code": "step4.sh"
-      },
-      {
-        "title": "Step 5",
-        "text": "step5.md",
-        "answer": "step5-answers.md",
-        "code": "step5.sh"
-      }
-
-    ],
-    "intro": {
-      "text": "intro.md",
-      "code": "intro.sh"
+    "environment": {
+        "uilayout": "iframe"
     },
-    "finish": {
-      "text": "finish.md"
+    "backend": {
+        "imageid": "bash",
+        "url": "https://www.blank.org/"
     }
-  },
-  "environment": {
-    "uilayout": "editor-terminal"
-  },
-  "backend": {
-    "imageid": "git"
-  }
 }
