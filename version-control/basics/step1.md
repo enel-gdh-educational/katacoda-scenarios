@@ -78,7 +78,7 @@ Check that the folder ``.git`` has been created. Check it both using the termina
 Let's create a first file that will be included in our repo:
   
 ```bash
-echo "This repo contains the project for the course Version Control System" > README.md
+echo "This repository contains the project for the course Version Control System" > readme.txt
 ```
 
 The main command to inspect the state of your project is:
@@ -97,7 +97,7 @@ No commits yet
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
-        README.md
+        readme.txt
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
@@ -112,17 +112,17 @@ Let's inspect the output:
 No commit has been saved so far.
 
 - Then you are notified about new files in the current folder that might be tracked by git, but are not (yet).
- The only file is ``README.md``.
+ The only file is ``readme.txt``.
  
 - Finally, a hint on what you could do next, namely start tracking some files before you can actually commit anything. 
 
 
 #### File tracking and committing  
 
-Well, let us track ``README.md`` then. This is achieved by
+Well, let us track ``readme.txt`` then. This is achieved by
 
 ```bash
-git add README.md
+git add readme.txt
 ```
 
 and to make sure the file has gone under Git's radar, just list the files that git is tracking via:
@@ -139,7 +139,7 @@ Indeed, now in the output ``git status`` output, you should recognize the snippe
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
 
-        new file:   README.md
+        new file:   readme.txt
 ```
 
 that informs us that there are changes which are ready to be committed, specifically a whole new file.
@@ -149,7 +149,7 @@ In fact, all the files that appear in green are those who are being added to the
 Well, the big moment has come to make your first commit:
 
 ```bash
-git commit -m "First commit. README added"
+git commit -m "Added readme file"
 ```
 
 Congratulations! 
