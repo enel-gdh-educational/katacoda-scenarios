@@ -28,7 +28,7 @@ commit bb517dceabf63c23abbef923e4a171b281f33e37 (HEAD -> master)
 Author: Andrea Massaia <andrea.massaia@enel.com>
 Date:   Tue Sep 8 15:21:40 2020 +0000
 
-    First commit. Added README
+    Added readme file
 ```
 
 _N.B. The first line will certainly look different._
@@ -37,7 +37,7 @@ The content is mostly self-explanatory, you can read the author, the date and th
  But what about the first line? The long string of characters is the __id__ of the commit (a sort of code),
  and it is uniquely generated from the content of your commit.
 
- In other words, if you had a different content in `README.txt`, or had named it differently, `git` would have generated
+ In other words, if you had a different content in `readme.txt`, or had named it differently, `git` would have generated
  a different code. 
 
 ---

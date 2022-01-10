@@ -38,7 +38,7 @@ tree f50cd6e249075cd984b5bccaf68f097c474784d2
 author Fernando Gargiulo <fernando.gargiulo@enel.com> 1599240521 +0000
 committer Fernando Gargiulo <fernando.gargiulo@enel.com> 1599240521 +0000
 
-First commit
+Added readme file
 
 ```
 
@@ -50,7 +50,7 @@ git cat-file -p f50cd6e249075cd984b5bccaf68f097c474784d2
 and get something close to:
 
 ```bash
-100644 blob 7c21b9fe6a85e4569236c376dc0003968b6d42a0    README.md
+100644 blob 7c21b9fe6a85e4569236c376dc0003968b6d42a0    readme.txt
 $
 ```
 , which is basically the content of the checkout directory registered in the commit.
@@ -60,11 +60,11 @@ Finally, if you inspect the blob file
 
 ```bash
 $ git cat-file -p 7c21b9fe6a85e4569236c376dc0003968b6d42a0
-This repo contains the project for the course Version Control Systems
+This repository contains the project for the course Version Control System
 $
 ```
 
-you'll get the content of README.txt.
+you'll get the content of readme.txt.
 
 ---
 
