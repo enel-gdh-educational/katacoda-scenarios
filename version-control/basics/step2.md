@@ -126,5 +126,12 @@ e.g. adding new files, moving, deleting, or modifying the existing ones. If any 
 
 #### To revise 
 Probably, the most definitive explaination of the concepts of working tree, index and are in the first part 
-of [this page of the Git book](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified)
+of [this page of the Git book](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified).
 
+
+#### Summary
+Let's briefly recap the concepts and the commands we learned so far:
+- git log
+- commit id
+- working tree
+- staging area
