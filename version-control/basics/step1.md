@@ -162,6 +162,16 @@ It informs us that our project files are completely syncronized in the git repos
 
 Congratulations! 
 
-Before, you go to the next step, we suggest to take a couple of minutes to watch [this video](https://www.youtube.com/watch?v=t6GMcIoCD9Q)
+
+#### Summary
+Let's briefly recap the commands we learned so far:
+- git config
+- git init
+- git status
+- git add
+- git commit
+
+
+Before, you go to the next step, we suggest to take a couple of minutes to watch [this video](https://www.youtube.com/watch?v=t6GMcIoCD9Q).
 
 
