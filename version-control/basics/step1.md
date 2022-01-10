@@ -129,7 +129,7 @@ Well, let us track ``readme.txt`` then. This is achieved by
 git add readme.txt
 ```
 
-The command ``git add`` has also the effect to put the file in the so-called __staging area__ (also named *cache*, they are synonims), that is,
+The command ``git add`` has also the effect to put the file in the so-called __staging area__, that is,
  a special hidden folder in the git repo where files are put, ready to be committed. 
 
 Repeat the command ``git status`` and look at the output, you should recognize the snippet:
