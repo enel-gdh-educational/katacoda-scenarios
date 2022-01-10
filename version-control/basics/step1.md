@@ -48,13 +48,14 @@ _Hint_: type ``git config`` with no options, and look for the option to list all
 #### Your first git repo
 
 Ok, now that we have done the _paperwork_, let's start playing with a repository. 
-To work on this scenario, move to the folder ``basic_project``:
+Create and move to the folder ``basic_project``:
 
 ```bash
+mkdir basic_project
 cd basic_project
 ```
 
-Now, create your first git repo with
+Now, create your first git repo with:
 
 ```bash
 git init
@@ -67,7 +68,7 @@ the history of the project, information about how to synchronize to remote repos
 __Exercise 2__
 
 
-Check that the folder ``.git`` has been created
+Check that the folder ``.git`` has been created. Check it both using the terminal and the folder window of your system. Warning! It is a **hidden** folder!
 
 ---
  
