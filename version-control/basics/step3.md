@@ -79,6 +79,25 @@ Let git start tracking the newly created file ``hello_world.py``, verify the add
 ___
 
 
+Check again the output of `git diff`. 
+
+It is now empty! Why is that? Because by default it is comparing the *current commit* with the *working directory*:
+there are no differences because all the modified/added files have been
+moved to the *staging area*.
+
+Why the files have been moved to the *staging area*? Because we used the
+`git add` command which moves a file from the *working directory* to the
+*staging area*.
+
+Why do we need to move the modified files from the *working directory* to the
+*staging area*? Because the *working directory* is intended as the area
+where you experiment and work with your files, while the *staging area* 
+is intended as the area where your changes are ready to be committed.
+
+So, how to compare the *current commit* with the *staging area*? Use:
+
+`git diff --staged`
+
 ---
 
 __Tips for the experts__
