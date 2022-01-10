@@ -55,6 +55,8 @@ mkdir basic_project
 cd basic_project
 ```
 
+or create and navigate in it manually using the folder window.
+
 Now, create your first git repo with:
 
 ```bash
@@ -75,11 +77,13 @@ Check that the folder ``.git`` has been created. Check it both using the termina
 
 #### First commit
  
-Let's create a first file that will be included in our repo:
+Let's create a first file named **readme.txt** that will be included in our repository:
   
 ```bash
 echo "This repository contains the project for the course Version Control System" > readme.txt
 ```
+
+or do it manually using the window folder.
 
 The main command to inspect the state of your project is:
 
