@@ -125,15 +125,10 @@ Well, let us track ``readme.txt`` then. This is achieved by
 git add readme.txt
 ```
 
-and to make sure the file has gone under Git's radar, just list the files that git is tracking via:
-
-```bash
-git ls-files
-```
-The command ``git add`` has also the effect to put the file in the so-called __staging area__, that is,
+The command ``git add`` has also the effect to put the file in the so-called __staging area__ (also named *cache*, they are synonims), that is,
  a special hidden folder in the git repo where files are put, ready to be committed. 
 
-Indeed, now in the output ``git status`` output, you should recognize the snippet:
+Repeat the command ``git status`` and look at the output, you should recognize the snippet:
 
 ```bash
 Changes to be committed:
@@ -151,6 +146,15 @@ Well, the big moment has come to make your first commit:
 ```bash
 git commit -m "Added readme file"
 ```
+
+Repeat the command ``git status`` and look at the output:
+
+```bash
+On branch master
+nothing to commit, working tree clean
+```
+
+It informs us that our project files are completely syncronized in the git repository and there are no modifications to track: everything is clear.
 
 Congratulations! 
 
