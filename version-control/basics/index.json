@@ -4,49 +4,35 @@
     "difficulty": "Beginner",
     "time": "180",
     "details": {
-        "assets": {
-            "client": [
-                {
-                    "file": "basic_project/.gitignore",
-                    "target": "/home/scrapbook/tutorial/basic_project"
-                }
-            ]
-        },
         "steps": [
             {
                 "title": "Step 1",
                 "text": "step1.md",
-                "answer": "step1-answers.md",
-                "code": "step1.sh"
+                "answer": "step1-answers.md"
             },
             {
                 "title": "Step 2",
                 "text": "step2.md",
-                "answer": "step2-answers.md",
-                "code": "step2.sh"
+                "answer": "step2-answers.md"
             },
             {
                 "title": "Step 3",
                 "text": "step3.md",
-                "answer": "step3-answers.md",
-                "code": "step3.sh"
+                "answer": "step3-answers.md"
             },
             {
                 "title": "Step 4",
                 "text": "step4.md",
-                "answer": "step4-answers.md",
-                "code": "step4.sh"
+                "answer": "step4-answers.md"
             },
             {
                 "title": "Step 5",
                 "text": "step5.md",
-                "answer": "step5-answers.md",
-                "code": "step5.sh"
+                "answer": "step5-answers.md"
             }
         ],
         "intro": {
-            "text": "intro.md",
-            "code": "intro.sh"
+            "text": "intro.md"
         },
         "finish": {
             "text": "finish.md"
