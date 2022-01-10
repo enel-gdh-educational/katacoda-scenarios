@@ -3,10 +3,10 @@
 So far, we did something very simple: started tracking a new file, added it to the staging area, 
 and made our first commit.
 
-Let's simulate the natural evolution of a project, for instance by adding a new line to the ``README.md`` file:
+Let's simulate the natural evolution of a project, for instance by adding a new line to the ``readme.txt`` file:
 
 ```bash
-echo "Some additional info" >> README.md
+echo "Some additional info" >> readme.txt
 ```
 
 and see how git reacts to this change.
@@ -65,10 +65,10 @@ Our goal is now to save a version of the latest changes.
 To this aim, we first have to _stage_ the modified file via:
 
 ```bash
-git add README.md
+git add readme.txt
 ```
 
-N.B. this time the effect of ``git add`` is only that of adding the changes to the staging area, since `README.md` was already tracked by git.
+N.B. this time the effect of ``git add`` is only that of adding the changes to the staging area, since `readme.txt` was already tracked by git.
 
 
 

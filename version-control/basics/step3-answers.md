@@ -11,12 +11,12 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-        modified:   README.md
+        modified:   readme.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-. This is signalling that the file `README.md` that is tracked by `git` has been modified. 
+This is signalling that the file `readme.txt` that is tracked by `git` has been modified. 
 You can now decide to stage the changes to eventually commit them
  or restore the version stored in the present commit
 ---
@@ -29,17 +29,17 @@ __Question 2__
 Given the output of ``git diff``
 
 ```bash
-diff --git a/README.md b/README.md
+diff --git a/readme.txt b/readme.txt
 index 7c21b9f..298b04f 100644
---- a/README.md
-+++ b/README.md
+--- a/readme.txt
++++ b/readme.txt
 @@ -1 +1,2 @@
- This repo contains the project for the course Version Control Systems
+ This repository contains the project for the course Version Control System
 +Some additional info
 ```
 
 This tells you that ``diff`` is comparing the present working tree against the index object
- `7c21b9f..298b04f` containing the file `README.md`.
+ `7c21b9f..298b04f` containing the file `readme.txt`.
  
 Lines owing to the first (second) file of the comparison are labelled by ``-`` (``+``).
 
