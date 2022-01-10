@@ -132,6 +132,9 @@ and asked to write a commit message and save it.
 The editor is `nano`, therefore after having written your message, 
 type `Ctrl^O, Enter`, to save the file and `Ctrl^X` to exit.
 
+On Windows, the default editor is `Notepad++`, therefore after having 
+written your message simply save the file and exit.
+
 Once more, you can instruct git to use an editor other than the default one. 
 Say, you are more familiar with ``vim``, you can set it as the git editor via:
 
