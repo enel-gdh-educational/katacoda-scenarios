@@ -1,12 +1,18 @@
 #### The git command line interface
 
-As just said, git is used through a command line interface that is invoked simply as ``git``. Just type
+As just said, git is used through a command line interface that is invoked simply as ``git``.
+
+Depending on your Operative System, open a terminal (Unix or Mac) or open the Git Bash terminal (Windows).
+
+In the terminal type:
 
 ```bash
 git --help
 ```
 
-and go through the first subcommand suggestions. By the end of this tutorial we will go through most of them. 
+to check that everything is working.
+
+Quickly look through all the commands shown by the help menu. By the end of this course we will go through most of them. 
 
 #### First git configuration
 
