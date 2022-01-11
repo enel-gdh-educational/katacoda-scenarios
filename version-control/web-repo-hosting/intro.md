@@ -8,10 +8,10 @@ Git = a distributed version control tool that can manage a development project's
 
 BitBucket = is a **cloud based platform** built around the Git tool exposing some useful features like:
 
-* Easy Collaboration: share your repository with others (git itself can with the `git-daemon` command, but it's not very handy)
-* Project Management: issue and task tracker
-* Security: repository and branch permission
-* Devops: enable CI/CD processes and pipelines
+* Easy Collaboration: share your repository with others. (git itself can with the `git-daemon` command, but it's not very handy)
+* Project Management: issue and task tracker.
+* Security: repository and branch permission.
+* Devops: enable CI/CD processes and pipelines.
 
 
 ##### Distributed Version Control System
