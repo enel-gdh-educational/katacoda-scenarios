@@ -1,6 +1,6 @@
 #### Solution
 
-`cd /home/scrapbook/tutorial/repo`{{execute}}
+`cd ~/repo/local_working_dir`{{execute}}
 `ls`{{execute}}
 `git merge origin/master`{{execute}}
 `ls`{{execute}}

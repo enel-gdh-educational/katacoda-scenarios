@@ -1,7 +1,7 @@
 #### Solution
 
 
-`cd /home/scrapbook/tutorial/repo`{{execute}}
+`cd ~/repo/local_working_dir`{{execute}}
 `git checkout new_branch`{{execute}}
 `echo "aaa" >> new_feature.py`{{execute}}
 `echo "aaa" >> new_new_feature.py`{{execute}}

@@ -3,10 +3,10 @@
 ##### *Git log*
 
 To see the history of the repository we can use the `git log` command.
- 
+
 It **lists** the **commits** made in that repository in reverse chronological order (most recent show up first)
 
-For each commit it shows SHA-1 checksum, the author’s name and email, the date written, and the commit message.
+For each commit it shows SHA-1 (Secure Hash Algorithm) checksum, the author’s name and email, the date written, and the commit message.
 
 Some of `git log` useful options are:
 - `-p` or `--patch` which shows the difference in each commit  
@@ -18,4 +18,4 @@ Some of `git log` useful options are:
 
 #### Task
 
-Go to `/home/scrapbook/tutorial/repo` and analyze the output of commands `git log`
+Go to `~/repo/local_working_dir` and analyze the output of commands `git log`
