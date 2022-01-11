@@ -11,9 +11,9 @@ If a conflict does exist an error is retrieved and the repository will be in a m
 
 #### Task
 
-Merge content fetched from *origin/master* on your local repositoy.
+Merge content fetched from *origin/master* on your local repository.
 
-- Go to `/home/scrapbook/tutorial/repo`
+- Go to `~/repo/local_working_dir`
 - Run `ls` to see content of local repository
 - Use `git merge <name of remote master branch>` to merge content of remote branch with local one
 - Run `ls`, now you should see new content in the folder

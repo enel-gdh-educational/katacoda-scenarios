@@ -17,18 +17,18 @@ The default commit message for merges is "Merge branch '' of ". These commits ca
 
 #### Task
 
-- Go to remote working repository `/s/repo/working_dir/project`
+- Go to remote working repository `~/repo/remote_working_dir/project`
 - use `git fetch` to fetch remote branches
 - Switch to branch *new_branch*
 - Modify file *new_feature.py* to print "Hello World"
-- Add file *new_feature.py* to staging area 
+- Add file *new_feature.py* to staging area
 - Commit changes
 - Push to remote branch *new_branch*
 - Switch to *master* branch
-- Go to local repository `/home/scrapbook/tutorial/repo`
+- Go to local repository `~/repo/local_working_dir`
 - Switch to branch *new_branch*
 - Create file *new_new_feature.py*
-- Add *new_new_feature.py* to staging area 
+- Add *new_new_feature.py* to staging area
 - Commit modification
 
 If you try to push to *new_branch* Git will throw an error.
@@ -39,4 +39,3 @@ Therefore you need first to align local with remote:
 - Push your modifications to remote branch
 
 Now your branch is aligned with remote and you have pushed your modifications
-

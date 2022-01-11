@@ -8,19 +8,19 @@ When you make a modification on the local repository, you can **share** you work
 	- *remote name* is the friendly name of the remote repository
 	- *destination branch* is the name of the branch to push to
 
-If *destination branch* does not exist in the remote repository, it will be created. 
+If *destination branch* does not exist in the remote repository, it will be created.
 
 To be able to push, **write access** are needed on the remote.
 
 If another user pushed in the meantime, your push will be rejected and you will need to **merge** with new changes **before pushing** again
 
 A typical Git workflow would be to perform **multiple small commits** as you work on a task and **push** to a remote **at relevant points**, such as when the task is completed.
- 
+
  ---
 
 #### Task
 
-- Go to `/home/scrapbook/tutorial/repo`
+- Go to `~/repo/local_working_dir`
 - Create and checkout a new branch *new_branch*
 - Create a new file *new_feature.py*
 - Add the file to staging area with `git add`

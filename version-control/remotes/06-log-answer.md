@@ -1,4 +1,4 @@
 #### Solution
 
-`cd /home/scrapbook/tutorial/repo`{{execute}}
+`cd ~/repo/local_working_dir`{{execute}}
 `git log -p -1`{{execute}}

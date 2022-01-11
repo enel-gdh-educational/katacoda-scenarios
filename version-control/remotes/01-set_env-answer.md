@@ -1,23 +1,23 @@
 #### Solution
 
-`cd /`{{execute}}
+`cd ~`{{execute}}
 
 *Create personal directory*
 
-`mkdir /s/repo/`{{execute}}
+`mkdir repo/`{{execute}}
 
 
-*Create bare remote repository* 
+*Create bare remote repository*
 
-`mkdir /s/repo/remote_repository`{{execute}}
-`git init --bare /s/repo/remote_repository/project.git`{{execute}}
+`mkdir -p repo/remote_repository`{{execute}}
+`git init --bare repo/remote_repository/project.git`{{execute}}
 
 
 *Create remote working directory*
 
-`mkdir /s/repo/working_dir`{{execute}}
-`cd /s/repo/working_dir`{{execute}}
-`git clone /s/repo/remote_repository/project.git`{{execute}}
+`mkdir repo/remote_working_dir`{{execute}}
+`cd repo/remote_working_dir`{{execute}}
+`git clone ~/repo/remote_repository/project.git`{{execute}}
 `cd project`{{execute}}
 `touch base_feature.py`{{execute}}
 `git add base_feature.py`{{execute}}
@@ -27,6 +27,6 @@
 
 *Create local working directory*
 
-`mkdir /home/scrapbook/tutorial/repo`{{execute}}
-`cd /home/scrapbook/tutorial/repo`{{execute}}
+`mkdir -p ~/repo/local_working_dir`{{execute}}
+`cd ~/repo/local_working_dir`{{execute}}
 `git init`{{execute}}
