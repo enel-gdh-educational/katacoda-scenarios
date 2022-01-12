@@ -1,104 +1,41 @@
-#### Let us play more with commits
+#### Key concepts: checkout directory, or the working tree
 
-So far, we did something very simple: started tracking a new file, added it to the staging area, 
-and made our first commit.
+Before going further, let us introduce a key notion in git: the checkout directory, or working directory
+ which is identified as the parent directory of ``.git``. In this example, it is `basic_project`.
 
-Let's simulate the natural evolution of a project, for instance by adding a new line to the ``readme.txt`` file:
+The content of the checkout folder can be aligned by simple commands to any version
+ of the project saved as a commit, by specifying the minimal information to identify it uniquely.
 
-```bash
-echo "Some additional info" >> readme.txt
-```
+This operation is called ``checkout`` and can be applied
+ to all the files included in a repository, or to specific files.
+  
+From the checkout folder, you can make changes to the files, and, eventually,
+ save a new version by committing the changes.
 
-and see how git reacts to this change.
+To know what is the commit currently checked out, just look at the top entry output
+ of the ``git log`` output.
 
----
+From the _git book_: 
+"Think of the working directory as a sandbox,
+ where you can try changes out before committing them to your staging area (index) and then to history."
 
-__Question 1__
+Finally, _working tree_ is a synonym for checkout folder.
 
-Explain the output of ``git status`` after the change.
+#### Key concepts: staging area
 
----
+We are now ready to give a better definition of the staging area. This area is also called _index_ or _cache_. 
+It is simplest to think of it as the _proposed next commit_, and, until you call ``git add``, it is a compressed tree which content 
+coincides with the last commit that you have checked out.
+When you start _git adding_ files, ``git`` applies the changes from the working tree to the index,
+e.g. adding new files, moving, deleting, or modifying the existing ones. If any change has been applied you can make a new commit,
+ that will look exactly like the index.
 
+#### To revise 
+Probably, the most definitive explaination of the concepts of working tree, index and are in the first part 
+of [this page of the Git book](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified).
 
-Ok, let us create a new file in the checkout folder:
+See also [this page of the Git book](https://git-scm.com/book/it/v2/Git-Basics-Recording-Changes-to-the-Repository).
 
-```bash
-echo "print('Hello world')" > hello_world.py
-```
-
-Most likely, you would like to view all the changes that you have
-introduced in your checkout folder.
-
-Git can list for you at any time the difference between the present content of the checkout folder and the content of
- the commit that you have checked out. Just type
-
-```bash
-git diff
-```
-
----
-
-__Question 2__
-
-Explain the output of ``git diff`` after the change.
-
----
-
-
-__Tips for the experts__
-Let us point out that it is not git that calculates the differences, but git rather extracts the content of the reference commit
-and provides it together with the content of the checkout folder to a data comparison tool, ``diff`` by default.
-
-However, this is configurable; for instance you can instruct ``git`` to use ``vimdiff``.
-
-```bash
-git config diff.tool vimdiff
-```
-and try how different the output of `git diff` looks.
-
-
----
-
-
-Our goal is now to save a version of the latest changes. 
-
-To this aim, we first have to _stage_ the modified file via:
-
-```bash
-git add readme.txt
-```
-
-N.B. this time the effect of ``git add`` is only that of adding the changes to the staging area, since `readme.txt` was already tracked by git.
-
-
-
-__Exercise 1__
-
-Let git start tracking the newly created file ``hello_world.py``, verify the addition,
- and check the inclusion in the staging area. 
-___
-
-
-Check again the output of `git diff`. 
-
-It is now empty! Why is that? Because by default it is comparing the *current commit* with the *working directory*:
-there are no differences because all the modified/added files have been
-moved to the *staging area*.
-
-Why the files have been moved to the *staging area*? Because we used the
-`git add` command which moves a file from the *working directory* to the
-*staging area*.
-
-Why do we need to move the modified files from the *working directory* to the
-*staging area*? Because the *working directory* is intended as the area
-where you experiment and work with your files, while the *staging area* 
-is intended as the area where your changes are ready to be committed.
-
-So, how to compare the *current commit* with the *staging area*? Use:
-
-`git diff --staged`
-
----
 
 __Tips for the experts__
 
@@ -120,52 +57,70 @@ Commands like ``git status`` know that changes have been staged by comparing
 __
 
 
-Well, enought talking. Let us make a new commit:
+Let's now add a new line to the file ``hello_world.py``:
 
 ```bash
-git commit
+echo "print('Hello again')" >> hello_world.py
 ```
 
-this time without the `-m` to specify a commit message. You will be redirected to a text editor, 
-and asked to write a commit message and save it.
+Normally, you would like to view all the changes that you have
+introduced in your checkout folder.
 
-The editor is `nano`, therefore after having written your message, 
-type `Ctrl^O, Enter`, to save the file and `Ctrl^X` to exit.
-
-On Windows, the default editor is `Notepad++`, therefore after having 
-written your message simply save the file and exit.
-
-Once more, you can instruct git to use an editor other than the default one. 
-Say, you are more familiar with ``vim``, you can set it as the git editor via:
+Git can list for you at any time the difference between the present content of the checkout folder and the content of
+ the commit that you have checked out. Just type
 
 ```bash
-git config core.editor vim
+git diff
 ```
 
-#### A commit is not like a kiss! You remember the second one better than the first.
+---
 
-Now that we have a first and a **subsequent** commit, we should have a look at some interesting features of git.
+__Question 1__
 
-You have seen previously that a commit is basically a set of objects stored under `.git/objects/`
+Explain the output of ``git diff`` after the change.
 
-that contain the metadata of the commit, the tree of file, and the content of each committed file (blob objects).
+---
 
-In git, all commits but the first include in their metadata the id of the parent commit. 
 
-___
+__Tips for the experts__
+Let us point out that it is not git that calculates the differences, but git rather extracts the content of the reference commit
+and provides it together with the content of the checkout folder to a data comparison tool, ``diff`` by default.
 
-__Exercise 2__
+However, this is configurable; for instance you can instruct ``git`` to use ``vimdiff``.
 
-Check what is the parent commit of the last commit, from the content of its commit object.
+```bash
+git config diff.tool vimdiff
+```
+and try how different the output of `git diff` looks.
 
-List all the content stored in the commit.
 
-Hint:
+---
 
-- First, check the id of the last commit 
-- Second, check the content of the object identified by this id
-- Third, similar to exercise 2, browse the content of the commit
+Let's now add the modified file to the staging area,
+and check again the output of `git diff`. 
 
---- 
+It is now empty! Why is that? Because by default it is comparing the *current commit* with the *working directory*:
+there are no differences because all the modified/added files have been
+moved to the *staging area*.
 
- 
+Why the files have been moved to the *staging area*? Because we used the
+`git add` command which moves a file from the *working directory* to the
+*staging area*.
+
+Why do we need to move the modified files from the *working directory* to the
+*staging area*? Because the *working directory* is intended as the area
+where you experiment and work with your files, while the *staging area* 
+is intended as the area where your changes are ready to be committed.
+
+So, how to compare the *current commit* with the *staging area*? Use:
+
+`git diff --staged`
+
+---
+
+#### Summary
+Let's briefly recap the concepts and the commands we learned so far:
+- working directory
+- stagin area
+- git diff
+

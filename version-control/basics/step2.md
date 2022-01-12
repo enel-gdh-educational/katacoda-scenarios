@@ -92,46 +92,8 @@ Starting from the inspection of the file named after the id of your commit, cont
 
 ---
 
-#### Checkout directory, or the working tree
-
-Before going further, let us introduce a key notion in git: the checkout directory,
- which is identified as the parent directory of ``.git``. In this example, it is `basic_project`.
-
-The content of the checkout folder can be aligned by simple commands to any version
- of the project saved as a commit, by specifying the minimal information to identify it uniquely.
-
-This operation is called ``checkout`` and can be applied
- to all the files included in a repository, or to specific files.
-  
-From the checkout folder, you can make changes to the files, and, eventually,
- save a new version by committing the changes.
-
-To know what is the commit currently checked out, just look at the top entry output
- of the ``git log`` output.
-
-From the _git book_: 
-"Think of the working directory as a sandbox,
- where you can try changes out before committing them to your staging area (index) and then to history."
-
-Finally, _working tree_ is a synonym for checkout folder.
-
-#### Staging area, again.
-
-We are now ready to give a better definition of the staging area. This area is also called _index_ or _cache_. 
-It is simplest to think of it as the _proposed next commit_, and, until you call ``git add``, it is a compressed tree which content 
-coincides with the last commit that you have checked out.
-When you start _git adding_ files, ``git`` applies the changes from the working tree to the index,
-e.g. adding new files, moving, deleting, or modifying the existing ones. If any change has been applied you can make a new commit,
- that will look exactly like the index.
-
-#### To revise 
-Probably, the most definitive explaination of the concepts of working tree, index and are in the first part 
-of [this page of the Git book](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified).
-
-
 #### Summary
 Let's briefly recap the concepts and the commands we learned so far:
 - git log
 - commit id
-- working tree
-- staging area
+
