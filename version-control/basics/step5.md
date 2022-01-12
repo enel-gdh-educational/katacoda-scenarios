@@ -1,133 +1,173 @@
-### Jumping between versions
+### Special changes, move, rename, and delete.
 
-We have done a big walk through the basic git capabilities, and now it is time to use it for what it is, a version control system
-from which we expect to be able to check out any past version of the project.
-
-In fact, what we aim for is the ability to put to populate the work tree with the content of any stored commit.
-Such an action is called _checking out a version_ and is accomplished by the command ``git checkout``. In its basic form, 
-this command requires you to specify the id of the commit you want to checkout.
-
-For instance, pick up the id second to last commit:
-
-```bash
-commit 7ce1a99c6a97ec648cd5986dbebb288aed1fd28a (HEAD -> master)
-Author: Andrea Massaia <andrea.massaia@enel.com>
-Date:   Sun May 9 21:59:03 2021 +0000
-
-    Added .gitignore
-
-commit 554a6d2cf62225ed96d901d6cd09ad72dc38907e
-Author: Andrea Massaia <andrea.massaia@enel.com>
-Date:   Sun May 9 21:59:03 2021 +0000
-
-    readme deleted. It was too bad...
-
-commit a4c58aa9e4cf70182c92b0c0ddc2bbabf6210065
-Author: Andrea Massaia <andrea.massaia@enel.com>
-Date:   Sun May 9 21:59:03 2021 +0000
-
-    Some renaming and file repositioning
-...
-```
-
-The commit message tells you how the last commit differs from its parent, but to be more precise you can:
-
-```bash
-git diff 434d4fe9720862c637a83de7df99135b7c28f6c7
-```
-
-and we realize that in the previous commit the file `.gitignore` is missing.
-
-
-Finally checkout the previous commit:
-
-```bash
-git checkout 434d4fe9720862c637a83de7df99135b7c28f6c7
-```
-
-___
-
-__Question 1__
-
-How can you make sure that the commit that has been checked out is the right one? (Even though, the output should be talkative enough).
-___
-
-As you've noticed, the output of `git checkout` tells you that you are in a detached HEAD state. There will be a dedicated session to explain this concept,
- so we are not going in detail. For now, let's just say that a detached HEAD state should be treated with a lot of care! 
-
-To get back to the previous commit, you should run:
+So far we have dealt with how you let git know about the addition of new files, and changes to the content of existing files.
+What about renaming or moving files? Say, you want to rename ``hello_world.py`` in ``hello_world_v1.py``.
+ Git has a command that does rename your file and add this change to the staging area in one shot.
  
  ```bash
-git checkout master
+git mv hello_world.py my_first_hello_world.py
 ```
 
-This may seem a bit unclear for now, but until tomorrow let's assume it's a safe escape word!
-The next scenario will go into details about evereything `git checkout` can do.
-For instance, __you could also checkout a single file__, meaning that you don't point to a different commit, but you just pick up a file from a different commit
- and copy it into the staging area and the worktree.
-
-
-
-### Tags
-However checking out a commit by its id is very tedious. In truth, `git` is smart enough to let you specify only the first
- digits of the commit id. How many digits? Enough to identify uniquely the commit, namely those which form an initial pattern owned by only one
- commit.
- 
-But, you know, you would like to give simple tags to the commits, to find them out easily. This is the typical case of a project release,
-in which you want to tag the commit of the release with the release number.
-
-Let us say that the second to last commit coincides with the release ``v1.0`` of `basic_project`. You can run:
-
-```bash
-git tag "v1.0"
-```
-
-and check that a tag has been added via simply:
-
-```bash
-git tag 
-```
-
-The interesting thing is that you can checkout a commit by its tag, which is way more practical.
-
-___
+---
 
 __Exercise 1__
 
-Prove the previous statement
-___
+Make sure that the renaming has been performed and staged. Then commit the change.
 
-### Grepping files
+---
 
-In every day work, it is very common that you might need to look for what file contains a certain pattern, say an instruction.
+Now, you might wonder why there a special command exist to achieve this. In fact, it is not necessary to use ``git mv``,
+and we encourage you to try it (and realize it is a bad idea):
 
-For instance, in our project we might want to look what files contains the `print` instruction. For that, you just run
-
-```bash
-git grep -e "print"
-```
-
-which will output `hello_world.py`. However, it only looks in the files which are tracked by `git`. 
-
-___
+---
 
 __Exercise 2__
 
-Prove the previous statement
+Rename the file README.txt in readme.txt by using regular `mv`, then stage the changes and commit them. 
+
+Oh, before I forget....good luck!
+
+---
+ 
+As you should know, if you have some experience with Linux, renaming a file is a special case of moving a file.
+
 ___
 
-The syntax of `git-grep` is substantially identical to the standard Unix `grep`.
+__Exercise 3__
+
+
+Create the folder `src` and move the file ``my_first_hello_world.py`` into it.
+Then stage, and commit the changes.
+
+_N.B._ There is no special ``git`` command to make a new folder.
+___
+
+
+Finally, you might want to delete a file, and save the change forever. 
+
+Let us sacrifice ``readme.md``.
+
+```bash
+git rm readme.md
+git commit -m "readme deleted. It was too bad..."
+```
+
+There could be times when yo just want ``git`` stop tracking a file, but you might want to keep it in the worktree.
+
+For this you should add the flag `--cached` to `git rm`.
+
+
+___
+
+__Exercise 4__
+
+Stop tracking the python script. Before commiting, add it back to the index.
+___
+
+
+___
+
+__Tip for the experts__
+
+In git you can only track files, not folders. `git` is aware of the tree structure
+ through the placement of files in folders, therefore _no files -> no tracking_!
+ 
+You can check this by creating an empty folder, then trying to ``git add`` it.
+
+If you want an empty folder to be tracked, we suggest to make it _quasi-empty_, by including a file named ".gitignore"
+in the folder.
+
+Why ``.gitignore``? Well, any file would do the job, but this is empty (see the leading dot), and it's a file relevant for ``git``.
+
+___
 
 
 
-#### Additional content
+### `git commit -a` is bad, `git commit -A` is the devil! 
 
-Over the next days, we will explore additional commands that give you a lot of power and flexibility over the versions of your repo.
-If you can't wait, you could start experimenting with some of those, such as:
+Let us admit it, adding file one by one is tedious, so if there were a method to spare time everyone would be tempted to use it.
+Actually, that method exists and is
 
-- ``git commit --amend``: [guide](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History#_git_amend)
+```bash
+git commit -a
+```
 
-- ``git revert``: [guide](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert)
+which basically `git adds` all the files that have changes (in their content, name, placing etc.) and had been already tracked by `git`.
 
-- ``git reset``: [guide](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified)
+This means that you won't revise what files you are actually going to commit, to avoid committing accidental changes.
+ 
+ Also, if you wanted to start tracking new files, this command wouldn't help.
 
+Even worse, the form
+
+```bash
+git commit -A
+```
+
+will commit _all files_ in the work tree, even those that have been accidentally created, which is very common in software development.
+
+Instead, we suggest to revise the changes one by one before adding them. There are GUIs like GitKraken that help you with this.
+
+A valid alternative is the interactive add:
+
+```bash
+git commit -i
+``` 
+
+ To conclude, if anyone recommends you to use ``git commit -a`` or ``git commit -A``, you can tell them this story:
+ 
+ "Once upon a day an instructor said to me that some day,
+  I would certainly meet an dummy suggesting me to use ``git commit -a``. I guess that moment has come."
+  
+  
+ ___
+
+__Remember__ that you can always unstage a file, that is, perform the opposite operation than ``git add`` via the command:
+
+```bash
+git restore  <filename>
+```
+or 
+```bash
+git reset  <filename>
+```
+___
+
+### `.gitignore`
+
+You should have noticed that when you add a file in the work tree, ``git status`` lists it under _untracked files_.
+You will eventually add that file and commit it, but sometimes there are files that you do not want to track at all.
+
+For instance, it is customary to never track object and data files in software projects, such as `.o` files in C/C++,
+`.jar` in JAVA, `.pyc` in Python and the like. Also some IDE write their own scratch or checkpoint folders (e.g. PyCharm creates `.idea`).
+
+In a `git` repository you should track only the source code. Therefore, __do not__ store objects, executable files, data, compiled documentation,
+binary files unless strictly necessary (that is, never), but __do__ store default configurations, documentation source, 
+static immutable files).
+
+There are several good reason for that, bu the main perhaps is that _should_ be avoided because they _can_ be avoided.
+ In fact, such kind of files can be recreated at any time fron the source code, e.g. objects
+  and executable result from a build, documentation can be rendered into html or pdf through compilation,
+ and configurations should be user-defined, therefore a default or example configuration is enough.
+ 
+ You should always keep your repository as lightweight as possible, so that it faster to clone. Moreover, ``git`` cannot calculate the diff 
+ of binary objects in an efficient way, so the compression would be inefficient, the updates become slow.
+ 
+ So, how can you tell `git` to avoid signalling untracked files? You just list the files that you do not want to track in a file
+ named `.gitignore` and place it in the root of the worktree. It is detailed [here](https://git-scm.com/docs/gitignore). 
+ 
+Instead of creating a ``.gitignore`` file for your own project, check for [``.gitignore`` templates](https://github.com/github/gitignore)
+ on Github. There are templates for all programming languages, and if your project is multi-language, just merge multiple `.gitignore` files.
+
+__A .gitignore file is a key component of a repository__, as it allows to keep it lightweight and avoid tracking undesirable files.
+
+___
+
+__Exercise 5__
+
+1. Create two files named `foo` and `bar`. 
+2. Let `git status` not mention them among the untracked files.
+3. Add the bar file, even though `git` has been told to not track it.
+4. Finally, commit specifying in the message that the .gitignore was added
+
+___

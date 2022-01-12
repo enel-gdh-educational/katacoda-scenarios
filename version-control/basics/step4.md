@@ -1,173 +1,171 @@
-### Special changes, move, rename, and delete.
+#### Let us play more with commits
 
-So far we have dealt with how you let git know about the addition of new files, and changes to the content of existing files.
-What about renaming or moving files? Say, you want to rename ``hello_world.py`` in ``hello_world_v1.py``.
- Git has a command that does rename your file and add this change to the staging area in one shot.
- 
- ```bash
-git mv hello_world.py my_first_hello_world.py
+So far, we did something very simple: started tracking a new file, added it to the staging area, 
+and made our first commit.
+
+Let's simulate the natural evolution of a project, for instance by adding a new line to the ``readme.txt`` file:
+
+```bash
+echo "Some additional info" >> readme.txt
+```
+
+and see how git reacts to this change.
+
+---
+
+__Question 1__
+
+Explain the output of ``git status`` after the change.
+
+---
+
+
+Ok, let us create a new file in the checkout folder:
+
+```bash
+echo "print('Hello world')" > hello_world.py
+```
+
+Most likely, you would like to view all the changes that you have
+introduced in your checkout folder.
+
+Git can list for you at any time the difference between the present content of the checkout folder and the content of
+ the commit that you have checked out. Just type
+
+```bash
+git diff
 ```
 
 ---
+
+__Question 2__
+
+Explain the output of ``git diff`` after the change.
+
+---
+
+
+__Tips for the experts__
+Let us point out that it is not git that calculates the differences, but git rather extracts the content of the reference commit
+and provides it together with the content of the checkout folder to a data comparison tool, ``diff`` by default.
+
+However, this is configurable; for instance you can instruct ``git`` to use ``vimdiff``.
+
+```bash
+git config diff.tool vimdiff
+```
+and try how different the output of `git diff` looks.
+
+
+---
+
+
+Our goal is now to save a version of the latest changes. 
+
+To this aim, we first have to _stage_ the modified file via:
+
+```bash
+git add readme.txt
+```
+
+N.B. this time the effect of ``git add`` is only that of adding the changes to the staging area, since `readme.txt` was already tracked by git.
+
+
 
 __Exercise 1__
 
-Make sure that the renaming has been performed and staged. Then commit the change.
+Let git start tracking the newly created file ``hello_world.py``, verify the addition,
+ and check the inclusion in the staging area. 
+___
+
+
+Check again the output of `git diff`. 
+
+It is now empty! Why is that? Because by default it is comparing the *current commit* with the *working directory*:
+there are no differences because all the modified/added files have been
+moved to the *staging area*.
+
+Why the files have been moved to the *staging area*? Because we used the
+`git add` command which moves a file from the *working directory* to the
+*staging area*.
+
+Why do we need to move the modified files from the *working directory* to the
+*staging area*? Because the *working directory* is intended as the area
+where you experiment and work with your files, while the *staging area* 
+is intended as the area where your changes are ready to be committed.
+
+So, how to compare the *current commit* with the *staging area*? Use:
+
+`git diff --staged`
 
 ---
 
-Now, you might wonder why there a special command exist to achieve this. In fact, it is not necessary to use ``git mv``,
-and we encourage you to try it (and realize it is a bad idea):
+__Tips for the experts__
 
----
+This is probably the right time to tell you more about the staging area. Let me remind you that
+in git jargon the words `stage`, `cache`, and `index` are used interchangeably.
+
+You might be wondering what the staging area actually is, and the answer is nothing but a special
+file ``.git/index``. This file has a complex encoding, so it is not human readable,
+ as you will have discovered if you tried to open it.
+
+By default, this content of this file matches that of the commit that is checked out.
+
+However, when you stage some modifications of your work tree through ``git add``,
+ these are reflected in ``.git/index``, whose content changes.
+
+Commands like ``git status`` know that changes have been staged by comparing
+ the index against the content of the commit that is checked out.
+
+__
+
+
+Well, enought talking. Let us make a new commit:
+
+```bash
+git commit
+```
+
+this time without the `-m` to specify a commit message. You will be redirected to a text editor, 
+and asked to write a commit message and save it.
+
+The editor is `nano`, therefore after having written your message, 
+type `Ctrl^O, Enter`, to save the file and `Ctrl^X` to exit.
+
+On Windows, the default editor is `Notepad++`, therefore after having 
+written your message simply save the file and exit.
+
+Once more, you can instruct git to use an editor other than the default one. 
+Say, you are more familiar with ``vim``, you can set it as the git editor via:
+
+```bash
+git config core.editor vim
+```
+
+#### A commit is not like a kiss! You remember the second one better than the first.
+
+Now that we have a first and a **subsequent** commit, we should have a look at some interesting features of git.
+
+You have seen previously that a commit is basically a set of objects stored under `.git/objects/`
+
+that contain the metadata of the commit, the tree of file, and the content of each committed file (blob objects).
+
+In git, all commits but the first include in their metadata the id of the parent commit. 
+
+___
 
 __Exercise 2__
 
-Rename the file README.txt in readme.txt by using regular `mv`, then stage the changes and commit them. 
+Check what is the parent commit of the last commit, from the content of its commit object.
 
-Oh, before I forget....good luck!
+List all the content stored in the commit.
 
----
+Hint:
+
+- First, check the id of the last commit 
+- Second, check the content of the object identified by this id
+- Third, similar to exercise 2, browse the content of the commit
+
+--- 
+
  
-As you should know, if you have some experience with Linux, renaming a file is a special case of moving a file.
-
-___
-
-__Exercise 3__
-
-
-Create the folder `src` and move the file ``my_first_hello_world.py`` into it.
-Then stage, and commit the changes.
-
-_N.B._ There is no special ``git`` command to make a new folder.
-___
-
-
-Finally, you might want to delete a file, and save the change forever. 
-
-Let us sacrifice ``readme.md``.
-
-```bash
-git rm readme.md
-git commit -m "readme deleted. It was too bad..."
-```
-
-There could be times when yo just want ``git`` stop tracking a file, but you might want to keep it in the worktree.
-
-For this you should add the flag `--cached` to `git rm`.
-
-
-___
-
-__Exercise 4__
-
-Stop tracking the python script. Before commiting, add it back to the index.
-___
-
-
-___
-
-__Tip for the experts__
-
-In git you can only track files, not folders. `git` is aware of the tree structure
- through the placement of files in folders, therefore _no files -> no tracking_!
- 
-You can check this by creating an empty folder, then trying to ``git add`` it.
-
-If you want an empty folder to be tracked, we suggest to make it _quasi-empty_, by including a file named ".gitignore"
-in the folder.
-
-Why ``.gitignore``? Well, any file would do the job, but this is empty (see the leading dot), and it's a file relevant for ``git``.
-
-___
-
-
-
-### `git commit -a` is bad, `git commit -A` is the devil! 
-
-Let us admit it, adding file one by one is tedious, so if there were a method to spare time everyone would be tempted to use it.
-Actually, that method exists and is
-
-```bash
-git commit -a
-```
-
-which basically `git adds` all the files that have changes (in their content, name, placing etc.) and had been already tracked by `git`.
-
-This means that you won't revise what files you are actually going to commit, to avoid committing accidental changes.
- 
- Also, if you wanted to start tracking new files, this command wouldn't help.
-
-Even worse, the form
-
-```bash
-git commit -A
-```
-
-will commit _all files_ in the work tree, even those that have been accidentally created, which is very common in software development.
-
-Instead, we suggest to revise the changes one by one before adding them. There are GUIs like GitKraken that help you with this.
-
-A valid alternative is the interactive add:
-
-```bash
-git commit -i
-``` 
-
- To conclude, if anyone recommends you to use ``git commit -a`` or ``git commit -A``, you can tell them this story:
- 
- "Once upon a day an instructor said to me that some day,
-  I would certainly meet an dummy suggesting me to use ``git commit -a``. I guess that moment has come."
-  
-  
- ___
-
-__Remember__ that you can always unstage a file, that is, perform the opposite operation than ``git add`` via the command:
-
-```bash
-git restore  <filename>
-```
-or 
-```bash
-git reset  <filename>
-```
-___
-
-### `.gitignore`
-
-You should have noticed that when you add a file in the work tree, ``git status`` lists it under _untracked files_.
-You will eventually add that file and commit it, but sometimes there are files that you do not want to track at all.
-
-For instance, it is customary to never track object and data files in software projects, such as `.o` files in C/C++,
-`.jar` in JAVA, `.pyc` in Python and the like. Also some IDE write their own scratch or checkpoint folders (e.g. PyCharm creates `.idea`).
-
-In a `git` repository you should track only the source code. Therefore, __do not__ store objects, executable files, data, compiled documentation,
-binary files unless strictly necessary (that is, never), but __do__ store default configurations, documentation source, 
-static immutable files).
-
-There are several good reason for that, bu the main perhaps is that _should_ be avoided because they _can_ be avoided.
- In fact, such kind of files can be recreated at any time fron the source code, e.g. objects
-  and executable result from a build, documentation can be rendered into html or pdf through compilation,
- and configurations should be user-defined, therefore a default or example configuration is enough.
- 
- You should always keep your repository as lightweight as possible, so that it faster to clone. Moreover, ``git`` cannot calculate the diff 
- of binary objects in an efficient way, so the compression would be inefficient, the updates become slow.
- 
- So, how can you tell `git` to avoid signalling untracked files? You just list the files that you do not want to track in a file
- named `.gitignore` and place it in the root of the worktree. It is detailed [here](https://git-scm.com/docs/gitignore). 
- 
-Instead of creating a ``.gitignore`` file for your own project, check for [``.gitignore`` templates](https://github.com/github/gitignore)
- on Github. There are templates for all programming languages, and if your project is multi-language, just merge multiple `.gitignore` files.
-
-__A .gitignore file is a key component of a repository__, as it allows to keep it lightweight and avoid tracking undesirable files.
-
-___
-
-__Exercise 5__
-
-1. Create two files named `foo` and `bar`. 
-2. Let `git status` not mention them among the untracked files.
-3. Add the bar file, even though `git` has been told to not track it.
-4. Finally, commit specifying in the message that the .gitignore was added
-
-___

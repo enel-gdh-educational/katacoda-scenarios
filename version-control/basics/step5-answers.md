@@ -1,55 +1,121 @@
-___
-
-__Question 1__
-
-In two ways:
-
-```bash
-git status
-```
-
-would tell you what commit the worktree points too
-
-Or, just check the absence of the file ``.gitignore``
-___
-
-___
+---
 
 __Exercise 1__
 
-
-Checkout a commit other than the latest:
-
-```bash
-git checkout HEAD~
-```
-
-Now check the latest commit by referencing its tag
-
-```bash
-git checkout v0.1
-```
-
-Finally, 
+Check the output of
 
 ```bash
 git status
 ```
-will tell you where you are.
-___
+, which should look like this
+
+    $ git status
+    On branch master
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+    
+            renamed:    hello_world.py -> hello_world_v1.py
+
+
+    $ git commit -m "hello_world renamed"
+---
+
+
+
+
+---
 
 __Exercise 2__
 
-First, write a pattern in a non-tracked file:
 
 ```bash
-echo "hello" > foo
+mv README.md readme.md
 ```
 
-then, grep it: 
+Take a second to understand what has happened by looking at the output of ``git status``. Then
 
 ```bash
-git grep -e "hello"
+$ git add README.md
+$ git add readme.md
+$ git commit -m "README renamed"
+
 ```
-and this shouldn't return anything.
+
+Alternatively, you might have used `git rm` as suggested by `git status`
+
+```bash
+
+mv README.md readme.md
+
+$ git rm README.md
+$ git add readme.md
+$ git commit -m "README renamed"
+```
+
+---
+
+___
+
+__Exercise 3__
+
+
+```bash
+$ mkdir src
+$ git mv my_first_hello_world.py src/
+$ git status #have a look at the output
+$ git commit
+```
+
+As usual, you might not use ``git mv`` and figure out how to commit the changes without.
+___
+
+
+
+___
+
+__Exercise 4__
+
+```bash
+git rm --cached src/*.py
+git add src/*.py
+```
+
+there is no need to commit, since ``git`` will look at the index and realize that, effectively, nothing has changed.
+___
+
+
+___
+
+__Exercise 5__
+
+First, create the two (empty) files by using `touch <filename>`:7
+```bash
+touch foo
+touch bar
+
+```
+ 
+Then, add them to the .gitignore file, and track it in `git`:
+
+```bash
+echo "foo" >> .gitignore
+echo "bar" >> .gitignore
+git add .gitignore
+
+```
+
+The output of 
+```bash
+git add foo bar
+```
+suggests to us `--force` flag, therefore 
+
+```bash
+git add -f bar
+```
+
+Finally, commit the changes:
+```bash
+git commit -m ".gitignore added"
+```
 ___
