@@ -54,7 +54,7 @@ However, when you stage some modifications of your work tree through ``git add``
 Commands like ``git status`` know that changes have been staged by comparing
  the index against the content of the commit that is checked out.
 
-__
+---
 
 
 Let's now add a new line to the file ``hello_world.py``:
@@ -67,7 +67,7 @@ Normally, you would like to view all the changes that you have
 introduced in your checkout folder.
 
 Git can list for you at any time the difference between the present content of the checkout folder and the content of
- the commit that you have checked out. Just type
+ the commit that you have checked out. Just type:
 
 ```bash
 git diff
@@ -121,6 +121,6 @@ So, how to compare the *current commit* with the *staging area*? Use:
 #### Summary
 Let's briefly recap the concepts and the commands we learned so far:
 - working directory
-- stagin area
+- staging area
 - git diff
 

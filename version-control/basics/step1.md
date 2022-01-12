@@ -48,7 +48,7 @@ _Hint_: type ``git config`` with no options, and look for the option to list all
 #### Your first git repo
 
 Ok, now that we have done the _paperwork_, let's start playing with a repository. 
-Create and move to the folder ``basic_project``:
+Create and navigate to the folder ``basic_project``:
 
 ```bash
 mkdir basic_project
@@ -57,7 +57,7 @@ cd basic_project
 
 or create and navigate in it manually using the folder window.
 
-Now, create your first git repo with:
+Now, create your first git repository with:
 
 ```bash
 git init
