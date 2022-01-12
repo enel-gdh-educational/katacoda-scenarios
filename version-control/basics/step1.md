@@ -164,12 +164,12 @@ Congratulations!
 
 
 #### Summary
-Let's briefly recap the commands we learned so far:
+Let's briefly recap the concepts and the commands we learned so far:
 - git config
-- git init
+- git init and repositories
 - git status
 - git add
-- git commit
+- git commit and commits
 
 
 Before, you go to the next step, we suggest to take a couple of minutes to watch [this video](https://www.youtube.com/watch?v=t6GMcIoCD9Q).
