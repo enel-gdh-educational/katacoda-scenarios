@@ -1,7 +1,7 @@
 ### Special changes, move, rename, and delete.
 
 So far we have dealt with how you let git know about the addition of new files, and changes to the content of existing files.
-What about renaming or moving files? Say, you want to rename ``hello_world.py`` in ``hello_world_v1.py``.
+What about renaming or moving files? Say, you want to rename ``hello_world.py`` in ``my_first_hello_world.py``.
  Git has a command that does rename your file and add this change to the staging area in one shot.
  
  ```bash
@@ -23,7 +23,9 @@ and we encourage you to try it (and realize it is a bad idea):
 
 __Exercise 2__
 
-Rename the file README.txt in readme.txt by using regular `mv`, then stage the changes and commit them. 
+Rename the file readme.txt in my_readme.txt by using regular `mv` 
+(or `ren` on Windows or manually in the folder window), 
+then stage the changes and commit them. 
 
 Oh, before I forget....good luck!
 
@@ -45,10 +47,10 @@ ___
 
 Finally, you might want to delete a file, and save the change forever. 
 
-Let us sacrifice ``readme.md``.
+Let us sacrifice ``readme.txt``.
 
 ```bash
-git rm readme.md
+git rm readme.txt
 git commit -m "readme deleted. It was too bad..."
 ```
 
@@ -92,7 +94,7 @@ Actually, that method exists and is
 git commit -a
 ```
 
-which basically `git adds` all the files that have changes (in their content, name, placing etc.) and had been already tracked by `git`.
+which basically `git add`s all the files that have changes (in their content, name, placing etc.) and had been already tracked by `git`.
 
 This means that you won't revise what files you are actually going to commit, to avoid committing accidental changes.
  
@@ -111,7 +113,7 @@ Instead, we suggest to revise the changes one by one before adding them. There a
 A valid alternative is the interactive add:
 
 ```bash
-git commit -i
+git add -i
 ``` 
 
  To conclude, if anyone recommends you to use ``git commit -a`` or ``git commit -A``, you can tell them this story:
@@ -125,7 +127,7 @@ git commit -i
 __Remember__ that you can always unstage a file, that is, perform the opposite operation than ``git add`` via the command:
 
 ```bash
-git restore  <filename>
+git restore --staged <filename>
 ```
 or 
 ```bash

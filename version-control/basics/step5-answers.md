@@ -14,7 +14,7 @@ git status
     Changes to be committed:
       (use "git reset HEAD <file>..." to unstage)
     
-            renamed:    hello_world.py -> hello_world_v1.py
+            renamed:    hello_world.py -> my_first_hello_world.py.py
 
 
     $ git commit -m "hello_world renamed"
@@ -35,8 +35,8 @@ mv README.md readme.md
 Take a second to understand what has happened by looking at the output of ``git status``. Then
 
 ```bash
-$ git add README.md
 $ git add readme.md
+$ git add my_readme.md
 $ git commit -m "README renamed"
 
 ```
@@ -47,8 +47,8 @@ Alternatively, you might have used `git rm` as suggested by `git status`
 
 mv README.md readme.md
 
-$ git rm README.md
-$ git add readme.md
+$ git rm readme.md
+$ git add my_readme.md
 $ git commit -m "README renamed"
 ```
 
