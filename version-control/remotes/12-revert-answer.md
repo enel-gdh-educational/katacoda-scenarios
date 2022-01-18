@@ -1,6 +1,6 @@
 #### Solution
 
-`cd ~/repo/local_working_dir`{{execute}}
+`cd ~/repo/local_working_dir/project`{{execute}}
 `git checkout new_branch`{{execute}}
 `echo "print('Buongiornissimo')" >> new_new_feature.py`{{execute}}
 `git add new_new_feature.py`{{execute}}

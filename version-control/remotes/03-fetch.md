@@ -13,7 +13,7 @@ After you do this, you should have references to all the branches from that remo
 #### Task
 
 Changes have been made in the origin repository.
-- Go to `~/repo/local_working_dir`
+- Go to `~/repo/local_working_dir/project`
 - Use `git branch -a` to list all the branches available
 - Use `git fetch` to download the changes in the remote repository
 - Use `git branch -a` to list all the branches available

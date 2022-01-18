@@ -11,7 +11,7 @@ To modify or undo a commit you can use:
 
 #### Task
 
-- Go to `~/repo/local_working_dir`
+- Go to `~/repo/local_working_dir/project`
 - Switch to branch *new_branch*
 - Modify *new_new_feature.py* to print "Buongiornissimo"
 - Add *new_new_feature.py* to the staging area

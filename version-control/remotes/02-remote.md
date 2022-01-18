@@ -18,7 +18,7 @@ Once set, some operations on **remotes** are:
 `git remote rename` changes all remote-tracking branch names also
 - **remove a remote**, either using `git remote remove <friendly name>` or `git remote rm <friendly name>`.
     Once the reference to a remote is deleted, all remote-tracking branches and configuration settings associated with that remote are also deleted
-- **list remotes** configured, runnig the `git remote` command to see the **names** or using option `-v` which shows the URLs stored for the friendly name
+- **list remotes** configured, running the `git remote` command to see the **names** or using option `-v` which shows the URLs stored for the friendly name
 - **see more information** about a remote, we can use `git remote show <remote name>` command, which lists the *URL* for the remote repository as well as the tracking branch information  
 
 ---
@@ -46,7 +46,7 @@ Git automatically knows which server to fetch from and which branch to merge in 
 #### Task
 
 The remote repository location of this scenario is `repo/remote_repository/project.git`.
-- Go to `repo/local_working_dir`.
+- Go to `repo/local_working_dir/project`.
 - Set this remote location with the name *origin* using `git remote add`.
 - Run `git remote -v` to see the remote you have set
 - Change remote friendly name from *origin* to *root*

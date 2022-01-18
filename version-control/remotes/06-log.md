@@ -18,4 +18,4 @@ Some of `git log` useful options are:
 
 #### Task
 
-Go to `~/repo/local_working_dir` and analyze the output of commands `git log`
+Go to `~/repo/local_working_dir/project` and analyze the output of commands `git log`

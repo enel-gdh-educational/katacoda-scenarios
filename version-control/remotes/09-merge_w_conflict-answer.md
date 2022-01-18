@@ -11,7 +11,7 @@
 `git push origin new_branch`{{execute}}
 `git checkout master`{{execute}}
 
-`cd ~/repo/local_working_dir`{{execute}}
+`cd ~/repo/local_working_dir/project`{{execute}}
 `git checkout new_branch`{{execute}}
 `echo "print('Hola Mundo')" >> new_feature.py`{{execute}}
 `git add new_feature.py`{{execute}}

@@ -1,6 +1,6 @@
 #### Solution
 
-`cd ~/repo/local_working_dir`{{execute}}
+`cd ~/repo/local_working_dir/project`{{execute}}
 `git branch new_branch`{{execute}}
 `git checkout new_branch`{{execute}}
 `touch new_feature.py`{{execute}}

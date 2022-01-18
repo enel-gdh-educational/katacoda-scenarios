@@ -8,7 +8,7 @@
 `git commit -m "added hello world"`{{execute}}
 `git push origin new_branch`{{execute}}
 `git checkout master`{{execute}}
-`cd ~/repo/local_working_dir`{{execute}}
+`cd ~/repo/local_working_dir/project`{{execute}}
 `git checkout new_branch`{{execute}}
 `touch new_new_feature.py`{{execute}}
 `git add new_new_feature.py`{{execute}}

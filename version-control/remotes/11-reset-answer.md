@@ -1,7 +1,7 @@
 #### Solution
 
 
-`cd ~/repo/local_working_dir`{{execute}}
+`cd ~/repo/local_working_dir/project`{{execute}}
 `git checkout new_branch`{{execute}}
 `echo "print('Guten Morgen')" >> new_feature.py`{{execute}}
 `echo "print('Buongiornissimo')" >> new_new_feature.py`{{execute}}

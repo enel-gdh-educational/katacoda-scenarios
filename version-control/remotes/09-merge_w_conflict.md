@@ -40,7 +40,7 @@ We will push a modification on remote folder which will cause a conflict when wo
 
 Now remote branch *new_branch* is different from the one in our local repository. We modify local *new_branch* to create a conflict with remote.
 
-- Go to local repository `~/repo/local_working_dir`
+- Go to local repository `~/repo/local_working_dir/project`
 - Switch to branch *new_branch*
 - Modify file *new_feature.py* to print "Hola Mundo"
 - Add file *new_feature.py* to staging area
