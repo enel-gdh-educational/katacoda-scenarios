@@ -30,18 +30,13 @@ Now it's time to write some code and begin your new project. This project will b
 
 Before write some code we need to configure Git with our username and email. Those can be any value, since they won't be used for authentication:
 
-```git config --global user.name "<your-name>"```{{copy}}
+```git config --global user.name "<your-name>"```
 
-```git config --global user.email "<your-email-address>"```{{copy}}
+```git config --global user.email "<your-email-address>"```
 
-Create a new local folder called project:
+Create a new local folder called project in your computer and create a file called *calculator.py* in the project folder.
 
-```mkdir /home/scrapbook/tutorial/project```{{execute}}
-
-create a file called *calculator.py* in the project folder.
-```cd /home/scrapbook/tutorial/project && touch calculator.py```{{execute}}
-
-modify the file and paste this content:
+Modify the file and paste this content:
 
 ```python
 class Calculator:
@@ -49,15 +44,13 @@ class Calculator:
         return a + b
 ```
 
-`./project/calculator.py`{{open}}
-
 Now, initialize the local repository and add all files:
 
-```git init```{{execute}}
+```git init```
 
-```git add --all```{{execute}}
+```git add --all```
 
-```git commit -m "First commit"```{{execute}}
+```git commit -m "First commit"```
 
 This commit resides in your local repository for sure and now we are ready to *sync* your local repository to the remote repository created.
 
@@ -65,7 +58,7 @@ We'll use the `git remote add` command to do this.
 
 Issue the command below 
 
-```git remote add origin https://bitbucket.springlab.enel.com/scm/itdsver/<your repository name>.git```{{copy}}
+```git remote add origin https://bitbucket.springlab.enel.com/scm/itdsver/<your repository name>.git```
 
 substituting `<your repository name>` with the actual name of repository you created before.
 
@@ -73,7 +66,7 @@ substituting `<your repository name>` with the actual name of repository you cre
 
 With this command we've added a new origin and we can push on remote repository to sync our changes.
 
-Let's check what happend under the hood with the `git remote -v`{{execute}} command.
+Let's check what happend under the hood with the `git remote -v` command.
 
 The command's output should be:
 
@@ -87,9 +80,9 @@ origin  https://bitbucket.springlab.enel.com/scm/itdsver/<your repository name>.
 
 Finally, we can push our changes to this new remote!
 
-```git push -u origin master```{{execute}}
+```git push -u origin master```
 
-You must insert your username that corresponds to your Enel id with the first letter in uppercase. (*E.g. A45XXXX*) and your Enel account password, which won't be neither stored by git nor saved on disk or memory by Katacoda. 
+You must insert your username that corresponds to your Enel id with the first letter in uppercase. (*E.g. A45XXXX*) and your Enel account password. 
 
 ##### Exercises
 

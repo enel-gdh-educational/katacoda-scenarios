@@ -19,7 +19,7 @@ Without a clear workflow you'll made your modification on your local repository 
 This approach has many disadvantages:
 
 * `calculator.py` contains core functionalities and your modifications could contains errors and bugs. Therefore, master branch could not contain a working code version and you are not working in a **consistent** and **productive** way.
-* You are not working in a **collaborative** way because the other developes doesn't know what changes you done before changing the master branch.
+* You are not working in a **collaborative** way because the other developers doesn't know what changes you done before changing the master branch.
 * The probability of unhandled conflicts increase.
 
 To avoid this situation you must follow a specific workflow that helps you using Git in order to avoid situations like the one described above.
@@ -39,7 +39,7 @@ The graph below shows this workflow:
 
 ![](./assets/feature_branch_workflow.png)
 
-To see a concrete implementation of this workflow, clone the **awesome project** repository in the `awesome_project` folder:
+To see a concrete implementation of this workflow, clone the **awesome project** repository in the `awesome_project` folder on your computer:
 
 ```git clone https://<your-enel-id>@bitbucket.springlab.enel.com/scm/itdsver/awesome_project.git /home/scrapbook/tutorial/awesome_project```{{copy}}
 
@@ -47,7 +47,7 @@ To see a concrete implementation of this workflow, clone the **awesome project**
 
 and then use the `git log` command with some useful arguments:
 
-```cd awesome_project && git log --all --oneline --graph ```{{execute}}
+```git log --all --oneline --graph ```{{copy}}
 
 The output should looks like this:
 

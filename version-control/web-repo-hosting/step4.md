@@ -27,31 +27,25 @@ In order to enable the feature-branch workflow we must avoid changes directly in
 
 Now it's time to create your first feature branch.
 
-Go on the awesome_project folder where you cloned the project in the previous step:
+Go on the `awesome_project` folder where you cloned the project in the previous step and create the feature branch. 
 
-```cd /home/scrapbook/tutorial/awesome_project```{{execute}}
+The feature branch name must be the concatenation of `feature` keywork plus your name and surname with "_" as delimiter .
 
-and create the feature branch. The feature branch name must be the concatenation of `feature` keywork plus your name and surname with "_" as delimiter .
-
-> Name: Mario, Surname: Rossi -> Feature name: feature_mario_rossi
+> Name: Mario, Surname: Rossi -> Feature name: `feature_mario_rossi`
 
 We'll work on this branch, so use `git checkout` to switch the working branch.
 
 ```git checkout -b <your-feature-branch-name>```{{copy}}
 
-Now we must add a new feature in the awesome_project adding a new file:
+Now we must add a new feature in the awesome_project adding a new file called `my_feature`.
 
-```touch /home/scrapbook/tutorial/awesome_project/my_feature.py```{{execute}}
-
-Edit the file and add whatever you want.
-
-`./home/scrapbook/tutorial/awesome_project/my_feature.py`{{open}}
+Open and edit the file and add whatever you want.
 
 Now, your new amazing feature is developed and you are ready to commit and push to remote repository.
 
-```cd /home/scrapbook/tutorial/awesome_project && git add .```{{execute}}
+```git add .```{{copy}}
 
-```git commit -m "added new feature"```{{execute}}
+```git commit -m "added new feature"```{{copy}}
 
 ```git push -u origin <your-feature-branch-name>"```{{copy}}
 
