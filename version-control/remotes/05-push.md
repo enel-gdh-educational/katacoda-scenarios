@@ -20,7 +20,7 @@ A typical Git workflow would be to perform **multiple small commits** as you wor
 
 #### Task
 
-- Go to `~/repo/local_working_dir`
+- Go to `~/repo/local_working_dir/project`
 - Create and checkout a new branch *new_branch*
 - Create a new file *new_feature.py*
 - Add the file to staging area with `git add`

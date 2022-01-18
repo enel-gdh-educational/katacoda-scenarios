@@ -27,6 +27,6 @@
 
 *Create local working directory*
 
-`mkdir -p ~/repo/local_working_dir`{{execute}}
-`cd ~/repo/local_working_dir`{{execute}}
+`mkdir -p ~/repo/local_working_dir/project`{{execute}}
+`cd ~/repo/local_working_dir/project`{{execute}}
 `git init`{{execute}}

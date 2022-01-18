@@ -23,8 +23,8 @@ git add base_feature.py
 git commit -m "first commit"
 git push origin master
 
-mkdir ~/repo/local_working_dir
-cd ~/repo/local_working_dir
+mkdir ~/repo/local_working_dir/project
+cd ~/repo/local_working_dir/project
 git init
 
 
@@ -81,7 +81,7 @@ git add new_feature.py
 git commit -m "added hello world"
 git push origin new_branch
 git checkout master
-cd ~/repo/local_working_dir
+cd ~/repo/local_working_dir/project
 git checkout new_branch
 touch new_new_feature.py
 git add new_new_feature.py
@@ -102,7 +102,7 @@ git commit -m "improved greeting"
 git push origin new_branch
 git checkout master
 
-cd ~/repo/local_working_dir
+cd ~/repo/local_working_dir/project
 git checkout new_branch
 echo "print('Hola Mundo')" >> new_feature.py
 git add new_feature.py
@@ -124,7 +124,7 @@ cat new_feature.py
 
 echo "step 10"
 
-cd ~/repo/local_working_dir
+cd ~/repo/local_working_dir/project
 git checkout new_branch
 echo "aaa" >> new_feature.py
 echo "aaa" >> new_new_feature.py
@@ -136,7 +136,7 @@ git checkout .
 
 echo "step 11"
 
-cd ~/repo/local_working_dir
+cd ~/repo/local_working_dir/project
 git checkout new_branch
 echo "print('Guten Morgen')" >> new_feature.py
 echo "print('Buongiornissimo')" >> new_new_feature.py
@@ -149,7 +149,7 @@ git push origin new_branch
 
 echo "step 12"
 
-cd ~/repo/local_working_dir
+cd ~/repo/local_working_dir/project
 git checkout new_branch
 echo "print('Buongiornissimo')" >> new_new_feature.py
 git add new_new_feature.py

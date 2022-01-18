@@ -23,8 +23,8 @@ git add base_feature.py
 git commit -m "first commit"
 git push origin master
 
-mkdir ~/repo/local_working_dir
-cd ~/repo/local_working_dir
+mkdir ~/repo/local_working_dir/project
+cd ~/repo/local_working_dir/project
 git init
 
 
@@ -81,7 +81,7 @@ git add new_feature.py
 git commit -m "added hello world"
 git push origin new_branch
 git checkout master
-cd ~/repo/local_working_dir
+cd ~/repo/local_working_dir/project
 git checkout new_branch
 touch new_new_feature.py
 git add new_new_feature.py

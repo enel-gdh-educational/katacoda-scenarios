@@ -10,7 +10,7 @@ To replace all files then use a dot (`git checkout .`) to indicate the current d
 
 #### Task
 
-- Go to `~/repo/local_working_dir`
+- Go to `~/repo/local_working_dir/project`
 - Switch to branch *new_branch*
 - Modify *new_feature.py* and write "aaa" inside of it
 - Modify *new_new_feature.py* and write "aaa" inside of it

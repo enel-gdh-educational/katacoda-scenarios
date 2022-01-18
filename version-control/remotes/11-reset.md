@@ -12,7 +12,7 @@ If you want to reset all files then use a dot (`git reset .`) to indicate curren
 
 #### Task
 
-- Go to `~/repo/local_working_dir`
+- Go to `~/repo/local_working_dir/project`
 - Switch to branch *new_branch*
 - Modify *new_feature.py* to print "Guten Morgen" inside of it
 - Modify *new_new_feature.py* to print "Buongiornissimo"

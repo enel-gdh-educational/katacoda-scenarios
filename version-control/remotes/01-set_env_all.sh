@@ -21,6 +21,6 @@ git add base_feature.py
 git commit -m "first commit"
 git push origin master
 
-mkdir ~/repo/local_working_dir
-cd ~/repo/local_working_dir
+mkdir ~/repo/local_working_dir/project
+cd ~/repo/local_working_dir/project
 git init

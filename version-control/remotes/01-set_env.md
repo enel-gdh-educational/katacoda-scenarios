@@ -42,6 +42,6 @@ We will see three ways of initializing a *git* repository:
 
 *Create local working directory*
 
-- Create folder `repo/local_working_dir` using `mkdir`
-- Go to `repo/local_working_dir`
+- Create folder `repo/local_working_dir/project` using `mkdir -p`
+- Go to `repo/local_working_dir/project`
 - Initialize *git* folder using `git init`

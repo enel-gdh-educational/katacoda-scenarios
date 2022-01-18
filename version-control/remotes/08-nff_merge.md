@@ -11,7 +11,7 @@ In this scenario Git is **unable to fast-forward** the changes from Developer B 
 
 When this happens, Git will attempt to auto-merge the changes. If no conflicts exist then the merge will be completed and a new commit will be created.
 
-The default commit message for merges is "Merge branch '' of ". These commits can be useful to indicate synchronisation points.
+The default commit message for merges is "Merge branch '' of ". These commits can be useful to indicate synchronization points.
 
 ---
 
@@ -25,7 +25,7 @@ The default commit message for merges is "Merge branch '' of ". These commits ca
 - Commit changes
 - Push to remote branch *new_branch*
 - Switch to *master* branch
-- Go to local repository `~/repo/local_working_dir`
+- Go to local repository `~/repo/local_working_dir/project`
 - Switch to branch *new_branch*
 - Create file *new_new_feature.py*
 - Add *new_new_feature.py* to staging area
