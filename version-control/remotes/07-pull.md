@@ -15,6 +15,6 @@ If your current branch is set up to track a remote branch, you can use the `git 
 #### Task
 
 Use `git pull <remote> <branch>` to update master branch in remote working repository
-- Go to git repository in ~/repo/remote_working_dir/project`
+- Go to git repository in `~/repo/remote_working_dir/project`
 - Verify that you are on branch *master*
 - Pull the changes from the remote into your master branch
