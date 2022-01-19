@@ -39,11 +39,11 @@ The graph below shows this workflow:
 
 ![](./assets/feature_branch_workflow.png)
 
-To see a concrete implementation of this workflow, clone the **awesome project** repository in the `awesome_project` folder on your computer:
+To see a concrete implementation of this workflow, clone the **calculator-project** repository in the `calculator-project` folder on your computer:
 
-```git clone https://<your-enel-id>@bitbucket.springlab.enel.com/scm/itdsver/awesome_project.git /home/scrapbook/tutorial/awesome_project```{{copy}}
+```git clone https://<your-enel-id>@bitbucket.springlab.enel.com/scm/itdsver/calculator-project.git <calculator-project-folder>``{{copy}}
 
-> Remember to replace your Enel id before the '@'.
+> Remember to replace your Enel id before the '@' and use your awesome project folder path.
 
 and then use the `git log` command with some useful arguments:
 
@@ -52,18 +52,17 @@ and then use the `git log` command with some useful arguments:
 The output should looks like this:
 
 ```shell
-*   e40b952 (HEAD -> develop, origin/develop) Merge pull request #1 in ITDSVER/awesome_project from feature-adding-comments to develop
+*   eb293d8 (HEAD -> develop, origin/develop) Pull request #1: add div operation to calculator
 |\  
-| * 60cd855 (origin/feature-adding-comments, feature-adding-comments) add some documentations
+| * 5567e05 (origin/feature-div-operation, feature-div-operation) add div operation to calculator
 |/  
-* c16c590 next calculator with * operator
-* 9e29755 (origin/master, master) added calculator
+* 4945940 (origin/master, master) add first calculator with only sum operation
 ```
 
 There are some interesting informations:
 
-1. There is a branch with one commit having the message *"add some documentation"*
-2. This branch was merged into develop and the message of the merge commit message is *"Merge pull request #1 in ITDSVER/awesome_project from feature-adding-comments to develop"*
+1. There is a branch with one commit having the message *"add div operation to calculator"*
+2. This branch was merged into develop and the message of the merge commit message is *"Pull request #1: add div operation to calculator"*
 3. The master branch is behind the develop branch.
 
 This is an extremely simple application of the feature branch git workflow! 

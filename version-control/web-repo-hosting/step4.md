@@ -27,7 +27,7 @@ In order to enable the feature-branch workflow we must avoid changes directly in
 
 Now it's time to create your first feature branch.
 
-Go on the `awesome_project` folder where you cloned the project in the previous step and create the feature branch. 
+Go on the `calculator-project` folder where you cloned the project in the previous step and create the feature branch. 
 
 The feature branch name must be the concatenation of `feature` keywork plus your name and surname with "_" as delimiter .
 
@@ -37,7 +37,7 @@ We'll work on this branch, so use `git checkout` to switch the working branch.
 
 ```git checkout -b <your-feature-branch-name>```{{copy}}
 
-Now we must add a new feature in the awesome_project adding a new file called `my_feature`.
+Now we must add a new feature in the `calculator_project` adding a new file called `my_feature`.
 
 Open and edit the file and add whatever you want.
 
@@ -62,7 +62,7 @@ The only way we have to do this is to create a **Pull Request.**
 ##### Create a pull request
 
 Now it's time to discuss your changes with other guys. 
-Go to the [repository address](https://bitbucket.springlab.enel.com/projects/ITDSVER/repos/awesome_project/browse) with your browser and click on *Create pull request* button on the left pane.
+Go to the [repository address](https://bitbucket.springlab.enel.com/projects/ITDSVER/repos/calculator-project/browse) with your browser and click on *Create pull request* button on the left pane.
 
 ![](./assets/create_pull_request_button.png)
 

@@ -6,7 +6,7 @@ In this step:
 
 ##### Prerequisites
 * You must have an Enel account and be able to access the Springlab environment.
-* You must have an **Enel VPN** (Checkpoint Endpoint security) up & running.
+* You must have an **Enel VPN** (Global Protect) up & running.
 * You must have installed git in your computer. (GitBash on Windows)
 
 Is a little bit frustrating to type your username / password every time you use commands like `git clone` or `git push`.

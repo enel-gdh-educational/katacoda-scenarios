@@ -34,7 +34,9 @@ Before write some code we need to configure Git with our username and email. Tho
 
 ```git config --global user.email "<your-email-address>"```
 
-Create a new local folder called project in your computer and create a file called *calculator.py* in the project folder.
+```git config --global init.defaultbranch master```
+
+Create a new local folder called `project` in your computer and create a file called *calculator.py* in the project folder.
 
 Modify the file and paste this content:
 
@@ -62,7 +64,7 @@ Issue the command below
 
 substituting `<your repository name>` with the actual name of repository you created before.
 
-> E.g.: Mario_Rossi is the name of repository, the command is `git remote add origin https://bitbucket.springlab.enel.com/scm/itdsver/mario-rossi.git`
+> E.g.: Mario-Rossi is the name of repository, the command is `git remote add origin https://bitbucket.springlab.enel.com/scm/itdsver/mario-rossi.git`
 
 With this command we've added a new origin and we can push on remote repository to sync our changes.
 
