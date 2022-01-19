@@ -41,7 +41,7 @@ The graph below shows this workflow:
 
 To see a concrete implementation of this workflow, clone the **calculator-project** repository in the `calculator-project` folder on your computer:
 
-```git clone https://<your-enel-id>@bitbucket.springlab.enel.com/scm/itdsver/calculator-project.git <calculator-project-folder>``{{copy}}
+```git clone https://<your-enel-id>@bitbucket.springlab.enel.com/scm/itdsver/calculator-project.git <calculator-project-folder>```{{copy}}
 
 > Remember to replace your Enel id before the '@' and use your awesome project folder path.
 
